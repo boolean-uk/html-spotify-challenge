@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 0.15fr 0.85fr;
+    grid-template-rows: 90vh;
+}
+
+section > div {
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 19%, rgba(8,167,20,1) 100%);
+} 
+
+nav {
+    background-color: rgb(22, 22, 22);
+    display: grid ;
+    grid-template-rows: 10vh repeat(3, 40px) 30px 50px repeat(7, 25px);
+    color: white;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+}
+
+header {
+    background-color: rgb(47, 47, 47);
+}
+
+section > nav > button {
+    border: 0px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.createplaylist {
+    align-self: center;
+}
