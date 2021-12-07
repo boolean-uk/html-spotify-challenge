@@ -10,27 +10,44 @@
 <body>
 <div class="container">
         <header>
-          <button class="btn__upgrd">Upgrade</button>
+          <button class="btn__upgrd">
+            <h3 class="header--white">Upgrade</h3>
+          </button>
         </header>
         <nav class="nav__left">
             <h1>
               <img src="assets/img/logo.svg">
             </h1>  
             <ul class="list__nav">
-                <li>Home</li>
-                <li>Search</li>
-                <li>Your Library</li>
+                <li>
+                    <img class="svg__nav" src="assets/img/home.svg">
+                    <h3>Home</h3>
+                </li>
+                <li>
+                  <img class="svg__nav" src="assets/img/search.svg">
+                  <h3>Search</h3>
+                </li>
+                <li>
+                  <img class="svg__nav" src="assets/img/libreria.svg">
+                  <h3>Your Library</h3>
+                </li>
             </ul>
             <ul class="list__nav">
-                <li>Create Playlist</li>
-                <li>Liked Songs</li>
+                <li>
+                  <span class="svg__background">
+                    <img src="assets/img/plus.svg">
+                  </span>  
+                  <h3>Create Playlist</h3> 
+                </li>
+                <li>
+                  <span class="svg__background svg__liked">
+                    <img src="assets/img/heart.svg">
+                  </span>
+                  <h3>Liked Songs</h3>
+                </li>
             </ul>
             <hr>
             <ul class="list__nav">
-                <li>Create Playlist</li>
-                <li>Create Playlist</li>
-                <li>Create Playlist</li>
-                <li>Create Playlist</li>
                 <li>Create Playlist</li>
                 <li>Create Playlist</li>
                 <li>Create Playlist</li>
@@ -48,79 +65,101 @@
               <li>Discover</li>
             </ul>
           </nav>
-          <h2 class="heading__main heading--darkgrey">Recently Played</h2>  
+          <h2 class="heading__main header--white">Recently Played</h2>  
           <section class="section section__recent">
             <div class="card">
               <img class="img__main" src="assets/img/metal_lifting.jpg">
-              <h3 class="heading__option heading--darkgrey">Heavy Metal</h3>
-              <h4 class="heading__description heading--lightgrey">Subtitle</h4>
+              <h3 class="heading__option header--white">Heavy Metal</h3>
+              <h4 class="heading__description header--grey">Subtitle</h4>
             </div>
             <div class="card">
               <img class="img__main" src="assets/img/stranger.jpeg">
-              <h3 class="heading__option heading--darkgrey">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-              <h4 class="heading__description heading--lightgrey">Kyle Dixon & Michael Stein</h4>
+              <h3 class="heading__option header--white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+              <h4 class="heading__description header--grey">Kyle Dixon & Michael Stein</h4>
             </div>
             <div class="card">
               <img class="img__main" src="assets/img/aquietplace.jpeg">
-              <h3 class="heading__option heading--darkgrey">A Quiet Place</h3>
-              <h4 class="heading__description heading--lightgrey">Subtitle</h4>
+              <h3 class="heading__option header--white">A Quiet Place</h3>
+              <h4 class="heading__description header--grey">Subtitle</h4>
             </div>
             <div class="card">
               <img class="img__main" src="assets/img/split.jpeg">
-              <h3 class="heading__option heading--darkgrey">Split</h3>
-              <h4 class="heading__description heading--lightgrey">Subtitle</h4>
+              <h3 class="heading__option header--white">Split</h3>
+              <h4 class="heading__description header--grey">Subtitle</h4>
             </div>
             <div class="card">
               <img class="img__main" src="assets/img/cure.jpeg">
-              <h3 class="heading__option heading--darkgrey">A Cure For Wellness</h3>
-              <h4 class="heading__description heading--lightgrey">Subtitle</h4>
+              <h3 class="heading__option header--white">A Cure For Wellness</h3>
+              <h4 class="heading__description header--grey">Subtitle</h4>
             </div>
             <div class="card">
               <img class="img__main" src="assets/img/sinister.jpeg">
-              <h3 class="heading__option heading--darkgrey">Sinister</h3>
-              <h4 class="heading__description heading--lightgrey">Subtitle</h4>
+              <h3 class="heading__option header--white">Sinister</h3>
+              <h4 class="heading__description header--grey">Subtitle</h4>
             </div>       
           </section>
-          <h2>For John Doe</h2>
+          <h2 class="heading__main">For John Doe</h2>
           <section class="section section__foryou">
             <div class="card">
                 <img class="img__main" src="assets/img/radar.jpeg">
-                <h3 class="heading__option heading--darkgrey">Release Radar</h3>
-                <h4 class="heading__description heading--lightgrey"></h4>
+                <h3 class="heading__option header--white">Release Radar</h3>
+                <h4 class="heading__description header--grey"></h4>
               </div>
               <div class="card">
                 <img class="img__main" src="assets/img/mixdaily.jpeg">
-                <h3 class="heading__option heading--darkgrey">Daily Mix 1</h3>
-                <h4 class="heading__description heading--lightgrey"></h4>
+                <h3 class="heading__option header--white">Daily Mix 1</h3>
+                <h4 class="heading__description header--grey"></h4>
+              </div>  
           </section>
-          <h2>Popular Artists</h2>
+          <h2 class="heading__main">Popular Artists</h2>
           <section class="section section__foryou">
             <div class="card">
                 <img class="img__main" src="assets/img/youg.jpeg">
-                <h3 class="heading__option heading--darkgrey">Lana Del Rey</h3>
-                <h4 class="heading__description heading--lightgrey"></h4>
+                <h3 class="heading__option header--white">Lana Del Rey</h3>
+                <h4 class="heading__description header--grey"></h4>
               </div>
               <div class="card">
                 <img class="img__main" src="assets/img/einaudi.jpeg">
-                <h3 class="heading__option heading--darkgrey">Ludivico Einaudi</h3>
-                <h4 class="heading__description heading--lightgrey"></h4>
+                <h3 class="heading__option header--white">Ludivico Einaudi</h3>
+                <h4 class="heading__description header--grey"></h4>
+              </div> 
           </section>
         </main>  
         <footer>
-          <div>
-            <span>Sinister</span>
-            <span>Brano Nome</span>
+          <div class="footer footer__left">
+            <div class="footer__left__inner">
+              <img class="img__footer" src="assets/img/player_left.jpg">
+              <div>
+                <span>Clark Griswold fear. Adrian Eagle</span>
+                <span class="header--grey">Hilltop Hoods</span>
+              </div>
+            </div>    
+              <img class="svg__footer" src="assets/img/plainheart.svg">
+              <img class="svg__footer" src="assets/img/remove.svg">
+          </div>
+          <div class="footer footer__center">
+            <div class="footer__console">
+              <img class="svg__footer" src="assets/img/shuffle.svg">  
+              <img class="svg__footer" src="assets/img/rewind.svg">
+              <img class="svg__footer" src="assets/img/play.svg">
+              <img class="svg__footer" src="assets/img/rewind.svg">
+              <img class="svg__footer" src="assets/img/repeat.svg">
+            </div>
+            <div class="progbar__outer">
+              <span>0:01</span>
+              <div class="progbar__inner"></div>
+              <span>4.35</span>
+            </div>
           </div>
           <div>
-            <img src="assets/img/play.svg">
-          </div>
-          <div>
-            <div class=footer__right>  
-              <img src="assets/img/queue.svg">
+            <div class="footer footer__right">  
+              <img class="svg__footer" src="assets/img/queue.svg">
+              <img class="svg__footer" src="assets/img/output.svg">
+              <img class="svg__footer" src="assets/img/audio.svg">
+              <div class="volbar"></div>
             </div>  
           </div>
         </footer>
     </div>
-
 </body>
 </html>
