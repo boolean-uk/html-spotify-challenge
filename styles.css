@@ -19,6 +19,13 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .spotify {
+        display: grid;
+        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 500px;
+    }
+}
+
 header {
     grid-area: header;
     background-color: #080b12;
@@ -41,6 +48,7 @@ nav {
     grid-area: nav;
     background-color: black;
     gap: 5px;
+    padding: 10px;
     font-size: smaller;
     color: grey;
 }
@@ -123,7 +131,7 @@ nav .icon {
 
 .playlist .crea,
 .playlist p {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .playlist .crea {
@@ -134,7 +142,7 @@ nav .icon {
 
 .crea .sub-1,
 .crea .sub-2 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .instalia {
@@ -215,7 +223,7 @@ main .boxes {
 .boxes .card {
     /* border: 1px dashed black; */
     display: grid;
-    grid-template-rows: 1fr 20px 20px;
+    grid-template-rows: 1fr 40px 40px;
 }
 
 .card .image,
@@ -238,7 +246,7 @@ main .boxes-1 {
 .boxes-1 .card-1 {
     /* border: 1px dashed black; */
     display: grid;
-    grid-template-rows: 1fr 20px;
+    grid-template-rows: 1fr 80px;
 }
 
 .card-1 .image-1,
@@ -278,6 +286,8 @@ main .round-boxes {
 .first-title,
 .second-title,
 .first-title-1 {
+    display: grid;
+    align-items: center;
     text-align: center;
 }
 
@@ -295,6 +305,11 @@ main .round-boxes {
 
 .sub-2 {
     font-size: larger;
+}
+
+span {
+    font-weight: bolder;
+    color: white;
 }
 
 footer {
