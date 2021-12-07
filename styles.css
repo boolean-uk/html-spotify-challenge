@@ -2,17 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .spotify {
     height: 100vh;
+    color: white;
     display: grid;
-    grid-template: "nav header header" 80px "nav main main" 1fr "footer footer footer" 80px / 250px 1fr;
+    grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 200px 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    .spotify {
+        display: grid;
+        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 1fr;
+    }
 }
 
 header {
     grid-area: header;
-    background-color: pink;
+    background-color: #080b12;
     display: grid;
     grid-template-columns: 1fr 200px;
     padding: 10px;
@@ -21,17 +30,19 @@ header {
 header .upgrade {
     display: grid;
     place-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 20px;
     margin: 15px;
 }
 
 nav {
     display: grid;
-    grid-template-rows: 80px 200px 1fr 30px 30px;
+    grid-template-rows: 60px 150px 1fr 30px 30px;
     grid-area: nav;
-    background-color: grey;
+    background-color: black;
     gap: 5px;
+    font-size: smaller;
+    color: grey;
 }
 
 nav .spoty,
@@ -39,7 +50,7 @@ nav .icon,
 nav .playlist,
 nav .instalia,
 nav .john {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 nav .spoty {
@@ -53,7 +64,7 @@ nav .spoty {
 .spoty .big-spoty {
     width: 100%;
     height: 100%;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 nav .icon {
@@ -65,7 +76,7 @@ nav .icon {
 .icon .home,
 .icon .cerca,
 .icon .latua {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .icon .home {
@@ -77,7 +88,7 @@ nav .icon {
 
 .home .logo-1,
 .home .home-1 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .icon .cerca {
@@ -89,7 +100,7 @@ nav .icon {
 
 .cerca .logo-2,
 .cerca .cerca-2 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .icon .latua {
@@ -101,7 +112,7 @@ nav .icon {
 
 .latua .logo-4,
 .latua .latua-4 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .spotify .playlist {
@@ -135,7 +146,7 @@ nav .icon {
 
 .instalia .logo-5,
 .instalia p {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .john {
@@ -152,9 +163,9 @@ nav .icon {
 
 main {
     grid-area: main;
-    background-color: white;
+    background-color: #141922;
     display: grid;
-    grid-template-rows: 30px 50px 1fr 50px 1fr 50px 1fr;
+    grid-template-rows: 30px 50px 1fr 70px 1fr 70px 1fr;
     padding: 10px;
 }
 
@@ -165,7 +176,7 @@ main .john-doe,
 main .boxes-1,
 main .artistic,
 main .round-boxes {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 main .top-menu {
@@ -178,10 +189,20 @@ main .top-menu {
 .top-menu p {
     display: inline;
     margin: 10px;
+    font-size: smaller;
+    color: grey;
 }
 
 .recently-played {
+    font-size: 30px;
     padding: 5px;
+    font-weight: 600;
+}
+
+.creative,
+.artistic-1 {
+    font-size: 30px;
+    font-weight: 600;
 }
 
 main .boxes {
@@ -192,7 +213,7 @@ main .boxes {
 }
 
 .boxes .card {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     display: grid;
     grid-template-rows: 1fr 20px 20px;
 }
@@ -200,7 +221,7 @@ main .boxes {
 .card .image,
 .card .first-title,
 .card .second-title {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .john-doe {
@@ -215,14 +236,14 @@ main .boxes-1 {
 }
 
 .boxes-1 .card-1 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     display: grid;
     grid-template-rows: 1fr 20px;
 }
 
 .card-1 .image-1,
 .card-1 .first-title-1 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .artistic {
@@ -238,7 +259,7 @@ main .round-boxes {
 
 .round-boxes .image-2,
 .round-boxes .image-3 {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .image img,
@@ -260,7 +281,23 @@ main .round-boxes {
     text-align: center;
 }
 
+.home-1,
+.cerca-2,
+.latua-4 {
+    display: grid;
+    align-items: center;
+}
+
+.second-title {
+    font-size: smaller;
+    color: grey;
+}
+
+.sub-2 {
+    font-size: larger;
+}
+
 footer {
     grid-area: footer;
-    background-color: skyblue;
+    background-color: #141922;
 }
