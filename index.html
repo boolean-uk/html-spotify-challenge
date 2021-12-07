@@ -4,8 +4,286 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/75e02ba484.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+        <!-- nav sidebar -->
+        <div class="sidebar">
+          <nav class="sidebar__nav">
+            <section class="nav__top">
+              <!-- logo -->
+              <div class="nav__logo">
+                <picture>
+                  <source
+                    srcset="./assets/img/logo.svg"
+                    media="(min-width: 601px)"
+                  />
+                  <img class="sidebar__img logo" src="./assets/img/logo-small.svg" alt="spotify logo" /> 
+                </picture>
+              </div>
+              <!-- main menu -->
+              <section class="nav__icons">
+                <ul class="list">
+                  <li class="list__item active">
+                    <a class="list__link nav" href="#">
+                      <img class="sidebar__img" src="./assets/img/home.svg" alt="home" /><span class="sidebar__text"
+                        >Home</span
+                      ></a
+                    >
+                  </li>
+                  <li class="list__item">
+                    <a class="list__link nav" href="#">
+                      <img class="sidebar__img" src="./assets/img/search.svg" alt="cerca" /><span class="sidebar__text"
+                        >Cerca</span
+                      ></a
+                    >
+                  </li>
+                  <li class="list__item">
+                    <a class="list__link nav" href="#">
+                      <img class="sidebar__img"
+                        src="./assets/img/libreria.svg"
+                        alt="la tua libreria"
+                      /><span class="sidebar__text">La tua libreria</span></a 
+                    >
+                  </li>
+                </ul>
+              </section>
+              <!-- nav__playlist -->
+              <section class="nav__playlist">
+                <h1>PLAYLIST</h1>
+                <a  href="#" class="nav__playlist-add"
+                  > <i class="fas fa-plus"></i> <span class="playlist__text">Crea Playlist</span></a
+                >
+                <ul class="list">
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                </ul>
+              </section>
+            </section>
+            <!-- nav__bottom -->
+            <section class="nav__bottom">
+              <div class="nav__install">
+                <a href="#"
+                  ><img
+                    class="img__install"
+                    src="./assets/img/download.svg"
+                    alt="installa app"
+                  /><span class="install__text">Installa app</span></a
+                >
+                <div class="border one"></div>
+              </div>
+              <div class="user">
+                <img  class="user__profile" src="./assets/img/profile.svg" alt="profile" /> <span class="user__name">John Doe</span>
+              </div>
+            </section>
+          </nav>
+        </div>
+        <!-- cta banner -->
+        <section class="banner">
+          <div class="box">
+            <a href="#" class="btn">UPGRADE</a>
+          </div>
+        </section>
+        <!-- nav menu bar -->
+        <header class="menu">
+          <!-- menu nav -->
+          <nav class="menu__nav table">
+            <ul class="list horizontal">
+              <li class="list__item menu">
+                <a href="#">IN E<span class="active__highlight">VIDE</span>NZA</a>
+              </li>
+              <li class="list__item menu"><a href="#">PODCAST</a></li>
+              <li class="list__item menu"><a href="#">CLASSIFICHE</a></li>
+              <li class="list__item menu"><a href="#">GENERI<span class="hyphen--invis">&#8209</span>E<span class="hyphen--invis">&#8209MOOD</span></a></li>
+              <li class="list__item menu"><a href="#">NUOVE<span class="hyphen--invis">&#8209</span>USCITE</a></li>
+              <li class="list__item menu"><a href="#">SCOPRI</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- recently played start of main tag -->
+        <main>
+          <section class="section">
+            <h1 class="title">Recently Played</h1>
+            </section>
+          <!-- start of recently played titles -->
+              <section class="covers row">
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/metal_lifting.jpg" alt="heavy metal">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Heavy Metal</h2>
+                    <p>Subtitle</p>
+                </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/stranger.jpeg" alt="stranger things volume one a netflix original series soundtrak">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h2>
+                    <p>Kyle Dixon & Michael Stein</p>
+                </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/aquietplace.jpeg" alt="a quiet place">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>A quiet place</h2>
+                    <p>Subtitle</p>
+                </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/split.jpeg" alt="split">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Split</h2>
+                    <p>Subtitle</p>
+                </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/cure.jpeg" alt="a cure for wellness">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>A cure for wellness</h2>
+                    <p>Subtitle</p>
+                </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/sinister.jpeg" alt="sinister">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Sinister</h2>
+                    <p>Subtitle</p>
+                </section>
+                </div>
+            </section>
+            <!-- created for John Doe -->
+            <section class="section">
+              <h1 class="title">Created For John Doe</h1>
+              <p>Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
+            </section>
+            <section class="covers row">
+              <div class="covers box">
+                <img class="covers__img" src="./assets/img/radar.jpeg" alt="radar">
+                <div class="covers__overlay">
+                <i class="far fa-play-circle"></i>
+                </div>
+                <section class="covers content">
+                  <h2>Radar</h2>
+                  <p>Subtitle</p> 
+              </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img" src="./assets/img/mixdaily.jpeg" alt="daily mix one">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Daily Mix 1</h2>
+                    <p>Subtitle</p> 
+                </section>
+                  </div>
+            </section>
+            <section class="section">
+              <h1 class="title">Artisti pi&#249 popolari</h1>
+              <p>Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
+            </section>
+            <section class="covers row">
+              <div class="covers box">
+                <img class="covers__img covers__img--cirlce" src="./assets/img/youg.jpeg" alt="young and beautiful">
+                <div class="covers__overlay">
+                <i class="far fa-play-circle"></i>
+                </div>
+                <section class="covers content">
+                  <h2>Lana del Ray</h2>
+              </section>
+                </div>
+                <div class="covers box">
+                  <img class="covers__img covers__img--cirlce" src="./assets/img/einaudi.jpeg" alt="ludovico einaudi">
+                  <div class="covers__overlay">
+                  <i class="far fa-play-circle"></i>
+                  </div>
+                  <section class="covers content">
+                    <h2>Ludovico Einaudi</h2>
+                </section>
+                  </div>
+            </section>
+    </main>
+        <!-- end of popular artists - end of main tag -->
+        <footer class="mediabar">
+          <div class="media" id="one">
+            <div><img id="img__media" src="./assets/img/sinister.jpeg" alt="sinister" /></div>
+            <div>
+              <h2>Sinister</h2>
+              <p>Song Name</p>
+            </div>
+            <div class="media__icons">
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+            </div>
+            <div id="two" class="controller__icons">
+              <ul class="list horizontal">
+                  <li class="list__item"><i class="fas fa-random"></i></li>
+                  <li class="list__item"><i class="fas fa-step-backward"></i></li>
+                  <li class="list__item"><i class="far fa-play-circle"></i></li>
+                  <li class="list__item"><i class="fas fa-step-forward"></i></li>
+                  <li class="list__item"><i class="fas fa-redo-alt"></i></li>
+              </ul>
+              <div class="progress container">
+                <span id=>0:25</span>
+                <div class="progress bar">
+                    <div class="progress"></div>
+                </div>
+                <span>4:35</span>
+            </div>  
+            </div>
+            <div id="three" class="controller">
+              <div class="settings">
+                <ul class="list horizontal">
+                    <li class="list__item"><i class="fas fa-list-ul"></i></li>
+                    <li class="list__item"><i class="fas fa-desktop"></i></li>
+                    <li class="list__item"><i class="fas fa-volume-up"></i></li>
+                </ul>
+            </div>
+            <div class="progress container">
+              <div class="progress bar">
+                  <div class="progress"></div>
+              </div>
+          </div>
+        </div>
+         </div>
+        </footer>
+    </div>                                            
+  </body>
 </html>

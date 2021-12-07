@@ -1,0 +1,552 @@
+/* css reset */
+*,
+*::before*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css custom properties */
+:root {
+  /* typography */
+  /* -----font-family */
+  --font-family-text: Montserrat;
+  /* -----font-properties */
+  --font-size-one: 1.5rem;
+  --font-size-two: 1rem;
+  --font-size-three: 0.875rem;
+  --font-size-four: 0.8125rem;
+  /* --font-line-height-text: ;  */
+  /* --font-f-weight-text: ;  */
+  /* color */
+  /* -----background */
+  --clr-body-background: #000000;
+  --clr-cta-background: rgba(0, 0, 0, 0.4);
+  /* -----text */
+  --clr-body-text: #ffffff;
+  --clr-section-bg: #141922;
+  --clr-nav-text: rgba(225, 225, 225, 0.4);
+  /* layout */
+  /* -----margin */
+  /* -----padding */
+  /* -----borders */
+  --bdr-rmv-style-1: 0.1em solid red;
+  --bdr-style-1: 0.1em solid rgba(225, 225, 225, 0.4);
+  --bdr-style-2: 0.1em solid white;
+}
+
+/* delete */
+.sidebar,
+.banner,
+.menu,
+.main,
+footer {
+  border: var(--bdr-rmv-style-1);
+}
+
+#one,
+#two,
+#three {
+  border: 0.1em solid blue;
+}
+
+.list__item.menu {
+  border: none;
+}
+
+/* height: 100vh bigger than screen */
+/* body,
+html {
+  height: 100%;
+  width: 100%;
+} */
+
+/* .wrapper {
+  width: 100vw;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+/* height: 100vh bigger than screen */
+
+/* global styles */
+/* -----lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-nav-text);
+}
+
+/* -----typography */
+/* font-family */
+h1,
+h2,
+p,
+.btn,
+.playlist__text,
+.list__item,
+.install__text,
+.user__name {
+  font-family: var(--font-family-text);
+}
+
+/* font-size */
+
+.playlist__text {
+  font-size: var(--font-size-three);
+}
+
+.user__name {
+  font-size: var(--font-size-two);
+}
+
+.list__item {
+  font-size: var(--font-size-two);
+}
+
+.media__title > h2 {
+  font-size: 12px;
+}
+
+.media__title > p {
+  font-size: 10px;
+}
+
+.media > div:nth-child(2) > h2 {
+  font-size: 12px;
+}
+
+.media > div:nth-child(2) > p {
+  font-size: 10px;
+}
+
+/* -----color */
+h1 {
+  color: var(--clr-body-text);
+}
+
+p {
+  color: var(--clr-nav-text);
+}
+
+body {
+  background: var(--clr-body-background);
+  color: var(--clr-body-text);
+}
+
+main,
+.menu {
+  background-color: var(--clr-section-bg);
+}
+clr-section-bg
+
+/* -----image */
+img {
+  width: 12em;
+  height: 1.6em;
+}
+
+.img__install {
+  width: 1em;
+  height: 1em;
+}
+
+.covers__img {
+  width: 11.53em;
+  height: 11.53em;
+}
+
+.covers__img--cirlce {
+  border-radius: 50%;
+}
+
+#img__media {
+  height: 50px;
+  width: 50px;
+}
+
+.sidebar__img.logo {
+  width: 133px;
+  height: 40px;
+}
+
+.sidebar__img {
+  width: 11%;
+}
+
+.user,
+.user__profile,
+.user__name,
+.user__avatar {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-three);
+}
+
+.user {
+  width: 100%;
+}
+
+.user__profile {
+  width: 50%;
+}
+
+/* write here */
+
+.fas.fa-plus {
+  color: black;
+  background-color: var(--clr-nav-text);
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+/* .hypen--invis {
+  color: make same as background color
+} */
+
+/* layout */
+/* -----grid */
+.wrapper {
+  display: grid;
+  height: 100vh;
+  /* width: 100vw; */
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-rows: 100px 100px 3fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sidebar banner"
+    "sidebar menu"
+    "sidebar main"
+    "sidebar footer";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.banner {
+  grid-area: banner;
+}
+.menu {
+  grid-area: menu;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+
+/* -----flex sidebar */
+.sidebar,
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav__logo {
+  margin-top: 1em;
+}
+
+.sidebar__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+}
+
+.sidebar__text {
+  margin-left: 0.5em;
+}
+
+.fas.fa-plus {
+  margin-right: 0.2em;
+  margin-left: 0.5em;
+}
+
+.img__install {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+.list__item.playlist:nth-child(1),
+.list__item.playlist + .list__item.playlist {
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+.nav__install::after {
+  content: "";
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  margin: 0em auto 0.5em auto;
+  border-bottom: var(--bdr-style-1);
+}
+
+.user {
+  display: flex;
+  justify-content: left;
+}
+
+.user__profile {
+  width: 11%;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+/* -----flex menu */
+.table {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.list.horizontal li {
+  display: inline;
+}
+
+.list__item.menu:nth-child(1),
+.list__item.menu + .list__item.menu {
+  margin-left: 1em;
+}
+
+/* -----flex main */
+.covers.content {
+  width: 184px;
+  text-align: center;
+}
+
+.covers.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1em 1em;
+  flex-wrap: wrap;
+}
+
+/* -----footer */
+
+/* footer grid */
+.mediabar {
+  display: flex;
+  flex-direction: column;
+  /* used to be row */
+  justify-content: space-between;
+}
+
+.media {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.media {
+  margin-left: 1rem;
+}
+.media > div:nth-child(2) > h2,
+.media > div:nth-child(2) > p {
+  margin-left: 1rem;
+}
+
+.media > div:nth-child(2) > p {
+  margin-top: -0.8em;
+}
+
+.media__icons {
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+/* space out controller icons */
+.far.fa-play-circle {
+  margin: 0 0.5em;
+}
+
+.fas.fa-step-forward {
+  margin: 0 0.5em;
+}
+
+.fas.fa-step-backward {
+  margin: 0 0.5em;
+}
+
+.controller__icons {
+  text-align: center;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-grow: 1;
+}
+
+.controller_timebar {
+  text-align: center;
+}
+.progress.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.progress.bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #ccc4;
+}
+
+.controller__icons {
+  flex-grow: 2;
+}
+
+/* experimental css */
+
+/* .progress.bar::before {
+  content: "";
+  height: 4px;
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  width: 25%;
+} */
+
+/* .progress.bar:hover.progress.bar::before {
+  background-color: green;
+} */
+
+/* .progress.bar:hover.progress.bar::after {
+  background-color: white;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  border-radius: 50%;
+  margin-left: 4em;
+} */
+
+/* footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "media controller settings";
+}
+
+.media {
+  grid-area: media;
+}
+.controller {
+  grid-area: controller;
+}
+.settings {
+  grid-area: settings;
+} */
+
+/* current media */
+/* .media__cover {
+  width: 50px;
+}
+
+.media__title {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+
+.media__title > h2,
+.media__title > p {
+  display: inline-block;
+}
+
+.media__title > p {
+  margin-top: -1em;
+} */
+
+/* .media__title > h2 {
+  margin-left: 5em;
+  margin-top: -2em;
+}
+.media__title > p {
+  margin-top: -1em;
+} */
+
+/* .media,
+.controller,
+.settings {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* -----components */
+
+/* buttons */
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  /* margin-bottom: 1em; */
+}
+
+/*.banner > .box {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+} */
+
+.banner > .box {
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+.btn {
+  border: var(--bdr-style-2);
+  border-radius: 25px;
+  padding: 10px 50px 10px 50px;
+  color: white;
+}
+
+/* -----features */
+
+/* hidden classes */
+.covers__overlay {
+  display: none;
+}
+
+/* progress bar */
+
+/* #progressBar {
+    width:;
+    height: 20px;  
+    position: relative;
+    background: #555;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  } */
+
+/* #progressBar  > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  } */ ;
