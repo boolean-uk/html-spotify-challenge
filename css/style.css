@@ -8,7 +8,7 @@
 body {
     display: grid;
     grid-template:
-    "left-menu header" 3.5rem
+    "left-menu header" 4rem
     "left-menu main" 1fr
     "footer footer" 5rem /
     15rem 1fr; 
@@ -27,15 +27,16 @@ a {
     padding: 1rem;
 
     background-color: #080B12;
-/* 
+
     position: sticky;
-    top:0; */
+    top:0;
+    z-index: 1;
 }
 
 button {
     background-color: #080B12;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 6px 30px;
     border: white solid 1px;
     border-radius: 50px;
 }
@@ -45,38 +46,54 @@ button {
 .left-menu{
     grid-area: left-menu;
     background-color: black;
-    color: white;
+    color:lightgray;
     padding: 10px;
-    /* position: sticky;   
-    top: 0; */
+
+    /* position: relative; */
 } 
 
 .left-menu__large {
     display: grid;
-    height: 90vh;
     grid-template-rows: 3.5rem auto 1fr 3rem;
+    height: 84vh;
     gap: 15px;
+
+    /* position: sticky;
+    top:0; */
 }
 
 .left-menu__small {
     display: grid;
-    height: 100%;
     grid-template-rows: 3.5rem 1fr 3rem;
+    height: 84vh;
     visibility: hidden;
 }
 
+.logo--large { 
+    width: 10rem;
+}
+
+.white {
+    color: white;
+}
+
 .left-menu__large i {
-    font-size: 30px;
+    font-size: 34px;
+    color:gray;
+    vertical-align: middle;
+    padding-right:5px;
 }
 
 ul img {
     width: 30px;
     vertical-align: middle;
+    padding-right: 5px;
 }
 
 ul li {
     list-style: none;
-    padding: 5px;
+    padding: 10px;
+    color:gray;
 }
 
 nav p {
@@ -87,7 +104,22 @@ nav p {
 .profile img {
     width: 40px;
     border-radius: 50%;
-    vertical-align: center;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.image--border {
+    padding: 5px;
+    border-bottom: solid grey 1px;
+    margin: 5px;
+}
+
+.profile .icon--small {
+    width: 20px;
+}
+
+.profile span {
+    color:gray;
 }
 
 .left-menu__small img {
@@ -110,7 +142,7 @@ main section {
 }
 
 .main__header p {
-    display: inline;
+    display: inline-block;
     text-transform: uppercase;
     padding:10px;
 }
@@ -171,6 +203,14 @@ main section {
 
 h1, h2, h3, p {
     padding:5px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 h3, section p {
