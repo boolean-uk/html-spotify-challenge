@@ -28,6 +28,9 @@ a {
     padding: 1rem;
 
     background-color: #080B12;
+/* 
+    position: sticky;
+    top:0; */
 }
 
 button {
@@ -41,6 +44,9 @@ button {
     grid-area: left-menu;
     background-color: black;
     color: white;
+    padding: 10px;
+    /* position: sticky;   
+    top: 0; */
 }
 
 .left-menu__large {
@@ -62,6 +68,10 @@ ul img {
     vertical-align: middle;
 }
 
+ul li {
+    list-style: none;
+}
+
 nav p {
     text-transform: uppercase;
 }
@@ -72,9 +82,8 @@ nav p {
 main {
     grid-area: main;
     background-color: #141922;
+    padding: 10px;
 
-    display: grid;
-    justify-content: center;
 }
 
 main p {
@@ -83,7 +92,27 @@ main p {
 }
 
 .main__header {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+
+}
+
+.album-container {
+    width: 200px;
+    height: 270px;
+    background-color: rgb(12, 9, 240);
+    text-align: center;
+}
+
+.album-container img {
+    width: 100%;
 }
 
 /* FOOTER SECTION */
@@ -91,5 +120,7 @@ main p {
 footer {
     grid-area: footer;
     background-color: #282828;
-}
+    /* position: sticky;
+    bottom: 0;*/
+} 
 
