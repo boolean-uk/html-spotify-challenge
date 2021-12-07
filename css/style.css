@@ -1,0 +1,95 @@
+* {
+    padding:0;
+    margin:0;
+    border: solid red 2px;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template:
+    "left-menu header" 3.5rem
+    "left-menu main" 1fr
+    "footer footer" 5rem /
+    13rem 1fr; 
+    height: 100vh;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+
+    background-color: #080B12;
+}
+
+button {
+    background-color: #080B12;
+    text-transform: uppercase;
+}
+
+/* LEFT MENUS SECTION */
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: black;
+    color: white;
+}
+
+.left-menu__large {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 3.5rem auto 1fr 3rem;
+}
+
+.left-menu__small {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 3.5rem 1fr 3rem;
+    visibility: hidden;
+}
+
+
+ul img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+nav p {
+    text-transform: uppercase;
+}
+
+
+/* MAIN SECTION */
+
+main {
+    grid-area: main;
+    background-color: #141922;
+
+    display: grid;
+    justify-content: center;
+}
+
+main p {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.main__header {
+    
+}
+
+/* FOOTER SECTION */
+
+footer {
+    grid-area: footer;
+    background-color: #282828;
+}
+
