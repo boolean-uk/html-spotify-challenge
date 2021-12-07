@@ -52,9 +52,7 @@ hr {
     position: sticky;
     left:0;
     top: 0;
-    bottom: 0;
-    overflow: hidden;
-    max-height: 100vh;
+    max-height: 96vh;
     color: white;
 }
 
@@ -168,7 +166,11 @@ footer {
     color: darkgray;
 }
 
+.heading__option,
+.heading__description {
+    text-align: center;
 }
+
 .heading__option {
     font-size: 1.5rem;
 }
