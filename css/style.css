@@ -8,7 +8,7 @@
 body {
     background: rgba(21, 25, 33, 1);
     display: grid;
-    width: 100;
+    width: 100%;
 }
 
 h2, h3 {
@@ -65,14 +65,14 @@ header a button:hover {
 
 #logo {
     display: grid;
-    place-items: center start;
-    padding: 0 1.45rem;
+    place-items: center;
+    width: 180px;
     background: black;
 }
 
 main {
     display: grid;
-    grid-template-columns: minmax(180px, 0.1fr) 1fr;
+    grid-template-columns: 180px 1fr;
 }
 
 aside {
@@ -83,6 +83,7 @@ aside {
     top: 80px;
     display: grid;
     grid-template-rows: max-content max-content 1fr max-content;
+    /* width: 4rem; */
 }
 
 .menu-item {
@@ -230,12 +231,12 @@ option {
 #recent-albums {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(197px, max-content));
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 1rem 0rem;
 }
 
 .album-boxes {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .album-boxes img:hover {
@@ -315,7 +316,7 @@ footer {
 
 #footer-left {
     display: grid;
-    grid-template-columns: max-content 2fr max-content;
+    grid-template-columns: max-content 1fr max-content;
 }
 
 #footer-left h3 {
@@ -329,11 +330,11 @@ footer {
 #song-image {
     display: grid;
     place-items: center;
-    margin-left: 6px;
+    margin-left: 5px;
 }
 
 #current-song {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -349,7 +350,7 @@ footer {
 }
 
 #left-icons a {
-    margin-right: 10px;
+    padding: 5px;
     filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(159deg) brightness(106%) contrast(106%);
 }
 
@@ -361,7 +362,6 @@ footer {
     display: flex;
     place-items: center;
     justify-content: center;
-    margin: 10px;
 }
 
 #footer-middle img {
@@ -383,6 +383,10 @@ footer {
     #dropdown {
         display: none;
     }
+
+    .logo-responsive {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 905px) {
@@ -398,6 +402,10 @@ footer {
     #upgrade-button {
         display: flex;
         justify-content: center;
+    }
+
+    .logo-responsive {
+        display: none;
     }
 }
 
@@ -431,9 +439,92 @@ footer {
         text-align: center;
     }
 
-    #suggested-albums {
-
+    .logo-responsive {
+        display: none;
     }
 }
 
-@media screen and (max-width: 690px)
+@media screen and (max-width: 690px) {
+    #footer-middle img {
+        margin: 0px 10px;
+    }
+
+    #left-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        margin-right: 5px;
+    }
+
+    #current-song {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-left {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+    }
+    
+    #footer-left h3 {
+        text-align: center;
+}
+    
+    #footer-left p {
+        text-align: center;
+    }
+    .logo-responsive {
+        display: flex;
+    }
+    
+    #logo {
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        width: 5rem;
+        background: black;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+    }
+    
+    #profile h2,
+    #download p,
+    .logo-main,
+    .menu-item a,
+    #playlist h2,
+    #user-playlists ul,
+    #create-playlist img,
+    #create-playlist a {
+        display: none;
+    }
+    
+    .menu-item img {
+        display: flex;
+        place-items: center;
+    }
+    
+    #footer-left {
+        display: grid;
+        grid-template-columns: max-content 80px max-content;
+    }
+    
+    aside {
+        height: calc(100vh - 160px);
+        background: black;
+        position: sticky;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    #download {
+        border: none;
+    }
+}
