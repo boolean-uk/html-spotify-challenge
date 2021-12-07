@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+body {
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template: "left-c top-h" 90px
+                   "left-c main" 1fr
+                   "footer footer" 90px /
+                     230px   1fr;
+}
+
+nav {
+    grid-area: left-c;
+    background-color: #000000;
+}
+
+header {
+    grid-area: top-h;
+    background-color: #080b12;
+}
+
+main {
+    grid-area: main;
+    background-color: #141922;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #282828;
+}
