@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.6;
+    
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template: 
+    "left-menu header" 50px
+    "left-menu main" 1fr
+    "playbar playbar" 80px /
+    1fr       5fr ;
+
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: pink;
+    display: grid;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    
+    
+}
+
+.header {
+    grid-area: header;
+    background-color: aquamarine;
+}
+
+.main {
+    grid-area: main;
+    background-color: orange
+}
+
+.playbar {
+    grid-area: playbar;
+    background-color: brown
+}
+
+.left-top,
+.left-middle,
+.left-bottom ul {
+    list-style: none;
+}
