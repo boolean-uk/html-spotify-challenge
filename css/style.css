@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  /* border: black solid 0.5px; */
+}
+
+.layout {
+  height: 97vh;
+  display: grid;
+  grid-gap: 5px;
+  padding: 0.5em;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: 5em auto 5em;
+  grid-template-areas:
+    "n n h h h h h h h h h h h h h"
+    "n n m m m m m m m m m m m m m"
+    "f f f f f f f f f f f f f f f";
+}
+
+.header {
+  border: black solid 0.5px;
+  padding: 0.3em;
+  grid-area: h;
+}
+
+.nav {
+  border: black solid 0.5px;
+  padding: 0.3em;
+  grid-area: n;
+}
+
+.main {
+  border: black solid 0.5px;
+  padding: 0.3em;
+  grid-area: m;
+}
+
+.footer {
+  border: black solid 0.5px;
+  padding: 0.3em;
+  grid-area: f;
+}
