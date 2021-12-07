@@ -13,27 +13,77 @@ body {
     font-family: Gotham Medium, Helvetica, Arial, sans-serif;
     }
 
+
+
+
+
+
+
+/* MIDDLE SECTION */
+
+.middle-main {
+    background-color: #141922;
+    color: white; /* REMOVE */
+}
+
+.middle-top {
+    background-color: #080B12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.middle-whole {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.upgrade-link {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 25px;
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.nav-bar-top {
+    padding: 10px;
+}
+
+.nav-bar-top ol {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+/* LEFT MENU */
+
+
 .left-menu {
     background-color: rgba(0, 0, 0, 1);
     display: grid;
     grid-template-rows: 100px 100px 100px 1fr 100px;
 }
 
-.middle {
-    background-color: rgba(18, 18, 18, 1);
-    color: white; /* REMOVE */
-}
-
-.play-bar {
-    background-color: rgba(24, 24, 24, 1);
-    grid-column: 1 / 4;
-}
-
 .spotify-icon,
 .nav-bar-left,
 .playlist-nav,
 .playlists,
-.avatar-and-download {
+.avatar-and-download,
+.nav-bar-top {
     color: #b3b3b3;
 }
 
@@ -72,7 +122,8 @@ body {
 .nav-bar-left h2,
 .playlist-nav h2,
 .playlists li,
-.avatar-and-download h2 {
+.avatar-and-download h2,
+.nav-bar-top {
     font-size: 14px;
     line-height: 16px;
 }
@@ -124,4 +175,11 @@ ol li a,
 
 .add-icon {
     fill: white;
+}
+
+/* "PLAYBAR" OR FOOTER */
+
+.play-bar {
+    background-color: rgba(24, 24, 24, 1);
+    grid-column: 1 / 4;
 }
