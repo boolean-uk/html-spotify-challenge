@@ -13,6 +13,17 @@
 header {
     grid-area: header;
     background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 10px;
+}
+
+header .upgrade {
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 15px;
 }
 
 nav {
@@ -33,12 +44,15 @@ nav .john {
 
 nav .spoty {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 5px 1fr 40px;
     padding: 10px;
+    gap: 3px;
 }
 
 .spoty .logo,
 .spoty .big-spoty {
+    width: 100%;
+    height: 100%;
     border: 1px dashed black;
 }
 
@@ -56,7 +70,9 @@ nav .icon {
 
 .icon .home {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
 }
 
 .home .logo-1,
@@ -64,9 +80,184 @@ nav .icon {
     border: 1px dashed black;
 }
 
+.icon .cerca {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.cerca .logo-2,
+.cerca .cerca-2 {
+    border: 1px dashed black;
+}
+
+.icon .latua {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.latua .logo-4,
+.latua .latua-4 {
+    border: 1px dashed black;
+}
+
+.spotify .playlist {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    padding: 5px;
+}
+
+.playlist .crea,
+.playlist p {
+    border: 1px dashed black;
+}
+
+.playlist .crea {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    padding: 3px;
+}
+
+.crea .sub-1,
+.crea .sub-2 {
+    border: 1px dashed black;
+}
+
+.instalia {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 3px;
+    gap: 4px;
+}
+
+.instalia .logo-5,
+.instalia p {
+    border: 1px dashed black;
+}
+
+.john {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 3px;
+    gap: 4px;
+}
+
+.john .logo-6,
+.john p {
+    border: 1px dashed black;
+}
+
 main {
     grid-area: main;
     background-color: white;
+    display: grid;
+    grid-template-rows: 30px 50px 1fr 50px 1fr 50px 1fr;
+    padding: 10px;
+}
+
+main .top-menu,
+main .recently-played,
+main .boxes,
+main .john-doe,
+main .boxes-1,
+main .artistic,
+main .round-boxes {
+    border: 1px dashed black;
+}
+
+main .top-menu {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+    place-items: center;
+}
+
+.top-menu p {
+    display: inline;
+    margin: 10px;
+}
+
+.recently-played {
+    padding: 5px;
+}
+
+main .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.boxes .card {
+    border: 1px dashed black;
+    display: grid;
+    grid-template-rows: 1fr 20px 20px;
+}
+
+.card .image,
+.card .first-title,
+.card .second-title {
+    border: 1px dashed black;
+}
+
+.john-doe {
+    padding: 5px;
+}
+
+main .boxes-1 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.boxes-1 .card-1 {
+    border: 1px dashed black;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+}
+
+.card-1 .image-1,
+.card-1 .first-title-1 {
+    border: 1px dashed black;
+}
+
+.artistic {
+    padding: 10px;
+}
+
+main .round-boxes {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.round-boxes .image-2,
+.round-boxes .image-3 {
+    border: 1px dashed black;
+}
+
+.image img,
+.image-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-2 img,
+.image-3 img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle();
+}
+
+.first-title,
+.second-title,
+.first-title-1 {
+    text-align: center;
 }
 
 footer {
