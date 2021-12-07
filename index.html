@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify Clone</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +17,11 @@
   <body>
     <header class="header">
       <a target="_blank" href="https://www.spotify.com/uk/premium/"
-        ><button type="submit">upgrade</button></a
+        ><button class="zoom" type="submit">upgrade</button></a
       >
     </header>
     <section class="left-menu">
-      <nav class="left-menu__large">
+        <nav class="left-menu__large">
         <div>
           <img class="logo--large" src="assets/img/logo.svg" alt="Spotify Logo" />
         </div>
@@ -67,11 +67,11 @@
         </div>
       </nav>
       <nav class="left-menu__small">
-        <div>
-          <img src="assets/img/logo-small.svg" alt="Spotify Logo" />
-        </div>
-        <div>
+        <div>  
           <ul>
+            <a href=""
+            ><li><img src="assets/img/logo-small.svg" alt="Spotify Logo" /></li
+          ></a>
             <a href=""
               ><li><img src="assets/img/home.svg" alt="home icon" /></li
             ></a>
@@ -109,8 +109,9 @@
                   alt="Metal Album covers"
                 />
                 <div class="hover-play">
-                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                 </div>
+                
               </div>
               <h2>Heavy Metal</h2>
               <h3>Compilation</h3>
@@ -257,13 +258,13 @@
     <footer>
       <div class="footer__left">
         <div>
-          <img src="/assets/img/sinister.jpeg" alt="sinister album cover" />
+          <a href=""><img src="/assets/img/sinister.jpeg" alt="sinister album cover" /></a>
         </div>
         <div>
-          <h4>ChinaTown</h4>
-          <h5>Sinister</h5>
+          <a href=""><h4>ChinaTown</h4></a>
+          <a href=""><h5>Sinister</h5></a>
         </div>
-        <div>
+        <div class="right">
           <i class="fa fa-heart-o" aria-hidden="true"></i>
           <i class="fa fa-folder-o" aria-hidden="true"></i>
         </div>
@@ -272,13 +273,13 @@
         <div class="icons">
           <i class="fa fa-random" aria-hidden="true"></i>
           <i class="fa fa-step-backward" aria-hidden="true"></i>
-          <i class="fa fa-play-circle" id="large" aria-hidden="true"></i>
+          <i class="fa fa-play-circle zoom" id="large" aria-hidden="true"></i>
           <i class="fa fa-step-forward" aria-hidden="true"></i>
           <i class="fa fa-refresh" aria-hidden="true"></i>
         </div>
         <div class="play">
           0:00
-          <input id="play" type="range" step="0.1" min="0" max="4.35" /> 4:35
+          <input id="play" type="range" step="0.1" min="0" max="4.35" value="0"/> 4:35
         </div>
       </div>
       <div class="footer__right">
