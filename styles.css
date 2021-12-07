@@ -1,0 +1,31 @@
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "leftnav   header"  110px
+    "leftnav    main"   1fr
+    "footer    footer" 120px/
+     250px      1fr;
+}
+
+.leftnav {
+    grid-area: leftnav;
+    background-color: aqua;
+}
+
+.header {
+    grid-area: header;
+    background-color: bisque;
+}
+
+.main {
+    grid-area: main;
+    background-color: salmon;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: grey;
+}
