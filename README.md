@@ -19,4 +19,4 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; The left menu collapses as shown in `spotify-xs.png`.
 * &#9745; On hovering over cover images, a play icon appears overlaid.
 * &#9745; The player controls remain visible even when the main content window is reduced (see `spotify-height-350.png`)
-* &#9745; The main content scrolls behind the upgrade bar. The upgrade bar is semi-transparent.
+* &#9745; Only the main content area scrolls - it moves behind the upgrade bar and the player controlers. The side menu also stays fixed as the main content scrolls.
