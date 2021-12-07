@@ -1,24 +1,116 @@
-
+* {
+    margin: 0;
+}
 
 .container {
     display: grid;
     height: 100vh;
     grid-template: 
-    "leftnav   header"  110px
+    "leftnav   header"  85px
     "leftnav    main"   1fr
     "footer    footer" 120px/
-     250px      1fr;
+     230px      1fr;
 }
 
 .leftnav {
     grid-area: leftnav;
     background-color: aqua;
+    display: grid;
+    grid-template-rows: 85px 150px 1fr 110px;
 }
 
+.spotifylogo-section {
+    display: flex;
+    background-color: rgb(0,0,0);
+    place-items: center;
+}
+
+.spotifylogo-section img {
+    height: 40px;
+    margin-left: 15px;  
+}
+
+.home-section {
+    display: flex;
+    place-items: start;
+    flex-direction: column;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.librarybut img,
+.searchbut img,
+.homebut img {
+    height: 30px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.librarybut,
+.searchbut,
+.homebut {
+    display: flex;
+    line-height: 2.5; 
+    align-items: center;
+}
+
+
+/* PLAYLIST SECTION */
+.playlist-section {
+    display: flex;
+    place-items: start;
+    flex-direction: column;
+    color: white;
+    padding-left: 20px;
+}
+
+h3 {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.create-text {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+/* HEADER SECTION */
 .header {
     grid-area: header;
-    background-color: bisque;
+    background-color: #041C2C;
+    display: flex;
+    justify-content: end;
+    place-items: center;
 }
+
+h1 {
+    color: white;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .8rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 40px 10px 40px;
+
+}
+
+
+
+
+
 
 .main {
     grid-area: main;
