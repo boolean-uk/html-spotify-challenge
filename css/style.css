@@ -1,9 +1,8 @@
 * {
     padding:0;
     margin:0;
-    /* border: solid red 2px; */
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
     "left-menu header" 3.5rem
     "left-menu main" 1fr
     "footer footer" 5rem /
-    13rem 1fr; 
+    15rem 1fr; 
 }
 
 a {
@@ -66,6 +65,9 @@ button {
     visibility: hidden;
 }
 
+.left-menu__large i {
+    font-size: 30px;
+}
 
 ul img {
     width: 30px;
@@ -79,7 +81,19 @@ ul li {
 
 nav p {
     text-transform: uppercase;
+    font-weight: bold;
 }
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: center;
+}
+
+.left-menu__small img {
+    width: 30px;
+}
+
 
 
 /* MAIN SECTION */
@@ -121,12 +135,38 @@ main section {
 .album-container {
     width: minmax(200px, 1fr);
     height: auto;
-    /* background-color: rgb(12, 9, 240); */
     text-align: center;
 }
 
 .album-container img {
     width: 100%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.hover-play {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    opacity:0;
+
+}
+
+.hover-play:hover {
+    opacity: .5;
+}
+
+.hover-play i {
+    font-size: 60px;
+}
+.circle {
+    border-radius: 50%;
 }
 
 h1, h2, h3, p {
@@ -143,7 +183,83 @@ h3, section p {
 footer {
     grid-area: footer;
     background-color: #282828;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
-} 
 
+    display: grid;
+    grid-template-columns: 13rem 1fr 14rem;
+}
+
+.footer__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__left img {
+    width: 3rem;
+}
+
+
+.footer__mid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    vertical-align: center;
+}
+.icons i {
+    font-size: 15px;
+    margin: 10px 15px 0px 15px;
+}
+
+#large {
+    font-size: 35px;
+}
+
+
+.icons, 
+.play {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* input {
+    background-color: lightgray;
+} */
+
+
+.footer__right {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+/* #volume {
+    width: 500px;
+} */
+
+#play {
+    width: 60%;
+}
+
+/* RESPONSIVENESS  */
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template:
+        "left-menu header" 3.5rem
+        "left-menu main" 1fr
+        "footer footer" 5rem /
+        4rem 1fr; 
+    }
+    
+    .left-menu__large {
+        display: none;
+    }
+    .left-menu__small {
+        visibility: visible;
+    }
+}
