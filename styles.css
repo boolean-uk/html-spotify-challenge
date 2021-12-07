@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spotify {
+    height: 100vh;
+    display: grid;
+    grid-template: "nav header header" 80px "nav main main" 1fr "footer footer footer" 80px / 250px 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: pink;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 80px 200px 1fr 30px 30px;
+    grid-area: nav;
+    background-color: grey;
+    gap: 5px;
+}
+
+nav .spoty,
+nav .icon,
+nav .playlist,
+nav .instalia,
+nav .john {
+    border: 1px dashed black;
+}
+
+nav .spoty {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding: 10px;
+}
+
+.spoty .logo,
+.spoty .big-spoty {
+    border: 1px dashed black;
+}
+
+nav .icon {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    padding: 5px;
+}
+
+.icon .home,
+.icon .cerca,
+.icon .latua {
+    border: 1px dashed black;
+}
+
+.icon .home {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.home .logo-1,
+.home .home-1 {
+    border: 1px dashed black;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: skyblue;
+}
