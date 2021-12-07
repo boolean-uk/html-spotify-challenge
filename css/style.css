@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+/* MAIN GRID TEMPLATES */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template:
+    "nav     header  header" 80px
+    "nav     body    body   " 1fr
+    "footer  footer  footer  " 100px/
+    200px     1fr     1fr;
+}
+header {
+  display: grid;
+  grid-area: header;
+  background-color: rgb(8, 11, 18);
+  text-align: center;
+  justify-items: right;
+  padding: 15px;
+}
+nav {
+  display: grid;
+  grid-area: nav;
+  background-color: black;
+}
+main {
+  display: grid;
+  grid-area: body;
+  background-color: rgb(20, 25, 34);
+}
+footer {
+  display: grid;
+  grid-area: footer;
+  background-color: rgb(40, 40, 40);
+}
+
+/* HEADER SECTION */
+header h2 {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 28px;
+    font-size: 0.8rem;
+    padding-top: 12px;
+}
+
+/* LEFT NAV SECTION */
+.nav-bar {
+    display: grid;
+    grid-template: 
+    "main-nav" 200px
+    "playlist" 100px
+    "playlist-scroll" 500px
+    "bottom-profile"50px/
+    250px ;
+}
+.nav-bar__main {
+    display: grid;
+    grid-area: main-nav;
+    padding: 0px 15px;
+    align-items: center;
+    grid-template: 
+    "icon  text "80px
+    "icon   text"  30px
+    "icon   text" 30px
+    "icon   text" 30px/
+    35px  100px;
+    
+}
+.nav-bar__playlist {
+    display: grid;
+    grid-area: playlist;
+}
+.nav-bar__scroll {
+    display: grid;
+    grid-area:playlist-scroll;
+}
+.nav-bar__profile {
+    display: grid;
+    grid-area: playlist-scroll;
+
+}
+.nav-bar__profile {
+    display: grid;
+    grid-area: bottom-profile;
+}
+h1 {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* MAIN SECTION GRID */
+section {
+  display: grid;
+  grid-template:
+    "nav" 50px
+    "recent" 300px
+    "john" 300px
+    "popular" 300px;
+}
+.section__nav {
+  display: grid;
+  grid-area: nav;
+  align-items: center;
+  text-align: center;
+}
+.section__nav ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+
+.section__recent {
+  display: grid;
+  grid-area: recent;
+  display: ;
+}
+.section__john {
+  display: grid;
+  grid-area: john;
+}
+.section__popular {
+  display: grid;
+  grid-area: popular;
+}
