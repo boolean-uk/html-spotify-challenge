@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fc9cfd4ad3.js" crossorigin="anonymous"></script>
     <title>Spotify</title>
 </head>
 
@@ -55,7 +56,7 @@
         </div>
         <div class="avatar-and-download">
 
-            <a href="#"><img src="/assets/img/download.svg" alt="download icon">
+            <a class="install-app" href="#"><img src="/assets/img/download.svg" alt="download icon">
                 <h2>Install App</h2>
             </a>
 
@@ -89,11 +90,13 @@
                                 <h3>Heavy Metal</h3>
                                 <p class="subtitle">Subtitle</p>
                             </a></li>
-                        <li><a href="#"><img class="albums" src="/assets/img/stranger.jpeg" alt="stranger things movie album">
+                        <li><a href="#"><img class="albums" src="/assets/img/stranger.jpeg"
+                                    alt="stranger things movie album">
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <p class="subtitle">Kyle Dixon & Michael Stein</p>
                             </a></li>
-                        <li><a href="#"><img class="albums" src="/assets/img/aquietplace.jpeg" alt="a quiet place movie album">
+                        <li><a href="#"><img class="albums" src="/assets/img/aquietplace.jpeg"
+                                    alt="a quiet place movie album">
                                 <h3>A Quiet Place</h3>
                                 <p class="subtitle">Subtitle</p>
                             </a></li>
@@ -101,7 +104,8 @@
                                 <h3>Split</h3>
                                 <p class="subtitle">Subtitle</p>
                             </a></li>
-                        <li><a href="#"><img class="albums" src="/assets/img/cure.jpeg" alt="cure of wellness movie album">
+                        <li><a href="#"><img class="albums" src="/assets/img/cure.jpeg"
+                                    alt="cure of wellness movie album">
                                 <h3>A Cure for Wellness</h3>
                                 <p class="subtitle">Subtitle</p>
                             </a></li>
@@ -118,11 +122,12 @@
                 <ul>
                     <li><a href="#"><img class="albums" src="/assets/img/radar.jpeg" alt="radar album">
                             <h3>Release Radar</h3>
-            
+
                         </a></li>
-                    <li><a href="#"><img class="albums" src="/assets/img/mixdaily.jpeg" alt="stranger things movie album">
+                    <li><a href="#"><img class="albums" src="/assets/img/mixdaily.jpeg"
+                                alt="stranger things movie album">
                             <h3>Daily Mix 1</h3>
-                            
+
                         </a></li>
                 </ul>
             </div>
@@ -132,11 +137,11 @@
                 <ul>
                     <li><a href="#"><img class="albums" src="/assets/img/youg.jpeg" alt="Lana Del Ray album">
                             <h3>Lana Del Ray</h3>
-            
+
                         </a></li>
                     <li><a href="#"><img class="albums" src="/assets/img/einaudi.jpeg" alt="einaudi album">
                             <h3>Ludovico Einaudi</h3>
-                            
+
                         </a></li>
                 </ul>
             </div>
@@ -145,7 +150,39 @@
 
 
     </main>
-    <footer class="play-bar">Play Bar</footer>
+    <footer class="play-bar">
+        <div class="playbar-left">
+            <img id="sinister-small" src="/assets/img/sinister.jpeg" alt="sinister movie album">
+            <div class="now-playing-text">
+                <h4>Sinister</h4>
+                <p>Brano nome</p>
+
+            </div>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+        </div>
+        <nav class="playbar-middle">
+            <div class="playbar-middle-top">
+                <a href="#"><i class="fas fa-random"></i></a>
+                <a href="#"><i class="fas fa-step-backward"></i></a>
+                <a href="#"><i class="far fa-play-circle"></i></a>
+                <a href="#"><i class="fas fa-step-forward"></i></a>
+                <a href="#"><i class="fas fa-redo"></i></a>
+            </div>
+            <div class="playbar-middle-bottom">
+                <div class="playback-timer-elapsed">0:25</div>
+                <div id="playback-bar"></div>
+                <div class="playback-timer-total">4:35</div>
+            </div>
+        </nav>
+        <div class="playbar-right">
+            <a href="#"><i class="fas fa-list-ul"></i></a>
+            <a href="#"><i class="fas fa-desktop"></i></a>
+            <a href="#"><i class="fas fa-volume-up"></i></a>
+            <div id="playback-bar-two"></div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
