@@ -1,0 +1,10 @@
+.main #main-nav-bar {
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+
