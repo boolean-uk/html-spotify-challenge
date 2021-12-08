@@ -96,7 +96,7 @@ header h2 {
     "playlist" 5rem
     "playlist-scroll" 15rem
     "bottom-profile" 8rem /
-    auto;
+    11rem;
   font-size: 0.7rem;
 }
 .nav-bar__main {
@@ -211,7 +211,6 @@ main section {
   grid-area: nav;
   align-items: center;
   text-align: center;
-  
 }
 .main__nav ul li {
   display: inline;
