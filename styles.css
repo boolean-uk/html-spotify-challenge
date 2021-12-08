@@ -1,318 +1,405 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.spotify {
-    height: 100vh;
-    color: white;
-    display: grid;
-    grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 200px 1fr;
-}
-
-@media screen and (max-width: 800px) {
-    .spotify {
-        display: grid;
-        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 1fr;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
     }
-}
-
-@media screen and (max-width: 900px) {
+    
+    .spotify {
+        height: 100vh;
+        color: white;
+        display: grid;
+        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 200px 1fr;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .spotify {
+            display: grid;
+            grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 1fr;
+        }
+        .playlist p,
+        .playlist .instalia,
+        .playlist .john,
+        .crea .sub-1,
+        .crea .sub-2 {
+            display: none;
+        }
+    }
+    /* @media screen and (max-width: 900px) {
     .spotify {
         display: grid;
         grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 500px;
     }
-}
-
-header {
-    grid-area: header;
-    background-color: #080b12;
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    padding: 10px;
-}
-
-header .upgrade {
-    display: grid;
-    place-items: center;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin: 15px;
-}
-
-nav {
-    display: grid;
-    grid-template-rows: 60px 150px 1fr 30px 30px;
-    grid-area: nav;
-    background-color: black;
-    gap: 5px;
-    padding: 10px;
-    font-size: smaller;
-    color: grey;
-}
-
-nav .spoty,
-nav .icon,
-nav .playlist,
-nav .instalia,
-nav .john {
-    /* border: 1px dashed black; */
-}
-
-nav .spoty {
-    display: grid;
-    grid-template-columns: 5px 1fr 40px;
-    padding: 10px;
-    gap: 3px;
-}
-
-.spoty .logo,
-.spoty .big-spoty {
-    width: 100%;
-    height: 100%;
-    /* border: 1px dashed black; */
-}
-
-nav .icon {
-    display: grid;
-    grid-template-rows: 50px 50px 50px;
-    padding: 5px;
-}
-
-.icon .home,
-.icon .cerca,
-.icon .latua {
-    /* border: 1px dashed black; */
-}
-
-.icon .home {
-    display: grid;
-    grid-template-columns: 30px 100px;
-    gap: 5px;
-    padding: 5px;
-}
-
-.home .logo-1,
-.home .home-1 {
-    /* border: 1px dashed black; */
-}
-
-.icon .cerca {
-    display: grid;
-    grid-template-columns: 30px 100px;
-    gap: 5px;
-    padding: 5px;
-}
-
-.cerca .logo-2,
-.cerca .cerca-2 {
-    /* border: 1px dashed black; */
-}
-
-.icon .latua {
-    display: grid;
-    grid-template-columns: 30px 100px;
-    gap: 5px;
-    padding: 5px;
-}
-
-.latua .logo-4,
-.latua .latua-4 {
-    /* border: 1px dashed black; */
-}
-
-.spotify .playlist {
-    display: grid;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
-    padding: 5px;
-}
-
-.playlist .crea,
-.playlist p {
-    /* border: 1px dashed black; */
-}
-
-.playlist .crea {
-    display: grid;
-    grid-template-columns: 30px 100px;
-    padding: 3px;
-}
-
-.crea .sub-1,
-.crea .sub-2 {
-    /* border: 1px dashed black; */
-}
-
-.instalia {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    padding: 3px;
-    gap: 4px;
-}
-
-.instalia .logo-5,
-.instalia p {
-    /* border: 1px dashed black; */
-}
-
-.john {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    padding: 3px;
-    gap: 4px;
-}
-
-.john .logo-6,
-.john p {
-    border: 1px dashed black;
-}
-
-main {
-    grid-area: main;
-    background-color: #141922;
-    display: grid;
-    grid-template-rows: 30px 50px 1fr 70px 1fr 70px 1fr;
-    padding: 10px;
-}
-
-main .top-menu,
-main .recently-played,
-main .boxes,
-main .john-doe,
-main .boxes-1,
-main .artistic,
-main .round-boxes {
-    /* border: 1px dashed black; */
-}
-
-main .top-menu {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    align-items: center;
-    place-items: center;
-}
-
-.top-menu p {
-    display: inline;
-    margin: 10px;
-    font-size: smaller;
-    color: grey;
-}
-
-.recently-played {
-    font-size: 30px;
-    padding: 5px;
-    font-weight: 600;
-}
-
-.creative,
-.artistic-1 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-main .boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 10px;
-    grid-gap: 10px;
-}
-
-.boxes .card {
-    /* border: 1px dashed black; */
-    display: grid;
-    grid-template-rows: 1fr 40px 40px;
-}
-
-.card .image,
-.card .first-title,
-.card .second-title {
-    /* border: 1px dashed black; */
-}
-
-.john-doe {
-    padding: 5px;
-}
-
-main .boxes-1 {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    padding: 10px;
-    gap: 10px;
-}
-
-.boxes-1 .card-1 {
-    /* border: 1px dashed black; */
-    display: grid;
-    grid-template-rows: 1fr 80px;
-}
-
-.card-1 .image-1,
-.card-1 .first-title-1 {
-    /* border: 1px dashed black; */
-}
-
-.artistic {
-    padding: 10px;
-}
-
-main .round-boxes {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    padding: 10px;
-    gap: 10px;
-}
-
-.round-boxes .image-2,
-.round-boxes .image-3 {
-    /* border: 1px dashed black; */
-}
-
-.image img,
-.image-1 img {
-    width: 100%;
-    height: 100%;
-}
-
-.image-2 img,
-.image-3 img {
-    width: 100%;
-    height: 100%;
-    clip-path: circle();
-}
-
-.first-title,
-.second-title,
-.first-title-1 {
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-
-.home-1,
-.cerca-2,
-.latua-4 {
-    display: grid;
-    align-items: center;
-}
-
-.second-title {
-    font-size: smaller;
-    color: grey;
-}
-
-.sub-2 {
-    font-size: larger;
-}
-
-span {
-    font-weight: bolder;
-    color: white;
-}
-
-footer {
-    grid-area: footer;
-    background-color: #141922;
-}
+} */
+    
+    header {
+        grid-area: header;
+        background-color: #080b12;
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        padding: 10px;
+    }
+    
+    header .upgrade {
+        display: grid;
+        place-items: center;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-rows: 60px 150px 1fr 30px 30px;
+        grid-area: nav;
+        background-color: black;
+        gap: 5px;
+        padding: 10px;
+        font-size: smaller;
+        color: grey;
+    }
+    
+    nav .spoty,
+    nav .icon,
+    nav .playlist,
+    nav .instalia,
+    nav .john {
+        /* border: 1px dashed black; */
+    }
+    
+    nav .spoty {
+        display: grid;
+        grid-template-columns: 5px 1fr 40px;
+        padding: 10px;
+        gap: 3px;
+    }
+    
+    .spoty .logo,
+    .spoty .big-spoty {
+        width: 100%;
+        height: 100%;
+        /* border: 1px dashed black; */
+    }
+    
+    nav .icon {
+        display: grid;
+        grid-template-rows: 50px 50px 50px;
+        padding: 5px;
+    }
+    
+    .icon .home,
+    .icon .cerca,
+    .icon .latua {
+        /* border: 1px dashed black; */
+    }
+    
+    .icon .home {
+        display: grid;
+        grid-template-columns: 30px 100px;
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .home .logo-1,
+    .home .home-1 {
+        /* border: 1px dashed black; */
+    }
+    
+    .icon .cerca {
+        display: grid;
+        grid-template-columns: 30px 100px;
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .cerca .logo-2,
+    .cerca .cerca-2 {
+        /* border: 1px dashed black; */
+    }
+    
+    .icon .latua {
+        display: grid;
+        grid-template-columns: 30px 100px;
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .latua .logo-4,
+    .latua .latua-4 {
+        /* border: 1px dashed black; */
+    }
+    
+    .spotify .playlist {
+        display: grid;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+        padding: 5px;
+    }
+    
+    .playlist .crea,
+    .playlist p {
+        /* border: 1px dashed black; */
+    }
+    
+    .playlist .crea {
+        display: grid;
+        grid-template-columns: 30px 100px;
+        padding: 3px;
+    }
+    
+    .crea .sub-1,
+    .crea .sub-2 {
+        /* border: 1px dashed black; */
+    }
+    
+    .instalia {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        padding: 3px;
+        gap: 4px;
+    }
+    
+    .instalia .logo-5,
+    .instalia p {
+        /* border: 1px dashed black; */
+    }
+    
+    .john {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        padding: 3px;
+        gap: 4px;
+    }
+    
+    .john .logo-6,
+    .john p {
+        border: 1px dashed black;
+    }
+    
+    main {
+        grid-area: main;
+        background-color: #141922;
+        display: grid;
+        grid-template-rows: 30px 50px 1fr 70px 1fr 70px 1fr;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+    
+    main .top-menu,
+    main .recently-played,
+    main .boxes,
+    main .john-doe,
+    main .boxes-1,
+    main .artistic,
+    main .round-boxes {
+        /* border: 1px dashed black; */
+    }
+    
+    main .top-menu {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        align-items: center;
+        place-items: center;
+    }
+    
+    .top-menu p {
+        display: inline;
+        margin: 10px;
+        font-size: smaller;
+        color: grey;
+    }
+    
+    .recently-played {
+        font-size: 30px;
+        padding: 5px;
+        font-weight: 600;
+    }
+    
+    .creative,
+    .artistic-1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    main .boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        padding: 10px;
+        grid-gap: 10px;
+    }
+    
+    .boxes .card {
+        /* border: 1px dashed black; */
+        display: grid;
+        grid-template-rows: 1fr 40px 40px;
+    }
+    
+    .card .image,
+    .card .first-title,
+    .card .second-title {
+        /* border: 1px dashed black; */
+    }
+    
+    .john-doe {
+        padding: 5px;
+    }
+    
+    main .boxes-1 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .boxes-1 .card-1 {
+        /* border: 1px dashed black; */
+        display: grid;
+        grid-template-rows: 1fr 80px;
+    }
+    
+    .card-1 .image-1,
+    .card-1 .first-title-1 {
+        /* border: 1px dashed black; */
+    }
+    
+    .artistic {
+        padding: 10px;
+    }
+    
+    main .round-boxes {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .round-boxes .image-2,
+    .round-boxes .image-3 {
+        /* border: 1px dashed black; */
+    }
+    
+    .image img,
+    .image-1 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image-2 img,
+    .image-3 img {
+        width: 100%;
+        height: 100%;
+        clip-path: circle();
+    }
+    
+    .first-title,
+    .second-title,
+    .first-title-1 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .home-1,
+    .cerca-2,
+    .latua-4 {
+        display: grid;
+        align-items: center;
+    }
+    
+    .second-title {
+        font-size: smaller;
+        color: grey;
+    }
+    
+    .sub-2 {
+        font-size: larger;
+    }
+    
+    span {
+        font-weight: bolder;
+        color: white;
+    }
+    
+    footer {
+        grid-area: footer;
+        background-color: #282828;
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+    }
+    
+    footer .initial,
+    footer .mid,
+    footer .last {
+        /* border: 1px solid black; */
+    }
+    
+    footer .initial {
+        display: grid;
+        grid-template-columns: 50px 1fr 25px 25px;
+        padding: 10px;
+    }
+    
+    .initial .poster,
+    .initial .poster-name,
+    .initial .love-symbol,
+    .initial .folder-symbol {
+        /* border: 1px dashed black; */
+        display: grid;
+        place-items: center;
+    }
+    
+    .initial p {
+        font-size: 9px;
+    }
+    
+    footer .mid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 10px;
+    }
+    
+    .mid .mid-1,
+    .mid .mid-2 {
+        /* border: 1px solid black; */
+    }
+    
+    .mid .mid-1 {
+        display: grid;
+        grid-template-columns: 25px 25px 25px 25px 25px;
+        /* justify-items: center; */
+    }
+    
+    .mid-1 .shuffle,
+    .mid-1 .backforward,
+    .mid-1 .plays-icon,
+    .mid-1 .forwardicon,
+    .mid-1 .refresh-icon {
+        /* border: 1px dashed black; */
+        padding-left: 30rem;
+    }
+    
+    .mid-2 {
+        padding-left: 23rem;
+    }
+    
+    .mid .mid-2 {
+        display: grid;
+        grid-template-columns: 35px 300px 35px;
+    }
+    
+    .mid-2 .timing-1,
+    .mid-2 .listline,
+    .mid-2 .timing-2 {
+        /* border: 1px dashed black; */
+    }
+    
+    footer .last {
+        display: grid;
+        grid-template-columns: 25px 25px 25px 1fr;
+        padding: 10px;
+        place-items: center;
+    }
+    
+    .timing-1,
+    .timing-2 {
+        font-size: smaller;
+    }
