@@ -211,6 +211,7 @@ main section {
   grid-area: nav;
   align-items: center;
   text-align: center;
+  
 }
 .main__nav ul li {
   display: inline;
@@ -333,7 +334,7 @@ footer section {
       "icon  " 2rem/
       3rem;
   }
-  a,
+  .nav-bar__main a,
   h1,
   .nav-bar__playlist,
   .nav-bar__scroll,
