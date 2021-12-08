@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify</title>
+    <title>Spotify New</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -19,9 +19,7 @@
   </head>
   <body>
     <div class="wrapper">
-        <!-- nav sidebar -->
-        <div class="sidebar">
-          <nav class="sidebar__nav">
+        <nav class="sidebar sidebar__nav">
             <section class="nav__top">
               <!-- logo -->
               <div class="nav__logo">
@@ -66,7 +64,9 @@
                 <a  href="#" class="nav__playlist-add"
                   > <i class="fas fa-plus"></i> <span class="playlist__text">Crea Playlist</span></a
                 >
-                <ul class="list">
+                <ul class="list scrollY">
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
+                  <li class="list__item playlist"><a href="#">Name Playlist</a></li>
                   <li class="list__item playlist"><a href="#">Name Playlist</a></li>
                   <li class="list__item playlist"><a href="#">Name Playlist</a></li>
                   <li class="list__item playlist"><a href="#">Name Playlist</a></li>
@@ -97,7 +97,6 @@
               </div>
             </section>
           </nav>
-        </div>
         <!-- cta banner -->
         <section class="banner">
           <div class="box">
@@ -120,170 +119,196 @@
             </ul>
           </nav>
         </header>
-        <!-- recently played start of main tag -->
-        <main>
-          <section class="section">
-            <h1 class="title">Recently Played</h1>
-            </section>
+      <main class="main">
+        <section class="section" aria-label="recently played">
+            <h2 class="title">Recently Played</h2>
           <!-- start of recently played titles -->
               <section class="covers row">
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/metal_lifting.jpg" alt="heavy metal">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Heavy Metal</h2>
-                    <p>Subtitle</p>
-                </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/stranger.jpeg" alt="stranger things volume one a netflix original series soundtrak">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h2>
-                    <p>Kyle Dixon & Michael Stein</p>
-                </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/aquietplace.jpeg" alt="a quiet place">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>A quiet place</h2>
-                    <p>Subtitle</p>
-                </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/split.jpeg" alt="split">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Split</h2>
-                    <p>Subtitle</p>
-                </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/cure.jpeg" alt="a cure for wellness">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>A cure for wellness</h2>
-                    <p>Subtitle</p>
-                </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/sinister.jpeg" alt="sinister">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Sinister</h2>
-                    <p>Subtitle</p>
-                </section>
-                </div>
-            </section>
-            <!-- created for John Doe -->
-            <section class="section">
-              <h1 class="title">Created For John Doe</h1>
-              <p>Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
-            </section>
-            <section class="covers row">
-              <div class="covers box">
-                <img class="covers__img" src="./assets/img/radar.jpeg" alt="radar">
-                <div class="covers__overlay">
-                <i class="far fa-play-circle"></i>
-                </div>
-                <section class="covers content">
-                  <h2>Radar</h2>
-                  <p>Subtitle</p> 
-              </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img" src="./assets/img/mixdaily.jpeg" alt="daily mix one">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Daily Mix 1</h2>
-                    <p>Subtitle</p> 
-                </section>
-                  </div>
-            </section>
-            <section class="section">
-              <h1 class="title">Artisti pi&#249 popolari</h1>
-              <p>Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
-            </section>
-            <section class="covers row">
-              <div class="covers box">
-                <img class="covers__img covers__img--cirlce" src="./assets/img/youg.jpeg" alt="young and beautiful">
-                <div class="covers__overlay">
-                <i class="far fa-play-circle"></i>
-                </div>
-                <section class="covers content">
-                  <h2>Lana del Ray</h2>
-              </section>
-                </div>
-                <div class="covers box">
-                  <img class="covers__img covers__img--cirlce" src="./assets/img/einaudi.jpeg" alt="ludovico einaudi">
-                  <div class="covers__overlay">
-                  <i class="far fa-play-circle"></i>
-                  </div>
-                  <section class="covers content">
-                    <h2>Ludovico Einaudi</h2>
-                </section>
-                  </div>
-            </section>
-    </main>
-        <!-- end of popular artists - end of main tag -->
-        <footer class="mediabar">
-          <div class="media" id="one">
-            <div><img id="img__media" src="./assets/img/sinister.jpeg" alt="sinister" /></div>
-            <div>
-              <h2>Sinister</h2>
-              <p>Song Name</p>
-            </div>
-            <div class="media__icons">
-              <a href="#"><i class="far fa-heart"></i></a>
-              <a href="#"><i class="far fa-folder"></i></a>
-            </div>
-            <div id="two" class="controller__icons">
-              <ul class="list horizontal">
-                  <li class="list__item"><i class="fas fa-random"></i></li>
-                  <li class="list__item"><i class="fas fa-step-backward"></i></li>
-                  <li class="list__item"><i class="far fa-play-circle"></i></li>
-                  <li class="list__item"><i class="fas fa-step-forward"></i></li>
-                  <li class="list__item"><i class="fas fa-redo-alt"></i></li>
-              </ul>
-              <div class="progress container">
-                <span id=>0:25</span>
-                <div class="progress bar">
-                    <div class="progress"></div>
-                </div>
-                <span>4:35</span>
-            </div>  
-            </div>
-            <div id="three" class="controller">
-              <div class="settings">
-                <ul class="list horizontal">
-                    <li class="list__item"><i class="fas fa-list-ul"></i></li>
-                    <li class="list__item"><i class="fas fa-desktop"></i></li>
-                    <li class="list__item"><i class="fas fa-volume-up"></i></li>
+                <ul class="list covers horizontal">
+                  <li class="list__item covers ">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/metal_lifting.jpg" alt="heavy metal" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div class="covers text">
+                      <p>Heavy Metal</p>
+                      <p>Subtitle</p>
+                    </div>
+                  </li>
+                  <li class="list__item covers">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/stranger.jpeg" alt="stranger things" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div id="stranger" class="covers text">
+                      <p >Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</p>
+                      <p>Kyle Dixon & Michael Stein</p>                    
+                    </div>
+                  </li>
+                  <li class="list__item covers">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/aquietplace.jpeg" alt="a quiet place" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div class="covers text">
+                      <p>A Quiet Place</p>
+                      <p>Subtitle</p>
+                    </div>
+                  </li>
+                  <li class="list__item covers">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/split.jpeg" alt="split" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div class="covers text">
+                      <p>Split</p>
+                      <p>Subtitle</p>
+                    </div>
+                  </li>
+                  <li class="list__item covers">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/cure.jpeg" alt="a cure for wellness" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div class="covers text">
+                      <p>A cure for wellness</p>
+                      <p>Subtitle</p>
+                    </div>
+                  </li>
+                  <li class="list__item covers">
+                    <div class="container covers">
+                      <img class="covers__img" src="./assets/img/sinister.jpeg" alt="sinister" />
+                      <div class="covers layover">
+                        <i class="far fa-play-circle"></i>
+                      </div>
+                    </div>
+                    <div class="covers text">
+                      <p>Sinister</p>
+                      <p>Subtitle</p>
+                    </div>
+                  </li>
                 </ul>
-            </div>
-            <div class="progress container">
-              <div class="progress bar">
-                  <div class="progress"></div>
-              </div>
+              </section>
+            </section>
+            <!-- Created for John Doe -->
+            <section class="section" aria-label="recently played">
+                <h2 class="title">Created for John Doe</h2>
+                <p class="message">Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
+              <!-- start of created for John Doe -->
+                  <section class="covers row">
+                    <ul class="list covers horizontal">
+                      <li class="list__item covers">
+                        <div class="container covers">
+                          <img class="covers__img" src="./assets/img/radar.jpeg" alt="radar" />
+                          <div class="covers layover">
+                            <i class="far fa-play-circle"></i>
+                          </div>
+                        </div>
+                        <div class="covers text">
+                          <p>Radar</p>
+                          <p>Subtitle</p>
+                        </div>
+                      </li>
+                      <li class="list__item covers">
+                        <div class="container covers">
+                          <img class="covers__img" src="./assets/img/mixdaily.jpeg" alt="daily mix volume one" />
+                          <div class="covers layover">
+                            <i class="far fa-play-circle"></i>
+                          </div>
+                        </div>
+                        <div class="covers text">
+                          <p>Daily Mix 1</p>
+                          <p>Subtitle</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+                            <!-- Popular Artists -->
+            <section class="section" aria-label="recently played">
+                <h2 class="title">Artisti pi&#249 popolari</h2>
+                <p class="message">Pi&#249 ascolti, pi&#249 accurati saranno i suggerimenti.</p>
+              <!-- start of Popular Artists -->
+                  <section class="covers row">
+                    <ul class="list covers horizontal">
+                      <li class="list__item covers">
+                        <div class="container covers">
+                          <img class="covers__img" src="./assets/img/youg.jpeg" alt="youngand beautiful" />
+                          <div class="covers layover">
+                            <i class="far fa-play-circle"></i>
+                          </div>
+                        </div>
+                        <div class="covers text">
+                          <p>Lana del Ray</p>
+                        </div>
+                      </li>
+                      <li class="list__item covers">
+                        <div class="container covers">
+                          <img class="covers__img" src="./assets/img/einaudi.jpeg" alt="ludovico einaudi" />
+                          <div class="covers layover">
+                            <i class="far fa-play-circle"></i>
+                          </div>
+                        </div>
+                        <div class="covers text">
+                          <p>Ludovico Einaudi</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </section>              
+            </main>
+            <footer class="media">
+        <div class="media__playing">
+          <div class="imagebox media__img">
+            <img
+              id="media__img"
+              src="./assets/img/sinister.jpeg"
+              alt="sinister"
+            />
+          </div>
+          <ul class="list">
+            <li class="list__item list__item--mediaTitle">Sinister</li>
+            <li class="list__item list__item--mediaTitleSmall">Song Name</li>
+          </ul>
+          <div class="media__icons">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
           </div>
         </div>
-         </div>
-        </footer>
-    </div>                                            
+        <div class="media__controller">
+          <ul id="mediaIconsList" class="list horizontal">
+            <li class="list__item"><i class="fas fa-random"></i></li>
+            <li class="list__item"><i class="fas fa-step-backward"></i></li>
+            <li class="list__item"><i class="far fa-play-circle"></i></li>
+            <li class="list__item"><i class="fas fa-step-forward"></i></li>
+            <li class="list__item"><i class="fas fa-redo-alt"></i></li>
+          </ul>
+          <ul id="timeBar" class="list horizontal">
+              <li class="list__item"></li>
+          </ul>
+          <li><span id="timeElapsed">0:25</span><input type="range" min="1" max="1000" value="1" class="slider time" id="myRange"><span id="timeTotal">4:25</span></li>
+        </div>
+        <div class="media__settings">
+            <ul id="settingsIconsList" class="list horizontal">
+                <li class="list__item"><i class="fas fa-list-ul"></i></li>
+                <li class="list__item"><i class="fas fa-desktop"></i>  </li>
+                <li class="list__item"><i class="fas fa-volume-up"></i></li>
+                <li><input type="range" min="1" max="100" value="50" class="slider volume" id="myRange"></li>
+              </ul>
+            </div>
+         </footer>
+        </div>
+    </div>
   </body>
 </html>
+  
