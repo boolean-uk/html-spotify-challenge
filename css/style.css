@@ -109,7 +109,7 @@ ul li {
   list-style: none;
   padding: 0.6rem;
   color: gray;
-  border-left: black 1px solid;
+  border-left: black 2px solid;
 }
 
 ul li:hover,
@@ -118,7 +118,7 @@ ul li:hover i {
 }
 
 ul li:hover {
-  border-left: lime 1px solid;
+  border-left: lime 2px solid;
 }
 
 nav p {
@@ -165,16 +165,17 @@ ul li {
 main {
   grid-area: main;
   background-color: #141922;
-  padding: 1.6rem;
+  padding: 1.7rem;
   padding-bottom: 3.2rem;
 }
 
-main section {
-  margin-top: 2rem;
+.main__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main__header p {
-  display: inline-block;
   text-transform: uppercase;
   padding: 0.7rem 1rem;
   color: gray;
@@ -182,14 +183,22 @@ main section {
   border-bottom: #141922 solid 2px;
 }
 
-.main__header p:hover {
+.header-container {
+  position: relative;
+}
+
+.small-underline {
+  position: absolute;
+  left:25%;
+  width:50%;
+}
+
+.main__header .header-container:hover .small-underline {
   border-bottom: lime solid 2px;
 }
 
-.main__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+main section {
+  margin-top: 2rem;
 }
 
 .album__grid {
