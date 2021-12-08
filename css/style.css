@@ -31,6 +31,7 @@ main {
     background-color: rgb(26, 26, 48);
     display: flex;
     flex-direction: column;
+    gap:.3rem;
     grid-column: 2;
     grid-row: 2;
 }
@@ -47,7 +48,7 @@ hr {
     padding-top: 2rem;
     padding-left: 2rem;
     gap: 3rem;
-    width: 20rem;
+    width: 19rem;
     background-color: #000000;
     position: sticky;
     left:0;
@@ -105,9 +106,38 @@ footer {
 .card {
     display: grid;
     grid-template-rows:auto auto 1fr;
-    width: 13rem;
+    grid-template-columns: 1fr auto 1fr;
+    width: 11.75rem;
     gap: .75rem;
-    
+    padding: .65rem 1.7rem 0rem 0rem;
+
+    border-radius: 1rem;
+
+}
+
+.card__hvrbtn {
+    display: none;
+    position:absolute;
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+    background-color: #1DB954;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.card__hvrbtn img {
+position:absolute;
+margin-left: 1.7rem;
+margin-top: 1.6rem;
+}
+
+.card:hover {
+    background-color: rgb(40, 40, 95);
+}
+
+.card:hover > .card__hvrbtn {
+    display: block;
 }
 
 .menu__main {
@@ -124,7 +154,9 @@ footer {
 }
 
 .img__main {
-    width: 13rem;
+    width: 12rem;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .img__footer {
@@ -150,8 +182,12 @@ footer {
 .section {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 1rem;
+    column-gap: .75rem;
     row-gap: 3rem;
+}
+
+.heading__main {
+    margin-top:2rem;
 }
 
 .heading__main,
@@ -171,14 +207,17 @@ footer {
 .heading__option,
 .heading__description {
     text-align: center;
+    grid-column: 2;
 }
 
 .heading__option {
     font-size: 1.5rem;
+    grid-row: 2;
 }
 
 .heading__description {
     font-size: 1rem;
+    grid-row: 3;
 }
 
 .svg__footer {
@@ -237,6 +276,10 @@ footer {
     margin: .5rem 2rem 0rem 0rem;
     width: 10rem;
     height: .2rem;
+}
+
+.img--artist {
+    border-radius: 50%;
 }
 
 .logo--small {
