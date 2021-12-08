@@ -33,10 +33,10 @@
           </div>
           <!-- main menu -->
           <section class="nav__icons">
-            <ul class="list">
-              <li class="list__item active">
+            <ul id="nav__icon-list"  class="list">
+              <li  class="list__item active">
                 <a class="list__link nav" href="#">
-                  <img class="sidebar__img" src="./assets/img/home.svg" alt="home" /><span class="sidebar__text"
+                  <img  class="sidebar__img" src="./assets/img/home.svg" alt="home" /><span class="sidebar__text"
                     >Home</span
                   ></a
                 >
@@ -301,12 +301,13 @@
           <li><span id="timeElapsed">0:25</span><input type="range" min="1" max="1000" value="1" class="slider time" id="myRange"><span id="timeTotal">4:25</span></li>
         </div>
         <div class="media__settings">
-            <ul id="settingsIconsList" class="list horizontal">
-                <li class="list__item"><i class="fas fa-list-ul"></i></li>
-                <li class="list__item"><i class="fas fa-desktop"></i>  </li>
-                <li class="list__item"><i class="fas fa-volume-up"></i></li>
-                <li><input type="range" min="1" max="100" value="50" class="slider volume" id="myRange"></li>
-              </ul>
+          <div class="inline"><i class="fas fa-list-ul"></i></div>
+          <div  class="inline"><i class="fas fa-desktop"></i></div>
+          <div>
+            <span class="inline"><i class="fas fa-volume-up"></i></span>
+            <span  class="inline"><input id="settingsVolume" type="range" min="1" max="100" value="50" class="slider volume" id="myRange"></span>
+          </div>
+        </div>
             </div>
          </footer>
     </div>
