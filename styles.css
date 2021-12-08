@@ -20,9 +20,9 @@ body {
     grid-area: leftnav;
     background-color: rgb(0,0,0);
     display: grid;
-    height: 100vh;
+    height: 100%;
     width: 250px;
-    grid-template-rows: 85px 150px 530px 85px;
+    grid-template-rows: 85px 150px 535px 85px;
     position: fixed;
     left: 0;
 }
@@ -114,8 +114,12 @@ button {
     padding-left: 20px;
 }
 
+.installsection {
+    display: inline-flex;
+}
+
 .profilebut img,
-.installbut img {
+img.installbut {
     height: 30px;
     padding-right: 10px;
 }
@@ -182,7 +186,7 @@ h1 {
     display: flex;
     display: inline-grid;
     padding: 30px;
-    height:120vh;
+    height: 140vh;
     scroll-behavior: smooth;
     Overflow-y: hidden;
 }
@@ -382,8 +386,8 @@ label {
 /* HOVERING OVER COVER IMAGES */
 .image-div {
     position: relative;
-    float:left;
-    margin:5px;}
+    float: left;
+    margin: 5px;}
 
 .image-div:hover .hidden_img
   {
@@ -391,10 +395,10 @@ label {
   }
 
 .image-div .hidden_img {
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
-    display:none;
+    display: none;
     opacity: .4;
 }
 
@@ -410,7 +414,7 @@ label {
   }
 
 .image-divv .hidden_img {
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
     display:none;
@@ -418,6 +422,8 @@ label {
     opacity: .4;
 }
 
-
+a:hover {
+    color: hotpink;
+  }
 
 
