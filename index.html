@@ -15,7 +15,18 @@
   <body>
     <aside class="left-menu">
       <h1 class="spotify-icon">
-        <img src="/assets/img/logo.svg" alt="Spotify logo" width="130" />
+        <img
+          id="logo-small"
+          src="/assets/img/logo-small.svg"
+          alt="Spotify logo"
+          width="130"
+        />
+        <img
+          id="logo-large"
+          src="/assets/img/logo.svg"
+          alt="Spotify logo"
+          width="130"
+        />
       </h1>
       <nav class="nav-bar-left">
         <ol>
@@ -83,7 +94,11 @@
         </a>
 
         <div class="avatar">
-          <img src="/assets/img/profile.svg" alt="avatar icon" />
+          <img
+            id="avatar-icon"
+            src="/assets/img/profile.svg"
+            alt="avatar icon"
+          />
           <h2>John Doe</h2>
         </div>
       </div>
@@ -95,7 +110,7 @@
       <div class="middle-main">
         <nav class="nav-bar-top">
           <ol>
-            <li class ="selected">
+            <li class="selected">
               <a href="#"><h2 class="sub-heading-middle">Trending</h2></a>
             </li>
             <li>
@@ -105,7 +120,9 @@
               <a href="#"><h2 class="sub-heading-middle">Charts</h2></a>
             </li>
             <li>
-              <a href="#"><h2 class="sub-heading-middle">Genres and Moods</h2></a>
+              <a href="#"
+                ><h2 class="sub-heading-middle">Genres and Moods</h2></a
+              >
             </li>
             <li>
               <a href="#"><h2 class="sub-heading-middle">Brand New</h2></a>
@@ -126,6 +143,7 @@
                     src="/assets/img/metal_lifting.jpg"
                     alt="heavy metal album"
                   />
+                  <i class="fa-solid fa-circle-play"></i>
                   <h3>Heavy Metal</h3>
                   <p class="subtitle">Subtitle</p>
                 </a>
@@ -193,7 +211,9 @@
         </div>
         <div class="created-for">
           <h2>Created for John Doe</h2>
-          <p class="subheading">The more you listen, the more accurate the suggestions.</p>
+          <p class="subheading">
+            The more you listen, the more accurate the suggestions.
+          </p>
           <ul>
             <li>
               <a href="#"
@@ -219,7 +239,9 @@
         </div>
         <div class="popular-artists">
           <h2>Most popular artists</h2>
-          <p class="subheading">The more you listen, the more accurate the suggestions.</p>
+          <p class="subheading">
+            The more you listen, the more accurate the suggestions.
+          </p>
           <ul>
             <li>
               <a href="#"
@@ -261,15 +283,23 @@
       </div>
       <nav class="playbar-middle">
         <div class="playbar-middle-top">
-          <a class="playbar-icons" href="#"><i class="fas fa-random"></i></a>
-          <a class="playbar-icons" href="#"><i class="fas fa-step-backward"></i></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-random"></i
+          ></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-step-backward"></i
+          ></a>
           <a id="play-icon" href="#"><i class="far fa-play-circle"></i></a>
-          <a class="playbar-icons" href="#"><i class="fas fa-step-forward"></i></a>
-          <a class="playbar-icons" href="#"><i class="fas fa-redo"></i></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-step-forward"></i
+          ></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-redo"></i
+          ></a>
         </div>
         <div class="playbar-middle-bottom">
           <div class="playback-timer-elapsed"><p>0:25</p></div>
-          <div id="playback-bar"></div>
+          <progress id="playback-bar" max="100" value="20"></progress>
           <div class="playback-timer-total"><p>4:35</p></div>
         </div>
       </nav>
@@ -277,7 +307,7 @@
         <a class="playbar-icons" href="#"><i class="fas fa-list-ul"></i></a>
         <a class="playbar-icons" href="#"><i class="fas fa-desktop"></i></a>
         <a class="playbar-icons" href="#"><i class="fas fa-volume-up"></i></a>
-        <div id="playback-bar-two"></div>
+        <progress id="volume-bar" max="100" value="60"></progress>
       </div>
     </footer>
   </body>

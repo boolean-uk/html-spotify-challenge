@@ -7,22 +7,23 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 1fr 100px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 80px;
   line-height: 1.6;
   font-family: Gotham Medium, Helvetica, Arial, sans-serif;
 }
 
+
 h2 {
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /* MIDDLE */
@@ -30,7 +31,7 @@ p {
 .middle-main {
   background-color: #141922;
   display: grid;
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(4, auto);
 }
 
 .middle-top {
@@ -42,7 +43,9 @@ p {
 
 .middle-whole {
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 80px 1fr;
+  overflow-y: scroll;
+  
 }
 
 .upgrade-link {
@@ -88,14 +91,14 @@ p {
 .recently-played h2,
 .created-for h2,
 .popular-artists h2 {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .recently-played-albums ul,
 .created-for ul,
 .popular-artists ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 190px);
   gap: 15px;
   margin: 25px 0px 25px;
   object-fit: cover;
@@ -106,7 +109,7 @@ p {
 }
 
 .albums {
-  width: 200px;
+  width: 190px;
 }
 
 .middle-main h2,
@@ -129,11 +132,13 @@ p {
 .left-menu {
   background-color: rgba(0, 0, 0, 1);
   display: grid;
-  grid-template-rows: 100px 100px 100px 1fr 100px;
+  grid-template-rows: 100px 100px 100px 1fr 125px;
+  overflow-y: hidden;
 }
 
 .active {
-  border-left: 3px solid #ADFF2F;
+  border-left: 1px solid #ADFF2F;
+
 }
 
 .spotify-icon,
@@ -184,12 +189,12 @@ p {
 .now-playing-text h4,
 .subtitle,
 .subheading {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 16px;
 }
 
 .now-playing-text p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .nav-bar-left ol,
@@ -203,11 +208,8 @@ p {
 }
 
 .avatar-and-download {
-  position: sticky;
-  bottom: 11%;
-  background-color: rgba(0, 0, 0, 1);
-  padding-top: 15px;
-}
+  margin-bottom: 15px;
+} 
 
 .playlists li {
   padding: 0 5px;
@@ -215,6 +217,11 @@ p {
 
 .avatar {
   border-top: 1px solid #282828;
+}
+
+#avatar-icon {
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .avatar h2,
@@ -245,6 +252,7 @@ ol li a,
   margin-left: 8px;
 }
 
+
 .add-icon {
   fill: white;
 }
@@ -256,17 +264,21 @@ ol li a,
   grid-column: 1 / 4;
   position: fixed;
   width: 100%;
-  height: 100px;
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.playbar-left {
+.playbar-left,
+.playbar-middle-top,
+.playbar-middle-bottom,
+.playbar-right {
   display: flex;
   flex-direction: row;
+} 
+
+.playbar-left {
   align-items: center;
-  gap: 15px;
   margin-left: 15px;
 }
 .playbar-left h4 {
@@ -283,13 +295,6 @@ ol li a,
   grid-template-rows: 50px 50px;
 }
 
-.playbar-middle-top,
-.playbar-middle-bottom,
-.playbar-right {
-  display: flex;
-  flex-direction: row;
-}
-
 .playbar-middle-bottom,
 .playbar-middle-top {
   justify-content: center;
@@ -301,33 +306,83 @@ ol li a,
   align-items: center;
   margin-right: 15px;
 }
-.playbar-middle-bottom {
-  gap: 10px;
+.playbar-middle-bottom,
+.playbar-right,
+.playbar-left {
+  gap: 15px;
 }
 
 .playbar-middle-top {
   gap: 30px;
 }
 
-.playbar-right {
-  gap: 10px;
-}
 
-#playback-bar,
-#playback-bar-two {
-  background-color: white;
-  height: 2px;
+#volume-bar,
+#playback-bar {
+    background-color: #5A5A5A;
+    color: white;
+    height: 2px;
+    border-radius: 5px;
 }
-
+#volume-bar {
+  width: 30%;
+}
 #playback-bar {
   width: 80%;
 }
 
-#playback-bar-two {
-  width: 50%;
-}
-
 .playbar-icons {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
+.playbar-icons-middle {
+  font-size: 1rem;
+}
+
+#play-icon {
+  font-size: 1.8rem;
+}
+
+
+/* EXTENSION CRITERIA */
+
+#logo-small {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (min-width: 550px) {
+
+  #logo-small {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+  #logo-large,
+  .playlists,
+  .playlist-nav,
+  .nav-bar-left h2,
+  .avatar-and-download h2 {
+    display: none;
+  }
+  .left-menu {
+    grid-template-rows: 70px 1fr 125px;
+  }
+  body {
+    grid-template-columns: 65px 1fr;
+  }
+  .avatar {
+    border-top: none;
+  }
+}
+
+/* .albums:hover {
+  opacity: .2;
+}
+
+#play-hover {
+
+  position: absolute;
+   */
