@@ -113,7 +113,9 @@ footer {
 .menu__main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     gap: 2.5rem;
     color:darkgray;
     font-variant: small-caps;
@@ -235,4 +237,28 @@ footer {
     margin: .5rem 2rem 0rem 0rem;
     width: 10rem;
     height: .2rem;
+}
+
+.logo--small {
+    width: 2rem;
+}
+
+.nav--hidden {
+    display: none;
+}
+/*MEDIA SECTION*/
+@media screen and (max-width: 801px) {
+
+    .nav__left {
+        width: 4rem;
+    }
+
+    .nav--hidden {
+        display: flex;
+    }
+
+    .nav--large,
+    .nav--large li {
+        display: none;
+    }
 }
