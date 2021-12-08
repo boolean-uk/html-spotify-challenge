@@ -73,7 +73,8 @@ button {
   overflow-y:scroll;
 }
 
-.left-menu__large::-webkit-scrollbar {
+.left-menu__large::-webkit-scrollbar,
+.left-menu__small::-webkit-scrollbar {
   display: none;
 }
 
