@@ -69,7 +69,7 @@ button {
 }
 
 .left-menu__large {
-  grid-template-rows: 3.5rem auto 1fr 3rem;
+  grid-template-rows: 3.3rem auto 1fr 3rem;
   width: 13rem;
 }
 
@@ -146,6 +146,14 @@ nav p {
   color: gray;
 }
 
+.center {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.padding {
+  padding-bottom: 10px;
+}
 /* MAIN SECTION */
 
 main {
@@ -205,17 +213,18 @@ main section {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color:rgba(0,0,0,0.5);
+  color: white;
   display: grid;
   place-items: center;
   opacity: 0;
 }
 .hover-play:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .image-container i {
-  font-size: 60px;
+  font-size: 65px;
 }
 .circle {
   border-radius: 50%;
