@@ -38,6 +38,7 @@ body {
 .left-top ul li:hover,
 .left-middle ul li:hover {
     background-color:grey;
+    border-radius: 4px;
 }
 .icons span {
   display: grid;
@@ -55,11 +56,13 @@ body {
   flex-direction: row;
   text-decoration: none;
   font-size: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: flex-end;
   gap: 15px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
+
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -69,7 +72,7 @@ body {
 }
 .header {
   grid-area: header;
-  background-color:rgb(16, 16, 16);
+  background-color:rgb(8, 11, 18);
 }
 #main {
   grid-area: main;
@@ -79,7 +82,7 @@ body {
   gap: 1rem;
   overflow-y: scroll;
   color: white;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(20, 25, 34);
 }
 #main-nav {
     display: flex;
@@ -130,6 +133,15 @@ body {
     justify-content: center;
     margin-left: 8px;
     margin-top: 5px;
+}
+.albumcard img:hover {
+    opacity: 0.8 ;
+    text-emphasis-color: green;
+}
+
+.albumcard p {
+    font-size: 14px;
+    font-weight: lighter;
 }
 #playbar {
   grid-area: playbar;
