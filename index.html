@@ -5,134 +5,275 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="spotify.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Spotify Project</title>
   </head>
   <body>
-    <!-- ASIDE -->
-    <aside class="left-m">
-      <div class="logo-n-name">
-        <button class="btn-logo"></button>
-        <h1 class="logo-text">Spotify</h1>
-      </div>
-    </aside>
-    <!-- MAIN -->
-    <main class="body">
-      <header class="header-page">
-        <button class="header-btn-upgrade">EFFETUA LUGRADE</button>
-      </header>
+    <div class="container">
+      <!-- ASIDE -->
+      <aside class="left-m">
+        <div class="logo-n-name">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 167.5 167.5"
+            class="spotify-logo"
+          >
+            <path
+              fill="#ffffff"
+              d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"
+            />
+          </svg>
 
-      <nav>
-        <ul>
-          <li class="nav-bar">IN EVIDENZA</li>
-          <li class="nav-bar">IN EVIDENZA</li>
-          <li class="nav-bar">IN EVIDENZA</li>
-          <li class="nav-bar">IN EVIDENZA</li>
-          <li class="nav-bar">IN EVIDENZA</li>
-          <li class="nav-bar">IN EVIDENZA</li>
-        </ul>
-      </nav>
-
-      <div><h2 class="recenly-ply-title">Recently played</h2></div>
-      <section class="main-content">
-        <article class="album-article">
-          <img
-            src="assets/img/metal_lifting.jpg"
-            alt="pic"
-            class="album-cover-size"
-          />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <article class="album-article">
-          <img
-            src="assets/img/stranger.jpeg"
-            alt="pic"
-            class="album-cover-size"
-          />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <article class="album-article">
-          <img
-            src="assets/img/aquietplace.jpeg"
-            alt="Aquietplace AlbuM Cover"
-            class="album-cover-size"
-          />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <article class="album-article">
-          <img src="assets/img/split.jpeg" alt="pic" class="album-cover-size" />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <article class="album-article">
-          <img src="assets/img/cure.jpeg" alt="pic" class="album-cover-size" />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <article class="album-article">
-          <img
-            src="assets/img/sinister.jpeg"
-            alt="pic"
-            class="album-cover-size"
-          />
-          <p class="album-title">Heavy Metal</p>
-          <p class="v-sml-text">Subtile</p>
-        </article>
-        <div class="creato-row">
-          <h2 class="recenly-ply-title">Creato per John Doe</h2>
-          <p class="v-sml-texts">Lorem ipsum dolor sit amet</p>
-          <img src="1" alt="picture" />
-          <img src="2" alt="picture" />
-          <p class="album-title">Release Rader</p>
-          <p class="album-title">Daily Mix 1</p>
+          <h1 class="logo-text">Spotify</h1>
         </div>
-      </section>
-    </main>
+
+        <div>
+          <aside class="left-menu">
+            <!-- <div>logo</div> -->
+            <div class="left-menu-icons">
+              <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                  fill="#ffffff"
+                />
+              </svg>
+
+              <p class="left-m-text">Home</p>
+            </div>
+            <div class="left-menu-icons">
+              <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                  fill="#ffffff"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <p class="left-m-text">Search</p>
+            </div>
+            <div class="left-menu-icons">
+              <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                  fill="#ffffff"
+                />
+              </svg>
+              <p class="left-m-text">Library</p>
+            </div>
+
+            <!-- /////// -->
+            <div class="play-list-titl--icon">
+              <p class="play-list-titl">PLAYLIST</p>
+              <div class="icon-n-ply">
+                <button>+</button>
+                <p class="left-m-text">Favourite Playlist</p>
+              </div>
+              <ul class="list-playlist">
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+                <p class="list left-m-text">Name Playlis</p>
+              </ul>
+            </div>
+            <!-- /////////////////////////////////////////////////////////////// -->
+            <div class="instal-app">
+              <img
+                src="assets/img/download.svg"
+                alt="Picture"
+                class="sml-downl-icon"
+              />
+              <p class="left-m-text">Install App</p>
+            </div>
+            <p class="bdr">&nbsp;</p>
+            <div class="profile-section">
+              <svg viewbox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+                <title>User Icon</title>
+                <path
+                  d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                  fill="#ffffff"
+                  fill-rule="evenodd"
+                  class="profile-img"
+                />
+              </svg>
+              <p class="profile-text">John Doe</p>
+            </div>
+          </aside>
+        </div>
+      </aside>
+      <!-- MAIN -->
+
+      <main class="body">
+        <header class="header-page">
+          <button class="header-btn-upgrade">EFFETUA LUGRADE</button>
+        </header>
+        <!-- ////// -->
+        <nav>
+          <ul>
+            <li class="nav-bar">IN EVIDENZA</li>
+            <li class="nav-bar">PODCAST</li>
+            <li class="nav-bar">CLASSIFICHE</li>
+            <li class="nav-bar">GENERI E MOOD</li>
+            <li class="nav-bar">NUOVE USCITE</li>
+            <li class="nav-bar">SCOPRI</li>
+          </ul>
+        </nav>
+        <!-- /////////////////////////////////////////////////////////////////// -->
+        <div><h2 class="recenly-ply-title">Recently played</h2></div>
+        <section class="main-content">
+          <article class="album-article">
+            <img
+              src="assets/img/metal_lifting.jpg"
+              alt="pic"
+              class="album-cover-size"
+            />
+            <p class="album-title">Heavy Metal</p>
+            <p class="v-sml-text">Subtile</p>
+          </article>
+          <article class="album-article">
+            <img
+              src="assets/img/stranger.jpeg"
+              alt="pic"
+              class="album-cover-size"
+            />
+            <p class="album-title">Stranger Things, Vol. 1</p>
+            <p class="v-sml-text">Kyle Dixon & Michael Stein</p>
+          </article>
+          <article class="album-article">
+            <img
+              src="assets/img/aquietplace.jpeg"
+              alt="Aquietplace AlbuM Cover"
+              class="album-cover-size"
+            />
+            <p class="album-title">A quiet place</p>
+            <p class="v-sml-text">Subtile</p>
+          </article>
+          <article class="album-article">
+            <img
+              src="assets/img/split.jpeg"
+              alt="pic"
+              class="album-cover-size"
+            />
+            <p class="album-title">Split</p>
+            <p class="v-sml-text">Subtile</p>
+          </article>
+          <article class="album-article">
+            <img
+              src="assets/img/cure.jpeg"
+              alt="pic"
+              class="album-cover-size"
+            />
+            <p class="album-title">A cure for wellness</p>
+            <p class="v-sml-text">Subtile</p>
+          </article>
+
+          <article class="album-article">
+            <img
+              src="assets/img/sinister.jpeg"
+              alt="pic"
+              class="album-cover-size"
+            />
+            <p class="album-title"></p>
+            <p class="v-sml-text">Subtile</p>
+          </article>
+        </section>
+        <!-- ////////////// -->
+        <section>
+          <div class="creato-row">
+            <h2 class="recenly-ply-title use-up-space">Creato per John Doe</h2>
+            <!-- <p></p> -->
+            <p class="v-sml-texts use-up-space-text">
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+            </p>
+
+            <img
+              src="assets/img/radar.jpeg"
+              alt="picture"
+              class="album-cover-size"
+            />
+            <img
+              src="assets/img/mixdaily.jpeg"
+              alt="picture"
+              class="album-cover-size"
+            />
+            <p class="album-title">Release Rader</p>
+
+            <p class="album-title">Daily Mix 1</p>
+          </div>
+        </section>
+
+        <!-- //// -->
+        <section>
+          <div class="most-popular">
+            <h2 class="recenly-ply-title use-up-space">Creato per John Doe</h2>
+            <!-- <p></p> -->
+            <p class="v-sml-texts use-up-space-text">
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+            </p>
+
+            <img
+              src="assets/img/youg.jpeg"
+              alt="picture"
+              class="album-cover-size round-pic"
+            />
+            <img
+              src="assets/img/einaudi.jpeg"
+              alt="picture"
+              class="album-cover-size round-pic"
+            />
+            <p class="album-title">Release Rader</p>
+
+            <p class="album-title">Daily Mix 1</p>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer class="footer">
       <div class="left-footer">
-        Lorem ipsum dolor sit amet, enderit vconsectetur adipisicing elit. Culpa
-        ea, cupiditate temporibus repreholuptate quidem illum, quo ullam harum
-        libero quae, rerum perferendis sed a magni animi soluta facere beatae.
+        <img
+          src="assets/img/sinister.jpeg"
+          class="plying-album"
+          alt="picture"
+        />
+        <div>
+          <p class="album-playing-text text-spacing">Sinister</p>
+          <p class="ftr-text text-spacing">Brano Name</p>
+        </div>
+        <div class="footer-icn-flex">
+          <ion-icon name="heart-outline" class="footer-icons-size"></ion-icon>
+          <ion-icon name="folder-outline" class="footer-icons-size"></ion-icon>
+        </div>
       </div>
+      <!-- /////////// -->
       <div class="middle-footer">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non obcaecati
-        minima, ab consequuntur quisquam aliquid adipisci in suscipit laudantium
-        vitae, hic nesciunt! Provident ipsum deserunt cum nisi ex.
-        Exercitationem, distinctio.
+        <div class="playlist-icons">
+          <ion-icon name="shuffle-sharp"></ion-icon>
+          <ion-icon name="play-skip-back"></ion-icon>
+          <ion-icon name="play-circle-outline" class="play-icon"></ion-icon>
+          <ion-icon name="play-skip-forward"></ion-icon>
+          <ion-icon name="reload-outline"></ion-icon>
+        </div>
+        <div class="playing-m-monitor">
+          <time datetime="" class="time">0.25</time>
+          <p class="play-monitor">&nbsp;</p>
+          <time datetime="" class="time">4.35</time>
+        </div>
       </div>
+
+      <!-- ////////// -->
       <div class="right-footer">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-        reprehenderit dolore nemo! Veritatis quisquam labore corporis eligendi
-        dolor amet voluptatum voluptas doloribus voluptates, eaque repudiandae
-        inventore odio quidem officiis cupiditate?
+        <ion-icon name="list-outline" class="footer-icons-size"></ion-icon>
+        <ion-icon name="tv-outline" class="footer-icons-size"></ion-icon>
+        <ion-icon
+          name="volume-mute-outline"
+          class="footer-icons-size"
+        ></ion-icon>
       </div>
     </footer>
 
-    <!-- <header>
-        
-      </header>
-
-      <main>
-        <section class="body">
-          <div class="heading-body"></div>
-        </section>
-      </main>
-
-      <aside class="left-menu">
-       
-        <div class="left-menu-icons">
-          <p>icon</p>
-          <p>text</p>
-          <p>icon</p>
-          <p>text</p>
-          <p>icon</p>
-          <p>text</p>
-        </div>
-      </aside>
-      <footer>
+    <!--     
         <div class="left--img-n-names">
           <img src="#" alt="The album playing" />
           <p>Name</p>
@@ -158,5 +299,13 @@
           </div>
         </div>
       </footer> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
