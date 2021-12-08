@@ -83,7 +83,7 @@ button {
 }
 
 .left-menu__small {
-  grid-template-rows: 1fr 3rem;
+  grid-template-rows: 1fr 5rem;
   visibility: hidden;
 }
 
