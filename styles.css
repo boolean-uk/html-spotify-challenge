@@ -25,12 +25,6 @@
             display: none;
         }
     }
-    /* @media screen and (max-width: 900px) {
-    .spotify {
-        display: grid;
-        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 500px;
-    }
-} */
     
     header {
         grid-area: header;
@@ -59,14 +53,6 @@
         color: grey;
     }
     
-    nav .spoty,
-    nav .icon,
-    nav .playlist,
-    nav .instalia,
-    nav .john {
-        /* border: 1px dashed black; */
-    }
-    
     nav .spoty {
         display: grid;
         grid-template-columns: 5px 1fr 40px;
@@ -78,19 +64,12 @@
     .spoty .big-spoty {
         width: 100%;
         height: 100%;
-        /* border: 1px dashed black; */
     }
     
     nav .icon {
         display: grid;
         grid-template-rows: 50px 50px 50px;
         padding: 5px;
-    }
-    
-    .icon .home,
-    .icon .cerca,
-    .icon .latua {
-        /* border: 1px dashed black; */
     }
     
     .icon .home {
@@ -100,21 +79,11 @@
         padding: 5px;
     }
     
-    .home .logo-1,
-    .home .home-1 {
-        /* border: 1px dashed black; */
-    }
-    
     .icon .cerca {
         display: grid;
         grid-template-columns: 30px 100px;
         gap: 5px;
         padding: 5px;
-    }
-    
-    .cerca .logo-2,
-    .cerca .cerca-2 {
-        /* border: 1px dashed black; */
     }
     
     .icon .latua {
@@ -124,20 +93,10 @@
         padding: 5px;
     }
     
-    .latua .logo-4,
-    .latua .latua-4 {
-        /* border: 1px dashed black; */
-    }
-    
     .spotify .playlist {
         display: grid;
         grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
         padding: 5px;
-    }
-    
-    .playlist .crea,
-    .playlist p {
-        /* border: 1px dashed black; */
     }
     
     .playlist .crea {
@@ -146,21 +105,11 @@
         padding: 3px;
     }
     
-    .crea .sub-1,
-    .crea .sub-2 {
-        /* border: 1px dashed black; */
-    }
-    
     .instalia {
         display: grid;
         grid-template-columns: 30px 1fr;
         padding: 3px;
         gap: 4px;
-    }
-    
-    .instalia .logo-5,
-    .instalia p {
-        /* border: 1px dashed black; */
     }
     
     .john {
@@ -184,19 +133,9 @@
         overflow-y: scroll;
     }
     
-    main .top-menu,
-    main .recently-played,
-    main .boxes,
-    main .john-doe,
-    main .boxes-1,
-    main .artistic,
-    main .round-boxes {
-        /* border: 1px dashed black; */
-    }
-    
     main .top-menu {
         display: grid;
-        grid-template-columns: 200px 1fr 200px;
+        grid-template-columns: 50px 1fr 50px;
         align-items: center;
         place-items: center;
     }
@@ -228,15 +167,8 @@
     }
     
     .boxes .card {
-        /* border: 1px dashed black; */
         display: grid;
         grid-template-rows: 1fr 40px 40px;
-    }
-    
-    .card .image,
-    .card .first-title,
-    .card .second-title {
-        /* border: 1px dashed black; */
     }
     
     .john-doe {
@@ -251,14 +183,8 @@
     }
     
     .boxes-1 .card-1 {
-        /* border: 1px dashed black; */
         display: grid;
         grid-template-rows: 1fr 80px;
-    }
-    
-    .card-1 .image-1,
-    .card-1 .first-title-1 {
-        /* border: 1px dashed black; */
     }
     
     .artistic {
@@ -270,11 +196,6 @@
         grid-template-columns: 200px 200px;
         padding: 10px;
         gap: 10px;
-    }
-    
-    .round-boxes .image-2,
-    .round-boxes .image-3 {
-        /* border: 1px dashed black; */
     }
     
     .image img,
@@ -326,12 +247,6 @@
         grid-template-columns: 200px 1fr 200px;
     }
     
-    footer .initial,
-    footer .mid,
-    footer .last {
-        /* border: 1px solid black; */
-    }
-    
     footer .initial {
         display: grid;
         grid-template-columns: 50px 1fr 25px 25px;
@@ -342,7 +257,6 @@
     .initial .poster-name,
     .initial .love-symbol,
     .initial .folder-symbol {
-        /* border: 1px dashed black; */
         display: grid;
         place-items: center;
     }
@@ -357,15 +271,9 @@
         padding: 10px;
     }
     
-    .mid .mid-1,
-    .mid .mid-2 {
-        /* border: 1px solid black; */
-    }
-    
     .mid .mid-1 {
         display: grid;
         grid-template-columns: 25px 25px 25px 25px 25px;
-        /* justify-items: center; */
     }
     
     .mid-1 .shuffle,
@@ -373,7 +281,6 @@
     .mid-1 .plays-icon,
     .mid-1 .forwardicon,
     .mid-1 .refresh-icon {
-        /* border: 1px dashed black; */
         padding-left: 30rem;
     }
     
@@ -384,12 +291,6 @@
     .mid .mid-2 {
         display: grid;
         grid-template-columns: 35px 300px 35px;
-    }
-    
-    .mid-2 .timing-1,
-    .mid-2 .listline,
-    .mid-2 .timing-2 {
-        /* border: 1px dashed black; */
     }
     
     footer .last {
