@@ -13,14 +13,16 @@
         <h2 id="subscribe-button">UPGRADE NOW</h2>
     </header>
     <nav class="left-menu-top">
-        <h1><img class="logo" src="/assets/img/logo.svg" alt="spotify-logo"></h1>
+        <h1><img id="logo-large" src="/assets/img/logo.svg" alt="spotify-logo"> <img id="logo-small" src="/assets/img/logo-small.svg" alt="logo-small"></h1>
+        
         <a class="home-link" href="#"> <img class="icons" src="/assets/img/home.svg" alt="home-icon"/> <h3>Home</h3> </a> 
         <a class="home-link" href="#"> <img class="icons" src="/assets/img/search.svg" alt="search-icon"/> <h3>Search</h3> </a> 
         <a class="home-link" href="#"> <img class="icons" src="/assets/img/libreria.svg" alt="your-library"/><h3>Your Library</h3> </a> 
         <nav class="playlist-menu">
+            <!--The choice for divs rather than list was forced due to errors with displaying the list, which I have resolved now but want to hit 
+                extension criteria before coming back and tring to sort this as it works and looks fine, but I would use a list normally.-->
             <h3>PLAYLIST</h3>
             <a class="home-link" href="#"> <img class="icons" src="/assets/img/playlist.svg" alt="create-playlist"/> <h4>Create Playlist</h4> </a>
-
             <div class="playlist-item">Ben's playlist</div>
             <div class="playlist-item">Ben's playlist</div>
             <div class="playlist-item">Ben's playlist</div>
@@ -31,7 +33,6 @@
             <div class="playlist-item">Ben's playlist</div>
             <div class="playlist-item">Ben's playlist</div>
             <div class="playlist-item">Ben's playlist</div>
-         
         </nav>
         <div id="shove">
         </div>
@@ -54,26 +55,56 @@
             <h2>Recently played</h2>
         </div>
         <div class="albums-recent">
-            <div class="album"><img class="card" src="/assets/img/metal_lifting.jpg" alt="metal_lifting"> <h3>Heavy Metal</h3> <p>It rocks</p></div>
-            <div class="album"><img class="card" src="/assets/img/stranger.jpeg" alt="stranger-things"> <h3>Stranger Things</h3> <p>Spooky</p></div>
-            <div class="album"><img class="card" src="/assets/img/aquietplace.jpeg" alt="quiet-place"> <h3>A Quiet Place</h3> <p>Shhhhhh!</p></div>
-            <div class="album"><img class="card" src="/assets/img/split.jpeg" alt="split"> <h3>Split</h3> <p>Multiple Artists</p></div>
-            <div class="album"><img class="card" src="/assets/img/cure.jpeg" alt="cure-for-wellness"> <h3>A Cure For Wellness</h3> <p>Take your medicine</p></div>
-            <div class="album"><img class="card" src="/assets/img/sinister.jpeg" alt="sinister"> <h3>Sinister</h3> <p>Sinister minister</p></div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/metal_lifting.jpg" alt="metal_lifting"> <h3>Heavy Metal</h3> <p>It rocks</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/stranger.jpeg" alt="stranger-things"> <h3>Stranger Things</h3> <p>Spooky</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/aquietplace.jpeg" alt="quiet-place"> <h3>A Quiet Place</h3> <p>Shhhhhh!</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/split.jpeg" alt="split"> <h3>Split</h3> <p>Multiple Artists</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/cure.jpeg" alt="cure-for-wellness"> <h3>A Cure For Wellness</h3> <p>Take your medicine</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/sinister.jpeg" alt="sinister"> <h3>Sinister</h3> <p>Sinister minister</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
         </div>
         <div class="created-for-you">
             <h2>Created for Ben</h2>
         </div>
         <div class="albums-for-you">
-            <div class="album"><img class="card" src="/assets/img/radar.jpeg" alt="releas-radar"> <h3>Release Radar</h3> <p></p></div> 
-            <div class="album"><img class="card" src="/assets/img/mixdaily.jpeg" alt="daily-mix"> <h3>Daily Mix</h3> <p></p></div> 
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/radar.jpeg" alt="releas-radar"> <h3>Release Radar</h3> <p></p></div> 
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/mixdaily.jpeg" alt="daily-mix"> <h3>Daily Mix</h3> <p></p></div> 
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
         </div>
         <div class="popular-artists">
             <h2>Popular artists</h2>
         </div>
         <div class="albums-popular">
-            <div class="album"><img class="card-circle" src="/assets/img/youg.jpeg" alt="lana-del-rey"> <h3>Lana Del Rey</h3> <p></p></div>
-            <div class="album"><img class="card-circle" src="/assets/img/einaudi.jpeg" alt="audi"> <h3>Ein Audi</h3> <p></p></div>
+            <div class="album-one">
+                <div class="album"><img class="card-circle" src="/assets/img/youg.jpeg" alt="lana-del-rey"> <h3>Lana Del Rey</h3> <p></p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card-circle" src="/assets/img/einaudi.jpeg" alt="audi"> <h3>Ein Audi</h3> <p></p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
         </div>
     </main>
     <footer>
@@ -91,7 +122,7 @@
         <div class="player-controls">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
-            <i class="far fa-play-circle"></i>
+            <i class="far fa-play-circle fa-2x"></i>
             <i class="fas fa-step-forward"></i>
             <i class="fas fa-redo-alt"></i>
         </div>
@@ -105,7 +136,6 @@
             <i class="fas fa-desktop"></i>
             <i class="fas fa-volume-up"></i>
             <progress id="volumebar" max="100" value="50"></progress>
-
         </div>
     </footer>
 </body>
