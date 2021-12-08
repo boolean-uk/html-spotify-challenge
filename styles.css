@@ -122,13 +122,12 @@ body {
   display: grid;
   width: 180px;
   border-radius: 4px;
-  background: #181818;
   margin-bottom: 16px;
   text-align: center;
   line-height: 1;
 }
 .albumcard img {
-    max-width: 160px;
+    max-width: 200px;
     border-radius: 4px;
     justify-content: center;
     margin-left: 8px;
@@ -139,10 +138,12 @@ body {
     text-emphasis-color: green;
 }
 
-.albumcard p {
+.sub {
     font-size: 14px;
     font-weight: lighter;
+    color: grey;
 }
+
 #playbar {
   grid-area: playbar;
   display: flex;
