@@ -68,12 +68,17 @@ button {
 .left-menu__large,
 .left-menu__small {
   display: grid;
-  height: 84vh;
+  height: 86vh;
   gap: 1rem;
+  overflow-y:scroll;
+}
+
+.left-menu__large::-webkit-scrollbar {
+  display: none;
 }
 
 .left-menu__large {
-  grid-template-rows: 3.3rem auto 1fr 3rem;
+  grid-template-rows: 3.3rem auto 1fr 5rem;
 }
 
 .left-menu__small {
