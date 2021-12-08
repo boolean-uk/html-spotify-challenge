@@ -232,23 +232,23 @@ main section {
   border-radius: 50%;
 }
 
-h1,
 h2,
 h3,
+h4,
 p {
   padding: 5px;
 }
 
-h2 {
+h3 {
   font-size: 18px;
   margin-top: 10px;
 }
 
-h3 {
+h4 {
   font-size: 14px;
 }
 
-h3,
+h4,
 section p {
   color: lightgray;
 }
@@ -277,18 +277,18 @@ footer {
   width: 3.2rem;
 }
 
-h4 {
+h5 {
   font-size: 13px;
   margin-bottom: 3px;
 }
 
-h5 {
+h6 {
   font-size: 11px;
   color: gray;
 }
 
-h4:hover,
-h5:hover {
+h5:hover,
+h6:hover {
   text-decoration: underline;
 }
 
@@ -333,6 +333,7 @@ h5:hover {
 
 input[type="range"] {
   -webkit-appearance: none;
+  border-radius: 50%;
   outline: none;
 }
 
@@ -353,17 +354,57 @@ input[type="range"]::-webkit-slider-thumb {
   opacity: 0;
 }
 
-input[type="range"]::-webkit-progress-value {
+/* input[type="range"]::-webkit-progress-value {
   -webkit-appearance: none;
   background-color: blue;
-}
+} */
 
 input[type="range"]:hover::-webkit-slider-thumb {
   opacity: 1;
 }
 
-input[type="range"]:hover::-webkit-progress-value {
+/* input[type="range"]:hover::-webkit-progress-value {
   background: green;
+} */
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  background: gray;
+  border-radius: 5px;
+}
+input[type=range]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: lightgray;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: lightgray;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: gray;
+}
+input[type=range]::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: lightgrey;
+}
+input[type=range]:hover::-ms-fill-lower {
+  background: green;
+}
+input[type=range]:hover::-ms-fill-upper {
+  background: gray;
 }
 
 .footer__right {
