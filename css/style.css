@@ -62,13 +62,13 @@ button {
   position: fixed;
   width: 14rem;
   height: 100vh;
-  z-index:2;
+  z-index: 2;
 }
 
 .left-menu__large,
 .left-menu__small {
   display: grid;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 7.5rem);
   gap: 1rem;
   overflow-y:scroll;
 }
