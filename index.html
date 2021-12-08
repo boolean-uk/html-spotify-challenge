@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84682346d4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header class="top-bar">
-        <h2 id="subscribe-button">SUBSCRIBE</h2>
+        <h2 id="subscribe-button">UPGRADE NOW</h2>
     </header>
     <nav class="left-menu-top">
         <h1><img class="logo" src="/assets/img/logo.svg" alt="spotify-logo"></h1>
@@ -42,36 +43,70 @@
     </nav>
     <main>
         <div class="main-top-menu">
-            Main top menu
+            <div>TRENDING</div>
+            <div>PODCASTS</div>
+            <div>CHARTS</div>
+            <div>GENRES & MOODS</div>
+            <div>BRAND NEW</div>
+            <div>DISCOVER</div>
         </div>
         <div class="recently-played">
-            Recently played
+            <h2>Recently played</h2>
         </div>
         <div class="albums-recent">
-            <div>Album 1</div>
-            <div>Album 1</div>
-            <div>Album 1</div>
-            <div>Album 1</div>
-            <div>Album 1</div>
-            <div>Album 1</div>
+            <div class="album"><img class="card" src="/assets/img/metal_lifting.jpg" alt="metal_lifting"> <h3>Heavy Metal</h3> <p>It rocks</p></div>
+            <div class="album"><img class="card" src="/assets/img/stranger.jpeg" alt="stranger-things"> <h3>Stranger Things</h3> <p>Spooky</p></div>
+            <div class="album"><img class="card" src="/assets/img/aquietplace.jpeg" alt="quiet-place"> <h3>A Quiet Place</h3> <p>Shhhhhh!</p></div>
+            <div class="album"><img class="card" src="/assets/img/split.jpeg" alt="split"> <h3>Split</h3> <p>Multiple Artists</p></div>
+            <div class="album"><img class="card" src="/assets/img/cure.jpeg" alt="cure-for-wellness"> <h3>A Cure For Wellness</h3> <p>Take your medicine</p></div>
+            <div class="album"><img class="card" src="/assets/img/sinister.jpeg" alt="sinister"> <h3>Sinister</h3> <p>Sinister minister</p></div>
         </div>
         <div class="created-for-you">
-            Created for you
+            <h2>Created for Ben</h2>
         </div>
         <div class="albums-for-you">
-            <div>Album 1</div>
-            <div>Album 2</div>
+            <div class="album"><img class="card" src="/assets/img/radar.jpeg" alt="releas-radar"> <h3>Release Radar</h3> <p></p></div> 
+            <div class="album"><img class="card" src="/assets/img/mixdaily.jpeg" alt="daily-mix"> <h3>Daily Mix</h3> <p></p></div> 
         </div>
         <div class="popular-artists">
-            Popular artists
+            <h2>Popular artists</h2>
         </div>
         <div class="albums-popular">
-            <div>Album 1</div>
-            <div>Album 2</div>
+            <div class="album"><img class="card-circle" src="/assets/img/youg.jpeg" alt="lana-del-rey"> <h3>Lana Del Rey</h3> <p></p></div>
+            <div class="album"><img class="card-circle" src="/assets/img/einaudi.jpeg" alt="audi"> <h3>Ein Audi</h3> <p></p></div>
         </div>
     </main>
     <footer>
-        
+        <div class="now-playing">
+            <div><img id="now-playing-image" src="/assets/img/sinister.jpeg" alt="sinister"></div>
+            <div class=now-playing-info>
+                <h4>Sinister</h4>
+                <p>Sinister Minister</p>
+            </div>
+            <div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+        <div class="player-controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="progress">
+            <p>0:25</p>
+            <progress id="progressBar" max="100" value="0"></progress>
+            <p>4:35</p>
+        </div>
+        <div class=right-player-items>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <progress id="volumebar" max="100" value="50"></progress>
+
+        </div>
     </footer>
 </body>
 </html>
