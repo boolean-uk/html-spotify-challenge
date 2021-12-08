@@ -5,59 +5,257 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico"/>
     <title>Spotify</title>
   </head>
   <body>
+    
     <div class="layout">
       <div class="header">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div id="upgrade">Upgrade</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+          <input
+            type="submit"
+            name="submit"
+            value="UPGRADE"
+            style="width: 120px"
+            class="upgrade"
+          />
+        </div>
       </div>
       <div class="nav">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <!-- <div class="logo">Logo</div>
-          <div class="home">Top nav</div>
-          <div class="playlists">Playlists</div>
-          <div class="user">User</div> -->
+        <div class="nav-logo">
+          <img
+            src="assets/img/logo.svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="30px"
+            class="logo"
+          />
+          <img
+            src="assets/img/logo-small.svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="30px"
+            class="logo-small"
+          />
+        </div>
+        <div class="nav-home">
+          <div class="nav-home-top">
+            <img src="assets/img/home.svg" height="20px" />
+          </div>
+          <div class="nav-home-top-text">Home</div>
+          <div class="nav-home-center">
+            <img src="assets/img/search.svg" height="20px" />
+          </div>
+          <div class="nav-home-center-text">Search</div>
+          <div class="nav-home-footer">
+            <img src="assets/img/libreria.svg" height="20px" />
+          </div>
+          <div class="nav-home-footer-text">Your library</div>
+        </div>
+        <div class="nav-playlists-top">
+          <div class="npx">PLAYLIST</div>
+          <div class="npy">IMG Create Playlist</div>
+        </div>
+        <div class="nav-playlists">
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+          <li>Playlist Name</li>
+        </div>
+        <div></div>
+        <div class="nav-footer">
+          <div class="nfx"><img src="assets/img/download.svg" height=18px> Install app</div>
+          <div class="nfy"><img src="assets/img/profile.svg" height=27px> John Doe</div>
+        </div>
       </div>
       <div class="main">
-          <div class="main-categories">Categories
-          </div>
-          <div class="main-recently-played">
-              <div class="mrp-top">Recently played</div>
-              <div class="mrp-main">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+        <div class="main-categories">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div id="trending">TRENDING</div>
+          <div>PODCAST</div>
+          <div>CHARTS</div>
+          <div>GENRES AND MOODS</div>
+          <div>BRAND NEW</div>
+          <div>DISCOVER</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="main-recently-played">
+          <div class="main-recently-played-top">Recently played</div>
+          <div class="main-recently-played-main">
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/metal_lifting.jpg"
+                  width="93%"
+                  height="93%"
+                />
               </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/stranger.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/aquietplace.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/split.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/cure.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
+            <div class="box">
+              <div id="cover">
+                <img
+                  src="assets/img/sinister.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div class=box-title>Heavy Metal</div>
+              <div class=box-subtitle>Subtitle</div>
+            </div>
           </div>
-          <div class="main-created">Created for John Doe
+        </div>
+        <div class="main-created">
+          <div class="main-created-top">
+            <div id="created">Created for John Doe</div>
+            <div id="more">The more you listen, the more accurate the suggestions</div>
           </div>
-          <div class="main-most-popular">Most popular artists</div>
+          <div class="main-created-main">
+            <div class="box">
+              <div>
+                <img
+                  src="assets/img/mixdaily.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div id="created-text">Release radar</div>
+            </div>
+            <div class="box">
+              <div>
+                <img
+                  src="assets/img/radar.jpeg"
+                  width="93%"
+                  height="93%"
+                />
+              </div>
+              <div id="created-text">Daily Mix 1</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+          </div>
+         
+        </div>
+        <div class="main-most-popular">Most popular artists
+
+          <br><br><br><br><br><br><br>
+          
+        </div>
       </div>
       <div class="footer">
-          <div class="footer-now-playing">Now playing</div>
-          <div class="footer-controls">Controls</div>
-          <div class="footer-right">Right</div>
+        <div class="footer-now-playing">
+          <div><img src="assets/img/sinister.jpeg" height="40px"></div>
+          <div>Sinister<br>Songname</div>
+          <div><img src="assets/img/heart.svg" height="15px"></div>
+          <div><img src="assets/img/folder.svg" height="15px"></div>
+        </div>
+        <div class="footer-controls">
+          <div class="footer-controls-top">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div><img src="assets/img/controls/shuffle.svg" height="15px"></div>
+            <div><img src="assets/img/controls/previous.svg" height="15px"></div>
+            <div><img src="assets/img/controls/play.svg" height="15px"></div>
+            <div><img src="assets/img/controls/next.svg" height="15px"></div>
+            <div><img src="assets/img/controls/replay.svg" height="15px"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="footer-controls-range">
+            <div></div>
+            <div>0:30 <input type=range class="track">3.53 </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div><img src="assets/img/controls/list.svg" height="15px"> 
+               <img src="assets/img/controls/device.svg" height="15px"> 
+               <img src="assets/img/controls/volume.svg" height="15px">  
+               <input type=range>
+          </div>
+        </div>
       </div>
     </div>
   </body>
