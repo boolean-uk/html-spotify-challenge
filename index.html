@@ -11,7 +11,6 @@
     ></script>
     <title>Spotify Submission</title>
   </head>
-
   <body>
     <aside class="left-menu">
       <h1 class="spotify-icon">
@@ -291,17 +290,23 @@
     </main>
     <footer class="play-bar">
       <div class="playbar-left">
-        <img
-          id="sinister-small"
-          src="/assets/img/sinister.jpeg"
-          alt="sinister movie album"
-        />
+        <div class="responsive">
+          <img
+            id="sinister-small"
+            src="/assets/img/sinister.jpeg"
+            alt="sinister movie album"
+          />
+        </div>
         <div class="now-playing-text">
           <h4>Sinister</h4>
           <p>Brano nome</p>
         </div>
-        <a class="icons-bottom-left" href="#"><i class="far fa-heart"></i></a>
-        <a class="icons-bottom-left" href="#"><i class="far fa-folder"></i></a>
+        <div class="responsive">
+          <a class="icons-bottom-left" href="#"><i class="far fa-heart"></i></a>
+          <a class="icons-bottom-left" href="#"
+            ><i class="far fa-folder"></i
+          ></a>
+        </div>
       </div>
       <nav class="playbar-middle">
         <div class="playbar-middle-top">
@@ -326,9 +331,11 @@
         </div>
       </nav>
       <div class="playbar-right">
-        <a class="playbar-icons" href="#"><i class="fas fa-list-ul"></i></a>
-        <a class="playbar-icons" href="#"><i class="fas fa-desktop"></i></a>
-        <a class="playbar-icons" href="#"><i class="fas fa-volume-up"></i></a>
+        <div class="responsive">
+          <a class="playbar-icons" href="#"><i class="fas fa-list-ul"></i></a>
+          <a class="playbar-icons" href="#"><i class="fas fa-desktop"></i></a>
+          <a class="playbar-icons" href="#"><i class="fas fa-volume-up"></i></a>
+        </div>
         <progress id="volume-bar" max="100" value="60"></progress>
       </div>
     </footer>

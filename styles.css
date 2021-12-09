@@ -11,8 +11,7 @@ body {
   grid-template-rows: 80px 1fr 100px;
   line-height: 1.6;
   font-family: Gotham Medium, Helvetica, Arial, sans-serif;
-  min-width: 200px;
-  min-height: 300px;
+  min-width: 250px;
 }
 
 h2 {
@@ -50,7 +49,7 @@ p {
   text-transform: uppercase;
   text-align: center;
   border: 1px solid white;
-  font-size: 14px;
+  font-size: 0.875rem;
   border-radius: 25px;
   width: 200px;
   padding: 5px;
@@ -91,7 +90,7 @@ p {
 .created-for ul,
 .popular-artists ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 190px);
+  grid-template-columns: repeat(auto-fill, 200px);
   gap: 15px;
   margin: 25px 0px 25px;
   object-fit: cover;
@@ -102,7 +101,7 @@ p {
 }
 
 .albums {
-  width: 190px;
+  width: 200px;
 }
 
 .middle-main h2,
@@ -165,7 +164,8 @@ p {
 
 .nav-bar-left li img,
 .playlist-nav li img,
-.avatar-and-download img {
+.avatar-and-download img,
+#logo-small {
   height: 24px;
   width: 24px;
 }
@@ -182,7 +182,7 @@ p {
 .subtitle,
 .subheading {
   font-size: 0.9rem;
-  line-height: 16px;
+  line-height: 1;
 }
 
 .now-playing-text p {
@@ -275,8 +275,10 @@ ol li a,
 }
 
 #sinister-small {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  min-width: 30px;
 }
 
 .playbar-middle {
@@ -297,7 +299,8 @@ ol li a,
 }
 .playbar-middle-bottom,
 .playbar-right,
-.playbar-left {
+.playbar-left,
+.responsive {
   gap: 15px;
 }
 
@@ -331,9 +334,20 @@ ol li a,
   font-size: 1.8rem;
 }
 
-#logo-small {
-  height: 24px;
-  width: 24px;
+@media screen and (max-width: 650px) {
+  .playbar-icons-middle {
+    font-size: 0.8rem;
+  }
+  #play-icon {
+    font-size: 1.4rem;
+  }
+  .responsive {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .playbar-middle {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -361,8 +375,17 @@ ol li a,
   }
 }
 
-.albums:hover {
-  opacity: 0.2;
+@media screen and (max-width: 400px) {
+  #sinister-small {
+    display: none;
+  }
+  #volume-bar {
+    display: none;
+  }
+}
+
+.responsive {
+  display: flex;
 }
 
 .wrapper {
@@ -374,14 +397,26 @@ ol li a,
   opacity: 0.7;
 }
 
+.wrapper:hover .albums {
+  opacity: 0.2;
+}
+
 .play {
   position: absolute;
   display: none;
   top: 30%;
-  width: 50px;
+  width: 3.125rem;
   margin: 0 auto;
   left: 0px;
   right: 0px;
-  z-index: 100;
   border-radius: 50%;
+}
+
+a:hover,
+.nav-bar-top h2:hover {
+  color: white;
+}
+
+.play-bar a:hover {
+  color: #adff2f;
 }
