@@ -270,8 +270,8 @@ hr {
 .card-hvrbtn {
     display: none;
     position:absolute;
-    margin-left: 4%;
-    margin-top: 4%;
+    margin-top: 3.6rem;
+    margin-left: 4rem;
     background-color: #1DB954;
     width: 5rem;
     height: 5rem;
@@ -280,8 +280,6 @@ hr {
 
 .card-hvrbtn img {
 position:absolute;
-margin-left: 33.3%;
-margin-top: 33.3%;
 }
 
 .card:hover {
@@ -289,7 +287,8 @@ margin-top: 33.3%;
 }
 
 .card:hover > .card-hvrbtn {
-    display: block;
+    display: grid;
+    place-items: center;
 }
 
 /*MEDIA SECTION*/
