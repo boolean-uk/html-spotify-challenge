@@ -37,8 +37,7 @@ body {
 }
 .left-top ul li:hover,
 .left-middle ul li:hover {
-    background-color:grey;
-    border-radius: 4px;
+    border-left: solid 3px greenyellow;
 }
 .icons span {
   display: grid;
@@ -84,6 +83,7 @@ body {
   padding-right: 20px;
 
 }
+
 .signup {
     align-content: center;
     justify-content:center;
@@ -92,6 +92,9 @@ body {
     width: 100px;
     background-color: black;
     color: white;
+}
+.signup:hover {
+    opacity: 0.5;
 }
 
 #main {
@@ -166,7 +169,7 @@ body {
 
 .albumcard img:hover,
 .albumcard-round img:hover {
-    opacity: 0.8 ;
+    opacity: 0.5 ;
     text-emphasis-color: green;
 }
 
@@ -183,6 +186,7 @@ body {
   justify-content:space-between;
   padding: 0 16px;
   background-color:rgb(40, 40, 40);
+  position: sticky;
 }
 
 .playleft {
@@ -190,6 +194,10 @@ body {
     color: white;
     padding-left: 10px;
     text-align: center;
+}
+.playing {
+    max-width: 80px;
+    padding: 5px;
 }
 
 .playtext {
