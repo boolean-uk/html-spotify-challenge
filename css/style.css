@@ -257,7 +257,7 @@
   display:flex;
   gap: 10px;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer-controls {
@@ -326,6 +326,7 @@ input.track[type="range"] {
 .nav-home-footer-text,
 .nav-playlists,
 .nav-playlists-top,
+.nav-footer,
 p {
   display:none
 }
