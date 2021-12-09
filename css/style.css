@@ -107,8 +107,13 @@
 
 .nav-footer {
   display: grid;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 50% 50%;
   align-items: end;
+  gap: 15px;
+  font-size: 0.8em;
+  color: #989898;
+  padding: 15px;
 }
 .nav-footer-x {
   font-size: 0.8em;
@@ -130,22 +135,12 @@
   grid-area: m;
   grid-gap: 10px;
   max-height: 100vh;
-  /* max-height: 52em; */
-  /* width: auto; */
   overflow-y: auto;
-  /* display: grid;
-  grid-template-rows: 7fr 35fr 29fr 29fr; 1243*/
 }
 
 .main-categories {
   font-size: 0.83em;
   color: grey;
-  /* min-height: 3.2em; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(12, 1fr); */
-  /* grid-template-columns: repeat(auto-fill, 150px);
-  align-items: center;
-  justify-items: center; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -173,17 +168,6 @@
   gap: 10px;
 }
 
-/* .main-recently-played-main {
-  color: #989898;
-  font-size: 0.85em;
-  display: grid;
-  grid-gap: 3px;
-  /* grid-auto-flow: column; */
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-  /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(30px, 1fr)); */
-
-
 .main-created {
   min-height: 23em;
   display: grid;
@@ -203,7 +187,6 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
   grid-template-rows: auto;
 }
 
@@ -219,8 +202,6 @@
 }
 
 .box {
-  /* display: grid;
-  grid-template-rows: 80% 10% 10%; */
   text-align: center;
 }
 
@@ -275,8 +256,6 @@
   grid-area: q;
   display:flex;
   gap: 10px;
-  /* display:grid;
-  grid-template-columns: 25% 50% 12.5% 12.5%; */
   align-items: center;
   padding: 10px;
 }
@@ -285,7 +264,7 @@
   grid-area: c;
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto-fit auto;
 }
 
 .footer-controls-top {
@@ -297,8 +276,8 @@
 .footer-controls-range {
   display: grid;
   grid-template-columns: 0.3fr 7px 1fr 7px 0.3fr;
-  /* align-items: center; */
   font-size: 0.8em;
+  max-height: 30em;
 }
 
 .footer-right {

@@ -9,9 +9,8 @@
     <title>Spotify | George</title>
   </head>
   <body>
-    
     <div class="layout">
-      <div class="header">
+      <header class="header">
         <div></div>
         <div></div>
         <div></div>
@@ -24,28 +23,20 @@
         <div></div>
         <div></div>
         <div>
-          <input
-            type="submit"
-            name="submit"
-            value="UPGRADE"
-            style="width: 120px"
+          <input type="submit" name="submit" value="UPGRADE" style="width: 120px"
             class="upgrade"
           />
         </div>
-      </div>
-      <div class="nav">
+      </header>
+      <nav class="nav">
         <div class="nav-logo">
           <img
             src="assets/img/logo.svg"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
             height="30px"
             class="logo"
           />
           <img
             src="assets/img/logo-small.svg"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
             height="30px"
             class="logo-small"
           />
@@ -82,11 +73,16 @@
         </div>
         <div></div>
         <div class="nav-footer">
-          <div class="nav-footer-x"><img src="assets/img/download.svg" height=18px>Install app</div>
-          <div class="nav-footer-y"><img src="assets/img/profile.svg" height=27px>John Doe</div>
+          <div><img src="assets/img/download.svg" height=18px></div>
+          <div>Install app</div>
+          <div><img src="assets/img/profile.svg" height=23px></div>
+          <div>John Doe</div>
+          <!-- <div class="nav-footer-x">
+            <img src="assets/img/download.svg" height=18px></div>
+          <div class="nav-footer-y"><img src="assets/img/profile.svg" height=27px>John Doe</div> -->
         </div>
-      </div>
-      <div class="main">
+      </nav>
+      <main class="main">
         <div class="main-categories">
           <!-- <div></div>
           <div></div>
@@ -210,10 +206,6 @@
                   width="250px"
                   height="250px"
                 />
-                <img src="assets/img/play.svg"
-                  width="100px"
-                  class="play-icon"
-                >
               </div>
               <div id="created-text">Release radar</div>
             </div>
@@ -263,12 +255,10 @@
             <div></div>
             <div></div>
             <div></div>
-            
           </div>
-         
         </div>
-      </div>
-      <div class="footer">
+      </main>
+      <footer class="footer">
         <div class="footer-now-playing">
           <div><img src="assets/img/sinister.jpeg" height="40px"></div>
           <div>Sinister<br>Songname</div>
@@ -314,7 +304,7 @@
           <div><input type=range></div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
