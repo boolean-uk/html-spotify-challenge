@@ -88,6 +88,15 @@ body {
     text-decoration: none;
 } 
 
+.home-link:hover {
+    border-left: 3px solid greenyellow;
+}
+
+.home-link >h4 {
+    font-family: 'proxima_nova_rgbold';
+    font-size: 1.2rem;
+}
+
 .playlist-menu {
     display: flex;
     flex-direction: column;
@@ -96,6 +105,7 @@ body {
 }
 
 .playlist-item {
+    font-size: 1rem;
     padding-top: 10px;
     font-weight: 600;
 }
@@ -204,7 +214,11 @@ main {
     float:left;
     position:relative;
 }
-.album-one:hover .play {display:block}
+
+.album-one:hover .play {
+    display:block;
+}
+
 .play {
   position : absolute;
     display:none;
@@ -215,7 +229,8 @@ main {
     z-index:100
 }
 
-.album >h3 {
+.album >h3,
+h2 {
     color: white;
     font-family: 'proxima_nova_rgbold';
 }
@@ -250,6 +265,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     background-color: #181818;
     color: white;
+    z-index: 9999;
 }
 
 .now-playing {
@@ -291,13 +307,6 @@ footer {
     gap: 20px;
 }
 
-#progressBar {
-    background-color: #8d8686;
-    width: 50%;
-    height:5px;
-    border-radius: 5px;
-}
-
 .right-player-items {
     display: flex;
     align-items:flex-end;
@@ -305,23 +314,24 @@ footer {
     gap: 30px;
 }
 
-#volumebar {
+#volumebar,
+#progressBar {
     background-color: #8d8686;
     width: 50%;
     height:5px;
     border-radius: 5px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     #logo-small {
       display: none;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     #logo-large,
     .playlists-menu,
-    .left-menu-top h3,
+    .left-menu-top h2,
     .left-bottom-menu,
     .playlist-item,
     h4 {
@@ -334,3 +344,16 @@ footer {
       grid-template-columns: 65px 1fr;
     }
   }
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.album-one:hover {
+    animation: spin 1s;
+   }
+   
+.player-controls { transition: all .2s ease-in-out; }
+.player-controls:hover { transform: scale(1.3); }
