@@ -99,15 +99,50 @@ main {
     grid-template-columns: repeat(auto)
 }
 
+.bottom-list figure h5, .bottom-list figure p {
+    text-align: center;
+}
+
 .bottom-list img {
     width: 130px;
 }
 
-.bottom-list h4 {
-    margin: 0%;
-}
+/* footer */
 
 footer {
     grid-area: footer;
     background-color: rgb(154, 205, 50);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.left-side-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-side-footer img {
+width : 50px;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.main-side-footer {
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.top {
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.top img {
+    width: 30px;
+    color: black;
+}
+
+.bottom {
+    display: grid;
+    grid-column: auto;
 }
