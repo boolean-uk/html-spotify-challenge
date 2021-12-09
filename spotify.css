@@ -1,51 +1,55 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Gothic A1", sans-serif;
+  color: aliceblue;
 }
 .container {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 250px auto;
 }
 
-.header-page {
+.header-page,
+.header-btn-upgrade {
   background-color: #181d31;
-
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 24px 10px 24px 0;
 }
 .header-btn-upgrade {
   border: 2px solid white;
   color: #fff;
-  background-color: #000;
   padding: 15px 60px;
   border-radius: 30px;
 }
 .spotify-logo {
   width: 40px;
 }
-/* ///////////////////////////////////////////////////////////////// */
+
 .left-m {
   background-color: #000;
   display: grid;
   grid-template-rows: 80px 1fr 20px 30px;
+  padding-left: 10px;
 }
 
+.list-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list-playlist {
+  align-items: start;
+  color: rgb(151, 144, 144);
+  padding: 0;
+}
 .left-menu {
   background-color: black;
   font-family: inherit;
 }
-.left-m-text {
-  color: aliceblue;
-}
+
 .logo-n-name,
 .left-menu-icons,
 .icon-n-ply,
 .play-list-titl,
-.instal-app,
 .profile-section {
   display: flex;
   gap: 10px;
@@ -53,30 +57,31 @@ body {
   padding-left: 12px;
   margin-bottom: 40px 0;
 }
+.instal-app {
+  display: flex;
+  gap: 10px;
+}
 .play-list-titl {
   color: aliceblue;
   font-weight: 600;
   font-family: inherit;
 }
 
-.icon-n-ply {
-}
-.icon-n-ply {
-}
 .logo-text {
   color: #fff;
   font-size: 30px;
-  font-weight: ;
 }
 svg {
   width: 28px;
 }
 .sml-downl-icon {
-  width: 20px;
+}
+.left-m-text {
+  color: aliceblue;
 }
 .bdr {
   border-bottom: 2px solid gray;
-  margin: 0 10px;
+  margin: 0 12px 0 0;
 }
 .profile-img {
 }
@@ -85,8 +90,7 @@ svg {
   font-size: 20px;
   font-weight: 600;
 }
-.profile-section {
-}
+
 .btn-logo {
   padding: 24px;
   background-color: #fff;
@@ -96,29 +100,27 @@ svg {
 .body {
   background-color: #11324d;
   display: grid;
-  grid-template-rows: 80px 50px 80px repeat(auto-fill);
-  row-gap: 20px;
+  grid-template-rows: 80px 50px 80px;
+  row-gap: 10px;
+  /* overflow-x: auto; */
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.nav-bar {
-  padding: 15px;
+nav ul,
+li {
+  list-style: none;
   color: azure;
   font-weight: 400;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
-nav li {
-  list-style: none;
-}
+
 /* ///////////////////////////////////////////////////////////////////// */
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+  justify-content: center;
   padding-left: 20px;
 }
 .recenly-ply-title {
@@ -142,14 +144,17 @@ nav li {
 .round-pic {
   border-radius: 50%;
 }
-.album-article {
-}
 .album-title {
   color: aliceblue;
+  font-weight: 600;
+  text-align: center;
 }
 .v-sml-text {
-  font-size: 12px;
   color: rgb(151, 144, 144);
+  text-align: center;
+}
+.popular-title {
+  color: aliceblue;
 }
 .album-cover-size {
   width: 180px;
@@ -157,7 +162,6 @@ nav li {
 }
 /* ////////////////// */
 footer {
-  height: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -176,7 +180,6 @@ footer {
 }
 .footer-icons-size {
   font-size: 24px;
-  color: #fff;
 }
 .plying-album {
   width: 50px;
@@ -189,7 +192,9 @@ footer {
   color: lightslategray;
   font-weight: 500;
 }
-.text-spacing {
+.text-spacing,
+.time,
+.playlist-icons {
   margin: 0;
   padding: 0;
 }
@@ -198,21 +203,35 @@ footer {
 .middle-footer {
   background-color: #222326;
   display: grid;
+  align-content: center;
   align-items: center;
 }
 .time,
 .playlist-icons {
   color: #f0f8ff;
+  font-size: 12px;
 }
 .playlist-icons {
   font-size: 20px;
+  align-items: end;
+  align-content: center;
 }
 .play-icon {
   font-size: 34px;
+  align-self: center;
 }
-.play-monitor {
+.play-monitor,
+.play-monitor-right {
   border: 1px solid gray;
   border-radius: 20px;
+  width: 400px;
+  background-color: chartreuse;
+}
+.play-monitor-right {
+  width: 100px;
+}
+.sml-num {
+  font-size: 12px;
 }
 .playing-m-monitor,
 .playlist-icons,
@@ -224,4 +243,6 @@ footer {
 /* /////// */
 .right-footer {
   background-color: #222326;
+  justify-content: end;
+  align-items: center;
 }
