@@ -1,12 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fc9cfd4ad3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Spotify Submission</title>
+  </head>
+  <body>
+    <aside class="left-menu">
+      <h1 class="spotify-icon">
+        <img
+          id="logo-small"
+          src="/assets/img/logo-small.svg"
+          alt="Spotify logo"
+          width="130"
+        />
+        <img
+          id="logo-large"
+          src="/assets/img/logo.svg"
+          alt="Spotify logo"
+          width="130"
+        />
+      </h1>
+      <nav class="nav-bar-left">
+        <ol>
+          <li class="active">
+            <a href="#"
+              ><img src="/assets/img/home.svg" alt="home icon" />
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/img/search.svg" alt="search icon" />
+              <h2>Search</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/img/libreria.svg" alt="library icon" />
+              <h2>Your Library</h2>
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <nav class="playlist-nav">
+        <ol>
+          <li>
+            <a href="#"
+              ><img
+                id="add-icon"
+                src="/assets/img/add.svg"
+                alt="create playlist icon"
+              />
+              <h2>Create Playlist</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/img/like.png" alt="liked songs icon" />
+              <h2>Liked Songs</h2>
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <div class="playlists">
+        <ul>
+          <li>TSR</li>
+          <li>Mortal Combat Soundtrack</li>
+          <li>This is How We Do</li>
+          <li>Meditation</li>
+          <li>R n Brie</li>
+          <li>A New Beginning</li>
+          <li>This is Sam Fender</li>
+          <li>Skitz Mix</li>
+          <li>No Cap</li>
+          <li>House 124</li>
+          <li>Electro RnB</li>
+          <li>Inspirations</li>
+          <li>Easy 90s</li>
+        </ul>
+      </div>
+      <div class="avatar-and-download">
+        <a class="install-app" href="#"
+          ><img src="/assets/img/download.svg" alt="download icon" />
+          <h2>Install App</h2>
+        </a>
+
+        <div class="avatar">
+          <img
+            id="avatar-icon"
+            src="/assets/img/profile.svg"
+            alt="avatar icon"
+          />
+          <h2>John Doe</h2>
+        </div>
+      </div>
+    </aside>
+    <header class="middle-top">
+      <a href="#" class="upgrade-link"><strong>Upgrade Now</strong></a>
+    </header>
+    <main class="middle-main">
+      <nav class="nav-bar-top">
+        <ol>
+          <li class="selected">
+            <a href="#"><h2 class="sub-heading-middle">Trending</h2></a>
+          </li>
+          <li>
+            <a href="#"><h2 class="sub-heading-middle">Podcast</h2></a>
+          </li>
+          <li>
+            <a href="#"><h2 class="sub-heading-middle">Charts</h2></a>
+          </li>
+          <li>
+            <a href="#"><h2 class="sub-heading-middle">Genres and Moods</h2></a>
+          </li>
+          <li>
+            <a href="#"><h2 class="sub-heading-middle">Brand New</h2></a>
+          </li>
+          <li>
+            <a href="#"><h2 class="sub-heading-middle">Discover</h2></a>
+          </li>
+        </ol>
+      </nav>
+      <div class="recently-played">
+        <h2>Recently played</h2>
+        <div class="recently-played-albums">
+          <ul>
+            <li>
+              <a class="wrapper" href="#">
+                <img
+                  class="albums"
+                  src="/assets/img/metal_lifting.jpg"
+                  alt="heavy metal album"
+                />
+                <h3>Heavy Metal</h3>
+                <p class="subtitle">Subtitle</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="wrapper" href="#"
+                ><img
+                  class="albums"
+                  src="/assets/img/stranger.jpeg"
+                  alt="stranger things movie album"
+                />
+                <h3>Stranger Things, Vol. 1.</h3>
+                <p class="subtitle">Kyle Dixon & Michael Stein</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="wrapper" href="#"
+                ><img
+                  class="albums"
+                  src="/assets/img/aquietplace.jpeg"
+                  alt="a quiet place movie album"
+                />
+                <h3>A Quiet Place</h3>
+                <p class="subtitle">Subtitle</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="wrapper" href="#"
+                ><img
+                  class="albums"
+                  src="/assets/img/split.jpeg"
+                  alt="split movie album"
+                />
+                <h3>Split</h3>
+                <p class="subtitle">Subtitle</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="wrapper" href="#"
+                ><img
+                  class="albums"
+                  src="/assets/img/cure.jpeg"
+                  alt="cure of wellness movie album"
+                />
+                <h3>A Cure for Wellness</h3>
+                <p class="subtitle">Subtitle</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="wrapper" href="#"
+                ><img
+                  class="albums"
+                  src="/assets/img/sinister.jpeg"
+                  alt="sinister movie album"
+                />
+                <h3>Sinister</h3>
+                <p class="subtitle">Subtitle</p>
+                <div>
+                  <img class="play" src="/assets/play-hover.png" alt="play" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="created-for">
+        <h2>Created for John Doe</h2>
+        <p class="subheading">
+          The more you listen, the more accurate the suggestions.
+        </p>
+        <ul>
+          <li>
+            <a class="wrapper" href="#"
+              ><img
+                class="albums"
+                src="/assets/img/radar.jpeg"
+                alt="radar album"
+              />
+              <h3>Release Radar</h3>
+              <div>
+                <img class="play" src="/assets/play-hover.png" alt="play" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="wrapper" href="#"
+              ><img
+                class="albums"
+                src="/assets/img/mixdaily.jpeg"
+                alt="stranger things movie album"
+              />
+              <h3>Daily Mix 1</h3>
+              <div>
+                <img class="play" src="/assets/play-hover.png" alt="play" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="popular-artists">
+        <h2>Most popular artists</h2>
+        <p class="subheading">
+          The more you listen, the more accurate the suggestions.
+        </p>
+        <ul>
+          <li>
+            <a class="wrapper" href="#"
+              ><img
+                class="albums"
+                src="/assets/img/youg.jpeg"
+                alt="Lana Del Ray album"
+              />
+              <h3>Lana Del Ray</h3>
+              <div>
+                <img class="play" src="/assets/play-hover.png" alt="play" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="wrapper" href="#"
+              ><img
+                class="albums"
+                src="/assets/img/einaudi.jpeg"
+                alt="einaudi album"
+              />
+              <h3>Ludovico Einaudi</h3>
+              <div>
+                <img class="play" src="/assets/play-hover.png" alt="play" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="play-bar">
+      <div class="playbar-left">
+        <div class="responsive">
+          <img
+            id="sinister-small"
+            src="/assets/img/sinister.jpeg"
+            alt="sinister movie album"
+          />
+        </div>
+        <div class="now-playing-text">
+          <h4>Sinister</h4>
+          <p>Brano nome</p>
+        </div>
+        <div class="responsive">
+          <a class="icons-bottom-left" href="#"><i class="far fa-heart"></i></a>
+          <a class="icons-bottom-left" href="#"
+            ><i class="far fa-folder"></i
+          ></a>
+        </div>
+      </div>
+      <nav class="playbar-middle">
+        <div class="playbar-middle-top">
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-random"></i
+          ></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-step-backward"></i
+          ></a>
+          <a id="play-icon" href="#"><i class="far fa-play-circle"></i></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-step-forward"></i
+          ></a>
+          <a class="playbar-icons-middle" href="#"
+            ><i class="fas fa-redo"></i
+          ></a>
+        </div>
+        <div class="playbar-middle-bottom">
+          <div class="playback-timer-elapsed"><p>0:25</p></div>
+          <progress id="playback-bar" max="100" value="20"></progress>
+          <div class="playback-timer-total"><p>4:35</p></div>
+        </div>
+      </nav>
+      <div class="playbar-right">
+        <div class="responsive">
+          <a class="playbar-icons" href="#"><i class="fas fa-list-ul"></i></a>
+          <a class="playbar-icons" href="#"><i class="fas fa-desktop"></i></a>
+          <a class="playbar-icons" href="#"><i class="fas fa-volume-up"></i></a>
+        </div>
+        <progress id="volume-bar" max="100" value="60"></progress>
+      </div>
+    </footer>
+  </body>
 </html>
