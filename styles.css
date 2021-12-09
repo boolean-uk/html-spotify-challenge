@@ -135,7 +135,6 @@ section.johndoe-section {
     color: white;
     padding-left: 20px;
     position: absolute;
-
     top: 78%;
     left: 0%;
 }
@@ -188,7 +187,6 @@ header.header {
     background-color: #041C2C;
     opacity: 50%;
     display: flex;
-    overflow-y: hidden;
     justify-content: end;
     place-items: center;
     position: sticky;
@@ -311,7 +309,6 @@ img.circle-pic{
 /* FOOTER SECTION */
 .footer {
     grid-area: footer;
-    overflow-y: hidden;
     background-color: #282828;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
