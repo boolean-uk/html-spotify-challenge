@@ -7,29 +7,266 @@
 body {
     padding: 0;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
     display: grid;
-    grid-template: "left-c top-h" 90px
-                   "left-c main" 1fr
+    grid-template: "left-column top-header" 90px
+                   "left-column main" 1fr
                    "footer footer" 90px /
                      230px   1fr;
 }
 
-nav {
-    grid-area: left-c;
+header {
+    display: grid;
+    justify-items: right;
+    padding: 10px;
+    align-items: center;
+}
+
+header ul li,
+header ul li a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header ul {
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+body ol li a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav.left-column {
+    grid-area: left-column;
     background-color: #000000;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 100px;
+}
+
+#spotify-logo {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+nav.left-column ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.left-column ol li {
+    padding-bottom: 8px;
+}
+
+nav.left-column ol li a.item-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-nav img {
+    width: 1.5rem;
+}
+
+.item-nav-space-last {
+    padding-bottom: 20px;
+}
+
+nav.left-column ol li a.item-nav .icon-box {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+}
+
+nav.left-column ol.bottom-nav-list {
+    display: block;
+    display: grid;
+    align-items: end;
 }
 
 header {
-    grid-area: top-h;
+    grid-area: top-header;
     background-color: #080b12;
 }
 
 main {
     grid-area: main;
     background-color: #141922;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+nav.top-menu ol {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: end;
+    gap: 1rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+main .content-menu {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-transform: capitalize;
+}
+
+main .content-menu .recently-played-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 50px;
+}
+
+.container-recently-played {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 175px);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.song {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+}
+
+.song img {
+    max-width: 175px;
+}
+
+main .content-menu .created-for-user-section {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    row-gap: 10px;
+    padding-bottom: 35px;
+}
+
+main .content-menu h4.normal-text {
+    text-transform: initial;
+}
+
+.created-for-user-song,
+.created-for-user-song img {
+    text-align: center;
+    max-width: 175px;
+}
+
+.popular-artists-section {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.artists,
+.artists img {
+    text-align: center;
+    max-width: 175px;
+    border-radius: 50%;
 }
 
 footer {
     grid-area: footer;
     background-color: #282828;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 220px 1fr 250px;
+    padding: 15px;
 }
+
+footer .left-footer,
+footer .left-footer img {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 45px 1fr;
+    gap: 12px;
+    max-width: 45px;
+}
+
+footer .left-footer .left-footer-details {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+footer .left-footer .left-footer-details .left-footer-icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+footer .middle-footer {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto auto;
+}
+
+footer .middle-footer .footer-top-icons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+}
+
+footer .middle-footer .footer-song-progress {
+    display: grid;
+    grid-template-columns: 10px 4fr 10px;
+    gap: 25px;
+}
+
+footer .middle-footer .footer-song-progress .progress {
+    height: 5px;
+    width: 100px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    position: relative;
+}
+
+footer .middle-footer .footer-song-progress .progress .current-progress {
+    height: 5px;
+    width: 50px;
+    background-color: rgb(193, 193, 193);
+    position: absolute;
+}
+
+footer .right-footer {
+    display: grid;
+    justify-items: center;
+}
+
+footer .right-footer .right-footer-icons {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    gap: 17px;
+}
+
+footer .right-footer .right-footer-icons .volume-adjust {
+    height: 5px;
+    width: 100px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    position: relative;
+}
+
+footer .right-footer .right-footer-icons .volume-adjust .volume-level {
+    height: 5px;
+    width: 50px;
+    background-color: rgb(193, 193, 193);
+    position: absolute;
+}
+
