@@ -6,6 +6,7 @@
   line-height: 1.6;
   text-decoration: none;
 }
+
 body {
   height: 100vh;
   display: grid;
@@ -15,6 +16,7 @@ body {
     "playbar playbar" 80px /
     200px 5fr;
 }
+
 .left-menu,
 .left-top,
 .left-middle {
@@ -31,29 +33,35 @@ body {
   color: white;
   background-color: rgb(0, 0, 0);
 }
+
 .left-top ul,
 .left-middle ul {
   list-style-type: none;
 }
+
 .left-top ul li:hover,
 .left-middle ul li:hover {
     border-left: solid 3px greenyellow;
 }
+
 .icons span {
   display: grid;
   padding-left: 20px;
   text-decoration: none;
 }
+
 .playlist {
   display: flex;
   justify-content: flex-start;
   align-content: center;
   gap: 5px;
 }
+
 .playlist span {
     line-height: 1.6;
     font-weight: 300;
 }
+
 .left-bottom h2 {
   display: flex;
   flex-direction: row;
@@ -65,7 +73,6 @@ body {
   padding-top: 40px;
 }
 
-
 .logo {
   display: flex;
   flex-direction: row;
@@ -73,6 +80,7 @@ body {
   width: 120px;
   height: 70px;
 }
+
 .header {
   grid-area: header;
   background-color:rgb(8, 11, 18);
@@ -81,7 +89,6 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
-
 }
 
 .signup {
@@ -93,6 +100,7 @@ body {
     background-color: black;
     color: white;
 }
+
 .signup:hover {
     opacity: 0.5;
 }
@@ -107,23 +115,26 @@ body {
   color: white;
   background-color: rgb(20, 25, 34);
 }
+
 #main-nav {
     display: flex;
     flex-direction: row;
     color: white;
     height: 10px;
 }
+
 #main-nav ul li {
     display: inline;
     justify-content:right;
     margin-left: 70px;
     padding-left: 20px;
     color: black
-
 }
+
 #main-nav ul li:hover {
     color: white;
 }
+
 #recently,
 #created,
 #popular {
@@ -133,14 +144,14 @@ body {
     grid-auto-rows: 0;
     gap: 5px;
     margin-left: 20px;
-
 }
+
 .albumhead {
     display: inline;
     padding-left: 20px;
     padding-top: 40px;
-
 }
+
 .albumcard,
 .albumcard-round {
   display: grid;
@@ -157,8 +168,8 @@ body {
     justify-content: center;
     margin-left: 8px;
     margin-top: 5px;
-    
 }
+
 .albumcard-round img {
     max-width: 200px;
     border-radius: 50%;
