@@ -16,40 +16,57 @@ body {
      250px      1fr;
 }
 
-.leftnav {
+section.leftnav {
     grid-area: leftnav;
     background-color: rgb(0,0,0);
     display: grid;
     height: 100%;
-    width: 250px;
-    grid-template-rows: 85px 150px 535px 85px;
+    grid-template-rows: 85px 150px 580px 85px;
     position: fixed;
     left: 0;
 }
 
-.spotifylogo-section {
+.spotifylogo-section1 {
     display: flex;
     background-color: rgb(0,0,0);
     place-items: center;
-}
-
-.spotifylogo-section img {
     height: 40px;
-    margin-left: 15px;  
+    margin-left: 15px; 
+    margin-top: 20px;
 }
 
-.home-section {
+.spotifylogo-section2 {
     display: flex;
+    background-color: rgb(0,0,0);
+    place-items: center;
+    height: 40px;
+    padding-left: 15px; 
+    margin-top: 20px;
+}
+
+section.home-section {
     place-items: start;
-    flex-direction: column;
     color: white;
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 5px;
+    display: inline;
 }
 
-.librarybut img,
-.searchbut img,
-.homebut img {
+h2.leftnav-text-h {
+    color: white;
+}
+
+#nav-section1,
+#nav-section2,
+#nav-section3 {
+    display: flex;
+    place-items: start;
+    margin-top: 5px;
+}
+
+img.librarybut,
+img.searchbut,
+img.homebut {
     height: 30px;
     padding-right: 10px;
 }
@@ -81,6 +98,7 @@ h2 {
     flex-direction: column;
     color: grey;
     padding-left: 20px;
+    margin-top: 5px;
 }
 
 h3 {
@@ -106,7 +124,7 @@ button {
 }
 
 /* INSTALL/PROFILE SECTION */
-.johndoe-section {
+section.johndoe-section {
     display: flex;
     place-items: start;
     flex-direction: column;
@@ -188,7 +206,7 @@ h1 {
     padding: 30px;
     height: 140vh;
     scroll-behavior: smooth;
-    Overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 nav {
@@ -225,7 +243,7 @@ ul {
     font-family: Helvetica,helvetica,arial,sans-serif;
     font-weight: bolder;
     font-size: 1.9rem;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .album-one {
@@ -254,9 +272,9 @@ h2.artist-name {
     padding-top: 10px;
 }
 
-.created-for {
+h5.created-for {
     padding-top: 20px;
-    padding-bottom: 0;;    
+    padding-bottom: 10px;    
 }
 
 p {
@@ -422,8 +440,70 @@ label {
     opacity: .4;
 }
 
-a:hover {
-    color: hotpink;
+
+
+/* REMOVING PLAYLIST TEXT */
+  @media screen and (max-width: 700px) {
+      section.leftnav {
+        grid-template-rows: 85px 150px 535px 85px;
+        width: 1fr;
+      }
+      section.playlist-section{
+          display: none;
+      }
   }
 
+/* REMOVING HOME SECTION TEXT*/
+  @media screen and (max-width: 700px) {
+    section#nav-section {
+        display: inline;
+        width: 1fr;
+    }
+   h2.leftnav-text, 
+   h2.leftnav-text-h {
+        display: none;
+        width: 1fr;
+    }
+}
 
+/* REMOVING INSTALL/PROFILE TEXT */
+@media screen and (max-width: 700px) {
+    section.johndoe-section {
+        display: inline;
+    }
+    hr,
+    h2.installtext,
+    h2.profilebut{
+        display: none;
+    }
+}
+
+/* SWAPPING SPOTIFY LOGO */
+img.spotifylogo-section2 {
+    display: none;
+ }
+ 
+ @media screen and (max-width: 700px){
+    img.spotifylogo-section1 {
+      display: none;
+    }
+    img.spotifylogo-section2 {
+      display: block;
+    }
+ }
+ 
+ @media screen and (max-width: 700px){
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template: 
+        "leftnav   header"  85px
+        "leftnav    main"   1fr
+        "footer    footer" 110px/
+         80px     620px;
+    }
+}
+ /* HOVER ANIMATION */
+ li a:hover {
+    text-decoration: underline greenyellow;
+}
