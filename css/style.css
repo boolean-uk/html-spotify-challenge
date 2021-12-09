@@ -282,10 +282,8 @@
 
 .footer-right {
   grid-area: fr;
-  /* display: inline; */
   display: flex;
   gap: 10px;
-  /* grid-auto-flow: column; */
   align-items: center;
   padding: 10px;
 }
@@ -300,12 +298,10 @@ input.upgrade {
   font-size: 0.8em;
   text-decoration: none;
   margin: 1px 1px;
-  /* cursor: pointer; */
 }
 
 input.track[type="range"] {
   width: 75%;
-  /* width:550px; */
 }
 
 .logo-small {
