@@ -51,6 +51,10 @@ body {
   align-content: center;
   gap: 5px;
 }
+.playlist span {
+    line-height: 1.6;
+    font-weight: 300;
+}
 .left-bottom h2 {
   display: flex;
   flex-direction: row;
@@ -73,7 +77,23 @@ body {
 .header {
   grid-area: header;
   background-color:rgb(8, 11, 18);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+
 }
+.signup {
+    align-content: center;
+    justify-content:center;
+    border-radius: 23px;
+    height: 32px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
 #main {
   grid-area: main;
   background-color: orange;
@@ -118,7 +138,8 @@ body {
     padding-top: 40px;
 
 }
-.albumcard {
+.albumcard,
+.albumcard-round {
   display: grid;
   width: 180px;
   border-radius: 4px;
@@ -126,14 +147,25 @@ body {
   text-align: center;
   line-height: 1;
 }
+
 .albumcard img {
     max-width: 200px;
     border-radius: 4px;
     justify-content: center;
     margin-left: 8px;
     margin-top: 5px;
+    
 }
-.albumcard img:hover {
+.albumcard-round img {
+    max-width: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.albumcard img:hover,
+.albumcard-round img:hover {
     opacity: 0.8 ;
     text-emphasis-color: green;
 }
