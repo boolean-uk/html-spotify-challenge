@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   height: 100vh;
   display: grid;
@@ -399,6 +403,9 @@ ol li a,
 
 .wrapper:hover .albums {
   opacity: 0.2;
+  /* width: 210px; */ /* GROW EFFECT */
+  /* transition: width 0.3s, opacity 0s;
+  transition-timing-function: ease-in-out; */
 }
 
 .play {
