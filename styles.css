@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-color: rgb(0,0,0);
+}
+
+/* PAGE LAYOUT */
+.container {
+    display: grid;
+    position: relative;
+    height: 100vh;
+    background-color: #041C2C;
+    grid-template: 
+    "leftnav   header"  85px
+    "leftnav    main"   1fr
+    "footer    footer" 110px/
+     250px      1fr;
+}
+
+section.leftnav {
+    grid-area: leftnav;
+    background-color: rgb(0,0,0);
+    display: grid;
+    height: 100vh;
+    min-width: 250px;
+    grid-template-rows: 85px 150px 1fr 85px;
+    position: fixed;
+    left: 0;
+}
+
+.spotifylogo-section1 {
+    display: flex;
+    background-color: rgb(0,0,0);
+    place-items: center;
+    height: 40px;
+    margin-left: 15px; 
+    margin-top: 20px;
+}
+
+.spotifylogo-section2 {
+    display: flex;
+    background-color: rgb(0,0,0);
+    place-items: center;
+    height: 40px;
+    padding-left: 15px; 
+    margin-top: 20px;
+}
+
+section.home-section {
+    place-items: start;
+    color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    display: inline;
+}
+
+h2.leftnav-text-h {
+    color: white;
+}
+
+#nav-section1,
+#nav-section2,
+#nav-section3 {
+    display: flex;
+    place-items: start;
+    margin-top: 5px;
+}
+
+img.librarybut,
+img.searchbut,
+img.homebut {
+    height: 30px;
+    padding-right: 10px;
+}
+
+h2.homebut {
+    color: white;
+}
+
+h2 {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .9rem;
+    color: grey;
+    line-height: 2;
+}
+
+.librarybut,
+.searchbut,
+.homebut {
+    display: flex;
+    line-height: 2.5; 
+    align-items: center;
+}
+
+/* PLAYLIST SECTION */
+.playlist-section {
+    display: flex;
+    place-items: start;
+    flex-direction: column;
+    color: grey;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.create-text {
+    display: flex;
+    line-height: 2.5;
+    font-size: 1rem; 
+    align-items: center;
+    font-weight: normal;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    border: 0;
+    margin-right: 10px;
+    place-items: center;
+}
+
+/* INSTALL/PROFILE SECTION */
+section.johndoe-section {
+    display: flex;
+    place-items: start;
+    flex-direction: column;
+    color: white;
+    padding-left: 20px;
+    position: absolute;
+    top: 78%;
+    left: 0%;
+}
+
+.installsection {
+    display: inline-flex;
+}
+
+.profilebut img,
+img.installbut {
+    height: 30px;
+    padding-right: 10px;
+}
+
+.profilepict {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 2px;
+}
+.profile-svg {
+    display: flex;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.installbut,
+.profilebut {
+    display: flex;
+    line-height: 2.5; 
+    align-items: center;
+}
+
+h2.profilebut {
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* HEADER SECTION */
+header.header {
+    grid-area: header;
+    background-color: #041C2C;
+    opacity: 50%;
+    display: flex;
+    justify-content: end;
+    place-items: center;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    color: white;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .8rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-right: 10px;
+    padding: 10px 40px 10px 40px;
+}
+
+/* MAIN SECTION */
+.main {
+    grid-area: main;
+    background-color: #141922;
+    display: inline;
+    padding: 30px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 140vh;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.main-navbar { 
+    display: inline-flex;
+    place-content: center;
+    line-height: 10px;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.main-navbar li a {
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .9rem;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ALBUM LAYOUT */
+.subtitles h5 {
+    color: white;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: bolder;
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+}
+
+.album-one {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+}
+
+.per-album {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+section.per-album img {
+    height: 210px;
+}
+
+h2.artist-name {
+    display: flex;
+    font-weight: bold;
+    color: white;
+    place-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h5.created-for {
+    padding-top: 20px;
+    padding-bottom: 10px;    
+}
+
+p {
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .9rem;
+    color: grey;
+    line-height: 1;
+}
+
+.album-two {
+    display: grid;
+    gap: 25px;
+    padding-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+}
+
+.most-popular {
+    padding-top: 30px;
+}
+
+img.circle-pic{
+    border-radius: 50%;
+}
+
+/* FOOTER SECTION */
+.footer {
+    grid-area: footer;
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: sticky;
+    bottom: 0;
+
+
+}
+
+/* LEFT FOOTER SECTION */
+.bottomleft {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    gap: 40px;
+
+}
+
+.album-playing {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 10px;
+}
+
+.bottomleft img { 
+    height: 60px;
+}
+
+.sinistersong,
+.sinistername {
+    color: white;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .7rem;
+}
+
+.sinistername {
+    font-weight: bold;
+}
+.left-icons img {
+    height: 20px;
+}
+
+img.heart-icon {
+    padding-right: 10px;
+}
+
+/* MIDDLE FOOTER SECTION */
+.bottommain {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.audioicons {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.audioicons img {
+    display: inline-flex;
+    place-content: center;
+}
+
+progress#bar {
+    width: 380px;
+}
+
+.bottomright {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.bottomright img {
+    height: 20px;
+}
+
+label {
+    color: white;
+    font-family: Helvetica,helvetica,arial,sans-serif;
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+#volumebar {
+    height: 14px;
+}
+
+/* HOVERING OVER COVER IMAGES */
+.image-div {
+    position: relative;
+    float: left;
+    margin: 5px;}
+
+.image-div:hover .hidden_img
+  {
+  display: block;
+  }
+
+.image-div .hidden_img {
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    opacity: .4;
+}
+
+/* 50% RADIUS OVERLAY */
+.image-divv {
+    position: relative;
+    float:left;
+    margin:5px;}
+
+.image-divv:hover .hidden_img
+  {
+  display: block;
+  }
+
+.image-divv .hidden_img {
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+    border-radius: 50%;
+    opacity: .4;
+}
+
+/* REMOVING PLAYLIST TEXT */
+  @media screen and (max-width: 700px) {
+      section.leftnav {
+        grid-template-rows: 85px 150px 535px 85px;
+        width: 1fr;
+      }
+      h2.playlist-text,
+      h3.create-text,
+      h3.playlist-sub {
+          display: none;
+      }
+  }
+
+/* REMOVING HOME SECTION TEXT*/
+  @media screen and (max-width: 700px) {
+    section#nav-section {
+        display: inline;
+        width: 1fr;
+    }
+   h2.leftnav-text, 
+   h2.leftnav-text-h {
+        display: none;
+        width: 1fr;
+    }
+}
+
+/* REMOVING INSTALL/PROFILE TEXT */
+@media screen and (max-width: 700px) {
+    section.johndoe-section {
+        display: inline;
+    }
+    hr,
+    h2.installtext,
+    h2.profilebut{
+        display: none;
+    }
+}
+
+/* SWAPPING SPOTIFY LOGO */
+img.spotifylogo-section2 {
+    display: none;
+ }
+ 
+ @media screen and (max-width: 700px){
+    img.spotifylogo-section1 {
+      display: none;
+    }
+    img.spotifylogo-section2 {
+      display: block;
+    }
+ }
+ 
+ @media screen and (max-width: 700px){
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template: 
+        "leftnav   header"  85px
+        "leftnav    main"   1fr
+        "footer    footer" 110px/
+         70px     620px;
+    }
+    section.leftnav {
+        grid-area: leftnav;
+        min-width: 70px;
+    }
+}
+
+ /* UNDERLINE/BORDER ANIMATION */
+u {
+    text-decoration-color: greenyellow;
+    padding-left: 20px;
+}
+.homebut {
+    border-left: 2px solid greenyellow;
+    height: 30px;
+    padding-left: 0;
+}
