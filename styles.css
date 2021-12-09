@@ -304,3 +304,29 @@
     .timing-2 {
         font-size: smaller;
     }
+    
+    .image,
+    .image-1 {
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }
+    
+    .image img {
+        width: 100%;
+    }
+    
+    .image .subtle,
+    .image-1 .subtle {
+        width: 100px;
+        height: 100px;
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .image:hover .subtle,
+    .image-1:hover .subtle {
+        display: inline;
+    }
