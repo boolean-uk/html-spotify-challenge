@@ -11,36 +11,36 @@ body, html {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: auto 81%;
-    grid-template-rows: 10% auto 10%;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 75px 1fr 84px;
     grid-template-areas:
     "left header header"
     "left main main"
-    "left footer footer"
+    "footer footer footer"
 }
 
 svg {
     display: inline;
 }
 
-.left {
+.left-sidebar {
     grid-area: left;
     background-color: black;
 }
 
 .header {
     grid-area: header;
-    background-color: rgb(2, 2, 22);
+    background-color: #080C12;
 }
 
 .main {
     grid-area: main;
-    background-color: #0e0f4ddc; 
+    background-color: #141922; 
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgb(133, 133, 133);
+    background-color: #282928;
 }
 
 
@@ -90,5 +90,3 @@ ul {
     padding: 7.5px;
     
 }
-
-

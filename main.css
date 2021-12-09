@@ -5,6 +5,76 @@
     flex-direction: row;
     gap: 2.5rem;
     justify-content: center;
+    
 }
 
+.main #main-nav-bar p a {
+    color: #797b81;
+}
+
+.main h2 {
+    color: white;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.Heavy-Metal {
+    padding-left: 25px;
+}
+
+.Stranger-Things {
+    padding-left: 25px;
+}
+
+.Aquietplace {
+    padding-left: 25px;
+}
+
+.Split {
+    padding-left: 25px;
+}
+
+.Cure {
+    padding-left: 25px;
+}
+
+.sinister {
+    padding-left: 25px;
+}
+
+.main p1 {
+    font-size: 16px;
+    padding-left: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.main p2 {
+    color: lightgrey;
+    padding-left: 70px;
+    font-size: 10px;
+}
+
+.Release-Radar {
+    padding-left: 25px;
+}
+
+.Daily-Mix {
+    padding-left: 25px;
+}
+
+.main p3 {
+    padding-left: 57px;
+    color: white;
+}
+
+.Lana-Del-Ray, .Ein-Audi {
+    padding-left: 25px;
+    border-radius: 50%;
+}
 
