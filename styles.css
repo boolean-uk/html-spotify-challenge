@@ -1,332 +1,343 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.spotify {
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 200px 1fr;
+}
+
+@media screen and (max-width: 800px) {
     .spotify {
-        height: 100vh;
-        color: white;
         display: grid;
-        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 200px 1fr;
+        grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 1fr;
     }
-    
-    @media screen and (max-width: 800px) {
-        .spotify {
-            display: grid;
-            grid-template: "nav header" 80px "nav main" 1fr "footer footer" 80px / 50px 1fr;
-        }
-        .playlist p,
-        .playlist .instalia,
-        .playlist .john,
-        .crea .sub-1,
-        .crea .sub-2 {
-            display: none;
-        }
-    }
-    
-    header {
-        grid-area: header;
-        background-color: #080b12;
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        padding: 10px;
-    }
-    
-    header .upgrade {
-        display: grid;
-        place-items: center;
-        border: 1px solid white;
-        border-radius: 20px;
-        margin: 15px;
-    }
-    
-    nav {
-        display: grid;
-        grid-template-rows: 60px 150px 1fr 30px 30px;
-        grid-area: nav;
-        background-color: black;
-        gap: 5px;
-        padding: 10px;
-        font-size: smaller;
-        color: grey;
-    }
-    
-    nav .spoty {
-        display: grid;
-        grid-template-columns: 5px 1fr 40px;
-        padding: 10px;
-        gap: 3px;
-    }
-    
-    .spoty .logo,
-    .spoty .big-spoty {
-        width: 100%;
-        height: 100%;
-    }
-    
-    nav .icon {
-        display: grid;
-        grid-template-rows: 50px 50px 50px;
-        padding: 5px;
-    }
-    
-    .icon .home {
-        display: grid;
-        grid-template-columns: 30px 100px;
-        gap: 5px;
-        padding: 5px;
-    }
-    
-    .icon .cerca {
-        display: grid;
-        grid-template-columns: 30px 100px;
-        gap: 5px;
-        padding: 5px;
-    }
-    
-    .icon .latua {
-        display: grid;
-        grid-template-columns: 30px 100px;
-        gap: 5px;
-        padding: 5px;
-    }
-    
-    .spotify .playlist {
-        display: grid;
-        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
-        padding: 5px;
-    }
-    
-    .playlist .crea {
-        display: grid;
-        grid-template-columns: 30px 100px;
-        padding: 3px;
-    }
-    
-    .instalia {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        padding: 3px;
-        gap: 4px;
-    }
-    
-    .john {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        padding: 3px;
-        gap: 4px;
-    }
-    
-    .john .logo-6,
-    .john p {
-        border: 1px dashed black;
-    }
-    
-    main {
-        grid-area: main;
-        background-color: #141922;
-        display: grid;
-        grid-template-rows: 30px 50px 1fr 70px 1fr 70px 1fr;
-        padding: 10px;
-        overflow-y: scroll;
-    }
-    
-    main .top-menu {
-        display: grid;
-        grid-template-columns: 50px 1fr 50px;
-        align-items: center;
-        place-items: center;
-    }
-    
-    .top-menu p {
-        display: inline;
-        margin: 10px;
-        font-size: smaller;
-        color: grey;
-    }
-    
-    .recently-played {
-        font-size: 30px;
-        padding: 5px;
-        font-weight: 600;
-    }
-    
-    .creative,
-    .artistic-1 {
-        font-size: 30px;
-        font-weight: 600;
-    }
-    
-    main .boxes {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 200px);
-        padding: 10px;
-        grid-gap: 10px;
-    }
-    
-    .boxes .card {
-        display: grid;
-        grid-template-rows: 1fr 40px 40px;
-    }
-    
-    .john-doe {
-        padding: 5px;
-    }
-    
-    main .boxes-1 {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        padding: 10px;
-        gap: 10px;
-    }
-    
-    .boxes-1 .card-1 {
-        display: grid;
-        grid-template-rows: 1fr 80px;
-    }
-    
-    .artistic {
-        padding: 10px;
-    }
-    
-    main .round-boxes {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        padding: 10px;
-        gap: 10px;
-    }
-    
-    .image img,
-    .image-1 img {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .image-2 img,
-    .image-3 img {
-        width: 100%;
-        height: 100%;
-        clip-path: circle();
-    }
-    
-    .first-title,
-    .second-title,
-    .first-title-1 {
-        display: grid;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .home-1,
-    .cerca-2,
-    .latua-4 {
-        display: grid;
-        align-items: center;
-    }
-    
-    .second-title {
-        font-size: smaller;
-        color: grey;
-    }
-    
-    .sub-2 {
-        font-size: larger;
-    }
-    
-    span {
-        font-weight: bolder;
-        color: white;
-    }
-    
-    footer {
-        grid-area: footer;
-        background-color: #282828;
-        display: grid;
-        grid-template-columns: 200px 1fr 200px;
-    }
-    
-    footer .initial {
-        display: grid;
-        grid-template-columns: 50px 1fr 25px 25px;
-        padding: 10px;
-    }
-    
-    .initial .poster,
-    .initial .poster-name,
-    .initial .love-symbol,
-    .initial .folder-symbol {
-        display: grid;
-        place-items: center;
-    }
-    
-    .initial p {
-        font-size: 9px;
-    }
-    
-    footer .mid {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        padding: 10px;
-    }
-    
-    .mid .mid-1 {
-        display: grid;
-        grid-template-columns: 25px 25px 25px 25px 25px;
-    }
-    
-    .mid-1 .shuffle,
-    .mid-1 .backforward,
-    .mid-1 .plays-icon,
-    .mid-1 .forwardicon,
-    .mid-1 .refresh-icon {
-        padding-left: 30rem;
-    }
-    
-    .mid-2 {
-        padding-left: 23rem;
-    }
-    
-    .mid .mid-2 {
-        display: grid;
-        grid-template-columns: 35px 300px 35px;
-    }
-    
-    footer .last {
-        display: grid;
-        grid-template-columns: 25px 25px 25px 1fr;
-        padding: 10px;
-        place-items: center;
-    }
-    
-    .timing-1,
-    .timing-2 {
-        font-size: smaller;
-    }
-    
-    .image,
-    .image-1 {
-        width: 200px;
-        height: 200px;
-        position: relative;
-    }
-    
-    .image img {
-        width: 100%;
-    }
-    
-    .image .subtle,
-    .image-1 .subtle {
-        width: 100px;
-        height: 100px;
+    .playlist p,
+    .playlist .instalia,
+    .playlist .john,
+    .crea .sub-1,
+    .crea .sub-2 {
         display: none;
-        position: absolute;
-        top: 40px;
-        left: 40px;
     }
-    
-    .image:hover .subtle,
-    .image-1:hover .subtle {
-        display: inline;
-    }
+}
+
+header {
+    grid-area: header;
+    background-color: #080b12;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 10px;
+}
+
+header .upgrade {
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 60px 150px 1fr 30px 30px;
+    grid-area: nav;
+    background-color: black;
+    gap: 5px;
+    padding: 10px;
+    font-size: smaller;
+    color: grey;
+}
+
+nav .spoty {
+    display: grid;
+    grid-template-columns: 5px 1fr 40px;
+    padding: 10px;
+    gap: 3px;
+}
+
+.spoty .logo,
+.spoty .big-spoty {
+    width: 100%;
+    height: 100%;
+}
+
+nav .icon {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    padding: 5px;
+}
+
+.icon .home {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.icon .cerca {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.icon .latua {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.spotify .playlist {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    padding: 5px;
+}
+
+.playlist .crea {
+    display: grid;
+    grid-template-columns: 30px 100px;
+    padding: 3px;
+}
+
+.instalia {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 3px;
+    gap: 4px;
+}
+
+.john {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 3px;
+    gap: 4px;
+}
+
+.john .logo-6,
+.john p {
+    border: 1px dashed black;
+}
+
+main {
+    grid-area: main;
+    background-color: #141922;
+    display: grid;
+    grid-template-rows: 30px 50px 1fr 70px 1fr 70px 1fr;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+main .top-menu {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    place-items: center;
+}
+
+.top-menu p {
+    display: inline;
+    margin: 10px;
+    font-size: smaller;
+    color: grey;
+}
+
+.recently-played {
+    font-size: 30px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.creative,
+.artistic-1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.boxes .card {
+    display: grid;
+    grid-template-rows: 1fr 40px 40px;
+}
+
+.john-doe {
+    padding: 5px;
+}
+
+main .boxes-1 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.boxes-1 .card-1 {
+    display: grid;
+    grid-template-rows: 1fr 80px;
+}
+
+.artistic {
+    padding: 10px;
+}
+
+main .round-boxes {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.image img,
+.image-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-2 img,
+.image-3 img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle();
+}
+
+.first-title,
+.second-title,
+.first-title-1 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.home-1,
+.cerca-2,
+.latua-4 {
+    display: grid;
+    align-items: center;
+}
+
+.second-title {
+    font-size: smaller;
+    color: grey;
+}
+
+.sub-2 {
+    font-size: larger;
+}
+
+span {
+    font-weight: bolder;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+footer .initial {
+    display: grid;
+    grid-template-columns: 50px 1fr 25px 25px;
+    padding: 10px;
+}
+
+.initial .poster,
+.initial .poster-name,
+.initial .love-symbol,
+.initial .folder-symbol {
+    display: grid;
+    place-items: center;
+}
+
+.initial p {
+    font-size: 9px;
+}
+
+footer .mid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+}
+
+.mid .mid-1 {
+    display: grid;
+    grid-template-columns: 25px 25px 25px 25px 25px;
+    justify-self: center;
+}
+
+.mid .mid-2 {
+    display: grid;
+    grid-template-columns: 35px 300px 35px;
+    justify-self: center;
+}
+
+.mid-2 .listline {
+    background-color: gray;
+    height: 2px;
+}
+
+.mid-2 .timing-2 {
+    display: grid;
+    justify-items: right;
+}
+
+footer .last {
+    display: grid;
+    grid-template-columns: 25px 25px 25px 1fr;
+    padding: 20px;
+}
+
+.last .catalogue,
+.last .screen,
+.last .volume,
+.last .progress-line {
+    font-size: 10px
+}
+
+.last .progress-line {
+    background-color: grey;
+    height: 3px;
+}
+
+.timing-1,
+.timing-2 {
+    font-size: 7px;
+}
+
+.image,
+.image-1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image .subtle,
+.image-1 .subtle {
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.image:hover .subtle,
+.image-1:hover .subtle {
+    display: inline;
+}
