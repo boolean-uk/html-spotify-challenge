@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section class="left-menu">
+      <div class="logo">
+        <img src="/boolean-uk-html-spotify/assets/img/logo.svg" alt="" />
+      </div>
+      <nav class="left-top">
+        <ul>
+          <li>
+            <img
+              class="icons"
+              width="24"
+              height="24"
+              src="/boolean-uk-html-spotify/assets/img/home.svg"
+              alt=""
+            />
+            <span>Home</span>
+          </li>
+          <li>
+            <img
+              class="icons"
+              width="24"
+              height="24"
+              src="/boolean-uk-html-spotify/assets/img/search.svg"
+              alt=""
+            />
+            <span>Search</span>
+          </li>
+          <li>
+            <img
+              class="icons"
+              width="24"
+              height="24"
+              src="/boolean-uk-html-spotify/assets/img/libreria.svg"
+              alt=""
+            />
+            <span>Your Library</span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="left-middle">
+        <ul>
+          <li>
+            <img
+              width="24"
+              height="24"
+              src="/boolean-uk-html-spotify/assets/img/logo-small.svg"
+              alt=""
+            />
+            <span>Create Playlist</span>
+          </li>
+          <li class="playlist">
+            <span>Gym Playlist</span>
+          </li>
+          <li class="playlist">
+            <span>Shower Tunes</span>
+          </li>
+          <li class="playlist">
+            <span>Italian Dinner</span>
+          </li>
+          <li class="playlist">
+            <span>Mams Car</span>
+          </li>
+          <li class="playlist">
+            <span>Samba di amigo</span>
+          </li>
+          <li class="playlist">
+            <span>80s Power Ballads</span>
+          </li>
+        </ul>
+      </nav>
+      <ul class="left-bottom">
+        <h2>Install app</h2>
+        <h2>
+          <img
+            width="24"
+            height="24"
+            src="/boolean-uk-html-spotify/assets/img/profile.svg"
+            alt=""
+          />Jason Kundi
+        </h2>
+      </ul>
+    </section>
+    <header class="header">
+      <label for="signup">
+        <input class="signup" type="button" value="Sign up">
+      </label>
+    </header>
+    <main id="main">
+      <nav id="main-nav">
+        <ul>
+          <li>
+            TRENDING
+          </li>
+          <li>
+            PODCAST
+          </li>
+          <li>
+            CHARTS
+          </li>
+          <li>
+            GENRE'S AND MOOD
+          </li>
+          <li>
+            BRAND NEW
+          </li>
+          <li>
+            DISCOVER
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h3 class="albumhead">Recently Played</h3>
+      </header>
+      <section id="recently">
+        <div class="albumcard">
+          <img
+            src="/boolean-uk-html-spotify/assets/img/metal_lifting.jpg"
+            alt=""/>
+          <h4>Heavy Metal</h4>
+          <p class="sub">Subtitle</p>
+        </div>
+        <div class="albumcard">
+          <img src="/boolean-uk-html-spotify/assets/img/stranger.jpeg" alt="" />
+          <h4>Stranger Things,vol. 1 (a Netflix Original Series Soundtrack</h4>
+          <p class="sub">Kyle Dixon & Michael Stein</p>
+        </div>
+        <div class="albumcard">
+          <img
+            src="/boolean-uk-html-spotify/assets/img/aquietplace.jpeg"
+            alt=""/>
+            <h4>A quiet place</h4>
+            <p class="sub">Subtitle</p>
+        </div>
+        <div class="albumcard">
+          <img src="/boolean-uk-html-spotify/assets/img/split.jpeg" alt="" />
+          <h4>Split</h4>
+          <p class="sub">Subtitle</p>
+        </div>
+        <div class="albumcard">
+          <img src="/boolean-uk-html-spotify/assets/img/cure.jpeg" alt="" />
+          <h4>A cure for wellness</h4>
+          <p class="sub">Subtitle</p>
+        </div>
+      </section>
+      <header>
+        <h3 class="albumhead">Created for Jason</h3>
+      </header>
+      <section id="created">
+        <div class="albumcard">
+          <img src="/boolean-uk-html-spotify/assets/img/radar.jpeg" alt="" />
+          <h4>Release Radar</h4>
+        </div>
+        <div class="albumcard">
+          <img src="/boolean-uk-html-spotify/assets/img/mixdaily.jpeg" alt="" />
+          <h4>Daily Mix 1</h4>
+        </div>
+      </section>
+      <header>
+        <h3 class="albumhead">Popular Artists</h3>
+      </header>
+      <section id="popular">
+        <div class="albumcard-round">
+          <img
+            src="/boolean-uk-html-spotify/assets/img/youg.jpeg"
+            alt=""/>
+          <h4>Lana Del Rey</h4>
+        </div>
+        <div class="albumcard-round">
+          <img
+            src="/boolean-uk-html-spotify/assets/img/einaudi.jpeg"
+            alt=""/>
+          <h4>Larry David</h4>
+        </div>
+      </section>
+    </main>
+    <footer id="playbar">
+      <div class="playleft">
+        <img class="playing" src="/boolean-uk-html-spotify/assets/img/stranger.jpeg" alt="">
+        <ul class="playtext">
+          <h4>Stranger Things</h4>
+          <p>Kyle Dixon ..</p>
+        </ul>
+      </div>
+      <div class="playmid">
+        <img class="mediabar" src="/boolean-uk-html-spotify/media bar.PNG" alt="">
+      </div>
+      <div class="playright">
+      </div>
+    </footer>
+  </body>
 </html>
