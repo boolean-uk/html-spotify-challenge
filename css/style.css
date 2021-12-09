@@ -307,9 +307,8 @@ margin-top: 33.3%;
     .nav-hidden {
         display: block;
     }
-
-    .nav-large,
-    .nav-large li {
+    .logo-large,
+    .nav-large  {
         display: none;
     }
     .footer-left {
