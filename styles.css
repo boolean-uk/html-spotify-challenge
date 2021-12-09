@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
   height: 100vh;
   display: grid;
@@ -403,9 +399,6 @@ ol li a,
 
 .wrapper:hover .albums {
   opacity: 0.2;
-  /* width: 210px; */ /* GROW EFFECT */
-  /* transition: width 0.3s, opacity 0s;
-  transition-timing-function: ease-in-out; */
 }
 
 .play {
@@ -422,6 +415,11 @@ ol li a,
 a:hover,
 .nav-bar-top h2:hover {
   color: white;
+}
+
+.nav-bar-left li:hover,
+.playlist-nav li:hover {
+  border-left: 1px solid #adff2f;
 }
 
 .play-bar a:hover {
