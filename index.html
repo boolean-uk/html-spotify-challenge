@@ -25,6 +25,13 @@
           </h1>
           <ul>
             <li>
+              <img
+                class="logo-small nav-icon"
+                src="assets\img\logo-small.svg"
+                alt="logo-small"
+              />
+            </li>
+            <li>
               <img class="nav-icon" src="assets\img\home.svg" alt="" /><a
                 href="#"
                 >Home</a
@@ -94,45 +101,76 @@
         <h2>Recently Played</h2>
         <div class="albums played">
           <div class="card">
-            <img src="assets\img\metal_lifting.jpg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\metal_lifting.jpg" alt="" />
+            </div>
             <h3>Heavy Metal</h3>
             <p>Subtitle</p>
           </div>
           <div class="card">
-            <img src="assets\img\stranger.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\stranger.jpeg" alt="" />
+            </div>
+
             <h3>Stranger Thing, Vol.1(a Netflix Origin Series Soundtrack)</h3>
             <p>Kyle Dixon & Michael Stein</p>
           </div>
           <div class="card">
-            <img src="assets\img\aquietplace.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\aquietplace.jpeg" alt="" />
+            </div>
+
             <h3>A Quiet Place</h3>
             <p>Subtitle</p>
           </div>
           <div class="card">
-            <img src="assets\img\split.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\split.jpeg" alt="" />
+            </div>
+
             <h3>Split</h3>
             <p>Subtitle</p>
           </div>
           <div class="card">
-            <img src="assets\img\cure.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\cure.jpeg" alt="" />
+            </div>
+
             <h3>A cure for wellness</h3>
             <p>Subtitle</p>
           </div>
           <div class="card">
-            <img src="assets\img\sinister.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\sinister.jpeg" alt="" />
+            </div>
+
             <h3>Sinister</h3>
             <p>Subtitle</p>
           </div>
         </div>
-        <h2>created By Omar</h2>
+        <h2>Created By Omar</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="albums created">
           <div class="card">
-            <img src="assets\img\radar.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\radar.jpeg" alt="" />
+            </div>
+
             <h3>Release Radar</h3>
           </div>
           <div class="card">
-            <img src="assets\img\mixdaily.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img src="assets\img\mixdaily.jpeg" alt="" />
+            </div>
+
             <h3>Daily Mix 1</h3>
           </div>
         </div>
@@ -140,36 +178,46 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="albums created">
           <div class="card">
-            <img src="assets\img\youg.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img class="round-pic" src="assets\img\youg.jpeg" alt="" />
+            </div>
+
             <h3>Young</h3>
           </div>
           <div class="card">
-            <img src="assets\img\einaudi.jpeg" alt="" />
+            <div class="effects">
+              <i class="play fa fa-play-circle-o"></i>
+              <img class="round-pic" src="assets\img\einaudi.jpeg" alt="" />
+            </div>
+
             <h3>Einaudi</h3>
           </div>
         </div>
       </main>
       <footer>
-        <div>
+        <div class="left-control-1">
           <ul>
             <li><img src="assets\img\sinister.jpeg" alt="playing-song" /></li>
             <li>
               <h3>Sinister</h3>
               <p>Brano nome</p>
             </li>
-            <li>
-              <i
-                class="left-control fa fa-heart-o"
-                aria-hidden="true"
-                style="font-size: 1rem"
-              ></i>
-            </li>
-            <li>
-              <i
-                class="left-control fa fa-folder-o"
-                style="font-size: 1rem"
-              ></i>
-            </li>
+            <ul class="left-control">
+              <li>
+                <i
+                  class="left-control fa fa-heart-o"
+                  aria-hidden="true"
+                  style="font-size: 1rem"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="left-control fa fa-folder-o"
+                  style="font-size: 1rem"
+                ></i>
+              </li>
+            </ul>
           </ul>
         </div>
         <div class="main-control">
@@ -231,7 +279,11 @@
                 style="font-size: 0.8rem"
               ></i>
             </li>
-            <li><input class="volume-bar" type="range" /></li>
+            <li>
+              <div class="volume-bar-1">
+                <div class="volume-bar-2"></div>
+              </div>
+            </li>
           </ul>
         </div>
       </footer>
