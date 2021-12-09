@@ -1,6 +1,7 @@
 /* css reset */
-*,
-*::before*::after {
+body,
+body::before,
+body::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -130,16 +131,26 @@ body {
   width: 26px;
 }
 
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .user__profile {
   width: 25px;
   height: 25px;
   background-color: grey;
   border-radius: 50%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .img__install {
   width: 16px;
   height: 16px;
+  margin-left: 0.5em;
 }
 
 .covers__img--cirlce {
@@ -155,17 +166,19 @@ body {
 
 .user__name {
   font-size: var(--font-size-small-one);
+  color: white;
+  font-weight: bold;
 }
 
 .install__text {
   font-size: var(--font-size-small-two);
+  font-weight: bold;
 }
 
 /* -----overall layout */
 
 /* ---wrapper */
 .wrapper {
-  /* overflow: hidden; */
   height: 100vh;
   max-height: 100vh;
   display: grid;
@@ -312,7 +325,7 @@ footer {
 .media__playing {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -326,6 +339,11 @@ footer {
 
 .list__item--mediaTitleSmall {
   font-size: 0.6rem;
+}
+
+.list__item--mediaTitle {
+  color: white;
+  font-weight: bold;
 }
 
 .progress {
@@ -377,7 +395,7 @@ footer {
 #mediaIconsList {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -392,7 +410,11 @@ footer {
 }
 
 .slider.time {
-  width: 200px;
+  width: 60%;
+}
+
+.slider.volume {
+  width: 60%;
 }
 
 /* media icon sizes */
@@ -404,12 +426,16 @@ footer {
   font-size: 16px;
 }
 
-/* write here */
 .media__settings {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.fas.fa-volume-up,
+.fas.fa-desktop {
+  margin-left: 0.5em;
 }
 
 footer {
@@ -536,10 +562,18 @@ footer {
 .nav__bottom {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  justify-content: center;
 }
 
 /* -----misc */
+
+/* additional hover effects */
+a:hover {
+  color: white;
+}
+
+/* write here */
 
 /* ---styling scrollbars */
 
@@ -587,10 +621,6 @@ input[type="range"]::-webkit-slider-thumb {
   scrollbar-color: green green;
 }
 
-.banner {
-  float: right;
-}
-
 /* ----- */
 
 /* -----styling scrollbars */
@@ -623,5 +653,9 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .nav__bottom {
+    align-items: center;
   }
 }
