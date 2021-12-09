@@ -119,6 +119,7 @@ body {
 #main-nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     color: white;
     height: 10px;
 }
