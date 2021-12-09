@@ -117,8 +117,8 @@
         <section>
           <div class="main__nav">
             <ul>
-              <li> <a href="#">TRENDING</a> </li>
-              <li> <a href="#">PODCAST</a></li>
+              <li><a href="#">TRENDING</a></li>
+              <li><a href="#">PODCAST</a></li>
               <li><a href="#">CHARTS</a></li>
               <li><a href="#">GENRES AND MOODS</a></li>
               <li><a href="#">BRAND NEW</a></li>
@@ -127,21 +127,31 @@
           </div>
           <div class="main__recent-title"><h2>Recently played</h2></div>
           <div class="main__recent">
-            <figure>
+            <figure class="album-cover__container">
               <img
                 src="/assets/img/metal_lifting.jpg"
                 alt="heavy-metal-playlist-icons"
                 width="175"
               />
+              <img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
+              />
               <h3>Heavy Metal</h3>
               <figcaption>Subtitle</figcaption>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
               <img
                 src="/assets/img/stranger.jpeg"
                 alt="strangerthings-cover"
                 width="175"
+              />
+              <img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>
                 Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
@@ -149,61 +159,80 @@
               <figcaption>Kyle Dixon & Michael Stein</figcaption>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
               <img
                 src="/assets/img/aquietplace.jpeg"
                 alt="quiet-place-cover"
                 width="175"
+              /><img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>A quiet place</h3>
               <figcaption>Subtitle</figcaption>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
+              <img src="/assets/img/split.jpeg" alt="split-cover" width="175" />
               <img
-                src="/assets/img/split.jpeg"
-                alt="split-cover"
-                width="175"
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>Split</h3>
               <figcaption>Subtitle</figcaption>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
               <img src="/assets/img/cure.jpeg" alt="cure-cover" width="175" />
+              <img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
+              />
               <h3>A cure for wellness</h3>
               <figcaption>Subtitle</figcaption>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
               <img
                 src="/assets/img/sinister.jpeg"
                 alt="sinister-cover"
                 width="175"
+              /><img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>Sinister</h3>
               <figcaption>Subtitle</figcaption>
             </figure>
           </div>
-          <div class="section__john-title">
+          <div class="main__john-title">
             <h2>Created for John Doe</h2>
             <span>The more you listen, the more accurate the suggestions.</span>
           </div>
           <div class="main__john">
-            <figure>
+            <figure class="album-cover__container">
+              <img src="/assets/img/radar.jpeg" alt="radar-cover" width="175" />
               <img
-                src="/assets/img/radar.jpeg"
-                alt="radar-cover"
-                width="175"
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>Release Radar</h3>
             </figure>
 
-            <figure>
+            <figure class="album-cover__container">
               <img
                 src="/assets/img/mixdaily.jpeg"
                 alt="dailymix-cover"
                 width="175"
+              /><img
+                class="cover-hover"
+                src="/assets/img/cover-icon-play.png"
+                alt="cover-hover"
               />
               <h3>Daily Mix 1</h3>
             </figure>
@@ -214,11 +243,7 @@
           </div>
           <div class="main__popular">
             <figure>
-              <img
-                src="/assets/img/youg.jpeg"
-                alt="young-cover"
-                width="175"
-              />
+              <img src="/assets/img/youg.jpeg" alt="young-cover" width="175" />
               <h3>Lana Del Rey</h3>
             </figure>
 
@@ -251,11 +276,7 @@
             </figure>
             <div class="playbar__left-icons">
               <img src="/assets/img/heart.png" alt="heart-icon" width="20px" />
-              <img
-                src="/assets/img/folder.png"
-                alt="folder-icon"
-                width="20"
-              />
+              <img src="/assets/img/folder.png" alt="folder-icon" width="20" />
             </div>
           </div>
 
@@ -294,25 +315,33 @@
             </div>
 
             <div class="playbar__middle-bottom">
-           <span>0:25 </span>
-        
-             <input type="range" min="0" max="100" value="50" id="play-bar" >
-            <span>4:35 </span>
-                
+              <span>0:25 </span>
 
+              <input type="range" min="0" max="100" value="50" id="play-bar" />
+              <span>4:35 </span>
             </div>
           </div>
-        
 
           <div class="playbar__right">
-            <img class="align-self" src="/assets/img/menu.png" alt="menu-icon" width="20px" />
-            <img class="align-self"
+            <img
+              class="align-self"
+              src="/assets/img/menu.png"
+              alt="menu-icon"
+              width="20px"
+            />
+            <img
+              class="align-self"
               src="/assets/img/monitor.png"
               alt="monitor-icon"
               width="20px"
             />
-            <img class="align-self" src="/assets/img/volume.png" alt="volume-icon" width="20px" />
-            <input type="range" min="0" max="100" value="50"  >
+            <img
+              class="align-self"
+              src="/assets/img/volume.png"
+              alt="volume-icon"
+              width="20px"
+            />
+            <input type="range" min="0" max="100" value="50" />
             <div class="volume-bar"></div>
           </div>
         </section>

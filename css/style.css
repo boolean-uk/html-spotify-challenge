@@ -1,9 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-  color: white;
   font-family: "Montserrat", sans-serif;
   color: gray;
+  box-sizing: border-box;
 }
 
 /* GENERIC */
@@ -24,6 +24,7 @@ h3,
 
 h2 {
   font-size: 1.1rem;
+   ;
 }
 h3 {
   font-size: 1rem;
@@ -51,10 +52,11 @@ a {
 header {
   display: grid;
   grid-area: header;
-  background-color: rgb(8, 11, 18);
+  background-color: rgb(8, 11, 18, 0.8);
   text-align: center;
   justify-items: right;
   padding: 1rem;
+
 }
 nav {
   display: grid;
@@ -84,7 +86,7 @@ header h2 {
   width: 9rem;
   height: 1.8rem;
   font-size: 0.8rem;
-  padding-top: 0.8rem;
+  padding-top: 0.3rem;
 }
 
 /* LEFT NAV SECTION */
@@ -96,7 +98,7 @@ header h2 {
     "playlist" 5rem
     "playlist-scroll" 15rem
     "bottom-profile" 8rem /
-    11rem;
+    auto;
   font-size: 0.7rem;
 }
 .nav-bar__main {
@@ -123,6 +125,7 @@ header h2 {
 .nav-bar__playlist {
   display: grid;
   grid-area: playlist;
+  padding-right: 1rem;
 }
 .nav-bar__scroll {
   display: grid;
@@ -142,9 +145,6 @@ header h2 {
 .nav-bar__profile {
   display: grid;
   grid-area: bottom-profile;
-}
-h1 {
-  margin-left: 0.8rem;
 }
 
 .nav-bar__playlist h2 {
@@ -260,6 +260,27 @@ main section {
 .main__popular figure img {
   border-radius: 50%;
 }
+.album-cover__container {
+  position: relative;
+  width: 175px;
+}
+.album-cover {
+  display: block;
+  width: 100%;
+}
+.cover-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 175px;
+  background: rgb(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cover-hover:hover {
+  opacity: 1;
+}
 
 /* FOOTER MEDIA PLAYER */
 
@@ -298,10 +319,11 @@ footer section {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 .align-self {
   align-self: center;
-  padding: 1rem;
+  padding: 0.1rem;
 }
 
 .playbar__middle-bottom {
