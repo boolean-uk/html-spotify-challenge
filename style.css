@@ -155,10 +155,10 @@ hr {
     flex-direction: row-reverse;
     align-items: center;
     padding: 20px;
-    background-color:black;
     grid-column: 2;
     background-color: #181818;
     color: white;
+    z-index: 5000;
 }
 
 #subscribe-button {
