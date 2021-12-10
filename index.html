@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/f5a954de16.js"></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <a target="_blank" href="https://www.spotify.com/uk/premium/"
+        ><button class="zoom" type="submit">upgrade</button></a
+      >
+    </header>
     
-</body>
+    <section class="left-menu">
+     
+      <nav class="left-menu__large">
+        <div>
+          <img
+            class="logo--large"
+            src="assets/img/logo.svg"
+            alt="Spotify Logo"
+          />
+        </div>
+        <div>
+          <ul>
+            <a href=""
+              ><li class="white">
+                <img src="assets/img/home.svg" alt="home icon" />Home
+              </li></a
+            >
+            <a href=""
+              ><li>
+                <img src="assets/img/search.svg" alt="search icon" />Search
+              </li></a
+            >
+            <a href=""
+              ><li>
+                <img src="assets/img/libreria.svg" alt="library icon" />Your
+                Library
+              </li></a
+            >
+          </ul>
+        </div>
+        <div>
+          <p>playlist</p>
+          <ul>
+            <a href=""
+              ><li>
+                <i class="fa fa-plus-square" aria-hidden="true"></i> Create
+                Playlist
+              </li></a
+            >
+            <a href=""><li>Playlist Name</li></a>
+            <a href=""><li>Playlist Name</li></a>
+            <a href=""><li>Playlist Name</li></a>
+            <a href=""><li>Playlist Name</li></a>
+            <a href=""><li>Playlist Name</li></a>
+          </ul>
+        </div>
+        <div class="profile">
+          <a href=""
+            ><div class="image--border">
+              <img
+                class="icon--small"
+                src="/assets/img/download.svg"
+                alt="profile"
+              /><span> Install App</span>
+            </div></a
+          >
+          <a href=""
+            ><img
+              class="circle"
+              src="https://avatarfiles.alphacoders.com/156/thumb-156723.jpg"
+              alt="avatar"
+            />John Doe</a
+          >
+        </div>
+      </nav>
+
+      <nav class="left-menu__small">
+        <div>
+          <ul>
+            <a href=""
+              ><li>
+                <img src="assets/img/logo-small.svg" alt="Spotify Logo" /></li
+            ></a>
+            <a href=""
+              ><li><img src="assets/img/home.svg" alt="home icon" /></li
+            ></a>
+            <a href=""
+              ><li><img src="assets/img/search.svg" alt="search icon" /></li
+            ></a>
+            <a href=""
+              ><li><img src="assets/img/libreria.svg" alt="library icon" /></li
+            ></a>
+          </ul>
+        </div>
+        <div class="profile center">
+          <a href=""
+            ><img
+              class="icon--small padding"
+              src="/assets/img/download.svg"
+              alt="profile"
+          /></a>
+          <a href=""
+            ><img
+              class="circle"
+              src="https://avatarfiles.alphacoders.com/156/thumb-156723.jpg"
+              alt="avatar"
+          /></a>
+        </div>
+      </nav>
+    </section>
+
+    <main>
+      <header class="main__header">
+        <a href=""><div class="header-container"><p>Recently Played</p><div class="small-underline"></div></div></a>
+        <a href=""><div class="header-container"><p>Podcast</p><div class="small-underline"></div></div></a>
+        <a href=""><div class="header-container"><p>Charts</p><div class="small-underline"></div></div></a>
+        <a href=""><div class="header-container"><p>Genre and Mood</p><div class="small-underline"></div></div></a>
+        <a href=""><div class="header-container"><p>Brand New</p><div class="small-underline"></div></div></a>
+        <a href=""><div class="header-container"><p>Discover</p><div class="small-underline"></div></div></a>
+      </header>
+      <section>
+        <h2>Recently Played</h2>
+        <div class="album__grid">
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img
+                  src="/assets/img/metal_lifting.jpg"
+                  alt="Metal Album covers"
+                />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Heavy Metal</h3>
+              <h4>Compilation</h4>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img
+                  src="/assets/img/stranger.jpeg"
+                  alt="Stranger Things Album cover"
+                />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>
+                Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)
+              </h3>
+              <h4>Kylie Dixon and Michael Stein</h4>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img
+                  src="/assets/img/aquietplace.jpeg"
+                  alt="A Quiet Place Album cover"
+                />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>A Quiet Place</h3>
+              <h4>Motion Poicture Soundtrack</h4>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img src="/assets/img/split.jpeg" alt="Split Album cover" />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Split</h3>
+              <h4>OST</h4>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img
+                  src="/assets/img/cure.jpeg"
+                  alt="A wellbeing Album cover"
+                />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>A Cure for Wellbeing</h3>
+              <h4>Feliks Rubix</h4>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img src="/assets/img/sinister.jpeg" alt="Metal Album covers" />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Sinister</h3>
+              <h4>Artist</h4>
+            </div></a
+          >
+        </div>
+      </section>
+      <section>
+        <h2>Created for Marian P</h2>
+        <p>Playlists inspired by your recently played, curated just for you.</p>
+        <div class="album__grid">
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img src="/assets/img/radar.jpeg" alt="Release Radar" />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Release Radar</h3>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container">
+                <img src="/assets/img/mixdaily.jpeg" alt="Daily Mix 1" />
+                <div class="hover-play">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Daily Mix 1</h3>
+            </div></a
+          >
+        </div>
+      </section>
+      <section>
+        <h2>Most Popular Artists</h2>
+        <p>Most played songs out there</p>
+        <div class="album__grid">
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container circle">
+                <img
+                  class="circle"
+                  src="/assets/img/youg.jpeg"
+                  alt="Lana Del Ray Album Cover"
+                />
+                <div class="hover-play circle">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Lana Del Rey</h3>
+            </div></a
+          >
+          <a href=""
+            ><div class="album-container">
+              <div class="image-container circle">
+                <img
+                  class="circle"
+                  src="/assets/img/einaudi.jpeg"
+                  alt="Einaudi Album Cover"
+                />
+                <div class="hover-play circle">
+                  <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h3>Ludovico Einaudi</h3>
+            </div></a
+          >
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer__left">
+        <div>
+          <a href=""
+            ><img src="/assets/img/sinister.jpeg" alt="sinister album cover"
+          /></a>
+        </div>
+        <div>
+          <a href=""><h5>ChinaTown</h5></a>
+          <a href=""><h6>Sinister</h6></a>
+        </div>
+        <div class="right">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <i class="fa fa-folder-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="footer__mid">
+        <div class="icons">
+          <i class="fa fa-random" aria-hidden="true"></i>
+          <i class="fa fa-step-backward" aria-hidden="true"></i>
+          <i class="fa fa-play-circle zoom" id="large" aria-hidden="true"></i>
+          <i class="fa fa-step-forward" aria-hidden="true"></i>
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+        <div class="play">
+          0:00
+          <input
+            id="play"
+            type="range"
+            step="0.1"
+            min="0"
+            max="4.35"
+            value="0"
+          />
+          4:35
+        </div>
+      </div>
+      <div class="footer__right">
+        <i class="fa fa-list-ul" aria-hidden="true"></i>
+        <i class="fa fa-television" aria-hidden="true"></i>
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+        <input id="volume" type="range" min="0" max="100" />
+      </div>
+    </footer>
+  </body>
 </html>
