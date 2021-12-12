@@ -1,2 +1,2 @@
-<div class="icon"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd">
-<path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill-rule="nonzero"></path><path d="M10 8h4v3h-4z"></path></g></svg></div>
+<svg role="img" height="24" width="24"  fill= "rgb(139 139 139)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.66 4.097l-.913.406 7.797 17.513.914-.406L13.66 4.097zM3 22h1V4H3v18zm6 0h1V4H9v18z"></path></svg>
