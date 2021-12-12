@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84682346d4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="top-bar">
+        <h3 id="subscribe-button">UPGRADE NOW</h3>
+    </header>
+    <nav class="left-menu-top">
+        <h1><img id="logo-large" src="/assets/img/logo.svg" alt="spotify-logo"> <img id="logo-small" src="/assets/img/logo-small.svg" alt="logo-small"></h1>
+        <a class="home-link" href="#"> <img class="icons" src="/assets/img/home.svg" alt="home-icon"/> <h2>Home</h2> </a> 
+        <a class="home-link" href="#"> <img class="icons" src="/assets/img/search.svg" alt="search-icon"/> <h2>Search</h2> </a> 
+        <a class="home-link" href="#"> <img class="icons" src="/assets/img/libreria.svg" alt="your-library"/><h2>Your Library</h2> </a> 
+        <nav class="playlist-menu">
+            <!--The choice for divs rather than list was forced due to errors with displaying the list, which I have resolved now but want to hit 
+                extension criteria before coming back and tring to sort this as it works and looks fine, but I would use a list normally.-->
+            <h2>PLAYLIST</h2>
+            <a class="home-link" href="#"> <img class="icons" src="/assets/img/playlist.svg" alt="create-playlist"/> <h4>Create Playlist</h4> </a>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+            <div class="playlist-item">Ben's playlist</div>
+        </nav>
+        <div id="shove">
+        </div>
+        <div class="left-bottom-menu">
+            <a class="left-bottom-menu-download" href="#"> <img class="download-icon" src="/assets/img/download.svg" alt="download-icon"> <h5>Install App</h5></a>
+            <hr>
+            <a class="left-bottom-menu-profile" href="#"> <img class="profile-icon" src="/assets/img/profile.svg" alt="profile-icon"> <h5>Ben Corbin</h5></a>
+        </div>
+    </nav>
+    <main>
+        <div class="main-top-menu">
+            <div>TRENDING</div>
+            <div>PODCASTS</div>
+            <div>CHARTS</div>
+            <div>GENRES & MOODS</div>
+            <div>BRAND NEW</div>
+            <div>DISCOVER</div>
+        </div>
+        <div class="recently-played">
+            <h2>Recently played</h2>
+        </div>
+        <div class="albums-recent">
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/metal_lifting.jpg" alt="metal_lifting"> <h3>Heavy Metal</h3> <p>It rocks</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/stranger.jpeg" alt="stranger-things"> <h3>Stranger Things</h3> <p>Spooky</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/aquietplace.jpeg" alt="quiet-place"> <h3>A Quiet Place</h3> <p>Shhhhhh!</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/split.jpeg" alt="split"> <h3>Split</h3> <p>Multiple Artists</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/cure.jpeg" alt="cure-for-wellness"> <h3>A Cure For Wellness</h3> <p>Take your medicine</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/sinister.jpeg" alt="sinister"> <h3>Sinister</h3> <p>Sinister minister</p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+        </div>
+        <div class="created-for-you">
+            <h2>Created for Ben</h2>
+        </div>
+        <div class="albums-for-you">
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/radar.jpeg" alt="releas-radar"> <h3>Release Radar</h3> <p></p></div> 
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card" src="/assets/img/mixdaily.jpeg" alt="daily-mix"> <h3>Daily Mix</h3> <p></p></div> 
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+        </div>
+        <div class="popular-artists">
+            <h2>Popular artists</h2>
+        </div>
+        <div class="albums-popular">
+            <div class="album-one">
+                <div class="album"><img class="card-circle" src="/assets/img/youg.jpeg" alt="lana-del-rey"> <h3>Lana Del Rey</h3> <p></p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+            <div class="album-one">
+                <div class="album"><img class="card-circle" src="/assets/img/einaudi.jpeg" alt="audi"> <h3>Ein Audi</h3> <p></p></div>
+                <div><img class="play" src="/assets/img/play.png" alt="play"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="now-playing">
+            <div><img id="now-playing-image" src="/assets/img/sinister.jpeg" alt="sinister"></div>
+            <div class=now-playing-info>
+                <h4>Sinister</h4>
+                <p>Sinister Minister</p>
+            </div>
+            <div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+        <div class="player-controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle fa-2x"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="progress">
+            <p>0:25</p>
+            <progress id="progressBar" max="100" value="0"></progress>
+            <p>4:35</p>
+        </div>
+        <div class=right-player-items>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <progress id="volumebar" max="100" value="50"></progress>
+        </div>
+    </footer>
 </body>
 </html>
