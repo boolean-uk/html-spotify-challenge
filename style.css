@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,27 @@ header {
     justify-content: space-between;
 }
 
+header a button {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 1rem;
+    background: none;
+    color: white;
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    float: right;
+    cursor: pointer;
+}
+
+header a button:hover {
+    color: white;
+    border-color: 3px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.75s;
+}
+
 #logo {
     display: grid;
     place-items: center;
@@ -44,10 +66,69 @@ main {
 }
 
 aside {
+    height: calc(100vh - 150px);
     background: black;
     padding-left: 20px;
     position: sticky;
     top: 75px;
     display: grid;
     grid-template-rows: max-content max-content 1fr max-content;
+}
+
+.menu-items {
+    display: flex;
+    place-items: center;
+    padding-bottom: 10px;
+}
+
+#aside-menu {
+    padding-bottom: 20px;
+}
+
+#playlist h2 {
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+#main-feed {
+    display: grid;
+    grid-template-rows: 60px repeat(3, minmax(200px, max-content));
+    padding: 10px 0px 20px 0;
+}
+
+#music-genres {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#select-menu {
+    display: flex;
+    margin: auto;
+}
+
+#genres-menu {
+    display: flex;
+    margin: auto;
+}
+
+select {
+    background: none;
+    color: lightgrey;
+    border: 2px solid grey;
+    padding: 10px 20px 10px 10px;
+}
+
+#genres-menu ul a {
+    text-decoration: none;
+}
+
+#genres-menu ul li {
+    display: inline;
+    padding: 10px;
+}
+
+#genres-menu ul li a {
+    color: white;
+    border-bottom: 1px solid lightgreen;
+    transition: 1s;
 }
