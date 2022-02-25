@@ -30,6 +30,8 @@ aside {
   width: 200px;
   color: white;
   background-color: black;
+
+  display: grid;
 }
 
 aside ul {
@@ -40,6 +42,11 @@ aside ul {
 aside a {
   color: var(--sub-text-clr);
   text-decoration: none;
+}
+
+aside p {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 aside a:hover {
@@ -69,15 +76,11 @@ footer {
 }
 
 .menu-bar:hover {
-  border-left: 2px solid var(--accent-clr);
+  border-left: 3px solid var(--accent-clr);
 }
 
 .menu-bar > img {
   width: 25px;
-}
-
-.menu-bar p {
-  margin: 0;
 }
 
 .menu-bar button {
@@ -92,4 +95,35 @@ footer {
 
 h3 {
   padding: 8px;
+  font-size: 1rem;
+}
+
+.download {
+  display: grid;
+  align-items: center;
+  gap: 5px;
+}
+.download-icon {
+  width: 15px;
+}
+
+.profile-container {
+  display: grid;
+  align-items: center;
+}
+
+.profile-container img {
+  width: 20px;
+  height: 20px;
+  background-color: var(--sub-text-clr);
+  border: none;
+  border-radius: 50%;
+}
+.profile-container h3 {
+  color: var(--main-text-clr);
+}
+
+align-self {
+  display: grid;
+  align-self: end;
 }
