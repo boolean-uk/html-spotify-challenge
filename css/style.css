@@ -23,8 +23,18 @@
 .left_menu {
     grid-area: left;
     display: grid;
-    grid-template-rows: 60px 100px auto 60px;
+    grid-template-rows: 60px auto auto auto 60px;
 }
+
+.icon_text_grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.inline {
+    display: inline;
+}
+
 
 .main {
     grid-area: main;
