@@ -1,0 +1,35 @@
+/* MAIN CONTAINERS */
+
+body {
+    display: grid;
+    grid-template: 
+    "left-menu main-container" 1fr
+    "footer footer" var(--footer-height) /
+    var(--left-menu-width) 1fr
+    ;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    display: grid;
+    grid-template-rows: var(--header-height) auto auto 1fr auto auto;
+}
+
+.main-container {
+    grid-area: main-container;
+    display: grid;
+    grid-template-rows: var(--header-height) repeat(9, auto);
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: var(--left-menu-width) 1fr auto;
+}
+
+/* GENERIC GRIDS */
+/* rows */
+
+
+
+/* columns */
