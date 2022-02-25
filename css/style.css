@@ -22,6 +22,8 @@
 
 .left_menu {
     grid-area: left;
+    display: grid;
+    grid-template-rows: 60px 100px auto 60px;
 }
 
 .main {
@@ -31,3 +33,4 @@
 .player {
     grid-area: player;
 }
+
