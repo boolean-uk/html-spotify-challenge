@@ -5,9 +5,10 @@
 }
 
 body {
-    /* background: black; CHANGE THIS BACK */ 
+    background: black; 
     display: grid;
     width: 100%;
+    color: darkgrey;
 }
 
 a {
@@ -15,10 +16,18 @@ a {
     color: lightgrey;
 }
 
+li {
+    list-style: none;
+    padding: 10px 0px;
+    color: darkgrey;
+}
+
 header {
     background: black;
     position: sticky;
+    top: 0px;
     display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -27,4 +36,18 @@ header {
 
     width: 180px;
     background: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+}
+
+aside {
+    background: black;
+    padding-left: 20px;
+    position: sticky;
+    top: 75px;
+    display: grid;
+    grid-template-rows: max-content max-content 1fr max-content;
 }
