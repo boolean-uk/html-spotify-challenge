@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
-    margin: o;
+    margin: 0;
 }
 
 body {
     height: 100vh;
 }
+
+/* --------------------------------------LEFT-MENU--------------------------------------------- */
 
 /* footer {
     position: sticky;
@@ -15,11 +17,18 @@ body {
 
 /* FOR TESTING PURPOSES, DELETE LATER */
 
-* {
-    padding: 12px;
+body > *,
+body > * > *,
+body > * > * > * {
     border: 1px dashed black;
 }
 
-.wrapper {
-    height: 95vh;
+.left-menu {
+    width: 200px;
 }
+
+main {
+    width: fill;
+}
+
+/* --------------------------------------------------------------------- */

@@ -1,4 +1,14 @@
-.two-row-grid__expand-two {
+.two-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.two-row-grid__expand-one {
     display: grid;
     grid-template-rows: 1fr auto;
+}
+
+.two-row-grid__expand-two {
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
