@@ -1,0 +1,47 @@
+.left-menu {
+    width: 200px;
+    background-color: gray
+}
+
+#main-content {
+    overflow: scroll;
+}
+
+#main-content nav {
+    height: 50px;
+
+}
+
+#main-content section {
+    overflow-y: scroll;
+}
+
+
+#main-content section::-webkit-scrollbar {
+    display: none;
+}
+footer {
+   height:100px;
+   background-color:black
+}
+
+
+/* CARDS */
+
+.card {
+    text-align: center;
+}
+
+.card p {
+    margin: 3px 0;
+}
+
+.card small {
+    color: gray
+}
+
+.image {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
