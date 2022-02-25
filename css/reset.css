@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-layout > * {
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid red;
+}
+
+.central-area > * {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid blue;
+}

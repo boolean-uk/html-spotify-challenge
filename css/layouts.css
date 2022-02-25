@@ -1,0 +1,21 @@
+.main-layout {
+    min-height: 100vh;
+}
+
+.left-bar {
+    width: 200px;
+}
+
+.two-row-grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.main-footer {
+    height: 100px;
+}
