@@ -5,7 +5,7 @@
 }
 
 body {
-    background: black;
+    /* background: black; CHANGE THIS BACK */ 
     display: grid;
     width: 100%;
 }
