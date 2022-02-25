@@ -9,9 +9,7 @@
 .navigation {
   grid-area: navigation;
   display: grid;
-  grid-auto-flow: row;
-
-  align-items: center;
+  grid-template-rows: 50px 140px 80px 80px 1fr 80px 80px;
 }
 
 .main {
@@ -25,6 +23,7 @@
 }
 
 .wrapper {
+  height: 100vh;
   padding: 2rem;
   margin: 0 auto;
 

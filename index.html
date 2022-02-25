@@ -23,7 +23,7 @@
       <header class="head"></header>
 
       <nav class="navigation">
-        <div class="spotify-logo">
+        <div class="navigation__spotify-logo">
           <a href="/"
             ><svg viewBox="0 0 1134 340">
               <path
@@ -33,7 +33,7 @@
           ></a>
         </div>
 
-        <ul class="side-navigation">
+        <ul class="navigation__side-navigation">
           <li>
             <a href="#">
               <svg role="img" height="24" width="24" viewBox="0 0 24 24">
@@ -65,12 +65,79 @@
             >
           </li>
         </ul>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quia
-        recusandae obcaecati soluta, vel vero voluptatum asperiores expedita
-        vitae quas sint aut doloribus facilis dolorem corporis? Architecto eius
-        natus quisquam quae eaque vero harum beatae deserunt, ratione nobis, in
-        ut illo officia error suscipit excepturi dignissimos? Enim ducimus nisi
-        quas. Corrupti error reiciendis deleniti!
+
+        <div class="navigation__button">
+          <button type="button">
+            <div>
+              <svg
+                role="img"
+                height="12"
+                width="12"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg"
+              >
+                <path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path>
+                <path fill="none" d="M0 0h16v16H0z"></path>
+              </svg>
+            </div>
+          </button>
+          <span>Create Playlist</span>
+        </div>
+
+        <div class="navigation__heart">
+          <a href="#">
+            <div class="">
+              <svg
+                role="img"
+                height="12"
+                width="12"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+              >
+                <path fill="white" d="M0 0h16v16H0z"></path>
+                <path
+                  d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"
+                ></path>
+              </svg>
+              <span>Liked Songs</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="navigation__side-list">
+          <ul>
+            <li>Bad Manners</li>
+            <li>Madness</li>
+            <li>Selecter</li>
+            <li>The Specials</li>
+            <li>The Cramps</li>
+            <li>Joy Division</li>
+          </ul>
+        </div>
+
+        <div class="navigation__cookies-and-privacy">
+          <a
+            draggable="false"
+            href="https://www.spotify.com/legal/cookies-policy/"
+            target="_blank"
+            rel="noopener"
+            ><span class="Type__TypeElement">Cookies</span></a
+          ><a
+            draggable="false"
+            href="https://www.spotify.com/legal/privacy-policy/"
+            target="_blank"
+            rel="noopener"
+            ><span class="Type__TypeElement">Privacy</span></a
+          >
+        </div>
+
+        <div class="navigation__profile">
+          <div class="avatar">
+            <img src="/assets/img/profile.jpg" alt="profile image" />
+          </div>
+          <p>AlexDjangoX</p>
+        </div>
       </nav>
 
       <main class="main"></main>

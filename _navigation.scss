@@ -1,33 +1,108 @@
 .navigation {
   background-color: rgb(0, 0, 0);
-
   padding: 1rem;
 
-  .spotify-logo svg {
+  hr {
+    color: white;
+    width: 100%;
+  }
+  &__spotify-logo svg {
     width: 130px;
     height: 40px;
   }
 
-  ul {
+  &__side-navigation {
     list-style: none;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 0.8rem 0 0 0;
+    li {
+      line-height: 1.8rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    svg {
+      margin: 0 1.6rem 0 0;
+    }
+
+    li,
+    span {
+      font-size: 0.8rem;
+      vertical-align: text-bottom;
+    }
   }
 
-  li {
-    line-height: 1.8rem;
+  &__button {
+    padding-top: 2rem;
+
+    span {
+      color: white;
+      margin-left: 1rem;
+      font-size: 0.8rem;
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: white;
+  &__heart {
+    margin-top: 1rem;
+    padding: 1px 6px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    span {
+      font-size: 0.8rem;
+      margin-left: 1.6rem;
+    }
   }
 
-  svg {
-    margin: 0 1.6rem 0 0;
+  &__side-list {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: rgb(190, 190, 190);
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
   }
 
-  span {
-    font-size: 0.8rem;
+  &__profile {
+    display: flex;
+
+    .avatar {
+      width: 56px;
+      height: 56px;
+
+      margin-right: 1rem;
+
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    p {
+      color: white;
+      font-weight: 600;
+    }
+  }
+
+  &__cookies-and-privacy {
+    display: grid;
+    grid-auto-flow: row;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }

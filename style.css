@@ -17,10 +17,7 @@
   grid-area: navigation;
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      grid-template-rows: 50px 140px 80px 80px 1fr 80px 80px;
 }
 
 .main {
@@ -41,6 +38,7 @@
 }
 
 .wrapper {
+  height: 100vh;
   padding: 2rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -57,32 +55,114 @@
   padding: 1rem;
 }
 
-.navigation .spotify-logo svg {
+.navigation hr {
+  color: white;
+  width: 100%;
+}
+
+.navigation__spotify-logo svg {
   width: 130px;
   height: 40px;
 }
 
-.navigation ul {
+.navigation__side-navigation {
   list-style: none;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0.8rem 0 0 0;
 }
 
-.navigation li {
+.navigation__side-navigation li {
   line-height: 1.8rem;
 }
 
-.navigation a {
+.navigation__side-navigation a {
   text-decoration: none;
   color: white;
 }
 
-.navigation svg {
+.navigation__side-navigation svg {
   margin: 0 1.6rem 0 0;
 }
 
-.navigation span {
+.navigation__side-navigation li,
+.navigation__side-navigation span {
   font-size: 0.8rem;
+  vertical-align: text-bottom;
+}
+
+.navigation__button {
+  padding-top: 2rem;
+}
+
+.navigation__button span {
+  color: white;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.navigation__heart {
+  margin-top: 1rem;
+  padding: 1px 6px;
+}
+
+.navigation__heart a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation__heart span {
+  font-size: 0.8rem;
+  margin-left: 1.6rem;
+}
+
+.navigation__side-list {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  color: #bebebe;
+}
+
+.navigation__side-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__side-list li {
+  list-style: none;
+}
+
+.navigation__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__profile .avatar {
+  width: 56px;
+  height: 56px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navigation__profile p {
+  color: white;
+  font-weight: 600;
+}
+
+.navigation__cookies-and-privacy {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.navigation__cookies-and-privacy a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation__cookies-and-privacy a:hover {
+  text-decoration: underline;
 }
 
 * {
@@ -92,7 +172,12 @@
 }
 
 body {
-  height: 100vh;
   background-color: #a3a3a3;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
