@@ -7,6 +7,11 @@
 }
 
 /* ------------------------------------MAIN STYLES----------------------------------------------- */
+:root {
+    --main-text-color: #acacac;
+    --footer-BG: #181818;
+}
+
 ul {
     padding: 0;
 
@@ -15,10 +20,6 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-:root {
-    --main-text-color: #acacac;
 }
 
 body {
@@ -81,11 +82,130 @@ body {
     margin-top: 12px;
 }
 
-/* footer {
+/* ---------------------------------------FOOTER------------------------------------------------- */
+footer {
+    padding: 8px 16px 16px 16px;
+
     position: sticky;
     bottom: 0;
     z-index: 1;
-} */
+
+    height: 90px;
+    background-color: var(--footer-BG);
+    border-top: 1px solid #5d5c5c46;
+}
+
+.footer__artist {
+    display: block;
+
+    margin-right: 16px;
+
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer__track {
+    color: var(--main-text-color);
+    font-size: 0.6rem;
+}
+
+.footer__artist:hover,
+.footer__track:hover {
+    text-decoration: underline;
+}
+
+.footer__option-btn {
+    background-color: var(--footer-BG);
+    border-style: none;
+
+    color: var(--main-text-color);
+}
+
+.footer__option-btn:hover {
+    color: white;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 4px;
+
+    background: #535353;
+    border-radius: 5px;
+    background-image: linear-gradient(#b3b3b3, #b3b3b3);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .footer__player-section input[type="range"] {
+      width: 625px;
+  }
+
+  input[type="range"]:hover {
+    background-image: linear-gradient(#1db954, #1db954);
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+  }
+
+/* ------------------NEED FIX---------------------- */
+/* I want it to appear when any part on the slider is hovered */
+  input[type="range"]::-webkit-slider-thumb:hover,
+  .footer__player-section input[type="range"]::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 3px 0 #555;
+  }
+  /* ---------------------------------------------- */
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  .footer__player-section {
+      color: var(--main-text-color);
+      font-size: 0.6rem;
+      font-weight: 600;
+  }
+
+  .footer__track-controls {
+      height: 60%;
+
+      margin-top: 8px;
+  }
+
+  #play-btn {
+      height: 32px;
+      width: 32px;
+
+      background-color: white;
+      border-radius: 50%;
+  }
+
+  /* ---------------NEED FIX--------------- */
+  /* ---Substitute for proper animation ---*/
+  .footer__option-btn-frame {
+    height: 36px;
+    width: 36px;
+}
+
+  #play-btn:hover {
+    height: 35px;
+    width: 35px;
+  }
+/* ----------------------------------------- */
 
 /* FOR TESTING PURPOSES, DELETE LATER */
 
@@ -94,3 +214,6 @@ main {
 }
 
 /* --------------------------------------------------------------------- */
+
+
+/* -------------------------UTILITY STYLES------------------------------ */
