@@ -1,0 +1,12 @@
+@import "./grid";
+@import "./navigation";
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  background-color: rgb(163, 163, 163);
+}

@@ -1,0 +1,98 @@
+.box {
+  border: 1px dotted blue;
+}
+
+.head {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  background-color: #727272;
+}
+
+.navigation {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: navigation;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background-color: #cfcfcf;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background-color: #525151;
+}
+
+.wrapper {
+  padding: 2rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "navigation head head" "navigation main main" "navigation main main" "footer footer footer";
+  -ms-grid-rows: 5rem auto auto 5rem;
+      grid-template-rows: 5rem auto auto 5rem;
+  -ms-grid-columns: 240px 1fr;
+      grid-template-columns: 240px 1fr;
+}
+
+.navigation {
+  background-color: black;
+  padding: 1rem;
+}
+
+.navigation .spotify-logo svg {
+  width: 130px;
+  height: 40px;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.navigation li {
+  line-height: 1.8rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation svg {
+  margin: 0 1.6rem 0 0;
+}
+
+.navigation span {
+  font-size: 0.8rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #a3a3a3;
+}
+/*# sourceMappingURL=style.css.map */
