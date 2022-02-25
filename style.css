@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: o;
+}
+
+body {
+    height: 100vh;
+}
+
+/* footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+} */
+
+/* FOR TESTING PURPOSES, DELETE LATER */
+
+* {
+    padding: 12px;
+    border: 1px dashed black;
+}
+
+.wrapper {
+    height: 95vh;
+}
