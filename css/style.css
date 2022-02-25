@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style-type: none;
 }
 
 /* HTML STYLES */
@@ -18,7 +19,7 @@ html {
     --border-color-one: #A7F62E;
     --header-height: 100px;
     --footer-height: 100px;
-    --left-menu-width: 100px;
+    --left-menu-width: 200px;
 }
 
 /* HEADER PROPERTIES */
@@ -39,6 +40,7 @@ h4 {
 }
 
 /* DASHED BOXES 
+
 .dashed-border-black {
     border: 2px black dashed;
     margin: 2px;
@@ -60,3 +62,7 @@ h4 {
 }
 
 */
+
+img {
+    width: 20px;
+}

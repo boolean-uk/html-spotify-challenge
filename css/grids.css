@@ -12,7 +12,7 @@ body {
 .left-menu {
     grid-area: left-menu;
     display: grid;
-    grid-template-rows: var(--header-height) auto auto 1fr auto auto;
+    grid-template-rows: var(--header-height) auto auto 1fr auto auto auto;
 }
 
 .main-container {
@@ -29,7 +29,44 @@ footer {
 
 /* GENERIC GRIDS */
 /* rows */
-
+.auto-rows {
+    display: grid;
+    grid-auto-flow: row;
+}
 
 
 /* columns */
+.two-columns__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.two-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.three-columns__expand-one-three {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.four-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.five-columns__expand-one-five {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+}
+
+.seven-columns__expand-one-seven {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto 1fr;
+}
+
+.auto-columns {
+    display: grid;
+    grid-auto-flow: column;
+}
