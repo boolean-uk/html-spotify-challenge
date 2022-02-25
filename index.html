@@ -1,12 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify</title>
 </head>
+
 <body>
-    
+    <main>
+        <header>
+            <h5>UPGRADE</h5>
+        </header>
+
+        <nav id="main-navigation">
+            <ul>
+                <li>IN EVIDENZE</li>
+                <li>PODCAST</li>
+                <li>CLASSIFICHE</li>
+                <li>GENERI E MOOD</li>
+                <li>NUOVE USCITE</li>
+                <li>SCOPRI</li>
+            </ul>
+        </nav>
+        <section id="main-content">
+
+            <h4>Recently Played</h4>
+            <nav id="recently-played">
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+            </nav>
+
+            <h4>Shows to try</h4>
+            <nav id="shows-to-try">
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+            </nav>
+
+            <h4>Focus</h4>
+            <nav id="focus">
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/metal_lifting.jpg" alt="">
+                    <figcaption><span>Heavy Metal</span><br> Subtitle </figcaption>
+                </figure>
+            </nav>
+        </section>
+    </main>
+
+    <aside>
+        <div class="spotify-logo"> <img src="assets/img/spotify-logo.svg">
+        </div>
+        <nav id="sidebar__top">
+            <div class="sidebar__logo-list">
+                <li><img src="assets/img/home.svg"></li>
+                <li><img src="assets/img/library.svg"></li>
+                <li><img src="assets/img/search.svg"></li>
+            </div>
+            <div class="sidebar__logo-names-list">
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </div>
+        </nav>
+        <h5>PLAYLIST</h5>
+        <div class="sidebar__create-playlist">
+            <img src="assets/img/plus-icon__spotify.jpeg" alt="">
+            <p>Create Playlist</p>
+        </div>
+        <div class="sidebar__my-playlist">
+            <li>My Playlist</li>
+            <li>My Playlist</li>
+            <li>My Playlist</li>
+            <li>My Playlist</li>
+        </div>
+        <nav id="sidebar__bottom">
+            <div class="sidebar__install-app">
+                <img src="assets/img/download.svg" alt="">
+                <span>Install App</span>
+            </div>
+            <div class="profile">
+                <img src="assets/img/profile.svg" alt="">
+                <h6>Daniel Mc</h6>
+            </div>
+        </nav>
+    </aside>
+
+    <footer>
+        <div id="footer__selected-music-profile">
+            <div id="selected-album">
+                <img src="assets/img/metal_lifting.jpg" alt="">
+                <figcaption><span>Sinister</span><br>Brano Nome</figcaption>
+            </div>
+            <div id="album-options">
+                <img src="assets/img/heart.svg" alt="">
+                <img src="assets/img/footer-tab.svg" alt="">
+            </div>
+        </div>
+        <div id="footer__playbar">
+            <div class="playbar-buttons">
+                <div id="shuffle"> <img src="assets/img/shuffle.svg" alt=""> </div>
+                <div id="playback"><img src="assets/img/playback.svg" alt=""></div>
+                <div id="play-button"><img src="assets/img/play-button.svg" alt=""></div>
+                <div id="playnext"><img src="assets/img/playnext.svg" alt=""></div>
+                <div id="loop"><img src="assets/img/loop.svg" alt=""></div>
+            </div>
+            <div class="playbar">
+                <p>0.00</p>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <p>3.45</p>
+            </div>
+
+        </div>
+        <div id="footer__audio-options">
+            <img src="assets/img/mic.svg" alt="">
+            <img src="assets/img/playlist-order.svg" alt="">
+            <img src="assets/img/speaker.svg" alt="">
+            <img src="assets/img/sound-regulator.svg" alt="">
+            <input type="range" id="seek-slider" max="100" value="0">
+        </div>
+    </footer>
 </body>
+
 </html>
