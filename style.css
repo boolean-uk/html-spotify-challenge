@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+    display: grid;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+header {
+    background: black;
+    position: sticky;
+    display: flex;
+}
+
+#logo {
+    display: grid;
+    place-items: center;
+
+    width: 180px;
+    background: black
+}
