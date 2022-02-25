@@ -66,6 +66,60 @@ li {
     grid-area: main;
 }
 
+.header{
+    height: 60px;
+    width: 100vw;
+    align-items: center;
+    display: inline-flex;
+
+}
+
+.round_icon {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+  
+}
+
+.upgrade {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 50px;
+    width: 135px;
+    height: 35px;
+    border: 2px white;
+    display: grid;
+    place-items: center;
+
+}
+
+.my_account {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 50px;
+    width: 145px;
+    height: 30px;
+    border: 2px white;
+    display: grid;
+    place-items: center;
+ 
+}
+
+
+
+.content {
+
+}
+
+
+
+
 .player {
     grid-area: player;
 }
