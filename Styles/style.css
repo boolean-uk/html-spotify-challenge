@@ -11,13 +11,14 @@
   border: blue 1px solid;
 }
 
-/* BASE STYLES */
+/* --- BASE STYLES --- */
 
 main {
   height: 90vh;
 }
 
 aside {
+  width: 200px;
   color: white;
   background-color: black;
 }
@@ -29,4 +30,25 @@ aside ul {
 
 footer {
   height: 10vh;
+}
+
+/* --- MAIN STYLES --- */
+.aside-wrapper {
+  width: 150px;
+  height: 90vh;
+}
+
+.menu-bar {
+  display: grid;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-bar > img {
+  width: 30px;
+}
+
+.menu-bar p {
+  margin: 0;
 }
