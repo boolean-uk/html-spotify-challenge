@@ -27,7 +27,7 @@ body {
 
 .two-column-grid__two-extender {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 150px 1fr;
 }
 
 aside {
@@ -38,4 +38,8 @@ aside {
 main {
   height: 500px;
   border: dotted 2px rgb(98, 0, 255);
+}
+
+.bottom {
+  height: 100px;
 }
