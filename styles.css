@@ -40,6 +40,31 @@ main {
   border: dotted 2px rgb(98, 0, 255);
 }
 
+.main-header-column-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+header {
+  height: 100px;
+}
+
+.arrows1 {
+  border: dotted 2px rgb(255, 102, 0);
+}
+
+.arrows2 {
+  border: dotted 2px rgb(12, 110, 102);
+}
+
+.upgrade {
+  border: dotted 2px rgb(59, 3, 73);
+}
+
+.user-profile {
+  border: dotted 2px rgb(47, 105, 23);
+}
+
 .bottom {
   height: 100px;
 }
