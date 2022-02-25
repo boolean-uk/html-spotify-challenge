@@ -29,3 +29,13 @@ body {
   display: grid;
   grid-template-columns: 300px 1fr;
 }
+
+aside {
+  height: 500px;
+  border: dotted 2px rgb(0, 255, 64);
+}
+
+main {
+  height: 500px;
+  border: dotted 2px rgb(98, 0, 255);
+}
