@@ -10,3 +10,23 @@
 .bd-blue {
   border: blue 1px solid;
 }
+
+/* BASE STYLES */
+
+main {
+  height: 90vh;
+}
+
+aside {
+  color: white;
+  background-color: black;
+}
+
+aside ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer {
+  height: 10vh;
+}
