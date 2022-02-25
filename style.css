@@ -1,13 +1,85 @@
+/* RESETS */
 * {
     box-sizing: border-box;
     margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------MAIN STYLES----------------------------------------------- */
+ul {
+    padding: 0;
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --main-text-color: #acacac;
 }
 
 body {
     height: 100vh;
 }
 
+
 /* --------------------------------------LEFT-MENU--------------------------------------------- */
+.left-menu {
+    padding: 24px 24px 0px 22px;
+    background-color: black;
+}
+
+.left-menu__top-section {
+    border-bottom: 1px solid #acacac46;
+}
+
+.left-menu__logo {
+    margin: 0px -2px 24px 3px;
+}
+
+.left-menu__nav {
+    margin-bottom: 32px;
+}
+
+.left-menu__item {
+    color: var(--main-text-color);
+
+    margin-bottom: 10px;
+}
+
+.left-menu__item:hover {
+    color: white;
+}
+
+.left-menu__item:hover .small-frame{
+    background-color: white;
+}
+
+.left-menu__item--bold {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.small-frame {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--main-text-color);
+}
+
+.small-frame__gradient {
+    background: rgb(56,21,169);
+    background: linear-gradient(135deg, rgba(56,21,169,1) 0%, rgba(129,152,153,1) 79%, rgba(129,152,153,1) 100%);
+}
+
+.left-menu__bottom-section {
+    margin-top: 12px;
+}
 
 /* footer {
     position: sticky;
@@ -16,16 +88,6 @@ body {
 } */
 
 /* FOR TESTING PURPOSES, DELETE LATER */
-
-body > *,
-body > * > *,
-body > * > * > * {
-    border: 1px dashed black;
-}
-
-.left-menu {
-    width: 200px;
-}
 
 main {
     width: fill;

@@ -12,3 +12,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
+.gap-sm {
+    gap: 12px;
+}
