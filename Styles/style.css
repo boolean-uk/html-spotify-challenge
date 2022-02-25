@@ -11,6 +11,15 @@
   border: blue 1px solid;
 }
 
+/* --- COLOR --- */
+html {
+  --main-clr: rgb(28, 31, 68);
+  --sub-clr: rgb(22, 23, 43);
+  --accent-clr: rgb(98, 228, 23);
+  --main-text-clr: white;
+  --sub-text-clr: rgb(135, 135, 138);
+}
+
 /* --- BASE STYLES --- */
 
 main {
@@ -28,27 +37,59 @@ aside ul {
   list-style: none;
 }
 
+aside a {
+  color: var(--sub-text-clr);
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: var(--text-clr);
+  text-decoration: none;
+}
+
 footer {
   height: 10vh;
 }
 
 /* --- MAIN STYLES --- */
-.aside-wrapper {
-  width: 150px;
-  height: 90vh;
+/* Aside */
+.logo {
+  margin: 8px;
+  width: 130px;
 }
-
 .menu-bar {
   display: grid;
   align-items: center;
   gap: 5px;
-  margin-bottom: 10px;
+  padding-left: 8px;
+  margin-bottom: 15px;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.menu-bar:hover {
+  border-left: 2px solid var(--accent-clr);
 }
 
 .menu-bar > img {
-  width: 30px;
+  width: 25px;
 }
 
 .menu-bar p {
   margin: 0;
+}
+
+.menu-bar button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 1.5rem;
+  color: black;
+  background-color: var(--sub-text-clr);
+  border: none;
+}
+
+h3 {
+  padding: 8px;
 }
