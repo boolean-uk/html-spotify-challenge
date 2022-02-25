@@ -26,11 +26,7 @@ h1 {
 
 }
 
-.left-menu h2 {
-    
-}
-
-.main-container h2 {
+h2 {
     
 }
 
@@ -42,6 +38,25 @@ h4 {
     
 }
 
-h5 {
-    
+/* DASHED BOXES 
+.dashed-border-black {
+    border: 2px black dashed;
+    margin: 2px;
 }
+
+.dashed-border-blue {
+    border: 2px blue dashed;
+    margin: 2px;
+}
+
+.dashed-border-green {
+    border: 2px green dashed;
+    margin: 2px;
+}
+
+.dashed-border-pink {
+    border: 2px pink dashed;
+    margin: 2px;
+}
+
+*/
