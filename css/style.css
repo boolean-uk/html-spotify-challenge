@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 
 /* I USE THIS FOR VISUALISING THE LAYOUT */
-.border {
+/* .border {
     border: 1px dashed turquoise;
-}
+} */
 /* I USE THIS FOR VISUALISING THE LAYOUT */
 
 .container {
@@ -27,7 +28,7 @@
     grid-template-rows: 60px 150px 90px auto 50px;
     background-color: #000000;
     color: white;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .icon_text_grid {
@@ -68,9 +69,12 @@ li {
 
 .header{
     height: 60px;
-    width: 100vw;
     align-items: center;
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0px 25px 0px 35px;
+    background-color: #212121;
+    
 
 }
 
@@ -80,7 +84,13 @@ li {
     border-radius: 50px;
     width: 30px;
     height: 30px;
-  
+
+}
+
+.header_buttons {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
 }
 
 .upgrade {
@@ -91,10 +101,9 @@ li {
     border-radius: 50px;
     width: 135px;
     height: 35px;
-    border: 2px white;
+    border: 1px white solid;
     display: grid;
     place-items: center;
-
 }
 
 .my_account {
@@ -108,15 +117,72 @@ li {
     border: 2px white;
     display: grid;
     place-items: center;
- 
+    margin-left: 25px;
+
 }
-
-
 
 .content {
+    background-color: #121212;
+    padding: 20px;
+}
+
+.content_section {
+    margin-bottom: 15px;
+}
+
+.section_head {
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.content_section_title {
+    color: white;
+    /* padding: 15px; */
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.content_section_title:hover {
+    text-decoration: underline;
+}
+
+.box_grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.box {
+    margin: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #181818;
 
 }
 
+.box:hover {
+    background-color: #282828;
+    transition: 0.3s;
+}
+
+.album_cover {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    border-radius: 5px;
+
+    
+}
+
+.album_text {
+    margin-top: 15px;
+}
 
 
 
