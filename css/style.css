@@ -17,7 +17,7 @@
     display: grid;
     grid-template: 
             "left main" 1fr
-            "player player" 100px / 
+            "player player" 90px / 
             250px 1fr;
     height: 100vh;
 }
@@ -121,6 +121,7 @@ li {
 
 }
 
+
 .content {
     background-color: #121212;
     padding: 20px;
@@ -131,20 +132,21 @@ li {
 }
 
 .section_head {
-    display: grid;
+    margin: 15px;
+    line-height: 30px;
+}
+
+.section_title_more {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    height: 40px;
 }
 
-.content_section_title {
-    color: white;
-    /* padding: 15px; */
-    font-size: 22px;
-    font-weight: 900;
+.section_more {
+    display: flex;
+    align-items: end;
 }
-
+    
 .content_section_title:hover {
     text-decoration: underline;
 }
@@ -188,5 +190,6 @@ li {
 
 .player {
     grid-area: player;
+
 }
 
