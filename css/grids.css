@@ -15,6 +15,7 @@ body {
     grid-area: left-menu;
     display: grid;
     grid-template-rows: var(--header-height) auto auto 1fr auto auto auto;
+    background-color: var(--primary-color-one);
 }
 
 .main-container {
@@ -25,12 +26,16 @@ body {
     overflow-x: auto;
     max-height: calc(100vh-var(--footer-height));
     overflow-y: scroll;
+
+    background-color: var(--primary-color-three);
 }
 
 footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: var(--left-menu-width) 1fr auto;
+
+    background-color: var(--primary-color-four);
 }
 
 /* GENERIC GRIDS */
@@ -38,6 +43,11 @@ footer {
 .auto-rows {
     display: grid;
     grid-auto-flow: row;
+}
+
+.three-rows__expand-one-three {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 
