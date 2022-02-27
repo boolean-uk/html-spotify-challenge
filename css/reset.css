@@ -22,16 +22,40 @@ body {
 
 /* LEFT SIDE BAR */
 
+.left-bar {
+    background-color: black;
+}
+
+h2 {
+    margin-left: 5px;
+    color: grey;
+    font-size: 15px;
+}
+
+h3 {
+    color: white;
+}
+
 .logo, .search, .playlist, .playlist-name, .download-app, .profile {
     padding: 2px;
     margin: 2px;
-    border: 2px solid green;
+}
+
+.logo {
+    margin-bottom: 30px;
 }
 
 .add-box {
     height: 45px;
     width: 45px;
-    border: 2px solid orange;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.plus-sign {
+    margin-top: 8px;
+    margin-left: 9px;
+    font-size: 25px;
 }
 
 .align-center {
@@ -45,30 +69,34 @@ body {
 }
 
 .download-app {
-    margin-top: 150px;
+    margin-top: 95px;
 }
 
 .download-icon {
-    border: 2px solid orange;
     border-radius: 50%;
-    background-color: grey;
     height: 20px;
 }
 
-.text-sm {
-    color: grey;
+.profile {
+    border-top: 2px solid grey;
 }
 
 .pic-sm {
+    margin-top: 15px;
     height: 45px;
     width: 45px;
-    border: 2px solid orange;
     border-radius: 50%;
     background-color: lightgrey;
 }
 
 .name-sm {
+    margin-top: 35px;
+    margin-left: 10px;
     font-weight: bold;
-    border: 2px solid orange;
-
+    color: white;
 }
+
+
+
+/* BIG MAIN AREA */
+
