@@ -4,6 +4,91 @@
   font-size: 1.6rem;
 }
 
+.main {
+  padding: 1.7rem 2.8rem;
+  background: linear-gradient(120deg, #212121 42%, #121212 75%);
+}
+
+.arrows-container {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  height: 3.5em;
+  width: 3.5rem;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrows img {
+  height: 60%;
+}
+.arrows:hover {
+  transform: scale(1.05);
+  background-color: #141212;
+  transition: all 0.2s;
+}
+
+.upgrade-btn {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  background-color: #0a0a0a;
+  padding: 0.85rem 2.2rem;
+  font-size: 1.2rem;
+  border-radius: 200px;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.575);
+  margin-right: 3rem;
+}
+.upgrade-btn:hover {
+  transform: scale(1.05);
+  background-color: #141212;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #0a0a0a;
+  border-radius: 200px;
+  padding-right: 1rem;
+}
+.account-img {
+  height: 3rem;
+  width: 3rem;
+}
+.account-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.account:hover {
+  cursor: pointer;
+  background-color: #2b2a2a;
+}
+
+.fa-sort-down {
+  color: white;
+  font-size: 1.6rem;
+  align-self: center;
+  transform: translateY(-3px);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,7 +110,6 @@ html {
 
 .logo {
   background-color: black;
-  fill: white;
   height: 4.5rem;
 }
 .logo img {
@@ -42,13 +126,58 @@ html {
 }
 .left-side .nav {
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 6.5rem);
 }
 .left-side .nav-list {
   border-bottom: 1.6px solid #222222;
 }
+.left-side .nav-list li.svg {
+  list-style: none;
+  padding: 0.35rem 0rem;
+}
+.left-side .nav-list li.svg:nth-of-type(1) {
+  color: white;
+}
+.left-side .nav-list li.svg a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.85rem 0rem;
+  display: flex;
+  align-items: center;
+}
+.left-side .nav-list li.svg a:hover {
+  color: white;
+}
+.left-side .nav-list li.svg .img-home {
+  display: inline;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.5rem;
+  background: url("../assets/img/home.svg");
+}
+.left-side .nav-list li.svg .img-search {
+  display: inline;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.5rem;
+  background: url("../assets/img/search.svg");
+}
+.left-side .nav-list li.svg .img-library {
+  display: inline;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.5rem;
+  background: url("../assets/img/libreria.svg");
+}
+.left-side .nav-list li.svg:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
+}
 .left-side .nav-list li {
   list-style: none;
-  padding: 0.85rem 0rem;
+  padding: 0.55rem 0rem;
 }
 .left-side .nav-list li a {
   text-decoration: none;
@@ -60,10 +189,47 @@ html {
 .left-side .nav-list li a:hover {
   color: white;
 }
-.left-side .nav-list li img {
-  width: 2.5rem;
-  height: 100%;
+.left-side .nav-list li .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.left-side .nav-list li .icon-add.icons {
+  background-color: #b2b2b2;
+}
+.left-side .nav-list li .icon-add.icons .fa-solid.fa-plus {
+  color: black;
+}
+.left-side .nav-list li .icon-heart.icons {
+  background: linear-gradient(90deg, rgba(66, 240, 229, 0.8379726891) 0%, #0187da 75%);
+}
+.left-side .nav-list li:hover .icon-add {
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.left-side .nav-list li:hover .icon-heart {
+  transition: all 0.3s;
+}
+.left-side .download a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.85rem 0rem;
+  color: #aab3af;
+  display: flex;
+  align-items: center;
+}
+.left-side .download .img-download {
+  display: inline;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.5rem;
+  background: url("../assets/img/download.svg");
+}
+.left-side .download:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
 }
 
 .two-column-grid-expand-two {
@@ -73,5 +239,70 @@ html {
 
 .four-column-grid-expand-two {
   display: grid;
-  grid-template-columns: auto 1fr repeat(2, 1fr);
+  grid-template-columns: auto 1fr repeat(2, auto);
+}
+
+.main-card-header {
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main-card-header h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.main-card-header h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-card-header .see-all {
+  color: #aab3af;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.main-card-header .see-all:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-card .small-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 18rem);
+  gap: 2rem;
+}
+.main-card .small-cards-container .small-card {
+  padding: 1.4rem;
+  background-color: #242323;
+  width: 18rem;
+  border-radius: 8px;
+}
+.main-card .small-cards-container .small-card-image {
+  height: 15rem;
+  border-radius: 8px;
+}
+.main-card .small-cards-container .small-card-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.main-card .small-cards-container .small-card-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+.main-card .small-cards-container .small-card-details {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #aab3af;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main-card .small-cards-container .small-card:hover {
+  cursor: pointer;
+  background-color: #3f3d3d94;
+  transition: all 0.6s;
 }/*# sourceMappingURL=main.css.map */

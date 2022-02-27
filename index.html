@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f9c0780752.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
@@ -15,27 +19,165 @@
         </div>
         <nav class="nav">
           <ul class="nav-list font-md-grayed">
-            <li>
+            <li class="svg">
               <a href="#">
-                <object type="assets/img/logo.svg" data="image.svg"></object>
+                <div class="img-home"></div>
+                <!-- <img src="" alt="" /> -->
 
                 Home</a
               >
             </li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Your Library</a></li>
+            <li class="svg">
+              <a href="#">
+                <div class="img-search"></div>
+                Search</a
+              >
+            </li>
+            <li class="svg">
+              <a href="#">
+                <div class="img-library"></div>
+                Your Library</a
+              >
+            </li>
             <li class="space"><a href="#"></a></li>
-            <li><a href="#">Create Playlist</a></li>
-            <li><a href="#">Liked Songs</a></li>
+            <li>
+              <a href="#"
+                ><div class="icons icon-add">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                Create Playlist</a
+              >
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="icons icon-heart">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                Liked Songs</a
+              >
+            </li>
           </ul>
+          <div class="download font-md-grayed">
+            <a href="#"
+              ><div class="img-download"></div>
+              Install App</a
+            >
+          </div>
         </nav>
       </aside>
       <main class="main">
-        <div class="main-header">
-          <div class="arrows"></div>
+        <div class="main-header four-column-grid-expand-two">
+          <div class="arrows-container">
+            <div class="arrows">
+              <img src="assets/img/left-arrow.png" alt="" />
+            </div>
+            <div class="arrows"><img src="assets/img/next.png" alt="" /></div>
+          </div>
           <div class="empty"></div>
-          <div class="upgrade"></div>
-          <div class="account"></div>
+          <div class="upgrade">
+            <button class="upgrade-btn">UPGRADE</button>
+          </div>
+          <div class="account">
+            <div class="account-img">
+              <img src="assets/img/profile.png" alt="" />
+            </div>
+            <div class="account-name">Toth Tibor</div>
+            <i class="fa-solid fa-sort-down"></i>
+          </div>
+        </div>
+        <div class="main-card">
+          <div class="main-card-header">
+            <h2>Shows to try</h2>
+            <p class="see-all">SEE ALL</p>
+          </div>
+          <div class="small-cards-container">
+            <div class="small-card small-card-1">
+              <div class="small-card-image">
+                <img src="assets/img/cure.jpeg" alt="A cure for wellness" />
+              </div>
+              <div class="small-card-title">A cure for Wellness</div>
+              <div class="small-card-details">Subtitle</div>
+            </div>
+            <div class="small-card small-card-2">
+              <div class="small-card-image">
+                <img src="assets/img/aquietplace.jpeg" alt="A quite Place" />
+              </div>
+              <div class="small-card-title">A quite Place</div>
+              <div class="small-card-details">Subtitle</div>
+            </div>
+            <div class="small-card small-card-3">
+              <div class="small-card-image">
+                <img src="assets/img/sinister.jpeg" alt="Sinister" />
+              </div>
+              <div class="small-card-title">Sinister</div>
+              <div class="small-card-details">Subtitle</div>
+            </div>
+            <div class="small-card small-card-4">
+              <div class="small-card-image">
+                <img src="assets/img/split.jpeg" alt="Split" />
+              </div>
+              <div class="small-card-title">Split</div>
+              <div class="small-card-details">Subtitle</div>
+            </div>
+            <div class="small-card small-card-5">
+              <div class="small-card-image">
+                <img src="assets/img/stranger.jpeg" alt="Stranger Things" />
+              </div>
+              <div class="small-card-title">Stranger Things</div>
+              <div class="small-card-details">Subtitle</div>
+            </div>
+          </div>
+        </div>
+        <div class="main-card main-card-2">
+          <div class="main-card-header">
+            <h2>Popular Songs / Artists</h2>
+            <p class="see-all">SEE ALL</p>
+          </div>
+          <div class="small-cards-container">
+            <div class="small-card small-card-1">
+              <div class="small-card-image">
+                <img src="assets/img/einaudi.jpeg" alt="Einaudi" />
+              </div>
+              <div class="small-card-title">Einaudi</div>
+              <div class="small-card-details">Artist</div>
+            </div>
+            <div class="small-card small-card-2">
+              <div class="small-card-image">
+                <img src="assets/img/metal_lifting.jpg" alt="Metallica" />
+              </div>
+              <div class="small-card-title">Metallica</div>
+              <div class="small-card-details">Artist</div>
+            </div>
+            <div class="small-card small-card-3">
+              <div class="small-card-image">
+                <img src="assets/img/mixdaily.jpeg" alt="Mix daily" />
+              </div>
+              <div class="small-card-title">Mix daily</div>
+              <div class="small-card-details">Song</div>
+            </div>
+            <div class="small-card small-card-4">
+              <div class="small-card-image">
+                <img src="assets/img/player_left.jpg" alt="Hilltop Hodos" />
+              </div>
+              <div class="small-card-title">Hilltop Hodos</div>
+              <div class="small-card-details">Artist</div>
+            </div>
+            <div class="small-card small-card-5">
+              <div class="small-card-image">
+                <img src="assets/img/radar.jpeg" alt="Radar" />
+              </div>
+              <div class="small-card-title">Radar</div>
+              <div class="small-card-details">Artist</div>
+            </div>
+            <div class="small-card small-card-6">
+              <div class="small-card-image">
+                <img src="assets/img/youg.jpeg" alt="Lana Del Rey" />
+              </div>
+              <div class="small-card-title">Lana Del Rey</div>
+              <div class="small-card-details">Artist</div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

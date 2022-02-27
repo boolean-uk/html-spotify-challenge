@@ -1,2 +1,69 @@
+.main-card {
+  &-header {
+    margin: 4rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h2 {
+      color: white;
+      font-weight: 700;
+      font-size: 2.2rem;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
 
+    .see-all {
+      color: $color-darkgrey;
+      font-weight: 700;
+      font-size: 1.3rem;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
 
+  .small-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    gap: 2rem;
+    .small-card {
+      padding: 1.4rem;
+      background-color: #242323;
+      width: 18rem;
+      border-radius: 8px;
+      &-image {
+        height: 15rem;
+        border-radius: 8px;
+        img {
+          height: 100%;
+
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+
+      &-title {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-top: 1.2rem;
+      }
+      &-details {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $color-darkgrey;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #3f3d3d94;
+        transition: all 0.6s;
+      }
+    }
+  }
+}
