@@ -23,7 +23,7 @@
 
 .wrapper {
   height: 100vh;
-  padding: 2rem;
+  overflow: scroll;
   margin: 0 auto;
 
   display: grid;
@@ -34,6 +34,6 @@
     "navigation main main"
     "footer footer footer";
 
-  grid-template-rows: 10rem auto auto 10rem;
-  grid-template-columns: 240px 1fr;
+  grid-template-rows: 9.5rem auto auto 10rem;
+  grid-template-columns: 200px 1fr;
 }

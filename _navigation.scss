@@ -2,6 +2,11 @@
   background-color: rgb(0, 0, 0);
   padding: 2rem 1rem;
 
+  z-index: 999;
+
+  position: fixed;
+  left: 0;
+
   hr {
     color: white;
     width: 100%;

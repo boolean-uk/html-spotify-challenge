@@ -3,8 +3,13 @@
   place-items: center;
   background-color: $color-spotify-header;
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+
   &__arrow-left {
-    margin-left: 2rem;
+    margin-left: 20rem;
   }
   &__arrow-left img,
   &__arrow-right img {
