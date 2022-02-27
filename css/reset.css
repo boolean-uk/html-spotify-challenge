@@ -19,3 +19,56 @@ body {
     margin: 2px;
     border: 2px solid blue;
 }
+
+/* LEFT SIDE BAR */
+
+.logo, .search, .playlist, .playlist-name, .download-app, .profile {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid green;
+}
+
+.add-box {
+    height: 45px;
+    width: 45px;
+    border: 2px solid orange;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.playlist-name-list {
+    list-style-type: none;
+    line-height: 2;
+    color: grey;
+}
+
+.download-app {
+    margin-top: 150px;
+}
+
+.download-icon {
+    border: 2px solid orange;
+    border-radius: 50%;
+    background-color: grey;
+    height: 20px;
+}
+
+.text-sm {
+    color: grey;
+}
+
+.pic-sm {
+    height: 45px;
+    width: 45px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.name-sm {
+    font-weight: bold;
+    border: 2px solid orange;
+
+}
