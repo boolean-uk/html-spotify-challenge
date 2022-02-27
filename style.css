@@ -128,6 +128,7 @@
   z-index: 999;
   position: fixed;
   left: 0;
+  height: 100vh;
 }
 
 .navigation hr {
@@ -212,6 +213,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 11rem;
 }
 
 .navigation__profile .avatar {
@@ -272,6 +274,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
   background-color: #101010;
 }
 
