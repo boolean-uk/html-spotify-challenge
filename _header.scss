@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  place-items: center;
+  background-color: $color-spotify-header;
+
+  &__arrow-left {
+    margin-left: 2rem;
+  }
+  &__arrow-left img,
+  &__arrow-right img {
+    height: 2rem;
+    width: auto;
+    margin: 1rem;
+  }
+
+  &__sign-up a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scaleX(1.1) scaleY(1.1);
+    }
+    &,
+    &:link,
+    &:visited {
+      color: $color-spotify-white;
+    }
+  }
+
+  &__sign-up,
+  &__button-container,
+  &__burger-svg {
+    margin: 0 2rem;
+  }
+}
