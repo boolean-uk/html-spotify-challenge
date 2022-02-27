@@ -13,6 +13,8 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
 
       
 
@@ -277,6 +279,36 @@
         </section>
 
     </main>
-    <div class="player border"></div>
+    <div class="player border">
+        <div class="border player_left">
+            <img src="/my_images/Betsy_-_BETSY.jpg" alt="Betsy album cover" class="border player_left_image">
+            <div class="border player_left_text">
+                <p>Wanted More</p>
+                <p>Betsy</p>
+            </div>
+            <div class="border player_left_icons">
+                <span class="material-icons-outlined">favorite_border</span>
+                <span class="material-icons-outlined">tab</span>
+            </div>
+        </div>
+            
+        <div class="border player_controls">
+            <div class="player_buttons border">
+                <span class="material-icons-outlined button_shuffle">shuffle</span>
+                <span class="material-icons button_previous">skip_previous</span>
+                <span class="material-icons button_play">play_circle</span>
+                <span class="material-icons button_next">skip_next</span>
+                <span class="material-icons button_repeat">repeat</span>
+            </div>
+            <div>
+                    <input type="range" step="0.01" value="23" class="range_slide">
+            </div>
+        </div>
+        <div class="border player_right">
+            <span class="material-icons">mic_external_on</span>
+            <span class="material-icons">speaker_group</span>
+            <span class="material-icons">volume_up</span>       
+        </div>
+    </div>
 </body>
 </html>
