@@ -236,6 +236,27 @@
   text-decoration: underline;
 }
 
+.auto-fit-column-spotify {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 12rem);
+  grid-gap: 2.5rem;
+}
+
+.auto-fit-rows-spotify {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[2rem];
+      grid-template-rows: repeat(2rem);
+}
+
+.main a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #b3b3b3;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;

@@ -1,0 +1,17 @@
+.auto-fit-column-spotify {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12rem);
+  grid-gap: 2.5rem;
+}
+.auto-fit-rows-spotify {
+  display: grid;
+  grid-template-rows: repeat(2rem);
+}
+
+.main {
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-spotify-cookies;
+  }
+}
