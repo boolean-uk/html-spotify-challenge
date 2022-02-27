@@ -6,6 +6,9 @@
     color: white;
 }
 
+html {
+    --grey_for_text_and_icons: #b2b2b2;
+}
 
 /* I USE THIS FOR VISUALISING THE LAYOUT */
 /* .border {
@@ -59,7 +62,7 @@ li {
     font-size: 12px;
     line-height: 10px;
     line-height: 32px;
-    border-top: 2px solid #1F1F1F ;
+    border-top: 1px solid #1F1F1F ;
     padding-top: 10px;
 }
 
@@ -87,18 +90,26 @@ li {
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 0px 25px 0px 35px;
-    background-color: #212121;
-    
+    background-color: rgb(88,91,91);
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 250px);
 
 }
 
 .round_icon {
-    background-color: black;
     color: white;
     border-radius: 50px;
     width: 30px;
     height: 30px;
+}
 
+.round_icon_back {
+    background-color: #181919;
+}
+
+.round_icon_forward {
+    background-color: #303131;
 }
 
 .header_buttons {
@@ -108,27 +119,26 @@ li {
 }
 
 .upgrade {
-    background-color: black;
+    background-color: #181919;
     color: white;
     text-decoration: none;
     padding: 6px;
     border-radius: 50px;
     width: 135px;
     height: 35px;
-    border: 1px white solid;
+    border: 1px #9d9f9f solid;
     display: grid;
     place-items: center;
 }
 
 .my_account {
-    background-color: black;
+    background-color: #181919;
     color: white;
     text-decoration: none;
     padding: 6px;
     border-radius: 50px;
     width: 145px;
     height: 30px;
-    border: 2px white;
     display: grid;
     place-items: center;
     margin-left: 25px;
@@ -137,9 +147,30 @@ li {
 
 
 .content {
-    background-color: #121212;
+    /* background-color: #121212; */
+    background: linear-gradient(180deg, rgb(88,91,91) 0%, rgba(18,18,18,1) 20%);
     padding: 20px;
+    margin-top: 60px;
+    
 }
+
+
+.player_artist,
+.install,
+.suggested_playlists *,
+.search,
+.library,
+.playlist,
+.liked,
+.album_artist,
+.section_more {
+    color: var(--grey_for_text_and_icons);
+}
+
+.grey {
+    color: var(--grey_for_text_and_icons)
+}
+
 
 .content_section {
     margin-bottom: 15px;
@@ -193,7 +224,6 @@ li {
     height: 100%; 
     object-fit: contain;
     border-radius: 5px;
-
     
 }
 
