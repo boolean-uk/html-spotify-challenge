@@ -34,7 +34,7 @@
 .main {
   padding: 1.7rem 2.8rem;
   background: linear-gradient(120deg, #212121 42%, #121212 75%);
-  height: 100vh;
+  height: calc(100vh - 8.2rem);
   overflow-y: scroll;
 }
 .main::-webkit-scrollbar {
@@ -131,6 +131,11 @@ html {
   font-size: 62.5%;
   font-family: "montserrat", "sans-serif";
 }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 55%;
+  }
+}
 
 .container-wrapper {
   max-height: 100vh;
@@ -144,9 +149,20 @@ html {
   background-color: black;
   height: 4.5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .logo {
+    display: none;
+  }
+}
 .logo img {
   width: 60%;
   height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-small {
+    display: none;
+  }
 }
 
 .left-side {
@@ -161,7 +177,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100% - 6.5rem);
+  height: calc(100% - 16rem);
 }
 .left-side .nav-list {
   border-bottom: 1.6px solid #222222;
@@ -190,6 +206,15 @@ html {
   margin-right: 1.5rem;
   background: url("../assets/img/home.svg");
 }
+@media only screen and (max-width: 37.5em) {
+  .left-side .nav-list li.svg .img-home {
+    width: 8rem;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3.3rem;
+  }
+}
 .left-side .nav-list li.svg .img-search {
   display: inline;
   width: 2.5rem;
@@ -197,12 +222,30 @@ html {
   margin-right: 1.5rem;
   background: url("../assets/img/search.svg");
 }
+@media only screen and (max-width: 37.5em) {
+  .left-side .nav-list li.svg .img-search {
+    width: 8rem;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3.3rem;
+  }
+}
 .left-side .nav-list li.svg .img-library {
   display: inline;
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1.5rem;
   background: url("../assets/img/libreria.svg");
+}
+@media only screen and (max-width: 37.5em) {
+  .left-side .nav-list li.svg .img-library {
+    width: 8rem;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3.3rem;
+  }
 }
 .left-side .nav-list li.svg:hover {
   filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
@@ -228,6 +271,14 @@ html {
   margin-right: 1.5rem;
   height: 2.5rem;
   width: 2.5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .left-side .nav-list li .icons {
+    width: 8rem;
+    height: 3rem;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .left-side .nav-list li .icon-add.icons {
   background-color: #b2b2b2;
@@ -260,8 +311,27 @@ html {
   margin-right: 1.5rem;
   background: url("../assets/img/download.svg");
 }
+@media only screen and (max-width: 37.5em) {
+  .left-side .download .img-download {
+    width: 8rem;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3.3rem;
+  }
+}
 .left-side .download:hover {
   filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
+}
+@media only screen and (max-width: 37.5em) {
+  .left-side span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .left-side {
+    width: 8rem;
+  }
 }
 
 .two-column-grid-expand-two {
@@ -453,6 +523,11 @@ html {
 .right-side .btn-settings:hover {
   background-color: #dfdfdf;
 }
+@media only screen and (max-width: 56.25em) {
+  .right-side {
+    display: none;
+  }
+}
 
 .mg-bottom-lg {
   margin-bottom: 2.5rem;
@@ -479,12 +554,18 @@ html {
 .player-left-side__img img {
   height: 100%;
 }
+.player-left-side__img:hover {
+  cursor: pointer;
+}
 .player-left-side__title {
   margin-right: 2rem;
 }
 .player-left-side i {
   font-size: 2rem;
   color: white;
+}
+.player-left-side i:hover {
+  cursor: pointer;
 }
 .player-center {
   margin: 0 7vw;

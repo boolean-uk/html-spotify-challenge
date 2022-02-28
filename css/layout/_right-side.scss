@@ -35,4 +35,7 @@
       background-color: rgb(223, 223, 223);
     }
   }
+  @include respond(tab-port) {
+    display: none;
+  }
 }
