@@ -56,15 +56,25 @@ aside {
 
 .left-menu-icons-grid {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #aeaeae;
 }
 
-.home {
+.song-options {
+  color: #9c9c9c;
+}
+
+.song-options li {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style-type: none;
 }
 
 main {
