@@ -1,8 +1,8 @@
+/* ---- layout ---- */
+
 .grid-auto-row {
     display: grid;
     grid-auto-rows: 1fr auto;
-    /* max-width: 1500px;
-    min-height: 100vh; */
 }
 .border-blue {   
     border: 2px dashed blue;
@@ -19,19 +19,69 @@
 .main-grid-column {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* min-height: 100vh;
-    max-width: 1500px; */
 }
 
 .main-layout {
     height: 100vh;
 }
 
-.column-1 {
-    width: 175px
+.gap-sm {
+    gap: 12px;
 }
 
+.column-1 {
+    width: 175px;
+    display: grid;
+    grid-template-rows: auto 1fr ;
+}
+
+.column-1 {
+    background-color: black;
+    color: white;
+}
+
+/* .row-2 {
+    height: 96px
+} */
 
 .row-2 {
-    height: 96px
+    height: 80px;
 }
+
+
+.eight-grid-row-auto {
+    display: grid;
+    grid-auto-rows: repeat (8,auto);
+}
+
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.two-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.auto-column-grid {
+    display: grid;
+    grid-auto-flow: column;
+
+    place-items: center;
+}
+
+.nav-four-grid-auto {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+}
+
+
+/* ---- layout ---- */
