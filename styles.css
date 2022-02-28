@@ -54,6 +54,19 @@ aside {
   font-weight: 700;
 }
 
+.left-menu-icons-grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+}
+
 main {
   border: dotted 2px rgb(98, 0, 255);
 }
