@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="spotify.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <header>
+      <section id="logo">
+        <a href="https://www.spotify.com">
+          <img
+            class="logo-main"
+            src="/assets/img/logo.svg"
+            alt="Spotify"
+            height="36px"
+          />
+          <img
+            class="logo-responsive"
+            src="/assets/img/spotify-darkmode.png"
+            alt="Spotify"
+            height="36px"
+          />
+        </a>
+      </section>
+
+      <div id="upgrade-button">
+        <a href="https://www.spotify.com/premium">
+          <button>Get Spotify Premium</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <section id="aside-menu">
+          <div class="menu-items">
+            <img src="/assets/img/home.svg" alt="Home" height="30px" />
+            <a href="#">Home</a>
+          </div>
+          <div class="menu-items">
+            <img src="/assets/img/search.svg" alt="search icon" height="30px" />
+            <a href="#">Search</a>
+          </div>
+          <div class="menu-items">
+            <img
+              src="/assets/img/library.svg"
+              alt="library icon"
+              height="30px"
+            />
+            <a href="#">Your Library</a>
+          </div>
+        </section>
+
+        <div id="playlist">
+          <h2>Create Playlist</h2>
+          <div id="create-playlists"></div>
+        </div>
+        <div id="your-playlists">
+          <ul>
+            <li>main ∞</li>
+            <li>the boys' playlist</li>
+            <li>hp 🎉</li>
+            <li>On Repeat</li>
+            <li>This is Juice WRLD</li>
+            <li>Juice WRLD Mix</li>
+            <!-- <li>Your Top Songs 2021</li>
+            <li>AJ Tracey Mix</li> -->
+          </ul>
+        </div>
+        <div id="profile">
+          <a href="https://www.accounts.spotify.com/en/login">
+            <img
+              src="/assets/img/profile.png"
+              alt="Profile Icon"
+              height="25px"
+            />
+            <h2 class="user-name">tjcarlo</h2>
+          </a>
+        </div>
+      </aside>
+
+      <div id="main-feed">
+        <section id="music-genres">
+          <div id="select-menu">
+            <select name="">
+              <option value="brand-new">Brand New</option>
+              <option value="discover">Discover</option>
+              <option value="genres">Genres</option>
+              <option value="podcasts">Podcasts</option>
+              <option value="just-for-you">Just For You</option>
+              <option value="uniquely-yours">Uniquely Yours</option>
+            </select>
+          </div>
+          <div id="genres-menu">
+            <ul>
+              <li><a href="#">Brand New</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">Just For You</a></li>
+              <li><a href="#">Uniquely Yours</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="recent">
+          <h2>Recently Played</h2>
+          <div id="recent-albums">
+            <div class="album-boxes">
+              <img
+                src="/assets/img/thisisjuicewrld.png"
+                alt="This Is Juice WRLD"
+                height="160px"
+              />
+              <h3 class="album-titles">This Is Juice WRLD</h3>
+              <p class="subtitles">Spotify</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/legendsneverdie.png"
+                alt="Juice WRLD - Legends Never Die"
+                height="160px"
+              />
+              <h3 class="album-titles">Legends Never Die</h3>
+              <p class="subtitles">Juice WRLD</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/fightingdemons.png"
+                alt="Juice WRLD - Fighting Demons"
+                height="160px"
+              />
+              <h3 class="album-titles">Fighting Demons</h3>
+              <p class="subtitles">Juice WRLD</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/gbgr.png"
+                alt="Juice WRLD - Goodbye & Good Riddance"
+                height="160px"
+              />
+              <h3 class="album-titles">Goodbye & Good Riddance</h3>
+              <p class="subtitles">Juice WRLD</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/flugame.png"
+                alt="AJ Tracey - Flu Game"
+                height="160px"
+              />
+              <h3 class="album-titles">Flu Game</h3>
+              <p class="subtitles">AJ Tracey</p>
+            </div>
+            <div class="album-boxes">
+              <img src="/assets/img/nav.png" alt="NAV - NAV" height="160px" />
+              <h3 class="album-titles">NAV</h3>
+              <p class="subtitles">NAV</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/fightingdemons.png"
+                alt="Juice WRLD - Fighting Demons (Complete Edition)"
+                height="160px"
+              />
+              <h3 class="album-titles">Fighting Demons (Complete Edition)</h3>
+              <p class="subtitles">Juice WRLD</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/psychout.png"
+                alt="AJ Tracey - Psych Out!"
+                height="160px"
+              />
+              <h3 class="album-titles">Psych Out!</h3>
+              <p class="subtitles">AJ Tracey</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/stb1.png"
+                alt="AJ Tracey - Secure The Bag!"
+                height="160px"
+              />
+              <h3 class="album-titles">Secure The Bag!</h3>
+              <p class="subtitles">AJ Tracey</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/stb2.png"
+                alt="AJ Tracey - Secure The Bag! 2"
+                height="160px"
+              />
+              <h3 class="album-titles">Secure The Bag! 2</h3>
+              <p class="subtitles">AJ Tracey</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="suggestions">
+          <h2>Created For tjcarlo</h2>
+          <p>The more you listen, the more accurate the suggestions will be</p>
+          <div class="suggested">
+            <div class="album-boxes">
+              <img
+                src="/assets/img/Screenshot 2022-02-28 at 12.12.01.png"
+                alt="Daily Mix 1"
+                height="160px"
+              />
+              <p class="subtitles">Juice WRLD, NAV, and more</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/releaseradar.png"
+                alt="Release Radar"
+                height="160px"
+              />
+              <p class="subtitles">Catch the latest...</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="uniquely-yours">
+          <h2>Uniquely Yours</h2>
+          <p>Playlists tailored for you</p>
+          <div class="suggested">
+            <div class="album-boxes">
+              <img
+                src="/assets/img/onrepeat.png"
+                alt="On Repeat"
+                height="160px"
+              />
+              <p class="subtitles">Songs you love right now</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/repeatrewind.png"
+                alt="Repeat Rewind"
+                height="160px"
+              />
+              <p class="subtitles">Your past favourites</p>
+            </div>
+            <div class="album-boxes">
+              <img
+                src="/assets/img/Screenshot 2022-02-28 at 12.06.07.png"
+                alt="Your Top Songs 2021"
+                height="160px"
+              />
+              <p class="subtitles">The songs you loved most this year...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="three-column__expand-two">
+      <section class="footer__left-section auto-column-grid gap-sm">
+        <img
+          src="/assets/img/fightingdemons.png"
+          alt="Juice WRLD - Burn"
+          height="50px"
+        />
+        <div>
+          <a class="current-artist" href="#">Juice WRLD</a>
+          <a class="current-song" href="#">Burn</a>
+        </div>
+        <button class="footer__option-btn">
+          <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+            <path
+              fill="currentColor"
+              d="M1.69 2A4.582 4.582 0 018 2.023 4.583 4.583 0 0111.88.817h.002a4.618 4.618 0 013.782 3.65v.003a4.543 4.543 0 01-1.011 3.84L9.35 14.629a1.765 1.765 0 01-2.093.464 1.762 1.762 0 01-.605-.463L1.348 8.309A4.582 4.582 0 011.689 2zm3.158.252A3.082 3.082 0 002.49 7.337l.005.005L7.8 13.664a.264.264 0 00.311.069.262.262 0 00.09-.069l5.312-6.33a3.043 3.043 0 00.68-2.573 3.118 3.118 0 00-2.551-2.463 3.079 3.079 0 00-2.612.816l-.007.007a1.501 1.501 0 01-2.045 0l-.009-.008a3.082 3.082 0 00-2.121-.861z"
+            ></path>
+          </svg>
+        </button>
+        <button class="footer__option-btn">
+          <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+            <path
+              fill="currentColor"
+              d="M8 0a8 8 0 100 16A8 8 0 008 0zM3.965 2.904a6.5 6.5 0 019.131 9.131L3.965 2.904zm-1.061 1.06l9.131 9.132a6.5 6.5 0 01-9.131-9.131z"
+            ></path>
+          </svg>
+        </button>
+        <button class="footer__option-btn">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd">
+              <path
+                d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                fill-rule="nonzero"
+              ></path>
+              <path d="M10 8h4v3h-4z"></path>
+            </g>
+          </svg>
+        </button>
+      </section>
+
+      <section class="footer__player-section two-row-grid__expand-one">
+        <div class="two-column-grid__expand-one-and-three">
+          <div class="spacer"></div>
+          <ul class="footer__track-controls auto-column-grid gap-sm">
+            <li>
+              <button class="footer__option-btn">
+                <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                  <path
+                    fill="currentColor"
+                    d="M13.151.922a.75.75 0 10-1.06 1.06L13.109 3H11.16a3.75 3.75 0 00-2.873 1.34l-6.173 7.356A2.25 2.25 0 01.39 12.5H0V14h.391a3.75 3.75 0 002.873-1.34l6.173-7.356a2.25 2.25 0 011.724-.804h1.947l-1.017 1.018a.75.75 0 001.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 00.39 3.5z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M7.5 10.723l.98-1.167.957 1.14a2.25 2.25 0 001.724.804h1.947l-1.017-1.018a.75.75 0 111.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 11-1.06-1.06L13.109 13H11.16a3.75 3.75 0 01-2.873-1.34l-.787-.938z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="footer__option-btn">
+                <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                  <path
+                    fill="currentColor"
+                    d="M3.3 1a.7.7 0 01.7.7v5.15l9.95-5.744a.7.7 0 011.05.606v12.575a.7.7 0 01-1.05.607L4 9.149V14.3a.7.7 0 01-.7.7H1.7a.7.7 0 01-.7-.7V1.7a.7.7 0 01.7-.7h1.6z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <div class="footer__option-btn-frame">
+                <button id="play-btn" class="footer__option-btn">
+                  <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                    <path
+                      d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li>
+              <button class="footer__option-btn">
+                <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                  <path
+                    fill="currentColor"
+                    d="M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="footer__option-btn">
+                <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                  <path
+                    fill="currentColor"
+                    d="M0 4.75A3.75 3.75 0 013.75 1h8.5A3.75 3.75 0 0116 4.75v5a3.75 3.75 0 01-3.75 3.75H9.81l1.018 1.018a.75.75 0 11-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 111.06 1.06L9.811 12h2.439a2.25 2.25 0 002.25-2.25v-5a2.25 2.25 0 00-2.25-2.25h-8.5A2.25 2.25 0 001.5 4.75v5A2.25 2.25 0 003.75 12H5v1.5H3.75A3.75 3.75 0 010 9.75v-5z"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="spacer"></div>
+        </div>
+        <div class="two-column-grid__expand-one-and-three">
+          <div class="spacer"></div>
+          <div class="auto-column-grid gap-sm">
+            <div class="align-right__grid">1:32</div>
+            <div>
+              <label class="center__grid">
+                <input
+                  class="footer__track-slider"
+                  type="range"
+                  id="track-slider"
+                  name="track-slider"
+                />
+              </label>
+            </div>
+            <div>3:37</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+      </section>
+
+      <section class="footer__right-section center__grid">
+        <ul class="auto-column-grid gap-xs">
+          <li>
+            <button class="footer__option-btn">
+              <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                <path
+                  fill="currentColor"
+                  d="M13.426 2.574a2.831 2.831 0 00-4.797 1.55l3.247 3.247a2.831 2.831 0 001.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 004.74 9.075L2.065 12.12a1.287 1.287 0 001.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 114.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 01-3.933-3.933l2.676-3.045 3.505-3.99z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="footer__option-btn">
+              <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                <path
+                  fill="currentColor"
+                  d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 013.5 1h9a2.5 2.5 0 010 5h-9A2.5 2.5 0 011 3.5zm2.5-1a1 1 0 000 2h9a1 1 0 100-2h-9z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="footer__option-btn">
+              <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                <path
+                  fill="currentColor"
+                  d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0114.25 15h-6.5A1.75 1.75 0 016 13.25V2.75zm1.75-.25a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 00.25-.25V2.75a.25.25 0 00-.25-.25h-6.5zm-6 0a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 010 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M13 10a2 2 0 11-4 0 2 2 0 014 0zm-1-5a1 1 0 11-2 0 1 1 0 012 0z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="footer__option-btn">
+              <svg
+                role="presentation"
+                height="16"
+                width="16"
+                aria-label="Volume high"
+                id="volume-icon"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M9.741.85a.75.75 0 01.375.65v13a.75.75 0 01-1.125.65l-6.925-4a3.642 3.642 0 01-1.33-4.967 3.639 3.639 0 011.33-1.332l6.925-4a.75.75 0 01.75 0zm-6.924 5.3a2.139 2.139 0 000 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 010 4.88z"
+                ></path>
+                <path
+                  d="M11.5 13.614a5.752 5.752 0 000-11.228v1.55a4.252 4.252 0 010 8.127v1.55z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <div>
+              <label class="footer__volume-slider center__grid">
+                <input
+                  class="footer__volume-slider"
+                  type="range"
+                  id="volume"
+                  name="volume"
+                  min="0"
+                  max="100"
+                />
+              </label>
+            </div>
+          </li>
+          <li>
+            <button class="footer__option-btn">
+              <svg role="img" height="16" width="16" viewbox="0 0 16 16">
+                <path
+                  fill="currentColor"
+                  d="M6.53 9.47a.75.75 0 010 1.06l-2.72 2.72h1.018a.75.75 0 010 1.5H1.25v-3.579a.75.75 0 011.5 0v1.018l2.72-2.72a.75.75 0 011.06 0zm2.94-2.94a.75.75 0 010-1.06l2.72-2.72h-1.018a.75.75 0 110-1.5h3.578v3.579a.75.75 0 01-1.5 0V3.81l-2.72 2.72a.75.75 0 01-1.06 0z"
+                ></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
