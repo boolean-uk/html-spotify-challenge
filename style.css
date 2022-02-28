@@ -1,9 +1,9 @@
-/* ADD THIS FONT: @import url(https://fonts.adobe.com/fonts/proxima-nova?ref=tk.com#fonts-section); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -156,4 +156,31 @@ select {
     color: white;
     border-bottom: 1px solid lightgreen;
     transition: 1s;
+}
+
+#recent h2 {
+    padding-left: 20px;
+}
+
+#recent-albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(197px, max-content));
+    margin: 1rem 0rem;
+}
+
+.album-boxes {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.album-boxes img:hover {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+#recent-albums h3 {
+    width: 20ch;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 8px 0px;
 }
