@@ -25,11 +25,9 @@ body {
   grid-template-rows: 1fr auto;
   height: 100vh;
   width: 100vw;
-  border: dotted 2px red;
 }
 
 .top-row-section {
-  border: dotted 2px rgb(0, 119, 255);
 }
 
 .two-column-grid__two-extender {
@@ -40,7 +38,6 @@ body {
 /* Aside  */
 
 aside {
-  border: dotted 2px rgb(0, 255, 64);
   background-color: black;
 }
 
@@ -94,7 +91,6 @@ p {
 }
 
 main {
-  border: dotted 2px rgb(98, 0, 255);
 }
 
 .main-header-column-grid {
@@ -137,7 +133,7 @@ header {
 
 .album-category-section {
   background-color: #202020;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .three-grid-expand-two {
@@ -159,7 +155,7 @@ h2 {
 
 .music-cards-main-grid {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
 }
 
 .music-card-grid {
