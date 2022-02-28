@@ -168,6 +168,10 @@ nav {
   padding: 10px;
 }
 
+.nav-bar-container {
+  height: 70px;
+}
+
 .nav-bar-container a {
   color: var(--sub-text-clr);
   font-size: 0.8rem;
@@ -180,8 +184,8 @@ nav {
 
 /* Recently Played */
 .music-list {
-  margin: 8px;
-  height: calc(90vh - 50px - 70px);
+  padding: 8px;
+  height: 73vh;
   overflow: scroll;
 }
 
@@ -201,4 +205,51 @@ nav {
 /* Popular Artists */
 .popular-artists img {
   border-radius: 50%;
+}
+
+/* Footer */
+
+.playing,
+.option-bar {
+  padding: 8px;
+  gap: 10px;
+  border: red solid 1px;
+}
+
+.playing img {
+  width: 16px;
+}
+
+.playing-title p {
+  color: var(--sub-text-clr);
+  font-size: 0.7rem;
+}
+
+.playing-title span {
+  color: var(--main-text-clr);
+  font-weight: 600;
+}
+
+.icon-container {
+  gap: 8px;
+}
+
+.option-bar img {
+  width: 16px;
+}
+
+.option-bar input {
+  appearance: none;
+  height: 2px;
+  background: var(--sub-text-clr);
+  border-radius: 2px;
+  outline: none;
+  opacity: 0.7;
+}
+
+.option-bar input::-webkit-slider-thumb {
+  appearance: none;
+  height: 2px;
+  background: var(--main-text-clr);
+  cursor: pointer;
 }

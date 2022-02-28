@@ -3,6 +3,11 @@
   grid-template-columns: auto 1fr;
 }
 
+.three-grid-column__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
 .six-grid-column {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
