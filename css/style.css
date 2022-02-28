@@ -147,37 +147,19 @@ a {
     margin: auto 15px;
 }
 
-.time-slider::-webkit-slider-runnable-track,
-.volume-slider::-webkit-slider-runnable-track {
-    height: 3px;
-    background: var(--text-color-three);
-    cursor: pointer;
-}
-
-.time-slider::-webkit-slider-thumb,
-.volume-slider::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
     display: none;
-}
+  } 
 
-.time-slider::-webkit-fill-upper,
-.volume-slider::-webkit-fill-upper {
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 4px;
+
     background: var(--text-color-three);
-}
-
-.time-slider:focus::-webkit-fill-upper,
-.volume-slider:focus::-webkit-fill-upper {
-    background: var(--text-color-three);
-}
-
-.time-slider::-webkit-fill-lower,
-.volume-slider::-webkit-fill-lower {
-    background: var(--text-color-two);
-}
-
-.time-slider:focus::-webkit-fill-lower,
-.volume-slider:focus::-webkit-fill-lower {
-    background: var(--text-color-two);
-}
+    background-image: linear-gradient(var(--text-color-two), var(--text-color-two));
+    background-size: 20% 100%;
+    background-repeat: no-repeat;
+  }
 
 
 /* BUTTONS */
