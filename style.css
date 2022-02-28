@@ -132,4 +132,29 @@ footer {
     color: #acacac;
 }
 
+.player-section {
+    color: #acacac;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.track-controls {
+    /* height: 2px; */
+
+    margin-top: 8px;
+}
+
+.footer-player-button {
+    height: 36px;
+    width: 36px;
+}
+
+#player-button {
+    height: 32px;
+    width: 32px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+
 /* ---- FOOTER ENDS ---- */
