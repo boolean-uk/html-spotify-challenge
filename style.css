@@ -139,7 +139,7 @@ input[type="range"] {
   }
 
   .footer__player-section input[type="range"] {
-      width: 625px;
+    width: 625px;
   }
 
   input[type="range"]:hover {
@@ -207,6 +207,33 @@ input[type="range"] {
   }
 /* ----------------------------------------- */
 
+
+/* ---------------------------------MAIN HEADER------------------------------------------- */
+header {
+    height: 65px;
+
+    padding: 16px 32px;
+
+    background-color: #2c0b4b;
+}
+
+.header__page-btn {
+    height: 32px;
+    width: 32px;
+    
+    background-color: #0f031b;
+    color: white;
+
+    border-radius: 50%;
+    border-style: none;
+}
+
+
+/* ---------------------------------MAIN SECTION------------------------------------------ */
+.main-section {
+    background: #2c0b4b;
+    background: linear-gradient(180deg, #2c0b4b 0%, rgba(18,18,18,1) 40%, rgba(18,18,18,1) 100%);   
+}
 /* FOR TESTING PURPOSES, DELETE LATER */
 
 main {

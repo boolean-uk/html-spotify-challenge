@@ -15,6 +15,13 @@
     place-items: center;
 }
 
+.two-column-grid__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+}
+
 .two-column-grid__expand-two {
     display: grid;
     grid-template-columns: auto 1fr;
