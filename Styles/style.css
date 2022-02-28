@@ -30,18 +30,19 @@ aside {
   width: 200px;
   color: white;
   background-color: black;
-
-  display: grid;
 }
 
-aside ul {
+ul {
   padding: 0;
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 aside a {
   color: var(--sub-text-clr);
-  text-decoration: none;
 }
 
 aside p {
@@ -51,7 +52,6 @@ aside p {
 
 aside a:hover {
   color: var(--text-clr);
-  text-decoration: none;
 }
 
 header {
@@ -73,8 +73,6 @@ footer {
 }
 
 .menu-bar {
-  display: grid;
-  align-items: center;
   gap: 5px;
   padding-left: 8px;
   margin-bottom: 15px;
@@ -109,18 +107,15 @@ h3 {
 
 .download {
   margin-bottom: 5px;
-  display: grid;
-  align-items: center;
   gap: 5px;
 }
+
 .download-icon {
   width: 15px;
 }
 
 .profile-container {
   margin-top: 5px;
-  display: grid;
-  align-items: center;
 
   border-top: var(--sub-text-clr) 1px solid;
 }
@@ -137,19 +132,27 @@ h3 {
 }
 
 /* Main */
+
 header a {
   width: 200px;
   margin: 8px;
   font-size: 0.8rem;
-  text-decoration: none;
   color: var(--main-text-clr);
   border: var(--sub-text-clr) 1px solid;
   border-radius: 30px;
-
-  display: grid;
-  place-items: center;
 }
 
 header a:hover {
   border: var(--main-text-clr) 1px solid;
+}
+
+nav {
+  width: 40vw;
+  display: grid;
+  padding: 10px;
+}
+
+.menu-bar-container li {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
