@@ -9,6 +9,7 @@ body {
 }
 
 .main-layout > * {
+    padding: 2px;
     border: 2px solid red;
 }
 
@@ -158,3 +159,12 @@ h3 {
     height: 381px;
     width: 308px;
 }
+
+/* FOOTER */
+
+.current-song, .play-button, .volume {
+    border: 2px solid green;
+    padding: 2px;
+    margin: 2px;
+}
+
