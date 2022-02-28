@@ -20,4 +20,18 @@
       @content;
     } //1800
   }
+
+  @if $breakpoint == height-max {
+    @media only screen and (max-height: 1040px) {
+      @content;
+    } //1800
+  }
 }
+
+@include respond(height-max) {
+  padding: 1rem;
+}
+
+// @include respond(tab-port) {
+//   padding: 8rem 0;
+// }

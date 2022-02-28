@@ -1,3 +1,7 @@
+@media only screen and (max-height: 1040px) {
+  padding: 1rem;
+}
+
 :root {
   --color-svg-player-buttons: #fff;
 }
@@ -44,6 +48,18 @@
   display: -ms-grid;
   display: grid;
       grid-template-rows: repeat(4, auto) 1fr repeat(2, auto);
+}
+
+@media only screen and (max-height: 1040px) {
+  .navigation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[3] 1fr auto 1fr;
+        grid-template-rows: repeat(3, auto) 1fr auto 1fr;
+  }
+  .navigation__side-list {
+    display: none;
+  }
 }
 
 .main {
