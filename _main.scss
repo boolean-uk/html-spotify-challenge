@@ -8,6 +8,12 @@
   grid-template-rows: repeat(2rem);
 }
 
+.auto-fit-column-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24rem);
+  grid-gap: 2rem;
+}
+
 .main {
   a {
     text-decoration: none;
@@ -55,5 +61,12 @@
     transition: 0.1s;
     transform: scaleX(1.2) scaleY(1.2);
     opacity: 1;
+  }
+
+  section h2 {
+    font-size: 2.8rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    color: $color-spotify-cookies;
   }
 }
