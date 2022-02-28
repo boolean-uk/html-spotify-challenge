@@ -66,8 +66,12 @@ footer {
   height: 10vh;
 }
 
+p {
+  margin: 3px 0;
+}
+
 /* --- MAIN STYLES --- */
-/* Aside */
+/* Aside left menu bar*/
 .logo {
   margin: 8px;
   width: 130px;
@@ -137,6 +141,10 @@ h3 {
   background-color: var(--sub-clr);
 }
 
+.main-container img {
+  width: 250px;
+}
+
 header a {
   width: 200px;
   margin: 8px;
@@ -163,4 +171,10 @@ nav {
 
 .menu-bar-container a:hover {
   color: var(--main-text-clr);
+}
+
+/* Recently Played */
+
+.wrapper {
+  margin: 8px;
 }
