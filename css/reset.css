@@ -9,16 +9,10 @@ body {
 }
 
 .main-layout > * {
-    margin: 2px;
-    padding: 2px;
     border: 2px solid red;
 }
 
-.central-area > * {
-    padding: 2px;
-    margin: 2px;
-    border: 2px solid blue;
-}
+
 
 /* LEFT SIDE BAR */
 
@@ -75,8 +69,8 @@ h3 {
     font-weight: bold;
 }
 
-.download-app {
-    margin-top: 95px;
+.space {
+    height: 805px;
 }
 
 .download-icon {
@@ -110,25 +104,28 @@ h3 {
 .middle-area {
     display: grid;
     grid-template-rows: auto;
-    background-color: black;
-}
-
-.middle-box {
-    padding: 2px;
-    margin: 2px;
-    border: 2px solid green;
+    background-color: rgb(34, 37, 43);
 }
 
 .upgrade-bar {
     padding: 20px;
-    background-color: navy;
+    background-color: rgb(5, 5, 41);
 }
 
 .upgrade-notification {
     border: 2px solid white;
     border-radius: 40px;
-    width: 200px;
+    width: 300px;
     height: 50px;
+}
+
+.upgrade-text {
+    color: white;
+}
+
+.center-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .square {
@@ -155,4 +152,9 @@ h3 {
 
 .circle {
     border-radius: 50%;
+}
+
+.text-box {
+    height: 381px;
+    width: 308px;
 }
