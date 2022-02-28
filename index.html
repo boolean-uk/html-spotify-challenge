@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
@@ -30,33 +33,49 @@
                         <a href="#"><li class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/home.svg" alt="home">
                         <span>Liked Songs</span></li></a>
                         <hr>
-                       <a href="#">
-                           <li>My Playlist #1</li>
-                         </a> 
-                         <a href="#">
-                            <li>Deep House 2022</li>
-                          </a> 
-                          <a href="#">
-                            <li>Sing-Along Indie Hits</li>
-                          </a> 
-                          <a href="#">
-                            <li>Discover Weekly</li>
-                          </a> 
-                          <a href="#">
-                            <li>Grime Shutdown</li>
-                          </a> 
+                        <a href="#">
+                              <li class="nav-playlist">My Playlist #1</li>
+                            </a> 
+                            <a href="#">
+                               <li class="nav-playlist">Deep House 2022</li>
+                             </a> 
+                             <a href="#">
+                               <li class="nav-playlist">Sing-Along Indie Hits</li>
+                             </a> 
+                             <a href="#">
+                               <li class="nav-playlist">Discover Weekly</li>
+                             </a> 
+                             <a href="#">
+                               <li class="nav-playlist">Grime Shutdown</li>
+                             </a> 
+
+                   
                     </ul>
                 </div>
                 <div class="nav-footer">
-                    <a href="#"><img  class="nav-logo" src="/assets/img/download.svg" alt="download">
-                    <span>Install App</span>
-                </a>
+                    <ul>
+                        <a href="#"><li class="two-column-grid__expand-two"><img id="nav-footer-icon" src="/assets/img/download.svg" alt="home">
+                        <span>Install App</span></li></a>
+                        </ul>
                 </div>
 
             
 
             </nav>
-            <main class="main-container"></main>
+            <main class="main-container">
+                <header></header>
+                <h2>Recently Played</h2>
+                <div class="responsive-grid">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                
+            
+                
+                </div>
+            </main>
             <aside class="activity-container"></aside>
 
         </div>
