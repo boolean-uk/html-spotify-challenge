@@ -7,7 +7,7 @@
   position: fixed;
   left: 0;
 
-  height: 100vh;
+  // height: 100vh;
 
   hr {
     color: white;
@@ -115,6 +115,39 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@include respond(phone) {
+  .navigation {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    position: initial;
+    padding: 0;
+    &__side-navigation {
+      padding: 3rem 0 0 0;
+      display: grid;
+      justify-items: right;
+    }
+
+    &__spotify-logo,
+    a span,
+    &__button,
+    &__heart,
+    &__button span,
+    &__profile p,
+    &__side-list {
+      display: none;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+
+      border-radius: 50%;
+      overflow: hidden;
     }
   }
 }

@@ -1,6 +1,6 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 771px) {
       @content;
       // only apply to secreens, not when someone prints
     } //600px

@@ -47,3 +47,9 @@
   grid-template-rows: 9.5rem auto auto 10rem;
   grid-template-columns: 200px 1fr;
 }
+
+@include respond(phone) {
+  .wrapper {
+    grid-template-columns: 70px 1fr;
+  }
+}
