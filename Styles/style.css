@@ -56,11 +56,12 @@ aside a:hover {
 
 header {
   height: 50px;
-  background-color: var(--sub-clr);
   display: grid;
   justify-content: end;
 }
-
+h2 {
+  color: var(--main-text-clr);
+}
 footer {
   height: 10vh;
 }
@@ -132,6 +133,9 @@ h3 {
 }
 
 /* Main */
+.main-container {
+  background-color: var(--sub-clr);
+}
 
 header a {
   width: 200px;
@@ -148,11 +152,15 @@ header a:hover {
 
 nav {
   width: 40vw;
-  display: grid;
   padding: 10px;
 }
 
-.menu-bar-container li {
+.menu-bar-container a {
+  color: var(--sub-text-clr);
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+.menu-bar-container a:hover {
+  color: var(--main-text-clr);
 }
