@@ -19,3 +19,9 @@
 .main-footer {
     height: 100px;
 }
+
+.grid-auto-column {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}

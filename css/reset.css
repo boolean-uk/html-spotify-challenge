@@ -26,8 +26,8 @@ body {
     background-color: black;
 }
 
-h2 {
-    margin-left: 5px;
+h2, .text-sm {
+    margin-left: 3px;
     color: grey;
     font-size: 15px;
 }
@@ -107,10 +107,18 @@ h3 {
 /* BIG MAIN AREA */
 
 .middle-area {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: black;
 }
 
-.box {
+.middle-box {
     padding: 2px;
     margin: 2px;
     border: 2px solid green;
+}
+
+.recent-songs, .creato-john-doe {
+    margin-left: 30px;
+    margin-right: 30px;
 }
