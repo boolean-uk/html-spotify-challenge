@@ -114,6 +114,20 @@ aside {
     transition: 0.75s;
 }
 
+#profile {
+    padding-top: 10px;
+}
+
+#profile>a>img {
+    padding: 1px;
+    background: grey;
+    border-radius: 50%;
+}
+
+#aside-bottom {
+    padding-bottom: 10px;
+}
+
 #main-feed {
     display: grid;
     grid-template-rows: 60px repeat(3, minmax(200px, max-content));
