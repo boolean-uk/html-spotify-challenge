@@ -193,6 +193,14 @@ select {
     padding: 10px 0px 20px 20px;
 }
 
+#uniquely-yours h2 {
+    padding-left: 20px;
+}
+
+#uniquely-yours>p {
+    padding: 10px 0px 20px 20px;
+}
+
 .suggested {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(197px, max-content));
