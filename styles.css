@@ -203,12 +203,16 @@ h4 {
 
 .left-footer-grid {
   display: grid;
-  grid-template-columns: "song-pic song icon-footer-left1 icon-footer-left2" 90px;
+  grid-template: "song-pic song icon-footer-left1 icon-footer-left2" 90px;
 }
 
 .song-pic {
   grid-area: song-pic;
   width: 56px;
+  padding-top: 10px;
+}
+
+.song {
   padding-top: 10px;
 }
 
@@ -234,6 +238,11 @@ h4 {
 
 .right-footer-menu {
   grid-area: right-footer-menu;
+}
+
+.right-footer-grid {
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .song {
