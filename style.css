@@ -282,3 +282,13 @@ footer {
 #left-icons a img .playlistpng:hover {
     background: black;
 }
+
+#footer-middle {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+#footer-middle img {
+    margin: 0px 20px;
+}
