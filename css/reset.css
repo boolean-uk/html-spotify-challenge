@@ -64,12 +64,13 @@ h3 {
 }
 
 .space {
-    height: 805px;
+    height: 830px
 }
 
 .download-icon {
     border-radius: 50%;
     height: 20px;
+    margin-right: 5px;
 }
 
 .profile {
@@ -89,6 +90,7 @@ h3 {
     margin-left: 10px;
     font-weight: bold;
     color: white;
+    font-size: 20px;
 }
 
 
@@ -130,6 +132,10 @@ h3 {
 .recent-songs, .creato-john-doe {
     margin-left: 30px;
     margin-right: 30px;
+}
+
+.text-md {
+    font-size: 30px;
 }
 
 .gp-sm {
