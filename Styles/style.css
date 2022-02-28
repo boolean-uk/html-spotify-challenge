@@ -69,8 +69,6 @@ h2 {
 footer {
   height: 10vh;
   background-color: var(--third-clr);
-  display: grid;
-  place-items: center;
 }
 
 p {
@@ -215,11 +213,16 @@ nav {
 .option-bar {
   padding: 8px;
   gap: 10px;
-  border: red solid 1px;
 }
 
 footer img {
   width: 16px;
+}
+
+footer button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .playing-title p {
