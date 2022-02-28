@@ -217,20 +217,40 @@ button:hover {
 
 .song-mix {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
   gap: 1rem;
 }
 
 .song-mix__card {
-  aspect-ratio: 1 / 1.5;
+  border-radius: 0.75rem;
+  aspect-ratio: 1 / 1.25;
   background-color: rgba(var(--clr-grey-dark));
 }
 
 .song-mix__info {
-  margin-top: auto;
-  background-color: blue;
+  align-self: end;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
 }
 
+main img {
+  border-radius: 0.75rem;
+  width: 80%;
+  margin: 1rem auto auto auto;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+h2 {
+  margin-block: 3rem;
+}
 /* ------------------- */
 /* footer styling      */
 /* ------------------- */
