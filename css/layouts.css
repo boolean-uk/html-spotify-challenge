@@ -20,8 +20,7 @@
     height: 100px;
 }
 
-.grid-auto-column {
+.six-column-grid {
     display: grid;
-    grid-auto-flow: column;
-    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
 }
