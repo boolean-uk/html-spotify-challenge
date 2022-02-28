@@ -22,6 +22,9 @@
 
     &__title {
       margin-right: 2rem;
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     i {
@@ -29,6 +32,9 @@
       color: white;
       &:hover {
         cursor: pointer;
+      }
+      @include respond(tab-port) {
+        display: none;
       }
     }
   }
@@ -108,13 +114,21 @@
     & input[type="range"] {
       margin-left: 0.7rem;
       @include slide-style;
+
       &:hover {
         cursor: pointer;
         background-image: linear-gradient(#00d261, #b3b3b3);
       }
+
+      @include respond(tab-port) {
+        width: 10rem;
+      }
     }
     & input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
+    }
+    @include respond(phone) {
+      display: none;
     }
   }
 }

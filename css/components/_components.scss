@@ -33,6 +33,12 @@
       padding: 1.4rem;
       background-color: #242323;
       width: 18rem;
+      @include respond(phone) {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       border-radius: 8px;
       &-image {
         height: 15rem;
@@ -72,34 +78,38 @@
         transition: all 0.3s;
       }
     }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
-}
-.main-card-2 {
-  .small-cards-container {
-    .small-card {
-      &-image {
-        img {
-          border-radius: 50%;
+  .main-card-2 {
+    .small-cards-container {
+      .small-card {
+        &-image {
+          img {
+            border-radius: 50%;
+          }
         }
       }
     }
   }
-}
 
-.play-button-overlay {
-  width: 4rem;
-  height: 4rem;
-  position: absolute;
-  background-color: black;
-  border-radius: 50%;
-  top: 70%;
-  right: 10%;
-  opacity: 0;
-  transition: all 0.3s;
+  .play-button-overlay {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    top: 70%;
+    right: 10%;
+    opacity: 0;
+    transition: all 0.3s;
 
-  img {
-    width: 100%;
-    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
