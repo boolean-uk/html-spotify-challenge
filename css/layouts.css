@@ -17,7 +17,7 @@
 }
 
 .main-footer {
-    height: 100px;
+    height: 120px;
 }
 
 .six-column-grid {
@@ -27,6 +27,6 @@
 
 .three-column-grid {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
 }
