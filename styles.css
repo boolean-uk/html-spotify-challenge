@@ -96,7 +96,7 @@ main {
 
 header {
   height: 100px;
-  background-color: #212121;
+  background-color: #202020;
 }
 
 .arrow1 {
@@ -124,6 +124,57 @@ header {
 
 .user-profile {
 }
+
+/* Main Section - Recently Played  */
+
+.recently-played {
+  background-color: #202020;
+  height: 400px;
+}
+
+.three-grid-expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.see-all {
+  color: #909090;
+}
+
+.music-cards-section {
+  background-color: #151515;
+}
+
+.music-cards-main-grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.music-card-individual-grid {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.card {
+  height: 310px;
+  width: 232px;
+  background-color: #282828;
+  margin-left: 20px;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: #949494;
+}
+
+/* Footer  */
 
 footer {
   height: 150px;
