@@ -14,16 +14,16 @@
     <div class="spotify__container">
 
 <!-- Left section of website -->
-        <aside>
-            <div>
+        <aside class="left-section five-row-grid__expand-four">
+            <div class="logo__container">
                 <a href="#" class="two-col-grid__expand-two">
-                    <i class="fa-brands fa-spotify"></i>
+                    <i class="logo fa-brands fa-spotify fs-lg"></i>
                     <h1>Spotify</h1>
                 </a>
             </div>
 
             <nav>
-                <ul>
+                <ul class="stack">
                     <li>
                         <a href="#" class="two-col-grid__expand-two">
                             <i class="fa-solid fa-house"></i>
@@ -45,43 +45,44 @@
                 </ul>
             </nav>
 
-            <div>
+            <div class="stack">
                 <h3>Playlist</h3>
-                <div class="two-col-grid__expand-two">
+                <a class="two-col-grid__expand-two">
                     <i class="fa-solid fa-square-plus"></i>
                     <p>Create Playlist</p>
-                </div>
-                <ul>
-                    <li><span>Playlist Name</span></li>
-                    <li><span>Playlist Name</span></li>
-                    <li><span>Playlist Name</span></li>
-                    <li><span>Playlist Name</span></li>
+                </a>
+                <ul  class="stack">
+                    <li><a href="#"><span>Playlist Name</span></a></li>
+                    <li><a href="#"><span>Playlist Name</span></a></li>
+                    <li><a href="#"><span>Playlist Name</span></a></li>
+                    <li><a href="#"><span>Playlist Name</span></a></li>
                 </ul>
             </div>
 
             <div class="spacer"></div>
 
-            <div>
-                <div class="two-col-grid__expand-two">
-                    <i class="fa-solid fa-gears"></i>
+            <div class="profile__shortcut">
+                <a class="settings two-col-grid__expand-two">
+                    <i class="fa-solid fa-gear"></i>
                     <span>Settings</span>
-                </div>
-                <div class="two-col-grid__expand-two">
+                </a>
+                <a class="user two-col-grid__expand-two">
                     <i class="fa-solid fa-user-astronaut"></i>
                     <p>Boolean</p>
-                </div>
+                </a>
             </div>
         </aside>
 
 
 <!-- Hero section of website -->
         <main class="hero">
-            <div>
+            <div class="two-col-grid__expand-one">
+                <div class="spacer"></div>
                 <button>Log In</button>
             </div>
 
             <div>
-                <ul>
+                <ul class="grid-auto-flow">
                     <li><span>Discover</span></li>
                     <li><span>Podcasts</span></li>
                     <li><span>Classics</span></li>
@@ -91,8 +92,38 @@
                 </ul>
             </div>
 
+            <h2>Recently Played</h2>
             <div class="song-mix">
-                <h2>Recently Played</h2>
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
                 <div class="song-mix__card">
                     <div class="frame">
                         <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
@@ -105,8 +136,38 @@
             </div>
 
 
+            <h2>Your Weekend Playlist</h2>
             <div class="song-mix">
-                <h2>Your Weekend Playlist</h2>
+                 <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+                
                 <div class="song-mix__card">
                     <div class="frame">
                         <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
@@ -118,8 +179,18 @@
                 </div>
             </div>
 
+            <h2>Popular Artists</h2>
             <div class="song-mix">
-                <h2>Popular Artists</h2>
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+
                 <div class="song-mix__card">
                     <div class="frame">
                         <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
@@ -135,21 +206,21 @@
 
 <!-- footer and song control section -->
         <footer>
-            <div class="three-col-grid__expand-two">
-                <div>
-                    <div class="frame four-col-grid__expand-two">
-                        <img src="/assets/img/sinister.jpeg" alt="#">
+            <div class="footer__container three-col-grid__expand-two">
+                <div class="current-song four-col-grid__expand-two">
+                    <div class="frame">
+                        <img class="img-sm" src="/assets/img/sinister.jpeg" alt="#">
                     </div>
                     <div>
-                        <p><span>Sinister</span></p>
+                        <h4><span>Sinister</span></h4>
                         <p><span>Cristopher Young</span></p>
                     </div>
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-solid fa-folder"></i>
                 </div>
 
-                <div>
-                    <div>
+                <div class="music-control">
+                    <div class="music-control__icons">
                         <i class="fa-solid fa-shuffle"></i>
                         <i class="fa-solid fa-backward-step"></i>
                         <i class="fa-solid fa-circle-play"></i>
@@ -157,13 +228,13 @@
                         <i class="fa-solid fa-arrow-rotate-right"></i>
                     </div>
                     <div>
-                        <p>0.25</p>
+                        <span>0.25</span>
                         <input type="range" min="1" max="100" value="50">
-                        <p>4.35</p>
+                        <span>4.35</span>
                     </div>
                 </div>
 
-                <div>
+                <div class="other-actions">
                     <i class="fa-solid fa-list"></i>
                     <i class="fa-solid fa-tv"></i>
                     <i class="fa-solid fa-volume-high"></i>

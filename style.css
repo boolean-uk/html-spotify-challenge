@@ -28,7 +28,8 @@ img {
 input,
 button,
 textarea,
-select {
+select,
+a {
   font: inherit;
 }
 
@@ -40,7 +41,7 @@ select {
   --clr-dark: 18, 18, 18;
   --clr-grey: 189, 193, 197;
   --clr-grey-light: 211, 211, 211;
-  --clr-accent: ;
+  --clr-grey-dark: 32, 33, 37;
   --clr-white: 255, 255, 255;
 }
 
@@ -48,9 +49,24 @@ select {
 /* Utility classes     */
 /* ------------------- */
 
+.two-col-grid__expand-one {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
 .two-col-grid__expand-two {
   display: grid;
   grid-template-columns: auto 1fr;
+}
+
+.three-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.three-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
 }
 
 .four-col-grid__expand-two {
@@ -58,9 +74,19 @@ select {
   grid-template-columns: auto 1fr auto auto;
 }
 
+.five-row-grid__expand-four {
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr auto;
+}
+
+.grid-auto-flow {
+  display: grid;
+  grid-auto-flow: column;
+}
+
 /* typography */
 
-/* .fs-xs {
+.fs-xs {
   font-size: 0.75rem;
 }
 
@@ -73,17 +99,42 @@ select {
 }
 
 .fs-lg {
-  font-size: 2.5rem;
-} */
+  font-size: 3rem;
+}
 
+.img-sm {
+  height: 50px;
+}
 /* ------------------- */
 /* Main styling        */
 /* ------------------- */
 
 /* general styling */
 
+main {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+a,
 body {
+  background-color: rgba(var(--clr-dark));
+
+  color: rgba(var(--clr-grey));
   font-family: montserrat;
+  font-size: 1rem;
+}
+
+h1 {
+  padding-top: 0.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo {
+  color: rgba(var(--clr-white));
 }
 
 a {
@@ -95,7 +146,131 @@ ul {
   padding: 0;
 }
 
+i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
 .spotify__container {
   display: grid;
   grid-template-columns: 25ch 1fr;
+}
+
+/* ------------------- */
+/* left section        */
+/* ------------------- */
+
+aside {
+  padding-left: 1rem;
+}
+
+.left-section a:hover {
+  color: rgba(var(--clr-white));
+}
+
+.logo__container {
+  margin: 2rem 1rem 2rem 0;
+  color: rgba(var(--clr-white));
+}
+
+.stack > * + * {
+  margin-top: 1rem;
+}
+
+.profile__shortcut {
+  margin-bottom: 2rem;
+}
+
+.settings {
+  padding-bottom: 0.5rem;
+  /* border-bottom: rgba(var(--clr-grey)) 1px solid; */
+}
+
+.user {
+  padding-top: 0.5rem;
+}
+
+/* ------------------- */
+/* main section        */
+/* ------------------- */
+
+/* log in header */
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  background-color: rgba(var(--clr-dark));
+  color: rgba(var(--clr-white));
+  border: 0.1rem solid rgba(var(--clr-white));
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* cards */
+
+.song-mix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.song-mix__card {
+  aspect-ratio: 1 / 1.5;
+  background-color: rgba(var(--clr-grey-dark));
+}
+
+.song-mix__info {
+  margin-top: auto;
+  background-color: blue;
+}
+
+/* ------------------- */
+/* footer styling      */
+/* ------------------- */
+
+footer {
+  width: 100vw;
+  height: 3em;
+  font-size: 0.8rem;
+}
+
+.footer__container {
+  padding-top: 2.5rem;
+}
+
+footer i {
+  color: rgba(var(--clr-white));
+  font-size: 1.2rem;
+}
+
+.music-control {
+  margin-inline: auto;
+  color: rgba(var(--clr-white));
+}
+.music-control input {
+  width: 500px;
+}
+
+.music-control__icons {
+  text-align: center;
+}
+.music-control__icons > * {
+  margin-inline: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.current-song > * {
+  margin-left: 1rem;
+}
+
+.other-actions > * {
+  margin-right: 1rem;
 }
