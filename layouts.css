@@ -94,7 +94,8 @@
 }
 
 @media screen and (max-width: 980px) {
-    .left-menu__collapsible-item {
+    .left-menu__collapsible-item,
+    .left-menu__bottom-section {
         display: none;
     }
 
