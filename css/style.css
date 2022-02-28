@@ -80,7 +80,7 @@ a {
 /* MAIN CONTAINER */
 .scrollbar::-webkit-scrollbar {
     width: 18px;
-    height: 8px;
+    height: 18px;
 }
 
 .scrollbar::-webkit-scrollbar-track {
@@ -93,6 +93,10 @@ a {
     border-radius: 20px; 
     width: 10px;
     border: 3.5px solid var(--text-color-two);
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+    background-color: var(--text-color-two);
 }
 
 /* FOOTER */
