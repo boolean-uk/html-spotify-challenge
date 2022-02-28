@@ -14,7 +14,7 @@ body {
 .left-menu {
     grid-area: left-menu;
     display: grid;
-    grid-template-rows: var(--header-height) auto auto 1fr auto auto auto;
+    grid-template-rows: var(--header-height) auto auto 1fr auto auto;
     background-color: var(--primary-color-one);
 }
 
@@ -24,7 +24,7 @@ body {
     grid-template-rows: var(--header-height) repeat(9, auto);
     width: auto;
     overflow-x: auto;
-    max-height: calc(100vh-var(--footer-height));
+    max-height: calc(100vh - var(--footer-height));
     overflow-y: scroll;
 
     background-color: var(--primary-color-three);
@@ -45,11 +45,15 @@ footer {
     grid-auto-flow: row;
 }
 
-.three-rows__expand-one-three {
+.two-rows__expand-one {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 1fr auto;
 }
 
+.three-rows__expand-one-two-three {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
 /* columns */
 .two-columns__expand-one {
