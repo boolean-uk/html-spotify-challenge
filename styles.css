@@ -12,6 +12,14 @@ body {
   min-height: 100vh;
 }
 
+.overflow {
+  display: grid;
+  width: auto;
+  overflow-x: auto;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
 .two-row-grid-main {
   display: grid;
   grid-template-rows: 1fr auto;
@@ -82,7 +90,7 @@ p {
 }
 
 .install-app-section {
-  padding-top: 350px;
+  /* padding-top: 350px; */
 }
 
 main {
@@ -127,7 +135,7 @@ header {
 
 /* Main Section - Recently Played  */
 
-.recently-played {
+.album-category-section {
   background-color: #202020;
   height: 400px;
 }
@@ -154,7 +162,7 @@ h2 {
   grid-auto-flow: column;
 }
 
-.music-card-individual-grid {
+.music-card-grid {
   display: grid;
   grid-auto-flow: row;
 }
@@ -176,7 +184,19 @@ h4 {
 
 /* Footer  */
 
-footer {
+.footer {
   height: 150px;
-  border: dotted 2px rgb(0, 119, 255);
+}
+
+.left-footer-grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.song {
+  color: white;
+}
+
+.artist {
+  color: white;
 }
