@@ -250,6 +250,7 @@ header {
 }
 
 .good-morning__suggestion {
+    position: relative;
     min-width: 300px;
     max-width: 560px;
     height: 80px;
@@ -260,6 +261,30 @@ header {
     -webkit-backdrop-filter: blur(12px);
 
     border-radius: 6px;
+}
+
+.good-morning__suggestion:hover {
+    background-color: #ffffff25;
+    transition: all 0.3s;
+}
+
+.good-morning__suggestion:hover .good-morning__suggestion-play {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.good-morning__suggestion-play {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    background-color: #1ed760;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+    opacity: 0;
 }
 
 .good-morning__suggestion-cover {
@@ -299,6 +324,11 @@ header {
     border-radius: 6px;
 }
 
+.card:hover {
+    background-color: #ffffff25;
+    transition: all 0.3s;
+}
+
 .card__cover {
     height: 160px;
     width:  160px;
@@ -308,6 +338,10 @@ header {
 
 .card__name {
     font-weight: 700;
+}
+
+.card__name-date-wrapper {
+    width: 100%;
 }
 
 .card__date {
