@@ -8,13 +8,6 @@ body {
     font-family: sans-serif;
 }
 
-.main-layout > * {
-    padding: 2px;
-    border: 2px solid red;
-}
-
-
-
 /* LEFT SIDE BAR */
 
 .left-bar {
@@ -162,18 +155,21 @@ h3 {
 
 /* FOOTER */
 
-.current-song, .play-button, .volume {
-    border: 2px solid green;
+.main-footer {
+    background-color: rgb(41, 41, 41);
+}
+
+.play-button, .volume {
     padding: 2px;
     margin: 2px;
 }
 
-.brano-nome {
-    color: gray;
+.current-song {
+    margin-top: 15px;
 }
 
-.left-box {
-    border: 2px solid orange;
+.brano-nome {
+    color: gray;
 }
 
 .sinister-sm {
@@ -181,12 +177,11 @@ h3 {
     width: 50px;
     margin-left: 10px;
     margin-top: 15px;
-    border: 2px solid orange;
 }
 
 .sinister-text {
+    color: white;
     width: 100px;
-    border: 2px solid orange;
 }
 
 .band-name {
@@ -194,10 +189,7 @@ h3 {
 }
 
 .icons-sm {
-    width: 65px;
-    height: 35px;
     margin-top: 25px;
-    border: 2px solid orange;
 }
 
 .center-wrapper-footer {
@@ -233,10 +225,6 @@ h3 {
     transform: scaleX(-1);
 }
 
-.play-button {
-    background-color: grey;
-}
-
 .center-wrapper-play-button {
     max-width: 30px;
     margin: 0 auto;
@@ -249,6 +237,15 @@ h3 {
 
 .horizontal-line {
     width: 500px;
+    border: 3px solid white;
+    background-color: white;
+}
+
+.short-horizontal-line {
+    margin-top: 50px;
+    margin-right: 30px;
+    height: 5px;
+    width: 200px;
     border: 3px solid white;
     background-color: white;
 }
