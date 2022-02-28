@@ -27,7 +27,7 @@ main {
 }
 
 aside {
-  width: 200px;
+  width: calc(100vw - 90vw);
   color: white;
   background-color: black;
 }
@@ -137,11 +137,12 @@ h3 {
 
 /* Main */
 .main-container {
+  width: 90vw;
   background-color: var(--sub-clr);
 }
 
 .main-container img {
-  width: 250px;
+  max-width: 150px;
 }
 
 header a {
@@ -173,7 +174,6 @@ nav {
 }
 
 /* Recently Played */
-
 .wrapper {
   margin: 8px;
 }

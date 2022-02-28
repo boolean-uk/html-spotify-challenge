@@ -38,3 +38,10 @@
   display: grid;
   align-items: center;
 }
+
+/* .responsive-grid__column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 10px;
+} */
