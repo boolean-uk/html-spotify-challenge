@@ -1,7 +1,7 @@
 /* RESET CSS */
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     list-style-type: none;
 
     color: var(--text-color-three);
@@ -9,8 +9,8 @@
 
     padding: 0;
     margin: 0;
-
- 
+    
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");   
 }
 
 /* HTML STYLES */
@@ -63,6 +63,7 @@ a {
     background-color: var(--primary-color-one);
     border: none;
     margin: 20px 0px 0px 20px;
+    text-align: left;
 }
 
 .crea-playlist-button p {
@@ -77,13 +78,20 @@ a {
     border-bottom: 2px var(--text-color-three) solid;
     background-color: var(--primary-color-one);
     margin: 0 20px;
+    justify-content: left;
+    padding-bottom: 5px;
 }
 
 
 .profile-button {
     background-color: var(--primary-color-one);
     border: none;
-    margin: 0 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+.installa-app-button p,
+.profile-button p {
+    padding-left: 10px;
 }
 
 .effettua-lupgrade {
@@ -112,30 +120,6 @@ h3 {
 h4 {
     
 }
-
-/* DASHED BOXES 
-
-.dashed-border-black {
-    border: 2px black dashed;
-    margin: 2px;
-}
-
-.dashed-border-blue {
-    border: 2px blue dashed;
-    margin: 2px;
-}
-
-.dashed-border-green {
-    border: 2px green dashed;
-    margin: 2px;
-}
-
-.dashed-border-pink {
-    border: 2px pink dashed;
-    margin: 2px;
-}
-
-*/
 
 /* IMAGES */
 img {
@@ -183,6 +167,10 @@ img {
 }
 
 /* MARGIN */
+.ma-xs {
+    margin: 5px;
+}
+
 .ma-s {
     margin: 10px;
 }
