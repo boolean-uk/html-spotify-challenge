@@ -230,10 +230,91 @@ header {
 
 
 /* ---------------------------------MAIN SECTION------------------------------------------ */
-.main-section {
-    background: #2c0b4b;
-    background: linear-gradient(180deg, #2c0b4b 0%, rgba(18,18,18,1) 40%, rgba(18,18,18,1) 100%);   
+.main-section > * {
+    margin-bottom: 48px;
 }
+
+.main-section {
+    padding: 24px 32px;
+
+    background: #2c0b4b;
+    background: linear-gradient(180deg, #2c0b4b 0%, rgba(18,18,18,1) 40%, rgba(18,18,18,1) 100%);  
+    
+    color: white;
+}
+
+.good-morning__title {
+    margin-bottom: 24px;
+
+    font-size: 1.8rem;
+}
+
+.good-morning__suggestion {
+    min-width: 300px;
+    max-width: 560px;
+    height: 80px;
+
+    /* Glass effect */
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 6px;
+}
+
+.good-morning__suggestion-cover {
+    height: 80px;
+    width: 80px;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.good-morning__suggestion-name  {
+    display: inline-block;
+    align-self: center;
+    font-weight: 700;
+}
+
+.episodes__title {
+    margin-bottom: 24px;
+
+    font-size: 1.4rem;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    max-width: 240px;
+    min-height: 273px;
+    max-height: 315px;
+
+    padding: 14px;
+
+    /* Glass effect */
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border-radius: 6px;
+}
+
+.card__cover {
+    height: 160px;
+    width:  160px;
+
+    border-radius: 5px;
+}
+
+.card__name {
+    font-weight: 700;
+}
+
+.card__date {
+    font-size: 0.6rem;
+}
+
+
 /* FOR TESTING PURPOSES, DELETE LATER */
 
 main {
