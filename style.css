@@ -116,13 +116,14 @@ aside {
 
 #profile {
     padding-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 #profile>a>img {
     padding: 1px;
     background: grey;
     border-radius: 50%;
+    margin-bottom: 35px;
 }
 
 #aside-bottom {
@@ -282,7 +283,7 @@ footer {
     bottom: 0;
     z-index: 1;
 
-    height: 90px;
+    height: 80px;
     background-color: black;
     border-top: 1px solid #5d5c5c46;
 }
