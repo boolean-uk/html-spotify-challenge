@@ -124,8 +124,12 @@
     display: grid;
     grid-template-rows: auto 1fr;
 
+    a svg {
+      padding: 0;
+      margin: 0;
+    }
+
     &__side-navigation {
-      padding: 3rem 0 0 0;
       display: grid;
       justify-items: right;
     }
@@ -141,11 +145,7 @@
     }
 
     .avatar {
-      width: 36px;
-      height: 36px;
-
-      border-radius: 50%;
-      overflow: hidden;
+      display: none;
     }
   }
 }

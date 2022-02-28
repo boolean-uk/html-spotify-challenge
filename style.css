@@ -276,8 +276,11 @@
     -ms-grid-rows: auto 1fr;
         grid-template-rows: auto 1fr;
   }
+  .navigation a svg {
+    padding: 0;
+    margin: 0;
+  }
   .navigation__side-navigation {
-    padding: 3rem 0 0 0;
     display: -ms-grid;
     display: grid;
     justify-items: right;
@@ -289,10 +292,7 @@
     display: none;
   }
   .navigation .avatar {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    overflow: hidden;
+    display: none;
   }
 }
 
@@ -374,6 +374,12 @@
   margin-left: 2rem;
   font-weight: 300;
   color: #b3b3b3;
+}
+
+@media only screen and (max-width: 771px) {
+  .main {
+    padding-left: 2.5rem;
+  }
 }
 
 .footer {

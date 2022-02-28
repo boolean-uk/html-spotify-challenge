@@ -73,3 +73,9 @@
     color: $color-spotify-cookies;
   }
 }
+
+@include respond(phone) {
+  .main {
+    padding-left: 2.5rem;
+  }
+}
