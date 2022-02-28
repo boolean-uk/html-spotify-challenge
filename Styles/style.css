@@ -240,7 +240,7 @@ footer input::-webkit-slider-thumb {
 
 .playing-title p:hover {
   text-decoration: underline;
-  color: var(--sub-text-clr);
+  color: var(--main-text-clr);
 }
 .playing-title p {
   color: var(--sub-text-clr);
@@ -250,11 +250,6 @@ footer input::-webkit-slider-thumb {
 .playing-title span {
   color: var(--main-text-clr);
   font-weight: 600;
-}
-
-.playing-title span:hover {
-  text-decoration: underline;
-  color: var(--main-text-clr);
 }
 
 .icon-container {
