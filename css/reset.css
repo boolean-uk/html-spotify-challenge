@@ -246,17 +246,6 @@ h3 {
     justify-content: center;
 }
 
-.horizontal-line {
+#volume {
     width: 500px;
-    border: 3px solid white;
-    background-color: white;
-}
-
-.short-horizontal-line {
-    margin-top: 50px;
-    margin-right: 30px;
-    height: 5px;
-    width: 200px;
-    border: 3px solid white;
-    background-color: white;
 }

@@ -30,8 +30,3 @@
     grid-template-columns: auto auto auto;
     gap: 10px;
 }
-
-.two-column-grid__expand-one {
-    display: grid;
-    grid-template-columns: 1fr auto;
-  }
