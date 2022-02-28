@@ -13,9 +13,9 @@
 
 /* --- COLOR --- */
 html {
-  --main-clr: rgb(28, 31, 68);
-  --sub-clr: rgb(22, 23, 43);
-  --third-clr: rgb(54, 54, 54);
+  --main-clr: rgb(20, 25, 34);
+  --sub-clr: rgb(8, 11, 18);
+  --third-clr: rgb(40, 40, 40);
   --accent-clr: rgb(98, 228, 23);
   --main-text-clr: white;
   --sub-text-clr: rgb(135, 135, 138);
@@ -194,12 +194,14 @@ nav {
 .popular-artists p {
   color: var(--sub-text-clr);
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .recently-played span,
 .made-for-you span,
 .popular-artists span {
   color: var(--main-text-clr);
+  font-weight: 600;
 }
 
 /* Popular Artists */
