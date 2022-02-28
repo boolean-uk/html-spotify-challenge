@@ -33,6 +33,18 @@ aside {
   background-color: black;
 }
 
+header {
+  height: 50px;
+  display: grid;
+  justify-content: end;
+  background-color: var(--sub-clr);
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--third-clr);
+}
+
 ul {
   padding: 0;
   list-style: none;
@@ -42,41 +54,31 @@ a {
   text-decoration: none;
 }
 
-aside a {
-  color: var(--sub-text-clr);
-}
-
-aside p {
-  margin: 0;
+p {
+  margin: 3px 0;
   font-size: 0.8rem;
-}
-
-aside a:hover {
-  color: var(--text-clr);
-}
-
-header {
-  height: 50px;
-  display: grid;
-  justify-content: end;
-  background-color: var(--sub-clr);
 }
 
 h2 {
   color: var(--main-text-clr);
 }
 
-footer {
-  height: 10vh;
-  background-color: var(--third-clr);
-}
-
-p {
-  margin: 3px 0;
+h3 {
+  margin: 0;
+  padding: 8px;
+  font-size: 1rem;
 }
 
 /* --- MAIN STYLES --- */
 /* Aside left menu bar*/
+aside a {
+  color: var(--sub-text-clr);
+}
+
+aside a:hover {
+  color: var(--text-clr);
+}
+
 .logo {
   margin: 8px;
   width: 80%;
@@ -108,12 +110,6 @@ p {
   border: none;
 }
 
-h3 {
-  margin: 0;
-  padding: 8px;
-  font-size: 1rem;
-}
-
 .download {
   margin-bottom: 5px;
   gap: 5px;
@@ -125,7 +121,6 @@ h3 {
 
 .profile-container {
   margin-top: 5px;
-
   border-top: var(--sub-text-clr) 1px solid;
 }
 
@@ -136,6 +131,7 @@ h3 {
   border: none;
   border-radius: 50%;
 }
+
 .profile-container h3 {
   color: var(--main-text-clr);
 }
@@ -163,6 +159,7 @@ header a:hover {
   border: var(--main-text-clr) 1px solid;
 }
 
+/* Nav bar */
 nav {
   width: 40vw;
   padding: 10px;
@@ -182,7 +179,7 @@ nav {
   color: var(--main-text-clr);
 }
 
-/* Recently Played */
+/* Music List */
 .music-list {
   padding: 8px;
   height: 73vh;
@@ -204,19 +201,11 @@ nav {
   font-weight: 600;
 }
 
-/* Popular Artists */
 .popular-artists img {
   border-radius: 50%;
 }
 
 /* Footer */
-
-.playing,
-.option-bar {
-  padding: 8px;
-  gap: 10px;
-}
-
 footer img {
   width: 16px;
 }
@@ -225,6 +214,28 @@ footer button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+footer input {
+  appearance: none;
+  height: 2px;
+  background: var(--sub-text-clr);
+  border-radius: 2px;
+  outline: none;
+  opacity: 0.7;
+}
+
+footer input::-webkit-slider-thumb {
+  appearance: none;
+  height: 2px;
+  background: var(--main-text-clr);
+  cursor: pointer;
+}
+
+.playing,
+.option-bar {
+  padding: 8px;
+  gap: 10px;
 }
 
 .playing-title p {
@@ -244,20 +255,4 @@ footer button {
 .playing-bar {
   width: 400px;
   gap: 8px;
-}
-
-footer input {
-  appearance: none;
-  height: 2px;
-  background: var(--sub-text-clr);
-  border-radius: 2px;
-  outline: none;
-  opacity: 0.7;
-}
-
-footer input::-webkit-slider-thumb {
-  appearance: none;
-  height: 2px;
-  background: var(--main-text-clr);
-  cursor: pointer;
 }
