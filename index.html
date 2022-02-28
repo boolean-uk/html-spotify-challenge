@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify DN</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc4b5d585f.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -37,7 +38,7 @@
                     </li>
                     <li>
                         <a href="#" class="two-col-grid__expand-two">
-                            <i class="fa-solid fa-album-collection"></i>
+                            <i class="fa-solid fa-bars-staggered"></i>
                             <p>library</p>
                         </a>
                     </li>
@@ -47,7 +48,7 @@
             <div>
                 <h3>Playlist</h3>
                 <div class="two-col-grid__expand-two">
-                    <i class="fa-solid fa-album-collection"></i>
+                    <i class="fa-solid fa-square-plus"></i>
                     <p>Create Playlist</p>
                 </div>
                 <ul>
@@ -62,11 +63,11 @@
 
             <div>
                 <div class="two-col-grid__expand-two">
-                    <span><i class="fa-solid fa-album-collection"></i></span>
+                    <i class="fa-solid fa-gears"></i>
                     <span>Settings</span>
                 </div>
                 <div class="two-col-grid__expand-two">
-                    <i class="fa-solid fa-album-collection"></i>
+                    <i class="fa-solid fa-user-astronaut"></i>
                     <p>Boolean</p>
                 </div>
             </div>
@@ -93,17 +94,85 @@
             <div class="song-mix">
                 <h2>Recently Played</h2>
                 <div class="song-mix__card">
-                    <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
                     <div class="song-mix__info">
-                        <p><span>Daily Mix</span></p>
-                        <p><span>Your personalised soundtrack for the day</span></p>
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="song-mix">
+                <h2>Your Weekend Playlist</h2>
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-mix">
+                <h2>Popular Artists</h2>
+                <div class="song-mix__card">
+                    <div class="frame">
+                        <img class="song-mix__img" src="assets/img/mixdaily.jpeg" alt="daily mix">
+                    </div>
+                    <div class="song-mix__info">
+                        <h3><span>Daily Mix</span></h3>
+                        <p><span>Your personalised soundtrack for the day!</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+<!-- footer and song control section -->
+        <footer>
+            <div class="three-col-grid__expand-two">
+                <div>
+                    <div class="frame four-col-grid__expand-two">
+                        <img src="/assets/img/sinister.jpeg" alt="#">
+                    </div>
+                    <div>
+                        <p><span>Sinister</span></p>
+                        <p><span>Cristopher Young</span></p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-folder"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div>
+                        <p>0.25</p>
+                        <input type="range" min="1" max="100" value="50">
+                        <p>4.35</p>
                     </div>
                 </div>
 
-
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="1" max="100" value="50">
+                </div>
             </div>
 
-        </main>
+
+        </footer>
 
 
 

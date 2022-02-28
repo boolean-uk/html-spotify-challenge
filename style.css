@@ -20,16 +20,6 @@ picture {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-weight: 400;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -47,13 +37,65 @@ select {
 /* ------------------- */
 
 :root {
-  --clr-dark: 0, 22, 50;
+  --clr-dark: 18, 18, 18;
   --clr-grey: 189, 193, 197;
   --clr-grey-light: 211, 211, 211;
-  --clr-accent: 85, 172, 238;
+  --clr-accent: ;
   --clr-white: 255, 255, 255;
 }
 
 /* ------------------- */
 /* Utility classes     */
 /* ------------------- */
+
+.two-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.four-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+}
+
+/* typography */
+
+/* .fs-xs {
+  font-size: 0.75rem;
+}
+
+.fs-sm {
+  font-size: 1rem;
+}
+
+.fs-md {
+  font-size: 1.3rem;
+}
+
+.fs-lg {
+  font-size: 2.5rem;
+} */
+
+/* ------------------- */
+/* Main styling        */
+/* ------------------- */
+
+/* general styling */
+
+body {
+  font-family: montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.spotify__container {
+  display: grid;
+  grid-template-columns: 25ch 1fr;
+}
