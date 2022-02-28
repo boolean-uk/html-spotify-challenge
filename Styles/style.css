@@ -94,11 +94,13 @@ footer {
 }
 
 h3 {
+  margin: 0;
   padding: 8px;
   font-size: 1rem;
 }
 
 .download {
+  margin-bottom: 5px;
   display: grid;
   align-items: center;
   gap: 5px;
@@ -108,8 +110,11 @@ h3 {
 }
 
 .profile-container {
+  margin-top: 5px;
   display: grid;
   align-items: center;
+
+  border-top: var(--sub-text-clr) 1px solid;
 }
 
 .profile-container img {
@@ -123,7 +128,9 @@ h3 {
   color: var(--main-text-clr);
 }
 
-align-self {
+.align-self {
   display: grid;
   align-self: end;
+
+  padding: 8px;
 }
