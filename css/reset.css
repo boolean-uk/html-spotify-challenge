@@ -168,3 +168,38 @@ h3 {
     margin: 2px;
 }
 
+.brano-nome {
+    color: gray;
+}
+
+.left-box {
+    border: 2px solid orange;
+}
+
+.sinister-sm {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: 2px solid orange;
+}
+
+.sinister-text {
+    width: 100px;
+    border: 2px solid orange;
+}
+
+.band-name {
+    color: grey;
+}
+
+.icons-sm {
+    width: 65px;
+    height: 35px;
+    margin-top: 25px;
+    border: 2px solid orange;
+}
+
+.center-wrapper-footer {
+    max-width: 250px;
+}
