@@ -36,7 +36,7 @@ aside {
   background-color: black;
 }
 
-.spotify-logo-grid {
+.two-column-grid {
   display: grid;
   grid-auto-flow: column;
 }
@@ -75,6 +75,14 @@ a {
 
 li {
   list-style-type: none;
+}
+
+p {
+  color: #ffffff;
+}
+
+.install-app-section {
+  padding-top: 350px;
 }
 
 main {
