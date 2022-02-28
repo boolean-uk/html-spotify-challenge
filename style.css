@@ -409,3 +409,123 @@ input[type="range"] {
     border-radius: 50%;
     background: black;
   }
+
+  @media screen and (min-width: 906px) {
+    #music-genres {
+        display: flex;
+        margin: auto;
+    }
+
+    #select-menu {
+        display: none;
+    }
+
+    .logo-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    #music-genres {
+        display: flex;
+        margin: auto;
+    }
+
+    #genres-menu {
+        display: none;
+    }
+
+    #upgrade-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #main-page {
+        margin: auto;
+    }
+
+    #recent h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #suggestions h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #suggestions p {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .logo-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #left-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        margin-right: 5px;
+    }
+
+    #current-song {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-responsive {
+        display: flex;
+    }
+
+    #logo {
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        width: 5rem;
+        background: black;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+    }
+
+    #profile h2,
+    #download p,
+    .logo-main,
+    .menu-item a,
+    #playlist h2,
+    #your-playlists ul,
+    #create-playlist img,
+    #create-playlist a {
+        display: none;
+    }
+
+    .menu-items img {
+        display: flex;
+        place-items: center;
+    }
+
+    aside {
+        height: calc(100vh - 160px);
+        background: black;
+        position: sticky;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+    }
+}
