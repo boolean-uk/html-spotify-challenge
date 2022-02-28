@@ -54,6 +54,13 @@ aside a:hover {
   text-decoration: none;
 }
 
+header {
+  height: 50px;
+  background-color: var(--sub-clr);
+  display: grid;
+  justify-content: end;
+}
+
 footer {
   height: 10vh;
 }
@@ -64,6 +71,7 @@ footer {
   margin: 8px;
   width: 130px;
 }
+
 .menu-bar {
   display: grid;
   align-items: center;
@@ -128,9 +136,20 @@ h3 {
   color: var(--main-text-clr);
 }
 
-.align-self {
-  display: grid;
-  align-self: end;
+/* Main */
+header a {
+  width: 200px;
+  margin: 8px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--main-text-clr);
+  border: var(--sub-text-clr) 1px solid;
+  border-radius: 30px;
 
-  padding: 8px;
+  display: grid;
+  place-items: center;
+}
+
+header a:hover {
+  border: var(--main-text-clr) 1px solid;
 }

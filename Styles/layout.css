@@ -11,3 +11,10 @@
 .centered {
   margin: 0 auto;
 }
+
+.align-self {
+  display: grid;
+  align-self: end;
+
+  padding: 8px;
+}
