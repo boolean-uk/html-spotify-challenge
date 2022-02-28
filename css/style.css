@@ -36,6 +36,20 @@ html {
     font-weight: bold;
 }
 
+.left_menu *:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.left_menu .icon {
+    margin-right: 15px;
+}
+
+.icon:hover {
+    color: white;
+    transition: 0.3s;
+}
+
 .icon_text_grid {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -53,11 +67,6 @@ li {
 
 .logo {
     width: 135px
-}
-
-.icon {
-    width: 30px;
-    margin-right: 15px;
 }
 
 
@@ -97,14 +106,16 @@ li {
     position: fixed;
     top: 0;
     width: calc(100vw - 250px);
-
+    z-index: 3;
 }
 
 .round_icon {
-    color: white;
     border-radius: 50px;
     width: 30px;
     height: 30px;
+    margin-right: 15px;
+    padding-left: 3px;
+    padding-top: 3px;
 }
 
 .round_icon_back {
@@ -137,6 +148,13 @@ li {
     letter-spacing: 1px;
 }
 
+.upgrade:hover {
+    width: 145px;
+    height: 38px;
+    border: 2px #9d9f9f solid;
+    font-size: 12px;
+}
+
 .my_account {
     background-color: #181919;
     color: white;
@@ -153,10 +171,13 @@ li {
     letter-spacing: 1px;
 }
 
+.my_account:hover {
+    background-color: #282828;
+}
 
 .content {
     /* background-color: #121212; */
-    background: linear-gradient(180deg, rgb(88,91,91) 0%, rgba(18,18,18,1) 20%);
+    background: linear-gradient(180deg, rgb(88,91,91) 0%, rgba(18,18,18,1) 24%);
     padding: 20px;
     margin-top: 65px;
     
@@ -212,7 +233,10 @@ li {
     display: flex;
     align-items: end;
 }
-    
+
+.player_artist:hover,
+.player_title:hover,
+.section_more:hover,
 .section_title:hover {
     text-decoration: underline;
 }
@@ -230,7 +254,6 @@ li {
     justify-content: center;
     border-radius: 7px;
     background-color: #181818;
-    /* max-height: 260px; */
 }
 
 .box:hover {
@@ -238,21 +261,49 @@ li {
     transition: 0.3s;
 }
 
-
-
 .album_cover {
     width: 100%;
     height: 100%; 
-    object-fit: contain;
+    /* object-fit: contain; */
     border-radius: 5px;
-    
 }
+
+.relative{
+    position: relative;
+    z-index: 1;
+}
+
+
+.absolute {
+    position: absolute;
+    z-index: 2;
+    right: 13px;
+    bottom: 13px;
+}
+
+.green_play_icon {
+    opacity: 0%;
+    width: 45px;
+}
+
+.box:hover .green_play_icon {
+    opacity: 100%;
+    transition: 0.4s;
+  }
+
+.box:hover .album_cover {
+    box-shadow: 0px 4px 47px 1px rgba(0,0,0,0.68);
+    transition: 0.3s;
+}
+
 
 .album_text {
     margin-top: 15px;
 }
 
-
+.album_title {
+    font-weight: bold;
+}
 
 .player {
     grid-area: player;
@@ -288,6 +339,7 @@ li {
     gap: 8px;
 }
 
+
 .player_controls {
     margin: 0px 250px;
 }
@@ -296,8 +348,17 @@ li {
     display: flex;
     justify-content: center;
     gap: 10px;
+    gap: 18px;
+    align-items: center;
 }
 
+.button_play_large {
+    font-size: 40px;
+}
+
+.button_play_large:hover {
+    font-size: 45px;
+}
 
 .range_slide {
     width: 100%;
@@ -326,3 +387,4 @@ li {
     grid-template-columns: auto auto auto;
     gap: 10px;
 }
+
