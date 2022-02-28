@@ -1,0 +1,38 @@
+.right-side {
+  padding: 2rem;
+  border: 1px solid black;
+  width: 25rem;
+  height: 100vh;
+  background-color: black;
+
+  .friend-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-settings {
+    cursor: pointer;
+    background-color: white;
+    padding: 1rem 0rem;
+    width: 80%;
+    border-radius: 200px;
+    outline: none;
+    border: none;
+    font-family: $montserrat;
+    font-weight: 600;
+    margin-top: 1.5rem;
+
+    &:hover {
+      background-color: rgb(223, 223, 223);
+    }
+  }
+}

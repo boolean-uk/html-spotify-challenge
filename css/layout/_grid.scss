@@ -6,3 +6,7 @@
   display: grid;
   grid-template-columns: auto 1fr repeat(2, auto);
 }
+.three-column-grid-expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
