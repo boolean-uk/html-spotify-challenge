@@ -32,7 +32,7 @@
     grid-template-columns: auto 1fr;
 }
 
-.two-column-grid__expand-one-and-three {
+.three-column-grid__expand-one-and-three {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
 }
@@ -77,8 +77,37 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1330px) {
     .three-column-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__player-section input[type="range"] {
+        width: 450px;
+      }
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__player-section input[type="range"] {
+        width: 100%;
+      }
+}
+
+@media screen and (max-width: 980px) {
+    .left-menu__collapsible-item {
+        display: none;
+    }
+
+    .left-menu__hidden-logo {
+        display: inline-block;
+    }
+
+    .left-menu {
+        padding: 6px;
+    }
+
+    .left-menu ul,
+    .left-menu__install-app-btn {
+        margin-left: 8px;
     }
 }
