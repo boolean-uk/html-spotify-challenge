@@ -238,6 +238,10 @@ footer input::-webkit-slider-thumb {
   gap: 10px;
 }
 
+.playing-title p:hover {
+  text-decoration: underline;
+  color: var(--sub-text-clr);
+}
 .playing-title p {
   color: var(--sub-text-clr);
   font-size: 0.7rem;
@@ -246,6 +250,11 @@ footer input::-webkit-slider-thumb {
 .playing-title span {
   color: var(--main-text-clr);
   font-weight: 600;
+}
+
+.playing-title span:hover {
+  text-decoration: underline;
+  color: var(--main-text-clr);
 }
 
 .icon-container {
