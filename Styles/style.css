@@ -69,6 +69,8 @@ h2 {
 footer {
   height: 10vh;
   background-color: var(--third-clr);
+  display: grid;
+  place-items: center;
 }
 
 p {
@@ -216,7 +218,7 @@ nav {
   border: red solid 1px;
 }
 
-.playing img {
+footer img {
   width: 16px;
 }
 
@@ -234,11 +236,12 @@ nav {
   gap: 8px;
 }
 
-.option-bar img {
-  width: 16px;
+.playing-bar {
+  width: 400px;
+  gap: 8px;
 }
 
-.option-bar input {
+footer input {
   appearance: none;
   height: 2px;
   background: var(--sub-text-clr);
@@ -247,7 +250,7 @@ nav {
   opacity: 0.7;
 }
 
-.option-bar input::-webkit-slider-thumb {
+footer input::-webkit-slider-thumb {
   appearance: none;
   height: 2px;
   background: var(--main-text-clr);
