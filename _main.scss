@@ -16,4 +16,44 @@
     font-weight: 300;
     color: $color-spotify-cookies;
   }
+
+  &__overlay-container {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: $color-spotify-cookies;
+    opacity: 0;
+  }
+
+  &__avatar {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.8rem;
+    background-color: #1db954;
+
+    margin: 0rem 0 2rem 2rem;
+
+    border-radius: 50%;
+    top: 7rem;
+    right: 1rem;
+
+    opacity: 0;
+  }
+
+  &__overlay:hover {
+    opacity: 0.3;
+  }
+
+  &__avatar:hover {
+    transition: 0.1s;
+    transform: scaleX(1.2) scaleY(1.2);
+    opacity: 1;
+  }
 }

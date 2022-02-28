@@ -268,6 +268,44 @@
   color: #b3b3b3;
 }
 
+.main__overlay-container {
+  position: relative;
+}
+
+.main__overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b3b3b3;
+  opacity: 0;
+}
+
+.main__avatar {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.8rem;
+  background-color: #1db954;
+  margin: 0rem 0 2rem 2rem;
+  border-radius: 50%;
+  top: 7rem;
+  right: 1rem;
+  opacity: 0;
+}
+
+.main__overlay:hover {
+  opacity: 0.3;
+}
+
+.main__avatar:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: scaleX(1.2) scaleY(1.2);
+          transform: scaleX(1.2) scaleY(1.2);
+  opacity: 1;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
