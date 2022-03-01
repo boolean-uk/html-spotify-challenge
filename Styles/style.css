@@ -46,6 +46,7 @@ footer {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -162,7 +163,6 @@ header a:hover {
 /* Nav bar */
 nav {
   width: 40vw;
-  padding: 10px;
 }
 
 .nav-bar-container {
@@ -176,13 +176,32 @@ nav {
 }
 .nav-bar-container a:hover {
   color: var(--main-text-clr);
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  display: none;
+  content: "";
+  bottom: 20;
+  left: 25%;
+  width: 50%;
+  border: var(--accent-clr) solid 2px;
+}
+
+.nav-bar-container a:hover .underline {
+  display: block;
 }
 
 /* Music List */
 .music-list {
-  padding: 8px;
   height: calc(90vh - 50px - 70px);
+  padding: 0 10px;
   overflow: scroll;
+}
+
+.music-list section {
+  margin-bottom: 50px;
 }
 
 .music-list p {
