@@ -46,8 +46,7 @@ h4 {
 }
 
 .album-holder {
-  border: 1px dashed white;
-  padding: 2px;
+  padding: 0px;
   height: 300px;
   width: 220px;
   display: grid;
@@ -64,8 +63,23 @@ h4 {
   grid-template-columns: auto 1fr;
 }
 
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.three-column-gird {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.five-column-grid {
+  display: grid;
+  grid-template-columns: auto 200px 1fr 200px auto;
+}
+
 .inner-box {
-  border: 1px dashed indigo;
+  border: none
   padding: 2px;
   width: 100%;
   height: 400px;
@@ -73,7 +87,7 @@ h4 {
 }
 
 .header {
-  border: 1px dashed green;
+  border: none
   padding: 2px;
   width: 100%;
   height: 80px;
@@ -89,12 +103,42 @@ h4 {
 
 .footer {
   border: none;
-  padding: 2px;
+  padding: 0px;
   width: 100%;
-  height: 100px;
+  height: 80px;
   margin-top: auto;
   bottom: 0;
   background-color: rgb(24 24 24);
+}
+
+.footer-card {
+  border: 1px dashed white;
+  height: 80px;
+  min-width: 250px;
+}
+
+.footer-album-cover-holder {
+  border: 1px dashed lightcoral;
+  height: 50px;
+  max-width: 50px;
+}
+
+.footer-album-cover {
+  width: 100%;
+  height: auto;
+}
+
+.footer-song-title {
+  display: grid;
+  place-items: center;
+  margin-top: -40px;
+}
+
+.footer-like-icon {
+  height: 15px;
+  width: 15px;
+  display: grid;
+  place-items: top;
 }
 
 .sticky {
