@@ -1,3 +1,4 @@
+/* --- SMALLER THAN 1000PX --- */
 @media screen and (max-width: 1000px) {
   .music-list ul {
     display: grid;
@@ -5,6 +6,7 @@
   }
 }
 
+/* --- SMALLER THAN 880PX --- */
 @media screen and (max-width: 880px) {
   .music-list ul {
     display: grid;
@@ -12,7 +14,8 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+/* --- SMALLER THAN 600PX --- */
+@media screen and (max-width: 600px) {
   aside {
     min-width: 50px;
     display: grid;
@@ -41,22 +44,43 @@
     display: none;
   }
 
-  .playlist {
+  .playlist-container {
     display: none;
   }
 
-  .download p {
+  .download-container {
+    display: grid;
+    grid-template:
+      "download-icon" 1fr/
+      1fr;
+    place-items: center;
+  }
+
+  .download-container img {
+    grid-area: download-icon;
+  }
+
+  .download-container p {
     display: none;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template:
+      "avatar" 1fr/
+      1fr;
+    place-items: center;
+  }
+
+  .profile-container img {
+    grid-area: download-icon;
   }
 
   .profile-container h3 {
     display: none;
   }
+
   .main-container {
     width: calc(100vw - 50px);
-  }
-
-  .playing-bar {
-    gap: 5px;
   }
 }

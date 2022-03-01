@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="playlist">
+        <div class="playlist-container">
           <h3>Playlist</h3>
           <div>
             <ul>
@@ -92,11 +92,11 @@
             </ul>
           </div>
         </div>
-        <div class="align-self">
+        <div class="download-profile-container align-self">
           <div>
             <a
               href="#"
-              class="download two-grid-column__expand-two align-items-center"
+              class="download-container two-grid-column__expand-two align-items-center"
             >
               <img
                 src="/Assets/Icon/download.svg"
@@ -118,7 +118,7 @@
       <!-- MAIN -->
       <div class="main-container">
         <!-- Header section -->
-        <header>
+        <header class="justify-content-end">
           <a href="#" class="place-items-center">UPGRADE</a>
         </header>
         <!-- Nav bar -->
@@ -182,7 +182,7 @@
                   </div>
                   <div>
                     <p><span>Heavy Metal</span></p>
-                    <p>Subtitle</p>
+                    <p class="artist">Subtitle</p>
                   </div>
                 </a>
               </li>
@@ -203,7 +203,7 @@
                         Soundtrack)</span
                       >
                     </p>
-                    <p>Kyle Dixon & Michael Stein</p>
+                    <p class="artist">Kyle Dixon & Michael Stein</p>
                   </div>
                 </a>
               </li>
@@ -219,7 +219,7 @@
                   </div>
                   <div>
                     <p><span>A Quiet Place</span></p>
-                    <p>Subtitle</p>
+                    <p class="artist">Subtitle</p>
                   </div>
                 </a>
               </li>
@@ -235,7 +235,7 @@
                   </div>
                   <div>
                     <p><span>Split</span></p>
-                    <p>Subtitle</p>
+                    <p class="artist">Subtitle</p>
                   </div>
                 </a>
               </li>
@@ -251,7 +251,7 @@
                   </div>
                   <div>
                     <p><span>A Cure for Wellness</span></p>
-                    <p>Subtitle</p>
+                    <p class="artist">Subtitle</p>
                   </div>
                 </a>
               </li>
@@ -267,7 +267,7 @@
                   </div>
                   <div>
                     <p><span>Sinister</span></p>
-                    <p>Subtitle</p>
+                    <p class="artist">Subtitle</p>
                   </div>
                 </a>
               </li>
@@ -275,7 +275,13 @@
           </section>
           <!-- Made For You -->
           <section class="made-for-you">
-            <h2>Made for You</h2>
+            <div class="justify-content-start">
+              <h2>Made for You</h2>
+              <p class="music-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                libero incidunt.
+              </p>
+            </div>
             <ul class="six-grid-column">
               <li>
                 <a href="#" class="place-items-center">
@@ -303,7 +309,13 @@
           </section>
           <!-- Popular Artists -->
           <section class="popular-artists">
-            <h2>Popular Artists</h2>
+            <div class="justify-content-start">
+              <h2>Popular Artists</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                libero incidunt.
+              </p>
+            </div>
             <ul class="six-grid-column">
               <li>
                 <a href="#" class="place-items-center">
@@ -380,6 +392,3 @@
     </footer>
   </body>
 </html>
-
-<!-- MEMO -->
-<!-- - add all text decoration on artist names when hovered -->
