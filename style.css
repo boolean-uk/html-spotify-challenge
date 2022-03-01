@@ -381,6 +381,34 @@
   color: #b3b3b3;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #8d0b02;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(#3f0000));
+  background: linear-gradient(red, #3f0000);
+  border: 0.05rem solid black;
+  height: 1rem;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #200200;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #e70303 #3f0000;
+    scrollbar-width: thin;
+  }
+}
+
 @media only screen and (max-width: 771px) {
   .main {
     padding-left: 2.5rem;
