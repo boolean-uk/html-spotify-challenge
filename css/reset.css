@@ -16,6 +16,7 @@ body {
 
 .left-bar {
     background-color: black;
+    overflow-y: scroll;
 }
 
 .left-text, .text-sm {
@@ -96,18 +97,13 @@ body {
     font-size: 20px;
 }
 
-
-
 /* MAIN AREA */
 
 .middle-area {
     height: calc(100vh - 96px);
-    overflow: clip;
     overflow-y: scroll;
     background-color: rgb(34, 37, 43);
 }
-
-/* Upgrade right button */
 
 .upgrade-bar {
     padding: 30px;
@@ -149,17 +145,19 @@ a:hover {
 .album-cover {
     width: 100%;
     height: auto;
-    display: grid;
-    place-content: center;
     overflow: hidden;
   }
 
-  .album-details {
-      text-align: center;
-  }
+.album-details {
+    text-align: center;
+ }
 
-.recent-songs, .created-playlis, .popular-artists {
-    padding-left: 10px;
+ .circle-image {
+     border-radius: 50%;
+ }
+
+.recent-songs, .created-playlist, .popular-artists {
+    padding-left: 50px;
 }
 
 /* FOOTER */

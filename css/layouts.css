@@ -27,12 +27,19 @@
 
 .responsive-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.three-column-grid__expand-one {
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr;
+    gap: 25px;
+}
 
 .three-column-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     gap: 10px;
 }
 
@@ -43,7 +50,7 @@
 
 /* MOBILE RESPONSIVENESS */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1316px) {
     .nav-select {
         grid-template-columns: 1fr;
         place-items: center;
