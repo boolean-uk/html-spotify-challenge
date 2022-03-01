@@ -22,26 +22,26 @@
                     <li class="home two-column-grid align-center">
                         <div class="icon-box">
                         <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg></div>
-                        <h2>Home</h2>
+                        <h2 class="left-text">Home</h2>
                     </li>
                     <li class="cerca two-column-grid align-center">
                         <div class="icon-box">
                         <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg></div>
-                        <h2>Cerca</h2>
+                        <h2 class="left-text">Cerca</h2>
                     </li>
                     <li class="libreria two-column-grid align-center">
                         <div class="icon-box">
                         <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg></div>
-                        <h2>La tua libreria</h2>
+                        <h2 class="left-text">La tua libreria</h2>
                     </li>
                 </div>
                 <div class="playlist">
-                    <h3>Playlist</h3>
+                    <h3 class="title">Playlist</h3>
                     <div class="two-column-grid align-center">
                     <div class="add-box">
                         <div class="plus-sign">➕</div>
                     </div>
-                    <h2>Crea Playlist</h2>
+                    <h2 class="left-text">Crea Playlist</h2>
                 </div>
                 </div>
                 <div class="playlist-name">
@@ -58,7 +58,7 @@
                 <div class="space"></div>
                 <div class="download-app two-column-grid align-center">
                     <svg class="download-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#ffffff" fill-rule="evenodd"/></svg>
-                    <h2>Installa App</h2>
+                    <h2 class="left-text">Installa App</h2>
                 </div>
                 <div class="profile two-column-grid align-center">
                         <svg class="pic-sm" viewbox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><title>User Icon</title><path d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z" fill="#ffffff" fill-rule="evenodd"/></svg>
@@ -93,52 +93,94 @@
                     </div>
                     <div class="space-nav-right"></div>
                 </nav>
-                <div class="middle-box">
+
+                <!--Recently played 6 album covers-->
+
+                <main>
                     <div class="recent-songs">
-                    <h3 class="text-md">Recently Played</h3>
-                    <div class="six-column-grid gp-sm">
-                    <img class="square" src="assets/img/metal_lifting.jpg" alt="heavy metal">
-                    <img class="square" src="assets/img/stranger.jpeg" alt="stranger things">
-                    <img class="square" src="assets/img/aquietplace.jpeg" alt="a quiet place">
-                    <img class="square" src="assets/img/split.jpeg" alt="split">
-                    <img class="square" src="assets/img/cure.jpeg" alt="cure">
-                    <img class="square" src="assets/img/sinister.jpeg" alt="sinister">
-                </div>
-                <div class="recent-songs-title six-column-grid">
-                    <p class="name-sm text-align">Heavy Metal<br><span class="subtitle">Subtitle</span></p>
-                    <p class="name-sm text-align">Stranger Things, Vol. 1 (A Netflix Original Soundtrack)<br><span class="subtitle">Kylie Dixon & Michael Stein</span></p>
-                    <p class="name-sm text-align">A Quiet place<br><span class="subtitle">Subtitle</span></p>
-                    <p class="name-sm text-align">Split<br><span class="subtitle">Subtitle</span></p>
-                    <p class="name-sm text-align">A cure for wellness<br><span class="subtitle">Subtitle</span></p>
-                    <p class="name-sm text-align">Sinister<br><span class="subtitle">Subtitle</span></p>
-                </div>
-            </div>
-        </div>
-                <div class="middle-box">
-                    <div class="creato-john-doe">
-                    <h3 class="text-md">Creato per John Doe</h3>
-                    <p class="text-sm">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
-                    <div class="two-column-grid gp-sm">
-                    <div class="text-box"><img class="square" src="assets/img/radar.jpeg" alt="radar">
-                    <p class="name-sm text-align">Release Radar</p></div>
-                    <div class="text-box"><img class="square" src="assets/img/mixdaily.jpeg" alt="mix daily">
-                    <p class="name-sm text-align">Daily Mix 1</p></div>
-                </div>
-          
-                </div>
-            </div>
-                <div class="middle-box">
-                    <div class="creato-john-doe">
-                        <h3 class="text-md">Artisti piu' popolari</h3>
-                        <p class="text-sm">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
-                        <div class="two-column-grid gp-sm">
-                        <img class="circle" src="assets/img/youg.jpeg" alt="youg">
-                        <img class="circle" src="assets/img/einaudi.jpeg" alt="einaudi">
+                        <h2 class="title">Recently played</h2>
+                        <div class="responsive-grid">
+
+                            <div class="album-cover album-details">
+                            <img src="assets/img/metal_lifting.jpg" alt="">
+                            <h3 class="title">Heavy Metal</h3>
+                            <h4 class="subtitle">Subtitle</h4>
+                            </div>
+
+                            <div class="album-cover album-details">
+                                <img src="assets/img/stranger.jpeg" alt="">
+                                <h3 class="title">Strange Things, Vol.<br>
+                                    1 (a Netflix Original<br> Series Soundtrack)</h3>
+                                <h4 class="subtitle">Kyle Dixon & Michael Stain</h4>
+                            </div>
+
+                            <div class="album-cover album-details">
+                                <img src="assets/img/aquietplace.jpeg" alt="">
+                                <h3 class="title">A quiet place</h3>
+                                <h4 class="subtitle">Subtitle</h4>
+                            </div>
+
+                            <div class="album-cover album-details">
+                                <img src="assets/img/split.jpeg" alt="">
+                                <h3 class="title">Split</h3>
+                                <h4 class="subtitle">Subtitle</h4>
+                            </div>
+
+                            <div class="album-cover album-details">
+                                <img src="assets/img/cure.jpeg" alt="">
+                                <h3 class="title">A cure for welness</h3>
+                                <h4 class="subtitle">Subtitle</h4>
+                            </div>
+
+                            <div class="album-cover album-details">
+                                <img src="assets/img/sinister.jpeg" alt="">
+                                <h3 class="title">Sinister</h3>
+                                <h4 class="subtitle">Subtitle</h4>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
+
+                    <!--Created for Anica Rahman, two album covers-->
+
+                    <div class="created-playlis">
+                        <h2 class="title">Created for Anica Rahman</h2>
+                        <p class="grey-text">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
+                        <div class="two-column-grid album-details">
+                            <div class="album-cover">
+                                <img src="assets/img/radar.jpeg" alt="">
+                                <h3 class="title">Sinister</h3>
+                            </div>
+                            <div class="album-cover">
+                                <img src="assets/img/mixdaily.jpeg" alt="">
+                                <h3 class="title">Daily mix</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Popular artists, two circled album covers-->
+
+                    <div class="popular-artists">
+                        <h2 class="title">Artisti piu' popolari</h2>
+                        <p class="grey-text">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
+                        <div class="two-column-grid album-details">
+                            <div class="album-cover">
+                                <img src="assets/img/youg.jpeg" alt="">
+                                <h3 class="title">Lana Del Rey</h3>
+                            </div>
+                            <div class="album-cover">
+                                <img src="assets/img/einaudi.jpeg" alt="">
+                                <h3 class="title">Einaudi</h3>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </main>
         </div>
+
+
+
+        <!--FOOTER-->
+
         <footer class="main-footer five-column-grid">
                 <div class="current-song three-column-grid center-wrapper-footer">
                     <img class="sinister-sm" src="assets/img/sinister.jpeg" alt="sinister">
@@ -169,6 +211,6 @@
                     <label for="volume"></label></div> 
                 </div>
         </footer>
-    </div>
+
 </body>
 </html>

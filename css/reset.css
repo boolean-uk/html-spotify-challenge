@@ -8,19 +8,24 @@ body {
     font-family: sans-serif;
 }
 
+.central-area {
+    height: calc(100vh - 96px);
+}
+
 /* LEFT SIDE BAR */
 
 .left-bar {
     background-color: black;
 }
 
-h2, .text-sm {
+.left-text, .text-sm {
     margin-left: 3px;
     color: grey;
     font-size: 20px;
 }
 
-h3 {
+.title {
+    font-size: 25px;
     color: white;
 }
 
@@ -65,9 +70,6 @@ h3 {
     font-size: 20px;
 }
 
-.space {
-    height: 830px
-}
 
 .download-icon {
     border-radius: 50%;
@@ -97,14 +99,16 @@ h3 {
 
 
 
-/* BIG MAIN AREA */
+/* MAIN AREA */
 
 .middle-area {
-    display: grid;
-    grid-template-rows: auto;
+    height: calc(100vh - 96px);
+    overflow: clip;
+    overflow-y: scroll;
     background-color: rgb(34, 37, 43);
-    overflow: scroll;
 }
+
+/* Upgrade right button */
 
 .upgrade-bar {
     padding: 30px;
@@ -139,44 +143,24 @@ a:hover {
     text-decoration-thickness: 3px;
 }
 
-
-.square {
-    height: 300px;
-    width: 300px;
-}
-
-.recent-songs, .creato-john-doe {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.text-md {
+.h4 {
     font-size: 30px;
 }
 
-.text-sm {
-    font-size: 20px;
-}
+.album-cover {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+  }
 
-.gp-sm {
-    gap: 25px;
-}
+  .album-details {
+      text-align: center;
+  }
 
-.text-align {
-    text-align: center;
-}
-
-.subtitle {
-    line-height: 4;
-}
-
-.circle {
-    border-radius: 50%;
-}
-
-.text-box {
-    height: 381px;
-    width: 308px;
+.recent-songs, .created-playlis, .popular-artists {
+    padding-left: 10px;
 }
 
 /* FOOTER */
@@ -210,8 +194,12 @@ a:hover {
     width: 100px;
 }
 
-.band-name {
+h4, .band-name, .grey-text {
     color: grey;
+}
+
+.grey-text {
+    font-size: 20px;
 }
 
 .icons-sm {
