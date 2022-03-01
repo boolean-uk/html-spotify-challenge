@@ -16,8 +16,16 @@ h4 {
   margin: 0;
 }
 
+.gap-sm {
+  gap: 8px;
+}
+
 .gap-md {
-  gap: 12px;
+  gap: 24px;
+}
+
+.gap-lg {
+  gap: 36px;
 }
 
 .main-layout > * {
@@ -37,6 +45,20 @@ h4 {
   height: 42px;
 }
 
+.album-holder {
+  border: 1px dashed white;
+  padding: 2px;
+  height: 300px;
+  width: 220px;
+  display: grid;
+  place-content: center;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .two-column-grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -46,7 +68,7 @@ h4 {
   border: 1px dashed indigo;
   padding: 2px;
   width: 100%;
-  height: 380px;
+  height: 400px;
   background-color: rgb(19 25 35);
 }
 
@@ -66,12 +88,27 @@ h4 {
 }
 
 .footer {
-  border: 1px dashed grey;
+  border: none;
   padding: 2px;
   width: 100%;
   height: 100px;
   margin-top: auto;
   bottom: 0;
+  background-color: rgb(24 24 24);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.sticky-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
 }
 
 .spotify-logo {
@@ -144,49 +181,27 @@ h4 {
 }
 
 .album-cover {
-  width: 220px;
-  height: 220px;
-  margin-left: 40px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
 }
 
 .album-title {
-  margin-left: 125px;
-  margin-top: 10px;
+  margin: 0;
+  text-align: center;
   font-size: 25px;
-  font-weight: 700;
-}
-
-.album-title-gunna {
-  margin-left: 40px;
-  margin-top: 5px;
-  margin-bottom: 26px;
-  font-size: 28px;
   font-weight: 700;
 }
 
 .artist-name {
-  margin-top: -20px;
-  margin-left: 108px;
+  margin: 0;
+  text-align: center;
 }
 
-.album-title-ls {
-  margin-left: 100px;
-  margin-top: 35px;
-  margin-bottom: 0px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.album-title-hazey {
-  margin-left: 50px;
-  margin-top: 10px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.artist-name-hazey {
-  margin-top: -20px;
-  margin-left: 138px;
+.liked-songs {
+  color: rgb(19 25 35);
 }
 
 .album-title-dave {
