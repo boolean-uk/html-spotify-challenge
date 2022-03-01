@@ -92,7 +92,6 @@ li a{
 .gridautorow{
   display:grid;
   grid-template-rows: repeat(12,auto);
-  border: royalblue solid 1px;
 }
 .albumcover-img__large{
   width: 256px;
