@@ -440,14 +440,16 @@
       <div>
         <ul class="grid-auto__column icons">
           <li>
-            <a href="#">
-              <img
-                src="/assets/img/left-image-song.png"
-                alt="Song Icon"
-                height="56px"
-                width="56px"
-              />
-            </a>
+            <div class="song-icon">
+              <a href="#">
+                <img
+                  src="/assets/img/left-image-song.png"
+                  alt="Song Icon"
+                  height="56px"
+                  width="56px"
+                />
+              </a>
+            </div>
           </li>
           <li>
             <div class="p1">ROOF</div>
@@ -495,7 +497,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/img/rewind on track.png"
+                  src="/assets/img/back on track.png"
                   alt="Back Icon"
                   height="32px"
                   width="32px"
@@ -533,6 +535,12 @@
               </a>
             </li>
           </ul>
+          <br />
+          <div class="time">
+            <span id="current-time" class="time">0:34</span>
+            <input type="range" id="seek-slider" max="100" value="0" />
+            <span id="duration" class="time">2:45</span>
+          </div>
         </div>
       </div>
       <div>

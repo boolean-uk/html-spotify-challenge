@@ -199,7 +199,8 @@ h4 {
 /* Footer  */
 
 .main-footer > * {
-  padding: 16px;
+  padding: 0;
+  padding-top: 20px;
   height: 90px;
   background-color: #181818;
 }
@@ -229,6 +230,10 @@ h4 {
 .icons li {
   width: 56px;
   height: 56px;
+}
+
+.song-icon {
+  padding: 0;
 }
 
 .media {
@@ -265,4 +270,8 @@ p {
 .display {
   padding-top: 10px;
   padding-left: 30px;
+}
+
+.time {
+  color: white;
 }
