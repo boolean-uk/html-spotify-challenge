@@ -375,13 +375,13 @@ html {
 }
 .main-card .small-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 18rem);
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 2rem;
 }
 .main-card .small-cards-container .small-card {
   padding: 1.4rem;
   background-color: #242323;
-  width: 18rem;
+  width: 100%;
   border-radius: 8px;
 }
 @media only screen and (max-width: 37.5em) {
@@ -393,12 +393,14 @@ html {
   }
 }
 .main-card .small-cards-container .small-card-image {
-  height: 15rem;
-  border-radius: 8px;
   position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-content: center;
 }
 .main-card .small-cards-container .small-card-image img {
-  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
