@@ -330,10 +330,3 @@ footer i {
 .other-actions > * {
   margin-right: 1rem;
 }
-
-div::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  width: 50%;
-}
