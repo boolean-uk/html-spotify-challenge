@@ -1,5 +1,7 @@
 /* RESETS */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
 
@@ -242,6 +244,21 @@ header {
     border-style: none;
 }
 
+.header__account-options {
+    appearance: none;
+    background-color: #10021e;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+
+    padding: 6px 12px;
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+}
 
 /* ---------------------------------MAIN SECTION------------------------------------------ */
 .main-section > * {
@@ -397,7 +414,9 @@ header {
 
 
 /* -------------------------UTILITY STYLES------------------------------ */
-
+/* ------------------------NEEDS TO BE FIXED---------------------------- */
+/*      Currently the scroll bar goes over the footer, if I add the    
+ scroll bar to the main-section only then no styles are applied to it    */
 ::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
@@ -413,4 +432,4 @@ header {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #88888890;
 }
-
+/* ---------------------------------------------------------------------- */
