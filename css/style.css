@@ -111,10 +111,6 @@ a {
     background-color: var(--text-color-two);
 }
 
-.fit-content {
-    width: auto;
-}
-
 .align-middle {
     justify-content: center;
     text-align: center;
