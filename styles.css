@@ -32,6 +32,7 @@
     grid-template-rows: auto auto 1fr auto;
 }
 
+
 .responsive-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -88,6 +89,9 @@ a{
     text-decoration: none;
     color:#b3b3b3;
 }
+a:hover{
+    color: white;
+}
 
 /* Main Section Content*/
 
@@ -106,18 +110,39 @@ a{
 }
 
 
-
-
-
-
-
-
 .activity-container{
     width: 240px;
     border: 2px dashed orange;
     background-color: #121212;
 }
+/* Footer*/
 footer{
     height: 120px;
     background-color:#212121 ;
+    /*
+    width: 100%;
+    position: fixed;
+    bottom: 0;*/
 }
+.footer-left-side,
+.footer-right-side{
+    width: 240px;
+    
+}
+.footer-profile{
+    height: 60px;
+    width: 60px;
+} 
+.left-footer-grid{
+    display: grid;
+    height: 120px;
+    grid-template-columns: auto auto auto; 
+    place-content: center;
+    column-gap: 12px;
+}
+
+.footer-icons{
+    height: 20px;
+    width: 20px;
+}
+
