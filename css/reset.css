@@ -17,7 +17,7 @@ body {
 h2, .text-sm {
     margin-left: 3px;
     color: grey;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h3 {
@@ -25,8 +25,8 @@ h3 {
 }
 
 .logo, .search, .playlist, .playlist-name, .download-app, .profile {
-    padding: 2px;
-    margin: 2px;
+    padding: 4px;
+    margin: 4px;
 }
 
 .logo {
@@ -62,6 +62,7 @@ h3 {
     line-height: 2;
     color: grey;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .space {
@@ -151,6 +152,10 @@ a:hover {
 
 .text-md {
     font-size: 30px;
+}
+
+.text-sm {
+    font-size: 20px;
 }
 
 .gp-sm {
