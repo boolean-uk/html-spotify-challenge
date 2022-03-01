@@ -238,6 +238,10 @@ footer input[type="range"] {
   border-radius: 10px;
 }
 
+.playing-bar > input[type="range"] {
+  width: 100%;
+}
+
 footer input[type="range"]::-webkit-slider-runnable-track {
   height: 3px;
   -webkit-appearance: none;
@@ -250,12 +254,12 @@ footer input[type="range"]::-webkit-slider-thumb {
   height: 3px;
   cursor: pointer;
   background: #434343;
-  box-shadow: -200px 0 0 200px var(--accent-clr);
+  box-shadow: -500px 0 0 500px var(--accent-clr);
 }
 
 .playing,
 .option-bar {
-  padding: 8px;
+  padding: 10px;
   gap: 10px;
 }
 
@@ -278,6 +282,11 @@ footer input[type="range"]::-webkit-slider-thumb {
 }
 
 .playing-bar {
-  min-width: 400px;
+  min-width: 50%;
   gap: 8px;
+}
+
+.playing-bar-icon-container {
+  min-width: 50%;
+  gap: 10px;
 }
