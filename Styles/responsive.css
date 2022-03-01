@@ -11,3 +11,52 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media screen and (max-width: 580px) {
+  aside {
+    min-width: 50px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .logo-big {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+    width: 25px;
+  }
+
+  .menu-bar {
+    display: grid;
+    grid-template:
+      "icon" 1fr/
+      1fr;
+
+    grid-area: icon;
+  }
+
+  .menu-bar p {
+    display: none;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .download p {
+    display: none;
+  }
+
+  .profile-container h3 {
+    display: none;
+  }
+  .main-container {
+    width: calc(100vw - 50px);
+  }
+
+  .playing-bar {
+    gap: 5px;
+  }
+}
