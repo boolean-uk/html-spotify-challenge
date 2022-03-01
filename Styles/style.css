@@ -16,7 +16,7 @@ html {
   --main-clr: rgb(20, 25, 34);
   --sub-clr: rgb(8, 11, 18);
   --third-clr: rgb(40, 40, 40);
-  --accent-clr: rgb(98, 228, 23);
+  --accent-clr: rgb(30, 215, 97);
   --main-text-clr: white;
   --sub-text-clr: rgb(135, 135, 138);
 }
@@ -186,17 +186,33 @@ nav {
   overflow: scroll;
 }
 
-.recently-played p,
-.made-for-you p,
-.popular-artists p {
+.music-list p {
   color: var(--sub-text-clr);
   font-size: 0.8rem;
   text-align: center;
 }
 
-.recently-played span,
-.made-for-you span,
-.popular-artists span {
+.music-list li {
+  width: 150px;
+}
+
+.music-list a {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 80px;
+  top: 40px;
+  left: 40px;
+}
+
+.music-list a:hover + .overlay {
+  display: block;
+}
+
+.music-list span {
   color: var(--main-text-clr);
   font-weight: 600;
 }
@@ -216,43 +232,20 @@ footer button {
   cursor: pointer;
 }
 
-/* footer input[type="range"] {
-  appearance: none;
-  height: 2px;
-  background: var(--sub-text-clr);
-  border-radius: 2px;
-  outline: none;
-  opacity: 0.7;
-}
-
-footer input[type="range"]::-webkit-slider-runnable-track {
-  height: 2px;
-  -webkit-appearance: none;
-  color: #13bba4;
-  margin-top: -1px;
-}
-
-footer input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  height: 2px;
-  background: var(---accent-clr);
-  cursor: pointer;
-} */
-
-input[type="range"] {
+footer input[type="range"] {
   overflow: hidden;
   -webkit-appearance: none;
   background-color: var(--sub-text-clr);
   border-radius: 10px;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+footer input[type="range"]::-webkit-slider-runnable-track {
   height: 3px;
   -webkit-appearance: none;
   color: var(--accent-clr);
 }
 
-input[type="range"]::-webkit-slider-thumb {
+footer input[type="range"]::-webkit-slider-thumb {
   width: 0.1px;
   -webkit-appearance: none;
   height: 3px;
