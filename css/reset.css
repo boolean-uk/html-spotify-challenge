@@ -259,4 +259,9 @@ h3 {
 .volume-icon {
     height: 20px;
     width: 20px;
+    margin-right: 25px;
+}
+
+#volume {
+    margin-right: 50px;
 }

@@ -30,3 +30,8 @@
     grid-template-columns: auto auto auto;
     gap: 10px;
 }
+
+.five-column-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto;
+}
