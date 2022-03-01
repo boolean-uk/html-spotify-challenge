@@ -10,6 +10,10 @@ body{
     min-height: 100vh;
 }
 
+.gap-md {
+    gap: 12px;
+}
+
 .main-layout > *{
     border: 1px dashed rgb(0 0 1);
     padding: 0px;
@@ -36,7 +40,7 @@ body{
     border: 1px dashed indigo;
     padding: 2px;
     width: 100%;
-    height: 100px;
+    height: 380px;
     background-color: rgb(19 25 35);
 }
 
@@ -113,4 +117,54 @@ body{
     color: white;
     margin-right: 80px;
 
+}
+
+.album {
+    display: inline-block
+}
+
+.album-cover {
+    width: 220px;
+    height: 220px;
+    margin-left: 40px;
+}
+
+.album-title {
+    margin-left: 125px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.album-title-gunna {
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 26px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.artist-name {
+    margin-top: -20px;
+    margin-left: 108px;
+}
+
+.album-title-ls {
+    margin-left: 100px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.album-title-hazey {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.artist-name-hazey {
+    margin-top: -20px;
+    margin-left: 138px;
 }
