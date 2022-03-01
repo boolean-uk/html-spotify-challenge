@@ -186,7 +186,6 @@ h4 {
 
 .main-footer > * {
   padding: 2px;
-  border: 2px dashed lightcoral;
   height: 90px;
   background-color: #181818;
 }
@@ -211,8 +210,6 @@ h4 {
 .icons li {
   width: 56px;
   height: 56px;
-
-  border: 2px dashed lightgreen;
 }
 
 .controls-container {
@@ -220,4 +217,8 @@ h4 {
   height: 56px;
 
   border: 2px dashed lightgreen;
+}
+
+li {
+  color: white;
 }
