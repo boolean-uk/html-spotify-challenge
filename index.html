@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="main-layout two-column-grid">
-      <div class="side-bar">
+      <div class="side-bar sticky-sideba">
         <main>
           <div class="box">
             <img
@@ -204,10 +204,6 @@
             </div>
           </div>
         </div>
-        <div class="inner-box">
-          <h2>Your Favourite Artists</h2>
-        </div>
-        <div class="inner-box"></div>
       </div>
     </div>
     <footer class="footer sticky">
@@ -221,9 +217,9 @@
                 alt="23 album cover"
               />
             </div>
-            <div class="footer-song-title">
-              <span>Bunda</span>
-              <span>Central Cee</span>
+            <div class="footer-song">
+              <span class="footer-song-title">Bunda</span>
+              <span class="footer-song-artist">Central Cee</span>
             </div>
 
             <div>
@@ -236,9 +232,65 @@
           </div>
         </div>
         <div class="footer-card"></div>
+        <div class="footer-card">
+          <div class="footer-box five-column-grid__expand-two gap-sm">
+            <div class="footer-inner-box">
+              <img
+                class="footer-icons"
+                src="/assets/img/images/shuffle.png"
+                alt="shuffle icon"
+              />
+            </div>
+            <div>
+              <img
+                class="footer-icons"
+                src="/assets/img/images/music-player.png"
+                alt="rewind icon"
+              />
+            </div>
+            <div>
+              <img
+                class="play-icon"
+                src="/assets/img/images/play-button.png"
+                alt="play icon"
+              />
+            </div>
+            <div>
+              <img
+                class="footer-icons"
+                src="/assets/img/images/music-player-right.png"
+                alt="forward icon"
+              />
+            </div>
+            <div>
+              <img
+                class="footer-icons"
+                src="/assets/img/images/repeat.png"
+                alt="repeat icon"
+              />
+            </div>
+          </div>
+          <div class="footer-box three-column-grid__expand-two">
+            <div><p class="time-stamp">1:13</p></div>
+            <div>
+              <progress class="progress" max="100" value="75"></progress>
+            </div>
+            <div><p class="time-stamp">1:50</p></div>
+          </div>
+        </div>
         <div class="footer-card"></div>
-        <div class="footer-card"></div>
-        <div class="footer-card"></div>
+        <div class="footer-card">
+          <div class="two-column-grid">
+            <img
+              class="volume-icon"
+              src="/assets/img/images/volume-up-interface-symbol.png"
+              alt="volume icon"
+            />
+            <div>
+              <progress class="progress-volume" max="100" value="50"></progress>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
