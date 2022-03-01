@@ -2,30 +2,31 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+background-color: black;
 }
 .tworowgrid{
     display: grid;
     grid-template-rows: 1fr 60px;
-    border: white 1px solid;
+ 
 }
 .tworowgrid2{
     display: grid;
     grid-template-rows: 60px 1fr;
-    border: white 1px solid;
+
 }
 .twocolgrid{
     display: grid;
     grid-template-columns: 200px 1fr;
-    border: white 1px solid;
+
 }
 .fivecol{
   display: grid;
   grid-template-columns:repeat(5,220px);
   height: 300px;
-  border: white 1px solid;
+
 }
 main{
- height: 100vh;
+ height: 100vw;
     width: 100vw;
     background-color:black;
 }
@@ -74,7 +75,7 @@ li a:hover {
   grid-template-columns: 1fr auto;
 }
 .mainpage{
-  background-color:grey;
+  background-color:black;
 }
 
 li a{
@@ -202,19 +203,12 @@ padding: .5rem;
 .main-layout > *,
 .main-footer > * {
   padding: 2px;
-  border: 2px dashed lightcoral;
-}
-
-.icons li {
-  border: 2px dashed lightgreen;
-
 }
 
 .controls-container {
   width: 100%;
   height: 56px;
 
-  border: 2px dashed lightgreen;
 }
 .iconfit{
   width: 50px;
@@ -236,7 +230,7 @@ ul{
 .tworow{
   display: grid;
   grid-template-rows: repeat(2,1fr);
-  border: orangered solid 1px;
+  
 }
 .imgblo{
   display:grid;
@@ -249,4 +243,9 @@ ul{
 }
 .w3-border{
   border: palegreen 1px solid;
+}
+.fhrase{
+  padding: 15px;
+  text-align: center;
+  color: antiquewhite;
 }
