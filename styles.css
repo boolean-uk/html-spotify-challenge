@@ -35,19 +35,17 @@ body {
   display: grid;
   grid-template-columns: 243px 1fr;
   height: calc(100vh - 90px);
-  overflow-y: scroll;
 }
 
 /* Aside  */
 
 aside {
-  /* height: 100%;
-  width: 243px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0; */
   background-color: black;
+}
+
+.four-row-grid-expand-three {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .two-column-grid {
@@ -162,6 +160,13 @@ header {
 
 /* Main Section - Recently Played  */
 
+main {
+  overflow: clip;
+  overflow-x: clip;
+  overflow-y: scroll;
+  max-height: calc(100vh - 90px);
+}
+
 .album-category-section {
   background-color: #202020;
 }
@@ -190,10 +195,10 @@ h2 {
   background-color: #151515;
 }
 
-.music-card-main-row-grid {
+/* .music-card-main-row-grid {
   display: grid;
   grid-template-rows: auto;
-}
+} */
 
 .music-cards-main-column-grid {
   display: grid;
