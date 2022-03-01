@@ -157,4 +157,39 @@ footer {
     border-radius: 50%;
 }
 
+.player-section input[type="range"] {
+    width: 625px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 4px;
+
+    background: #535353;
+    border-radius: 5px;
+    background-image: linear-gradient(#b3b3b3, #b3b3b3);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]:hover {
+    background-image: linear-gradient(#1db954, #1db954);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
 /* ---- FOOTER ENDS ---- */
