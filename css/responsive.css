@@ -32,21 +32,46 @@ footer h4:hover {
 
 .wrapper {
     position: relative;
-  }
-  
+    z-index: 1;
+    width: 300px;
+}
+
+.overlay img {
+    display: block;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    top: 155px;
+    transform: translateY(-50%);
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+  
+.wrapper:hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 2;
 }
 
 
-
-/* MEDIA QUIERIES 
-@media screen and (max-width: 1200px) {
-    /*minimise left menu
+/* MEDIA QUIERIES  */
+@media screen and (max-width: 1030px) {
+    /*minimise left menu */
     body {
         display: grid;
         grid-template: 
@@ -55,14 +80,50 @@ footer h4:hover {
         var(--left-menu-width-minimised) 1fr
         ;
     
-        height: 95vh;
+        height: 100vh;
     }
 
-    .left-menu p {
+    .left-menu {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .left-menu p,
+    h1,
+    h2,
+    .playlist {
         display: none;
+    }
+
+    .profile-outline {
+        margin-left: 1.5px;
     }
 
     .responsive .ma-m {
          margin: 10px;
      }
-     */
+
+     .currently-playing {
+         max-width: 200px;
+     }
+
+    .currently-playing .icon-x-small {
+        display: block;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .style-three {
+        margin: 0 10px;
+    }
+
+    .volume-rocker img {
+        margin: 40px 5px;
+    }
+
+    .installa-app-button {
+        border-bottom: none;
+    }
