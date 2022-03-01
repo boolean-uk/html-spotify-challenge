@@ -40,7 +40,6 @@ a {
 :root {
   --clr-dark: 18, 18, 18;
   --clr-grey: 189, 193, 197;
-  --clr-grey-light: 211, 211, 211;
   --clr-grey-dark: 32, 33, 37;
   --clr-white: 255, 255, 255;
 }
@@ -64,11 +63,6 @@ a {
   grid-template-columns: auto 1fr auto;
 }
 
-.three-col-grid__expand-two {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-}
-
 .four-col-grid__expand-two {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
@@ -84,27 +78,18 @@ a {
   grid-auto-flow: column;
 }
 
+/* images */
+
+.img-sm {
+  height: 50px;
+}
+
 /* typography */
-
-.fs-xs {
-  font-size: 0.75rem;
-}
-
-.fs-sm {
-  font-size: 1rem;
-}
-
-.fs-md {
-  font-size: 1.3rem;
-}
 
 .fs-lg {
   font-size: 3rem;
 }
 
-.img-sm {
-  height: 50px;
-}
 /* ------------------- */
 /* Main styling        */
 /* ------------------- */
@@ -213,11 +198,21 @@ button:hover {
   background-color: #ffffff;
 }
 
+.login-container {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(43, 65, 98, 1) 72%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+
 /* cards */
 
 .song-mix {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 15rem));
   gap: 1rem;
 }
 
@@ -225,6 +220,7 @@ button:hover {
   border-radius: 0.75rem;
   aspect-ratio: 1 / 1.25;
   background-color: rgba(var(--clr-grey-dark));
+  position: relative;
 }
 
 .song-mix__info {
@@ -251,23 +247,48 @@ main img {
 h2 {
   margin-block: 3rem;
 }
+
+/* hover effects */
+
+.song-mix__card:hover {
+  background-color: rgba(var(--clr-white), 0.2);
+  transition: all ease-in-out 0.2s;
+}
+
+.overlay__btn {
+  color: green;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  opacity: 0;
+}
+main i {
+  font-size: 3rem;
+}
+
+.song-mix__card:hover .overlay__btn {
+  top: 40%;
+  opacity: 1;
+  transition: all ease-in-out 0.2s;
+}
+
 /* ------------------- */
 /* footer styling      */
 /* ------------------- */
 
 footer {
   width: 100vw;
-  height: 3em;
+  height: 150px;
   font-size: 0.8rem;
-}
-
-.footer__container {
-  padding-top: 2.5rem;
 }
 
 footer i {
   color: rgba(var(--clr-white));
   font-size: 1.2rem;
+}
+
+.footer__container {
+  padding-top: 2.5rem;
 }
 
 .music-control {
