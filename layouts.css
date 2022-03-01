@@ -112,3 +112,13 @@
         margin-left: 8px;
     }
 }
+
+@media screen and (max-width: 810px) {
+    .footer__collapsible-item {
+        display: none;
+    }
+
+    .three-column-grid {
+        grid-template-columns: 1fr;
+    }
+}
