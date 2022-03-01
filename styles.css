@@ -195,6 +195,10 @@ h2 {
   margin-left: 10px;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 .see-all {
   color: #909090;
 }
