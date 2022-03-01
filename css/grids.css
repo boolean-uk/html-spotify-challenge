@@ -8,7 +8,7 @@ body {
     var(--left-menu-width) 1fr
     ;
 
-    height: 95vh;
+    height: 100vh;
 }
 
 .left-menu {
@@ -16,6 +16,7 @@ body {
     display: grid;
     grid-template-rows: var(--header-height) auto auto 1fr auto auto;
     background-color: var(--primary-color-one);
+    overflow-y: auto;
 }
 
 .main-container {
@@ -24,7 +25,7 @@ body {
     grid-template-rows: var(--header-height) repeat(11, auto);
     width: auto;
     overflow-x: auto;
-    max-height: calc(95vh - var(--footer-height));
+    max-height: 100vh;
     overflow-y: scroll;
     background-color: var(--primary-color-three);
     
@@ -71,6 +72,11 @@ footer {
     grid-template-columns: 1fr auto 1fr;
 }
 
+.three-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
 .three-columns__expand-three {
     display: grid;
     grid-template-columns: auto auto 1fr;
@@ -86,12 +92,29 @@ footer {
     grid-template-columns: 1fr auto auto auto 1fr;
 }
 
+.five-columns__expand-three {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+}
+
 .seven-columns__expand-one-seven {
     display: grid;
     grid-template-columns: 1fr auto auto auto auto auto 1fr;
 }
 
 .auto-columns {
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
+}
+
+.responsive-columns-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+
+    gap: 10px;
+}
+
+.responsive-columns-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 180px));
 }
