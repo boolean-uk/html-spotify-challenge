@@ -77,8 +77,16 @@ a {
   color: #aeaeae;
 }
 
-.song-options {
+a:hover {
+  color: white;
+}
+
+.song-options li {
   color: #9c9c9c;
+}
+
+li:hover {
+  color: white;
 }
 
 .song-options li {
