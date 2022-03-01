@@ -125,5 +125,12 @@ main {
     overflow-y: scroll;
 }
 
+.gap-sm {
+    gap: 12px;
+}
+
+.pad-sm {
+    padding: 20px;
+}
 
 /* ---- layout ---- */
