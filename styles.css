@@ -99,17 +99,25 @@ a:hover{
     background-color: #535353;
 }
 
-.boxes{
-    display: grid;
-    grid-template-rows: 250px auto auto;
-    border-radius: 5%;
-    padding: 4px;
-    height: 100%;
-    width: 100%;
-    border: solid black;
-}
 header{
     height: 85px;
+    background-color: #7F00FF;
+}
+.boxes{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    border-radius: 5%;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+    
+}
+.cover-pic{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+
 }
 
 .activity-container{
@@ -172,7 +180,6 @@ footer{
 #volume-bar{
     width:100px ;
 }
-
 progress{
     color: grey;
 }
