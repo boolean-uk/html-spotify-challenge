@@ -164,7 +164,10 @@ header {
 
 .album-category-section {
   background-color: #202020;
-  /* height: 400px; */
+}
+
+.album-category-section2 {
+  background-color: #121212;
 }
 
 .three-grid-expand-two {
