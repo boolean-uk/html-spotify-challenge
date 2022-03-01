@@ -139,6 +139,9 @@ header {
 
 h2 {
   color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .see-all {
@@ -162,6 +165,10 @@ h2 {
 .music-card-grid {
   display: grid;
   grid-auto-flow: row;
+}
+
+.gap-medium {
+  /* gap: 30px; */
 }
 
 .card {
