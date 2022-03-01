@@ -277,11 +277,23 @@ li {
 }
 
 .album_text {
-    margin-top: 15px;
+    display: contents;
 }
 
 .album_title {
     font-weight: bold;
+    margin: 15px 0px 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album_artist {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 /* CONTENT ends here */
 
