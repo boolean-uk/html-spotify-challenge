@@ -230,12 +230,38 @@ h2:hover {
   margin-left: 20px;
 }
 
+.card:hover {
+  background-color: #727272;
+}
+
 h3 {
   color: white;
 }
 
 h4 {
   color: #949494;
+}
+
+.itemsContainer {
+  float: left;
+  position: relative;
+}
+.itemsContainer:hover .play {
+  display: block;
+}
+.play {
+  position: absolute;
+  display: none;
+  top: 40%;
+  width: 20px;
+  margin: 0 auto;
+  left: 100px;
+  right: 0px;
+  z-index: 100;
+}
+
+.avatar img {
+  border-radius: 50%;
 }
 
 /* Footer  */
