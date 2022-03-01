@@ -95,6 +95,7 @@ li {
 
 p {
   color: #ffffff;
+  padding-top: 20px;
 }
 
 /* Header  */
@@ -130,7 +131,15 @@ header {
   padding: 10px 50px 10px 50px;
   background-color: #000000;
   border-radius: 40%;
-  margin-right: 20px;
+  margin-right: 70px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
 
 .user-profile-grid {
@@ -150,6 +159,12 @@ header {
   border-radius: 40px;
   margin-top: 20px;
   gap: 20px;
+  margin-right: 25px;
+  padding-right: 10px;
+}
+
+.user-profile-button:hover {
+  background-color: #282828;
 }
 
 .user-profile-pic {
@@ -183,7 +198,7 @@ h2 {
   color: #ffffff;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 h2:hover {
@@ -218,7 +233,9 @@ h2:hover {
   height: 286px;
   width: 208px;
   background-color: #282828;
+  margin-top: 20px;
   margin-left: 20px;
+  border: 10px solid #282828;
 }
 
 .card img {
