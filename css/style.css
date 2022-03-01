@@ -1,170 +1,221 @@
-*{
-    box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(242 242 242);
-    min-height: 100vh;
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(242 242 242);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 .gap-md {
-    gap: 12px;
+  gap: 12px;
 }
 
-.main-layout > *{
-    border: 1px dashed rgb(0 0 1);
-    padding: 0px;
-    height: 100vh;
+.main-layout > * {
+  border: 1px dashed rgb(0 0 1);
+  padding: 0px;
+  height: 100vh;
 }
 
 .side-bar {
-    background-color: rgb(0 0 1);
+  background-color: rgb(0 0 1);
 }
 
 .box {
-    border: 1px dashed rgb(0 0 1);
-    padding: 2px;
-    width: 250px;
-    height: 42px;
+  border: 1px dashed rgb(0 0 1);
+  padding: 2px;
+  width: 250px;
+  height: 42px;
 }
 
-.two-column-grid{
-    display: grid;
-    grid-template-columns: auto 1fr;
+.two-column-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .inner-box {
-    border: 1px dashed indigo;
-    padding: 2px;
-    width: 100%;
-    height: 380px;
-    background-color: rgb(19 25 35);
+  border: 1px dashed indigo;
+  padding: 2px;
+  width: 100%;
+  height: 380px;
+  background-color: rgb(19 25 35);
 }
 
 .header {
-    border: 1px dashed green;
-    padding: 2px;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(32 17 91);
+  border: 1px dashed green;
+  padding: 2px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(32 17 91);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.header-content {
+  display: grid;
+  place-items: center;
 }
 
 .footer {
-    border: 1px dashed grey;
-    padding: 2px;
-    width: 100%;
-    height: 100px;
-    margin-top: auto;
-    bottom: 0;
+  border: 1px dashed grey;
+  padding: 2px;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  bottom: 0;
 }
 
 .spotify-logo {
-    height: 32px;
-    width: 32px;
+  height: 32px;
+  width: 32px;
 }
 
 .side-bar-logo {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .spotify {
-    display: inline-block;
-    padding-left: 10px;
-    margin: 0px;
-    height: auto;
-    font-size: 32px;
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0px;
+  height: auto;
+  font-size: 32px;
 }
 
 .side-bar-title {
-    display: inline-block;
-    padding-left: 10px;
-    margin: 0px;
-    height: auto;
-    font-size: 20px; 
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0px;
+  height: auto;
+  font-size: 20px;
 }
 
 .header-logo {
-    height: 28px;
-    width: 28px;
-    margin-top: 20px;
-    margin-left: 10px;
+  height: 28px;
+  width: 28px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .button {
-    height: 36px;
-    width: 200px;
-    float: right;
-    border: none;
-    border-radius: 36px;
-    background-color:  rgb(10 6 28);
-    align-items: center;
-    margin-right: 20px;
+  height: 36px;
+  width: 150px;
+  border: none;
+  border-radius: 36px;
+  background-color: rgb(10 6 28);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .button-logo {
-    height: 28px;
-    width: 28px;
-    float: inline-start;
+  height: 28px;
+  width: 28px;
 }
 
 .button-text {
-    height: auto;
-    display: inline-block;
-    color: white;
-    margin-right: 80px;
+  height: auto;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
 
+.main-page-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.see-all {
+  float: left;
 }
 
 .album {
-    display: inline-block
+  display: inline-block;
 }
 
 .album-cover {
-    width: 220px;
-    height: 220px;
-    margin-left: 40px;
+  width: 220px;
+  height: 220px;
+  margin-left: 40px;
 }
 
 .album-title {
-    margin-left: 125px;
-    margin-top: 10px;
-    font-size: 25px;
-    font-weight: 700;
+  margin-left: 125px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .album-title-gunna {
-    margin-left: 40px;
-    margin-top: 5px;
-    margin-bottom: 26px;
-    font-size: 28px;
-    font-weight: 700;
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 26px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .artist-name {
-    margin-top: -20px;
-    margin-left: 108px;
+  margin-top: -20px;
+  margin-left: 108px;
 }
 
 .album-title-ls {
-    margin-left: 100px;
-    margin-top: 35px;
-    margin-bottom: 0px;
-    font-size: 25px;
-    font-weight: 700;
+  margin-left: 100px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .album-title-hazey {
-    margin-left: 50px;
-    margin-top: 10px;
-    font-size: 25px;
-    font-weight: 700;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .artist-name-hazey {
-    margin-top: -20px;
-    margin-left: 138px;
+  margin-top: -20px;
+  margin-left: 138px;
+}
+
+.album-title-dave {
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.artist-name-dave {
+  margin-top: -20px;
+  margin-left: 140px;
+}
+
+.album-title-dbe {
+  margin-left: 80px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.artist-name-adele {
+  margin-top: -20px;
+  margin-left: 120px;
+}
+
+.album-title-ed {
+  margin-left: 140px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
 }
