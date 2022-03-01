@@ -11,10 +11,6 @@ h4 {
   margin: 0;
 }
 
-/* .background-color {
-  background-color: #121212;
-} */
-
 body {
   margin: 0;
   padding: 0;
@@ -252,10 +248,10 @@ h4 {
 .play {
   position: absolute;
   display: none;
-  top: 40%;
-  width: 20px;
+  top: 45%;
+  width: 40px;
   margin: 0 auto;
-  left: 100px;
+  left: 150px;
   right: 0px;
   z-index: 100;
 }
