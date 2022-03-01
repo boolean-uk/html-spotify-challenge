@@ -272,6 +272,21 @@ main i {
   transition: all ease-in-out 0.2s;
 }
 
+.genre {
+  position: relative;
+}
+
+.genre-select li:hover .genre::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  border-bottom: 2px solid rgb(56, 101, 168);
+  width: 25px;
+  margin: 0 auto;
+}
+
 /* ------------------- */
 /* footer styling      */
 /* ------------------- */
@@ -314,4 +329,11 @@ footer i {
 
 .other-actions > * {
   margin-right: 1rem;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
 }
