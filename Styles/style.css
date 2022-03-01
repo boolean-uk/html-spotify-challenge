@@ -204,6 +204,7 @@ nav {
 }
 
 .music-list li {
+  margin: 5px;
   width: 150px;
 }
 
@@ -221,6 +222,11 @@ nav {
 
 .music-list a:hover .overlay {
   display: block;
+}
+
+.music-list a:hover .music-jacket {
+  background-color: black;
+  opacity: 0.5;
 }
 
 .music-list span {
@@ -294,7 +300,7 @@ footer input[type="range"]::-webkit-slider-thumb {
 }
 
 .playing-bar {
-  min-width: 50%;
+  min-width: 60%;
   gap: 8px;
 }
 
