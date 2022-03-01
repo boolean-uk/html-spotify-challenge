@@ -101,11 +101,6 @@ p {
   color: #ffffff;
 }
 
-.install-app-section {
-  padding-top: 450px;
-  padding-left: 10px;
-}
-
 /* Header  */
 
 .main-header-column-grid {
@@ -224,10 +219,15 @@ h2:hover {
 }
 
 .card {
-  height: 320px;
-  width: 232px;
+  height: 286px;
+  width: 208px;
   background-color: #282828;
   margin-left: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card:hover {
