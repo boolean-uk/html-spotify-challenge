@@ -9,7 +9,7 @@
     display: grid;
     grid-auto-flow: column;
   
-    gap: 2px;
+    gap: 15px;
 }
 .two-row-grid{
     display: grid;
@@ -108,7 +108,9 @@ a:hover{
     width: 100%;
     border: solid black;
 }
-
+header{
+    height: 85px;
+}
 
 .activity-container{
     width: 240px;
@@ -124,11 +126,13 @@ footer{
     position: fixed;
     bottom: 0;*/
 }
-.footer-left-side,
+.footer-left,
 .footer-right-side{
     width: 240px;
-    
 }
+.footer-left > * {
+    color:grey
+} 
 .footer-profile{
     height: 60px;
     width: 60px;
@@ -144,5 +148,34 @@ footer{
 .footer-icons{
     height: 20px;
     width: 20px;
+    
+}
+/* Middle of footer */
+
+.middle-footer{
+    padding: 20px;
 }
 
+.center-wrapper{
+    max-width: 300px;
+    margin: 0 auto;
+}
+#song-bar{
+    width: 923px;
+}
+
+.center-song-bar{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* End of Footer */
+#volume-bar{
+    width:100px ;
+}
+
+progress{
+    color: grey;
+}
+.footer-right-side{
+    padding-top: 50px;
+}
