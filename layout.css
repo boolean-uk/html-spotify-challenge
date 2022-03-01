@@ -130,7 +130,11 @@ main {
 }
 
 .pad-sm {
-    padding: 20px;
+    padding: 10px;
+}
+
+.margin-left-sm {
+    margin-left: 15px;
 }
 
 /* ---- layout ---- */
