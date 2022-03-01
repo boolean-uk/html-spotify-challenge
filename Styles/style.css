@@ -34,7 +34,7 @@ aside {
 }
 
 header {
-  height: 50px;
+  height: 70px;
   display: grid;
   justify-content: end;
   background-color: var(--sub-clr);
@@ -166,7 +166,7 @@ nav {
 }
 
 .nav-bar-container {
-  height: 70px;
+  height: 50px;
 }
 
 .nav-bar-container a {
@@ -181,7 +181,7 @@ nav {
 /* Music List */
 .music-list {
   padding: 8px;
-  height: 73vh;
+  height: calc(90vh - 50px - 70px);
   overflow: scroll;
 }
 
