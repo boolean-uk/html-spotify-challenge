@@ -4,6 +4,18 @@
     display: grid;
     grid-auto-rows: 1fr auto;
 }
+
+.two-column-grid__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 200px , 250px ));
+    
+}
+
 .border-blue {   
     border: 2px dashed blue;
 }
@@ -98,9 +110,19 @@
     place-items: right;
 }
 
+.seven-column-grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
 .center-grid {
     display: grid;
     place-items: center;
+}
+
+main {
+    overflow: clip;
+    overflow-y: scroll;
 }
 
 
