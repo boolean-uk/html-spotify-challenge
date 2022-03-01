@@ -36,7 +36,7 @@
 
     height: 100%;
     width: 100%;
-    background-color: $color-spotify-cookies;
+    background-color: rgba(206, 205, 205, 0.274);
     opacity: 0;
   }
 
@@ -50,20 +50,21 @@
     margin: 0rem 0 2rem 2rem;
 
     border-radius: 50%;
-    top: 7rem;
+    top: 8rem;
     right: 1rem;
 
     opacity: 0;
   }
 
-  &__overlay:hover {
-    opacity: 0.3;
+  &__overlay-container:hover &__overlay,
+  &__overlay-container:hover &__avatar {
+    transition: 0.4s;
+    opacity: 1;
   }
 
-  &__avatar:hover {
-    transition: 0.1s;
-    transform: scaleX(1.2) scaleY(1.2);
-    opacity: 1;
+  &__overlay-container:hover &__avatar {
+    transition: 0.9s;
+    top: 6rem;
   }
 
   section h2 {

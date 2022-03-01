@@ -340,7 +340,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #b3b3b3;
+  background-color: rgba(206, 205, 205, 0.274);
   opacity: 0;
 }
 
@@ -352,21 +352,22 @@
   background-color: #1db954;
   margin: 0rem 0 2rem 2rem;
   border-radius: 50%;
-  top: 7rem;
+  top: 8rem;
   right: 1rem;
   opacity: 0;
 }
 
-.main__overlay:hover {
-  opacity: 0.3;
+.main__overlay-container:hover .main__overlay,
+.main__overlay-container:hover .main__avatar {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
 }
 
-.main__avatar:hover {
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  -webkit-transform: scaleX(1.2) scaleY(1.2);
-          transform: scaleX(1.2) scaleY(1.2);
-  opacity: 1;
+.main__overlay-container:hover .main__avatar {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  top: 6rem;
 }
 
 .main section h2 {
