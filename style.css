@@ -10,7 +10,6 @@ header svg {
 
 header img {
     height: 30px;
-
 }
 
 
@@ -31,10 +30,24 @@ header h1 {
 } */
 
 
-/* nav {
+nav {
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 1;
+    margin-top: 70px;
+}
+
+
+header {
+    position: fixed;
+    /* bottom: 0; */
+    z-index: 1;
+}
+
+/* Tried to make the top part of the main section fixed, it worked but there's been width issue with it */
+
+/* .fixed-position {
+    position: fixed;
 } */
 
 .left-nav {

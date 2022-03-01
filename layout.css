@@ -52,6 +52,10 @@
     color: white;
 }
 
+.column-2 {
+    
+}
+
 /* .row-2 {
     height: 96px
 } */
@@ -121,8 +125,12 @@
 }
 
 main {
+}
+
+.scroll {
     overflow: clip;
     overflow-y: scroll;
+    
 }
 
 .gap-sm {
