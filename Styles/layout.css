@@ -23,6 +23,11 @@
   grid-auto-flow: column;
 }
 
+.grid-responsive__columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+}
+
 .centered {
   margin: 0 auto;
 }
