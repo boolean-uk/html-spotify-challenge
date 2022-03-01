@@ -86,11 +86,11 @@ p {
 }
 
 .install-app-section {
-  /* padding-top: 350px; */
+  padding-top: 450px;
+  padding-left: 10px;
 }
 
-main {
-}
+/* Header  */
 
 .main-header-column-grid {
   display: grid;
@@ -123,9 +123,6 @@ header {
   padding: 10px 50px 10px 50px;
   background-color: #000000;
   border-radius: 30%;
-}
-
-.user-profile {
 }
 
 /* Main Section - Recently Played  */
@@ -201,7 +198,7 @@ h4 {
 }
 
 .center-wrapper {
-  max-width: 320px;
+  max-width: 475px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
