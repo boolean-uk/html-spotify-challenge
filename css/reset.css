@@ -102,6 +102,7 @@ h3 {
     display: grid;
     grid-template-rows: auto;
     background-color: rgb(34, 37, 43);
+    overflow: scroll;
 }
 
 .upgrade-bar {
@@ -246,6 +247,16 @@ h3 {
     justify-content: center;
 }
 
-#volume {
+#song {
     width: 500px;
+}
+
+.volume-bar {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.volume-icon {
+    height: 20px;
+    width: 20px;
 }
