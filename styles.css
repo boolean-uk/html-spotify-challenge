@@ -192,7 +192,7 @@ h2 {
   color: #ffffff;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 h2:hover {
@@ -201,6 +201,12 @@ h2:hover {
 
 .see-all {
   color: #909090;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.see-all:hover {
+  text-decoration: underline;
 }
 
 .music-cards-section {
@@ -320,3 +326,33 @@ p {
 .time {
   color: white;
 }
+
+/* Play Hovering  */
+
+.wrapper {
+ position: relative;
+}
+
+.frame {
+    position: absolute;
+}
+
+.frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  background-color: lightseagreen;
+  opacity: 0.6;
