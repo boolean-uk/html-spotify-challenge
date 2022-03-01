@@ -213,11 +213,6 @@ h2:hover {
   background-color: #151515;
 }
 
-/* .music-card-main-row-grid {
-  display: grid;
-  grid-template-rows: auto;
-} */
-
 .music-cards-main-column-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
@@ -226,10 +221,6 @@ h2:hover {
 .music-card-grid {
   display: grid;
   grid-auto-flow: row;
-}
-
-.gap-medium {
-  /* gap: 30px; */
 }
 
 .card {
