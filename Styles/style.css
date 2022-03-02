@@ -29,32 +29,6 @@ footer {
   background-color: var(--third-clr);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 4px 0;
-  font-size: 0.8rem;
-}
-
-h2 {
-  margin-bottom: 4px;
-  color: var(--main-text-clr);
-}
-
-h3 {
-  margin: 0;
-  padding: 8px;
-  font-size: 1rem;
-}
-
 /* --- MAIN STYLES --- */
 /* Aside left menu bar*/
 aside a {
@@ -261,7 +235,6 @@ footer input[type="range"] {
   -webkit-appearance: none;
   background-color: var(--sub-text-clr);
   height: 4px;
-  max-width: 540px;
   border-radius: 10px;
 }
 
@@ -302,8 +275,4 @@ footer input[type="range"]::-webkit-slider-thumb {
 .playing-title span {
   color: var(--main-text-clr);
   font-weight: 600;
-}
-
-.playing-bar-icon-container {
-  min-width: 30%;
 }

@@ -11,3 +11,29 @@ body {
   max-height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 4px 0;
+  font-size: 0.8rem;
+}
+
+h2 {
+  margin-bottom: 4px;
+  color: var(--main-text-clr);
+}
+
+h3 {
+  margin: 0;
+  padding: 8px;
+  font-size: 1rem;
+}
