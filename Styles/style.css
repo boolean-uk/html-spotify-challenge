@@ -252,15 +252,17 @@ footer button {
   cursor: pointer;
 }
 
+footer p {
+  color: var(--main-text-clr);
+}
+
 footer input[type="range"] {
   overflow: hidden;
   -webkit-appearance: none;
   background-color: var(--sub-text-clr);
+  height: 4px;
+  max-width: 540px;
   border-radius: 10px;
-}
-
-.playing-bar > input[type="range"] {
-  width: 500px;
 }
 
 footer input[type="range"]::-webkit-slider-runnable-track {
@@ -283,6 +285,10 @@ footer input[type="range"]::-webkit-slider-thumb {
   padding: 8px;
 }
 
+.playing > a > img {
+  width: 32px;
+}
+
 .playing-title p:hover {
   text-decoration: underline;
   color: var(--main-text-clr);
@@ -296,10 +302,6 @@ footer input[type="range"]::-webkit-slider-thumb {
 .playing-title span {
   color: var(--main-text-clr);
   font-weight: 600;
-}
-
-.playing-bar {
-  min-width: 40%;
 }
 
 .playing-bar-icon-container {

@@ -365,23 +365,43 @@
       </div>
       <!-- playing bar -->
       <div class="playing-bar place-items-center gap-sm">
-        <div class="centered">
-          <div
-            class="playing-bar-icon-container grid-auto-flow__column place-items-center gap-sm"
-          >
-            <button>
-              <img src="Assets/Icon/shuffle.png" alt="shuffle icon" />
-            </button>
-            <button>
-              <img src="Assets/Icon/previous.png" alt="previous icon" />
-            </button>
-            <button><img src="Assets/Icon/play.png" alt="play icon" /></button>
-            <button><img src="Assets/Icon/skip.png" alt="skip icon" /></button>
-            <button>
-              <img src="Assets/Icon/repeat.png" alt="repeat icon" />
-            </button>
+        <div class="place-items-center gap-sm bd-green">
+          <div>
+            <ul
+              class="playing-bar-icon-container grid-auto-flow__column place-items-center bd-green"
+            >
+              <li>
+                <button>
+                  <img src="Assets/Icon/shuffle.png" alt="shuffle icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/previous.png" alt="previous icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/play.png" alt="play icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/skip.png" alt="skip icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/repeat.png" alt="repeat icon" />
+                </button>
+              </li>
+            </ul>
           </div>
-          <input type="range" min="1" max="100" value="" />
+          <div class="three-grid-column__expand-two align-items-center gap-sm">
+            <p>0:35</p>
+            <input type="range" min="1" max="10" value="" />
+            <p>4:35</p>
+          </div>
         </div>
       </div>
       <!-- option bar -->

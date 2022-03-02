@@ -52,13 +52,14 @@
   justify-content: start;
 }
 
+.justify-content-center {
+  display: grid;
+  justify-content: center;
+}
+
 .justify-content-end {
   display: grid;
   justify-content: end;
-}
-
-.centered {
-  margin: 0 auto;
 }
 
 /* --- GAP --- */
