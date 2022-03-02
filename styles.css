@@ -356,3 +356,32 @@ p {
 .time {
   color: white;
 }
+
+/* Media  */
+
+@media screen and (max-width: 1592px) {
+  .main-header-column-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+  }
+
+@media screen and (max-width: 1100px) {
+  .main-header-column-grid {
+        grid-template-columns: auto auto 1fr auto;
+  }
+
+  .upgrade {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .user-profile-grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+  .user-profile, .arrow-down-header {
+    display: none;
+  }
+}
