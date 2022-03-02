@@ -49,22 +49,23 @@ html {
     color: var(--text-color-dark-grey);
 }
 
-.no-border {
-    border: none;
-}
-
 .style-light-grey-small-bold {
     color: var(--text-color-light-grey);
     font-size: 0.8rem;
     font-weight: bold;
     margin: 0 20px;
 }
-.style-four {
+
+.style-font-size-normal {
     font-size: 1rem;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.no-border {
+    border: none;
 }
 
 a {
