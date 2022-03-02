@@ -1,0 +1,124 @@
+.auto-fit-column-spotify {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 2.5rem;
+}
+.auto-fit-rows-spotify {
+  display: grid;
+  grid-template-rows: repeat(2rem);
+}
+
+.auto-fit-column-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24rem);
+  grid-gap: 2rem;
+}
+
+.main {
+  // &__card-image-container {
+  //   width: 100%;
+  //   height: auto;
+
+  //   display: grid;
+  //   place-items: center;
+
+  //   overflow: hidden;
+  // }
+  padding-right: 3.5rem;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $color-spotify-cookies;
+  }
+
+  &__overlay-container {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(206, 205, 205, 0.274);
+    opacity: 0;
+  }
+
+  &__avatar {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.8rem;
+    background-color: #1db954;
+
+    margin: 0rem 0 2rem 2rem;
+
+    border-radius: 50%;
+    top: 8rem;
+    right: 1rem;
+
+    opacity: 0;
+  }
+
+  &__overlay-container:hover &__overlay,
+  &__overlay-container:hover &__avatar {
+    transition: 0.4s;
+    opacity: 1;
+  }
+
+  &__overlay-container:hover &__avatar {
+    transition: 0.9s;
+    top: 6rem;
+  }
+
+  section h2 {
+    font-size: 2.8rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    color: $color-spotify-cookies;
+  }
+}
+
+// STYLE SCROLLBAR CHROME
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(141, 11, 2);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, rgb(63, 0, 0));
+  border: 0.05rem solid rgb(0, 0, 0);
+  height: 1rem;
+
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(32, 2, 0);
+}
+
+// FOR FIREFOX
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: rgb(231, 3, 3) rgb(63, 0, 0);
+    scrollbar-width: thin;
+  }
+}
+
+@include respond(phone) {
+  .main {
+    padding-left: 2.5rem;
+  }
+}

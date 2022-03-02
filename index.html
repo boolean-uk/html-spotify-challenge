@@ -1,12 +1,1049 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/751b303552.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__arrow-left">
+          <img
+            src="./assets/img/footer_svgs/angle-left-solid.svg"
+            alt="left-svg"
+          />
+        </div>
+
+        <div class="header__arrow-right">
+          <img src="./assets/img/footer_svgs/angle-right-solid.svg" alt="" />
+        </div>
+        <div class="space"></div>
+        <div class="header__sign-up">
+          <a href="#"><h2>Sign Up</h2></a>
+        </div>
+
+        <div class="header__button-container">
+          <button class="header__button">Log In</button>
+        </div>
+        <div class="header__burger-svg">
+          <svg
+            fill="white"
+            role="img"
+            height="32"
+            width="32"
+            viewBox="0 0 16 16"
+            class="Svg-sc-1bi12j5-0 hDgDGI"
+          >
+            <path d="M1 3h14v1H1zm0 4h14v1H1zm0 4.001h14v1H1z"></path>
+            <path fill="none" d="M16 0v16H0V0z"></path>
+          </svg>
+        </div>
+      </header>
+
+      <nav class="navigation">
+        <div class="navigation__spotify-logo">
+          <a href="https://open.spotify.com/"
+            ><svg viewBox="0 0 1134 340">
+              <path
+                fill="white"
+                d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"
+              ></path></svg
+          ></a>
+        </div>
+
+        <ul class="navigation__side-navigation">
+          <li>
+            <a href="#">
+              <svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  fill="white"
+                  d="M21 22V7.174l-9.001-5.195L3 7.214V22h7v-7h4v7z"
+                ></path></svg
+              ><span class="nav-link">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  fill="white"
+                  d="M16.736 16.262A8.457 8.457 0 0019 10.5a8.5 8.5 0 10-3.779 7.067l4.424 5.18 1.521-1.299-4.43-5.186zM10.5 17C6.916 17 4 14.084 4 10.5S6.916 4 10.5 4 17 6.916 17 10.5 14.084 17 10.5 17z"
+                ></path></svg
+              ><span class="nav-link">Search</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+                <path
+                  fill="white"
+                  d="M14.617 3.893l-1.827.814 7.797 17.513 1.827-.813-7.797-17.514zM3 22h2V4H3v18zm5 0h2V4H8v18z"
+                ></path></svg
+              ><span class="nav-link">Your Library</span></a
+            >
+          </li>
+        </ul>
+
+        <div class="navigation__button">
+          <button type="button">
+            <div>
+              <svg
+                role="img"
+                height="12"
+                width="12"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg"
+              >
+                <path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path>
+                <path fill="none" d="M0 0h16v16H0z"></path>
+              </svg>
+            </div>
+          </button>
+          <span>Create Playlist</span>
+        </div>
+
+        <div class="navigation__heart">
+          <a href="#">
+            <div class="">
+              <svg
+                role="img"
+                height="12"
+                width="12"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+              >
+                <path fill="white" d="M0 0h16v16H0z"></path>
+                <path
+                  d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"
+                ></path>
+              </svg>
+              <span>Liked Songs</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="navigation__side-list">
+          <ul>
+            <li>Bad Manners</li>
+            <li>Madness</li>
+            <li>Selecter</li>
+            <li>The Specials</li>
+            <li>The Cramps</li>
+            <li>Joy Division</li>
+          </ul>
+        </div>
+
+        <div class="navigation__cookies-and-privacy">
+          <a
+            draggable="false"
+            href="https://www.spotify.com/legal/cookies-policy/"
+            target="_blank"
+            rel="noopener"
+            ><span class="Type__TypeElement">Cookies</span></a
+          ><a
+            draggable="false"
+            href="https://www.spotify.com/legal/privacy-policy/"
+            target="_blank"
+            rel="noopener"
+            ><span class="Type__TypeElement">Privacy</span></a
+          >
+        </div>
+
+        <div class="navigation__profile">
+          <div class="avatar">
+            <img src="/assets/img/profile.jpg" alt="profile image" />
+          </div>
+          <p>AlexDjangoX</p>
+        </div>
+      </nav>
+
+      <!-- <main class="main"></main> -->
+      <main class="main main-spotify">
+        <section class="main__section">
+          <h2 class="main__section-heading">Already Played Today</h2>
+
+          <ul class="auto-fit-column-spotify">
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f000000029e7c4227f91d4c521a6c5011"
+                      alt=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f000000029e7c4227f91d4c521a6c5011
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <!-- <a href="#">RAP GENERACJA</a> -->
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002058a8860a8412793fe30cc25"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002058a8860a8412793fe30cc25
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Dziewczyny mają głos!</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002ace564c739089bb9e8f10bce"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002ace564c739089bb9e8f10bce
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Alternatywna Polska</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002bff04a1746da08f03f7bd448"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002bff04a1746da08f03f7bd448
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">RADAR Polska</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f000000023a34d02b11101630e2ca2b36"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f000000023a34d02b11101630e2ca2b36
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Miejski chill</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002b999d30d43619e6350abe7fd"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002b999d30d43619e6350abe7fd
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">NA TOPIE</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f0000000260335f01dbbc86f608b51dcf"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f0000000260335f01dbbc86f608b51dcf
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">lofi beats</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002c7059110f5a17c6a5c353e2a"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002c7059110f5a17c6a5c353e2a
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">She Lost</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Talk generation X</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002e4eadd417a05b2546e866934"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002e4eadd417a05b2546e866934
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Played before</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f000000027103f3d3e6fe7651a23f3571"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f000000027103f3d3e6fe7651a23f3571
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Yesterday man</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f000000023462a4dbc851cd106d16491c"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f000000023462a4dbc851cd106d16491c
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Read all about it</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f000000024e69456c387cb4ac706807db"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f000000024e69456c387cb4ac706807db
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Why ?</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002af08d9b83ac6a07aaeec4975"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002af08d9b83ac6a07aaeec4975
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Till midnight</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002ef3ab38fa2318b25e2b8ef18"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002ef3ab38fa2318b25e2b8ef18
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Complete</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002c259795a2667032929288de0"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002c259795a2667032929288de0
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Taking over</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f00000002a321ef04b054f723b948d564"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f00000002a321ef04b054f723b948d564
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Seven more</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67706f0000000233f8e805b6f08f74c83a67f9"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67706f0000000233f8e805b6f08f74c83a67f9
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Go rapsody</a>
+                </h2>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+        <section class="main__section-people-interest">
+          <h2 class="main__section-heading">People of Interest</h2>
+          <ul class="auto-fit-column-large">
+            <li>
+              <div class="main__people-of-interest">
+                <div class="main__card-image-container">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.britannica.com/73/101873-050-D341E939/Bob-Marley-1978.jpg"
+                    alt=""
+                    class=""
+                    srcset="
+                      https://cdn.britannica.com/73/101873-050-D341E939/Bob-Marley-1978.jpg
+                    "
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Bob Marley</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__people-of-interest">
+                <div class="main__card-image-container">
+                  <img
+                    loading="lazy"
+                    src="https://i2-prod.mylondon.news/incoming/article22755796.ece/ALTERNATES/s615/1_Madness-Teenage-Cancer-Trust.jpg"
+                    alt=""
+                    class=""
+                    srcset="
+                      https://i2-prod.mylondon.news/incoming/article22755796.ece/ALTERNATES/s615/1_Madness-Teenage-Cancer-Trust.jpg
+                    "
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Suggs</a>
+                </h2>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+        <section class="main__section">
+          <h2 class="main__section-heading">Recomended for you</h2>
+
+          <ul class="auto-fit-column-spotify">
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67616d0000b27303e1c1fcf5e8d3101eb2e377"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67616d0000b27303e1c1fcf5e8d3101eb2e377
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Seven days</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67616d0000b27363cdde830fd1d987acd70d5c"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67616d0000b27363cdde830fd1d987acd70d5c
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Only no</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67616d0000b27321de308b12c39e7e426c41cc"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67616d0000b27321de308b12c39e7e426c41cc
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">The stream</a>
+                </h2>
+              </figcaption>
+            </li>
+            <li>
+              <div class="main__card">
+                <div class="main__overlay-container">
+                  <div class="main__card-image-container">
+                    <img
+                      loading="lazy"
+                      src="https://lite-images-i.scdn.co/image/ab67616d0000b2730549faa88582845705ed7fa3"
+                      alt=""
+                      class=""
+                      srcset="
+                        https://lite-images-i.scdn.co/image/ab67616d0000b2730549faa88582845705ed7fa3
+                      "
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+
+                  <div class="main__overlay"></div>
+
+                  <div class="main__avatar">
+                    <img
+                      src="/assets/img/footer_svgs/play-solid.svg"
+                      alt="play-svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="main__card-fig-caption">
+                <h2 class="main__card-fig-caption--heading">
+                  <a href="#">Rapid progress</a>
+                </h2>
+              </figcaption>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__avatar">
+          <img src="/assets/img/profile.jpg" alt="profile image" />
+        </div>
+        <div class="footer__avatar-label">
+          <span>AlexDjangoX</span>
+          <p>In the Jungle</p>
+        </div>
+        <div class="space"></div>
+
+        <div class="footer__player-container">
+          <div class="footer__svg-audio-buttons">
+            <div class="footer__svg">
+              <img
+                src="/assets/img/footer_svgs/shuffle-solid.svg"
+                alt="shuffle-svg"
+              />
+            </div>
+            <div class="footer__svg">
+              <img
+                src="/assets/img/footer_svgs/backward-step-solid.svg"
+                alt="backward-svg"
+              />
+            </div>
+
+            <div class="footer__svg">
+              <img
+                src="/assets/img/footer_svgs/circle-play-regular.svg"
+                alt="circle-svg"
+              />
+            </div>
+            <div class="footer__svg">
+              <img
+                src="/assets/img/footer_svgs/forward-step-solid.svg"
+                alt="forward-svg"
+              />
+            </div>
+            <div class="footer__svg">
+              <img
+                src="/assets/img/footer_svgs/rotate-right-solid.svg"
+                alt="rotate-svg"
+              />
+            </div>
+          </div>
+          <div id="audio-player-slider">
+            <span class="time">0:25</span>
+            <input type="range" max="100" value="0" />
+            <span class="time">4:32</span>
+          </div>
+        </div>
+        <div class="space"></div>
+      </footer>
+    </div>
+  </body>
 </html>
