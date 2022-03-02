@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 1140px) {
     .footer__player-section input[type="range"] {
-        width: 100%;
+        width: 250px;
       }
 }
 
@@ -116,14 +116,29 @@
     .left-menu__install-app-btn {
         margin-left: 8px;
     }
+
+    .footer__player-section input[type="range"] {
+        width: 100%;
+      }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 840px) {
     .footer__collapsible-item {
         display: none;
     }
 
     .three-column-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .three-column__expand-two {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__left-section,
+    .footer__right-section {
+        display: none;
     }
 }
