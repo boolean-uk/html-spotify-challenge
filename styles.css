@@ -262,6 +262,7 @@ h4 {
 .itemsContainer:hover .play {
   display: block;
 }
+
 .play {
   position: absolute;
   display: none;
@@ -385,3 +386,21 @@ p {
     display: none;
   }
 }
+
+@media screen and (max-width: 1592px) {
+ .left-menu-icons-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+  
+@media screen and (max-width: 938px) {
+  .left-menu-icons-grid {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+.logo-text {
+    display: none;
+  }
