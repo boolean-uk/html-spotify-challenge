@@ -81,14 +81,6 @@ a {
 }
 
 /* LEFT MENU */
-.header {
-    background-color: var(--primary-color-header);
-    position: sticky;
-    top: 0;
-    opacity: 98%;
-    z-index: 100;
-}
-
 #logo {
     width: 40px;
     margin: 20px 0 0 18px;
@@ -99,6 +91,14 @@ a {
 }
 
 /* MAIN CONTAINER */
+.header {
+    background-color: var(--primary-color-header);
+    position: sticky;
+    top: 0;
+    opacity: 98%;
+    z-index: 100;
+}
+
 .scrollbar::-webkit-scrollbar {
     width: 18px;
 }
@@ -210,7 +210,7 @@ input[type="range"] {
     text-align: left;
 }
 
-.crea-playlist-button p {
+.crea-playlist-button span {
     display: grid;
     padding: 4px 10px;
 }
@@ -232,8 +232,8 @@ input[type="range"] {
     margin: 10px 20px 10px 20px;
 }
 
-.installa-app-button p,
-.profile-button p {
+.installa-app-button span,
+.profile-button span {
     padding-left: 10px;
 }
 

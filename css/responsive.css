@@ -88,7 +88,7 @@ footer h4:hover {
         grid-template-rows: auto auto 1fr auto;
     }
 
-    .left-menu p,
+    .left-menu span,
     h1,
     h2,
     .playlist {
