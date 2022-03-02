@@ -412,7 +412,7 @@ button {
     .box_grid {
       grid-template-columns: repeat(5, 1fr);
     }
-    .box:last-child {
+    .last_child_display_none:last-child {
         display: none;
     }
 }
@@ -421,7 +421,7 @@ button {
     .box_grid {
       grid-template-columns: repeat(4, 1fr);
     }
-    .box:nth-last-child(2) {
+    .last_child_display_none:nth-last-child(2) {
         display: none;
     }
 }
@@ -430,7 +430,7 @@ button {
     .box_grid {
       grid-template-columns: repeat(3, 1fr);
     }
-    .box:nth-last-child(3) {
+    .last_child_display_none:nth-last-child(3) {
         display: none;
     }
 }
@@ -439,7 +439,7 @@ button {
     .box_grid {
       grid-template-columns: repeat(2, 1fr);
     }
-    .box:nth-last-child(4) {
+    .last_child_display_none:nth-last-child(4) {
         display: none;
     }
 }
