@@ -1,0 +1,114 @@
+:root {
+  --footer-height: 96px;
+
+  --dark-tint-000: #212121;
+  --dark-tint-050: #111111;
+  --dark-tint-100: #000000;
+
+  --light-tint-000: #ffffff;
+  --light-tint-010: #e6e6e6;
+  --light-tint-030: #cccccc;
+}
+
+/* BASE STYLES */
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul[class] {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* UTILITY STYLES */
+
+.side-pad-sm {
+  padding: 0 0.25rem;
+}
+
+.side-pad-md {
+  padding: 0 0.5rem;
+}
+
+.side-pad-lg {
+  padding: 0 1rem;
+}
+
+.top-shadow-light {
+  box-shadow: inset 0px 1px 2px 1px rgba(255, 255, 255, 0.15);
+}
+
+/* IMAGE STYLES */
+
+.frame-lg {
+  max-width: 72px;
+  height: auto;
+}
+
+/* MAIN STYLES */
+
+.main-layout {
+  height: calc(100vh - var(--footer-height));
+
+  background-color: var(--dark-tint-000);
+}
+
+.main-navigation {
+  width: 275px;
+  padding-top: 56px;
+
+  background-color: var(--dark-tint-050);
+
+  line-height: 1;
+  color: var(--light-tint-000);
+}
+
+.main-navigation i {
+  font-size: 1.5rem;
+}
+
+.main-navigation span {
+  font-size: 0.875rem;
+}
+
+.main-footer {
+  height: var(--footer-height);
+
+  background-color: var(--dark-tint-000);
+
+  color: var(--light-tint-030);
+}
+
+.current-song-section a:hover {
+  color: var(--light-tint-000);
+  text-decoration: underline;
+}
+
+.current-song-section i {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.current-song-section i:hover {
+  color: var(--light-tint-000);
+}
+
+.time-text {
+  font-size: 0.675rem;
+}
+
+.icon-lg {
+  font-size: 1.5rem;
+}

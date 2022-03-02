@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/layouts.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="two-column-grid__expand-two main-layout">
+      <header class="main-navigation">
+        <div class="stack-xl">
+          <nav class="side-pad-lg">
+            <ul class="stack-lg nav-list">
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-ss-home"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-bs-search"></i>
+                  <span>Search</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-ss-book-alt"></i>
+                  <span>Your Library</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="side-pad-lg">
+            <ul class="stack-lg nav-list">
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-ss-add"></i>
+                  <span>Create Playlist</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-bs-heart"></i>
+                  <span>Liked Songs</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="two-column-grid__expand-two align-items:center gap-lg"
+                  href="#"
+                >
+                  <i class="fi fi-ss-wifi-alt"></i>
+                  <span>Your Episodes</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main></main>
+    </div>
+    <footer
+      class="three-column-grid__expand-two align-items:center side-pad-lg main-footer top-shadow-light"
+    >
+      <div class="current-song-section">
+        <ul class="grid-auto__column align-items:center gap-lg nav-list">
+          <li>
+            <a href="#">
+              <div class="frame-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="Current song's album cover."
+                />
+              </div>
+            </a>
+          </li>
+          <li>
+            <div>
+              <a href="#">You</a>
+            </div>
+            <div>
+              <a href="#">Mk.gee</a>
+            </div>
+          </li>
+          <li>
+            <i class="fi fi-bs-heart"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="song-control-section">
+        <div class="center-wrapper">
+          <div>
+            <ul
+              class="grid-auto__column justify-content:center align-items:center gap-lg controls-list"
+            >
+              <li><i class="fi fi-bs-angle-double-left"></i></li>
+              <li><i class="fi fi-ss-play icon-lg"></i></li>
+              <li><i class="fi fi-bs-angle-double-right"></i></li>
+            </ul>
+          </div>
+          <div class="three-column-grid__expand-two gap-sm">
+            <span class="time-text">01:32</span>
+            <input
+              type="range"
+              id="current-time-lapse"
+              name="current-time-lapse"
+              min="0"
+              max="10"
+            />
+            <span class="time-text">03:24</span>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </footer>
+  </body>
 </html>
