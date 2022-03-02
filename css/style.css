@@ -39,6 +39,14 @@ li {
     width: 135px
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
 /* I USE THIS FOR VISUALISING THE LAYOUT */
 /* .border {
     border: 1px dashed turquoise;
@@ -323,6 +331,7 @@ li {
 
 .player_artist {
     font-size: 12px;
+    display: block;
 }
 
 .player_left_icons {
