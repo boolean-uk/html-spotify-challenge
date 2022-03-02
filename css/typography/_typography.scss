@@ -1,0 +1,30 @@
+.font-md-grayed {
+  color: $color-darkgrey;
+  font-size: 1.6rem;
+}
+.font-lg-grayed {
+  color: $color-darkgrey;
+  font-size: 1.8rem;
+}
+
+.font-sm-white {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.font-sm-grayed {
+  color: $color-darkgrey;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.font-xsm-grayed {
+  color: $color-darkgrey;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.line-height-md {
+  line-height: 1.8rem;
+}
