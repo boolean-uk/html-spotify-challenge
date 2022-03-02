@@ -31,7 +31,7 @@
             <li>
               <a
                 href="#"
-                class="menu-bar two-grid-column__expand-two align-items-center"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
               >
                 <img src="/Assets/Icon/home.svg" alt="home" />
                 <p>Home</p></a
@@ -40,7 +40,7 @@
             <li>
               <a
                 href="#"
-                class="menu-bar two-grid-column__expand-two align-items-center"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
               >
                 <img src="/Assets/Icon/search.svg" alt="search" />
                 <p>Search</p></a
@@ -49,7 +49,7 @@
             <li>
               <a
                 href="#"
-                class="menu-bar two-grid-column__expand-two align-items-center"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
               >
                 <img src="/Assets/Icon/libreria.svg" alt="library" />
                 <p>Your Library</p></a
@@ -64,28 +64,28 @@
               <li>
                 <a
                   href="#"
-                  class="menu-bar two-grid-column__expand-two align-items-center"
+                  class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
                   ><button>+</button>
                   <p>Create Playlist</p></a
                 >
               </li>
               <li>
-                <a href="#" class="menu-bar align-items-center">
+                <a href="#" class="menu-bar align-items-center gap-sm">
                   Create Playlist</a
                 >
               </li>
               <li>
-                <a href="#" class="menu-bar align-items-center"
+                <a href="#" class="menu-bar align-items-center gap-sm"
                   >Create Playlist</a
                 >
               </li>
               <li>
-                <a href="#" class="menu-bar align-items-center"
+                <a href="#" class="menu-bar align-items-center gap-sm"
                   >Create Playlist</a
                 >
               </li>
               <li>
-                <a href="#" class="menu-bar align-items-center"
+                <a href="#" class="menu-bar align-items-center gap-sm"
                   >Create Playlist</a
                 >
               </li>
@@ -96,7 +96,7 @@
           <div>
             <a
               href="#"
-              class="download-container two-grid-column__expand-two align-items-center"
+              class="download-container two-grid-column__expand-two align-items-center gap-sm"
             >
               <img
                 src="/Assets/Icon/download.svg"
@@ -167,7 +167,7 @@
         <!-- Music List -->
         <div class="music-list">
           <!-- Recently Played -->
-          <section class="recently-played">
+          <section class="recently-played gap-md">
             <h2>Recently Played</h2>
             <ul class="six-grid-column">
               <li>
@@ -274,7 +274,7 @@
             </ul>
           </section>
           <!-- Made For You -->
-          <section class="made-for-you">
+          <section class="made-for-you gap-md">
             <div class="justify-content-start">
               <h2>Made for You</h2>
               <p class="music-description">
@@ -308,7 +308,7 @@
             </ul>
           </section>
           <!-- Popular Artists -->
-          <section class="popular-artists">
+          <section class="popular-artists gap-md">
             <div class="justify-content-start">
               <h2>Popular Artists</h2>
               <p>
@@ -344,9 +344,11 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="three-grid-column__expand-two place-items-center">
+    <footer class="three-grid-column__expand-two place-items-center gap-bg">
       <!-- playing section -->
-      <div class="playing three-grid-column__expand-two align-items-center">
+      <div
+        class="playing three-grid-column__expand-two align-items-center gap-sm"
+      >
         <a href="#"><img src="/Assets/Music/sinister.jpeg" alt="sinister" /></a>
         <div class="playing-title">
           <a href="#"
@@ -354,7 +356,7 @@
           >
           <a href="#"><p>Brano Nome</p></a>
         </div>
-        <div class="grid-auto-flow__column icon-container">
+        <div class="icon-container grid-auto-flow__column gap-sm">
           <button><img src="Assets/Icon/heart.png" alt="like icon" /></button>
           <button>
             <img src="Assets/Icon/folder.png" alt="folder icon" />
@@ -362,26 +364,28 @@
         </div>
       </div>
       <!-- playing bar -->
-      <div class="playing-bar place-items-center">
-        <div
-          class="playing-bar-icon-container grid-auto-flow__column place-items-center"
-        >
-          <button>
-            <img src="Assets/Icon/shuffle.png" alt="shuffle icon" />
-          </button>
-          <button>
-            <img src="Assets/Icon/previous.png" alt="previous icon" />
-          </button>
-          <button><img src="Assets/Icon/play.png" alt="play icon" /></button>
-          <button><img src="Assets/Icon/skip.png" alt="skip icon" /></button>
-          <button>
-            <img src="Assets/Icon/repeat.png" alt="repeat icon" />
-          </button>
+      <div class="playing-bar place-items-center gap-sm">
+        <div class="centered">
+          <div
+            class="playing-bar-icon-container grid-auto-flow__column place-items-center gap-sm"
+          >
+            <button>
+              <img src="Assets/Icon/shuffle.png" alt="shuffle icon" />
+            </button>
+            <button>
+              <img src="Assets/Icon/previous.png" alt="previous icon" />
+            </button>
+            <button><img src="Assets/Icon/play.png" alt="play icon" /></button>
+            <button><img src="Assets/Icon/skip.png" alt="skip icon" /></button>
+            <button>
+              <img src="Assets/Icon/repeat.png" alt="repeat icon" />
+            </button>
+          </div>
+          <input type="range" min="1" max="100" value="" />
         </div>
-        <input type="range" min="1" max="100" value="" />
       </div>
       <!-- option bar -->
-      <div class="option-bar grid-auto-flow__column align-items-center">
+      <div class="option-bar grid-auto-flow__column align-items-center gap-sm">
         <button><img src="Assets/Icon/list.png" alt="list icon" /></button>
         <button>
           <img src="Assets/Icon/monitor.png" alt="monitor icon" />

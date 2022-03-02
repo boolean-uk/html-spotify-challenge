@@ -14,20 +14,19 @@ main {
 }
 
 aside {
-  min-width: 250px;
+  min-width: 240px;
   color: white;
   background-color: black;
 }
 
 header {
-  height: 70px;
+  height: 72px;
   background-color: var(--sub-clr);
 }
 
 footer {
   height: 10vh;
   background-color: var(--third-clr);
-  gap: 20px;
 }
 
 ul {
@@ -41,12 +40,12 @@ a {
 }
 
 p {
-  margin: 3px 0;
+  margin: 4px 0;
   font-size: 0.8rem;
 }
 
 h2 {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: var(--main-text-clr);
 }
 
@@ -79,24 +78,23 @@ aside a:hover {
 }
 
 .menu-bar {
-  gap: 5px;
   padding-left: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .menu-bar:hover {
-  border-left: 3px solid var(--accent-clr);
+  border-left: 4px solid var(--accent-clr);
 }
 
 .menu-bar img {
-  width: 25px;
+  width: 24px;
 }
 
 .menu-bar button {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   font-size: 1.5rem;
   color: black;
@@ -105,22 +103,21 @@ aside a:hover {
 }
 
 .download-container {
-  margin-bottom: 5px;
-  gap: 5px;
+  margin-bottom: 4px;
 }
 
 .download-icon {
-  width: 15px;
+  width: 16px;
 }
 
 .profile-container {
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: var(--sub-text-clr) 1px solid;
 }
 
 .profile-container img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background-color: var(--sub-text-clr);
   border: none;
   border-radius: 50%;
@@ -132,12 +129,12 @@ aside a:hover {
 
 /* Main */
 .main-container {
-  width: calc(100vw - 250px);
+  width: calc(100vw - 240px);
   background-color: var(--main-clr);
 }
 
 .main-container img {
-  max-width: 150px;
+  max-width: 160px;
 }
 
 header a {
@@ -146,7 +143,7 @@ header a {
   font-size: 0.8rem;
   color: var(--main-text-clr);
   border: var(--sub-text-clr) 1px solid;
-  border-radius: 30px;
+  border-radius: 32px;
 }
 
 header a:hover {
@@ -159,7 +156,7 @@ nav {
 }
 
 .nav-bar-container {
-  height: 50px;
+  height: 54px;
 }
 
 .nav-bar-container a {
@@ -188,15 +185,14 @@ nav {
 
 /* Music List */
 .music-list {
-  height: calc(90vh - 50px - 70px);
-  padding: 0 10px;
+  height: calc(90vh - 54px - 72px);
+  padding: 0 8px;
   overflow: scroll;
 }
 
 .music-list section {
   display: grid;
-  gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 
 .music-list p {
@@ -206,8 +202,8 @@ nav {
 }
 
 .music-list li {
-  margin: 5px;
-  width: 150px;
+  margin: 8px;
+  width: 160px;
 }
 
 .music-list a {
@@ -264,11 +260,11 @@ footer input[type="range"] {
 }
 
 .playing-bar > input[type="range"] {
-  min-width: 100%;
+  width: 500px;
 }
 
 footer input[type="range"]::-webkit-slider-runnable-track {
-  height: 3px;
+  height: 4px;
   -webkit-appearance: none;
   color: var(--accent-clr);
 }
@@ -276,16 +272,15 @@ footer input[type="range"]::-webkit-slider-runnable-track {
 footer input[type="range"]::-webkit-slider-thumb {
   width: 0.1px;
   -webkit-appearance: none;
-  height: 3px;
+  height: 4px;
   cursor: pointer;
   background: #434343;
-  box-shadow: -500px 0 0 500px var(--accent-clr);
+  box-shadow: -400px 0 0 400px var(--accent-clr);
 }
 
 .playing,
 .option-bar {
-  padding: 10px;
-  gap: 10px;
+  padding: 8px;
 }
 
 .playing-title p:hover {
@@ -303,16 +298,10 @@ footer input[type="range"]::-webkit-slider-thumb {
   font-weight: 600;
 }
 
-.icon-container {
-  gap: 8px;
-}
-
 .playing-bar {
   min-width: 40%;
-  gap: 8px;
 }
 
 .playing-bar-icon-container {
   min-width: 30%;
-  gap: 10px;
 }
