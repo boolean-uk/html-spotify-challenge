@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select,
+a {
+  font: inherit;
+}
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-dark: 18, 18, 18;
+  --clr-grey: 189, 193, 197;
+  --clr-grey-dark: 32, 33, 37;
+  --clr-white: 255, 255, 255;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.two-col-grid__expand-one {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.two-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.three-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.four-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+}
+
+.five-row-grid__expand-four {
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr auto;
+}
+
+.grid-auto-flow {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+/* images */
+
+.img-sm {
+  height: 50px;
+}
+
+/* typography */
+
+.fs-lg {
+  font-size: 3rem;
+}
+
+/* ------------------- */
+/* Main styling        */
+/* ------------------- */
+
+/* general styling */
+
+main {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+a,
+body {
+  background-color: rgba(var(--clr-dark));
+
+  color: rgba(var(--clr-grey));
+  font-family: montserrat;
+  font-size: 1rem;
+}
+
+h1 {
+  padding-top: 0.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo {
+  color: rgba(var(--clr-white));
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.spotify__container {
+  display: grid;
+  grid-template-columns: 25ch 1fr;
+}
+
+/* ------------------- */
+/* left section        */
+/* ------------------- */
+
+aside {
+  padding-left: 1rem;
+}
+
+.left-section a:hover {
+  color: rgba(var(--clr-white));
+}
+
+.logo__container {
+  margin: 2rem 1rem 2rem 0;
+  color: rgba(var(--clr-white));
+}
+
+.stack > * + * {
+  margin-top: 1rem;
+}
+
+.profile__shortcut {
+  margin-bottom: 2rem;
+}
+
+.settings {
+  padding-bottom: 0.5rem;
+  /* border-bottom: rgba(var(--clr-grey)) 1px solid; */
+}
+
+.user {
+  padding-top: 0.5rem;
+}
+
+/* ------------------- */
+/* main section        */
+/* ------------------- */
+
+/* log in header */
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  background-color: rgba(var(--clr-dark));
+  color: rgba(var(--clr-white));
+  border: 0.1rem solid rgba(var(--clr-white));
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login-container {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(43, 65, 98, 1) 72%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+
+/* cards */
+
+.song-mix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 15rem));
+  gap: 1rem;
+}
+
+.song-mix__card {
+  border-radius: 0.75rem;
+  aspect-ratio: 1 / 1.25;
+  background-color: rgba(var(--clr-grey-dark));
+  position: relative;
+}
+
+.song-mix__info {
+  align-self: end;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+}
+
+main img {
+  border-radius: 0.75rem;
+  width: 80%;
+  margin: 1rem auto auto auto;
+}
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+h2 {
+  margin-block: 3rem;
+}
+
+/* hover effects */
+
+.song-mix__card:hover {
+  background-color: rgba(var(--clr-white), 0.2);
+  transition: all ease-in-out 0.2s;
+}
+
+.overlay__btn {
+  color: green;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  opacity: 0;
+}
+main i {
+  font-size: 3rem;
+}
+
+.song-mix__card:hover .overlay__btn {
+  top: 40%;
+  opacity: 1;
+  transition: all ease-in-out 0.2s;
+}
+
+.genre {
+  position: relative;
+}
+
+.genre-select li:hover .genre::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  border-bottom: 2px solid rgb(56, 101, 168);
+  width: 25px;
+  margin: 0 auto;
+}
+
+/* ------------------- */
+/* footer styling      */
+/* ------------------- */
+
+footer {
+  width: 100vw;
+  height: 150px;
+  font-size: 0.8rem;
+}
+
+footer i {
+  color: rgba(var(--clr-white));
+  font-size: 1.2rem;
+}
+
+.footer__container {
+  padding-top: 2.5rem;
+}
+
+.music-control {
+  margin-inline: auto;
+  color: rgba(var(--clr-white));
+}
+.music-control input {
+  width: 500px;
+}
+
+.music-control__icons {
+  text-align: center;
+}
+.music-control__icons > * {
+  margin-inline: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.current-song > * {
+  margin-left: 1rem;
+}
+
+.other-actions > * {
+  margin-right: 1rem;
+}
