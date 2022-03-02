@@ -27,6 +27,11 @@ ul[class] {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /* UTILITY STYLES */
 
 .side-pad-sm {
@@ -43,6 +48,13 @@ ul[class] {
 
 .top-shadow-light {
   box-shadow: inset 0px 1px 2px 1px rgba(255, 255, 255, 0.15);
+}
+
+/* IMAGE STYLES */
+
+.frame-lg {
+  max-width: 72px;
+  height: auto;
 }
 
 /* MAIN STYLES */
@@ -75,4 +87,20 @@ ul[class] {
   height: var(--footer-height);
 
   background-color: var(--dark-tint-000);
+
+  color: var(--light-tint-030);
+}
+
+.current-song-section a:hover {
+  color: var(--light-tint-000);
+  text-decoration: underline;
+}
+
+.current-song-section i {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.current-song-section i:hover {
+  color: var(--light-tint-000);
 }
