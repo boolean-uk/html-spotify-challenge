@@ -10,9 +10,42 @@
   --light-tint-030: #cccccc;
 }
 
+/* BASE STYLES */
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul[class] {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+/* UTILITY STYLES */
+
+.side-pad-sm {
+  padding: 0 0.25rem;
+}
+
+.side-pad-md {
+  padding: 0 0.5rem;
+}
+
+.side-pad-lg {
+  padding: 0 1rem;
+}
+
 .top-shadow-light {
   box-shadow: inset 0px 1px 2px 1px rgba(255, 255, 255, 0.15);
 }
+
+/* MAIN STYLES */
 
 .main-layout {
   height: calc(100vh - var(--footer-height));
@@ -22,8 +55,20 @@
 
 .main-navigation {
   width: 275px;
+  padding-top: 56px;
 
   background-color: var(--dark-tint-050);
+
+  line-height: 1;
+  color: var(--light-tint-000);
+}
+
+.main-navigation i {
+  font-size: 1.5rem;
+}
+
+.main-navigation span {
+  font-size: 0.875rem;
 }
 
 .main-footer {

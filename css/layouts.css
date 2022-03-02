@@ -1,6 +1,30 @@
+/* LAYOUTS */
+
+.stack-sm > * + * {
+  margin-top: 0.25rem;
+}
+
+.stack-md > * + * {
+  margin-top: 0.5rem;
+}
+
+.stack-lg > * + * {
+  margin-top: 1rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 2rem;
+}
+
+/* GRID LAYOUTS */
+
 .two-column-grid__expand-two {
   display: grid;
   grid-template-columns: auto 1fr;
+}
+
+.align-items\:center {
+  align-items: center;
 }
 
 .gap-sm {
