@@ -104,3 +104,11 @@ img {
 .current-song-section i:hover {
   color: var(--light-tint-000);
 }
+
+.time-text {
+  font-size: 0.675rem;
+}
+
+.icon-lg {
+  font-size: 1.5rem;
+}
