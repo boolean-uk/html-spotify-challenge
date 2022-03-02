@@ -1,7 +1,5 @@
 /* RESETS */
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
     margin: 0;
 
@@ -10,13 +8,12 @@
 
 /* ------------------------------------MAIN STYLES----------------------------------------------- */
 :root {
-    --main-text-color: #acacac;
+    --main-text-color: white;
+    --secondary-text-color: #acacac;
     --footer-BG: #181818;
 }
 
 body {
-    height: 100vh;
-
     overflow: overlay;
 }
 
@@ -58,17 +55,17 @@ a {
 }
 
 .left-menu__item {
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
 
     margin-bottom: 10px;
 }
 
 .left-menu__item:hover {
-    color: white;
+    color: var(--main-text-color);
 }
 
 .left-menu__item:hover .small-frame{
-    background-color: white;
+    background-color: var(--main-text-color);
 }
 
 .left-menu__item--bold {
@@ -82,7 +79,7 @@ a {
     width: 24px;
     height: 24px;
 
-    background-color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
 }
 
 .small-frame__gradient {
@@ -112,13 +109,13 @@ footer {
 
     margin-right: 16px;
 
-    color: white;
+    color: var(--main-text-color);
     font-size: 0.8rem;
     font-weight: 500;
 }
 
 .footer__track {
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
     font-size: 0.6rem;
 }
 
@@ -131,11 +128,11 @@ footer {
     background-color: var(--footer-BG);
     border-style: none;
 
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
 }
 
 .footer__option-btn:hover {
-    color: white;
+    color: var(--main-text-color);
 }
 
 input[type="range"] {
@@ -174,7 +171,7 @@ input[type="range"]::-webkit-slider-thumb:hover,
     height: 13px;
     width: 13px;
     border-radius: 50%;
-    background: white;
+    background: var(--main-text-color);
     box-shadow: 0 0 3px 0 #555;
 }
   /* ---------------------------------------------- */
@@ -187,7 +184,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 }
   
 .footer__player-section {
-      color: var(--main-text-color);
+      color: var(--secondary-text-color);
       font-size: 0.6rem;
       font-weight: 600;
 }
@@ -202,7 +199,7 @@ input[type=range]::-webkit-slider-runnable-track  {
       height: 32px;
       width: 32px;
 
-      background-color: white;
+      background-color: var(--main-text-color);
       border-radius: 50%;
 }
 
@@ -238,7 +235,7 @@ header {
     width: 32px;
     
     background-color: #0f031b;
-    color: white;
+    color: var(--main-text-color);
 
     border-radius: 50%;
     border-style: none;
@@ -257,7 +254,7 @@ header {
     font-family: inherit;
     font-size: 0.8rem;
     font-weight: 700;
-    color: white;
+    color: var(--main-text-color);
 }
 
 /* ---------------------------------MAIN SECTION------------------------------------------ */
@@ -271,7 +268,7 @@ header {
     background: #2c0b4b;
     background: linear-gradient(180deg, #2c0b4b 0%, rgba(18,18,18,1) 40%, rgba(18,18,18,1) 100%);  
     
-    color: white;
+    color: var(--main-text-color);
 
     /* overflow: auto; */
     /* overflow-y: scroll; */
@@ -414,6 +411,7 @@ header {
 
 
 /* -------------------------UTILITY STYLES------------------------------ */
+
 /* ------------------------NEEDS TO BE FIXED---------------------------- */
 /*      Currently the scroll bar goes over the footer, if I add the    
  scroll bar to the main-section only then no styles are applied to it    */
