@@ -238,6 +238,10 @@ footer input[type="range"] {
   border-radius: 10px;
 }
 
+.playing-bar input[type="range"] {
+  width: 100%;
+}
+
 footer input[type="range"]::-webkit-slider-runnable-track {
   height: 4px;
   -webkit-appearance: none;
