@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Spotify</title>
+    <title>Operafy</title>
     <link rel="stylesheet" href="/css/grids.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
@@ -22,7 +22,7 @@
             <div></div>
             <div class="three-columns__expand-three">
                 <img id="logo" src="/assets/img/logo.png" alt="logo">
-                <h1>Spotify</h1>
+                <h1>Operafy</h1>
                 <div></div>
             </div>
             <div></div>
@@ -80,7 +80,7 @@
 
         <button  class="three-columns__expand-three dashed-border-green profile-button">
             <img class="icon-small profile-outline" src="/assets/img/profile.svg" alt="profile-pic">
-            <p><span class="style-one">Alex90Jennings</span></p>
+            <p><span class="style-white-bold">Alex90Jennings</span></p>
             <div></div>
         </button>
 
@@ -193,7 +193,7 @@
         </div>
 
         <h2>Creato per Alex90Jennings</h2>
-        <p><span class="style-two bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
+        <p><span class="style-dark-grey bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
 
         <div class="dashed-border-green pd-l">
             <ul class="card-list responsive-columns-large">
@@ -222,7 +222,7 @@
         </div>
 
         <h2>Artisti più popolari</h2>
-        <p><span class="style-two bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
+        <p><span class="style-dark-grey bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
         
         <div class="dashed-border-green pd-l">
             <ul class="card-list responsive-columns-large">
@@ -255,7 +255,7 @@
     <!-- FOOTER -->
 
     <footer class="dashed-border-blue">
-        
+
         <div class="four-columns__expand-two currently-playing dashed-border-green">
             <img class="icon" src="/assets/album-covers/album-five.jpg" alt="album-five">
             <div class="auto-rows">
@@ -269,26 +269,40 @@
         <div class="auto-rows dashed-border-green">
             <div class="seven-columns__expand-one-seven control-panel">
                 <div></div>
-                <img class="icon-x-small" src="/assets/img/random-white.png" alt="random-white">
-                <img class="icon-x-small" src="/assets/img/previous-white.png" alt="previous-white">
-                <img class="icon-small" src="/assets/img/play-white.png" alt="play-white">
-                <img class="icon-x-small" src="/assets/img/next-white.png" alt="forward-white">
-                <img class="icon-x-small" src="/assets/img/repeat-white.png" alt="repeat-white">
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/assets/img/random-white.png" alt="random-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/assets/img/previous-white.png" alt="previous-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-small" src="/assets/img/play-white.png" alt="play-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/assets/img/next-white.png" alt="forward-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/assets/img/repeat-white.png" alt="repeat-white">
+                </button>
                 <div></div>
             </div>
-            <div class="five-columns__expand-three">
-                <div class="maxwidth"></div>
-                <p><span class="style-three">0:25</span></p>
+            <div class="three-columns__expand-all">
+                <span class="style-light-grey-small-bold align-right">0:25</span>
                 <input class="time-slider" type="range">
-                <p><span class="style-three">3:47</span></p>
-                <div class="maxwidth"></div>
+                <span class="style-light-grey-small-bold">3:47</span>
             </div>
         </div>
 
         <div class="auto-columns dashed-border-green volume-rocker">
-            <img class="icon-x-small" src="/assets/img/files-white.png" alt="files-white">
-            <img class="icon-x-small" src="/assets/img/computer-white.png" alt="computer-white">
-            <img class="icon-x-small" src="/assets/img/volume-white.png" alt="volume-white">
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/assets/img/files-white.png" alt="files-white">
+            </button>
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/assets/img/computer-white.png" alt="computer-white">
+            </button>
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/assets/img/volume-white.png" alt="volume-white">
+            </button>
             <input class="volume-slider" type="range" min="0" max="100" step="1">
         </div>
 

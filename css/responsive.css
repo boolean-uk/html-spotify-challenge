@@ -3,11 +3,11 @@
 .left-menu a:hover,
 .left-menu ul :hover,
 .left-menu button :hover {
-    color: var(--text-color-one);
+    color: var(--text-color-white);
 }
 
 .left-menu nav li:hover {
-    border-left: 3px solid var(--border-color-one);
+    border-left: 3px solid var(--border-color-green);
 }
 
 .main-container h2:hover,
@@ -19,7 +19,7 @@ footer h4:hover {
 }
 
 .main-container li:hover .underline {
-    border-top: 3px solid var(--border-color-one);
+    border-top: 3px solid var(--border-color-green);
 }
 
 .effettua-lupgrade:hover {
@@ -51,8 +51,8 @@ footer h4:hover {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--primary-color-black);
+    background: var(--primary-color-black-alphapointfive);
     opacity: 0;
 }
   
@@ -62,8 +62,8 @@ footer h4:hover {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--primary-color-black);
+    background: var(--primary-color-black-alphapointfive);
     z-index: 2;
     opacity: 2;
 }
