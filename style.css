@@ -256,7 +256,8 @@ header {
 }
 
 /* ---------------------------------MAIN SECTION------------------------------------------ */
-.main-section > * {
+.main-section > *,
+.main-section__topic-list > * {
     margin-bottom: 48px;
 }
 
