@@ -280,7 +280,7 @@ footer {
 }
 
 .player-section input[type="range"] {
-    width: 625px;
+    width: 600px;
 }
 
 input[type="range"] {
@@ -298,6 +298,16 @@ input[type="range"] {
 /* doesn't seem to work */
 input[type="range"]:hover {
     background-image: linear-gradient(#1db954, #1db954);
+}
+
+
+.minute-padding-1 {
+    padding-right: 200px;
+
+}
+
+.minute-padding-2 {
+    padding-left: 200px;
 }
 
 

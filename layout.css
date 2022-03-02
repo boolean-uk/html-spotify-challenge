@@ -12,21 +12,31 @@
 
 .responsive-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 200px , 250px ));
+    grid-template-columns: repeat(auto-fit, minmax( 100px , 300px ));
     
 }
 
 .border-blue {   
-    border: 2px dashed blue;
+    border: 1px dashed blue;
+}
+
+.border-nav {
+    border: 1px solid black;
+}
+
+.border-upgrade {
+    border: 1px solid #070b13;
 }
 
 .border-pink {
-    border: 2px dashed pink;
+    border: 1px solid #131923;
 }
+/* was pink */
 
 .border-green {
-    border: 2px dashed green;
+    border: 1px solid #282828;
 }
+/* was green */
 
 .main-grid-column {
     display: grid;
@@ -82,10 +92,12 @@
     grid-template-columns: auto 1fr;
   }
 
+  /* slider should use this class */
 .three-column-grid__expand-two {
     display: grid;
     grid-template-columns: auto 1fr auto;
 }
+  /* slider should use this class */
 
 .auto-column-grid {
     display: grid;

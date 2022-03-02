@@ -14,9 +14,11 @@
        <!-- MAIN LAYOUT STARTS HERE-->
        <div class="grid-auto-row main-layout">
          <!-- ROW 1 STARTS -->
-         <main class="row-1 main-grid-column border-pink">
+         <main class="row-1 main-grid-column">
+             <!-- border pink removed from man -->
                    <!-- COLUMN 1 STARTS -->
-                   <div class="column-1 border-blue">
+                   <div class="column-1 border-nav"> 
+                    <!-- border-blue removed from the div above-->
                        <header class="two-column-grid pad-sm gap-sm">
                             <img src="/assets/img/logo.svg" alt=""/>
                             <!-- <h1>Spotify</h1> -->
@@ -93,21 +95,21 @@
                                 <li>Playlist 5</li>
                             </ul>
                             <div class="space"></div>
-                            <h4>Upadate app</h4>
-                            <div class="two-column-grid">
+                            <!-- <h4>Upadate app</h4> -->
+                            <!-- <div class="two-column-grid">
                                 <img src="" alt=""/>
                                 <div class="user-profile">
                                     <h4>Mubarak</h4>
                                 </div>
-                            </div>
+                            </div> -->
                        </nav>
                     </div>
                    <!-- COLUMN 1 ENDS -->
                    <!-- COLUMN 2 STARTS -->
-                   <div class="column-2 border-blue border-pink">
+                   <div class="column-2 border-blue border-upgrade">
                        <div class="fixed-position">
 
-                           <section class="column-2-box-1 border-pink fixed-position">
+                           <section class="column-2-box-1 border-upgrade fixed-position">
                                <div class="two-column-grid__expand-one membership-upgrade">
                                    <div></div>
                                    <div class="membership-upgrade-border">
@@ -214,7 +216,7 @@
                        </section>
                        <section class="column-2-box-4 border-pink">
                             <h2 class="recently-played-text">Artist</h2>
-                            <p class="recently-played-text">Trending artists</p>
+                            <p class="recently-played-text grey-text">Trending artists</p>
                             <ul class="responsive-grid">
                                 <li class="card-2">
                                     <a href="#">
@@ -234,7 +236,7 @@
          <!-- ROW 1 ENDS -->
          <!-- ROW 2 STARTS -->
             <!-- footer starts -->
-         <footer class="row-2 border-green three-column-grid__expand-two gap-sm">
+         <footer class="row-2 border-green three-column-grid__expand-two gap-sm responsive-grid">
              <!-- footer currently playing section starts -->
              <section class="auto-column-grid">
                  <img src="assets/img/sinister.jpeg" alt="" class="currently-playing-img"/>
@@ -304,20 +306,20 @@
                     </li>
                 </ul>
                 </div>
-                <div class="two-column-grid__expand-one-and-three">
+                <!-- <div class="two-column-grid__expand-one-and-three">
 
-                </div>
-                <div class="space"></div>
+                </div> -->
+                <!-- <div class="space"></div> -->
                 <div class="two-column-grid__expand-one-and-three">
                     <div class="space"></div>
                     <div class="auto-column-grid gap-sm">
-                        <div class="grid-template-align-right">1:11</div>
+                        <div class="grid-template-align-right minute-padding-1">1:11</div>
                         <div>
-                            <label class="center-grid">
+                            <label class="center-grid responsive-grid ">
                                 <input class="track-slide" type="range" id="track-slide" name="slider">
                             </label>
                         </div>
-                        <div>5:56</div>
+                        <div class="minute-padding-2">5:56</div>
                         <div class="space"></div>
                     </div>
 
