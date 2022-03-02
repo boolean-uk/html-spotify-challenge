@@ -1,0 +1,144 @@
+.center-wrapper {
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.center__grid {
+    display: grid;
+    place-items: center;
+}
+
+.align-right__grid {
+    display: grid;
+    place-items: right;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.auto-column-grid {
+    display: grid;
+    grid-auto-flow: column;
+
+    place-items: center;
+}
+
+.two-column-grid__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+}
+
+.two-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.three-column-grid__expand-one-and-three {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.three-column__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.two-row-grid__expand-one {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.two-row-grid__expand-two {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.three-row-grid__expand-two {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.gap-xs {
+    gap: 3px;
+}
+
+.gap-sm {
+    gap: 12px;
+}
+
+.gap-md {
+    gap: 18px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1330px) {
+    .three-column-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__player-section input[type="range"] {
+        width: 450px;
+      }
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__player-section input[type="range"] {
+        width: 250px;
+      }
+}
+
+@media screen and (max-width: 980px) {
+    .left-menu__collapsible-item,
+    .left-menu__bottom-section {
+        display: none;
+    }
+
+    .left-menu__hidden-logo {
+        display: inline-block;
+    }
+
+    .left-menu {
+        padding: 6px;
+    }
+
+    .left-menu ul,
+    .left-menu__install-app-btn {
+        margin-left: 8px;
+    }
+
+    .footer__player-section input[type="range"] {
+        width: 100%;
+      }
+}
+
+@media screen and (max-width: 840px) {
+    .footer__collapsible-item {
+        display: none;
+    }
+
+    .three-column-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .three-column__expand-two {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__left-section,
+    .footer__right-section {
+        display: none;
+    }
+}

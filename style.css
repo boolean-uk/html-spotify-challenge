@@ -1,0 +1,432 @@
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------MAIN STYLES----------------------------------------------- */
+:root {
+    --main-text-color: white;
+    --secondary-text-color: #acacac;
+    --footer-BG: #181818;
+}
+
+body {
+    overflow: overlay;
+}
+
+ul {
+    padding: 0;
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --------------------------------------LEFT-MENU--------------------------------------------- */
+.left-menu {
+    position: sticky;
+    top: 0;
+
+    height: calc(100vh - 90px);
+    padding: 24px 24px 0px 22px;
+    background-color: black;
+}
+
+.left-menu__top-section {
+    border-bottom: 1px solid #acacac46;
+}
+
+.left-menu__logo {
+    margin: 0px -2px 24px 3px;
+}
+
+.left-menu__hidden-logo {
+    display: none;
+}
+
+.left-menu__nav {
+    margin-bottom: 32px;
+}
+
+.left-menu__item {
+    color: var(--secondary-text-color);
+
+    margin-bottom: 10px;
+}
+
+.left-menu__item:hover {
+    color: var(--main-text-color);
+}
+
+.left-menu__item:hover .small-frame{
+    background-color: var(--main-text-color);
+}
+
+.left-menu__item--bold {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.small-frame {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--secondary-text-color);
+}
+
+.small-frame__gradient {
+    background: rgb(56,21,169);
+    background: linear-gradient(135deg, rgba(56,21,169,1) 0%, rgba(129,152,153,1) 79%, rgba(129,152,153,1) 100%);
+}
+
+.left-menu__bottom-section {
+    margin-top: 12px;
+}
+
+/* ---------------------------------------FOOTER------------------------------------------------- */
+footer {
+    padding: 16px;
+
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+
+    height: 90px;
+    background-color: var(--footer-BG);
+    border-top: 1px solid #5d5c5c46;
+}
+
+.footer__artist {
+    display: block;
+
+    margin-right: 16px;
+
+    color: var(--main-text-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer__track {
+    color: var(--secondary-text-color);
+    font-size: 0.6rem;
+}
+
+.footer__artist:hover,
+.footer__track:hover {
+    text-decoration: underline;
+}
+
+.footer__option-btn {
+    background-color: var(--footer-BG);
+    border-style: none;
+
+    color: var(--secondary-text-color);
+}
+
+.footer__option-btn:hover {
+    color: var(--main-text-color);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 4px;
+
+    background: #535353;
+    border-radius: 5px;
+    background-image: linear-gradient(#b3b3b3, #b3b3b3);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.footer__player-section input[type="range"] {
+    width: 625px;
+}
+
+input[type="range"]:hover {
+    background-image: linear-gradient(#1db954, #1db954);
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+}
+
+/* ------------------NEED FIX---------------------- */
+/* I want it to appear when any part on the slider is hovered */
+input[type="range"]::-webkit-slider-thumb:hover,
+.footer__player-section input[type="range"]::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: var(--main-text-color);
+    box-shadow: 0 0 3px 0 #555;
+}
+  /* ---------------------------------------------- */
+  
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+  
+.footer__player-section {
+      color: var(--secondary-text-color);
+      font-size: 0.6rem;
+      font-weight: 600;
+}
+
+.footer__track-progress {
+      margin-bottom: 8px;
+}
+
+#play-btn {
+      height: 32px;
+      width: 32px;
+
+      background-color: var(--main-text-color);
+      border-radius: 50%;
+}
+
+.footer__option-btn-frame {
+    height: 36px;
+    width: 36px;
+}
+
+#play-btn:hover {
+    height: 36px;
+    width: 36px;
+    margin-top: -2px;
+    margin-left: -2px;
+    transition: all 0.05s;
+}
+
+
+/* ---------------------------------MAIN HEADER------------------------------------------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    height: 65px;
+
+    padding: 16px 32px;
+
+    background-color: #2c0b4b;
+}
+
+.header__page-btn {
+    height: 32px;
+    width: 32px;
+    
+    background-color: #0f031b;
+    color: var(--main-text-color);
+
+    border-radius: 50%;
+    border-style: none;
+}
+
+.header__account-options {
+    appearance: none;
+    background-color: #10021e;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+
+    padding: 6px 12px;
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+
+/* ---------------------------------MAIN SECTION------------------------------------------ */
+.main-section > *,
+.main-section__topic-list > * {
+    margin-bottom: 48px;
+}
+
+.main-section {
+    padding: 24px 32px;
+
+    background: #2c0b4b;
+    background: linear-gradient(180deg, #2c0b4b 0%, rgba(18,18,18,1) 40%, rgba(18,18,18,1) 100%);  
+    
+    color: var(--main-text-color);
+
+    /* overflow: auto; */
+    /* overflow-y: scroll; */
+    /* overflow: overlay; */
+}
+
+.good-morning__title {
+    margin-bottom: 24px;
+
+    font-size: 1.8rem;
+}
+
+.good-morning__suggestion {
+    position: relative;
+    min-width: 300px;
+    max-width: 560px;
+    height: 80px;
+
+    /* Glass effect */
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 6px;
+}
+
+.good-morning__suggestion:hover {
+    background-color: #ffffff25;
+    transition: all 0.3s;
+}
+
+.good-morning__suggestion:hover .good-morning__suggestion-play {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.good-morning__suggestion-play {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    background-color: #1ed760;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.good-morning__suggestion-cover {
+    height: 80px;
+    width: 80px;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.good-morning__suggestion-name  {
+    display: inline-block;
+    align-self: center;
+    font-weight: 700;
+}
+
+.episodes__link {
+    color: inherit;
+}
+
+.episodes__link:hover {
+    text-decoration: underline;
+}
+
+.episodes__title {
+    margin-bottom: 24px;
+
+    font-size: 1.4rem;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    place-items: center;
+    max-width: 240px;
+    min-height: 273px;
+    max-height: 315px;
+
+    padding: 14px;
+
+    /* Glass effect */
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border-radius: 6px;
+}
+
+.card:hover {
+    background-color: #ffffff25;
+    transition: all 0.3s;
+}
+
+.card:hover .card__play {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.card__cover {
+    height: 160px;
+    width:  160px;
+
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 1px #1a1919a9;
+}
+
+.card__name {
+    font-weight: 700;
+}
+
+.card__name-date-wrapper {
+    width: 100%;
+}
+
+.card__date {
+    font-size: 0.6rem;
+}
+
+.card__play {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    background-color: #1ed760;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+
+/* -------------------------UTILITY STYLES------------------------------ */
+
+/* ------------------------NEEDS TO BE FIXED---------------------------- */
+/*      Currently the scroll bar goes over the footer, if I add the    
+ scroll bar to the main-section only then no styles are applied to it    */
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+::-webkit-scrollbar-track {
+    background: #00000020;         /* color of the tracking area */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a80;    /* color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #88888890;
+}
+/* ---------------------------------------------------------------------- */
