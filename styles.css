@@ -31,6 +31,12 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
 }
+.three-column-grid__scroll {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: calc(100vh - 120px);
+}
+
 .four-row-grid{
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -49,6 +55,7 @@
 .nav-container{
     width: 240px;
     background-color: #121212;
+    
 }
 .nav-logo{
     height: 32px;
@@ -79,7 +86,8 @@ ul{
 }
 hr{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+
 }
 .nav-playlist{
     margin-bottom: 10px;
@@ -105,7 +113,7 @@ a:hover{
     height: 32px;
     width: 32px;
 }
-.hello{
+.profile-container{
     background-color: #525050f3;
     margin-top: 25px;
     margin-right: 20px;
@@ -123,8 +131,10 @@ a:hover{
 }
 
 /*Main content */
-.main-container{
+main{
     background-color: #221f1f;
+    overflow: clip;
+    overflow-y: scroll;
     
     
 }
@@ -179,10 +189,8 @@ h2{
 footer{
     height: 120px;
     background-color:#212121 ;
-    /*
+    
     width: 100%;
-    position: fixed;
-    bottom: 0;*/
 }
 .footer-left,
 .footer-right-side{
