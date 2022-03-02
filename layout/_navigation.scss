@@ -1,3 +1,5 @@
+// STYLES FOR NAVIGATION
+
 .navigation {
   background-color: rgb(0, 0, 0);
   padding: 2rem 1rem;
@@ -119,6 +121,7 @@
   }
 }
 
+// NAVIGATION MEDIA QUERIRES
 @include respond(phone) {
   .navigation {
     display: grid;

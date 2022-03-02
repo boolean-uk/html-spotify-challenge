@@ -1,18 +1,4 @@
-.auto-fit-column-spotify {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  grid-gap: 2.5rem;
-}
-.auto-fit-rows-spotify {
-  display: grid;
-  grid-template-rows: repeat(2rem);
-}
-
-.auto-fit-column-large {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 24rem);
-  grid-gap: 2rem;
-}
+// STYLES FOR MAIN SPOTIFY SECTION
 
 .main {
   // &__card-image-container {
@@ -116,6 +102,8 @@
     scrollbar-width: thin;
   }
 }
+
+// MEDIA QUERIES
 
 @include respond(phone) {
   .main {

@@ -1,23 +1,11 @@
-@import "./mixins";
 @import "./variables";
+@import "./reset";
+@import "./mixins";
 @import "./buttons";
 @import "./grid";
-@import "./header";
-@import "./navigation";
-@import "./main";
-@import "./footer";
+@import "./layout/header";
+@import "./layout/main";
 
-* {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  margin: 0;
-  background-color: $color-spotify-main;
-}
-
-img {
-  width: 100%;
-  object-fit: cover;
-}
+@import "./layout/navigation";
+@import "./layout/main";
+@import "./layout/footer";

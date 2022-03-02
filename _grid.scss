@@ -1,14 +1,22 @@
+// MAIN GRID LAYOUT FOR MAIN SECTIONS OF PAGE
+// SPECIFIC GRID LAYOUTS FOR EACH SECTION LOWER DOWN IN FILE
+
+// HEADER
+
 .header {
   grid-area: head;
   display: grid;
   grid-template-columns: auto auto 1fr auto auto auto;
 }
+
+// NAVIGATION
 .navigation {
   grid-area: navigation;
   display: grid;
   grid-template-rows: repeat(4, auto) 1fr repeat(2, auto);
 }
 
+// NAVIGATION MEDIA QUERIES
 @include respond(height-max) {
   .navigation {
     display: grid;
@@ -19,11 +27,13 @@
   }
 }
 
+// MAIN
 .main {
   grid-area: main;
   background-color: $color-spotify-main;
 }
 
+// FOOTER
 .footer {
   grid-area: footer;
 
@@ -31,6 +41,7 @@
   grid-template-columns: auto auto 1fr auto 1fr;
 }
 
+// WRAPPER CONTAINS HEADER, MAIN, NAVIGATION AND FOOTER
 .wrapper {
   height: 100vh;
   overflow: scroll;
@@ -48,8 +59,26 @@
   grid-template-columns: 230px 1fr;
 }
 
+// WTRAPPER MEDIA QUERIES
 @include respond(phone) {
   .wrapper {
     grid-template-columns: 70px 1fr;
   }
+}
+
+// GRID LAYOUT WITHIN THE MAINSECTION
+.auto-fit-column-spotify {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 2.5rem;
+}
+.auto-fit-rows-spotify {
+  display: grid;
+  grid-template-rows: repeat(2rem);
+}
+
+.auto-fit-column-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24rem);
+  grid-gap: 2rem;
 }

@@ -1,9 +1,94 @@
-@media only screen and (max-height: 1040px) {
-  padding: 1rem;
-}
-
 :root {
   --color-svg-player-buttons: #fff;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+}
+
+img,
+picture {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media only screen and (max-height: 1040px) {
+  padding: 1rem;
 }
 
 .header__button, .header__button:link, .header__button:visited {
@@ -101,6 +186,29 @@
   }
 }
 
+.auto-fit-column-spotify {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.auto-fit-rows-spotify {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[2rem];
+      grid-template-rows: repeat(2rem);
+}
+
+.auto-fit-column-large {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (24rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 24rem);
+  grid-gap: 2rem;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -144,6 +252,102 @@
 
 .header__sign-up, .header__button-container, .header__burger-svg {
   margin: 0 2rem;
+}
+
+.main {
+  padding-right: 3.5rem;
+}
+
+.main ul {
+  list-style: none;
+}
+
+.main a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+
+.main__overlay-container {
+  position: relative;
+}
+
+.main__overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(206, 205, 205, 0.274);
+  opacity: 0;
+}
+
+.main__avatar {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.8rem;
+  background-color: #1db954;
+  margin: 0rem 0 2rem 2rem;
+  border-radius: 50%;
+  top: 8rem;
+  right: 1rem;
+  opacity: 0;
+}
+
+.main__overlay-container:hover .main__overlay,
+.main__overlay-container:hover .main__avatar {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.main__overlay-container:hover .main__avatar {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  top: 6rem;
+}
+
+.main section h2 {
+  font-size: 2.8rem;
+  margin-left: 2rem;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #8d0b02;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(#3f0000));
+  background: linear-gradient(red, #3f0000);
+  border: 0.05rem solid black;
+  height: 1rem;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #200200;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #e70303 #3f0000;
+    scrollbar-width: thin;
+  }
+}
+
+@media only screen and (max-width: 771px) {
+  .main {
+    padding-left: 2.5rem;
+  }
 }
 
 .navigation {
@@ -294,29 +498,6 @@
   .navigation .avatar {
     display: none;
   }
-}
-
-.auto-fit-column-spotify {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  grid-gap: 2.5rem;
-}
-
-.auto-fit-rows-spotify {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: ()[2rem];
-      grid-template-rows: repeat(2rem);
-}
-
-.auto-fit-column-large {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (24rem)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 24rem);
-  grid-gap: 2rem;
 }
 
 .main {
@@ -498,22 +679,5 @@
 
 .footer #audio-player-slider input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  margin: 0;
-  background-color: #121212;
-}
-
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
