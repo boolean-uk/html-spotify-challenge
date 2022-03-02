@@ -503,6 +503,14 @@ html {
   justify-content: center;
 }
 
+button {
+  color: transparent;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 1.5rem;
+}
+
 .right-side {
   padding: 2rem;
   border: 1px solid black;
@@ -618,10 +626,12 @@ html {
   color: white;
   cursor: pointer;
 }
+.player-center-icons i:nth-last-of-type(1) {
+  margin-right: 0;
+}
 .player-center-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
 }
 .player-center-slide input[type=range] {
@@ -656,6 +666,7 @@ html {
 }
 .player-right-side img:hover {
   cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
 }
 .player-right-side i {
   color: #b3b3b3;

@@ -65,12 +65,16 @@
         }
       }
       justify-self: center;
+
+      & i:nth-last-of-type(1) {
+        margin-right: 0;
+      }
     }
 
     &-slide {
       display: flex;
       align-items: center;
-      justify-content: center;
+      // justify-content: center;
       gap: 0.5rem;
     }
 
@@ -98,6 +102,8 @@
       height: 1.6rem;
       &:hover {
         cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
+          saturate(18%) hue-rotate(214deg) brightness(105%) contrast(100%);
       }
     }
 

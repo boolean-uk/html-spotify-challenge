@@ -41,9 +41,6 @@
       }
       border-radius: 8px;
       &-image {
-        // height: 15rem;
-
-        // border-radius: 8px;
         position: relative;
         width: 100%;
         height: auto;
@@ -172,4 +169,12 @@
     gap: 0.4rem;
     justify-content: center;
   }
+}
+
+button {
+  color: transparent;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 1.5rem;
 }
