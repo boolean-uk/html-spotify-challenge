@@ -230,12 +230,11 @@ h2:hover {
 }
 
 .card {
-  height: 300px;
-  width: 208px;
   background-color: #282828;
   margin-top: 20px;
   margin-left: 20px;
   border: 10px solid #282828;
+  justify-content: center;
 }
 
 .card img {
@@ -258,6 +257,7 @@ h4 {
 .itemsContainer {
   float: left;
   position: relative;
+
 }
 .itemsContainer:hover .play {
   display: block;
@@ -356,6 +356,10 @@ p {
 
 .time {
   color: white;
+}
+
+input[type="range"] {
+    /* width: 500px; */
 }
 
 /* Media Screen  */
