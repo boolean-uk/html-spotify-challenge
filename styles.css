@@ -277,12 +277,12 @@ h4 {
   border-radius: 50%;
 }
 
-/* Footer  */
+/* Footer Section  */
 
 .main-footer > * {
   padding: 0;
   padding-top: 20px;
-  height: 90px;
+  height: 110px;
   background-color: #181818;
 }
 
@@ -357,7 +357,7 @@ p {
   color: white;
 }
 
-/* Media  */
+/* Media Screen  */
 
 @media screen and (max-width: 1592px) {
   .main-header-column-grid {
