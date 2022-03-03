@@ -1,12 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Challenge</title>
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <link rel="stylesheet" href="/Styles/reset.css" />
+    <link rel="stylesheet" href="/Styles/layout.css" />
+    <link rel="stylesheet" href="/Styles/responsive.css" />
+  </head>
+  <body>
+    <main class="two-grid-column__expand-two">
+      <!-- ASIDE LEFT MENU BAR -->
+      <aside class="grid-auto-flow__row">
+        <div>
+          <a href="#"
+            ><img
+              src="/Assets/Logo/logo.svg"
+              alt="Spotify logo"
+              class="logo-big"
+          /></a>
+          <a href="#"
+            ><img
+              src="/Assets/Logo/logo-small.svg"
+              alt="Spotify logo"
+              class="logo-small"
+          /></a>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
+              >
+                <img src="/Assets/Icon/home.svg" alt="home" />
+                <p>Home</p></a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
+              >
+                <img src="/Assets/Icon/search.svg" alt="search" />
+                <p>Search</p></a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
+              >
+                <img src="/Assets/Icon/libreria.svg" alt="library" />
+                <p>Your Library</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="playlist-container">
+          <h3>Playlist</h3>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  class="menu-bar two-grid-column__expand-two align-items-center gap-sm"
+                  ><button>+</button>
+                  <p>Create Playlist</p></a
+                >
+              </li>
+              <li>
+                <a href="#" class="menu-bar align-items-center gap-sm">
+                  Create Playlist</a
+                >
+              </li>
+              <li>
+                <a href="#" class="menu-bar align-items-center gap-sm"
+                  >Create Playlist</a
+                >
+              </li>
+              <li>
+                <a href="#" class="menu-bar align-items-center gap-sm"
+                  >Create Playlist</a
+                >
+              </li>
+              <li>
+                <a href="#" class="menu-bar align-items-center gap-sm"
+                  >Create Playlist</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="download-profile-container align-self">
+          <div>
+            <a
+              href="#"
+              class="download-container two-grid-column__expand-two align-items-center gap-sm"
+            >
+              <img
+                src="/Assets/Icon/download.svg"
+                alt="download"
+                class="download-icon"
+              />
+              <p>Install app</p>
+            </a>
+          </div>
+          <div
+            class="profile-container two-grid-column__expand-two align-items-center"
+          >
+            <img src="/Assets/Icon/profile.svg" alt="avatar" />
+            <a href="#"><h3>Arisa Sigrist</h3></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <div class="main-container">
+        <!-- Header section -->
+        <header class="justify-content-end">
+          <a href="#" class="place-items-center">UPGRADE</a>
+        </header>
+        <!-- Nav bar -->
+        <div class="nav-bar-container place-items-center">
+          <nav>
+            <ul class="grid-responsive__columns place-items-center">
+              <li class="place-items-center">
+                <a href="#"
+                  >Playlists
+                  <div class="underline"></div>
+                </a>
+              </li>
+              <li class="place-items-center">
+                <a href="#"
+                  >Podcasts
+                  <div class="underline"></div
+                ></a>
+              </li>
+              <li class="place-items-center">
+                <a href="#"
+                  >Artists
+                  <div class="underline"></div
+                ></a>
+              </li>
+              <li class="place-items-center">
+                <a href="#"
+                  >Albums
+                  <div class="underline"></div
+                ></a>
+              </li>
+              <li class="place-items-center">
+                <a href="#"
+                  >Genres
+                  <div class="underline"></div
+                ></a>
+              </li>
+              <li class="place-items-center">
+                <a href="#"
+                  >For You
+                  <div class="underline"></div
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Music List -->
+        <div class="music-list">
+          <!-- Recently Played -->
+          <section class="recently-played gap-md">
+            <h2>Recently Played</h2>
+            <ul class="six-grid-column">
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/metal_lifting.jpg"
+                      alt="heavy metal"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p><span>Heavy Metal</span></p>
+                    <p class="artist">Subtitle</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/stranger.jpeg"
+                      alt="stranger things"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p>
+                      <span
+                        >Stranger Things, Vol.1 (a Netflix Original Series
+                        Soundtrack)</span
+                      >
+                    </p>
+                    <p class="artist">Kyle Dixon & Michael Stein</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/aquietplace.jpeg"
+                      alt="A quite place"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p><span>A Quiet Place</span></p>
+                    <p class="artist">Subtitle</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/split.jpeg"
+                      alt="Split"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p><span>Split</span></p>
+                    <p class="artist">Subtitle</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/cure.jpeg"
+                      alt="A Cure for Wellness"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p><span>A Cure for Wellness</span></p>
+                    <p class="artist">Subtitle</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <div>
+                    <img
+                      src="/Assets/Music/sinister.jpeg"
+                      alt="Sinister"
+                      class="music-jacket"
+                    />
+                    <img class="overlay" src="/Assets/Icon/play.png" />
+                  </div>
+                  <div>
+                    <p><span>Sinister</span></p>
+                    <p class="artist">Subtitle</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- Made For You -->
+          <section class="made-for-you gap-md">
+            <div class="justify-content-start">
+              <h2>Made for You</h2>
+              <p class="music-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                libero incidunt.
+              </p>
+            </div>
+            <ul class="six-grid-column">
+              <li>
+                <a href="#" class="place-items-center">
+                  <img
+                    src="/Assets/Music/radar.jpeg"
+                    alt="radar"
+                    class="music-jacket"
+                  />
+                  <img class="overlay" src="/Assets/Icon/play.png" />
+                  <p><span>Release Radar</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <img
+                    src="/Assets/Music/mixdaily.jpeg"
+                    alt="mix daily"
+                    class="music-jacket"
+                  />
+                  <img class="overlay" src="/Assets/Icon/play.png" />
+                  <p><span>Daily Mix</span></p>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- Popular Artists -->
+          <section class="popular-artists gap-md">
+            <div class="justify-content-start">
+              <h2>Popular Artists</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                libero incidunt.
+              </p>
+            </div>
+            <ul class="six-grid-column">
+              <li>
+                <a href="#" class="place-items-center">
+                  <img
+                    src="/Assets/Music/youg.jpeg"
+                    alt="youg"
+                    class="music-jacket"
+                  />
+                  <p><span>Lana Del Ray</span></p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="place-items-center">
+                  <img
+                    src="/Assets/Music/einaudi.jpeg"
+                    alt="einaudi"
+                    class="music-jacket"
+                  />
+                  <p><span>Ludovico Einaudi</span></p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="three-grid-column__expand-two place-items-center gap-bg">
+      <!-- playing section -->
+      <div
+        class="playing three-grid-column__expand-two align-items-center gap-sm"
+      >
+        <a href="#"><img src="/Assets/Music/sinister.jpeg" alt="sinister" /></a>
+        <div class="playing-title">
+          <a href="#"
+            ><p><span>Sinister</span></p></a
+          >
+          <a href="#"><p>Brano Nome</p></a>
+        </div>
+        <div class="icon-container grid-auto-flow__column gap-sm">
+          <button><img src="Assets/Icon/heart.png" alt="like icon" /></button>
+          <button>
+            <img src="Assets/Icon/folder.png" alt="folder icon" />
+          </button>
+        </div>
+      </div>
+      <!-- playing bar -->
+      <div class="playing-bar place-items-center gap-sm">
+        <div class="place-items-center gap-sm bd-green">
+          <div>
+            <ul
+              class="playing-bar-icon-container grid-auto-flow__column place-items-center"
+            >
+              <li>
+                <button>
+                  <img src="Assets/Icon/shuffle.png" alt="shuffle icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/previous.png" alt="previous icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/play.png" alt="play icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/skip.png" alt="skip icon" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="Assets/Icon/repeat.png" alt="repeat icon" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="three-grid-column__expand-two align-items-center gap-sm">
+            <p>0:35</p>
+            <input type="range" min="1" max="10" value="" />
+            <p>4:35</p>
+          </div>
+        </div>
+      </div>
+      <!-- option bar -->
+      <div class="option-bar grid-auto-flow__column align-items-center gap-sm">
+        <button><img src="Assets/Icon/list.png" alt="list icon" /></button>
+        <button>
+          <img src="Assets/Icon/monitor.png" alt="monitor icon" />
+        </button>
+        <img src="Assets/Icon/volume.png" alt="volume icon" />
+        <input type="range" min="1" max="100" value="" />
+      </div>
+    </footer>
+  </body>
 </html>

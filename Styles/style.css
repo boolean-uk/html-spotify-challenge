@@ -1,0 +1,282 @@
+/* --- COLOR --- */
+html {
+  --main-clr: rgb(20, 25, 34);
+  --sub-clr: rgb(8, 11, 18);
+  --third-clr: rgb(40, 40, 40);
+  --accent-clr: rgb(30, 215, 97);
+  --main-text-clr: white;
+  --sub-text-clr: rgb(135, 135, 138);
+}
+
+/* --- BASE STYLES --- */
+main {
+  min-height: 90vh;
+}
+
+aside {
+  min-width: 240px;
+  color: white;
+  background-color: black;
+}
+
+header {
+  height: 72px;
+  background-color: var(--sub-clr);
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--third-clr);
+}
+
+/* --- MAIN STYLES --- */
+/* Aside left menu bar*/
+aside a {
+  min-width: 100%;
+  color: var(--sub-text-clr);
+}
+
+aside a:hover {
+  color: var(--text-clr);
+}
+
+.logo-big {
+  margin: 8px;
+  width: 80%;
+}
+
+.logo-small {
+  display: none;
+  margin: 8px;
+  width: 80%;
+}
+
+.menu-bar {
+  padding-left: 8px;
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.menu-bar:hover {
+  border-left: 4px solid var(--accent-clr);
+}
+
+.menu-bar img {
+  width: 24px;
+}
+
+.menu-bar button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1.5rem;
+  color: black;
+  background-color: var(--sub-text-clr);
+  border: none;
+}
+
+.download-container {
+  margin-bottom: 4px;
+}
+
+.download-icon {
+  width: 16px;
+}
+
+.profile-container {
+  padding-top: 8px;
+  border-top: var(--sub-text-clr) 1px solid;
+}
+
+.profile-container img {
+  width: 24px;
+  height: 24px;
+  background-color: var(--sub-text-clr);
+  border: none;
+  border-radius: 50%;
+}
+
+.profile-container h3 {
+  color: var(--main-text-clr);
+}
+
+/* Main */
+.main-container {
+  width: calc(100vw - 240px);
+  background-color: var(--main-clr);
+}
+
+.main-container img {
+  max-width: 160px;
+}
+
+header a {
+  width: 200px;
+  margin: 8px;
+  font-size: 0.8rem;
+  color: var(--main-text-clr);
+  border: var(--sub-text-clr) 1px solid;
+  border-radius: 32px;
+}
+
+header a:hover {
+  border: var(--main-text-clr) 1px solid;
+}
+
+/* Nav bar */
+nav {
+  width: 40vw;
+}
+
+.nav-bar-container {
+  height: 54px;
+}
+
+.nav-bar-container a {
+  color: var(--sub-text-clr);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.nav-bar-container a:hover {
+  color: var(--main-text-clr);
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  display: none;
+  content: "";
+  bottom: -20%;
+  left: 25%;
+  width: 50%;
+  border: var(--accent-clr) solid 1px;
+}
+
+.nav-bar-container a:hover .underline {
+  display: block;
+}
+
+/* Music List */
+.music-list {
+  height: calc(90vh - 54px - 72px);
+  padding: 0 8px;
+  overflow: scroll;
+}
+
+.music-list section {
+  display: grid;
+  margin-bottom: 54px;
+}
+
+.music-list p {
+  color: var(--sub-text-clr);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.music-list li {
+  margin: 8px;
+  width: 160px;
+}
+
+.music-list a {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 80px;
+  top: 40px;
+  left: 40px;
+}
+
+.artist:hover {
+  color: var(--main-text-clr);
+  text-decoration: underline;
+}
+
+.music-list a:hover .overlay {
+  display: block;
+}
+
+.music-list a:hover .music-jacket {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.music-list span {
+  color: var(--main-text-clr);
+  font-weight: 600;
+}
+
+.popular-artists img {
+  border-radius: 50%;
+}
+
+/* Footer */
+footer img {
+  width: 16px;
+}
+
+footer button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+footer p {
+  color: var(--main-text-clr);
+}
+
+footer input[type="range"] {
+  overflow: hidden;
+  -webkit-appearance: none;
+  background-color: var(--sub-text-clr);
+  height: 4px;
+  border-radius: 10px;
+}
+
+.playing-bar input[type="range"] {
+  width: 100%;
+}
+
+footer input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  -webkit-appearance: none;
+  color: var(--accent-clr);
+}
+
+footer input[type="range"]::-webkit-slider-thumb {
+  width: 0.1px;
+  -webkit-appearance: none;
+  height: 4px;
+  cursor: pointer;
+  background: #434343;
+  box-shadow: -400px 0 0 400px var(--accent-clr);
+}
+
+.playing,
+.option-bar {
+  padding: 8px;
+}
+
+.playing > a > img {
+  width: 32px;
+}
+
+.playing-title p:hover {
+  text-decoration: underline;
+  color: var(--main-text-clr);
+}
+
+.playing-title p {
+  color: var(--sub-text-clr);
+  font-size: 0.7rem;
+}
+
+.playing-title span {
+  color: var(--main-text-clr);
+  font-weight: 600;
+}

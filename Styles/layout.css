@@ -1,0 +1,76 @@
+/* --- COLUMN --- */
+.two-grid-column__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.three-grid-column__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.six-grid-column {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-auto-flow__column {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-responsive__columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+}
+
+/* --- ROW --- */
+.grid-auto-flow__row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+/* --- ALIGNMENT --- */
+.align-self {
+  display: grid;
+  align-self: end;
+  padding: 8px;
+}
+
+.place-items-center {
+  display: grid;
+  place-items: center;
+}
+
+.align-items-center {
+  display: grid;
+  align-items: center;
+}
+
+.justify-content-start {
+  display: grid;
+  justify-content: start;
+}
+
+.justify-content-center {
+  display: grid;
+  justify-content: center;
+}
+
+.justify-content-end {
+  display: grid;
+  justify-content: end;
+}
+
+/* --- GAP --- */
+.gap-sm {
+  gap: 8px;
+}
+
+.gap-md {
+  gap: 16px;
+}
+
+.gap-bg {
+  gap: 24px;
+}

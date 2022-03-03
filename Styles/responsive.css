@@ -1,0 +1,86 @@
+/* --- SMALLER THAN 1000PX --- */
+@media screen and (max-width: 1000px) {
+  .music-list ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* --- SMALLER THAN 880PX --- */
+@media screen and (max-width: 880px) {
+  .music-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- SMALLER THAN 600PX --- */
+@media screen and (max-width: 600px) {
+  aside {
+    min-width: 50px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .logo-big {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+    width: 25px;
+  }
+
+  .menu-bar {
+    display: grid;
+    grid-template:
+      "icon" 1fr/
+      1fr;
+
+    grid-area: icon;
+  }
+
+  .menu-bar p {
+    display: none;
+  }
+
+  .playlist-container {
+    display: none;
+  }
+
+  .download-container {
+    display: grid;
+    grid-template:
+      "download-icon" 1fr/
+      1fr;
+    place-items: center;
+  }
+
+  .download-container img {
+    grid-area: download-icon;
+  }
+
+  .download-container p {
+    display: none;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template:
+      "avatar" 1fr/
+      1fr;
+    place-items: center;
+  }
+
+  .profile-container img {
+    grid-area: download-icon;
+  }
+
+  .profile-container h3 {
+    display: none;
+  }
+
+  .main-container {
+    width: calc(100vw - 50px);
+  }
+}
