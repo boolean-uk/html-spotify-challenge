@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.central-area {
+    height: calc(100vh - 96px);
+}
+
+/* LEFT SIDE BAR */
+
+.left-bar {
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.left-text, .text-sm {
+    margin-left: 3px;
+    color: grey;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 25px;
+    color: white;
+}
+
+.logo, .search, .playlist, .playlist-name, .download-app, .profile {
+    padding: 4px;
+    margin: 4px;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-box {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+}
+
+.add-box {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.plus-sign {
+    margin-top: 8px;
+    margin-left: 9px;
+    font-size: 25px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.playlist-name-list, .nav-select, .subtitle{
+    list-style-type: none;
+    line-height: 2;
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.download-icon {
+    border-radius: 50%;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.profile {
+    border-top: 2px solid grey;
+}
+
+.pic-sm {
+    margin-top: 15px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.name-sm {
+    margin-top: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+/* MAIN AREA */
+
+.middle-area {
+    height: calc(100vh - 96px);
+    overflow-y: scroll;
+    background-color: rgb(34, 37, 43);
+}
+
+.upgrade-bar {
+    padding: 30px;
+    background-color: rgb(5, 5, 41);
+}
+
+.upgrade-button {
+    background-color: rgb(5, 5, 41);
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 280px;
+    height: 60px;
+}
+
+.upgrade-text {
+    color: white;
+    font-size: 15px;
+}
+
+.nav-select {
+    margin-top: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    text-decoration-thickness: 3px;
+}
+
+.h4 {
+    font-size: 30px;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+.album-details {
+    text-align: center;
+ }
+
+ .circle-image {
+     border-radius: 50%;
+ }
+
+.recent-songs, .created-playlist, .popular-artists {
+    padding-left: 50px;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background-color: rgb(41, 41, 41);
+}
+
+.play-button, .volume {
+    padding: 2px;
+    margin: 2px;
+}
+
+.current-song {
+    margin-top: 15px;
+}
+
+.brano-nome {
+    color: gray;
+}
+
+.sinister-sm {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.sinister-text {
+    color: white;
+    width: 100px;
+}
+
+h4, .band-name, .grey-text {
+    color: grey;
+}
+
+.grey-text {
+    font-size: 20px;
+}
+
+.icons-sm {
+    height: 20px;
+    width: 20px;
+    margin-top: 25px;
+}
+
+.center-wrapper-footer {
+    max-width: 250px;
+}
+
+.button-area > li {
+    margin: 2px;
+    padding: 15px;
+    list-style-type: none;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.button-back {
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.button-lg {
+    height: 45px;
+    width: 45px;
+}
+
+.button-forward {
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    transform: scaleX(-1);
+}
+
+.center-wrapper-play-button {
+    max-width: 30px;
+    margin: 0 auto;
+}
+
+.time {
+    color: white;
+}
+
+#song {
+    width: 500px;
+}
+
+.volume-bar {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.volume-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 25px;
+}
+
+#volume {
+    margin-right: 50px;
+}
