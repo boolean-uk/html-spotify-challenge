@@ -1,0 +1,160 @@
+/* ---- layout ---- */
+
+.grid-auto-row {
+    display: grid;
+    grid-auto-rows: 1fr auto;
+}
+
+.two-column-grid__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 100px , 300px ));
+    
+}
+
+.border-blue {   
+    border: 1px dashed blue;
+}
+
+.border-nav {
+    border: 1px solid black;
+}
+
+.border-upgrade {
+    border: 1px solid #070b13;
+}
+
+.border-pink {
+    border: 1px solid #131923;
+}
+/* was pink */
+
+.border-green {
+    border: 1px solid #282828;
+}
+/* was green */
+
+.main-grid-column {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.main-layout {
+    height: 100vh;
+}
+
+.gap-sm {
+    gap: 12px;
+}
+
+.column-1 {
+    width: 175px;
+    display: grid;
+    grid-template-rows: auto 1fr ;
+}
+
+.column-1 {
+    background-color: black;
+    color: white;
+}
+
+.column-2 {
+    
+}
+
+/* .row-2 {
+    height: 96px
+} */
+
+.row-2 {
+    height: 80px;
+}
+
+
+.eight-grid-row-auto {
+    display: grid;
+    grid-auto-rows: repeat (8,auto);
+}
+
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.two-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  /* slider should use this class */
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+  /* slider should use this class */
+
+.auto-column-grid {
+    display: grid;
+    grid-auto-flow: column;
+
+    place-items: center;
+}
+
+.nav-four-grid-auto {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+}
+
+.two-row-grid__expand-one {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.two-column-grid__expand-one-and-three {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.grid-template-align-right {
+    display: grid;
+    place-items: right;
+}
+
+.seven-column-grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.center-grid {
+    display: grid;
+    place-items: center;
+}
+
+main {
+}
+
+.scroll {
+    overflow: clip;
+    overflow-y: scroll;
+    
+}
+
+.gap-sm {
+    gap: 12px;
+}
+
+.pad-sm {
+    padding: 10px;
+}
+
+.margin-left-sm {
+    margin-left: 15px;
+}
+
+/* ---- layout ---- */
