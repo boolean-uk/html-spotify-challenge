@@ -10,26 +10,25 @@ html {
   --lighterGrey: rgb(198, 186, 186);
   --pinkMain: rgb(200, 112, 124);
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 main {
   display: grid;
   grid-template-areas:
+    "header1 header2"
     "aside article"
     "aside article"
     "footer footer";
 
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
 
   width: 100vw;
   height: 100vh;
   background-color: var(--greyBackground);
   color: white;
-}
 
+  padding: 0.2rem 1rem 0 1rem;
+}
 input,
 select,
 textarea,
@@ -44,7 +43,6 @@ button {
 .footerPlaylist {
   display: grid;
   grid-auto-flow: column;
-  border: 0.1rem dashed rgb(222, 132, 15);
 }
 .asideNav,
 .mainArticle {
@@ -62,7 +60,8 @@ button {
 }
 .logoIcon,
 .asideIcon,
-.footerIcon,.headerIcon {
+.footerIcon,
+.headerIcon {
   /* colour from the 360 wheel */
   filter: invert(36%) sepia(9%) saturate(1705%) hue-rotate(295deg)
     brightness(93%) contrast(87%);
@@ -71,41 +70,44 @@ button {
 
 aside {
   grid-area: aside;
-  display: grid;
-  grid-template-rows: 50px 1fr;
   font-size: large;
   font-weight: 500;
   width: fit-content;
+
+  transition:text-decoration 2s;
+}
+.aside:hover{
+  text-decoration:underline ;
 }
 .logoIcon {
   width: 8rem;
 }
-.asideIcon,.headerIcon {
+.asideIcon,
+.headerIcon {
   width: 2rem;
 }
 .asideNav {
   gap: 1rem;
-  border: 0.1rem dashed rgb(22, 147, 11);
+}
+.header1 {
+  grid-area: header1;
+  padding-bottom: 2rem;
 }
 
 article {
   grid-area: article;
   display: grid;
   grid-template-areas:
-    "header"
+    "header2"
     "mainArticle";
   grid-template-rows: auto 1fr;
-
   overflow: auto;
 
   gap: 4rem;
-  border: 0.1rem dashed red;
 }
 
-header {
-
-  grid-area: header;
-  background-color: var(--greyBackground);
+.header2 {
+  grid-area: header2;
   justify-self: first baseline;
   position: absolute;
   z-index: 2;
@@ -116,25 +118,21 @@ header {
 .headerUpgrade {
   border: 1px solid var(--pinkMain);
   border-radius: 0.5rem;
-  color:var(--pinkMain);
+  color: var(--pinkMain);
   background-color: white;
   text-decoration: none;
   padding: 0 1rem 0 1rem;
 }
-.headerMemberName{
+.headerMemberName {
   font-size: 1rem;
 }
 .headerNav {
   display: grid;
-  grid-template-columns: auto 1fr auto;  
+  grid-template-columns: auto 1fr auto;
   border: 0.1rem dashed rgb(147, 183, 204);
 }
 .headerNavLeft {
   justify-content: left;
-
-}
-.headerNavMiddle{
-width: 100%;
 }
 .headerNavRight {
   justify-content: center;
@@ -142,17 +140,24 @@ width: 100%;
 
 .mainArticle {
   grid-area: mainArticle;
+
   gap: 1rem;
 }
 .wrapperBox {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-flow: row;
-  gap:0.5rem;
+  gap: 0.5rem;
   justify-items: center;
 }
-.box {
-  border: 0.1rem dashed rgb(37, 212, 224);
+.box{
+  padding: 0.5rem;;
+  transition:background-color 5s;
+}
+.box:hover{
+  cursor: pointer;
+  background-color: rgb(226, 223, 223);
+  /* box-shadow: .4rem 0 .4rem .4rem 0 .4rem rgb(220, 214, 216); */
 }
 .songPic {
   object-fit: cover;
@@ -189,7 +194,7 @@ footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 1rem;
-  border: 0.2rem solid red;
+
   justify-items: center;
   padding: 0.5rem;
 }
@@ -227,39 +232,49 @@ h3 {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.box >p,.box >h3{
-  width:15ch;
+.box > p,
+.box > h3 {
+  width: 15ch;
 }
 @media screen and (max-width: 700px) {
-  .songPic{
+  .songPic {
     width: 7rem;
   }
-  .asideIcon,.headerIcon {
+  .asideIcon,
+  .headerIcon {
     width: 1.5rem;
   }
-  .headerNavRight{
+  .footerIcon {
+    width: 1rem;
+  }
+  .headerNavRight {
     justify-content: left;
   }
-  .wrapperBox{
+  .wrapperBox {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  .headerUpgrade,.headerMemberName{
-    font-size: 0.8rem;;
+  .headerUpgrade,
+  .headerMemberName {
+    font-size: 0.8rem;
   }
-
+  .leftFooter,
+  .rightFooter {
+    gap: 0rem;
+  }
 }
 
-
 @media screen and (max-width: 400px) {
-  
   .logoIcon {
-    width: 4rem;
+    width: 5rem;
   }
-  .asideIcon,.headerIcon {
-    width: 1.5rem;
-  
+  .asideNav{
+justify-content: center;
   }
-  
+  .asideIcon,
+  .headerIcon {
+    width: 1rem;
+  }
+
   .asideNavTop,
   .asideNavMiddle {
     grid-template-columns: auto;
@@ -278,7 +293,18 @@ h3 {
   .aside {
     display: none;
   }
-  .footerText{
+  .footerText {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .footerIcon {
+    width: 0.8rem;
+  }
+  .footerIcon {
+    width: 0.8rem;
+  }
+  .footerText {
+    font-size: 0.5rem;
   }
 }
