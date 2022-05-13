@@ -368,7 +368,7 @@ h3 {
     display: none;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .footerImg {
     width: 2rem;
   }
@@ -378,4 +378,39 @@ h3 {
   .footerText {
     font-size: 0.5rem;
   }
+  .header2 {
+    left: 95px;
+    right: 5px;
+  }
 }
+@media screen and (max-width: 250px) {
+  h2{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .wrapperFooter{
+    gap:0;
+  }
+  main{
+    padding: 0;
+  }
+  .header1{
+    justify-content: center;
+  }
+  .header2{
+    display: none;
+  }
+ aside.asideNav{
+   display: none;
+ }
+ .footerImg {
+  display: none;
+}
+}
+
