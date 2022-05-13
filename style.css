@@ -42,14 +42,17 @@ footer {
 .logo {
     height: 50px;
     vertical-align: middle;
+    display: grid;
+    grid-template-columns: 30px 1fr;
 }
 
 .logotext {
-    display: inline;
+    
     height: 50px;
-    margin-left:10px;
+    margin-left: 50px;
+    margin-top: 22px;
     font-size: x-large;
-    text-align: center;
+    
     
 }
 
