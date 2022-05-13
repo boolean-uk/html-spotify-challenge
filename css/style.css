@@ -124,12 +124,10 @@ article {
 
 .headerNav {
   display: grid;
-  grid-template-areas:
-  "headerNavLeft headerNavRight ." ;
-  grid-template-columns:auto 1fr auto;
+  grid-template-areas: "headerNavLeft headerNavRight .";
+  grid-template-columns: auto 1fr auto;
 
   padding: 0.5rem;
-
 }
 .headerNavLeft {
   grid-area: headerNavLeft;
@@ -155,7 +153,6 @@ article {
   color: var(--pinkMain);
 }
 .headerNavRight .wrapperColumn {
-
   padding: 0.1rem;
   border: 0.1rem solid var(--pinkMain);
   border-radius: 0.5rem;
@@ -220,14 +217,14 @@ footer {
   width: 1.5rem;
 }
 
-.slider,.sliderSmall {
+.slider{
   height: 0.3rem;
   width: 100%; /* Full-width */
   -webkit-appearance: none;
   background: var(--lighterGrey);
   border-radius: 0.1rem;
 }
-.slider::-webkit-slider-thumb{
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--pinkMain);
@@ -284,8 +281,7 @@ h3 {
   width: 15ch;
 }
 @media screen and (max-width: 700px) {
-
-  .mainArticleListLink{
+  .mainArticleListLink {
     width: 10ch;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -366,16 +362,16 @@ h3 {
     font-size: 0.5rem;
   }
   .headerNavRight .wrapperColumn {
-    padding: 0.0.5rem;
+    padding: 0.5rem;
   }
-  .mainArticleList{
+  .mainArticleList {
     display: none;
   }
 }
 @media screen and (max-width: 300px) {
-.footerImg{
-  width: 2rem;
-}
+  .footerImg {
+    width: 2rem;
+  }
   .footerIcon {
     width: 0.7rem;
   }
