@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify Clone</title>
 </head>
 <body>
-    
+    <div id="container">
+
+        <nav class="top-nav">
+            <div id="logo-area"><img src="assets/img/logo-small.svg" alt="Spotify" id="main-logo"><h1>Spotify</h1></div>
+            <button class="upgrade">Effetua L'Upgrade</button>
+        </nav>
+
+        <div class="column-container">
+            <nav class="side-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Cerca</li>
+                    <li>La tua libreria</li>
+                </ul>
+                <h3>Playlist</h3>
+                <ul>
+                    <li class="new-playlist">Crea Playlist</li>
+                    <li>Nome Playlst</li>
+                    <li>Nome Playlst</li>
+                    <li>Nome Playlst</li>
+                    <li>Nome Playlst</li>
+                    <li>Nome Playlst</li>
+                </ul>
+            </nav>
+            <main class="tracks">
+
+                <nav class="track-nav">
+                    <ul>
+                        <li><a href="#" class="active">In Evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e Mood</a></li>
+                        <li><a href="#">Nuove Uscite</a></li>
+                        <li><a href="#">Nuove Uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
+                    </ul>
+                </nav>
+
+                <div class="tracks-container">
+                    <h2>Recently played</h2>
+                    <div class="tracks-row">
+
+                        <div class="suggestion">
+                            <img src="assets/img/metal_lifting.jpg" alt="Metal Lifting" class="suggestion-img">
+                            <h3>Heavy Metal</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/stranger.jpeg" alt="Stranger Things OST" class="suggestion-img">
+                            <h3>Stranger Things, Vol 1 (a Netflix Original Series Soundtrack)</h3>
+                            <h4>Kyle Dixon & Michael Stein</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place OST" class="suggestion-img play-overlay">
+                            <h3>A Quiet Place</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/split.jpeg" alt="Split" class="suggestion-img">
+                            <h3>Split</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/cure.jpeg" alt="A Cure for Wellness" class="suggestion-img">
+                            <h3>A Cure for Wellness</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/sinister.jpeg" alt="Sinister" class="suggestion-img">
+                            <h3>Sinister</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+
+                    </div>
+
+                    <h2>Creato per John Doe</h2>
+                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <div class="tracks-row">
+                        <div class="suggestion">
+                            <img src="assets/img/radar.jpeg" alt="Il tuo Release Radar" class="suggestion-img">
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/mixdaily.jpeg" alt="Il tuo Daily Mix 1" class="suggestion-img">
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+
+                    <h2>Artisti più popolari</h2>
+                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <div class="tracks-row">
+                        <div class="suggestion">
+                            <img src="assets/img/youg.jpeg" alt="Artist's name" class="suggestion-img artist">
+                            <h3>Artist Name</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/img/einaudi.jpeg" alt="Artist's name" class="suggestion-img artist">
+                            <h3>Artist Name</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <footer class="player-controls">
+
+    </footer>
 </body>
 </html>
