@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Clone</title>
 </head>
+
 <body>
     <div id="container">
 
         <nav class="top-nav">
-            <div id="logo-area"><img src="assets/img/logo-small.svg" alt="Spotify" id="main-logo"><h1>Spotify<sup>&#174;</sup></h1></div>
+            <div id="logo-area"><img src="assets/img/logo.svg" alt="Spotify" id="main-logo"></div>
             <button class="upgrade">Effetua L'Upgrade</button>
         </nav>
 
         <div class="column-container">
             <nav class="side-nav">
-                <ul>
-                    <li>Home</li>
-                    <li>Cerca</li>
-                    <li>La tua libreria</li>
-                </ul>
+                <div class="side-nav-item active"><img src="assets/img/home.svg" class="side-icon"><a href="#">Home</a>
+                </div>
+                <div class="side-nav-item"><img src="assets/img/search.svg" class="side-icon"><a href="#">Cerca</a>
+                </div>
+                <div class="side-nav-item"><img src="assets/img/libreria.svg" class="side-icon"><a href="#">La tua
+                        libreria</a></div>
                 <h3>Playlist</h3>
-                <ul>
-                    <li class="new-playlist">Crea Playlist</li>
-                    <li>Nome Playlst</li>
-                    <li>Nome Playlst</li>
-                    <li>Nome Playlst</li>
-                    <li>Nome Playlst</li>
-                    <li>Nome Playlst</li>
-                </ul>
+                <div class="side-nav-item">
+                    <div class="add-playlist">+</div><a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="#">Nome Playlist</a>
+                </div>
             </nav>
             <main class="tracks">
 
@@ -61,7 +71,8 @@
                             <h4>Kyle Dixon & Michael Stein</h4>
                         </div>
                         <div class="suggestion">
-                            <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place OST" class="suggestion-img play-overlay">
+                            <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place OST"
+                                class="suggestion-img play-overlay">
                             <h3>A Quiet Place</h3>
                             <h4>Subtitle</h4>
                         </div>
@@ -120,4 +131,5 @@
 
     </footer>
 </body>
+
 </html>

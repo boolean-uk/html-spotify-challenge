@@ -50,7 +50,7 @@ button.upgrade:hover {
 }
 
 #main-logo {
-  width: 2em;
+  height: 3em;
 }
 
 .column-container {
@@ -58,6 +58,49 @@ button.upgrade:hover {
   grid-template:
     "side-nav tracks"
     / 1fr 3fr;
+}
+
+.side-nav-item {
+    vertical-align: middle;
+    height: 3em;
+}
+
+.side-icon {
+    height: 1em;
+    margin: 0;
+    padding: 0.5em 1em 0 0;
+}
+
+.side-nav-item a {
+    color: gray;
+} 
+
+.side-nav-item:hover {
+    color: white
+}
+
+.side-nav-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.side-nav-item.active a {
+    color: white
+}
+
+.side-nav-item a:hover {
+    color: white;
+}
+
+.add-playlist {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 0.2em;
+    margin-right: 1em;
 }
 
 .track-nav {
@@ -84,6 +127,12 @@ button.upgrade:hover {
 
 .track-nav ul li a:hover {
   color: gray;
+}
+
+.track-nav ul li .active {
+    padding-bottom: 0.5em;
+    border-width: 3em;
+    border-bottom: 2px solid lightgreen;
 }
 
 .side-nav {
