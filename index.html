@@ -4,9 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' -25,
+          'opsz' 48
+        }
+        </style>
 </head>
 <body>
-    
+
+    <header>
+        <div class="logo"><img src="./assets/img/logo-small.svg" alt="logo"> 
+            <div class="logotext">Spotify</div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                     <img src="./assets/img/home.svg" alt="home"> 
+                     <span>Home</span>
+                
+                </li>
+
+                <li>
+                     <img src="./assets/img/search.svg" alt="search">
+                     <span>Search</span>
+                </li>
+                <li>
+                  <img src="./assets/img/libreria.svg" alt="library">
+                  <span>Your Library</span>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="playlist">
+            <div class="title">Playlist</div>
+            <div class="create"><img src="./assets/hugo-190.png" alt="create">
+            <div class="playlist-text">Create Playlist</div>
+            </div>
+
+            <ul>
+                <li>Playlist</li>
+                <li>Playlist</li>
+                <li>Playlist</li>
+                <li>Playlist</li>
+                <li>Playlist</li>
+                <li>Playlist</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="login"><img src="./assets/img/profile.svg" alt="Profile-picture"> 
+                <span>John Doe</span>
+            </div>
+
+        </div>
+
+        <div class="recent">
+            <h2>Recently Played</h2>
+
+            <div class="cards">
+            <div class="card">
+                <img src="./assets/img/metal_lifting.jpg" alt="heavy-metal">
+                <p>Heavy Metal</p>
+                <div class="subtitle">subtitle</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/stranger.jpeg" alt="stranger things">
+                <p>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</p>
+                <div class="subtitle">Kyle Dixon & Micheal Stein</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/aquietplace.jpeg" alt="quietplace">
+                <p>A quite place</p>
+                <div class="subtitle">subtitle</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/split.jpeg" alt="split">
+                <p>Split</p>
+                <div class="subtitle">subtitle</div>
+            
+            </div>
+            <div class="card">
+                <img src="./assets/img/cure.jpeg" alt="cure">
+                <p>A cure for wellness</p>
+                <div class="subtitle">subtitle</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/sinister.jpeg" alt="sinister">
+                <p>Sinister</p>
+                <div class="subtitle">subtitle</div>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="madefor">
+            <h2>Made for John Doe</h2>
+            <div class="card">
+                <img src="./assets/img/radar.jpeg" alt="release">
+                <p>Release Radar</p>
+                <div class="subtitle">Catch all the lastest music from artists you follow, plus new...</div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/mixdaily.jpeg" alt="daily mix">
+                <p>Daliy Mix 1</p>
+                <div class="subtitle">Billie Eilish, Josh Golden, The Chainsmoker and more</div>
+            </div>
+        </div>
+
+        <div class="artist">
+            <h2>Best of artists</h2>
+            <h3>Bringing together the top songs from an artist.</h3>
+            <div class="card"> 
+                <img src="./assets/img/einaudi.jpeg" alt="einaudi">
+                <p>Einaudi</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/youg.jpeg" alt="lana del rey">
+                <p>Lana Del Rey</p>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <footer>
+        <div class="footerleft">
+            <img src="./assets/img/sinister.jpeg" alt="sinister">
+            <div class="music">
+                <div>Sinister</div>
+                <div class="brano">Brano Nome</div>
+                            
+            </div>
+
+            <div class="button">
+                <span class="material-symbols-outlined">
+                    favorite
+                    </span>
+                    
+                <span class="material-symbols-outlined">
+                    arrow_downward
+                    </span>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="footermiddle">
+            <div class="button">
+                <span class="material-symbols-outlined">
+                    shuffle
+                </span>
+                 <span class="material-symbols-outlined">
+                        fast_rewind
+                </span>
+
+                <span class="material-symbols-outlined">
+                    play_circle
+                </span>
+
+                <span class="material-symbols-outlined">
+                    fast_forward
+                    </span>
+
+                    <span class="material-symbols-outlined">
+                        replay
+                        </span>
+            </div>
+
+            <div class="progress">
+                <div class="time">0:25</div>
+                <div class="progressbar"></div>
+                <div class="time">4:35</div>
+
+            </div>
+
+        </div>
+
+        <div class="footerright">
+            <span class="material-symbols-outlined">
+                lyrics
+                </span>
+            <span class="material-symbols-outlined">
+                    queue_music
+            </span>
+
+            <span class="material-symbols-outlined">
+                computer
+                </span>
+            
+             <span class="material-symbols-outlined">
+                    volume_up
+            </span>
+
+            <div class="volume"></div>
+
+        </div>
+    </footer>
 </body>
 </html>
