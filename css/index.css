@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* DEBUG RULES */
+  
+  .debug-box-red {
+    /* padding: 2px; */
+    border: 1px dashed red;
+  }
+  
+  .debug-box-green {
+    /* padding: 2px; */
+    border: 1px dashed green;
+  }
+  
+  .debug-box-blue {
+    /* padding: 2px; */
+    border: 1px dashed blue;
+  }
+  
+  /* MAIN LAYOUT */
+  .app-main-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+  }
+  
+  .sidebar-main-content-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+
+  .sidebar-main-content-grid .main{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+  }
+
+  /* SIDEBAR LAYOUT */
+  .sidebar-main-content-grid aside{
+    display: grid;
+    grid-template-rows: 80px auto 100px auto 1fr;
+  }
+
+  aside .sidebar-playlist-list {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+   /* FOOTER LAYOUT */
+
+   .app-main-container footer {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px
+}
