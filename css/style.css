@@ -60,6 +60,11 @@ button.upgrade:hover {
     / 1fr 3fr;
 }
 
+.side-nav {
+  grid-area: side-nav;
+  padding-left: 1em;
+}
+
 .side-nav-item {
     vertical-align: middle;
     height: 3em;
