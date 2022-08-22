@@ -35,6 +35,7 @@
   .sidebar-main-content-grid .main{
     display: grid;
     grid-template-rows: 80px 1fr;
+    overflow: hidden;
   }
 
   .main .main-content {
@@ -67,6 +68,7 @@
   .app-main-container footer {
     /* position: fixed;
     bottom: 0; */
+    overflow: hidden;
    display: grid;
    grid-template-columns: 200px 1fr 200px
    }
