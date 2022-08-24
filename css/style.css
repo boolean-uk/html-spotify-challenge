@@ -160,11 +160,16 @@ button.upgrade:hover {
 }
 
 .tracks-row {
+  margin-top: 2em;
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   align-items: top;
   justify-content: space-between;
+}
+
+.tracks-row.last {
+  margin-bottom: 20em;
 }
 
 .tracks-container {
@@ -215,6 +220,31 @@ button.upgrade:hover {
 
 .song-playing {
   grid-area: song-playing;
+  display: grid;
+  grid-template:
+    "song-playing-cover song-playing-infos"
+    / 1fr 1fr;
+  gap: 1em;
+}
+
+.song-playing-cover {
+  grid-area: song-playing-cover;
+  text-align: right;
+}
+
+.song-playing-infos {
+  padding-top: 0.5em;
+  text-align: left;
+  grid-area: song-playing-infos;
+}
+
+.song-playing-artist {
+  color: gray;
+  font-size: smaller;
+}
+
+.song-playing-img {
+  width: 50px;
 }
 
 .favs {
@@ -223,6 +253,12 @@ button.upgrade:hover {
 
 .player {
   grid-area: player;
+}
+
+.player-control-button {
+  height: 34px;
+  filter: invert(100%);
+  margin-right: 1em;
 }
 
 .volume-controls {
