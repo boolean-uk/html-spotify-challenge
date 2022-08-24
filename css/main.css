@@ -1,3 +1,11 @@
 .main-content .content {
     height: 200px;
 }
+
+.main-header {
+    background-color: #080b12;
+}
+
+.main {
+    background-color: #141922;
+}

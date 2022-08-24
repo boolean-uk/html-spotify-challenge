@@ -9,18 +9,45 @@
 .spotify-logo {
     width: 80%;
     margin: 10px;
+    color: white;
 }
 
-.sidebar-account img {
-    border-radius: 50%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    object-position: center center;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    box-sizing: border-box;
+.sidebar-account {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sidebar-playlist, .sidebar-playlist-list {
+    margin: 10px;
+}
+
+.sidebar-playlist h2 {
+    color: white;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.sidebar-playlist span{
+    color: black;
+    padding: 5px 8px;
+    background-color: #b2b2b2;
+    border-radius: 3px;
+    font-size: large;
+    font-weight: 900;
+}
+
+.sidebar-nav {
+    fill: #b3b3b3;
+    margin: 10px;
+  }
+
+.sidebar-account svg {
+    fill: #b3b3b3;
+    display: inline;
+    margin-left: 10px;
+}
+
+.sidebar-account h2 {
+    justify-self: center;
+    display: inline;
+    margin-left: 20px;
 }

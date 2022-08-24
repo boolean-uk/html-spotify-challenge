@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* color: white; */
+  }
+
+  h3, h4 {
+    display: inline;
   }
   
   /* DEBUG RULES */
   
-  .debug-box-red {
+  /* .debug-box-red {
     border: 1px dashed red;
   }
   
@@ -16,7 +21,7 @@
   
   .debug-box-blue {
     border: 1px dashed blue;
-  }
+  } */
   
   /* MAIN LAYOUT */
   
@@ -54,8 +59,11 @@
 
   /* SIDEBAR LAYOUT */
   .sidebar-main-content-grid aside{
+    color: #b3b3b3;
+    background-color: #000000;
     display: grid;
     grid-template-rows: 80px auto 100px auto 1fr 60px;
+    margin: ;
   }
 
   aside .sidebar-playlist-list {
