@@ -55,12 +55,17 @@
   /* SIDEBAR LAYOUT */
   .sidebar-main-content-grid aside{
     display: grid;
-    grid-template-rows: 80px auto 100px auto 1fr;
+    grid-template-rows: 80px auto 100px auto 1fr 60px;
   }
 
   aside .sidebar-playlist-list {
     display: grid;
     grid-template-rows: auto;
+  }
+
+  .sidebar-nav-icon {
+    display: grid;
+    grid-template-columns: 40px 1fr;
   }
 
   /* FOOTER LAYOUT */
@@ -76,7 +81,19 @@
    footer .footer-now-playing {
     display: grid;
     grid-template-columns: 2fr 4fr 1fr 1fr;
+    align-self: center;
    }
 
+   footer .footer-player {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+   }
+
+   footer .footer-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 6fr;
+    align-self: center;
+   }
 
 

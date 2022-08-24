@@ -5,3 +5,22 @@
 .sidebar-playlist-list-item {
     height: 50px;
 }
+
+.spotify-logo {
+    width: 80%;
+    margin: 10px;
+}
+
+.sidebar-account img {
+    border-radius: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    object-position: center center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
