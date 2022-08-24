@@ -142,6 +142,7 @@ button.upgrade:hover {
 
 .side-nav {
   grid-area: side-nav;
+  padding-left: 1em;
 }
 
 .tracks {
