@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,6 +8,7 @@ body {
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
 }
 
 #container {
@@ -17,7 +18,7 @@ body {
 .top-nav {
   display: grid;
   grid-template:
-    "logo-area upgrade"
+    "logo-area upgrade-row"
     / 4fr 1fr;
   padding: 1em;
 }
@@ -36,12 +37,19 @@ body {
   font-size: 0.5em;
 }
 
-.upgrade {
-  grid-area: upgrade;
+h2,
+h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-button.upgrade {
-  padding: 0.5em;
+.upgrade-row {
+  grid-area: upgrade-row;
+  background-color: #080b12;
+}
+
+.upgrade-row button {
+  padding: 1em;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -66,46 +74,46 @@ button.upgrade:hover {
 }
 
 .side-nav-item {
-    vertical-align: middle;
-    height: 3em;
+  vertical-align: middle;
+  height: 3em;
 }
 
 .side-icon {
-    height: 1em;
-    margin: 0;
-    padding: 0.5em 1em 0 0;
+  height: 1em;
+  margin: 0;
+  padding: 0.5em 1em 0 0;
 }
 
 .side-nav-item a {
-    color: gray;
-} 
+  color: gray;
+}
 
 .side-nav-item:hover {
-    color: white
+  color: white;
 }
 
 .side-nav-item a {
-    display: inline-block;
-    text-decoration: none;
-    color: gray;
-    margin-top: 0;
-    padding-top: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .side-nav-item.active a {
-    color: white
+  color: white;
 }
 
 .side-nav-item a:hover {
-    color: white;
+  color: white;
 }
 
 .add-playlist {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: 0.2em;
-    margin-right: 1em;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 0.2em;
+  margin-right: 1em;
 }
 
 .track-nav {
@@ -135,9 +143,9 @@ button.upgrade:hover {
 }
 
 .track-nav ul li .active {
-    padding-bottom: 0.5em;
-    border-width: 3em;
-    border-bottom: 2px solid lightgreen;
+  padding-bottom: 0.5em;
+  border-width: 3em;
+  border-bottom: 2px solid lightgreen;
 }
 
 .side-nav {
@@ -159,12 +167,17 @@ button.upgrade:hover {
   justify-content: space-between;
 }
 
+.tracks-container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 .tracks-container h4 {
-    color: gray;
+  color: gray;
 }
 
 .suggestion {
-    text-align: center;
+  text-align: center;
 }
 
 .suggestion-img {
@@ -172,9 +185,46 @@ button.upgrade:hover {
 }
 
 .artist {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
+.player-controls {
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background-color: #282828;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  display: grid;
+  grid-template:
+    "song-playing favs player volume-controls"
+    / 2fr 1fr 4fr 2fr;
+  padding: 1em;
+}
 
-/* Color of top nav: #080B12,
-   Don't forget to split it off from the current update */
+.song-playing,
+.favs,
+.player,
+.volume-controls {
+  text-align: center;
+}
+
+.song-playing {
+  grid-area: song-playing;
+}
+
+.favs {
+  grid-area: favs;
+}
+
+.player {
+  grid-area: player;
+}
+
+.volume-controls {
+  grid-area: volume-controls;
+}
