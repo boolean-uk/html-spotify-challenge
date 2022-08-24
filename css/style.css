@@ -37,6 +37,11 @@ body {
   font-size: 0.5em;
 }
 
+#small-logo {
+  display: none;
+  height: 3em;
+}
+
 h2,
 h3 {
   margin-top: 0.5em;
@@ -115,6 +120,10 @@ button.upgrade:hover {
   padding: 0.2em 0.5em 0.2em 0.5em;
   margin-right: 1em;
   border-radius: 0.2em;
+}
+
+.add-playlist:hover {
+  background-color: gray;
 }
 
 .track-nav {
@@ -305,4 +314,47 @@ progress[value]::-webkit-progress-bar {
 .volume-progress-bar {
   position: relative;
   top: -10px;
+}
+
+@media only screen and (max-width: 800px) {
+  #small-logo {
+    display: block;
+  }
+
+  #main-logo {
+    display: none;
+  }
+
+  .column-container {
+    display: grid;
+    grid-template:
+      "tracks"
+      / 1fr;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .player-controls {
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background-color: #282828;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    display: grid;
+    grid-template:
+      "song-playing favs player"
+      / 2fr 1fr 4fr;
+    padding: 1em;
+  }
+
+  .volume-controls {
+    display: none;
+  }
 }
