@@ -208,7 +208,7 @@ button.upgrade:hover {
   display: grid;
   grid-template:
     "song-playing favs player volume-controls"
-    / 2fr 1fr 4fr 2fr;
+    / 2fr 1fr 4fr 4fr;
   padding: 1em;
 }
 
@@ -273,6 +273,10 @@ button.upgrade:hover {
   margin-right: 1em;
 }
 
+.favs-button:hover {
+  filter: invert(100%);
+}
+
 .volume-controls {
   grid-area: volume-controls;
 }
@@ -282,20 +286,23 @@ button.upgrade:hover {
   display: inline-block
 }
 
-.bar-past {
-  margin: 0;
+progress {
   display: inline-block;
-  width: 20%;
-  height: 4px;
-  border-radius: 2px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+progress[value]::-webkit-progress-bar {
   background-color: white;
 }
 
-.bar-future {
-  margin: 0;
-  display: inline-block;
-  width: 60%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: gray;
+.song-progress-bar {
+  position: relative;
+  top: -4px;
+}
+
+.volume-progress-bar {
+  position: relative;
+  top: -10px;
 }
