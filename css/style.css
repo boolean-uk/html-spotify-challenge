@@ -39,7 +39,8 @@ body {
 
 #small-logo {
   display: none;
-  height: 3em;
+  margin-top: 0.5em;
+  height: 2em;
 }
 
 h2,
@@ -54,6 +55,7 @@ h3 {
 }
 
 .upgrade-row button {
+  width: 16em;
   padding: 1em;
   background-color: black;
   color: white;
@@ -75,7 +77,7 @@ button.upgrade:hover {
   display: grid;
   grid-template:
     "side-nav tracks"
-    / 1fr 3fr;
+    / 220px 3fr;
 }
 
 .side-nav-item {
@@ -140,11 +142,12 @@ button.upgrade:hover {
 .track-nav ul li {
   display: inline-block;
   margin-left: 1em;
+  padding-bottom: 1.5em;
   text-transform: uppercase;
 }
 
 .track-nav ul li a {
-  color: white;
+  color: lightgray;
   text-decoration: none;
 }
 
@@ -266,7 +269,7 @@ button.upgrade:hover {
 }
 
 .player-control-button {
-  height: 34px;
+  height: 28px;
   filter: invert(100%);
   margin-right: 1em;
 }
@@ -277,7 +280,7 @@ button.upgrade:hover {
 
 .favs-button {
   margin-top: 1em;
-  height: 22px;
+  height: 18px;
   filter: invert(50%);
   margin-right: 1em;
 }
@@ -316,6 +319,10 @@ progress[value]::-webkit-progress-bar {
   top: -10px;
 }
 
+.lg-view {
+  display: block;
+}
+
 @media only screen and (max-width: 800px) {
   #small-logo {
     display: block;
@@ -328,11 +335,15 @@ progress[value]::-webkit-progress-bar {
   .column-container {
     display: grid;
     grid-template:
-      "tracks"
-      / 1fr;
+      "side-nav tracks"
+      / 60px 1fr;
   }
 
-  .side-nav {
+  .lg-view {
+    display: none;
+  }
+
+  a.lg-view {
     display: none;
   }
 
@@ -349,12 +360,12 @@ progress[value]::-webkit-progress-bar {
     display: grid;
     display: grid;
     grid-template:
-      "song-playing favs player"
-      / 2fr 1fr 4fr;
+      "song-playing player"
+      / 2fr 4fr;
     padding: 1em;
   }
 
-  .volume-controls {
+  .volume-controls, .favs {
     display: none;
   }
 }
