@@ -6,21 +6,12 @@
     font-family: sans-serif;
   }
   
-  /* DEBUG RULES */
-  
-  .debug-box-red {
-    /* padding: 2px; */
-    border: 1px dashed red;
-  }
   
   .debug-box-green {
-    /* padding: 2px; */
-    border: 1px dashed green;
+    background-color: #6d6d6d;
   }
   
   .debug-box-blue {
-    /* padding: 2px; */
-    border: 1px dashed blue;
     display: grid;
     grid-template-rows: 60px auto;
   }
@@ -31,7 +22,7 @@
   
   /* MAIN LAYOUT */
   .app-main-container {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 1fr 60px;
@@ -46,17 +37,14 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
   }
-  /* li {
-    display: inline-block;
   
-  } */
   p,
   span {
     font-size: 12px;
   }
   .movie-container {
     display: grid;
-    height: 500px;
+    height: 520px;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -93,10 +81,7 @@
   .popular > div > img {
     border-radius: 20rem;
   }
-  /* footer {
-    position: absolute;
-    position: sticky;
-  } */
+  
   section > div > img {
     height: 170px;
   }
@@ -116,10 +101,12 @@
   li {
     color:#6d6d6d;
     float: left;
+    margin: 5px;
+
   }
   ul {
     list-style: none;
-    
+    margin-left: 30%;
   }
   
   .plus {
@@ -165,9 +152,5 @@
   }
   .h3 > h3 {
     margin-top: 40px;
-  }
-  nav.navigation {
-    text-align: center;
-    background-color: aqua;
   }
   
