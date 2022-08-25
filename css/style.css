@@ -1,0 +1,173 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* DEBUG RULES */
+  
+  .debug-box-red {
+    /* padding: 2px; */
+    border: 1px dashed red;
+  }
+  
+  .debug-box-green {
+    /* padding: 2px; */
+    border: 1px dashed green;
+  }
+  
+  .debug-box-blue {
+    /* padding: 2px; */
+    border: 1px dashed blue;
+    display: grid;
+    grid-template-rows: 60px auto;
+  }
+  .debug-box-blue > nav,
+  .movie-container {
+    background-color: #141922;
+  }
+  
+  /* MAIN LAYOUT */
+  .app-main-container {
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 60px;
+  }
+  nav {
+    height: 60px;
+    width: 100%;
+  
+  }
+  
+  .sidebar-main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  /* li {
+    display: inline-block;
+  
+  } */
+  p,
+  span {
+    font-size: 12px;
+  }
+  .movie-container {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-left:  20px;
+  }
+  .played-movie,
+  .for-john,
+  .popular {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  aside.debug-box-blue > div {
+    display: grid;
+    grid-template-columns: 20px auto;
+  }
+  .head {
+    color: white;
+    background-color: #080b12;
+    text-align: end;
+    padding: 20px;
+  }
+  .head > p {
+    border: 1px solid white;
+    display: inline;
+    padding: 5px 35px;
+    border-radius: 50px;
+  }
+  aside.debug-box-blue {
+    background-color: black;
+    color:#6d6d6d;
+    padding-left: 15px;
+  }
+  .popular > div > img {
+    border-radius: 20rem;
+  }
+  /* footer {
+    position: absolute;
+    position: sticky;
+  } */
+  section > div > img {
+    height: 170px;
+  }
+  .played-movie > div,
+  .for-john > div,
+  .popular > div {
+    text-align: center;
+    display: grid;
+    height: auto;
+    width: min-content;
+  }
+  .movie-container strong,
+  h3 {
+    color: white;
+  }
+  .movie-container p,
+  li {
+    color:#6d6d6d;
+    float: left;
+  }
+  ul {
+    list-style: none;
+    
+  }
+  
+  .plus {
+    background-color: white;
+    padding: 5px;
+    height: 30px;
+    font-size: large;
+  }
+  .create-playlist > p {
+    padding: 10px;
+  }
+  .create-playlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo {
+    padding: 10px 0 0 0;
+  }
+  .logo1 p {
+    padding: 3px;
+    margin-left: 10px;
+  }
+  .logo2 > p {
+    color: white;
+  }
+  [alt|="id"] {
+    border-radius: 50px;
+    background-color: grey;
+  }
+  .download {
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    margin-top: 180px;
+  }
+  div.debug-box-blue > nav > ul {
+    text-align: center;
+  }
+  .h3 {
+    margin-bottom: 20px;
+  }
+  .h3 > p {
+    margin-top: 10px;
+  }
+  .h3 > h3 {
+    margin-top: 40px;
+  }
+  nav.navigation {
+    text-align: center;
+    background-color: aqua;
+  }
+  
