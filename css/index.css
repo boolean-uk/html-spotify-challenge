@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     /* color: white; */
   }
 
@@ -34,12 +35,12 @@
   
   .sidebar-main-content-grid {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 241px 1fr;
   }
 
   .sidebar-main-content-grid .main{
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 120px 1fr;
     overflow: hidden;
   }
 
@@ -53,7 +54,7 @@
     height: 80vh;
     display: grid;
     grid-auto-flow: row;
-    overflow: scroll;
+    overflow-y: scroll;
     scroll-behavior: smooth;
   }
 
@@ -62,8 +63,7 @@
     color: #b3b3b3;
     background-color: #000000;
     display: grid;
-    grid-template-rows: 80px auto 100px auto 1fr 60px;
-    margin: ;
+    grid-template-rows: 80px auto auto 100px auto 1fr 60px 50px;
   }
 
   aside .sidebar-playlist-list {
@@ -88,7 +88,7 @@
 
    footer .footer-now-playing {
     display: grid;
-    grid-template-columns: 2fr 4fr 1fr 1fr;
+    grid-template-columns: 50px 100px auto auto;
     align-self: center;
    }
 
@@ -105,3 +105,56 @@
    }
 
 
+ /* MEDIA QUERIES */
+
+ @media screen and (max-width: 600px) {
+  .sidebar-main-content-grid aside{
+    display: grid;
+    grid-template-rows: 80px auto auto  1fr 60px;
+  }
+  .sidebar-main-content-grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+  }
+
+  .sidebar-nav-icon, .sidebar-account {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    scale: 1.2;
+    padding: 0px;
+  }
+
+  .sidebar-nav-icon svg{
+    align-self: center;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar-logo-small {
+    height: 20px;
+    display: block;
+    filter: invert(1);
+    margin: 20px;
+}
+
+.sidebar-logo-small img {
+ scale: 1.5;
+}
+
+.sidebar-nav-icon span {
+  display: none;
+}
+
+.sidebar-playlist, .sidebar-playlist-list, .sidebar-playlist-list-item {
+  display: none;
+}
+
+.sidebar-account h3 {
+display: none;
+}
+
+
+}

@@ -1,11 +1,67 @@
 .main-content .content {
-    height: 200px;
+    height: auto;
+    margin: 30px 50px;
+}
+
+.content .tracks-row {
+    margin-top: 20px;
 }
 
 .main-header {
     background-color: #080b12;
 }
 
-.main {
+.main, .main-content-header {
+    display: flex;
     background-color: #141922;
+    color: white;
+    
+}
+
+.main-content .main-content-header {
+    justify-content: center;
+    color: #b3b3b3;
+}
+
+.main-content-header h2 {
+    margin: 20px;
+    font-size: medium;
+}
+
+.main-header .button-upgrade {
+    display: flex;
+    border: 2px white solid;
+    border-radius: 22px;
+    width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    /* margin: 0 auto; */
+}
+
+.content .tracks-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tracks-row .track {
+    text-align: center;
+}
+
+.track img {
+    max-width: 100%;
+}
+
+.artists .track {
+    margin-bottom: 200px;
+}
+
+.track .artist-image {
+    border-radius: 50%;
 }

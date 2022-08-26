@@ -12,10 +12,15 @@
     color: white;
 }
 
-.sidebar-account {
+.sidebar-logo-small {
+    display: block;
+    
+}
+
+/* .sidebar-account {
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
+} */
 
 .sidebar-playlist, .sidebar-playlist-list {
     margin: 10px;
@@ -50,4 +55,8 @@
     justify-self: center;
     display: inline;
     margin-left: 20px;
+}
+.sidebar-account h3 {
+    margin-left: 20px;
+    
 }
