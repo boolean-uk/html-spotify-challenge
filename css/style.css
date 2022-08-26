@@ -198,8 +198,37 @@ button.upgrade:hover {
   text-align: center;
 }
 
-.suggestion-img {
-  max-width: 100%;
+.overlay {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.overlay .suggestion-img {
+  width: 100%;
+  height: auto;
+}
+
+.play-button-overlay {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+img.play-button-overlay {
+  filter: invert(100%);
+}
+
+.overlay:hover .play-button-overlay {
+  display: block;
+}
+
+.overlay:hover img.suggestion-img {
+  filter: brightness(50%);
 }
 
 .artist {
