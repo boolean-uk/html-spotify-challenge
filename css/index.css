@@ -90,7 +90,12 @@ footer .footer-options {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .app-main-container {
+    display: grid;
+    grid-template-rows: 100vh ;
+  }
+
   .sidebar-main-content-grid aside {
     display: grid;
     grid-template-rows: 80px auto auto 1fr 60px;
@@ -113,6 +118,14 @@ footer .footer-options {
     align-self: center;
   }
 
+  .main-content-header h2{
+    display: none;
+  }
+
+  #main-content-header {
+    display: none;
+  }
+
   .sidebar-logo {
     display: none;
   }
@@ -128,6 +141,10 @@ footer .footer-options {
     scale: 1.5;
   }
 
+  #small-logo {
+    opacity: 1;
+  }
+
   .sidebar-nav-icon span {
     display: none;
   }
@@ -139,6 +156,10 @@ footer .footer-options {
   }
 
   .sidebar-account h3 {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }

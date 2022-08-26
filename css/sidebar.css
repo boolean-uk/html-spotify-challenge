@@ -12,8 +12,9 @@
   color: white;
 }
 
-.sidebar-logo-small {
-  display: block;
+.sidebar-logo-small img{
+  /* display: block; */
+  opacity: 0;
 }
 
 .sidebar-playlist,
