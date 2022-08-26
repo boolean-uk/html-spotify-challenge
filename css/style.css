@@ -368,12 +368,12 @@ progress[value]::-webkit-progress-bar {
       / 60px 1fr;
   }
 
-  .lg-view {
+  .lg-view, a.lg-view {
     display: none;
   }
 
-  a.lg-view {
-    display: none;
+  .side-nav-item {
+    text-align: center;
   }
 
   .player-controls {
