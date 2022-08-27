@@ -18,12 +18,6 @@
   color: white;
 }
 
-.main-content .main-content-header {
-  justify-content: center;
-  color: #b3b3b3;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
 
 .main-content-header h2 {
   margin-left: 50px;
@@ -52,6 +46,15 @@
   margin-left: auto;
   margin-top: 30px;
   margin-right: 20px;
+}
+
+.main-header .button-upgrade:hover {
+  opacity: 0.8;
+  fill: white;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.1s;
 }
 
 .content .tracks-row {
