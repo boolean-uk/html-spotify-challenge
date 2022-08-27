@@ -21,10 +21,12 @@
 .main-content .main-content-header {
   justify-content: center;
   color: #b3b3b3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .main-content-header h2 {
-  margin: 20px;
+  margin-left: 50px;
   font-size: medium;
   align-self: center;
 }

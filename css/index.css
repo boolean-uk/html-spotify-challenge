@@ -33,7 +33,14 @@ h4 {
 
 .main .main-content {
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 150px auto;
+}
+
+.main-content .main-content-header {
+  justify-content: center;
+  color: #b3b3b3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .main-content .main-content-main {
@@ -116,14 +123,6 @@ footer .footer-options {
 
   .sidebar-nav-icon svg {
     align-self: center;
-  }
-
-  .main-content-header h2{
-    display: none;
-  }
-
-  #main-content-header {
-    display: none;
   }
 
   .sidebar-logo {
