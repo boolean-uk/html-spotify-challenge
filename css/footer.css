@@ -24,7 +24,6 @@ footer .footer-player {
 footer {
   background-color: #282828;
   position: sticky;
-  z-index: -1;
 }
 
 .footer-now-playing {
