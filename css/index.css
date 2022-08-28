@@ -18,6 +18,8 @@ h4 {
   width: 100vw;
   display: grid;
   grid-template-rows: calc(100vh - 80px) 80px;
+  position: sticky;
+  /* z-index: -1; */
 }
 
 .sidebar-main-content-grid {
