@@ -1,0 +1,60 @@
+footer .footer-player {
+  justify-self: center;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.footer-player .footer-player-icons {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.footer-player-icons img:hover {
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.2s;
+}
+
+.footer-player-icons img {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #282828;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;   
+}
+
+.footer-now-playing {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.footer-now-playing .now-playing-title-artist {
+  font-size: smaller;
+  color: white;
+  margin: 10px 0px;
+  padding: 5px;
+}
+
+.now-playing-title-artist h4 {
+  color: #b3b3b4;
+}
+
+.footer-now-playing .now-playing-icons {
+  align-self: center;
+  justify-content: center;
+  margin: 10px 5px;
+  display: flex;
+}
+
+.footer-now-playing .now-playing-icons:hover {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.2s;
+  }

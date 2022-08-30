@@ -1,0 +1,127 @@
+.main-content .content {
+  height: auto;
+  margin: 30px 50px;
+}
+
+.content .tracks-row {
+  margin-top: 20px;
+}
+
+.main-header {
+  background-color: #080b12;
+}
+
+.main,
+.main-content-header {
+  display: flex;
+  background-color: #141922;
+  color: white;
+}
+
+
+.main-content-header h2 {
+  margin-left: 50px;
+  font-size: medium;
+  align-self: center;
+}
+
+.main-content-header h2:hover {
+  color: white;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-width: 50px;
+  border-bottom: 2px solid lightgreen;
+  transition: 0.1s;
+}
+
+.main-header .button-upgrade {
+  display: flex;
+  border: 2px white solid;
+  border-radius: 22px;
+  width: 200px;
+  padding: 10px 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.main-header .button-upgrade:hover {
+  opacity: 0.8;
+  fill: white;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.1s;
+}
+
+.content .tracks-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content h4 {
+  color: #b3b3b4;
+  font-size: 11px;
+}
+
+.tracks-row .track {
+  text-align: center;
+}
+
+.track > img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.artists .track {
+  margin-bottom: 200px;
+}
+
+.track .artist-image {
+  border-radius: 50%;
+}
+
+.track {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  .img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .track:hover img {
+    opacity: 0.3;
+  }
+  
+  .track:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
