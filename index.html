@@ -4,9 +4,313 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Operafy</title>
+    <link rel="stylesheet" href="/boolean-uk-html-spotify/css/grids.css">
+    <link rel="stylesheet" href="/boolean-uk-html-spotify/css/style.css">
+    <link rel="stylesheet" href="/boolean-uk-html-spotify/css/responsive.css">
 </head>
-<body>
-    
+<body class="dashed-border-black">
+
+    <!-- LEFT MENU -->
+
+    <aside class="left-menu dashed-border-blue">
+
+        <div class="three-rows__expand-one-three logo">
+            <div></div>
+            <div class="three-columns__expand-three">
+                <img id="logo" src="/boolean-uk-html-spotify/assets/img/logo.png" alt="logo">
+                <h1>Operafy</h1>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+
+        <nav class="dashed-border-green">
+            <ul>
+                <li>
+                    <a class="ma-m two-columns__expand-two">
+                        <img class="icon-small" src="/boolean-uk-html-spotify/assets/img/home.svg" alt="home-white">
+                        <p><span class="pd-s">Home</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a class="ma-m two-columns__expand-two">
+                        <img class="icon-small" src="/boolean-uk-html-spotify/assets/img/search.svg" alt="magnifying-glass-grey">
+                        <p><span class="pd-s">Cerca</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a class="ma-m two-columns__expand-two">
+                        <img class="icon-small" src="/boolean-uk-html-spotify/assets/img/libreria.svg" alt="libreria-grey">
+                        <p><span class="pd-s">La tua liberia</span></p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="playlist dashed-border-green">
+            <h2>Playlist</h2>
+            <button class="two-columns__expand-two crea-playlist-button">
+                <img class="icon pd-s grey-background" src="/boolean-uk-html-spotify/assets/img/plus.png" alt="plus-grey">
+                <span class="style-font-size-normal">Crea Playlist</span>
+            </button>
+            <ul class="pd-m">
+                <li><a>gym opera</a></li>
+                <li><a>Mozart Madness</a></li>
+                <li><a>dubstep-Opera-Vibes</a></li>
+                <li><a>road trip opera</a></li>
+                <li><a>opera hype</a></li>
+                <li><a>summer 2019 opera tunes</a></li>
+                <li><a>chilled out opera</a></li>
+                <li><a>opera underground club mix</a></li>
+            </ul>
+        </div>
+
+        <button class="two-rows__expand-one border-bottom installa-app-button">
+            <div></div>
+            <div class="three-columns__expand-three dashed-border-green">
+                <img class="icon-small" src="/boolean-uk-html-spotify/assets/img/download.svg" alt="download-grey">
+                <span class="">Installa app</span>
+                <div></div>
+            </div>
+        </button>
+
+        <button  class="three-columns__expand-three dashed-border-green profile-button">
+            <img class="icon-small profile-outline" src="/boolean-uk-html-spotify/assets/img/profile.svg" alt="profile-pic">
+            <span class="style-white-bold">Alex90Jennings</span>
+            <div></div>
+        </button>
+
+    </aside>
+
+    <!-- MAIN CONTAINER -->
+
+    <main class="main-container dashed-border-blue scrollbar">
+        <div class="header two-columns__expand-one dashed-border-green header mg-m">
+            <div></div>
+            <button class="effettua-lupgrade">
+                <p>EFFETTUA L'UPGRADE</p>
+            </button>
+        </div>
+
+        <nav class="full-width dashed-border-green">
+            <ul class="responsive-columns-small align-middle bold">
+                <li class="minwidth ma-m">
+                    <a>IN EVIDENZA</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="minwidth ma-m">
+                    <a>PODCAST</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="minwidth ma-m">
+                    <a>CLASSIFICHE</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="minwidth ma-m">
+                    <a>GENERI E MOOD</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="minwidth ma-m">
+                    <a>NUOVE USCITE</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="minwidth ma-m">
+                    <a>SCOPRI</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Recently Played</h2>
+
+        <div class="dashed-border-green pd-l">
+            <ul class="card-list responsive-columns-large">
+                <li class="wrapper">
+                    <button class="card">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/img/mixdaily.jpeg" alt="four-albums">
+                        <h3>Opera Mix</h3>
+                        <h4>Best of the 1880s and more</h4>
+                        <div class="overlay">
+                            <img class="play-white" src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li class="wrapper">
+                    <button class="card">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-one.jpg" alt="album-one">
+                        <h3>Marriage of Figaro</h3>
+                        <h4>Mozart (1786)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li class="wrapper">
+                    <button class="card">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-two.jpg" alt="album-two">
+                        <h3>La Boheme</h3>
+                        <h4>Puccini (1896)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li class="wrapper">
+                    <button class="card">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-three.jpg" alt="album-three">
+                        <h3>Der Rosenkavalier</h3>
+                        <h4>Richard Strauss (1911)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li class="wrapper">
+                    <button class="card"> 
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-four.jpg" alt="album-four">
+                        <h3>Wozzeck</h3>
+                        <h4>Berg (1925)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li class="wrapper">
+                    <button class="card">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-five.jpg" alt="album-five">
+                        <h3>Peter Grimes</h3>
+                        <h4>Britten (1945)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <h2>Creato per Alex90Jennings</h2>
+        <p><span class="style-dark-grey bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
+
+        <div class="dashed-border-green pd-l">
+            <ul class="card-list responsive-columns-large">
+                <li>
+                    <button class="card wrapper">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-six.jpg" alt="album-six">
+                        <h3>Tosca</h3>
+                        <h4>Puccini (1990)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button class="card wrapper">
+                        <img class="album" src="/boolean-uk-html-spotify/assets/album-covers/album-seven.jpg" alt="album-seven">
+                        <h3>L'incoronazione di Poppea</h3>
+                        <h4>Monteverdi (1643)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <div></div>
+        </div>
+
+        <h2>Artisti più popolari</h2>
+        <p><span class="style-dark-grey bold pd-l">Più ascolti, più accurati saranno i suggerimenti</span></p>
+        
+        <div class="dashed-border-green pd-l">
+            <ul class="card-list responsive-columns-large">
+                <li>
+                    <button class="card card-circular wrapper">
+                        <img class="album circular" src="/boolean-uk-html-spotify/assets/album-covers/album-eight.jpg" alt="album-eight">
+                        <h3>Don Giovanni</h3>
+                        <h4>Mozart (1787)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button class="card card-circular wrapper">
+                        <img class="album circular" src="/boolean-uk-html-spotify/assets/album-covers/album-nine.jpg" alt="album-nine">
+                        <h3>Otello</h3>
+                        <h4>Verdi (1887)</h4>
+                        <div class="overlay">
+                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <div></div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="dashed-border-blue">
+
+        <div class="four-columns__expand-two currently-playing dashed-border-green">
+            <img class="icon" src="/boolean-uk-html-spotify/assets/album-covers/album-five.jpg" alt="album-five">
+            <div class="auto-rows">
+                <h3>Peter Grimes</h3>
+                <h4>Britten (1945)</h4>
+            </div>
+            <button class="footer-background no-border">
+                <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/heart-grey.png" alt="heart-grey">
+            </button>
+            <button class="footer-background no-border">
+                <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/folder-grey.png" alt="folder-grey">
+            </button>
+        </div>
+
+        <div class="auto-rows dashed-border-green">
+            <div class="seven-columns__expand-one-seven control-panel">
+                <div></div>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/random-white.png" alt="random-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/previous-white.png" alt="previous-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-small" src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/next-white.png" alt="forward-white">
+                </button>
+                <button class="footer-background no-border ma-s">
+                    <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/repeat-white.png" alt="repeat-white">
+                </button>
+                <div></div>
+            </div>
+            <div class="three-columns__expand-all">
+                <span class="style-light-grey-small-bold align-right">0:25</span>
+                <input class="time-slider" type="range">
+                <span class="style-light-grey-small-bold">3:47</span>
+            </div>
+        </div>
+
+        <div class="auto-columns dashed-border-green volume-rocker">
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/files-white.png" alt="files-white">
+            </button>
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/computer-white.png" alt="computer-white">
+            </button>
+            <button class="footer-background no-border ma-xs">
+                <img class="icon-x-small" src="/boolean-uk-html-spotify/assets/img/volume-white.png" alt="volume-white">
+            </button>
+            <input class="volume-slider" type="range" min="0" max="100" step="1">
+        </div>
+
+    </footer>
+
 </body>
 </html>
