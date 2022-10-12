@@ -37,14 +37,57 @@ header{
     border-radius: 25px;
     margin-left: 1000px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 /* end of header styling */
 
+/* menu styling aka. left bar */
 .menu{
     grid-area: menu;
     background-color: black;
+    display: grid;
+    grid-template-rows: 90px 180px 1fr 50px;
 }
+
+.spotify-logo-text{
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.icons{
+    display: grid;
+    grid-template-rows: 60px 60px 60px;
+}
+.playlists{
+    display: grid;
+    grid-template-rows: auto;
+}
+.playlist{
+   padding-left: 20px;
+   text-decoration: none;
+   color:rgb(168, 168, 168);
+   font-weight: bolder;
+}
+
+.home{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.discover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.library{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* end of menu styling */
 
 /* nave bar styling */
 nav{
@@ -71,6 +114,7 @@ a:hover{
 }
 
 /* end of nav bar styling */
+
 .recently-played{
     grid-area: recently-played;
     background-color: greenyellow;
