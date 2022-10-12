@@ -5,6 +5,7 @@
   --colour-secondary: #1db954;
   --colour-background: #232121;
   --colour-background-light: #373636c1;
+  --colour-hover: #373636;
 
   --font-colour-main: #fff;
   --font-size-main: 16px;
@@ -85,6 +86,94 @@ h2 {
 .icon {
   color: white;
   font-size: 24px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-hover:hover {
+  background-color: var(--colour-background-light);
+}
+
+.unavailable:hover {
+  cursor: not-allowed;
+}
+
+/**********************************************/
+/* HEADER */
+/**********************************************/
+
+.settings,
+.search-box,
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.home {
+  padding: 10px;
+  background-color: var(--colour-background-light);
+}
+
+.home:hover,
+.search:hover {
+  background-color: var(--colour-hover);
+}
+
+.search {
+  width: 400px;
+  padding: 12px 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--colour-background-light);
+  color: var(--font-colour-main);
+  font-size: 16px;
+}
+
+.search::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.search:focus {
+  outline: 2px solid white;
+}
+
+.search-icon {
+  position: absolute;
+  top: 13px;
+  left: 77px;
+  font-size: 20px;
+}
+
+.upgrade-btn {
+  background-color: var(--colour-primary);
+  color: var(--font-colour-main);
+  padding: 5px 16px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.upgrade-btn:hover {
+  transform: scale(1.05);
+}
+
+.profile-icon {
+  border: 8px solid #373636c1;
+  font-size: 18px;
+}
+
+.profile-icon:hover {
+  border: 8px solid #373636;
 }
 
 /**********************************************/
@@ -112,7 +201,7 @@ h2 {
 }
 
 .podcast:hover {
-  background-color: #373636;
+  background-color: var(--colour-hover);
 }
 
 .podcast img {

@@ -12,16 +12,26 @@
       <header class="header">
         <div class="settings">
           <ion-icon name="ellipsis-horizontal" class="icon"></ion-icon>
-          <ion-icon name="chevron-back" class="icon"></ion-icon>
-          <ion-icon name="chevron-forward" class="icon"></ion-icon>
+          <ion-icon name="chevron-back" class="icon icon-hover"></ion-icon>
+          <ion-icon
+            name="chevron-forward"
+            class="icon icon-hover unavailable"
+          ></ion-icon>
         </div>
         <div class="search-box">
-          <ion-icon name="home"></ion-icon>
-          <input type="text" />
+          <ion-icon name="home" class="icon home"></ion-icon>
+          <form>
+            <input
+              type="text"
+              class="search"
+              placeholder="What do you want to listen to?"
+            />
+            <ion-icon name="search" class="search-icon"></ion-icon>
+          </form>
         </div>
         <div class="profile">
-          <button>Upgrade</button>
-          <ion-icon name="person"></ion-icon>
+          <button class="upgrade-btn">Upgrade</button>
+          <ion-icon name="person" class="icon profile-icon"></ion-icon>
         </div>
       </header>
 
