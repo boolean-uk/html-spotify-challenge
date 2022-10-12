@@ -17,14 +17,7 @@ body {
         "aside main" 1fr
         "player player" 90px /
         230px 1fr;
-    gap: 2px;
-}
-
-aside {
-    grid-area: aside;
-    background-color: black;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    /* gap: 2px; */
 }
 
 .upgrade-bar {
@@ -37,14 +30,16 @@ main {
     background-color: #141922;
 }
 
-.player {
-    grid-area: player;
-    background-color: #282828;
-}
-
 /* LEFT ASIDE BAR */
 
-    /* All hover states */
+aside {
+    grid-area: aside;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* All similar hover states for aside */
 
 .playlist-item:hover,
 .install-app:hover,
@@ -55,6 +50,8 @@ aside nav ul li a:hover {
     color: #fff;
     transition: 0.3s
 }
+
+/* LEFT ASIDE BAR – Navigation */
 
 .main-logo {
     margin: 20px 21px;
@@ -86,10 +83,7 @@ li.active-page a img, li a:hover img {
     filter: none;
 }
 
- {
-    transition: 0.3s;
-    color: #fff;
-}
+/* LEFT ASIDE BAR – Playlists */
 
 li.active-page a {
     border-left: 3px solid #adff2f;
@@ -148,6 +142,8 @@ li.active-page a {
     font-size: .9rem;
 }
 
+/* LEFT ASIDE BAR – Profile */
+
 .profile {
     padding-left: 22px;
     padding-right: 22px;
@@ -199,4 +195,177 @@ li.active-page a {
     padding: 15px 0;
     text-decoration: none;
     font-weight: 800;
+}
+
+/* PLAYER */
+
+.player {
+    grid-area: player;
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: 230px 1fr 230px;
+}
+
+/* PLAYER – Current song */
+
+.current-song {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    height: 100%;
+    place-items: center start;
+}
+
+.song-cover img {
+    width: 42px;
+    padding-left: 11px;
+    padding-right: 12px;
+}
+
+/* Adding .current song here as I might end up having another .title somewhere */
+
+.current-song .title a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.current-song .title a:hover {
+    text-decoration: underline;
+}
+
+.current-song .artist {
+    line-height: .8rem;
+}
+
+.current-song .artist a {
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: .8rem;
+    /* line-height: .8rem; – not needed here but needed on the parent element. Don't ask me why*/
+}
+
+.current-song .artist a:hover {
+    text-decoration: underline;
+}
+
+.current-song span {
+    padding: 0 5px;
+}
+
+/* PLAYER – Player main */
+
+.player-main {
+    padding: 15px 0;
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.buttons {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, auto);
+    width: auto;
+}
+
+.fill.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.player-main a {
+    display: block;
+    padding: 0 5px;
+}
+
+.player-main a span {
+    font-size: 1.8rem;
+}
+
+.player-main a span.smaller {
+    font-size: 1.5rem;
+    margin-top: -2px;
+}
+
+.player-main a span.bigger {
+    vertical-align: bottom;
+    margin-top: -7px;
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    font-size: 2.9rem;
+    color: #fff;
+    transition: .2s
+}
+
+.player-main a:hover span.bigger {
+    transform: scale(1.1); 
+    transition: .2s
+}
+
+/* Silder idea from https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 400px; /* Full-width */
+    height: 3px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    border-radius: 5px;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 12px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+    border-radius: 50%;
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    opacity: 1
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 12px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+    border-radius: 50%;
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    opacity: 1
+  }
+
+  .player-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+.song-timestamp {
+    font-size: .7rem;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #a3a3a3;
+    padding: 0 6px;
+}
+
+/* PLAYER - Volume */
+
+.volume {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    height: 100%;
+    place-items: center;
 }

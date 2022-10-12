@@ -68,6 +68,97 @@
     </aside>
     <div class="upgrade-bar">upgrade-bar</div>
     <main>main</main>
-    <section class="player">player</section>
+    <section class="player">
+        <section class="current-song">
+            <div class="song-cover">
+                <a href="#">
+                    <img src="assets/img/sinister.jpeg">
+                </a>
+            </div>
+            <div>
+                <div class="title">
+                    <a href="#">Sinister</a>
+                </div>
+                <div class="artist">
+                    <a href="#">Brano Nome</a>
+                </div>
+            </div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        folder
+                    </span>
+                </a>
+        </section>
+
+        <section class="player-main">
+            <div class="buttons">
+                <a href="#">
+                <span class="smaller material-symbols-outlined">
+                    shuffle
+                </span>
+                </a>
+                <a href="#">
+                    <span class="fill material-symbols-outlined">
+                        skip_previous
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="bigger material-symbols-outlined">
+                        play_circle
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="fill material-symbols-outlined">
+                        skip_next
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="smaller material-symbols-outlined">
+                        repeat
+                    </span>
+                </a>
+            </div> 
+            <div class="player-inner">
+                <div class="song-timestamp">0:25</div>
+                 <!-- Slider idea from https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
+                <div class="song-timestamp">4:35</div>
+            </div>
+        </section>
+        <section class="volume">
+            <div>
+                <span class="material-symbols-outlined">
+                    list
+                </span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    computer
+                </span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    volume_up
+                </span>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider-volume" >
+            </div>
+        </section>
+    </section>
 </body>
 </html>
+
+
+
+
+                
+
+
