@@ -51,6 +51,7 @@ body {
   grid-row: 2 / 3;
   margin-left: 10px;
   border-radius: 12px;
+  padding: 20px;
 }
 
 .main {
@@ -174,6 +175,49 @@ h2 {
 
 .profile-icon:hover {
   border: 8px solid #373636;
+}
+
+/**********************************************/
+/* SIDEBAR */
+/**********************************************/
+
+.main-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.small-logo {
+  width: 20px;
+  height: auto;
+}
+
+.menu-icon {
+  font-size: 22px;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 0.1px solid #aaa;
+  margin-bottom: 16px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.sidebar p:hover {
+  color: var(--font-colour-main);
+}
+
+.playlist:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 /**********************************************/
