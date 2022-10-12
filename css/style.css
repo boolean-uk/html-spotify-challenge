@@ -1,0 +1,79 @@
+/* housekeeping start */
+
+body {
+  margin: 0;
+  color: white;
+}
+
+/* housekeeping end */
+
+
+/* header start */
+
+
+
+/* header end */
+
+
+/* main start */
+
+main {
+  height: 200vh;
+}
+
+/* main end */
+
+
+/* nav start */
+
+nav {
+  background: black;
+  width: 15vw;
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+}
+
+nav img {
+  margin: 20px;
+  width: 10vw;
+}
+
+.left-nav-button {
+  display: inline-flex;
+}
+
+.left-nav-button img {
+  width: 5vw;
+}
+
+.left-nav-button h2 {
+
+}
+
+/* nav end */
+
+
+/* footer start */
+
+
+
+/* footer end */
+
+
+/* repeatables start */
+
+.grid-rows-auto {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.filter-black {
+  filter: brightness(0) saturate(100%)
+}
+
+.filter-white {
+  filter: brightness(100) saturate(100%);
+}
+
+/* repeatables end */
