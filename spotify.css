@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif
+}
 
 main{
     height: 100vh;
@@ -14,18 +17,18 @@ main{
     "menu  created-for"     1fr
     "menu popular-artists"  150px
     "footer     footer"     80px/
-    300px      1fr
+    250px      1fr
  ;
 }
 
 /* styling for header */
 header{
     grid-area: header;
-    background-color: black;
+    background-color: rgb(32, 32, 34);
 }
 
 .upgrade{
-    background-color: black;
+    background-color: rgb(32, 32, 34);
     color: white;
     border-color: white;
     height: 30px;
@@ -37,16 +40,37 @@ header{
 }
 
 /* end of header styling */
+
 .menu{
     grid-area: menu;
-    background-color: lightgreen;
+    background-color: black;
 }
 
+/* nave bar styling */
 nav{
     grid-area: nav;
-    background-color: lightseagreen;
+    background-color: rgb(41, 41, 46);
+    gap: 20px;
 }
 
+.nav-bar{
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-options{
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover{
+    text-decoration: underline greenyellow 2px;
+}
+
+/* end of nav bar styling */
 .recently-played{
     grid-area: recently-played;
     background-color: greenyellow;
@@ -64,5 +88,5 @@ nav{
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(48, 44, 44);
 }
