@@ -4,9 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Spotify</title>
 </head>
 <body>
+    <div class="two-row-grid">
+        <div class="three-column-grid__scroll">
+            <nav class="nav-container four-row-grid">
+                <div class="nav-header">
+                    <img class="logo" src="/assets/img/logo.svg " alt="logo">
+                    </div>
+                <ul>
+                    <li><a href="#" class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/home.svg" alt="home">
+                    <span>Home</span></a></li>
+                   <li><a href="#" class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/search.svg" alt="search">
+                    <span>Search</span></a></li>
+                   <li><a href="#" class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/libreria.svg" alt="home">
+                    <span>Library</span></a></li>
+                    
+                </ul>
+                <div class="playlist-container">
+                    <ul>
+                        <a href="#"><li class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/create-playlist.png" alt="create-playlist">
+                        <span>Crete Playlist</span></li></a>
+                        <a href="#"><li class="two-column-grid__expand-two"><img class="nav-logo" src="/assets/img/liked song.jpeg" alt="home">
+                        <span>Liked Songs</span></li></a>
+                        <hr>
+                        <li></li><a href="#" class="nav-playlist">My Playlist #1
+                        </a> 
+                        <li><a href="#" class="nav-playlist">Deep House 2022
+                         </a> </li>
+                         <li><a href="#" class="nav-playlist">Sing-Along Indie Hits
+                         </a> </li>
+                         <li><a href="#" class="nav-playlist">Discover Weekly
+                         </a> </li>
+                        <li><a href="#" class="nav-playlist">Grime Shutdown
+                         </a> </li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <ul>
+                       <li><a href="#" class="two-column-grid__expand-two"><img id="nav-footer-icon" src="/assets/img/download.svg" alt="home">
+                        <span>Install App</span></a></li>
+                        </ul>
+                    </div>
+            </nav>
+            <main >
+                <header>
+                    <div class="three-column-grid__expand-two">
+                        <div>
+                            <div class="header-left-arrows">
+                            <img class="arrows" src="/assets/left-arrow.png" alt="left-arrow">
+                            <img class="arrows" src="/assets/right-arrow.png" alt="right-arrow">
+                        </div>
+                        </div>
+                        <div></div>
+                        <div class="three-column-grid profile-container">
+                            <img class="header-profile" src="/assets/ProfilePic.png" alt="profile">
+                            <span>Profile Name</span>
+                        </div>
+                    </div>
+                </header>
+                <ul class="grid-auto__column center-song-bar">
+                    <li>
+                        <a href="#">IN EVIDENZA</a>
+                    </li>
+                    <li>
+                        <a href="#">PODCAST</a>
+                    </li>
+                    <li>
+                        <a href="#">CLASSIFICHE</a>
+                    </li>
+                   <li
+                   ><a href="#">GENERI E MOO</a>
+                </li>
+                    <li>
+                        <a href="#">NUOVE USCITE</a
+                            ></li>
+                    <li>
+                        <a href="#">SCOPRI</a>
+                    </li>
+                </ul>
+                <div class="main-layout">
+                <h2>Recently Played</h2>
+                <div class="responsive-grid">
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/metal_lifting.jpg" alt="heavy metal">
+                    <h5>Heavy Metal</h5>
+                    <p>Subtitle</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/stranger.jpeg" alt="stranger things">
+                    <h5>Stranger Things</h5>
+                    <p>Kyle Dixon & Michael Stein</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/aquietplace.jpeg" alt="Quiet place">
+                    <h5>A Quiet Place</h5>
+                    <p>Subtitle</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/split.jpeg" alt="split">
+                    <h5>Split</h5>
+                    <p>Subtitle</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/cure.jpeg" alt="cure">
+                    <h5>A Cure for Wellness</h5>
+                    <p>Subtitle</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/sinister.jpeg" alt="sinister">
+                    <h5>Sinister</h5>
+                    <p>Subtitle</p>
+                </div>
+                </div>
+                <h2>Episodes for You</h2>
+                <div class="responsive-grid">
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/suny.png" alt="sunny">
+                    <h5>The Always Sunny Podcast</h5>
+                    <p>Megawatt Productions</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/offmenu.jpg" alt="offmenu">
+                    <h5>Off Menu</h5>
+                    <p>Plosive</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/rigbiz.png" alt="rigbiz">
+                    <h5>The Rig Biz Podcast</h5>
+                    <p>Blind Dog Productions</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/diaryofceo.png" alt="split">
+                    <h5>The Diary Of A CEO</h5>
+                    <p>Steven Bartlett</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/impaulsive.png" alt="impaulsive">
+                    <h5>Impaulsive</h5>
+                    <p>Logal Paul</p>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/happyhour.png" alt="happyhour">
+                    <h5>Happy Hour</h5>
+                    <p>Spotify Studios</p>
+                </div>
+            </div>
+            <h2>Playlists</h2>
+                <div class="responsive-grid">
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/mixdaily.jpeg" alt="impaulsive">
+                    <h5>Daily Mix</h5>
+                </div>
+                <div class="boxes">
+                    <img class="cover-pic" src="/assets/img/radar.jpeg" alt="impaulsive">
+                    <h5>Release Radard</h5>
+                </div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                </div>  
+            </div>  
+            </main>
+            <aside class="activity-container"></aside>
+
+        </div>
+        <footer>
+            <div class="three-column-grid__expand-two">
+                <div class="footer-left left-footer-grid">
+                    <img class="footer-profile" src="/assets/img/sinister.jpeg" alt="footer-profile">
+                    <div>
+                        <h4>Sinister</h4>
+                        <p>Brano Nome</p>
+                    </div>
+                    <ul class="grid-auto__column">
+                        <li><img class="footer-icons" src="/assets/img/heart (2).png" alt="heart"></li>
+                        <li><img class="footer-icons" src="/assets/img/folder (1).png" alt="folder"></li>
+                    </ul>
+                </div>
+                <div class="middle-footer">
+                    <div class="center-wrapper">
+                        <ul class="grid-auto__column">
+                            <li><img src="/assets/shuffle.png" alt="shuffle"></li>
+                            <li><img src="/assets/skip-left.png" alt="skip-left"></li>
+                            <li><img src="/assets/play.png" alt="play"></li>
+                            <li><img src="/assets/skip-right.png" alt="skip-right"></li>
+                            <li><img src="/assets/repeat.png" alt="repeat"></li>
+                        </ul>
+                    </div>
+                    <div class="center-song-bar three-column-grid__expand-two">
+                       <span>0.25</span> <input type="range"><span>4.35</span>
+                    </div>
+                
+                </div>
+                <div class="footer-right-side">
+                    <ul class="grid-auto__column">
+                        <li><img class="footer-icons" src="/assets/img/list.png" alt="list"></li>
+                        <li><img class="footer-icons" src="/assets/img/computer.png" alt="computer"></li>
+                        <li><img class="footer-icons" src="/assets/img/volume.png" alt="volume"></li>
+                        <li><progress id="volume-bar" min="0" max="100" value="50"></progress></li>
+                    </ul>  
+                </div>
+            </div>
+        </footer>
+        </div> 
     
 </body>
 </html>
