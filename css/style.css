@@ -18,7 +18,8 @@
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "DM Sans", sans-serif;
   font-size: var(--font-size-main);
   background-color: var(--colour-primary);
   color: var(--font-colour-main);
@@ -281,6 +282,11 @@ h2 {
   width: 150px;
   height: auto;
   align-self: center;
+}
+
+.artist {
+  font-size: 13px;
+  color: #aaa;
 }
 
 /**********************************************/
