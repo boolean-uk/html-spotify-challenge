@@ -57,5 +57,24 @@ header {
   margin-right: 10px;
 }
 .play-list {
+  display: flex;
   align-items: left;
+  color: rgb(255, 255, 255);
+  width: 4ch;
+  height: 4ch;
+}
+.play-list {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 15px;
+}
+.play-list-libary {
+  display: flex;
+
+  width: 4ch;
+  height: 4ch;
+}
+
+.playlist-libary-icon {
+  padding-right: 1.5ch;
 }
