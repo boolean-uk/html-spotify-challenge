@@ -20,11 +20,6 @@ body {
     /* gap: 2px; */
 }
 
-.upgrade-bar {
-    grid-area: upgrade-bar;
-    background-color: #080b12;
-}
-
 main {
     grid-area: main;
     background-color: #141922;
@@ -100,6 +95,7 @@ li.active-page a {
     font-weight: 800;
     font-size: .9rem;
     margin-bottom: 15px;
+    cursor: default;
 }
 
 .create-playlist {
@@ -320,6 +316,7 @@ li.active-page a {
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
+    cursor: pointer;
   }
   
   /* Mouse-over effects */
@@ -359,13 +356,58 @@ li.active-page a {
     font-weight: 600;
     color: #a3a3a3;
     padding: 0 6px;
+    cursor: default;
 }
 
 /* PLAYER - Volume */
 
-.volume {
+.volume-section {
     display: grid;
     grid-template-columns: auto auto auto 1fr;
     height: 100%;
-    place-items: center;
+    place-items: center start;
+}
+
+.slider.volume {
+    width: 113px;
+    margin-top: 2px;
+}
+
+.slider.volume::-webkit-slider-thumb {
+    width: 0;
+    height: 0;
+}
+
+.slider.volume::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+.volume-section div {
+    padding-right: 10px;
+}
+
+.volume-section .slidecontainer {
+    margin-top: -6px;
+    margin-right: 10px;
+}
+
+/* UPGRADE BAR */
+
+.upgrade-bar {
+    grid-area: upgrade-bar;
+    background-color: #080b12;
+    display: grid;
+    place-items: center end;
+}
+
+.upgrade-bar a {
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: 15px 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
 }
