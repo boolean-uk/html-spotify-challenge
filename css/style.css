@@ -7,6 +7,29 @@
     color: white;
 }
 
+/* CUSTOM SCROLLBAR */
+/* Code from https://www.w3schools.com/HOWTO/tryit.asp?filename=tryhow_css_custom_scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 /* MAIN GRID */
 
 body {
@@ -20,11 +43,6 @@ body {
     /* gap: 2px; */
 }
 
-main {
-    grid-area: main;
-    background-color: #141922;
-}
-
 /* LEFT ASIDE BAR */
 
 aside {
@@ -32,6 +50,9 @@ aside {
     background-color: black;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    position: fixed;
+    width: 230px;
+    height: calc(100vh - 90px)
 }
 
 /* All similar hover states for aside */
@@ -41,7 +62,8 @@ aside {
 .material-symbols-outlined:hover,
 .create-playlist:hover .text,
 li.active-page a,
-aside nav ul li a:hover {
+aside nav ul li a:hover,
+main nav ul li a:hover {
     color: #fff;
     transition: 0.3s
 }
@@ -200,6 +222,8 @@ li.active-page a {
     background-color: #282828;
     display: grid;
     grid-template-columns: 230px 1fr 230px;
+    position: sticky;
+    bottom: 0px;
 }
 
 /* PLAYER – Current song */
@@ -399,6 +423,9 @@ li.active-page a {
     background-color: #080b12;
     display: grid;
     place-items: center end;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .upgrade-bar a {
@@ -406,8 +433,112 @@ li.active-page a {
     font-size: .8em;
     padding: 15px 40px;
     border: 1px solid white;
+    background-color: transparent;
     border-radius: 30px;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 700;
+    transition: .3s;
+}
+
+.upgrade-bar a:hover {
+    background-color: #333;
+    transition: .3s;
+}
+
+/* MAIN CONTENT */
+
+main {
+    grid-area: main;
+    background-color: #141922;
+    padding-left: 20px;
+}
+
+main nav {
+    text-align: center;
+    padding-top: 22px;
+}
+
+main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+main nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a3a3a3;
+    padding: 0 15px;
+    font-size: .9rem;
+    transition: .3s;
+}
+
+main nav ul li a.current-element {
+    color: white;
+    position: relative;
+}
+
+main nav ul li a.current-element:before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: -10px;
+    height: 1px;
+    width: 30%;
+    border-bottom: 3px solid #adff2f;
+  }
+
+main .recently-played {
+    margin-top: 20px;
+}
+
+main .recently-played h2 {
+    margin-bottom: 30px;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 177px);
+    gap: 15px;
+}
+
+.album-container {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 177px;
+}
+
+.album-container img {
+    width: 177px;
+}
+
+.album-container .album-name {
+    padding-top: 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.album-container .artist-name {
+    padding-top: 10px;
+    color: #a3a3a3;
+    font-size: .8rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 935px) {
+    .slider {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-height: 760px) {
+    .playlists {
+    overflow-y: scroll;
+    }
 }
