@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "menu        header "   50px
+    "menu       nav"        30px
+    "menu  recently-played" 1fr
+    "menu  created-for"     1fr
+    "menu popular-artists"  150px
+    "footer     footer"     80px/
+    300px      1fr
+ ;
+}
+
+header{
+    grid-area: header;
+    background-color: green;
+}
+.menu{
+    grid-area: menu;
+    background-color: lightgreen;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lightseagreen;
+}
+
+.recently-played{
+    grid-area: recently-played;
+    background-color: greenyellow;
+}
+
+.created-for{
+    grid-area: created-for;
+    background-color: rgb(81, 174, 81);
+}
+
+.popular-artists{
+    grid-area: popular-artists;
+    background-color: darkgreen;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
