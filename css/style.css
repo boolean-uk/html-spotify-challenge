@@ -4,6 +4,7 @@
   --colour-primary: #191414;
   --colour-secondary: #1db954;
   --colour-background: #232121;
+  --colour-background-light: #373636c1;
 
   --font-colour-main: #fff;
 }
@@ -17,6 +18,7 @@
 body {
   font-family: sans-serif;
   background-color: var(--colour-primary);
+  color: var(--font-colour-main);
 }
 
 /**********************************************/
@@ -56,4 +58,40 @@ body {
   background-color: var(--colour-primary);
   grid-row: 3 / -1;
   grid-column: 1 / -1;
+}
+
+/**********************************************/
+/* MAIN */
+/**********************************************/
+
+.main-container {
+}
+
+.morning {
+}
+
+.podcast {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--colour-background-light);
+  width: 350px;
+  border-radius: 12px;
+}
+
+.podcast img {
+  width: 80px;
+  height: auto;
+}
+
+.listen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.listen img {
+  width: 150px;
+  height: auto;
 }
