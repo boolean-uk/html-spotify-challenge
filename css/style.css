@@ -1,10 +1,13 @@
+/* CSS RESET */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Figtree', sans-serif;
     color: white;
 }
+
+/* MAIN GRID */
 
 body {
     display: grid;
@@ -20,6 +23,8 @@ body {
 aside {
     grid-area: aside;
     background-color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .upgrade-bar {
@@ -35,4 +40,163 @@ main {
 .player {
     grid-area: player;
     background-color: #282828;
+}
+
+/* LEFT ASIDE BAR */
+
+    /* All hover states */
+
+.playlist-item:hover,
+.install-app:hover,
+.material-symbols-outlined:hover,
+.create-playlist:hover .text,
+li.active-page a,
+aside nav ul li a:hover {
+    color: #fff;
+    transition: 0.3s
+}
+
+.main-logo {
+    margin: 20px 21px;
+    width: 131px;
+}
+
+aside nav ul li {
+    list-style-type: none;
+}
+
+aside nav ul li a {
+    display: block;
+    line-height: 35px;
+    text-decoration: none;
+    padding-left: 22px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #6f6f6f;
+}
+
+aside nav ul li a img {
+    width: 27px;
+    vertical-align:middle;
+    filter: invert(43%) sepia(10%) saturate(18%) hue-rotate(315deg) brightness(96%) contrast(91%);
+}
+
+li.active-page a img, li a:hover img {
+    transition: 0.3s;
+    filter: none;
+}
+
+ {
+    transition: 0.3s;
+    color: #fff;
+}
+
+li.active-page a {
+    border-left: 3px solid #adff2f;
+    padding-left: 19px;
+}
+
+.playlists {
+    margin-top: 19px;
+    padding-left: 21px;
+}
+
+.playlists h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+
+.create-playlist {
+    display: block;
+    text-decoration: none;
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+
+.plus-icon {
+    background-color: #a3a3a3;
+    height: 37px;
+    width: 37px;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 37px;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.create-playlist .text {
+    padding-left: 5px;
+    font-weight: 700;
+    color:#a3a3a3
+}
+
+.plus-icon:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.playlist-item {
+    display: block;
+    text-decoration: none;
+    color: #a3a3a3;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.profile {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.profile a {
+    display: block;
+}
+
+.install-app {
+    line-height: 24px;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 700;
+    color:#a3a3a3;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.profile img {
+    width: 22px;
+    height: 22px;
+    background-color: #808080;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile img:hover {
+    background-color: #aaa;
+    transition: .3s;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 20;
+    vertical-align: bottom;
+    color:#a3a3a3
+}
+
+    /* Let's try vertical centering using a grid instead of the previous horrible inline solution */
+
+.profile .profile-name {
+    display: grid;
+    place-items: center start;
+    grid-template-columns: auto 1fr;
+    padding: 15px 0;
+    text-decoration: none;
+    font-weight: 800;
 }
