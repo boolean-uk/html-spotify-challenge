@@ -67,7 +67,9 @@ body {
   background-color: var(--colour-primary);
   grid-row: 3 / -1;
   grid-column: 1 / -1;
-  /* z-index: 50; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
 }
 
 /**********************************************/
@@ -279,4 +281,72 @@ h2 {
   width: 150px;
   height: auto;
   align-self: center;
+}
+
+/**********************************************/
+/* PLAYER */
+/**********************************************/
+
+.player-icon {
+  font-size: 26px;
+  color: #aaa;
+}
+
+.pause-icon {
+  font-size: 34px;
+}
+
+.player-settings ion-icon {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.player-icon:hover,
+.player-settings ion-icon:hover {
+  color: var(--font-colour-main);
+}
+
+.pause-icon:hover {
+  transform: scale(1.1);
+}
+
+.controls {
+  display: grid;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-self: center;
+}
+
+.track,
+.player-settings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-settings {
+  justify-self: end;
+}
+
+.track-line {
+  height: 4px;
+  border-radius: 12px;
+  background-color: var(--colour-hover);
+}
+
+.track-line.long {
+  width: 450px;
+}
+
+.track-line.short {
+  width: 100px;
+}
+
+.timestamp {
+  font-size: 10px;
 }
