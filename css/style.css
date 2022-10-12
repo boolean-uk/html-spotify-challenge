@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template:
+        "aside upgrade-bar" 90px
+        "aside main" 1fr
+        "player player" 90px /
+        230px 1fr;
+    gap: 2px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: black;
+}
+
+.upgrade-bar {
+    grid-area: upgrade-bar;
+    background-color: #080b12;
+}
+
+main {
+    grid-area: main;
+    background-color: #141922;
+}
+
+.player {
+    grid-area: player;
+    background-color: #282828;
+}
