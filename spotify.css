@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container{
+main{
     height: 100vh;
     display: grid;
     grid-template:
@@ -18,10 +18,25 @@
  ;
 }
 
+/* styling for header */
 header{
     grid-area: header;
-    background-color: green;
+    background-color: black;
 }
+
+.upgrade{
+    background-color: black;
+    color: white;
+    border-color: white;
+    height: 30px;
+    width: 200px ;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: 1000px;
+    margin-top: 10px;
+}
+
+/* end of header styling */
 .menu{
     grid-area: menu;
     background-color: lightgreen;
