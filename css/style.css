@@ -28,6 +28,7 @@ aside {
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: fixed;
+    top: 0;
     width: 230px;
     height: calc(100vh - 90px)
 }
@@ -67,8 +68,12 @@ aside nav ul li a {
     padding-left: 22px;
     font-size: 0.9rem;
     font-weight: 800;
-    color: #6f6f6f;
     transition: .3s;
+}
+
+aside nav ul li a span {
+    color: #6f6f6f;
+    margin-left: 5px;
 }
 
 aside nav ul li a img {
@@ -88,6 +93,10 @@ li.active-page a img, li a:hover img {
 li.active-page a {
     border-left: 3px solid #adff2f;
     padding-left: 19px;
+}
+
+li.active-page a span {
+    color: white;
 }
 
 .playlists {
@@ -734,6 +743,10 @@ main section p {
 }
 
 @media screen and (max-width: 440px) {
+    main {
+        padding-left: 0;
+    }
+
     .albums {
         place-content: center;
     }
