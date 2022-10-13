@@ -125,7 +125,6 @@ nav .middle-section {
 
     padding: 0.5rem;
 }
-
 nav .middle-section div {
     position: relative;
 }
@@ -301,6 +300,9 @@ main article section span .icon-button:hover {
 
     position: relative;
     left: 1px; /* Moves it to left to center new size */
+}
+main article section span .icon-button:hover i {
+    font-size: 32px;
 }
 /* ============= End of Icon button */
 /* ------------ End Of Grids */
