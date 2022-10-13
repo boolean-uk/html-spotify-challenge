@@ -8,7 +8,7 @@ body{
 }
 
 main{
-    height: 100vh;
+    height: 150vh;
     display: grid;
     grid-template:
     "menu        header "   50px
@@ -17,7 +17,8 @@ main{
     "menu  recently-played" 1fr
     "menu         title2"    40px
     "menu  created-for"     1fr
-    "menu popular-artists"  100px
+    "menu         title3"   50px
+    "menu popular-artists"  1fr
     "footer     footer"     80px/
     250px      1fr
  ;
@@ -188,13 +189,13 @@ a:hover{
    
 
 }
-.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister , .daily-mix1 , .release-radar{
+.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister , .daily-mix1 , .release-radar, .artist1 , .artist2{
     background-color:rgb(41, 41, 46) ;
     border: none;
     cursor: pointer;
 }
 
-.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover, .daily-mix1:hover , .release-radar:hover{
+.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover, .daily-mix1:hover , .release-radar:hover , .artist1:hover , .artist2:hover{
     filter: brightness(150%);
 }
 p{
@@ -220,12 +221,24 @@ h5{
     color:#aaa
 }
 /* end of second row styling */
+/* styling for last row */
+.popular-artists-title{
+    grid-area: title3;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
 
+}
 .popular-artists{
     grid-area: popular-artists;
-    background-color: yellowgreen;
+    background-color: rgb(41, 41, 46);
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 250px 250px auto;
 }
-
+/* end of styling for last row */
+.artist1 , .artist2{
+    text-align: center;
+}
 footer{
     grid-area: footer;
     background-color: rgb(48, 44, 44);
