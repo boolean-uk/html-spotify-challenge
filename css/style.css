@@ -222,16 +222,6 @@ h2 {
   cursor: pointer;
 }
 
-/* .sidebar-container {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  gap: 12px;
-  align-items: center;
-  padding-bottom: 16px;
-  border-bottom: 0.1px solid #aaa;
-  margin-bottom: 16px;
-} */
-
 .sidebar p {
   font-size: 14px;
   color: #aaa;
@@ -269,7 +259,6 @@ h2 {
   align-items: center;
   gap: 20px;
   background-color: var(--colour-background-light);
-  width: 350px;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -441,9 +430,17 @@ h2 {
   .upgrade-btn {
     display: none;
   }
+
+  .morning {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 750px) {
+  body {
+    font-size: 14px;
+  }
+
   .search {
     width: 200px;
   }
@@ -454,5 +451,11 @@ h2 {
 
   .unavailable {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
   }
 }
