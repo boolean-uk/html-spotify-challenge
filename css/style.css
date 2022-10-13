@@ -79,6 +79,7 @@ h1.focus {
 
 .sub-header :hover {
   color: white;
+  cursor: pointer;
 }
 
 section {
@@ -115,6 +116,11 @@ section h1:hover {
   text-align: center;
 }
 
+.card h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .card h3 {
   font-size: .75rem;
   text-align: center;
@@ -133,8 +139,6 @@ section h1:hover {
 nav {
   background: black;
   width: 220px;
-  /* position: sticky; */
-  /* top: 0px; */
   height: 100vh;
 }
 
@@ -162,6 +166,7 @@ nav img {
 
 nav :hover, .playlists :hover {
   color: white;
+  cursor: pointer;
 }
 
 .focus h2 {
@@ -203,7 +208,7 @@ nav h1 {
   color: #A3A3A3;
 }
 
-hr {
+nav hr {
   margin-top: 170px;
   width: 180px;
   border-color: #A3A3A3;
@@ -238,6 +243,7 @@ hr {
 
 .profile :hover {
   background: #282828;
+  cursor: pointer;
 }
 
 /* nav end */
@@ -247,6 +253,137 @@ hr {
 
 footer {
   background: #282828;
+  display: grid;
+  grid-template:
+    "curr-song media-keys volume" auto
+    "curr-song progress-bar volume"auto/
+    250px 1fr 250px;
+}
+
+.curr-song {grid-area: curr-song}
+.media-keys {grid-area: media-keys}
+.volume {grid-area: volume}
+.progress-bar {grid-area: progress-bar}
+
+.curr-song {
+  display: inline-flex;
+  margin-top: 11px;
+}
+
+.curr-song-cover {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.curr-song h1 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  height: 25px;
+  line-height: 2;
+}
+
+.curr-song h2 {
+  font-size: 0.75rem;
+  margin-top: 0;
+  margin-right: 80px;
+  color: #A3A3A3;
+}
+
+.curr-song h1:hover, .curr-song h2:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.like, .add-to-library {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.like:hover, .add-to-library:hover {
+  filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
+}
+
+.media-keys {
+  display: inline-flex;
+  margin: 0px auto 0px auto;
+}
+
+.media-keys img{
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.media-keys img:hover{
+  filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
+  cursor: pointer;
+}
+
+.play {
+  width: 40px !important;
+}
+
+/* .play:hover {
+  ;
+} */
+
+.progress-bar {
+  display: flex;
+}
+
+.bar, .volume-bar {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: #5A5A5A;
+  outline: none;
+}
+
+.bar {
+  width: 70%;
+}
+
+.volume2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-bar {
+  width: 80%;
+}
+
+.bar::-webkit-slider-thumb, .volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: #C1C1C1;
+  cursor: pointer;
+}
+
+.bar::-moz-range-thumb, .volume-bar::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #C1C1C1;
+  cursor: pointer;
+}
+
+.volume {
+  display: inline-flex;
+}
+
+.volume img{
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* footer end */
