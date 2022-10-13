@@ -196,13 +196,26 @@ main {
     grid-area: main;
     background-color: black;
     
+    /* Scrollbar Style */
     overflow-y: auto;
+    scrollbar-color: #121212;
+    scrollbar-width: thin;
+    scrollbar-track-color: transparent;
+    scrollbar-arrow-color: #606060;
 
     padding: 0.5rem;
 }
+main::-webkit-scrollbar {
+    background: transparent;
+}
+main::-webkit-scrollbar-thumb {
+    background-color: #606060;
+    border-top: 200px solid black;    
+    border: 2px solid black;
+}
+
 main .container {
-    background-color: #121212;
-    /* background: linear-gradient(#1E1E1E, #121212 400px); */
+    background: linear-gradient(#40330b, #121212 250px);
     color: white;
 
     border-radius: 1rem;
@@ -255,17 +268,39 @@ main article section span big {
 
     justify-self: left;
 }
+/*  -------------- Icon button */
 main article section span .icon-button {
-    /* Bottom Shadow */
     display: flex;
     background-color: #1ED760;
 
-    margin-right: 1rem;
-    justify-self: right;
-}
-main article section span .icon-button .icon-bg {
+    opacity: 0%;
 
+    margin: 2px; /* To pre-ocupy hover */
+    margin-right: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -5px;
+    justify-self: right;
+
+    transition: opacity 0.2s ease-in-out;
 }
+main article section span .icon-button i {
+    color: black;
+}
+main article section span:hover .icon-button {
+    opacity: 100%;
+}
+main article section span .icon-button:hover {
+    width: 50px;
+    height: 50px;
+
+    margin: 0; /* Was 2, now 0*/
+    margin-right: 1rem; /* Keep right margin */
+
+    position: relative;
+    left: 1px; /* Moves it to left to center new size */
+}
+/* ------------ End of Icon button */
+
 /* ------------ End Of Grids */
 
 /* End Of Main */
