@@ -110,18 +110,39 @@ header{
   }
   
   .playlists p:hover {
-    color: greenyellow;
+    filter: brightness(150%);
   }
 
-  .profile{
-    
-  }
+.new-playlist{
+    background-color: black;
+    color: #aaa;
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.new-playlist:hover{
+    filter: brightness(150%);
+}
+
+.install-button{
+    background-color:black ;
+    color: white;
+    cursor: pointer;
+}
+.johnnyboy{
+    display: flex;
+    gap :10px;
+    padding-top: 5px;
+}
   h3{
     color: white;
   }
   p{
     color: aliceblue;
   }
+
 
 /* end of menu styling */
 
@@ -158,12 +179,12 @@ a:hover{
 
 .created-for{
     grid-area: created-for;
-    background-color: rgb(81, 174, 81);
+    background-color: rgb(41, 41, 46);
 }
 
 .popular-artists{
     grid-area: popular-artists;
-    background-color: darkgreen;
+    background-color: rgb(41, 41, 46);
 }
 
 footer{
