@@ -213,7 +213,6 @@ main::-webkit-scrollbar-thumb {
     border-top: 200px solid black;    
     border: 2px solid black;
 }
-
 main .container {
     background: linear-gradient(#40330b, #121212 250px);
     color: white;
@@ -222,6 +221,11 @@ main .container {
     padding: 1rem;
 
     height: 1000px;
+}
+
+main article h1 {
+    font-size: xx-large;
+    margin: 0 0 1rem 0;
 }
 /* ----------- Grids */
 main article .my-playlist-grid { /* Grid of Blocks */
@@ -250,14 +254,13 @@ main article section span { /* The Block */
 main article section span:hover {
     background-color: #ffffff48;
 }
-
-main article section span img {
+main article section span img { /* Play Image */
     background-color: #5643A8;
     width: 5rem;
     border-radius: 0.3rem 0 0 0.3rem;
     box-shadow: 2px 0 12px -2px rgba(0, 0, 0, 0.5);
 }
-main article section span big {
+main article section span big { /* Play Name */
     display: flex;
     word-wrap: break-word;
     grid-column: 2;
@@ -268,7 +271,7 @@ main article section span big {
 
     justify-self: left;
 }
-/*  -------------- Icon button */
+/*  ============= Icon button */
 main article section span .icon-button {
     display: flex;
     background-color: #1ED760;
@@ -299,8 +302,7 @@ main article section span .icon-button:hover {
     position: relative;
     left: 1px; /* Moves it to left to center new size */
 }
-/* ------------ End of Icon button */
-
+/* ============= End of Icon button */
 /* ------------ End Of Grids */
 
 /* End Of Main */
