@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -44,6 +44,33 @@
       <aside class="sidebar">
         <img src="assets/img/logo.svg" alt="Spotify logo" class="main-logo" />
         <div class="sidebar-container">
+          <div>
+            <ion-icon name="library" class="library-icon"></ion-icon>
+            <p class="menu-link">Your Library</p>
+          </div>
+          <div>
+            <img
+              src="assets/img/logo-small.svg"
+              alt="small spotify logo"
+              class="small-logo"
+            />
+            <p class="menu-link">Premium</p>
+          </div>
+          <div>
+            <ion-icon name="add-circle-outline" class="menu-icon"></ion-icon>
+            <p class="menu-link">Create Playlist</p>
+          </div>
+          <div>
+            <ion-icon name="heart-circle-outline" class="menu-icon"></ion-icon>
+            <p class="menu-link">Liked Songs</p>
+          </div>
+        </div>
+        <p class="playlist">My Playlist #1</p>
+        <p class="playlist">Study mix</p>
+      </aside>
+      <!-- <aside class="sidebar">
+        <img src="assets/img/logo.svg" alt="Spotify logo" class="main-logo" />
+        <div class="sidebar-container">
           <ion-icon name="library" class="menu-icon"></ion-icon>
           <p>Your Library</p>
           <img
@@ -59,7 +86,7 @@
         </div>
         <p class="playlist">My Playlist #1</p>
         <p class="playlist">Study mix</p>
-      </aside>
+      </aside> -->
 
       <main class="main">
         <section class="main-container">
@@ -159,7 +186,17 @@
         </section>
       </main>
       <footer class="player">
-        <div class="playing-now"></div>
+        <div class="playing-now">
+          <img
+            src="assets/img/royalblood.jpg"
+            alt="royal blood album cover"
+            class="playing-now-img"
+          />
+          <div>
+            <p>Royal Blood</p>
+            <p class="artist">Figure It Out</p>
+          </div>
+        </div>
         <div class="controls">
           <div class="buttons">
             <ion-icon name="shuffle-outline" class="player-icon"></ion-icon>
@@ -178,9 +215,9 @@
             <ion-icon name="repeat-outline" class="player-icon"></ion-icon>
           </div>
           <div class="track">
-            <span class="timestamp">0:00</span>
+            <span class="timestamp">0:07</span>
             <div class="track-line long"></div>
-            <span class="timestamp">0:00</span>
+            <span class="timestamp">3:17</span>
           </div>
           <div></div>
         </div>

@@ -70,6 +70,7 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   padding: 20px;
 }
 
@@ -80,6 +81,7 @@ body {
 h1 {
   margin-bottom: 24px;
   font-size: 32px;
+  font-weight: bold;
 }
 
 h2 {
@@ -191,17 +193,21 @@ h2 {
 }
 
 .small-logo {
-  width: 20px;
+  width: 25px;
   height: auto;
 }
 
 .menu-icon {
-  font-size: 22px;
+  font-size: 28px;
+}
+
+.library-icon {
+  font-size: 26px;
 }
 
 .sidebar-container {
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 1fr;
   gap: 12px;
   align-items: center;
   padding-bottom: 16px;
@@ -209,14 +215,35 @@ h2 {
   margin-bottom: 16px;
 }
 
-.sidebar p {
-  font-size: 14px;
-  color: #aaa;
+.sidebar-container div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   cursor: pointer;
 }
 
-.sidebar p:hover {
+/* .sidebar-container {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 0.1px solid #aaa;
+  margin-bottom: 16px;
+} */
+
+.sidebar p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar-container div p:hover,
+.playlist:hover {
   color: var(--font-colour-main);
+}
+
+.playlist {
+  cursor: pointer;
 }
 
 .playlist:not(:last-child) {
@@ -234,7 +261,7 @@ h2 {
 .morning {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 10px;
+  gap: 10px;
 }
 
 .podcast {
@@ -293,6 +320,11 @@ h2 {
 /* PLAYER */
 /**********************************************/
 
+.playing-now-img {
+  width: 65px;
+  height: auto;
+}
+
 .player-icon {
   font-size: 26px;
   color: #aaa;
@@ -329,7 +361,8 @@ h2 {
 }
 
 .track,
-.player-settings {
+.player-settings,
+.playing-now {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -355,4 +388,71 @@ h2 {
 
 .timestamp {
   font-size: 10px;
+}
+
+/**********************************************/
+/* MEDIA QUERIES */
+/**********************************************/
+
+@media screen and (max-width: 1030px) {
+  .container {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .sidebar-container {
+    border: none;
+  }
+
+  .menu-link,
+  .playlist,
+  .main-logo,
+  .player-settings,
+  .playing-now {
+    display: none;
+  }
+
+  .small-logo {
+    width: 30px;
+    height: auto;
+  }
+
+  .menu-icon {
+    font-size: 32px;
+  }
+
+  .library-icon {
+    font-size: 28px;
+  }
+
+  .small-logo,
+  .menu-icon,
+  .library-icon {
+    cursor: pointer;
+  }
+
+  .player {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .upgrade-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .search {
+    width: 200px;
+  }
+
+  .search::placeholder {
+    color: transparent;
+  }
+
+  .unavailable {
+    display: none;
+  }
 }
