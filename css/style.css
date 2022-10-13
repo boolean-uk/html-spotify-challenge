@@ -42,7 +42,8 @@ aside {
 .create-playlist:hover .text,
 li.active-page a,
 aside nav ul li a:hover,
-main nav ul li a:hover {
+main nav ul li a:hover,
+aside nav ul li a:hover span {
     color: #fff;
     transition: 0.3s
 }
