@@ -47,9 +47,13 @@ main nav ul li a:hover {
 
 /* LEFT ASIDE BAR – Navigation */
 
-.main-logo {
+.main-logo-desktop {
     margin: 20px 21px;
     width: 131px;
+}
+
+.main-logo-mobile {
+    display:none;
 }
 
 aside nav ul li {
@@ -68,8 +72,9 @@ aside nav ul li a {
 }
 
 aside nav ul li a img {
+    margin-top: -4px;
     width: 27px;
-    vertical-align:middle;
+    vertical-align: middle;
     filter: invert(43%) sepia(10%) saturate(18%) hue-rotate(315deg) brightness(96%) contrast(91%);
 }
 
@@ -602,7 +607,7 @@ main section p {
     }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 760px) and (min-width: 740px) {
     .playlists {
     overflow-y: scroll;
     }
@@ -616,7 +621,124 @@ main section p {
             "aside upgrade-bar" 90px
             "aside main" 1fr
             "player player" 90px /
-            230px 1fr;
+            50px 1fr;
         /* gap: 2px; */
+    }
+
+    aside {
+        width: 50px;
+    }
+
+    .main-logo-desktop {
+        display: none;
+    }
+
+    .main-logo-mobile {
+        display:block;
+        width: 30px;
+        padding: 0 10px;
+        margin: 20px 0
+    }
+
+    aside nav ul li a span,
+    .playlists h2,
+    .create-playlist .text,
+    .playlist-item,
+    .install-app .text,
+    .profile-name span,
+    .player .title,
+    .player .artist,
+    .current-song .material-symbols-outlined {
+        display: none;
+    }
+
+    .install-app {
+        border: none;
+    }
+
+    li.active-page a {
+        padding-left: 9px;
+    }
+
+    aside nav ul li a {
+        padding-left: 12px;
+    }
+
+    aside nav ul {
+        width: 50px;
+    }
+
+    .plus-icon {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 1.7rem;
+    }
+
+    .playlists {
+        padding-left: 10px;
+        width: 30px;
+    }
+
+    .profile {
+        padding: 0;
+        width: 50px;
+        text-align: center;
+    }
+
+    .profile img {
+        margin: 0;
+    }
+
+    .profile .profile-name {
+        grid-template-columns: 1fr;
+        place-items: start center;
+    }
+
+    .player {
+        grid-area: player;
+        background-color: #282828;
+        display: grid;
+        grid-template-columns: 50px 1fr 230px;
+        position: sticky;
+        bottom: 0px;
+    }
+
+    .song-cover img {
+        padding: 0 10px;
+        width: 30px;
+    }
+
+    .slider {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .player {
+        grid-area: player;
+        background-color: #282828;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        position: sticky;
+        bottom: 0px;
+    }
+
+    .volume-section {
+        display: none;
+    }
+
+    .slider {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .albums {
+        place-content: center;
+    }
+
+    .upgrade-bar {
+        place-items: center;
     }
 }
