@@ -37,7 +37,6 @@ aside {
 /* All similar hover states for aside */
 
 .playlist-item:hover,
-.install-app:hover,
 .material-symbols-outlined:hover,
 .create-playlist:hover .text,
 li.active-page a,
@@ -179,6 +178,10 @@ li.active-page a span {
     transition: .3s;
 }
 
+.install-app:hover .text {
+    text-decoration: underline;
+}
+
 .profile img {
     width: 22px;
     height: 22px;
@@ -191,6 +194,10 @@ li.active-page a span {
 .profile-name:hover img {
     background-color: #aaa;
     transition: .3s;
+}
+
+.profile-name:hover span {
+    text-decoration: underline;
 }
 
 .material-symbols-outlined {
