@@ -211,6 +211,7 @@ main::-webkit-scrollbar-thumb {
     background-color: #606060;
     border-top: 200px solid black;    
     border: 2px solid black;
+    border-radius: 20px;
 }
 main .container {
     background: linear-gradient(#40330b, #121212 250px);
@@ -251,6 +252,7 @@ main article section span { /* The Block */
     transition: 0.4s;
 }
 main article section span:hover {
+    cursor: pointer;
     background-color: #ffffff48;
 }
 main article section span img { /* Play Image */
@@ -305,6 +307,10 @@ main article section span .icon-button:hover i {
     font-size: 32px;
 }
 /* ============= End of Icon button */
+
+
+
+
 /* ------------ End Of Grids */
 
 /* End Of Main */
