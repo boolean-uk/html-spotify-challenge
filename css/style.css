@@ -40,6 +40,12 @@ header h1 {
   padding: 10px 20px 10px 20px;
 }
 
+header h1:hover {
+  background: green;
+  color: black;
+  border: solid black 2px;
+}
+
 /* header end */
 
 
@@ -49,7 +55,7 @@ main {
   background: #141922;
   overflow-y: scroll;
   display: grid;
-  grid-template-rows: 65px repeat(3, 250px);
+  grid-template-rows: 65px repeat(3, 300px);
 }
 
 .sub-header {
@@ -71,16 +77,6 @@ h1.focus {
   
 }
 
-h1.focus::after {
-  content: "";
-  background: rgb(255, 255, 255);
-  position: relative;
-  bottom: 20;
-  left: 0;
-  height: 50%;
-  width: 10px;
-}
-
 .sub-header :hover {
   color: white;
 }
@@ -89,15 +85,45 @@ section {
   margin-left: 20px;
 }
 
+.category h1 {
+  width: 300px;
+}
+
+section h1:hover {
+  text-decoration: underline;
+}
+
 .card {
-  /* align-content: center; */
   place-items: center;
 }
 
 .card img{
-  width: 200px;
+  width: 150px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5%;
+}
+
+.card img:hover {
+   /*show play button on hover  */
+}
+
+.card h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: .75rem;
+  text-align: center;
+  color: #6E7176;
+  margin: 0 5px 0 5px;
+}
+
+.artist-pfp {
+  border-radius: 50% !important;
 }
 
 /* main end */
