@@ -126,6 +126,46 @@ nav .middle-section {
     padding: 0.5rem;
 }
 
+nav .middle-section div {
+    position: relative;
+}
+nav .middle-section div i {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+
+    color: rgb(169, 169, 169);
+
+    z-index: 2;
+    font-size: xx-large;
+}
+nav .middle-section div input {
+    width: 450px; /* Maybe auto works? 🤔 */
+    height: 48px;
+    position: relative;  
+
+    background-color: #242424;
+
+    color: white;
+    font-size: 0.9rem;
+    
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 8px 16px;
+    padding-left: 48px; /* Need to add a space on the left for the i */
+    outline: none;
+}
+nav .middle-section div input:hover {
+    border: 2px solid #2f2f2f;
+    filter: brightness(120%);
+}
+nav .middle-section div input:focus {
+    border: 2px solid white;
+}
+nav .middle-section div input:hover + i, /* Change i when input hovered */
+nav .middle-section div input:focus + i { /* Change i when input focus */
+    color: white;
+}
 
 
 nav .right-section {
@@ -162,13 +202,13 @@ main {
 }
 main .container {
     background-color: #121212;
+    /* background: linear-gradient(#1E1E1E, #121212 400px); */
     color: white;
 
     border-radius: 1rem;
     padding: 1rem;
 
     height: 1000px;
-
 }
 /* ----------- Grids */
 main article .my-playlist-grid { /* Grid of Blocks */
@@ -191,7 +231,13 @@ main article section span { /* The Block */
     border-radius: 0.3rem;
     height: fit-content;
     width: 100%;
+
+    transition: 0.4s;
 }
+main article section span:hover {
+    background-color: #ffffff48;
+}
+
 main article section span img {
     background-color: #5643A8;
     width: 5rem;
