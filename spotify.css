@@ -13,9 +13,11 @@ main{
     grid-template:
     "menu        header "   50px
     "menu       nav"        30px
+    "menu        title1"    30px
     "menu  recently-played" 1fr
+    "menu         title2"    40px
     "menu  created-for"     1fr
-    "menu popular-artists"  120px
+    "menu popular-artists"  100px
     "footer     footer"     80px/
     250px      1fr
  ;
@@ -172,19 +174,27 @@ a:hover{
 /* end of nav bar styling */
 
 /* first row styling */
+.recently-played-title{
+    grid-area: title1;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
+}
+
 .recently-played{
     grid-area: recently-played;
     background-color:rgb(41, 41, 46);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   
 
 }
-.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister{
+.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister , .daily-mix1 , .release-radar{
     background-color:rgb(41, 41, 46) ;
     border: none;
+    cursor: pointer;
 }
 
-.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover{
+.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover, .daily-mix1:hover , .release-radar:hover{
     filter: brightness(150%);
 }
 p{
@@ -192,14 +202,28 @@ p{
     color: #aaa;
 }
 /* end of first row styling */
+/* second row styling */
+.created-for-title{
+    grid-area: title2;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
+
+}
 .created-for{
     grid-area: created-for;
-    background-color: greenyellow;
+    background-color:rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: 200px 200px 1fr;
 }
+
+h5{
+    color:#aaa
+}
+/* end of second row styling */
 
 .popular-artists{
     grid-area: popular-artists;
-    background-color: rgb(41, 41, 46);
+    background-color: yellowgreen;
 }
 
 footer{
