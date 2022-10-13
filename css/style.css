@@ -10,8 +10,9 @@
 /* MAIN GRID */
 
 body {
+    background-color: black;
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template:
         "aside upgrade-bar" 90px
         "aside main" 1fr
@@ -30,7 +31,7 @@ aside {
     position: fixed;
     top: 0;
     width: 230px;
-    height: calc(100vh - 90px)
+    height: calc(100% - 90px)
 }
 
 /* All similar hover states for aside */
@@ -625,7 +626,7 @@ main section p {
 @media screen and (max-width: 740px) {
     body {
         display: grid;
-        height: 100vh;
+        height: 100%;
         grid-template:
             "aside upgrade-bar" 90px
             "aside main" 1fr
