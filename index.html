@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="spotify.css" />
     <link rel="stylesheet" href="left-menu.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -20,7 +21,9 @@
             <img src="assets\img\logo.svg" alt="spotify logo" />
           </div>
           <div class="home">
-            <img src="assets\img\home.svg" alt="Home logo" /> Home
+            <button>
+              <img src="assets\img\home.svg" alt="Home logo" /> Home
+            </button>
           </div>
           <div class="search">
             <img src="assets\img\search.svg" alt="search icon" /> Search
@@ -32,6 +35,10 @@
         <div class="play-list">
           <h1>Playlist</h1>
           <div class="play-list-libary">
+            <!-- please excuse the repeat use of the libary icon. 
+              I was unable to find the correct 
+              icon and this libary icon was the next best thing. -->
+
             <img
               class="playlist-libary-icon"
               src="assets\img\libreria.svg"
@@ -39,17 +46,128 @@
             />
             Playlist libary
           </div>
+          <br />
           <span> Runnning Playlist </span>
+          <p>Drum&Bass</p>
+          <p>Classical essentials</p>
+          <p>partaayy vibes</p>
+          <p>Rap Caviar</p>
+          <p>Liked songs</p>
+          <p>"Ya like jazz?"</p>
         </div>
 
-        <div class="profile-info">profile icon and name to go here</div>
+        <div id="profile-info">
+          <div class="profile-icon-info">
+            <p class="install-app">Install app</p>
+            <hr class="solid-line" />
+            <img
+              class="default-profile-icon"
+              src="assets\img\profile.svg"
+              alt="defualt-profile-icon"
+            />
+            <p>John Doe</p>
+          </div>
+        </div>
       </div>
       <div class="main-page">
-        <header id="header">test</header>
-        <div id="main-page-task-bar">main page icons to go here</div>
+        <header id="header"></header>
+        <div id="main-page-task-bar">
+          <nav class="nav-bar">
+            <ul class="nav-bar-a-list">
+              <a class="nav-bar-a" href="nav-options">Recent Music</a>
+              <a class="nav-bar-a" href="nav-options">Podcasts</a>
+              <a class="nav-bar-a" href="nav-options">Mood Music</a>
+              <a class="nav-bar-a" href="nav-options">Discover</a>
+              <a class="nav-bar-a" href="nav-options">Recently released</a>
+            </ul>
+          </nav>
+        </div>
         <div class="main-content">
-          <div class="recently-played">recently-played artists to go here</div>
-          <div class="artists-for-you">artist suggestions</div>
+          <div class="recently-played">
+            <h1>Recently listened</h1>
+            <button>
+              <img
+                src="assets\img\metal_lifting.jpg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Heavy metal</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\stranger.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>
+                Stranger Things, <br />
+                Vol.1 <br />(A netflix original <br />
+                series soundtrack)
+              </h4>
+              <p>Kyle Dixon & Michael Stein</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\aquietplace.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>A Quiet Place</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\split.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Split</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\cure.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>
+                A Cure For <br />
+                wellness
+              </h4>
+              <p>subtitle</p>
+            </button>
+          </div>
+          <div class="artists-for-you">
+            <h1>Created for you</h1>
+            <p>A mix of new music and msuic you have had on repeat</p>
+
+            <button>
+              <img
+                src="assets\img\mixdaily.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Daily Mix 1</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\radar.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Release Radar</h4>
+              <p>subtitle</p>
+            </button>
+          </div>
           <div class="hot-artists">music you might like</div>
         </div>
       </div>
