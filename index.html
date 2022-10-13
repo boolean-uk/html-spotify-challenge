@@ -11,30 +11,127 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ab70e69386.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
 </head>
 
 <body>
     <div class="container">
         <div class="left_bar">
-            <img src="/assets/img/logo.svg" alt="main logo">
-            <nav><img src="/assets/img/home.svg" alt="home">Home
-                <img src="/assets/img/search.svg" alt="search">search
+            <h1><img src="/assets/img/logo.svg" alt="main logo"></h1>
+            <nav>
+                <img src="/assets/img/search.svg" alt="search">Search
                 <img src="/assets/img/libreria.svg" alt="Library">Library
-            </nav>
 
-            <ul></ul>
+            </nav>
+            <div class="playlist">
+                <h3>playlist</h3>
+                <span><i class="fa-solid fa-square-plus fa-2xl"></i> Create playlist</span>
+
+                <ul>
+                    <li>acoustic soul</li>
+                    <li>dream waves</li>
+                    <li>100 % kazka</li>
+                    <li>feeling good</li>
+                    <li>chill beats</li>
+                    <li>best for workout</li>
+                    <li>cheesy hits</li>
+                </ul>
+            </div>
+            <div class="bottom_left">
+                <h4><img src="/assets/img/download.svg" alt="download"> Install app</h4>
+                <i class="fa-solid fa-circle-user fa-2xl"></i>
+                <a>John Doe</a>
+
+
+            </div>
         </div>
         <div class="main">
             <header></header>
-            <nav>navigation</nav>
+            <nav><span>recently played</span><span>podcast</span><span>top ranking</span><span>genres and
+                    mood</span><span>new releases</span></nav>
+            <h2>recently played</h2>
             <section>
-                <h1>recently played</h1>
-                <span class="album"><img src="/assets/img/stranger.jpeg" alt="album cover"></span>
+
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/metal_lifting.jpg"
+                        alt="album cover">
+                    <p>heavy metal</p>
+                    <span>subtitle</span>
+
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/stranger.jpeg"
+                        alt="album cover">
+                    <p>stranger things, Vol.1(a netflix Original series soundtrack)</p><span>kyle dixon & michael
+                        stein</span>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/aquietplace.jpeg"
+                        alt="album cover">
+                    <p>a quiet place</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/split.jpeg" alt="">
+                    <p>split</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/cure.jpeg" alt="">
+                    <p>a cure for wellness</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/sinister.jpeg" alt="">
+                    <p>sinister</p><span>subtitle</span>
+                </div>
+
+
+
+
+
+            </section>
+            <h2>Created By John Doe </h2>
+            <section class="created_by">
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/radar.jpeg" alt="cover">
+                    <p>release radar</p>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/mixdaily.jpeg"
+                        alt="cover">
+                    <p>daily mix 1</p>
+                </div>
+
+            </section>
+            <h2>Popular Artists</h2>
+            <section>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/youg.jpeg" alt="">
+                    <p>young & beautiful</p>
+                </div>
+                <div class="album"><i class="fa-solid fa-play fa-2xl"></i><img src="/assets/img/einaudi.jpeg" alt="">
+                    <p>ludovico einaudi</p>
+                </div>
             </section>
         </div>
+        <footer>
+            <div class="left_control"><img src="/assets/img/sinister.jpeg" alt="album cover" width="50px">
+                <p>sinister</p>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="player">
+                <div class="player_top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+
+                </div>
+                <div class="player_bottom"></div>
+                <span>0:01</span><span class="songlength"> 04:21</span>
+            </div>
+            <div class="right_control">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="volume"></i>
+            </div>
+
+        </footer>
     </div>
-    <footer></footer>
+
 </body>
 
 </html>
