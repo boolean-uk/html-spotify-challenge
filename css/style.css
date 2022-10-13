@@ -288,10 +288,21 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
   border-radius: 12px;
+  position: relative;
 }
 
 .listen:hover {
   background-color: var(--colour-background-light);
+}
+
+/* makes the play icon appear when hovering a playlist, hidden by default*/
+.listen:hover > .play-icon {
+  display: block;
+}
+
+/* darkens the image when hovered so the play icon stands out */
+.listen:hover > img {
+  filter: brightness(50%);
 }
 
 .listen img {
@@ -303,6 +314,16 @@ h2 {
 .artist {
   font-size: 13px;
   color: #aaa;
+}
+
+/* icon that appears on hover on album/podcast cover */
+.play-icon {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  color: var(--colour-secondary);
+  font-size: 50px;
+  display: none;
 }
 
 /**********************************************/
@@ -383,7 +404,7 @@ h2 {
 /* MEDIA QUERIES */
 /**********************************************/
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1040px) {
   .container {
     grid-template-columns: 80px 1fr;
   }
