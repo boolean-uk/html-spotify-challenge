@@ -24,23 +24,20 @@ footer {grid-area: footer}
 
 header {
   background: #080B12;
-  /* display: flex; */
-  /* width: auto; */
-  justify-content: right;
 }
 
-nav img {
-  margin: 20px;
-  width: 150px;
-}
+
 
 header h1 {
   border: solid white 2px;
   background: black;
   margin-right: 30px;
+  margin-left: auto;
+  margin-top: 25px;
   font-size: 1rem;
   width: fit-content;
-  
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 /* header end */
@@ -67,7 +64,10 @@ nav {
   height: 100vh;
 }
 
-
+nav img {
+  margin: 20px;
+  width: 150px;
+}
 
 .left-nav-button {
   display: inline-flex;
