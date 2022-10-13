@@ -7,7 +7,7 @@
   --colour-background-light: #373636c1;
   --colour-hover: #373636;
 
-  --font-colour-main: #fff;
+  --font-colour-main: #eee;
   --font-size-main: 16px;
 }
 
@@ -148,7 +148,7 @@ h2 {
 }
 
 .search:focus {
-  outline: 2px solid white;
+  outline: 2px solid #ddd;
 }
 
 .search-icon {
@@ -163,7 +163,7 @@ h2 {
   color: var(--font-colour-main);
   padding: 5px 16px;
   border-radius: 12px;
-  border: 1px solid #fff;
+  border: 1px solid #ddd;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
