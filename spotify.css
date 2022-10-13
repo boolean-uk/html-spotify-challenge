@@ -15,7 +15,7 @@ main{
     "menu       nav"        30px
     "menu  recently-played" 1fr
     "menu  created-for"     1fr
-    "menu popular-artists"  150px
+    "menu popular-artists"  120px
     "footer     footer"     80px/
     250px      1fr
  ;
@@ -47,7 +47,7 @@ header{
     grid-area: menu;
     background-color: black;
     display: grid;
-    grid-template-rows: 90px 180px 70px 1fr 80px;
+    grid-template-rows: 90px 180px 30px 70px 1fr 80px;
     padding-left: 20px;
 }
 
@@ -131,22 +131,21 @@ header{
     color: white;
     cursor: pointer;
 }
+
+.install-button:hover{
+    filter: brightness(150%);
+}
 .johnnyboy{
     display: flex;
     gap :10px;
     padding-top: 5px;
 }
-  h3{
+h2 , h3 , p ,h4{
     color: white;
-  }
-  p{
-    color: aliceblue;
-  }
-
-
+}
 /* end of menu styling */
 
-/* nave bar styling */
+/* nav bar styling */
 nav{
     grid-area: nav;
     background-color: rgb(41, 41, 46);
@@ -172,14 +171,30 @@ a:hover{
 
 /* end of nav bar styling */
 
+/* first row styling */
 .recently-played{
     grid-area: recently-played;
-    background-color: greenyellow;
+    background-color:rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister{
+    background-color:rgb(41, 41, 46) ;
+    border: none;
 }
 
+.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover{
+    filter: brightness(150%);
+}
+p{
+    font-weight: bold;
+    color: #aaa;
+}
+/* end of first row styling */
 .created-for{
     grid-area: created-for;
-    background-color: rgb(41, 41, 46);
+    background-color: greenyellow;
 }
 
 .popular-artists{
