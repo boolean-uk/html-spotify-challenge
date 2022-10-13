@@ -47,7 +47,8 @@ header{
     grid-area: menu;
     background-color: black;
     display: grid;
-    grid-template-rows: 90px 180px 1fr 50px;
+    grid-template-rows: 90px 180px 70px 1fr 80px;
+    padding-left: 20px;
 }
 
 .spotify-logo-text{
@@ -59,12 +60,8 @@ header{
     display: grid;
     grid-template-rows: 60px 60px 60px;
 }
-.playlists{
-    display: grid;
-    grid-template-rows: auto;
-}
+
 .playlist{
-   padding-left: 20px;
    text-decoration: none;
    color:rgb(168, 168, 168);
    font-weight: bolder;
@@ -74,18 +71,57 @@ header{
     background-color: black;
     color: white;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
 }
 
 .discover{
     background-color: black;
     color: white;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
 }
 .library{
     background-color: black;
     color: white;
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
 }
+.home:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+.discover:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+.library:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+
+.playlists p {
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  
+  .playlists p:hover {
+    color: greenyellow;
+  }
+
+  .profile{
+    
+  }
+  h3{
+    color: white;
+  }
+  p{
+    color: aliceblue;
+  }
 
 /* end of menu styling */
 
