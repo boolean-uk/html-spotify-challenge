@@ -457,6 +457,7 @@ main {
 main nav {
     text-align: center;
     padding-top: 22px;
+    padding-right: 20px;
 }
 
 main nav ul li {
@@ -750,9 +751,14 @@ main section p {
 
     .albums {
         place-content: center;
+        padding: 0 20px;
     }
 
     .upgrade-bar {
         place-items: center;
+    }
+
+    main section h2 {
+        margin-left: 20px;
     }
 }
