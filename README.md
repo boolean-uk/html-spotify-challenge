@@ -4,6 +4,10 @@ As discussed with Ed, my Spotify page is based on the Spotify application layout
 
 ![Spotify screenshot](screens/spotify-app.png)
 
+You can see my Spotify clone here (icons take a while to load for me):
+
+https://joelzor.github.io/html-spotify-challenge/
+
 # Spotify
 
 Today we are building the UI for Spotify. This exercise will put into practice everything we have learned about HTML & CSS. Layouts for apps are different to websites so this will put your CSS Grid skills to the test!
