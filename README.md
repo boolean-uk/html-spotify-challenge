@@ -1,6 +1,6 @@
 # Joel - Please Read!
 
-As discussed with Ed, my Spotify page is based on the Spotify application layout on my laptop, which looks a little different to the design included in the screenshots. Unfortunately, I forgot to take a screenshot before, since it seems that as of today (Friday 14th), they've slightly changed the header. However, as I'm really happy with how mine looks, I decided to leave it the same. You can see my screenshot of how the app currently looks below (in order to compare it with mine).
+As discussed with Ed, my Spotify page is based on the Spotify application layout on my laptop, which looks a little different to the design included in the screenshots. Unfortunately, I forgot to take a screenshot before, since it seems that as of today (Friday 14th), they've slightly changed the header (and some of the colours). However, as I'm really happy with how mine looks, I decided to leave it the same. You can see my screenshot of how the app currently looks below (in order to compare it with mine).
 
 ![Spotify screenshot](screens/spotify-app.png)
 
