@@ -6,6 +6,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,100,0,0"
+    />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <img src="/assets/img/logo.svg" class="logo" alt="spotify logo" />
+      <img
+        class="logo-mobile"
+        src="/assets/img/logo-small.svg"
+        alt="spotify logo for mobile"
+      />
+      <ul class="main nav">
+        <li><ion-icon name="home"></ion-icon>Home</li>
+        <li><ion-icon name="search"></ion-icon>Search</li>
+        <li><ion-icon name="library"></ion-icon>Library</li>
+      </ul>
+      <section class="playlists">
+        <div>
+          <ion-icon id="add" name="add"></ion-icon>
+          <span>Create Playlists</span>
+        </div>
+        <div>
+          <ion-icon id="heart" name="heart-outline"></ion-icon>
+          <span>Liked Songs</span>
+        </div>
+        <center><hr /></center>
+        <p>My Playlist #1</p>
+        <p>My Playlist #2</p>
+      </section>
+      <div class="install">
+        <ion-icon name="download-outline"></ion-icon>
+        <span>Install App</span>
+      </div>
+    </nav>
+    <header>
+      <div class="back-and-forward">
+        <ion-icon class="chevron" name="chevron-back-outline"></ion-icon>
+        <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+      </div>
+      <button class="upgrade">Upgrade</button>
+      <div class="profile">
+        <ion-icon name="person-circle"></ion-icon>
+        <span>Anon</span>
+        <ion-icon name="caret-down-outline"></ion-icon>
+      </div>
+    </header>
+    <main>
+      <section class="selection">
+        <div class="section-title">
+          <h2>Shows to try</h2>
+          <p><a href="#">SEE ALL</a></p>
+        </div>
+        <section class="relevant-library">
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\JREiTunesImage2.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">The Joe Rogan Experience</p>
+            <p class="album-artist">Joe Rogan</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\player_left.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">Hilltop Hoods</p>
+            <p class="album-artist">Clark Griswald</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\happyhour.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">JaackMaate's Happy Hour Podcast</p>
+            <p class="album-artist">Spotify Studios</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\3shotsoftequila.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">3shotsoftequila</p>
+            <p class="album-artist">Marvin Abbey, Mr Exposed & Tazer Black</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\The_Diary_Of_A_CEO_Artwork.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">The Diary of A CEO</p>
+            <p class="album-artist">Steve Bartlett</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\fozcast.jpg"
+              alt="podcast cover"
+            />
+            <p class="album-title">Fozcast-The Ben Foster Podcast</p>
+            <p class="album-artist">The Ringer</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+        </section>
+        <div class="section-title">
+          <h2>Featured charts</h2>
+          <p><a href="#">SEE ALL</a></p>
+        </div>
+        <section class="relevant-library">
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+          <div class="album-cover">
+            <img
+              class="album"
+              src="assets\img\Placeholder.png"
+              alt="chart cover"
+            />
+            <p class="album-title">Lorem ipsum dolor sit amet.</p>
+            <p class="album-artist">Lorem, ipsum dolor.</p>
+            <img class="play-button" src="assets\img\play.svg" alt="play" />
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="track-info">
+        <img
+          class="track-cover"
+          src="assets\img\Placeholder.png"
+          alt="track cover"
+        />
+        <div>
+          <p class="track-title">Lorem ipsum.</p>
+          <p class="track-artist">Lorem, ipsum.</p>
+        </div>
+        <span class="material-symbols-outlined"> favorite </span>
+      </section>
+      <section class="player-main">
+        <div class="buttons">
+          <span class="material-symbols-outlined"> shuffle </span>
+          <span class="material-symbols-outlined"> skip_previous </span>
+          <span class="material-symbols-outlined"> play_circle </span>
+          <span class="material-symbols-outlined"> skip_next </span>
+          <span class="material-symbols-outlined"> repeat </span>
+        </div>
+        <div class="track-bar">
+          <input type="range" min="0" max="100" value="20" class="slider" />
+        </div>
+      </section>
+      <section class="volume">
+        <span class="material-symbols-outlined"> reorder </span>
+        <span class="material-symbols-outlined"> airplay </span>
+        <div class="volume-slider">
+          <span class="material-symbols-outlined"> volume_mute </span>
+          <input type="range" min="0" max="100" value="20" />
+        </div>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
