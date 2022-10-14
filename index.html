@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab70e69386.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="left_bar">
+            <h1><i class="fa-brands fa-spotify fa-m"></i><img src="/assets/img/logo.svg" alt="main logo"></h1>
+            <nav>
+                <a href="#"><img src="/assets/img/home.svg" alt=""></a><a class="home" href="#">Home</a>
+                <a href="#"><img src="/assets/img/search.svg" alt="search"></a><a class="search" href="#">Search</a>
+                <a href="#"><img src="/assets/img/libreria.svg" alt="Library"></a><a class="library"
+                    href="#">Library</a>
+
+            </nav>
+            <div class="playlist">
+                <div class="heading">
+                    <h3>playlist</h3>
+                </div>
+                <span><i class="fa-solid fa-square-plus fa-2xl"></i> Create playlist</span>
+
+                <ul>
+                    <li> <a href="#">acousatic soul</a></li>
+                    <li> <a href="#">dream waves</a></li>
+                    <li><a href="#">100 % kazka</a></li>
+                    <li><a href="#">feeling good</a></li>
+                    <li><a href="#">chill beats</a></li>
+                    <li><a href="#">best for workout</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="bottom_left">
+                <h4><img src="/assets/img/download.svg" alt="download"> <span> Install app</span></h4>
+                <div class="current_song">
+                    <i class="fa-solid fa-circle-user fa-2xl"></i>
+                    <a class="John">John Doe</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main">
+            <header><button>Upgrade Now</button></header>
+            <nav>
+                <div class="recently_played"><input type="checkbox" id="recently_played"><label
+                        for="recently_played">recently played</label>
+                    <div class="recently_played_content">
+                        <ul>
+                            <li><a href="#"></a>Adel</li>
+                            <li><a href="#"></a>Billie Eilish</li>
+                            <li><a href="#"></a>KAZKA</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <span>podcast</span><span>top ranking</span><span>genres and
+                    mood</span><span>new releases</span>
+            </nav>
+
+            <h2>recently played</h2>
+            <section>
+
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img
+                        src="/assets/img/metal_lifting.jpg" alt="album cover">
+                    <p>heavy metal</p>
+                    <span>subtitle</span>
+
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/stranger.jpeg"
+                        alt="album cover">
+                    <p>stranger things, Vol.1(a netflix Original series soundtrack)</p><span>kyle dixon & michael
+                        stein</span>
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img
+                        src="/assets/img/aquietplace.jpeg" alt="album cover">
+                    <p>a quiet place</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/split.jpeg"
+                        alt="">
+                    <p>split</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/cure.jpeg"
+                        alt="">
+                    <p>a cure for wellness</p><span>subtitle</span>
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/sinister.jpeg"
+                        alt="">
+                    <p>sinister</p><span>subtitle</span>
+                </div>
+
+
+
+
+
+            </section>
+            <div class="heading">
+                <h2>Created By John Doe </h2>
+                <span>Some untranslated text here</span>
+            </div>
+            <section class="created_by">
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/radar.jpeg"
+                        alt="cover">
+                    <p>release radar</p>
+                </div>
+                <div class="album"><i class="fa-regular fa-circle-play fa-2xl"></i><img src="/assets/img/mixdaily.jpeg"
+                        alt="cover">
+                    <p>daily mix 1</p>
+                </div>
+
+            </section>
+
+            <div class="heading">
+                <h2>Popular Artists</h2>
+                <span>Some untranslated text here</span>
+            </div>
+            <section>
+                <div class="artists"><img src="/assets/img/youg.jpeg" alt="">
+                    <p>young & beautiful</p>
+                </div>
+                <div class="artists"><img src="/assets/img/einaudi.jpeg" alt="">
+                    <p>ludovico einaudi</p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="left_control"><img src="/assets/img/sinister.jpeg" alt="album cover" width="50px">
+                <p>sinister</p>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="player">
+                <div class="player_top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+
+                </div>
+                <div class="player_bottom"></div>
+                <span>0:01</span><span class="songlength"> 04:21</span>
+            </div>
+            <div class="right_control">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="volume"></i>
+            </div>
+
+        </footer>
+    </div>
+
 </body>
+
 </html>
