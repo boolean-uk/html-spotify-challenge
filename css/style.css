@@ -90,6 +90,12 @@ h2 {
   font-size: 22px;
 }
 
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .icon {
   color: white;
   font-size: 24px;
@@ -316,9 +322,20 @@ h2 {
   align-self: center;
 }
 
-.artist {
+.artist,
+.see {
   font-size: 13px;
   color: #aaa;
+}
+
+.see {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.see:hover {
+  color: var(--font-colour-main);
+  text-decoration: underline;
 }
 
 /* icon that appears on hover on album/podcast cover */
