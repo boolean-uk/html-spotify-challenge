@@ -7,7 +7,7 @@ body{
     font-family: sans-serif
 }
 
-main{
+.container{
     height: 150vh;
     display: grid;
     grid-template:
@@ -20,8 +20,7 @@ main{
     "menu         title3"   50px
     "menu popular-artists"  1fr
     "footer     footer"     80px/
-    250px      1fr
- ;
+    250px      1fr;
 }
 
 /* styling for header */
@@ -64,12 +63,6 @@ header{
     grid-template-rows: 60px 60px 60px;
 }
 
-.playlist{
-   text-decoration: none;
-   color:rgb(168, 168, 168);
-   font-weight: bolder;
-}
-
 .home{
     background-color: black;
     color: white;
@@ -105,6 +98,12 @@ header{
     background-color: rgba(204, 197, 197, 0.599);
 }
 
+.playlist{
+    text-decoration: none;
+    color:rgb(168, 168, 168);
+    font-weight: bolder;
+ }
+ 
 .playlists p {
     font-size: 14px;
     color: #aaa;
@@ -235,11 +234,33 @@ h5{
     display: grid;
     grid-template-columns: 250px 250px auto;
 }
-/* end of styling for last row */
+
 .artist1 , .artist2{
     text-align: center;
 }
+/* end of styling for last row */
+
+/* styling of player */
 footer{
     grid-area: footer;
     background-color: rgb(48, 44, 44);
+    bottom: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+
 }
+
+.music{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.options{
+    padding-top: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+/* end of styling for  */
