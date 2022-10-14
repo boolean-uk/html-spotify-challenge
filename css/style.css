@@ -16,6 +16,7 @@ body {
 }
 /* LEFT BAR */
 .left_bar {
+  position: relative;
   grid-area: left_bar;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -25,22 +26,28 @@ body {
   padding-bottom: 15px;
 }
 h1 > img {
+  position: absolute;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  top: 10px;
+  left: 5px;
   object-fit: cover;
-  padding: 15px;
 }
-h1 > img:hover {
-  filter: drop-shadow(20);
+h1 i {
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  left:5px;
 }
-h1 {
-  height: 60px;
-}
+
 .left_bar nav {
   row-gap: 15px;
   display: grid;
   grid-template-columns: 35px auto;
   margin-bottom: 5%;
-  margin-top: 15%;
-  align-self: start;
+  margin-top: 20%;
+  padding-top: 20px;
+  align-self:start ;
 }
 .left_bar a {
   text-decoration: none;
@@ -84,6 +91,8 @@ ul li:hover {
   filter: brightness(180%);
 }
 .bottom_left {
+  display: grid;
+  grid-template-rows: 40px 2px auto;
   position: relative;
   bottom: 0%;
   max-width: 85%;
@@ -96,16 +105,25 @@ ul li:hover {
   font-family: sans-serif;
 }
 h4 {
-  border-bottom: solid 1px gray;
-  padding-bottom: 5%;
-  margin-bottom: 20px;
+  display: flex;
+  padding-bottom: 15px;
+  align-self: flex-start;
 }
 h4 > img {
-  width: 10%;
+  width: 35px;
   padding-right: 2%;
 }
+.current_song {
+  display: flex;
+  padding-top: 15px;
+  border-top: solid 1px gray;
+  padding-top: 20px;
+}
+.John{
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
 i.fa-user-large {
-  border: solid gray 1px;
   border-radius: 50px;
   width: fit-content;
   padding-right: 10px;
@@ -114,7 +132,7 @@ i.fa-user-large {
 
 header,
 button {
-  height: 12vh;
+  height: 85px;
   background-color: rgb(8, 11, 18);
   position: relative;
 }
@@ -127,8 +145,8 @@ button {
   height: fit-content;
   padding: 10px;
   position: absolute;
-  right: 10px;
-  top: 5%;
+  right: 20px;
+  top: 20px;
   font-weight: bold;
 }
 button:hover {
@@ -140,6 +158,7 @@ button:hover {
   padding: 5px;
   border-bottom: 1px solid gray;
   box-shadow: 1px 1px 2px;
+  padding-top: 12px;
 }
 
 .recently_played a {
@@ -149,9 +168,14 @@ button:hover {
 .recently_played label {
   font-size: 1.2em;
   text-transform: capitalize;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   cursor: pointer;
   padding: 5px;
+  color: grey;
+}
+.recently_played label:hover {
+  color: white;
 }
 .recently_played_content {
   max-height: 0;
@@ -253,6 +277,7 @@ p {
 
 /* FOOTER */
 footer {
+  height: 100px;
   grid-area: footer;
   background-color: rgb(40, 40, 40);
   display: grid;
@@ -304,6 +329,7 @@ footer img {
   width: 200px;
   border-bottom: 2px solid gray;
 }
+/* MEDIA */
 
 @media screen and (max-width: 1500px) {
   section {
@@ -391,12 +417,21 @@ nav {
   grid-template-columns: 35px;
   margin-bottom: 5%;
   margin-top: 15%;
-  align-self: start;
+  place-content: center;
 }
 .home, .search, .library {
   display: none;
 }
 .playlist {
   display: none;
+}
+.bottom_left a, span {
+  display: none;
+}
+h1 img {
+  display: none;
+}
+h1 i {
+  z-index: 2;
 }
 }
