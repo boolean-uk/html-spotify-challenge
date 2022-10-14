@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif
+}
+
+.container{
+    height: 150vh;
+    display: grid;
+    grid-template:
+    "menu        header "   50px
+    "menu       nav"        30px
+    "menu        title1"    30px
+    "menu  recently-played" 1fr
+    "menu         title2"    40px
+    "menu  created-for"     1fr
+    "menu         title3"   50px
+    "menu popular-artists"  1fr
+    "footer     footer"     80px/
+    250px      1fr;
+}
+
+/* styling for header */
+header{
+    grid-area: header;
+    background-color: rgb(32, 32, 34);
+}
+
+.upgrade{
+    background-color: rgb(32, 32, 34);
+    color: white;
+    border-color: white;
+    height: 30px;
+    width: 200px ;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: 1000px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* end of header styling */
+
+/* menu styling aka. left bar */
+.menu{
+    grid-area: menu;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 90px 180px 30px 70px 1fr 80px;
+    padding-left: 20px;
+}
+
+.spotify-logo-text{
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.icons{
+    display: grid;
+    grid-template-rows: 60px 60px 60px;
+}
+
+.home{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+}
+
+.discover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+}
+.library{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+}
+.home:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+.discover:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+.library:hover{
+    background-color: rgba(204, 197, 197, 0.599);
+}
+
+.playlist{
+    text-decoration: none;
+    color:rgb(168, 168, 168);
+    font-weight: bolder;
+ }
+ 
+.playlists p {
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  
+  .playlists p:hover {
+    filter: brightness(150%);
+  }
+
+.new-playlist{
+    background-color: black;
+    color: #aaa;
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.new-playlist:hover{
+    filter: brightness(150%);
+}
+
+.install-button{
+    background-color:black ;
+    color: white;
+    cursor: pointer;
+}
+
+.install-button:hover{
+    filter: brightness(150%);
+}
+.johnnyboy{
+    display: flex;
+    gap :10px;
+    padding-top: 5px;
+}
+h2 , h3 , p ,h4{
+    color: white;
+}
+/* end of menu styling */
+
+/* nav bar styling */
+nav{
+    grid-area: nav;
+    background-color: rgb(41, 41, 46);
+    gap: 20px;
+}
+
+.nav-bar{
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-options{
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover{
+    text-decoration: underline greenyellow 2px;
+}
+
+/* end of nav bar styling */
+
+/* first row styling */
+.recently-played-title{
+    grid-area: title1;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
+}
+
+.recently-played{
+    grid-area: recently-played;
+    background-color:rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   
+
+}
+.heavy-metal , .stranger-things , .quiet-place , .split , .cure ,.sinister , .daily-mix1 , .release-radar, .artist1 , .artist2{
+    background-color:rgb(41, 41, 46) ;
+    border: none;
+    cursor: pointer;
+}
+
+.heavy-metal:hover , .stranger-things:hover , .quiet-place:hover , .split:hover , .cure:hover ,.sinister:hover, .daily-mix1:hover , .release-radar:hover , .artist1:hover , .artist2:hover{
+    filter: brightness(150%);
+}
+p{
+    font-weight: bold;
+    color: #aaa;
+}
+/* end of first row styling */
+/* second row styling */
+.created-for-title{
+    grid-area: title2;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
+
+}
+.created-for{
+    grid-area: created-for;
+    background-color:rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: 200px 200px 1fr;
+}
+
+h5{
+    color:#aaa
+}
+/* end of second row styling */
+/* styling for last row */
+.popular-artists-title{
+    grid-area: title3;
+    background-color:rgb(41, 41, 46);
+    padding-left: 30px;
+
+}
+.popular-artists{
+    grid-area: popular-artists;
+    background-color: rgb(41, 41, 46);
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 250px 250px auto;
+}
+
+.artist1 , .artist2{
+    text-align: center;
+}
+/* end of styling for last row */
+
+/* styling of player */
+footer{
+    grid-area: footer;
+    background-color: rgb(48, 44, 44);
+    bottom: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+
+}
+
+.music{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.player{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.top-section{
+    padding-top: 10px;
+    display: flex;
+    gap: 25px;
+   padding-left: 450px;
+}
+.bottom-section{
+    padding-top: 10px;
+    display: flex;
+    gap: 20px; 
+    padding-left: 350px;
+}
+.options{
+    padding-top: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+/* end of styling for  */
