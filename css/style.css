@@ -44,6 +44,7 @@ header h1:hover {
   background: green;
   color: black;
   border: solid black 2px;
+  transition: .5s;
 }
 
 /* header end */
@@ -55,7 +56,7 @@ main {
   background: #141922;
   overflow-y: scroll;
   display: grid;
-  grid-template-rows: 65px repeat(3, 300px);
+  grid-template-rows: 65px repeat(3, minmax(300px, 1fr));
 }
 
 .sub-header {
@@ -77,11 +78,6 @@ h1.focus {
   
 }
 
-.sub-header :hover {
-  color: white;
-  cursor: pointer;
-}
-
 section {
   margin-left: 20px;
 }
@@ -92,13 +88,17 @@ section {
 
 section h1:hover {
   text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
 }
 
 .card {
   place-items: center;
+  position: relative;
 }
 
-.card img{
+.card .cover{
   width: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -130,6 +130,29 @@ section h1:hover {
 
 .artist-pfp {
   border-radius: 50% !important;
+}
+
+.floating-play-button {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.card:hover .cover {
+  transition: .5s;
+  opacity: 0.3;
+}
+
+.card:hover .floating-play-button{
+  transition: .5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.floating-play-button  img {
+  width: 80px;
 }
 
 /* main end */
@@ -167,6 +190,7 @@ nav img {
 nav :hover, .playlists :hover {
   color: white;
   cursor: pointer;
+  transition: .5s;
 }
 
 .focus h2 {
@@ -178,7 +202,7 @@ nav :hover, .playlists :hover {
 }
 
 .focus img {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 nav h1 {
@@ -244,6 +268,7 @@ nav hr {
 .profile :hover {
   background: #282828;
   cursor: pointer;
+  transition: .5s;
 }
 
 /* nav end */
@@ -293,6 +318,7 @@ footer {
 .curr-song h1:hover, .curr-song h2:hover {
   color: white;
   text-decoration: underline;
+  transition: .5s;
 }
 
 .like, .add-to-library {
@@ -302,6 +328,7 @@ footer {
 
 .like:hover, .add-to-library:hover {
   filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
+  transition: .5s;
 }
 
 .media-keys {
@@ -318,15 +345,16 @@ footer {
 .media-keys img:hover{
   filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
   cursor: pointer;
+  transition: .5s;
 }
 
 .play {
   width: 40px !important;
 }
 
-/* .play:hover {
-  ;
-} */
+.play:hover {
+  transform: scale(1.2);
+}
 
 .progress-bar {
   display: flex;
@@ -407,6 +435,10 @@ footer {
   filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(85%) contrast(89%);
 }
 
+.filter-green {
+  filter: invert(74%) sepia(65%) saturate(5504%) hue-rotate(101deg) brightness(98%) contrast(77%);
+}
+
 /* svg filters end */
 
 
@@ -425,3 +457,45 @@ footer {
 }
 
 /* reusable end */
+
+/* media queries start */
+
+@media screen and (max-width:500px) {
+  nav h1, nav h2, nav h3, nav h4, nav h5, .create-playlist, hr {
+    display: none;
+  }
+
+  .profile button{
+    margin-left: 10px;
+    width: 45px;
+  }
+
+  body {
+    display: grid;
+    grid-template: 
+    "nav header" 10vh
+    "nav main" 80vh
+    "footer footer" 10vh /
+    70px 1fr;
+  }
+
+  nav .svg:hover {
+    filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
+  }
+
+  .media-query-display {
+    display: inline;
+    margin-top: 15px;
+  }
+
+  /* incomplete */
+  footer {
+    display: grid;
+    grid-template:
+      "curr-song media-keys volume" auto
+      "curr-song progress-bar volume"auto/
+      100px 1fr 100px;
+  }
+}
+
+/* media queries end */
