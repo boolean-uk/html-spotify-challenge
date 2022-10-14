@@ -320,6 +320,10 @@ footer {
   margin-right: 15px;
 }
 
+.media-query-display {
+  display: inline-flex;
+}
+
 .like:hover, .add-to-library:hover {
   filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
   transition: .5s;
