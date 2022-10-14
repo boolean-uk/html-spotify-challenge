@@ -1,3 +1,6 @@
+Guys would love advise on how to fix my section, so when collapsible menu extends it doesn't affect section below .
+sorry, did not readjust footer for a @medias , lost interest there :}
+
 # Spotify
 Today we are building the UI for Spotify. This exercise will put into practice everything we have learned about HTML & CSS. Layouts for apps are different to websites so this will put your CSS Grid skills to the test!
 
