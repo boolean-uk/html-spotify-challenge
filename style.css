@@ -97,6 +97,23 @@ body {
     font-variation-settings:
         'FILL' 1
 }
+
+.pink-strip {
+    border-bottom: 0.5rem solid pink;
+}
+.orange-strip {
+    border-bottom: 0.5rem solid orange;
+}
+.red-strip {
+    border-bottom: 0.5rem solid rgb(108, 0, 0);
+}
+.cyan-strip {
+    border-bottom: 0.5rem solid cyan;
+}
+.yellow-strip {
+    border-bottom: 0.5rem solid yellow;
+}
+
 /* End Of Reusable */
 
 /* Navigation */
@@ -223,7 +240,7 @@ main .container {
     height: 1000px;
 }
 
-main article h1 {
+main h1 {
     font-size: xx-large;
     margin: 0 0 1rem 0;
 }
@@ -236,7 +253,7 @@ main article .my-playlist-grid { /* Grid of Blocks */
 
     justify-items: stretch;
 }
-main article section span { /* The Block */
+main article .my-playlist-grid span { /* The Block */
     display: grid;
     grid-auto-flow: column;
     background-color: #ffffff2b;
@@ -251,17 +268,17 @@ main article section span { /* The Block */
 
     transition: 0.4s;
 }
-main article section span:hover {
+main article .my-playlist-grid span:hover {
     cursor: pointer;
     background-color: #ffffff48;
 }
-main article section span img { /* Play Image */
+main article .my-playlist-grid span img { /* Playlist Image */
     background-color: #5643A8;
     width: 5rem;
     border-radius: 0.3rem 0 0 0.3rem;
     box-shadow: 2px 0 12px -2px rgba(0, 0, 0, 0.5);
 }
-main article section span big { /* Play Name */
+main article .my-playlist-grid span big { /* Playlist Name */
     display: flex;
     word-wrap: break-word;
     grid-column: 2;
@@ -273,7 +290,7 @@ main article section span big { /* Play Name */
     justify-self: left;
 }
 /*  ============= Icon button */
-main article section span .icon-button {
+main article .my-playlist-grid span .icon-button {
     display: flex;
     background-color: #1ED760;
 
@@ -287,13 +304,13 @@ main article section span .icon-button {
 
     transition: opacity 0.2s ease-in-out;
 }
-main article section span .icon-button i {
+main article .my-playlist-grid span .icon-button i {
     color: black;
 }
-main article section span:hover .icon-button {
+main article .my-playlist-grid span:hover .icon-button {
     opacity: 100%;
 }
-main article section span .icon-button:hover {
+main article .my-playlist-grid span .icon-button:hover {
     width: 50px;
     height: 50px;
 
@@ -303,13 +320,62 @@ main article section span .icon-button:hover {
     position: relative;
     left: 1px; /* Moves it to left to center new size */
 }
-main article section span .icon-button:hover i {
+main article .my-playlist-grid span .icon-button:hover i {
     font-size: 32px;
 }
 /* ============= End of Icon button */
 
+main h2 {
+    font-size: x-large;
+    margin: 2rem 0;
+}
+main article .my-square-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
 
+    justify-items: stretch;
+}
+main article .my-square-grid span { /* The Block */
+    display: grid;
+    grid-auto-flow: row;
+    background-color: #ffffff2b;
+    gap: 1rem;
 
+    align-items: center;
+    grid-auto-columns: auto 1fr auto;
+
+    border-radius: 0.3rem;
+    height: fit-content;
+    width: 100%;
+
+    transition: 0.4s;
+}
+main article .my-square-grid span:hover {
+    cursor: pointer;
+    background-color: #ffffff48;
+}
+main article .my-square-grid span img { /* Block Image */
+    background-color: #5643A8;
+    width: 10rem;
+    height: 10rem;
+    box-sizing: border-box;
+
+    border-radius: 0.3rem;
+    box-shadow: 2px 0 12px -2px rgba(0, 0, 0, 0.5);
+}
+main article .mysquare-grid span big { /* Block Name */
+    display: flex;
+    word-wrap: break-word;
+    grid-column: 2;
+    /* width: 12ch; */
+    width: 12ch;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    justify-self: left;
+}
 
 /* ------------ End Of Grids */
 
