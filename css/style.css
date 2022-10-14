@@ -1,0 +1,560 @@
+:root {
+  --colour-primary: #191414;
+  --colour-secondary: #1db954;
+  --colour-background: #232121;
+  --colour-background-light: #373636c1;
+  --colour-hover: #373636;
+
+  --font-colour-main: #eee;
+  --font-size-main: 16px;
+
+  --transition-main: 0.5s;
+  --border-radius-main: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--font-size-main);
+  background-color: var(--colour-primary);
+  color: var(--font-colour-main);
+}
+
+/**********************************************/
+/* LAYOUTS / MAIN AREAS */
+/**********************************************/
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 75px 1fr 90px;
+  column-gap: 10px;
+  height: 100vh;
+}
+
+.header {
+  background-color: var(--colour-primary);
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.sidebar {
+  background-color: var(--colour-background);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-left: 10px;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.main {
+  background-color: var(--colour-background);
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  margin-right: 10px;
+  border-radius: 12px;
+  overflow-y: scroll;
+}
+
+.player {
+  background-color: var(--colour-primary);
+  grid-row: 3 / -1;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+/**********************************************/
+/* GENERAL / REUSABLE STYLES */
+/**********************************************/
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 24px 0;
+  font-size: 22px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-hover:hover {
+  background-color: var(--colour-background-light);
+}
+
+.unavailable:hover {
+  cursor: not-allowed;
+}
+
+/**********************************************/
+/* HEADER */
+/**********************************************/
+
+.settings,
+.search-box,
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.home {
+  padding: 10px;
+  background-color: var(--colour-background-light);
+}
+
+.home:hover,
+.search:hover {
+  background-color: var(--colour-hover);
+}
+
+.search {
+  width: 400px;
+  padding: 12px 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--colour-background-light);
+  color: var(--font-colour-main);
+  font-size: 16px;
+}
+
+.search::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.search:focus {
+  outline: 2px solid #ddd;
+}
+
+.search-icon {
+  position: absolute;
+  top: 13px;
+  left: 77px;
+  font-size: 20px;
+}
+
+.upgrade-btn {
+  background-color: var(--colour-primary);
+  color: var(--font-colour-main);
+  padding: 5px 16px;
+  border-radius: var(--border-radius-main);
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--transition-main);
+}
+
+.upgrade-btn:hover {
+  transform: scale(1.05);
+}
+
+.profile-icon {
+  border: 8px solid #373636c1;
+  font-size: 18px;
+}
+
+.profile-icon:hover {
+  border: 8px solid #373636;
+}
+
+/**********************************************/
+/* SIDEBAR */
+/**********************************************/
+
+.main-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.small-logo {
+  width: 25px;
+  height: auto;
+}
+
+.menu-icon {
+  font-size: 28px;
+}
+
+.library-icon {
+  font-size: 26px;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 0.1px solid #aaa;
+  margin-bottom: 16px;
+}
+
+.sidebar-container div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar-container div p:hover,
+.playlist:hover {
+  color: var(--font-colour-main);
+}
+
+.playlist {
+  cursor: pointer;
+}
+
+.playlist:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/**********************************************/
+/* MAIN */
+/**********************************************/
+
+.main-container {
+  margin: 30px;
+}
+
+.morning {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.podcast {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--colour-background-light);
+  border-radius: var(--border-radius-main);
+  cursor: pointer;
+  transition: var(--transition-main);
+}
+
+.podcast:hover {
+  background-color: var(--colour-hover);
+}
+
+.podcast img {
+  width: 80px;
+  height: auto;
+  border-top-left-radius: var(--border-radius-main);
+  border-bottom-left-radius: var(--border-radius-main);
+}
+
+.daily-category {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.listen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  border-radius: 12px;
+  position: relative;
+  transition: var(--transition-main);
+}
+
+.listen:hover {
+  background-color: var(--colour-background-light);
+}
+
+/* makes the play icon appear when hovering a playlist, hidden by default*/
+.listen:hover > .play-icon {
+  display: block;
+}
+
+/* darkens the image when hovered so the play icon stands out */
+.listen:hover > img {
+  filter: brightness(50%);
+}
+
+.listen img {
+  width: 150px;
+  height: auto;
+  align-self: center;
+}
+
+.artist,
+.see {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.see {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.see:hover {
+  color: var(--font-colour-main);
+  text-decoration: underline;
+}
+
+/* icon that appears on hover on album/podcast cover */
+.play-icon {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  color: var(--colour-secondary);
+  font-size: 50px;
+  display: none;
+}
+
+/**********************************************/
+/* PLAYER */
+/**********************************************/
+
+.playing-now-img {
+  width: 65px;
+  height: auto;
+}
+
+.player-icon {
+  font-size: 26px;
+  color: #aaa;
+}
+
+.pause-icon {
+  font-size: 34px;
+}
+
+.pause-icon:hover {
+  transform: scale(1.1);
+}
+
+.player-settings ion-icon {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.player-icon:hover,
+.player-settings ion-icon:hover {
+  color: var(--font-colour-main);
+}
+
+.controls {
+  display: grid;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-self: center;
+}
+
+.track,
+.player-settings,
+.playing-now {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-settings {
+  justify-self: end;
+}
+
+.track-line {
+  height: 4px;
+  border-radius: var(--border-radius-main);
+  background-color: var(--colour-hover);
+}
+
+.track-line.long {
+  width: 450px;
+}
+
+.track-line.short {
+  width: 100px;
+}
+
+.timestamp {
+  font-size: 10px;
+}
+
+/**********************************************/
+/* MEDIA QUERIES */
+/**********************************************/
+
+@media screen and (max-width: 65em) {
+  .container {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .sidebar-container {
+    border: none;
+  }
+
+  .menu-link,
+  .playlist,
+  .main-logo,
+  .player-settings,
+  .playing-now {
+    display: none;
+  }
+
+  .small-logo {
+    width: 30px;
+    height: auto;
+  }
+
+  .menu-icon {
+    font-size: 32px;
+  }
+
+  .library-icon {
+    font-size: 28px;
+  }
+
+  .small-logo,
+  .menu-icon,
+  .library-icon {
+    cursor: pointer;
+  }
+
+  .player {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .upgrade-btn {
+    display: none;
+  }
+
+  .morning {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 46.875em) {
+  body {
+    font-size: 14px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .search::placeholder {
+    color: transparent;
+  }
+
+  .unavailable {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 33.75em) {
+  .container {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .small-logo {
+    width: 22px;
+    height: auto;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+  }
+
+  .library-icon {
+    font-size: 22px;
+  }
+
+  .sidebar {
+    padding: 10px;
+  }
+
+  .track-line.long {
+    width: 250px;
+  }
+
+  .profile-icon {
+    display: none;
+  }
+
+  .search {
+    width: 150px;
+  }
+}
+
+@media screen and (max-height: 31.25em) {
+  body {
+    font-size: 11px;
+  }
+
+  .container {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 90px;
+  }
+
+  .header,
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+  }
+}

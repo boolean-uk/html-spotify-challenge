@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="settings">
+          <ion-icon name="ellipsis-horizontal" class="icon"></ion-icon>
+          <ion-icon name="chevron-back" class="icon icon-hover"></ion-icon>
+          <ion-icon
+            name="chevron-forward"
+            class="icon icon-hover unavailable"
+          ></ion-icon>
+        </div>
+        <div class="search-box">
+          <ion-icon name="home" class="icon home"></ion-icon>
+          <form>
+            <input
+              type="text"
+              class="search"
+              placeholder="What do you want to listen to?"
+            />
+            <ion-icon name="search" class="search-icon"></ion-icon>
+          </form>
+        </div>
+        <div class="profile">
+          <button class="upgrade-btn">Upgrade</button>
+          <ion-icon name="person" class="icon profile-icon"></ion-icon>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <img src="assets/img/logo.svg" alt="Spotify logo" class="main-logo" />
+        <div class="sidebar-container">
+          <div>
+            <ion-icon name="library" class="library-icon"></ion-icon>
+            <p class="menu-link">Your Library</p>
+          </div>
+          <div>
+            <img
+              src="assets/img/logo-small.svg"
+              alt="small spotify logo"
+              class="small-logo"
+            />
+            <p class="menu-link">Premium</p>
+          </div>
+          <div>
+            <ion-icon name="add-circle-outline" class="menu-icon"></ion-icon>
+            <p class="menu-link">Create Playlist</p>
+          </div>
+          <div>
+            <ion-icon name="heart-circle-outline" class="menu-icon"></ion-icon>
+            <p class="menu-link">Liked Songs</p>
+          </div>
+        </div>
+        <p class="playlist">My Playlist #1</p>
+        <p class="playlist">Study mix</p>
+      </aside>
+
+      <main class="main">
+        <section class="main-container">
+          <h1>Good morning</h1>
+          <div class="morning">
+            <div class="podcast">
+              <img src="assets/img/resthistory.jpg" alt="podcast cover" />
+              <p>The Rest is History</p>
+            </div>
+            <div class="podcast">
+              <img src="assets/img/bbc.webp" alt="podcast cover" />
+              <p>BBC News</p>
+            </div>
+            <div class="podcast">
+              <img src="assets/img/german.png" alt="podcast cover" />
+              <p>Easy German: Learn German with Native Speakers</p>
+            </div>
+            <div class="podcast">
+              <img src="assets/img/literature.jpg" alt="podcast cover" />
+              <p>The History of Literature</p>
+            </div>
+            <div class="podcast">
+              <img src="assets/img/wizards.jpg" alt="podcast cover" />
+              <p>Very Bad Wizards</p>
+            </div>
+            <div class="podcast">
+              <img src="/assets/img/nytdaily.jpg" alt="podcast cover" />
+              <p>The New York Times Daily</p>
+            </div>
+          </div>
+          <div class="heading-container">
+            <h2>UK Politics - what's happening?</h2>
+            <span class="see">SEE ALL</span>
+          </div>
+          <div class="daily-category">
+            <div class="listen">
+              <img src="assets/img/newscast.jpg" alt="podcast cover" />
+              <p>Newscast</p>
+              <p class="artist">BBC Radio</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/guardian.jpg" alt="podcast cover" />
+              <p>Politics Weekly UK</p>
+              <p class="artist">The Guardian</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/spectactor.jpg" alt="podcast cover" />
+              <p>Coffee House Shots</p>
+              <p class="artist">The Spectator</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/nspodcast.jpg" alt="podcast cover" />
+              <p>The NS Podcast</p>
+              <p class="artist">The New Statesman</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/politicalthinking.jpg" alt="podcast cover" />
+              <p>Political Thinking</p>
+              <p class="artist">BBC Radio 4</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/restpolitics.jpeg" alt="podcast cover" />
+              <p>The Rest is Politics</p>
+              <p class="artist">Goalhanger Podcasts</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+          </div>
+          <div class="heading-container">
+            <h2>More of what you like</h2>
+            <span class="see">SEE ALL</span>
+          </div>
+          <div class="daily-category">
+            <div class="listen">
+              <img src="assets/img/legendary.jpg" alt="playlist cover" />
+              <p>Legendary</p>
+              <p class="artist">Indisputable classics</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/rock-anthem-60.jpg" alt="playlist cover" />
+              <p>60s Rock Anthems</p>
+              <p class="artist">Light one up</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/indie-roadtrip.jpg" alt="playlist cover" />
+              <p>Indie Roadtrip</p>
+              <p class="artist">Chilling and cruising</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/pop-00.jpg" alt="playlist cover" />
+              <p>00s Pop Classics</p>
+              <p class="artist">Reach for the stars</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/rock-anthems-00.jpg" alt="playlist cover" />
+              <p>00s Rock Anthems</p>
+              <p class="artist">Not the best rock era...</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+            <div class="listen">
+              <img src="assets/img/new-noise.jpg" alt="playlist cover" />
+              <p>New Noise</p>
+              <p class="artist">The hottest new artists</p>
+              <ion-icon name="play" class="play-icon"></ion-icon>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="player">
+        <div class="playing-now">
+          <img
+            src="assets/img/royalblood.jpg"
+            alt="royal blood album cover"
+            class="playing-now-img"
+          />
+          <div>
+            <p>Royal Blood</p>
+            <p class="artist">Figure It Out</p>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="buttons">
+            <ion-icon name="shuffle-outline" class="player-icon"></ion-icon>
+            <ion-icon
+              name="play-skip-back-circle-outline"
+              class="player-icon"
+            ></ion-icon>
+            <ion-icon
+              name="pause-circle-outline"
+              class="player-icon pause-icon"
+            ></ion-icon>
+            <ion-icon
+              name="play-skip-forward-circle-outline"
+              class="player-icon"
+            ></ion-icon>
+            <ion-icon name="repeat-outline" class="player-icon"></ion-icon>
+          </div>
+          <div class="track">
+            <span class="timestamp">0:07</span>
+            <div class="track-line long"></div>
+            <span class="timestamp">3:17</span>
+          </div>
+          <div></div>
+        </div>
+        <div class="player-settings">
+          <ion-icon name="file-tray-full-outline"></ion-icon>
+          <ion-icon name="people-outline"></ion-icon>
+          <ion-icon name="bluetooth-outline"></ion-icon>
+          <ion-icon name="volume-medium-outline"></ion-icon>
+          <div class="track-line short"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
