@@ -257,6 +257,22 @@ footer{
     gap: 5px;
 }
 
+.player{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.top-section{
+    padding-top: 10px;
+    display: flex;
+    gap: 25px;
+   padding-left: 450px;
+}
+.bottom-section{
+    padding-top: 10px;
+    display: flex;
+    gap: 20px; 
+    padding-left: 350px;
+}
 .options{
     padding-top: 10px;
     display: flex;
