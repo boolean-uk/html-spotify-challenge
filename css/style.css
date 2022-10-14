@@ -7,6 +7,9 @@
 
   --font-colour-main: #eee;
   --font-size-main: 16px;
+
+  --transition-main: 0.5s;
+  --border-radius-main: 12px;
 }
 
 * {
@@ -159,11 +162,12 @@ h2 {
   background-color: var(--colour-primary);
   color: var(--font-colour-main);
   padding: 5px 16px;
-  border-radius: 12px;
+  border-radius: var(--border-radius-main);
   border: 1px solid #ddd;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
+  transition: var(--transition-main);
 }
 
 .upgrade-btn:hover {
@@ -187,6 +191,7 @@ h2 {
   width: 120px;
   height: auto;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .small-logo {
@@ -256,8 +261,9 @@ h2 {
   align-items: center;
   gap: 20px;
   background-color: var(--colour-background-light);
-  border-radius: 12px;
+  border-radius: var(--border-radius-main);
   cursor: pointer;
+  transition: var(--transition-main);
 }
 
 .podcast:hover {
@@ -267,8 +273,8 @@ h2 {
 .podcast img {
   width: 80px;
   height: auto;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: var(--border-radius-main);
+  border-bottom-left-radius: var(--border-radius-main);
 }
 
 .daily-category {
@@ -286,6 +292,7 @@ h2 {
   cursor: pointer;
   border-radius: 12px;
   position: relative;
+  transition: var(--transition-main);
 }
 
 .listen:hover {
@@ -381,7 +388,7 @@ h2 {
 
 .track-line {
   height: 4px;
-  border-radius: 12px;
+  border-radius: var(--border-radius-main);
   background-color: var(--colour-hover);
 }
 
