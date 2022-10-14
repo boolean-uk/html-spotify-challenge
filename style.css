@@ -10,10 +10,10 @@
     height: 100vh;
     display: grid;
     grid-template: 
-    "left-Side-Bar header " 70px
+    "left-Side-Bar header" 70px
     "left-Side-Bar main" 1fr
-    "footer footer" 80px /
-        1fr 1fr;
+    "footer footer" auto /
+       1fr 3fr;
 }
 .header {
     grid-area: header;
@@ -48,11 +48,6 @@ button:hover {
     gap:20px;
 }
 
-/* .left-side-menu1 {
- margin-top: 20px;
- color: gray;
-}  */
-
 
 .left-side-menu1 img{
     width: 30px;
@@ -66,7 +61,7 @@ button:hover {
 .left-side-menu1, h5{
     color: white;
     font-size: 12px;
-    margin: 20px;
+    margin: 10px;
     
 }
 .left-side-menu2 li{
@@ -99,6 +94,7 @@ h6 {
     margin-left: 20px;
     margin-right: 20px;
     color: gray;
+    padding-top:130px;
 }
 .profile img {
     margin-top:10px;    
@@ -138,7 +134,7 @@ h6 {
 
 .recently-played {
     display: grid;
-    grid-template-columns: repeat(6, 180px);
+    grid-template-columns: repeat(6, 170px);
     text-align: center;
     line-height: 1.6;
     font-weight: bold;
@@ -152,7 +148,7 @@ h6 {
 
 .created-for {
     display: grid;
-    grid-template-columns:repeat(2, 180px);
+    grid-template-columns:repeat(2, 170px);
     text-align: center;
     line-height:1.6;
     font-weight: bold;
@@ -162,7 +158,7 @@ h6 {
 
 .popular-artist {
     display: grid;
-    grid-template-columns:repeat(2, 180px);
+    grid-template-columns:repeat(2, 170px);
     text-align: center;
     font-weight: bold;
     font-size: 12px;
@@ -177,6 +173,7 @@ h6 {
     grid-template-columns: 300px 1fr 300px;
     gap:5px;
     background-color: rgb(58, 53, 53);
+    height: 100%;
 }
 
 .footer1 ul, .footer2 ul, .footer3 ul{
@@ -200,27 +197,36 @@ h6 {
 
 .footer2 {
     display: grid;
-    grid-template-rows: 50px 10px;
-    padding-top: 3%;
+    grid-template-rows: 20px 10px;
+    padding-top:30px;
+    margin-left:30px;
 }
 
-.music-bar {
-    border-top: 3px solid gray;
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 10px;
 
-}
 
 .footer3 {
     display:flex;
-    padding-top: 10%;
-    margin-right: 50px;
+    padding-top: 10px;
+    margin-right: 10px;
     gap:10px;    
+    margin-top: 50px;
 }
 
 .icons-bar {
     border-top: 3px solid gray;
     width: 100px;
-    margin-top: 5px;
+    padding-top: 20%;
+    margin-left: 100;
+    padding-right: 40px;
+}
+.bottom-right-play-icons {
+    display: flex;
+    padding-top: 1px;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-left: 10;
+    gap:3px;    
+}
+.time-bar {
+    margin-left:100px ;
 }
