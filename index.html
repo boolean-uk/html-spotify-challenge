@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="spotify.css" />
     <link rel="stylesheet" href="left-menu.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>Document</title>
   </head>
   <body>
@@ -44,16 +45,18 @@
               src="assets\img\libreria.svg"
               alt="playlist-libary"
             />
-            Playlist libary
+            <p>Playlist libary</p>
           </div>
           <br />
-          <span> Runnning Playlist </span>
-          <p>Drum&Bass</p>
-          <p>Classical essentials</p>
-          <p>partaayy vibes</p>
-          <p>Rap Caviar</p>
-          <p>Liked songs</p>
-          <p>"Ya like jazz?"</p>
+          <div class="playlists">
+            <span> Runnning Playlist </span>
+            <p>Drum&Bass</p>
+            <p>Classical essentials</p>
+            <p>partaayy vibes</p>
+            <p>Rap Caviar</p>
+            <p>Liked songs</p>
+            <p>"Ya like jazz?"</p>
+          </div>
         </div>
 
         <div id="profile-info">
@@ -145,7 +148,7 @@
           </div>
           <div class="artists-for-you">
             <h1>Created for you</h1>
-            <p>A mix of new music and msuic you have had on repeat</p>
+            <p>A mix of new music and music you have had on repeat</p>
 
             <button>
               <img
@@ -168,10 +171,48 @@
               <p>subtitle</p>
             </button>
           </div>
-          <div class="hot-artists">music you might like</div>
+          <div id="hot-artists">
+            <h1>Popular Artists</h1>
+            <p class="popular-artist-p-element">
+              Some of the best artists trending around the Globe right now
+            </p>
+            <button>
+              <img
+                src="assets\img\einaudi.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Popular Artist</h4>
+              <p>Einaudi</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\youg.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Lana Del-Ray</h4>
+              <p>subtitle</p>
+            </button>
+          </div>
         </div>
       </div>
     </main>
-    <div class="footer">test</div>
+    <div class="footer">
+      <div class="song-inf">
+        <button>
+          <img
+            src="assets\img\sinister.jpeg"
+            alt=""
+            width="50px"
+            height="50px"
+          />
+        </button>
+      </div>
+      <div class="player-controls"></div>
+      <div class="additional-player-controls"></div>
+    </div>
   </body>
 </html>

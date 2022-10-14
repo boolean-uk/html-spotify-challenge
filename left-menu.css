@@ -1,9 +1,9 @@
 .left-menu {
   display: grid;
   grid-template-rows: 230px 0.9fr 80px;
-  border-right: solid rgb(255, 255, 255) 2px;
+
   height: 100vh;
-  background-color: #191414;
+  background-color: #000000;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -11,16 +11,13 @@
 #left-menu-task-bar {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  border-bottom: solid rgb(255, 255, 255) 2px;
 }
 
 header {
-  border-bottom: solid rgb(255, 255, 255) 2px;
-  background-color: rgb(8, 11, 18);
+  background-color: rgb(0, 0, 0);
 }
 
 #main-page-task-bar {
-  border-bottom: solid rgb(255, 255, 255) 2px;
   height: 50px;
 }
 .spotify-logo {
@@ -60,9 +57,12 @@ header {
   display: flex;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
-  color: rgb(255, 255, 255);
+
   width: 4ch;
   height: 4ch;
+  color: rgb(107, 107, 107);
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 
 .play-list-libary {
@@ -75,10 +75,13 @@ header {
 .playlist-libary-icon {
   padding-right: 1.5ch;
 }
+
 .install-app {
   margin-bottom: 0;
   color: rgb(111, 111, 111);
   padding-left: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .default-profile-icon {
