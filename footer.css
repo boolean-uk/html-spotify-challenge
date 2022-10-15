@@ -16,11 +16,21 @@
   font-size: small;
   font-family: sans-serif;
   margin-right: 3ch;
+  margin-top: 6ch;
 }
 .like-song-heart-icon {
+  margin-top: 3ch;
+}
+.like-song-file-icon {
   margin-top: 3ch;
 }
 .player-info-song-p {
   font-weight: lighter;
   color: grey;
+}
+.player-control-buttons {
+  margin-left: 15ch;
+}
+.additional-player-controls {
+  margin: 1ch;
 }

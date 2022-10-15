@@ -23,9 +23,10 @@ body {
   float: right;
   font-family: sans-serif;
   margin-right: 5ch;
+  font-weight: bold;
 }
 .nav-bar-a:hover {
-  text-decoration: underline rgb(29, 185, 84);
+  text-decoration: underline rgb(29, 185, 84) 3px;
   font-family: sans-serif;
 }
 
@@ -37,6 +38,10 @@ body {
   background-color: rgb(20, 25, 34);
   border: none;
   color: white;
+  font-weight: bolder;
+}
+.recently-played button p {
+  color: rgb(105, 107, 112);
 }
 button:hover {
   background-color: lightgray;
