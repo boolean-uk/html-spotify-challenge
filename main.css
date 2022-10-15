@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+.main-content {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  margin: 10px 10px;
+  gap: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#header button {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.nav-bar-a {
+  color: rgb(105, 107, 112);
+  text-decoration: none;
+  float: right;
+  font-family: sans-serif;
+  margin-right: 5ch;
+  font-weight: bold;
+}
+.nav-bar-a:hover {
+  text-decoration: underline rgb(29, 185, 84) 3px;
+  font-family: sans-serif;
+}
+
+.main-page-task-bar {
+  align-items: center;
+}
+
+.recently-played button {
+  background-color: rgb(20, 25, 34);
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+.recently-played button p {
+  color: rgb(105, 107, 112);
+}
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.artists-for-you button {
+  background-color: rgb(20, 25, 34);
+  border: none;
+  color: white;
+}
+.artists-for-you button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+#hot-artists button {
+  background-color: rgb(20, 25, 34);
+  border: none;
+  color: white;
+}
+#hot-artists button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}

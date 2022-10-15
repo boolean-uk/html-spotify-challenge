@@ -1,12 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="spotify.css" />
+    <link rel="stylesheet" href="left-menu.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main id="whole-page">
+      <!-- left menu pertains to the html that will contain 
+        my grids for the left menu task bar and playlists. 
+        It will also have the small profile 
+        info section at the bottom -->
+      <div class="left-menu">
+        <div id="left-menu-task-bar">
+          <div class="spotify-logo">
+            <img src="assets\img\logo.svg" alt="spotify logo" />
+          </div>
+          <div class="home">
+            <img src="assets\img\home.svg" alt="Home logo" /> Home
+          </div>
+          <div class="search">
+            <img src="assets\img\search.svg" alt="search icon" /> Search
+          </div>
+          <div class="libary">
+            <img src="assets\img\libreria.svg" alt="libary icon" />Libary
+          </div>
+        </div>
+        <div class="play-list">
+          <h1>Playlist</h1>
+          <div class="play-list-libary">
+            <!-- please excuse the repeat use of the libary icon. 
+              I was unable to find the correct 
+              icon and this libary icon was the next best thing. -->
+
+            <img
+              class="playlist-libary-icon"
+              src="assets\img\libreria.svg"
+              alt="playlist-libary"
+            />
+            <p class="playlist-libray-name">Playlist libary</p>
+          </div>
+          <br />
+          <div class="playlists">
+            <p>Runnning Playlist</p>
+            <p>Drum&Bass</p>
+            <p>Classical essentials</p>
+            <p>partaayy vibes</p>
+            <p>Rap Caviar</p>
+            <p>Liked songs</p>
+            <p>"Ya like jazz?"</p>
+          </div>
+        </div>
+
+        <div id="profile-info">
+          <div class="profile-icon-info">
+            <p class="install-app">Install app</p>
+            <hr class="solid-line" />
+            <img
+              class="default-profile-icon"
+              src="assets\img\profile.svg"
+              alt="defualt-profile-icon"
+            />
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-page">
+        <header id="header"></header>
+        <div id="main-page-task-bar">
+          <nav class="nav-bar">
+            <ul class="nav-bar-a-list">
+              <a class="nav-bar-a" href="nav-options">Recent Music</a>
+              <a class="nav-bar-a" href="nav-options">Podcasts</a>
+              <a class="nav-bar-a" href="nav-options">Mood Music</a>
+              <a class="nav-bar-a" href="nav-options">Discover</a>
+              <a class="nav-bar-a" href="nav-options">Recently released</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-content">
+          <div class="recently-played">
+            <h1>Recently listened</h1>
+            <button>
+              <img
+                src="assets\img\metal_lifting.jpg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Heavy metal</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\stranger.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>
+                Stranger Things, <br />
+                Vol.1 <br />(A netflix original <br />
+                series soundtrack)
+              </h4>
+              <p>Kyle Dixon & Michael Stein</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\aquietplace.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>A Quiet Place</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\split.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Split</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\cure.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>
+                A Cure For <br />
+                wellness
+              </h4>
+              <p>subtitle</p>
+            </button>
+          </div>
+          <div class="artists-for-you">
+            <h1>Created for you</h1>
+            <p>A mix of new music and music you have had on repeat</p>
+
+            <button>
+              <img
+                src="assets\img\mixdaily.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Daily Mix 1</h4>
+              <p>subtitle</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\radar.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Release Radar</h4>
+              <p>subtitle</p>
+            </button>
+          </div>
+          <div id="hot-artists">
+            <h1>Popular Artists</h1>
+            <p class="popular-artist-p-element">
+              Some of the best artists trending around the Globe right now
+            </p>
+            <button>
+              <img
+                src="assets\img\einaudi.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Popular Artist</h4>
+              <p>Einaudi</p>
+            </button>
+            <button>
+              <img
+                src="assets\img\youg.jpeg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h4>Lana Del-Ray</h4>
+              <p>subtitle</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="song-info">
+        <button class="song-player-button">
+          <img
+            src="assets\img\sinister.jpeg"
+            class="player-song-icon"
+            alt=""
+            width="50px"
+            height="50px"
+          />
+        </button>
+        <h1 class="player-info-song-heading">
+          Sinister
+          <p class="player-info-song-p">Brand Nome</p>
+        </h1>
+        <img
+          class="like-song-heart-icon"
+          src="icons8-heart-48.png"
+          alt=""
+          width="30px"
+          height="30px"
+        />
+        <img
+          class="like-song-file-icon"
+          src="icons8-folder.svg"
+          alt=""
+          width="30px"
+          height="30px"
+        />
+      </div>
+      <div class="player-controls">
+        <div class="player-control-buttons">
+          <img src="spotify controls.png" alt="" width="90%" height="90%" />
+        </div>
+      </div>
+      <div class="additional-player-controls">
+        <img src="right hand controls.png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
