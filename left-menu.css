@@ -57,7 +57,6 @@ header {
   display: flex;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
-
   width: 4ch;
   height: 4ch;
   color: rgb(107, 107, 107);
@@ -87,8 +86,7 @@ header {
 .default-profile-icon {
   width: 4ch;
   padding-top: 1ch;
-  border-radius: 50%;
-  border-color: rgb(128, 128, 128);
+  border-radius: 50% rgb(255, 255, 255);
 }
 .solid-line {
   width: 95%;

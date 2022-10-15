@@ -12,11 +12,3 @@ main {
   background-color: rgb(20, 25, 34);
   color: white;
 }
-
-.footer {
-  height: 10vh;
-  background-color: rgb(40, 40, 40);
-  color: white;
-  justify-content: center;
-  text-align: center;
-}

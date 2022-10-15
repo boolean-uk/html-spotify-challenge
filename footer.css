@@ -1,0 +1,26 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  background-color: rgb(40, 40, 40);
+}
+.song-player-button {
+  background-color: rgb(40, 40, 40);
+  border: none;
+  margin-left: 3ch;
+}
+.song-info {
+  color: white;
+  display: flex;
+}
+.player-info-song-heading {
+  font-size: small;
+  font-family: sans-serif;
+  margin-right: 3ch;
+}
+.like-song-heart-icon {
+  margin-top: 3ch;
+}
+.player-info-song-p {
+  font-weight: lighter;
+  color: grey;
+}
