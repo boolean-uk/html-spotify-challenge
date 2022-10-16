@@ -441,7 +441,7 @@ main article .my-square-grid span .icon-button:hover i {
 }
 
 /* Large Laptop */
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1440px) {
     main article .my-playlist-grid { /* Grid of Blocks */
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
@@ -465,7 +465,17 @@ main article .my-square-grid span .icon-button:hover i {
 }
 
 /* 4K */
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1750px) and (min-width: 1441px) {
+    * {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 2090px) and (min-width: 1751px) {
+    * {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 2091px) {
     * {
         font-size: 32px;
     }
