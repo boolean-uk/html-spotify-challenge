@@ -10,7 +10,7 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-  }
+}
 
 .icon-button {
     display: flex;
@@ -59,14 +59,18 @@
 }
 
 .no-bg {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .no-bg:hover {
-    background-color: #242424;
+    background-color: #242424af !important;
 }
 
 .icon-normal-size i {
     font-size: 1.5rem; /* x-large or 24px */
+}
+.icon-filled i {
+    font-variation-settings:
+        'FILL' 1
 }
 
 .icon-button-disabled i{
@@ -74,11 +78,6 @@
 }
 .icon-button-disabled:hover {
     cursor: no-drop;
-}
-
-.icon-filled i {
-    font-variation-settings:
-        'FILL' 1
 }
 
 .pink-strip {
@@ -96,6 +95,16 @@
 .yellow-strip {
     border-bottom: 0.5rem solid yellow;
 }
+
+/* --- Reusable Responsive material */
+.mobile-visible,
+.tablet-visible {
+    display: none !important;
+}
+.computer-visible {
+    display: grid !important;
+}
+
 /* End Of Reusable */
 
 
@@ -134,16 +143,16 @@ nav .left-section {
     
     padding: 0.5rem;
 }
+
 nav .middle-section {
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     gap: 1rem;
 
+    margin-right: 0.5rem; /* 1rem Right space if counted with padding */
+
     padding: 0.5rem;
-}
-nav .middle-section #search-compact {
-    display: none;
 }
 /* --------- Search Area */
 nav .middle-section div {
@@ -414,69 +423,144 @@ main article .my-square-grid span .icon-button:hover i {
     height: 7rem; /* 112px */
 }
 
-/* 480 mobile */
-/* 768 tablets */
-/* 1024 small screens laptops */
-/* 1240 desktop */
-/* +1400 tv extra */
-
-/* Mobile Large */
-@media screen and (max-width: 425px) {
-    
-}
-
-/* Tablet */
-@media screen and (max-width: 768px) {
-    
-}
-
-/* Laptop */
-@media screen and (max-width: 1024px) {
-
-}
-@media screen and (max-width: 1135px) {
-    nav .middle-section div input {
-        width: 20rem;
-    }
-}
-
-/* Large Laptop */
-@media screen and (max-width: 1440px) {
-    main article .my-playlist-grid { /* Grid of Blocks */
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-        row-gap: 1rem;
-    }
-
-    main article .my-playlist-grid span { /* The Block */
-        display: grid;
-        grid-template-columns: 20% 1fr auto;
-        gap: 1rem;
-    
-        background-color: #ffffff2b;
-        align-items: center;
-        
-        padding-right: 1rem;
-        border-radius: 0.3rem;
-    
-        transition: background-color 0.4s;
-    }
-
-}
-
 /* 4K */
-@media screen and (max-width: 1750px) and (min-width: 1441px) {
-    * {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 2090px) and (min-width: 1751px) {
-    * {
-        font-size: 26px;
-    }
-}
 @media screen and (min-width: 2091px) {
     * {
         font-size: 32px;
     }
 }
+@media screen and (max-width: 2090px) {
+    * {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1750px) {
+    * {
+        font-size: 22px;
+    }
+}
+
+/* Large Laptop - 3 columns */
+@media screen and (max-width: 1440px) {
+    /* Ajust the size to be normal till 1440 */
+    * {
+        font-size: 16px;
+    }
+
+    /* Reduce the grid columns */
+    main article .my-playlist-grid { /* Grid of Blocks */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 1250px) {
+    /* Reduce Search Bar */
+    nav .middle-section div input {
+        width: 20rem;
+    }
+}
+
+/* Laptop - 2 Columns */
+@media screen and (max-width: 1024px) {
+    /* Reduce the grid columns */
+    main article .my-playlist-grid { /* Grid of Blocks */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 910px) {
+    /* Makes the Search bar be full size responsive */
+    nav .middle-section div input {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+/* Major Changes */
+@media screen and (max-width: 768px) {
+    .computer-visible {
+        display: none !important;
+    }
+    .tablet-visible {
+        display: grid !important;
+    }
+    
+    /* Changes to Full Screen */
+    body {
+        padding: 0;
+    }
+    nav { /* Give it a Blur background effect*/
+        /* To be over the main */
+        /* Give some margin-top to main */
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+    }
+    .bottom-app-bar { /* Removes Border Radius */
+        border-radius: 0;
+    }
+    
+    /* Change Icon-button bg color to one with opacity */
+    .icon-button {
+        background-color: #59595971;
+    }
+
+    /* Reduces inside padding */
+    main .container {
+        /* Navigation Space */
+        margin-top: 4rem;
+
+        padding: 0.5rem;
+    }
+
+    /* Main Hidden Scroll */
+    main {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    main::-webkit-scrollbar {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        display: none;
+    }
+
+    /* Reduces Gap between blocks in grid */
+    main article .my-playlist-grid { /* Grid of Blocks */
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    /* Remove Play button from playlists */
+    main article .my-playlist-grid span a {
+        display: none;
+    }
+    
+    
+}
+@media screen and (max-width: 675px) {
+    /* Hide Aside */
+    aside {
+        display: none;
+    }
+}
+
+/* Mobile L;M;S*/
+@media screen and (max-width: 425px) {
+    .tablet-visible {
+        display: none !important;
+    }
+    .mobile-visible {
+        display: grid !important;
+    }
+}
+
+
+
+
+
+
+
+
+
