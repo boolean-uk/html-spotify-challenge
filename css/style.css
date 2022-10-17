@@ -79,10 +79,16 @@ main .nav-bar ul li {
 main .nav-bar .small-caps li {
     font-variant: small-caps;
 }
- main h2, p, span {
-    color:#fff
+ main  p, span {
+    color:#fff;
+    font-size:smaller
 }
 
+main .sub-heading {
+    font-size: smaller;
+    color: #fff;
+   
+}
 
 
 
