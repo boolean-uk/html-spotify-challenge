@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "left-bar header" 50px
+        "left-bar main" 1fr
+        "footer footer" 50px /
+            100px 1fr;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    background-color: rgb(41, 40, 40);
+}
+header h3 {
+    color: #fff;
+    place-items: center;
+    margin-right: 10px; 
+    padding-top: 10px; 
+}
+ 
+.left-bar {
+    grid-area: left-bar;
+    background-color: black;
+    display: grid;
+    padding: 0;
+}
+
+.left-bar .spotify-logo--text {
+    width: 40px;
+    height: 40px;
+    
+} 
+.left-bar .icons{
+    width: 15px;
+    height: 15px;
+}
+
+.left-bar .playlist {
+    color: #fff;
+   
+}
+
+.left-bar span {
+    color: #fff;
+    display: block;
+    padding: 16px, 0px;
+}
+
+
+main {
+    grid-area: main;
+    background-color:  #121212;
+    display: grid;
+}
+
+/* main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); */
+/* } */
+
+main .nav-bar ul li {
+    color: #fff;
+    display: inline;
+    padding-left: 100px;
+}
+
+main .nav-bar .small-caps li {
+    font-variant: small-caps;
+}
+ main  p, span {
+    color:#fff;
+    font-size:smaller
+}
+
+main .sub-heading {
+    font-size: smaller;
+    color: #fff;
+   
+}
+
+
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(21, 21, 21);
+    display: grid
+}
+.small icons {
+    color:white
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 1150px) {
+    .container {
+        grid-template:
+            "left-bar main" 1fr /
+            200px 1fr;
+    }
+    
+    }
+
+    .header {
+        width: 100%;
+    }
+  
+  @media screen and (max-width: 750px) {
+    .container {
+        grid-template:
+            "main" 1fr /
+            1fr;
+    }
+    .left-bar {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+    }
+  }  */
