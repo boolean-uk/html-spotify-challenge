@@ -212,9 +212,28 @@ nav .right-section .icon-button {
 /* Aside Playlist Navigation */
 aside {
     grid-area: aside;
-    background-color: #000000;
+    background-color: black;
+    
+    /* Scrollbar Style */
+    overflow-y: auto;
+    scrollbar-color: #121212;
+    scrollbar-width: thin;
+    scrollbar-track-color: transparent;
+    scrollbar-arrow-color: #606060;
 
+    padding: 0.5rem;
     width: 9rem; /* 144px */
+}
+aside .container {
+    background: linear-gradient(#3b002a, #121212 80%);
+    color: white;
+    box-sizing: border-box;
+
+    border-radius: 1rem;
+    padding: 1rem;
+
+    height: 100%;
+    overflow: hidden;
 }
 
 /* End of it */
@@ -260,14 +279,14 @@ main h1 {
     margin: 0 0 1rem 0; /* 00px */
 }
 /* ----------- Grids */
-main article .my-playlist-grid { /* Grid of Blocks */
+main section .my-playlist-grid { /* Grid of Blocks */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
     column-gap: 1.5rem;
     row-gap: 1rem;
 }
-main article .my-playlist-grid span { /* The Block */
+main section .my-playlist-grid span { /* The Block */
     display: grid;
     grid-template-columns: 30% 1fr auto;
     gap: 1rem;
@@ -280,16 +299,16 @@ main article .my-playlist-grid span { /* The Block */
 
     transition: background-color 0.4s;
 }
-main article .my-playlist-grid span:hover {
+main section .my-playlist-grid span:hover {
     cursor: pointer;
     background-color: #ffffff48;
 }
-main article .my-playlist-grid span img { /* Playlist Image */
+main section .my-playlist-grid span img { /* Playlist Image */
     background-color: #5643A8;
     border-radius: 0.3rem 0 0 0.3rem;
     box-shadow: 2px 0 12px -2px rgba(0, 0, 0, 0.5);
 }
-main article .my-playlist-grid span big { /* Playlist Name */
+main section .my-playlist-grid span big { /* Playlist Name */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -298,7 +317,7 @@ main article .my-playlist-grid span big { /* Playlist Name */
     font-weight: bold;
 }
 /*  ============= Icon button */
-main article .my-playlist-grid span .icon-button {
+main section .my-playlist-grid span .icon-button {
     background-color: #1ED760;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -5px;
     opacity: 0%;
@@ -308,16 +327,16 @@ main article .my-playlist-grid span .icon-button {
 
     transition: opacity 0.2s ease-in-out;
 }
-main article .my-playlist-grid span .icon-button i {
+main section .my-playlist-grid span .icon-button i {
     color: black;
 }
-main article .my-playlist-grid span:hover .icon-button {
+main section .my-playlist-grid span:hover .icon-button {
     opacity: 100%;
 }
-main article .my-playlist-grid span .icon-button:hover {
+main section .my-playlist-grid span .icon-button:hover {
     transform: scale(1.1);
 }
-main article .my-playlist-grid span .icon-button:hover i {
+main section .my-playlist-grid span .icon-button:hover i {
     font-size: 2rem; /* 32px */
 }
 /* ============= End of Icon button */
@@ -326,13 +345,13 @@ main h2 {
     font-size: 1.5rem; /* x-large or 24px */
     margin: 2rem 0;
 }
-main article .my-square-grid {
+main section .my-square-grid {
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 1rem;
     row-gap: 1rem;
 }
-main article .my-square-grid span { /* The Block */
+main section .my-square-grid span { /* The Block */
     display: grid;
     grid-auto-flow: row;
     background-color: #171717;
@@ -349,11 +368,11 @@ main article .my-square-grid span { /* The Block */
 
     transition: background-color 0.4s;
 }
-main article .my-square-grid span:hover {
+main section .my-square-grid span:hover {
     cursor: pointer;
     background-color: #ffffff2b;
 }
-main article .my-square-grid span img { /* Block Image */
+main section .my-square-grid span img { /* Block Image */
     background-color: #5643A8;
 
     width: 100%;
@@ -362,12 +381,12 @@ main article .my-square-grid span img { /* Block Image */
     border-radius: 0.3rem;
     box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.5);
 }
-main article .my-square-grid span big { /* Block Name */
+main section .my-square-grid span big { /* Block Name */
     font-size: 1rem;
     font-weight: bold;
     max-width: 100%;
 }
-main article .my-square-grid span p {
+main section .my-square-grid span p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -378,7 +397,7 @@ main article .my-square-grid span p {
     margin: 0;
 }
 /*  ============= Icon button */
-main article .my-square-grid span .icon-button {
+main section .my-square-grid span .icon-button {
     display: flex;
     background-color: #1ED760;
     position: absolute;
@@ -392,23 +411,21 @@ main article .my-square-grid span .icon-button {
 
     transition: opacity 0.2s ease-in-out, transform 0.4s;
 }
-main article .my-square-grid span .icon-button:hover {
+main section .my-square-grid span .icon-button:hover {
     transform: scale(1.1);
 }
-main article .my-square-grid span .icon-button i {
+main section .my-square-grid span .icon-button i {
     color: black;
 }
-main article .my-square-grid span:hover .icon-button {
+main section .my-square-grid span:hover .icon-button {
     opacity: 100%;
     transform: translateY(-4px)
 }
-main article .my-square-grid span .icon-button:hover i {
+main section .my-square-grid span .icon-button:hover i {
     font-size: 2rem;
 }
 /* ============= End of Icon button */
-
 /* ------------ End Of Grids */
-
 /* End Of Main */
 
 /* Bottom App Bar */
@@ -419,9 +436,9 @@ main article .my-square-grid span .icon-button:hover i {
     grid-auto-flow: column;
     background-color: black;
 
-
     height: 7rem; /* 112px */
 }
+/* End Of Bottom App Bar */
 
 /* 4K */
 @media screen and (min-width: 2091px) {
@@ -501,7 +518,7 @@ main article .my-square-grid span .icon-button:hover i {
     .bottom-app-bar { /* Removes Border Radius */
         border-radius: 0;
     }
-    
+
     /* Change Icon-button bg color to one with opacity */
     .icon-button {
         background-color: #59595971;
