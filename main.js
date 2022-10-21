@@ -1,4 +1,3 @@
-
 function h1Greeting() {
     // Updates the H1 based on the OS Time
     const hour = new Date().getHours();

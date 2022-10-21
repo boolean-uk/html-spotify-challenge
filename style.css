@@ -51,9 +51,6 @@
     'wght' 100, 'opsz' 100;
     font-size: 1.125rem; /* large or 18px */
 }
-.red-hover {
-    border-radius: 0 1.25rem 0 0; /* 20px (maybe 19 would be better) */
-}
 .red-hover:hover {
     background-color: red;
 }
@@ -116,14 +113,21 @@ body {
     "aside main" 1fr
     "bottom bottom" auto /
     auto 1fr;
-    background-color: rgb(118, 118, 118);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
 
     overflow: hidden;
     height: 100vh;
     
     padding: 3.125rem; /* 50px */
     margin: 0;
+
+    animation: gradient 5s ease-in-out infinite;
 }
+
+
+
+
 
 /* Navigation */
 nav {
@@ -133,6 +137,7 @@ nav {
     grid-auto-flow: column;
     background-color: black;
 
+    overflow: hidden;
     height: fit-content;
 }
 nav .left-section {
@@ -482,6 +487,16 @@ main section .my-square-grid span .icon-button:hover i {
     main article .my-playlist-grid { /* Grid of Blocks */
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Removes the play button (3º Column) */
+    main section .my-playlist-grid span .icon-button {
+        display: none;
+    }
+    main section .my-playlist-grid { /* Grid of Blocks */
+       grid-template-columns: repeat(2, 1fr);
+    }
+        
+
 }
 @media screen and (max-width: 910px) {
     /* Makes the Search bar be full size responsive */
@@ -573,11 +588,8 @@ main section .my-square-grid span .icon-button:hover i {
     }
 }
 
-
-
-
-
-
-
-
-
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
