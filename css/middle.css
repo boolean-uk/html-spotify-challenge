@@ -1,0 +1,31 @@
+/* Top Bar */
+.top-bar {
+    grid-area: top-bar;
+    background-color: #02030Aff;
+
+    display: grid;
+    justify-content: right;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    background-color: #1e1e1e;
+
+    border-radius: 20px;
+    border: whitesmoke 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(245, 245, 245, 0.158)
+}
+
+/* Main Area */
+.main {
+    grid-area: main;
+    background-color: #0C121Cff;
+
+    display: grid;
+
+    grid-template-rows: 15px 300px 300px 300px;
+    border-bottom: mintcream;
+}

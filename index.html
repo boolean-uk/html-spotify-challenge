@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leftmenu.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- Left Menu -->
+        <nav class="outer-box left-menu">
+            <img id="large-logo" src="assets\img\logo.svg" alt="spotify logo">
+            <ul class="homelist">
+                <div class="hover">
+                    <img class="PL1" src="assets\img\home.svg" alt="home">
+                    <li>playlist</li>
+                </div>
+                <div class="hover">
+                    <img class="PL1" src="assets\img\search.svg" alt="search">
+                    <li>playlist</li>
+                </div>
+                <div class="hover">
+                    <img class="PL1" src="assets\img\libreria.svg" alt="your-library">
+                    <li>playlist</li>
+                </div>
+            </ul>
+            <ul class="create-list">
+                <div>
+                    <li><strong>PLAYLIST</strong></li>
+                </div>
+                <div class="add-to-list">
+                    <img src="" alt="plus">
+                    <li>Create Playlist</li>
+                </div>
+                <div class="scrollable">
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                    <li class="hover">Playlist Name</li>
+                </div>
+            </ul>
+            <div><p>Install App</p></div>
+            <div class="user-pp-nm">
+                <img class="pp" src="assets\img\profile.svg" alt="pp">
+                <p class="username">John Doe</p>
+            </div>
+        </nav>
+
+        <!-- Top bar -->
+        <div class="outer-box top-bar">
+            <button>Upgrade Now</button>
+        </div>
+
+        <!-- Main area, browse music etc-->
+        <main class="outer-box main scrollable">
+            <p>all the music</p>
+        </main>
+
+        <!-- playback bar -->
+        <footer class=" outer-box playback">
+            <p>stuff</p>
+        </footer>
+    </div>
 </body>
+
 </html>

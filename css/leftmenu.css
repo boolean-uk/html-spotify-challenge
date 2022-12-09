@@ -1,0 +1,56 @@
+.left-menu {
+    grid-area: left;
+    background-color: #000000ff;
+    /* position: sticky;
+    top: 0px; */
+
+    display: grid;
+    grid-template-rows: 60px 150px 230px 30px 40px;
+}
+
+.user-pp-nm,
+.add-to-list,
+div.hover {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+/* ul sections */
+
+.homelist,
+.create-list,
+.your-playlist {
+    display: grid;
+}
+
+.create-list {
+    /* display: grid; */
+    grid-template-rows: 30px 30px 1fr;
+    gap: 8px;
+}
+
+.hover:hover {
+    border-left: 2px #AEFF2Bff solid;
+}
+
+.your-playlist{
+
+}
+
+/* SVG stuff */
+#large-logo {
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.PL1 {
+    height: 20px;
+}
+
+.pp {
+    margin-left: 5px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: grey;
+}

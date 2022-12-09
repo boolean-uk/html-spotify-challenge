@@ -1,0 +1,10 @@
+.playback {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0px;
+    background-color: #232323;
+
+
+    display: grid;
+
+}
