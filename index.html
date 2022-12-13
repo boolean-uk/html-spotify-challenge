@@ -1,12 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify Clone</title>
 </head>
+
 <body>
-    
+    <div id="container">
+
+        <nav class="top-nav">
+            <div id="logo-area">
+                <img src="assets/img/logo-small.svg" alt="Spotify" id="small-logo">
+                <img src="assets/img/logo.svg" alt="Spotify" id="main-logo">
+            </div>
+            <div class="upgrade-row">
+                <button class="upgrade">Effetua L'Upgrade</button>
+            </div>
+        </nav>
+
+        <div class="column-container">
+
+            <nav class="side-nav">
+                <div class="side-nav-item active"><img src="assets/img/home.svg" class="side-icon"><a href="#"
+                        class="lg-view">Home</a>
+                </div>
+                <div class="side-nav-item"><img src="assets/img/search.svg" class="side-icon"><a href="#"
+                        class="lg-view">Cerca</a>
+                </div>
+                <div class="side-nav-item"><img src="assets/img/libreria.svg" class="side-icon"><a href="#"
+                        class="lg-view">La tua
+                        libreria</a></div>
+                <h3 class="lg-view">Playlist</h3>
+                <div class="side-nav-item lg-view">
+                    <div class="add-playlist">+</div><a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item lg-view">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item lg-view">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item lg-view">
+                    <a href="#">Nome Playlist</a>
+                </div>
+                <div class="side-nav-item lg-view">
+                    <a href="#">Nome Playlist</a>
+                </div>
+            </nav>
+
+            <main class="tracks">
+
+                <nav class="track-nav">
+                    <ul>
+                        <li><a href="#" class="active">In Evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e Mood</a></li>
+                        <li><a href="#">Nuove Uscite</a></li>
+                        <li><a href="#">Nuove Uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
+                    </ul>
+                </nav>
+
+                <div class="tracks-container">
+                    <h2>Recently played</h2>
+                    <div class="tracks-row">
+
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/metal_lifting.jpg" alt="Metal Lifting" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/stranger.jpeg" alt="Stranger Things OST" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Stranger Things, Vol 1 (Netflix Original Series Soundtrack)</h3>
+                            <h4>Kyle Dixon & Michael Stein</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place OST"
+                                    class="suggestion-img play-overlay">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>A Quiet Place</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/split.jpeg" alt="Split" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Split</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/cure.jpeg" alt="A Cure for Wellness" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>A Cure for Wellness</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/sinister.jpeg" alt="Sinister" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Sinister</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                    </div>
+
+                    <h2>Creato per John Doe</h2>
+                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <div class="tracks-row">
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/radar.jpeg" alt="Il tuo Release Radar" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/mixdaily.jpeg" alt="Il tuo Daily Mix 1" class="suggestion-img">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+
+                    <h2>Artisti più popolari</h2>
+                    <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+                    <div class="tracks-row last">
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/youg.jpeg" alt="Artist's name" class="suggestion-img artist">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Artist Name</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                        <div class="suggestion">
+                            <div class="overlay">
+                                <img src="assets/img/einaudi.jpeg" alt="Artist's name" class="suggestion-img artist">
+                                <img src="assets/icons/play.svg" alt="play" class="play-button-overlay">
+                            </div>
+                            <h3>Artist Name</h3>
+                            <h4>Subtitle</h4>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <footer class="player-controls">
+        <div class="song-playing">
+            <div class="song-playing-cover">
+                <img src="assets/img/sinister.jpeg" alt="Sinister" class="song-playing-img">
+            </div>
+            <div class="song-playing-infos">
+                <p class="song-playing-title">Sinister</p>
+                <p class="song-playing-artist">Brano Nome</p>
+            </div>
+        </div>
+
+        <div class="favs">
+            <img class="favs-button" src="assets/icons/heart.svg" alt="Favorite">
+            <img class="favs-button" src="assets/icons/folder.svg" alt="Folder">
+        </div>
+
+        <div class="player">
+            <img class="player-control-button" src="assets/icons/shuffle.svg" alt="shuffle">
+            <img class="player-control-button" src="assets/icons/skip-start.svg" alt="Back">
+            <img class="player-control-button" src="assets/icons/play.svg" alt="Play">
+            <img class="player-control-button" src="assets/icons/skip-end.svg" alt="Forward">
+            <img class="player-control-button" src="assets/icons/arrow-clockwise.svg" alt="Repeat">
+            <div class="progress">
+                <div class="time-elapsed">0:25</div>
+                <progress class="song-progress-bar" value="30" max="100">30%</progress>
+                <div class="time-to-go">4:25</div>
+            </div>
+        </div>
+
+        <div class="volume-controls">
+            <img class="favs-button" src="assets/icons/list-ul.svg" alt="playlist">
+            <img class="favs-button" src="assets/icons/display.svg" alt="transmit">
+            <img class="favs-button" src="assets/icons/volume-up-fill.svg" alt="volume">
+            <progress class="volume-progress-bar" value="70" max="100">70%</progress>
+        </div>
+    </footer>
 </body>
+
 </html>
