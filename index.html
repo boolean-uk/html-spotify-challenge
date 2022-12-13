@@ -4,9 +4,428 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Spotify</title>
+
+    <meta name="title" property="og:title" content="CSS Grid of Spotify">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="http://georgeroth.eu/images/Spotify-og-full.jpg">
+    <meta name="description" property="og:description" content="I've recently started learning about CSS grids, so as a bit of practice, I took on building the responsive layout of Spotify using only HTML5 and CSS3.">
+    <meta name="author" content="George Roth">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CSS Grid of Spotify" />
+    <meta name="twitter:creator" content="@george_roth" />
+    <meta name="twitter:image" content="http://georgeroth.eu/images/Spotify-square.jpg" />
+    <meta name="twitter:description" content="I've recently started learning about CSS grids, so as a bit of practice, I took on building the responsive layout of Spotify using only HTML5 and CSS3." />
 </head>
 <body>
-    
+    <aside>
+        <nav>
+            <a href="#"><img src="assets/img/logo.svg" class="main-logo-desktop" alt="Spotify logo"></a>
+            <a href="#"><img src="assets/img/logo-small.svg" class="main-logo-mobile" alt="Spotify logo"></a>
+            <ul>
+                <li class="active-page">
+                    <a href="#">
+                        <img src="assets/img/home2.svg" alt="House icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/search2.svg" alt="Magnifying glass icon">
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/libreria2.svg" alt="Vertical lines icon">
+                        <span>Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="playlists">
+            <h2>Playlists</h2>
+            <a href="#" class="create-playlist"> 
+                <span class="plus-icon">+</span>
+                <span class="text">Create playlist</span>
+            </a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+            <a href="#" class="playlist-item">Legendary Playlist</a>
+        </section>
+
+        <section class="profile">
+            <a href="#" class="install-app">
+                <span class="material-symbols-outlined">
+                    arrow_circle_down
+                </span>
+                <span class="text">Install app</span>
+            </a>
+            <a href="#" class="profile-name">
+                <img src="assets/img/profile.svg">
+                <span>John Doe</span>
+            </a>
+        </section>
+    </aside>
+    <div class="upgrade-bar">
+        <a href="#">Upgrade Now! Doo eet!</a>
+    </div>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="current-element">
+                        Top picks
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Podcasts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Charts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Genres & Moods
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        New releases
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Discover
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="recently-played">
+            <h2>
+                <a href="#">
+                    Recently played
+                </a>
+            </h2>
+            <div class="albums">
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/metal_lifting.jpg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Heavy Metal
+                    </div>
+                    <div class="artist-name">
+                        Subtitle
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/stranger.jpeg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                    </div>
+                    <div class="artist-name">
+                        Kyle Dixon & Michael Stein
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/heartbeat.jpg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Heartbeat
+                    </div>
+                    <div class="artist-name">
+                        East Reverse
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/aquietplace.jpeg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        A quiet place
+                    </div>
+                    <div class="artist-name">
+                        Subtitle
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/polarities.jpg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Polarities
+                    </div>
+                    <div class="artist-name">
+                        Just Another
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/split.jpeg">
+                                                <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Split
+                    </div>
+                    <div class="artist-name">
+                        Subtitle
+                    </div>
+                </a>
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/pioneer.jpg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Pioneer
+                    </div>
+                    <div class="artist-name">
+                        East Reverse
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="top-picks">
+            <h2>
+                <a href="#">
+                    Made for John Doe
+                </a>
+            </h2>
+            <p>The more songs you listen to, the more accurate the suggestions will be.</p>
+            <div class="albums">
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/radar.jpeg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Release Radar
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/mixdaily.jpeg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Daily Mix 1
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover">
+                        <img src="assets/img/louder.jpg">
+                        <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Louder than Words
+                    </div>
+                    <div class="artist-name">
+                        Just Another
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="top-picks">
+            <h2>
+                <a href="#">
+                    Popular artists
+                </a>
+            </h2>
+            <p>The more songs you listen to, the more accurate the suggestions will be.</p>
+            <div class="albums">
+                <a class="album-container" href="#">
+                    <div class="album-cover artist">
+                        <img src="assets/img/youg.jpeg">
+                                                <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Lana Del Rey
+                    </div>
+                </a>
+
+                <a class="album-container" href="#">
+                    <div class="album-cover artist">
+                        <img src="assets/img/einaudi.jpeg">
+                                                <div class="hover-play">
+                            <span class="material-symbols-outlined">
+                                play_circle
+                            </span>
+                        </div>
+                    </div>
+                    <div class="album-name">
+                        Ludovico Einaudi
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="player">
+        <section class="current-song">
+            <div class="song-cover">
+                <a href="#">
+                    <img src="assets/img/sinister.jpeg">
+                </a>
+            </div>
+            <div>
+                <div class="title">
+                    <a href="#">Sinister</a>
+                </div>
+                <div class="artist">
+                    <a href="#">Brano Nome</a>
+                </div>
+            </div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        folder
+                    </span>
+                </a>
+        </section>
+
+        <section class="player-main">
+            <div class="buttons">
+                <a href="#">
+                <span class="smaller material-symbols-outlined">
+                    shuffle
+                </span>
+                </a>
+                <a href="#">
+                    <span class="fill material-symbols-outlined">
+                        skip_previous
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="bigger material-symbols-outlined">
+                        play_circle
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="fill material-symbols-outlined">
+                        skip_next
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="smaller material-symbols-outlined">
+                        repeat
+                    </span>
+                </a>
+            </div> 
+            <div class="player-inner">
+                <div class="song-timestamp">0:25</div>
+                 <!-- Slider idea from https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="20" class="slider">
+                </div>
+                <div class="song-timestamp">4:35</div>
+            </div>
+        </section>
+        <section class="volume-section">
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        list
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        computer
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        volume_up
+                    </span>
+                </a>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider volume" >
+            </div>
+        </section>
+    </section>
 </body>
 </html>
