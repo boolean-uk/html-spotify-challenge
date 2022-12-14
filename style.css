@@ -7,6 +7,8 @@ html {
     color-scheme: dark !important;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -238,6 +240,7 @@ main .songsection .songgenre .songselection .card {
     background-color: #181818;
     border-radius: 8px;
 
+    cursor: pointer;
     transition: .3s ease;
 }
 
@@ -282,6 +285,87 @@ main .songsection .songgenre .songselection .card h2 {
 
 main .songsection .songgenre .songselection .card p {
     font-size: .8125rem;
+    opacity: .7;
+}
+
+main footer {
+    margin-top: 64px;
+}
+
+main footer a {
+    font-size: .825rem;
+    opacity: .7;
+    transition: .2s;
+}
+
+main footer a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+main footer .info{
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+}
+
+main footer .info ul {
+    list-style: none;
+}
+
+main footer .info h3 {
+    font-size: 1rem;
+}
+
+main footer .info li {
+    margin: 16px 0;
+    font-size: .825rem;
+}
+
+main footer .info .socials {
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+}
+
+main footer .info .socials div {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #292929;
+    transition: .3s;
+}
+
+main footer .info .socials div:hover {
+    background-color: #727272;
+}
+
+
+main footer .info .socials svg {
+    fill: white;
+}
+
+main footer hr {
+    margin: 32px 0px;
+    border-top-width: 0px;
+    opacity: .2;
+}
+
+main footer .legal {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+main footer span {
+    margin-left: auto;
+    font-size: .825rem;
     opacity: .7;
 }
 
