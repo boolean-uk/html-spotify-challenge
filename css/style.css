@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
   }
 
+a {
+    text-decoration: none;
+}
+
 nav, section, footer {
     border: 1px solid black;
 }
@@ -17,12 +21,82 @@ main {
     grid-template: 
     "left selection"90%
     "controls controls"1fr/
-    200px 1fr;
+    210px 1fr;
 }
+
+
+
 
 .left {
     grid-area: left;
+    background-color: black;
 }
+
+.logo {
+    padding: 1.5rem 3.25rem 1.5rem 1.5rem;
+}
+    object {
+        pointer-events: none;
+    }
+
+.bx {
+    font-size: 1.75rem;
+    color: rgb(221, 221, 221);
+    padding-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.functions {
+    padding-left: 1.5rem;
+    margin-bottom: 25px;
+    
+}
+    .functions span {
+        position: relative;
+        top: -0.5rem;
+        font-size: 0.90rem;
+        margin-left: 0.75rem;
+        color: rgb(221, 221, 221);;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .functions a:hover > i,
+    .functions a:hover > span {
+        color: #1DB954;
+        transition: color 0.5s ease;
+    }
+
+
+.create-playlist {
+    border-bottom: 1px solid rgb(85, 85, 85);
+    margin: 0px 1.5rem 0px 1.5rem;
+}
+    .create-playlist span {
+        position: relative;
+        top: -0.5rem;
+        font-size: 0.90rem;
+        margin-left: 0.75rem;
+        color: rgb(221, 221, 221);;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .icongradient {
+        background: -webkit-linear-gradient(90deg, #00d9ff 0%, #59f582 100%);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    .create-playlist a:hover > i,
+    .create-playlist a:hover > span {
+        color: #1DB954;
+        transition: color 0.5s ease;
+    }
+
+.playlists {
+    
+}
+
+
+
 
 .selection {
     grid-area: selection;

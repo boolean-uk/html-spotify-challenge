@@ -5,25 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
         <nav class="left">
 
-            <div class="logo"></div>
+            <div class="logo">
+                <a href="#">
+                    <object data="./assets/img/logo.svg" type="image/svg+xml">
+                        Spotify Logo
+                    </object>
+                </a>
+            </div>
 
             <div class="functions">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Your Library</a></li>
+                    <li>
+                        <a href="#"><i class="bx bxs-home" ></i><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bx-search"></i><span>Search</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bx-collection"></i><span>Your Library</span></a>
+                    </li>
                 </ul>
             </div>
 
-            <div class="create-playlist liked-songs"></div>
+            <div class="create-playlist liked-songs">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bx bxs-plus-square" ></i><span>Create Playlist</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bxs-heart-square icongradient" ></i><span>Liked Songs</span></a>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="playlists"></div>
+            <div class="playlists">
+                <p>Discover Weekly</p>
+                <p>spongbob me boy</p>
+                <p>Fast Pop Run</p>
+            </div>
             
         </nav>
 
