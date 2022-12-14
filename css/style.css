@@ -30,6 +30,7 @@ main {
 .left {
     grid-area: left;
     background-color: black;
+    position: relative;
 }
 
 .logo {
@@ -92,10 +93,38 @@ main {
     }
 
 .playlists {
-    
+    padding-left: 1.5rem;
+    margin-top: 10px;
 }
+    .playlists > a {
+        color: rgb(191, 191, 191);
+        line-height: 30px;
+        font-size: 0.90rem;
+    }
+    /* THIS HAS NO TRANSITION ON PURPOSE */
+    .playlists > a:hover {
+        color: #1DB954;
+    }
 
-
+.install {
+    padding-left: 1.5rem;
+    position: absolute;
+    bottom: 0;
+}
+    .install span {
+        position: relative;
+        top: -0.5rem;
+        font-size: 0.85rem;
+        margin-left: 0.75rem;
+        color: rgb(221, 221, 221);;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .install a:hover > i,
+    .install a:hover > span {
+        color: #1DB954;
+        transition: color 0.5s ease;
+    }
 
 
 .selection {
