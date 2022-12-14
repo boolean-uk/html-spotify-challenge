@@ -2,7 +2,7 @@
     grid-area: left;
     background-color: #000000ff;
     display: grid;
-    grid-template-rows: 60px 100px 200px 20% 100px;
+    grid-template-rows: 60px 100px auto 80px;
     /* grid-template-rows: auto; */
     /* position: fixed; */
     /* height: 91%; */
@@ -11,15 +11,39 @@
         "logo"
         "home-list"
         "playlist"
-        "."
         "bottom-menu";
 }
 
 .user-pp-nm,
 .add-to-list,
+.install,
 div.hover {
     display: grid;
     grid-template-columns: 40px 1fr;
+}
+
+
+.left-menu>ul>div>li {
+    font-size: 1.2rem;
+}
+
+.homelist>div>li {
+    font-weight: 700;
+}
+
+.left-menu>ul>div>li:active {
+    color: white;
+}
+
+.install-icon {
+    width: 30px;
+    border: none;
+    box-shadow: none;
+    background-color: #000000;
+}
+
+.install-icon>svg {
+    fill: #bababa;
 }
 
 .user-pp-nm {
@@ -33,7 +57,9 @@ li.add-to-list {
 .bottom-menu {
     grid-area: bottom-menu;
     display: grid;
-    place-items: center;
+    place-items: left;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* ul sections */
@@ -44,6 +70,7 @@ li.add-to-list {
     align-content: center;
     margin-left: 14px;
 }
+
 
 .your-playlist {
     grid-area: playlist;
@@ -85,9 +112,17 @@ li.add-to-list {
 
 .install {
     border-bottom: 1px solid #7B7E82ff;
-    margin-left: 20px;
-    margin-right: 20px;
 }
+
+.install>p {
+    padding-top: 5px
+}
+
+.install>button>svg:active {
+    fill: #AEFF2Bff;
+}
+
+
 
 /* SVG stuff */
 #large-logo {
