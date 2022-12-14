@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .body{
@@ -8,8 +9,14 @@ body {
     display: grid;
     grid-template:  
     "leftbar header" 90px
-    "leftbar main" 800px /
+    "leftbar main" auto
+    "footer footer" 90px /
     230px 1fr;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* left section */
@@ -17,8 +24,10 @@ body {
 .left-section{
     grid-area: leftbar;
     display: grid;
-    grid-template-rows: 90px 200px 500px 500px 50px;
+    grid-template-rows: 90px auto auto auto 50px;
     padding: 0px 20px 20px 20px;
+    gap: 5px;
+    background: black;
 }
 
 .logo {
@@ -35,9 +44,8 @@ body {
 }
 
 .left-section .left-nav-bar{
+    grid-area: 2;
     display: grid;
-    align-items: start;
-    justify-items: center;
     place-items: start;
 }
 
@@ -58,10 +66,235 @@ body {
     display: inline;
 }
 
-.header{
-    grid-area: header;
+.left-section .playlists-section{
+    grid-area: 3;
+    display: grid;
+    grid-template-rows: 20px 100px auto;
+    align-items: center;
+    justify-items: start;
 }
 
+.left-section .playlists-section .create-playlists{
+    display: grid;
+    background-color: red;
+    width: 100%;
+    justify-items: start;
+}
+
+.left-section .playlists-section .create-playlists img{
+    border: white 1px solid;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.left-section .playlists-section .list-of-playlists{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-section .install-the-app-ad{
+    display: grid;
+    place-items: end;
+}
+
+.left-section .profile{
+    display: grid;
+    place-items: start;
+}
+
+.left-section .profile img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* Header */
+
+.header{
+    background-color: #080B13;
+    grid-area: header;
+    display: grid;
+    place-items: end;
+    align-items: center;
+}
+
+.header .upgrade p{
+    font-weight: bold;
+    border: 1px white solid;
+    display: inline;    
+    padding: 10px 40px 10px 40px;
+    border-radius: 30px;
+
+}
+
+/* Main Section */
+
 .main{
+    background-color: #141921;
     grid-area: main;
+    display: grid;
+    grid-template-rows: 40px, 300px 300px 300px;
+}
+
+/* Main Nav */
+
+.main .main-nav {
+    grid-area: 1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.main .main-nav ul{
+    grid-area: 1 / 2;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 50px;
+    color: #7D7E84;
+    text-transform: uppercase;
+}
+
+/* Recently Played */
+
+.main .recently-played{
+    display: grid;
+    grid-template-rows: 40px 300px;
+}
+
+.main .recently-played h2{
+
+}
+
+.main .recently-played .played-album-container{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+    padding: 20px 0px 0px 0px;
+
+}
+
+.main .recently-played .played-album-container .played-album{
+    display: grid;
+    background-color: red;
+    place-items: center;
+    padding: 10px;
+    
+}
+
+.main .recently-played .played-album-container .played-album img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Section 2 */
+
+.main .section-2{
+    display: grid;
+    grid-template-rows: 40px 300px;
+}
+
+.main .section-2 .section-2-header{
+    grid-area: 1 2;
+}
+
+.main .section-2 .section-2-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+.main .section-2 .section-2-grid .section-2-album{
+    display: grid;
+    background-color: red;
+    place-items: center;
+    padding: 10px;
+}
+
+.main .section-2 .section-2-grid .section-2-album img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Section 3 */
+
+.main .section-3{
+    display: grid;
+    grid-template-rows: 80px 300px;
+}
+
+.main .section-3 .section-3-header{
+    grid-area: 1 2;
+    line-height: 0.5rem;
+}
+
+.main .section-3 .section-3-header p{
+    color: #7D7E84
+}
+
+.main .section-3 .section-3-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+.main .section-3 .section-3-grid .section-3-album{
+    display: grid;
+    background-color: red;
+    place-items: center;
+    padding: 10px;
+}
+
+.main .section-3 .section-3-grid .section-3-album img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+footer .now-playing .now-playing-album{
+    grid-area: 1 2;
+
+}
+
+footer .now-playing .now-playing-album img{
+    width: 40px;
+    height: 40px
+}
+
+footer .now-playing img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.footer .player{
+
+}
+
+footer .controls{
+    grid-area: ;
+
+}
+
+footer .controls img{
+    width: 20px;
+    height: 20px;
 }
