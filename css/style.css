@@ -1,34 +1,52 @@
-section
-{
-    border: 2px blue solid;
-}
-
 body
 {
-    margin: 0;
+    margin: 0px;
     height: 100vh;
     width: 100vw;
-    display: grid;
     grid-template: 
     "left top" 1fr
     "left main" 8fr
     "bottom bottom" 1fr/
-    1fr 4fr;
+    1fr 5fr;
+    color: white;
 }
+
+.container
+{display: grid;}
 
 #headSection
 {
+    background-color: rgb(8,11,18);
     grid-area: top;
+    place-items: center end;
+    height: 100px;
+}
+
+#headSection>div
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 2px white solid;
+    border-radius: 1000px;
+    text-align:center;
 }
 
 #leftSection{
+    background-color: black;
     grid-area: left;
 }
 
 #mainSection{
+    background-color: rgb(20,25,34);
     grid-area: main;
 }
 
 #audioPlayer{
+    background-color: rgb(40,40,40);
     grid-area: bottom;
 }
