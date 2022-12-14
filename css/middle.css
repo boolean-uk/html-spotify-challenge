@@ -19,13 +19,141 @@ button {
     box-shadow: 2px 2px 2px 0px rgba(245, 245, 245, 0.158)
 }
 
+button:hover {
+    background: rgb(83, 85, 87);
+}
+
 /* Main Area */
 .main {
     grid-area: main;
     background-color: #0C121Cff;
+    /* height: 1fr; */
+    display: grid;
+    padding-left: 10px;
+
+    grid-template-rows: 40px repeat(3, 370px);
+    border: none;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+
+
+.top-nav {
+    display: grid;
+    grid-template-columns: 100px minmax(900px, 2fr) 100px;
+    grid-template-areas:
+        ". ul .";
+}
+
+.top-nav>ul {
+    grid-area: ul;
 
     display: grid;
+    /* grid-template-rows: 100px; */
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
 
-    grid-template-rows: 15px 300px 300px 300px;
-    border-bottom: mintcream;
+    font-weight: 550;
 }
+
+.top-nav>ul>li:hover {
+    border-bottom: 2px #AEFF2Bff solid;
+}
+
+/* Recently Played*/
+
+.spotify-play {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 50px 230px;
+}
+
+.created-for,
+.popular-artists,
+.recently-played {
+    display: grid;
+    height: 315px ;
+    grid-template-columns: repeat(7, 225px);
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.created-for>li,
+.popular-artists>li,
+.recently-played>li {
+    display: grid;
+    align-content: center;
+}
+
+.created-for>li>img,
+.popular-artists>li>img,
+.recently-played>li>img {
+    width: 194.5px;
+    height: 194.5px;
+    border-radius: 4px;
+}
+
+.popular-artists>li>img {
+    border-radius: 50%;
+}
+
+.popular-ppl {
+    line-height: 1.4rem;
+}
+
+.popular-ppl>p {
+    color: #7B7E82ff;
+}
+
+h2 {
+    margin: 0px;
+    padding-bottom: 0px;
+    align-content: center;
+}
+
+h3 {
+    margin-top: 5px;
+}
+.recently-played>li,
+.created-for>li {
+    display: grid;
+    background-color: #2a2a2a50;
+    place-items: center;
+    border-radius: 6px;
+    grid-template-rows: 195px 30px 44px;
+    /* grid-template-columns: 1rf; */
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.recently-played>li:hover ,
+.created-for>li:hover ,
+.popular-ppl>li:hover {
+    background-color: #2a2a2a7a;
+}
+
+
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #151920;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7B7E82ff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -1,11 +1,18 @@
 .left-menu {
     grid-area: left;
     background-color: #000000ff;
-    /* position: sticky;
-    top: 0px; */
-
     display: grid;
-    grid-template-rows: 60px 150px 230px 30px 40px;
+    grid-template-rows: 60px 100px 200px 20% 100px;
+    /* grid-template-rows: auto; */
+    /* position: fixed; */
+    /* height: 91%; */
+
+    grid-template-areas:
+        "logo"
+        "home-list"
+        "playlist"
+        "."
+        "bottom-menu";
 }
 
 .user-pp-nm,
@@ -15,26 +22,71 @@ div.hover {
     grid-template-columns: 40px 1fr;
 }
 
-/* ul sections */
+.user-pp-nm {
+    margin-top: 12px;
+}
 
-.homelist,
-.create-list,
-.your-playlist {
+li.add-to-list {
+    justify-items: center;
+}
+
+.bottom-menu {
+    grid-area: bottom-menu;
     display: grid;
+    place-items: center;
+}
+
+/* ul sections */
+.homelist {
+    grid-area: home-list;
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    align-content: center;
+    margin-left: 14px;
+}
+
+.your-playlist {
+    grid-area: playlist;
+    display: grid;
+    gap: 5px;
 }
 
 .create-list {
+    /* grid-area: playlist; */
     /* display: grid; */
     grid-template-rows: 30px 30px 1fr;
     gap: 8px;
+    margin-left: 14px;
+}
+
+.hover {
+    display: grid;
+    row-gap: 10px;
 }
 
 .hover:hover {
-    border-left: 2px #AEFF2Bff solid;
+    border-left: 4px #AEFF2Bff solid;
 }
 
-.your-playlist{
+.add-to-list {
+    grid-template-columns: 22px, 1fr;
+    margin-bottom: 15px;
+}
 
+#plus {
+    width: 20px;
+    border-radius: 4px;
+    background-color: #A4A4A4ff;
+}
+
+#PLheading {
+    margin-bottom: 10px;
+}
+
+.install {
+    border-bottom: 1px solid #7B7E82ff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* SVG stuff */
@@ -43,6 +95,7 @@ div.hover {
     margin-left: 15px;
     margin-top: 10px;
 }
+
 
 .PL1 {
     height: 20px;
