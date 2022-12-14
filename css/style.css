@@ -1,0 +1,225 @@
+body{
+    padding: 0;
+     margin: 0;
+}
+.container{
+    display: grid;
+    grid-template:
+    "left main-container" 1fr
+    "player-controls player-controls" 200px /
+     200px 1fr;
+    color: white;
+    background-color: rgb(20,25,34);
+
+}
+.player-controls{
+    grid-area: player-controls;
+}
+.main-container{
+    grid-area: main-container;
+    
+}
+.topmenu{
+    text-align: right;
+    padding: 1rem;
+}
+.topmenu button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    border:1px solid white;
+}
+.categorymenu{
+    text-align: center;
+}
+.categorymenu ul{
+    list-style-type: none;
+    padding-left:3px;
+}
+.categorymenu ul li{
+    display: inline;
+    margin: 1rem;
+
+}
+
+.left{
+    grid-area: left;
+    border-right: 1px solid;
+    margin: 0px 0px 0px 30px;
+    background-color: rgb(0,0,0);
+}
+.logo{
+    padding-bottom: 40px;
+    padding-top: 10px;
+    display: grid;
+    grid-template:
+    "spotifylogo spotify" 60px/
+    50px 40px;
+}
+.spotifylogo{
+    grid-area: spotifylogo;
+}
+.spotify{
+    grid-area: spotify;
+    color: white;
+}
+.menuitem{
+    display: grid;
+    grid-template: 
+    "icon navtxt" 40px/
+    50px 80px;
+    margin-top: 10px;
+}
+.icon{
+    grid-area: icon;
+    padding: 0px;
+    margin-right: 0px;
+
+}
+.navtxt{
+    grid-area: navtxt;
+    margin:0px 0px 3px 3px;
+    color:white;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 3px;
+      gap:0px;
+      height:20px;
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    padding: 1rem ;
+    gap: 5px; 
+   }
+   .grid{
+     text-align: center;
+     gap:10px;
+   }
+   
+  
+   .bar-future{
+    margin: 0;
+    display: inline-block;
+    width: 60%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: gray;
+
+   }
+   .player-controls{
+    grid-area: player-controls;
+    height: 80px;
+    padding-top: 300px;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background-color: #282828;
+    text-align: center;
+     /* z-index: 1 */
+     position:sticky; 
+    bottom: 0;
+    left:0;
+    display: grid;
+    display: grid;
+    grid-template:
+    "song-playing favs player volume-controls"
+    / 200px 100px 300px 400px;
+      padding: 1em;
+   }
+   .song-playing,
+   .favs,
+   .player,
+   .volume-controls{
+    text-align:center;
+   }
+   .song-playing{
+    grid-area: song-playing;
+    display: grid;
+    grid-template: 
+    "song-playing-cover song-playing-infos"
+    /1fr 1fr;
+    gap:1em;
+   }
+   .song-playing-cover{
+    grid-area: song-playing-cover;
+    text-align: right;
+   }
+   .song-playing-infos{
+    padding-top: 0.5em;
+    text-align: left;
+    grid-area: song-playing-infos;
+   }
+   .song-playing-artist{
+    color:gray;
+    font-size: smaller;
+   }
+   .song-playing-img{
+    width: 50px;
+   }
+   .favs{
+    grid-area: favs;
+   }
+   .player{
+    grid-area: player;
+   }
+   .player-control-button{
+    height: 50px;
+    filter: invert(100%);
+    margin-right: 1em;
+   }
+   .player-control-button:hover{
+    filter: invert(50%);
+   }
+   .favs-button{
+    margin-top:1em;
+    height: 22px;
+    filter:invert(50%);
+    margin-right: 1em;
+   }
+   .favs-button:hover{
+    filter:invert(100%)
+   }
+   .volume-controls{
+    grid-area: volume-controls;
+    margin-top: 30px;
+    margin-left: 100px;
+   }
+   .time-elapsed, .time-to-go{
+    font-size: small;
+    display: inline-block;
+   }
+   .bar-past{
+    margin: 0;
+   }
+   .progress{
+    display: inline-block;
+    width: 20%;
+    height: 4px;
+    border-radius: 2px;
+    height: 8px;
+    border-radius: 4px;
+    border:none;
+   }
+   .progress[value]{
+    background-color: white;
+   }
+   .song-progress-bar{
+    position: relative;
+    top:-4px;
+   }
+ .player .player-control-button > i {
+   height: 20px;
+ width: 50px;
+  }
+.volume-progress-bar{
+    position: relative;
+    top: -10px;
+
+
+}
+footer{
+    height: 300px;
+}
