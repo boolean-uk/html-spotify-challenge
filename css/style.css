@@ -1,0 +1,34 @@
+section
+{
+    border: 2px blue solid;
+}
+
+body
+{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 
+    "left top" 1fr
+    "left main" 8fr
+    "bottom bottom" 1fr/
+    1fr 4fr;
+}
+
+#headSection
+{
+    grid-area: top;
+}
+
+#leftSection{
+    grid-area: left;
+}
+
+#mainSection{
+    grid-area: main;
+}
+
+#audioPlayer{
+    grid-area: bottom;
+}
