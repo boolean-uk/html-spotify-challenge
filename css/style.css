@@ -55,6 +55,7 @@ ul{
 #mainSection{
     background-color: rgb(20,25,34);
     grid-area: main;
+    padding: 10px;
 }
 
 #audioPlayer{
