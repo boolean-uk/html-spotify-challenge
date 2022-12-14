@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Spotify - Web Player</title>
 </head>
 <body>
-    
+    <main class="mainContainer">
+        <div class="header">
+            <div class="headerArrows"></div>
+            <div class="headerProfile"></div>
+        </div>
+        <div class="leftMenu">
+            <nav>
+                <div class="leftMenuWrap">
+                    <div class="leftMenuLogo">
+                        <img src="./assets/img/logo.svg" alt="">
+                    </div>
+                    <div class="navMenu">
+                        <ul>
+                            <li class="Home hoverWhiteHL">
+                                <a href="#">
+                                    <div class="homeWrap lmwrap">
+                                        <img src="./assets/img/home.svg" alt="home">
+                                        <span>Home</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="Search hoverWhiteHL">
+                                <a href="#">
+                                    <div class="searchWrap lmwrap">
+                                        <img src="./assets/img/search.svg" alt="search">
+                                        <span>Search</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="YourLibrary hoverWhiteHL">
+                                <a href="#">
+                                    <div class="libraryWrap lmwrap">
+                                        <img src="./assets/img/libreria.svg" alt="library">
+                                        <span>Your Library</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yourPlaylists">
+                        <div class="createPlaylist hoverWhiteHL">
+                            <a href="#">
+                                <div class="createPlaylistWrap">
+                                    <div class="plusCon">
+                                        <span>+</span>
+                                    </div>
+                                    <span>Create Playlist</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="likedSongs hoverWhiteHL">
+                            <a href="#">
+                                <div class="likedSongsWrap">
+                                    <div class="heart">
+                                        <span>♥</span>
+                                    </div>
+                                    <span>Liked Songs</span>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="pl">
+                        <div class="allPlaylistWrap">
+                            <div class="allPlaylists">
+                                <div class="playlist1 hoverWhiteHL">
+                                    <span>70s Rock Anthems</span>
+                                </div>
+                                <div class="playlist2 hoverWhiteHL">
+                                    <span>Streaming</span>
+                                </div>
+                                <div class="playlist3 hoverWhiteHL">
+                                    <span>Lads</span>
+                                    <img src="./assets/img/groupsvg.svg" alt="">
+                                </div>
+                                <div class="playlist4 hoverWhiteHL">
+                                    <span>Lauli</span>
+                                </div>
+                                <div class="playlist5 hoverWhiteHL">
+                                    <span>Yaaaa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installApp hoverWhiteHL">
+                        <img src="./assets/img/download.svg" alt="">
+                        <span>Install App</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mainArea">
+            <section class="GoodMorning"></section>
+            <section class="audioBooks"></section>
+            <section class="seasonalPlaylists"></section>
+            <section class="recentlyPlayed"></section>
+            <section class="episodesForYou"></section>
+        </div>
+        <div class="footer">
+            <div class="leftArea"></div>
+            <div class="nowPlaying"></div>
+            <div class="additionalControls"></div>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ANIMATIONS  */
+
+.hoverWhiteHL:hover span {
+    color: white;
+}
+
+/* MAIN CONTAINER  */
+
+.mainContainer {
+    height: 3000px;  /* remove/change eventually */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    grid-template-rows: 1fr 90px;
+    grid-template-areas: "leftmenu mainview"
+    "footer footer" 
+    ;
+}
+
+/* TOP BAR  */
+
+.header {
+    grid-area: mainview;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #260d10;
+}
+
+/* MAIN VIEW AREA  */
+
+.mainArea {
+    grid-area: mainview;
+    background: linear-gradient(#2b0c0f, #121212) no-repeat;
+    background-size: auto 400px;
+    background-position: top;
+    background-color: #121212;
+}
+
+/* LEFT MENU  */
+
+.leftMenu {
+    grid-area: leftmenu;
+    background-color: #000000;
+}
+
+.leftMenuWrap {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 65px 120px 650px 40px;
+    gap: 25px;
+}
+
+.leftMenuLogo {
+    display: grid;
+    margin: 0 0 0 25px;
+    align-items: end;
+}
+
+.leftMenuLogo > img {
+    width: 130px;
+}
+
+/* NAV MENU  */
+
+.navMenu {
+    padding: 0 0 0 25px;
+}
+
+.lmwrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    height: 40px;
+}
+
+li img {
+    width: 26px;
+}
+
+a span {
+    color: #b3b3b3;
+    padding-left: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CREATE PLAYLIST  */
+
+.yourPlaylists {
+    display: grid;
+    grid-template-rows: 40px 40px 20px 1fr;
+    grid-template-areas: 
+    "create"
+    "liked"
+    "hr"
+    "playlists";
+    padding-left: 25px;
+    align-items: center;
+}
+
+.createPlaylist {
+    grid-area: create;
+}
+
+.createPlaylistWrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.plusCon {
+    background-color: #b2b2b2;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+div.plusCon > span {
+    color: black;
+    padding-left: 0;
+    font-size: 1.4rem;
+}
+
+.likedSongs {
+    grid-area: liked;
+}
+
+.likedSongsWrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+div.heart {
+    background: linear-gradient(135deg, #340eaa, #829b9a);
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+div.heart > span {
+    padding-left: 0;
+    font-size: 1.3rem;
+}
+
+hr.pl {
+    grid-area: hr;
+    border:0;
+    width:95%;
+    background: #282828;
+    height: 1px;
+    
+}
+
+.allPlaylistWrap {
+    padding-top: 10px;
+    grid-area: playlists;
+    height: 100%;
+}
+
+.allPlaylists {
+    display: grid;
+    grid-template-rows: repeat(autofill, 40px);
+    gap: 15px;
+}
+
+.allPlaylists > div > span {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.playlist3 {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+}
+
+.playlist3 > img {
+    width: 15px;
+}
+
+
+.installApp {
+    height: 40px;
+    width: 385px;
+    position: fixed;
+    bottom: 90px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.installApp > img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.installApp > span {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    margin-left: 5px;
+    
+}
+
+/* FOOTER BAR  */
+
+.footer {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    background-color: #181818;
+}
