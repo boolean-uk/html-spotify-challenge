@@ -9,8 +9,14 @@ body{
     "player-controls player-controls" 200px /
      200px 1fr;
     color: white;
-    background-color: rgb(20,25,34);
+    background-color: rgb(20,25,34); 
 
+}
+.player-control-button{
+    margin-top: 50px;
+}
+.topmenu{
+    background-color: black; 
 }
 .player-controls{
     grid-area: player-controls;
@@ -42,7 +48,6 @@ body{
     margin: 1rem;
 
 }
-
 .left{
     grid-area: left;
     border-right: 1px solid;
@@ -59,6 +64,7 @@ body{
 }
 .spotifylogo{
     grid-area: spotifylogo;
+    margin-left: 10px;
 }
 .spotify{
     grid-area: spotify;
@@ -69,20 +75,20 @@ body{
     grid-template: 
     "icon navtxt" 40px/
     50px 80px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .icon{
     grid-area: icon;
     padding: 0px;
     margin-right: 0px;
-
+    margin-left: 20px;
 }
 .navtxt{
     grid-area: navtxt;
     margin:0px 0px 3px 3px;
     color:white;
     padding: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 3px;
       gap:0px;
       height:20px;
@@ -93,14 +99,14 @@ body{
     grid-template-columns: 300px 300px 300px;
     padding: 1rem ;
     gap: 5px; 
+    
    }
    .grid{
      text-align: center;
      gap:10px;
+     /* overflow-y:scroll */
    }
-   
-  
-   .bar-future{
+  .bar-future{
     margin: 0;
     display: inline-block;
     width: 60%;
@@ -111,10 +117,11 @@ body{
    }
    .player-controls{
     grid-area: player-controls;
-    height: 80px;
-    padding-top: 300px;
-    width: 100%;
-    padding: 1em;
+    height: 30px;
+    /* padding-top: 300px; */
+    width: 98%;
+ 
+    padding: 1rem;
     color: white;
     background-color: #282828;
     text-align: center;
@@ -127,7 +134,7 @@ body{
     grid-template:
     "song-playing favs player volume-controls"
     / 200px 100px 300px 400px;
-      padding: 1em;
+      padding-top: 0px;
    }
    .song-playing,
    .favs,
@@ -137,6 +144,9 @@ body{
    }
    .song-playing{
     grid-area: song-playing;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 30px;
     display: grid;
     grid-template: 
     "song-playing-cover song-playing-infos"
@@ -148,9 +158,24 @@ body{
     text-align: right;
    }
    .song-playing-infos{
-    padding-top: 0.5em;
+    padding-top: 0px;
     text-align: left;
     grid-area: song-playing-infos;
+    margin-top: 0px;
+   }
+   .song-playing-artist{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+   } 
+   .song-playing-title{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    
+
    }
    .song-playing-artist{
     color:gray;
@@ -158,9 +183,11 @@ body{
    }
    .song-playing-img{
     width: 50px;
+    margin-top: 0px;
    }
-   .favs{
+   .favs {
     grid-area: favs;
+    margin-top: 10px;
    }
    .player{
     grid-area: player;
@@ -169,6 +196,12 @@ body{
     height: 50px;
     filter: invert(100%);
     margin-right: 1em;
+    margin-top: 15px;
+   }
+   .progress{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
    }
    .player-control-button:hover{
     filter: invert(50%);
@@ -182,9 +215,13 @@ body{
    .favs-button:hover{
     filter:invert(100%)
    }
+   .time-elapsed{
+    margin-top: 0px;
+    padding-top: 0px;
+   }
    .volume-controls{
     grid-area: volume-controls;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: 100px;
    }
    .time-elapsed, .time-to-go{
@@ -202,6 +239,9 @@ body{
     height: 8px;
     border-radius: 4px;
     border:none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
    }
    .progress[value]{
     background-color: white;
@@ -209,6 +249,8 @@ body{
    .song-progress-bar{
     position: relative;
     top:-4px;
+    margin-top: 0px;
+ margin-bottom: 0px;
    }
  .player .player-control-button > i {
    height: 20px;
@@ -217,6 +259,8 @@ body{
 .volume-progress-bar{
     position: relative;
     top: -10px;
+    margin-top: 10px;
+    
 
 
 }
