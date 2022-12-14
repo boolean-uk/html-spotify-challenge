@@ -9,6 +9,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* ANIMATIONS  */
 
 .hoverWhiteHL:hover span {
@@ -19,7 +24,6 @@ ul {
 
 .mainContainer {
     height: 3000px;  /* remove/change eventually */
-    width: 100vw;
     display: grid;
     grid-template-columns: 385px 1fr;
     grid-template-rows: 1fr 90px;
@@ -35,8 +39,79 @@ ul {
     height: 65px;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1;
     background-color: #260d10;
+    display: grid;
+    grid-template-columns: 130px 1fr 200px;
+    grid-template-rows: 65px;
+    grid-template-areas: "arrows . profile";
+}
+
+/* FORWARD AND BACK ARROWS  */
+
+.headerArrows {
+    grid-area: arrows;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-left: 25px;
+}
+
+.headerArrows img {
+    width: 18px;
+}
+
+.leftArrow > img {
+    transform: translate(-2px);
+}
+
+.rightArrow > img {
+    transform: translate(2px);
+}
+
+.leftArrow, .rightArrow {
+    height: 33px;
+    width: 33px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* PROFILE  */
+
+.headerProfile {
+    grid-area: profile;
+    display: grid;
+    align-items: center;
+}
+
+.profile {
+    display: grid;
+    width: 160px;
+    height: 35px;
+    background-color: black;
+    grid-template-columns: 30px 1fr 30px;
+    border-radius: 25px;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.profilePic {
+    background-color: #535353;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.downArrow {
+    display: grid;
+    align-items: center;
+}
+
+.downArrow > img {
+    width: 12px;
 }
 
 /* MAIN VIEW AREA  */
@@ -62,6 +137,8 @@ ul {
     grid-template-rows: 65px 120px 650px 40px;
     gap: 25px;
 }
+
+/* LOGO  */
 
 .leftMenuLogo {
     display: grid;
@@ -97,9 +174,6 @@ a span {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* CREATE PLAYLIST  */
 
@@ -175,6 +249,8 @@ hr.pl {
     
 }
 
+/* ALL PLAYLISTS  */
+
 .allPlaylistWrap {
     padding-top: 10px;
     grid-area: playlists;
@@ -201,6 +277,7 @@ hr.pl {
     width: 15px;
 }
 
+/* INSTALL APP  */
 
 .installApp {
     height: 40px;
