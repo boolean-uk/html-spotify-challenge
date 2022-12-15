@@ -20,11 +20,9 @@ a {
     color: white;
 }
 
-.hoverWhiteHL:hover {
-    background: #5f5d5d79;
-}
-
-.smallCard:hover, .largerCard:hover {
+.smallCard:hover, 
+.largerCard:hover, 
+.hoverBG:hover {
     background-color: #5f5d5d79;
 }
 
