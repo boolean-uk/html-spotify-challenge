@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Spotify replica</title>
+  </head>
+  <body>
+    <div class="left-menu">
+      <div class="spotify-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 167.5 167.5"
+          class="spotify-logo"
+        >
+          <title>Spotify</title>
+          <path
+            fill="#ffffff"
+            d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z"
+          />
+        </svg>
+        <h1>Spotify</h1>
+      </div>
+      <ul>
+        <li>
+          <span class="material-symbols-outlined"> home </span>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined"> search </span>
+          <a href="#">Search</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined"> library_music </span>
+          <a href="#">Your library</a>
+        </li>
+        <br />
+
+        <li>
+          <span class="material-symbols-outlined"> playlist_add </span>
+          <a href="#">Create Playlist</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined"> lyrics </span>
+          <a href="#">Liked Songs</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined"> bookmark </span>
+          <a href="#">Your Episodes</a>
+        </li>
+        <hr />
+        <li><a href="#">My Playlist#1</a></li>
+        <li><a href="#">My Playlist#2</a></li>
+        <li><a href="#">My Playlist#3</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="section1>">
+        <div class="blankheader"></div>
+        <div class="navbar">
+          <li><a href="#">trend</a></li>
+          <li><a href="#">podcast</a></li>
+          <li><a href="#">mood</a></li>
+          <li><a href="#">audio</a></li>
+          <li><a href="#">workout</a></li>
+        </div>
+        <div class="Replayed">Recently Played</div>
+        <div class="pics">
+          <img src="./css/metal_lifting.jpg" alt="this is a pic" />
+          <img src="./css/radar.jpeg" alt="this is a pic" />
+          <img src="./css/sinister.jpeg" alt="this is a pic" />
+          <img src="./css/split.jpeg" alt="this is a pic" />
+          <img src="./css/stranger.jpeg" alt="this is a pic" />
+        </div>
+        <div class="comments">
+          <h4 class="pic1">
+            <b>Heavy Metal</b>
+            <p>subtitle</p>
+          </h4>
+          <h4 class="pic2">
+            <b>release radar</b>
+            <p>subtitle</p>
+          </h4>
+          <h4 class="pic3">
+            <b>Sinister</b>
+            <p>subtitle</p>
+          </h4>
+          <h4 class="pic4">
+            <b>Split</b>
+            <p>subtitle</p>
+          </h4>
+          <h4 class="pic5">
+            <b>Stranger</b>
+            <p>subtitle</p>
+          </h4>
+        </div>
+
+        <div class="select">Recommended For You</div>
+        <div class="picsection2">
+          <img src="./css/youg.jpeg" alt="this is a pic" />
+          <img src="./css/einaudi.jpeg" alt="this is a pic" />
+        </div>
+
+        <div class="comments2">
+          <h4 class="pic6">
+            <b>Young Beautiful</b>
+            <p>Relax</p>
+          </h4>
+          <h4 class="pic7">
+            <b>Popular</b>
+            <p>Chill</p>
+          </h4>
+        </div>
+
+        <div class="test">Daily Mix</div>
+        <div class="picsection3">
+          <img src="./css/player_left.jpg" alt="this is a pic" />
+          <img src="./css/mixdaily.jpeg" alt="this is a pic" />
+        </div>
+        <div class="comments3">
+          <h4 class="pic8">
+            <b>Hilltop</b>
+            <p>Relax</p>
+          </h4>
+          <h4 class="pic9">
+            <b>Dailymix</b>
+            <p>Chill</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div classs="footer">footer</div>
+  </body>
 </html>

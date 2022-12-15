@@ -1,0 +1,166 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    
+}
+
+body{
+    display:grid;
+    grid-template:
+    "left-menu main" 1fr 
+    "footer    footer" 100px/
+      25%       75%;
+      background-color: grey;
+}
+
+.spotify-logo {
+    display:grid;
+    grid-template:
+    "spotify-logo spotify"20px/
+     50px           50px;
+
+    height:50px;
+    padding:4px;
+    place-content:left;
+}
+
+/*p {
+    display :inline-block;
+    justify-content: space-around;
+
+}*/
+.left-menu{
+    list-style-type:none;
+    background-color:black;
+    text-decoration:none;
+    color:white;
+    padding-left:10px;
+}
+
+.left-menu >ul>li>a{
+    text-decoration: none;
+    color:lightgray;
+    min-height:18vh;
+    font-size: 12px;
+}
+
+.main{
+    display:grid;
+    grid-template:
+    "section1" 1fr/
+    
+    1fr;
+}
+
+hr{
+    background-color: grey;
+    border:0.5px solid grey;
+  
+}
+.main.section1{
+    display:grid;
+    grid-template:
+    "blankerheader" 1fr
+    "navbar"1fr
+    "replayed"1fr
+    "pics"1fr
+    "comments"1fr/
+    1fr;
+}
+
+.blankheader{
+    background-color:gray ;
+    height:48px;
+}
+.navbar{
+    display:flex;
+    min-height:8vh;
+    justify-content: space-around;
+    background-color: black;
+    font-size: 13px;
+    
+   
+    place-items: center;
+
+    list-style-type: none;
+}
+
+.navbar>li>a{
+    color:white;
+    text-decoration: none;
+    height:15px;
+  
+}
+
+
+.material-symbols-outlined{
+    color:green
+}
+.left-menu>ul>li>a:hover{
+    color:whitesmoke;
+}
+.left-menu>ul>li>a:active{
+    color:white;
+}
+
+
+    
+.left-menu>ul>li>hr{
+    background-color: red;
+}
+
+
+.footer{
+    background-color: aquamarine;
+}
+
+.main.section1{
+    display:grid;
+    grid-template:
+    "blankerheader" 1fr
+    "navbar"1fr
+    "replayed"1fr
+    "pics"1fr
+    "comments"1fr/
+    1fr;
+}
+
+.Replayed,.select,.test{
+    display:grid;
+    background-color:black;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.pics,.picsection2,.picsection3{
+    display: flex;
+    flex-direction: row;
+    width:220px;
+    height:155px;
+}
+
+
+ .comments,.comments2,.comments3{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    text-align: left;
+    border:none;
+
+ }
+ /*::-webkit-scrollbar{
+    display:none;}*/
+
+@media screen and (max-width:200px){
+    body{
+        color:green;
+        display:grid;
+        grid-template:repeat(2,auto)
+    }
+}
+    
+ 
+ 
