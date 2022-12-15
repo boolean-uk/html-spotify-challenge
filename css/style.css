@@ -6,11 +6,13 @@ body{
     display: grid;
     grid-template:
     "left main-container" 1fr
-    "player-controls player-controls" 200px /
-     200px 1fr;
+    "left main-container" 0.5fr
+    "player-controls player-controls" 100px / 
+     140px 1fr;
     color: white;
     background-color: rgb(20,25,34); 
-
+     width: 100%;
+     height: 100%;
 }
 .player-control-button{
     margin-top: 50px;
@@ -53,6 +55,12 @@ body{
     border-right: 1px solid;
     margin: 0px 0px 0px 30px;
     background-color: rgb(0,0,0);
+    /* position:fixed;  */
+    margin-left: 0px;
+    /* bottom: 0;
+    top:0; */
+    
+
 }
 .logo{
     padding-bottom: 40px;
@@ -73,10 +81,11 @@ body{
 .menuitem{
     display: grid;
     grid-template: 
-    "icon navtxt" 40px/
+    "icon navtxt" 20px/
     50px 80px;
     margin-top: 20px;
 }
+
 .icon{
     grid-area: icon;
     padding: 0px;
@@ -88,23 +97,65 @@ body{
     margin:0px 0px 3px 3px;
     color:white;
     padding: 0px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 3px;
       gap:0px;
       height:20px;
 
 }
+p{
+    margin-top: 50px;
+}
+.likeitem{
+    display: grid;
+    grid-template-rows: auto;
+}
+.liketxt{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 8px;
+    color:white;
+}
+.installitem{
+    display: grid;
+    grid-template: 
+    "installicon installtxt" 40px/
+    50px 80px;
+    margin-top: 320px;
+    
+}
+.installicon{
+    grid-area: installicon;
+
+
+}
+.installtxt{
+    grid-area: installtxt;
+ 
+}
+.login{
+    display: grid;
+   display: inline;
+
+   
+    margin-top: 5px;
+}
+span{
+    margin-left: 8px;
+}
+
 .main{
     display: grid;
     grid-template-columns: 300px 300px 300px;
     padding: 1rem ;
     gap: 5px; 
+    overflow-y:scroll; 
     
    }
    .grid{
      text-align: center;
      gap:10px;
-     /* overflow-y:scroll */
+     
    }
   .bar-future{
     margin: 0;
@@ -115,26 +166,30 @@ body{
     background-color: gray;
 
    }
-   .player-controls{
-    grid-area: player-controls;
-    height: 30px;
-    /* padding-top: 300px; */
-    width: 98%;
- 
+   
+
+    .player-controls{
+     grid-area: player-controls; 
+    height: 50px;
+     padding-top: 300px; 
+     width: 98%; 
     padding: 1rem;
     color: white;
-    background-color: #282828;
+    background-color:#282828;
     text-align: center;
-     /* z-index: 1 */
+      
      position:sticky; 
     bottom: 0;
     left:0;
     display: grid;
-    display: grid;
     grid-template:
     "song-playing favs player volume-controls"
-    / 200px 100px 300px 400px;
-      padding-top: 0px;
+    / 200px 100px 450px 350px;
+      padding-top: 0px; 
+   }  
+   .player{
+    display: grid;
+    grid-template-rows: 30px 40px;
    }
    .song-playing,
    .favs,
@@ -146,7 +201,7 @@ body{
     grid-area: song-playing;
     margin-top: 0px;
     padding-top: 0px;
-    height: 30px;
+    height: 10px;
     display: grid;
     grid-template: 
     "song-playing-cover song-playing-infos"
@@ -188,6 +243,7 @@ body{
    .favs {
     grid-area: favs;
     margin-top: 10px;
+    height: 10px;
    }
    .player{
     grid-area: player;
@@ -198,11 +254,7 @@ body{
     margin-right: 1em;
     margin-top: 15px;
    }
-   .progress{
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-   }
+   
    .player-control-button:hover{
     filter: invert(50%);
    }
@@ -222,26 +274,31 @@ body{
    .volume-controls{
     grid-area: volume-controls;
     margin-top: 5px;
-    margin-left: 100px;
+  
+    float: right;
+     text-align: right;
+    justify-content: right; 
+    align-items: right;
    }
    .time-elapsed, .time-to-go{
     font-size: small;
-    display: inline-block;
+    display: inline;
    }
    .bar-past{
     margin: 0;
    }
    .progress{
-    display: inline-block;
-    width: 20%;
+    display: inline;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
-    height: 8px;
+    height: 5px;
     border-radius: 4px;
     border:none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
+   
+    position:relative; 
+     bottom: 0;
+     top:0;
    }
    .progress[value]{
     background-color: white;
@@ -252,10 +309,7 @@ body{
     margin-top: 0px;
  margin-bottom: 0px;
    }
- .player .player-control-button > i {
-   height: 20px;
- width: 50px;
-  }
+ 
 .volume-progress-bar{
     position: relative;
     top: -10px;
@@ -263,7 +317,4 @@ body{
     
 
 
-}
-footer{
-    height: 300px;
 }
