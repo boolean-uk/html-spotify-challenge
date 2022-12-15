@@ -23,6 +23,13 @@ button:hover {
     background: rgb(83, 85, 87);
 }
 
+.created-for,
+.popular-artists,
+.recently-played, 
+main>.spotify-play>h2 {
+    margin-left:25px;
+    margin-top: 15px;
+}
 /* Main Area */
 .main {
     grid-area: main;
@@ -72,11 +79,11 @@ button:hover {
 .popular-artists,
 .recently-played {
     display: grid;
-    height: 315px;
-    grid-template-columns: repeat(7, 225px);
+    height: 284px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
     gap: 15px;
-    overflow-x: hidden;
-    gap: 20px;
+    overflow: hidden;
+    gap: minmax(20px, 30px);
 }
 
 .created-for>li,
@@ -84,7 +91,6 @@ button:hover {
 .recently-played>li {
     display: grid;
     align-content: center;
-    overflow: none;
 }
 
 .created-for>li>img,
