@@ -19,7 +19,7 @@ body {
     grid-template-areas: 
     "leftmenu main"
     "player player";
-    grid-template-columns: minmax(auto, 300px) 1fr;
+    grid-template-columns: minmax(180px, 300px) minmax(758px, 1fr);
     grid-template-rows: 1fr 90px;
 }
 
@@ -45,6 +45,10 @@ a {
 
 .leftmenu .logo svg{
     height: 40px;
+}
+
+.leftmenu .smalllogo {
+    display: none;
 }
 
 .leftmenu ul {
@@ -204,8 +208,8 @@ main .songsection .songgenre .sectionheader {
     align-items: center;
 }
 
-main .songsection .songgenre .sectionheader .sectiontitle {
-    margin-right: auto;
+main .songsection .songgenre .sectionheader .showall {
+    margin-left: auto;
 }
 
 main .songsection .songgenre .sectionheader span {
@@ -312,7 +316,7 @@ main footer a:hover {
 main footer .info{
     display: flex;
     flex-direction: row;
-    gap: 128px;
+    gap: 64px;
 }
 
 main footer .info ul {
@@ -485,4 +489,70 @@ main footer span {
 .player .volume .volumeslider:hover {
     opacity: 1;
     background-color: #1FDF64;
+}
+
+@media screen and (max-width: 939px) {
+    body{
+        grid-template-columns: 80px minmax(0, 1fr)
+    }
+
+    .leftmenu .biglogo {
+        display: none;
+    }
+
+    .leftmenu .smalllogo {
+        display: initial;
+    }
+
+    .leftmenu nav .logo a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftmenu nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftmenu nav li span {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 838px) {
+    body {
+        grid-template-columns: 80px minmax(0, 1fr)
+    }
+
+    header>a {
+        display: none;
+    }
+
+    main footer .info {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    main header .signupsection {
+        display: none;
+    }
+
+    main header .headervr {
+        display: none;
+    }
+
+    main footer .legal {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .player .volume {
+        display: none;
+    }
 }
