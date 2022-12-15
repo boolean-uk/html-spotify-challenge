@@ -4,9 +4,283 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <main>
+        <nav class="left">
+
+            <div class="logo">
+                <a href="#">
+                    <object data="./assets/img/logo.svg" type="image/svg+xml">
+                        Spotify Logo
+                    </object>
+                </a>
+            </div>
+
+            <div class="functions">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bx bx-home-alt" ></i><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bx-search"></i><span>Search</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bx-collection"></i><span>Your Library</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="create-playlist liked-songs">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bx bxs-plus-square" ></i><span>Create Playlist</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bx bxs-heart-square icongradient" ></i><span>Liked Songs</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="playlists">
+                <a href="#">Discover Weekly</a><br>
+                <a href="#">spongbob me boy</a><br>
+                <a href="#">Fast Pop Run</a><br>
+            </div>
+            
+            <div class="install">
+                <a href="https://tinyurl.com/22p8st6c" target="_blank"><i class="bx bx-down-arrow-circle" ></i><span>Install App</span></a>
+            </div>
+        </nav>
+
+        <section class="selection">
+            <div class="midHeader">
+                <div class="navbuttons">
+                    <i class="bx bxs-chevron-left"></i>
+                    <i class="bx bxs-chevron-right" ></i>
+                </div>
+                <button class="profile" type="button">
+                    <img src="https://support.discord.com/hc/user_images/l12c7vKVRCd-XLIdDkLUDg.png" alt="">
+                    <span>aMissouri</span>
+                    <i class="bx bxs-chevron-down" ></i>
+                </button>
+            </div>
+
+            <div class="recent">
+                <h2>Good afternoon</h2>
+                <div class="recentCards">
+                    <div>
+                        <img src="https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png">
+                        <div class="recent-card-text"><p>Liked Songs</p></div>
+                    </div>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379">
+                        <div class="recent-card-text"><p>The Weeknd</p></div>
+                    </div>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb4111c95b5f430c3265c7304b">
+                        <div class="recent-card-text"><p>Joji</p></div>
+                    </div>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36">
+                        <div class="recent-card-text"><p>After Hours</p></div>
+                    </div>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b27360ec4df52c2d724bc53ffec5">
+                        <div class="recent-card-text"><p>ERYS (Deluxe)</p></div>
+                    </div>
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b27353f6fa0d2589c6a7174f4b81">
+                        <div class="recent-card-text"><p>Nectar</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mixes">
+                <div class="mixHeader">
+                    <h2>Your top mixes</h2> <span>SHOW ALL</span>
+                </div>
+                <div class="mixCards">
+
+                    <div class="singleCard">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/artist/0iEtIxbK0KxaSlF7G42ZOp/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">Metro Boomin Mix</a>
+                                <div class="artists">
+                                    <a href="">Quavo,</a>
+                                    <a href="">21 Savage,</a>
+                                    <a href="">Tory Lanez</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/artist/1Xyo4u8uXC1ZmMpatF05PJ/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">The Weeknd Mix</a>
+                                <div class="artists">
+                                    <a href="">The Weeknd,</a>
+                                    <a href="">Future,</a>
+                                    <a href="">Drake</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/chill/7tYKF4w9nC0nq9CsPZTHyP/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">Chill Mix</a>
+                                <div class="artists">
+                                    <a href="">SZA,</a>
+                                    <a href="">Jaden,</a>
+                                    <a href="">The Weeknd</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard moody">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/moody/3MZsBdqDrRTJihTHQrO6Dq/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">Moody Mix</a>
+                                <div class="artists">
+                                    <a href="">Joji,</a>
+                                    <a href="">Lana Del Rey,</a>
+                                    <a href="">XXXTENTACTION</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard rnb">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/r_and_b/2jku7tDXc6XoB6MO2hFuqg/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">R&B Mix</a>
+                                <div class="artists">
+                                    <a href="">Tory Lanez,</a>
+                                    <a href="">The Weeknd,</a>
+                                    <a href="">Frank Ocean</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard hiphop">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/hip_hop/3TVXtAsR1Inumwj472S9r4/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">Hip Hop Mix</a>
+                                <div class="artists">
+                                    <a href="">Drake,</a>
+                                    <a href="">J. Cole,</a>
+                                    <a href="">Travis Scott</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singleCard twomix">
+                        <div class="cardContent">
+                            <div class="imgContainer">
+                                <div class="cardImg">
+                                    <img src="https://seed-mix-image.spotifycdn.com/v6/img/two_thousands/5K4W6rqBFWDnAN6FQUkS6x/en/default">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <a class="cardTitle" href="#">2000s Mix</a>
+                                <div class="artists">
+                                    <a href="">Kanye West,</a>
+                                    <a href="">Sherine,</a>
+                                    <a href="">MGMT</a>
+                                    and more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="controls">
+
+            <div class="currentSong">
+                <div class="songImage">
+                    <img src="https://e.snmc.io/i/600/s/ccdaf7f462d8f71e3066f21c87a5ed3e/9614638/the-weeknd-dawn-fm-Cover-Art.jpg" alt="Album Cover">
+                </div>
+                <div class="songInfo">
+                    <a href=""><h3>Less Than Zero</h3></a>
+                    <a href=""><p>The Weeknd</p></a>
+                </div>
+                <div>
+                    <i class="bx bx-heart" ></i>
+                </div>
+            </div>
+
+            <div class="playControls">
+                <div class="controlButtons">
+                    <i class="bx bx-shuffle" ></i>
+                    <i class="bx bx-skip-previous" ></i>
+                    <i class="bx bx-play-circle" ></i>
+                    <i class="bx bx-skip-next" ></i>
+                    <i class="bx bx-repeat" ></i>
+                </div>
+                <div class="currentTime">0:00</div>
+                <div class="playBar"></div>
+                <div class="totalTime">3:31</div>
+            </div>
+
+            <div class="rightControls">
+                <i class="bx bx-edit-alt" ></i>
+                <i class="bx bxs-playlist" ></i>
+                <i class="bx bx-devices" ></i>
+                <i class="bx bx-volume-full" ></i>
+                <div class="volumeBar"></div>
+                <i class="bx bx-fullscreen" ></i>
+            </div>
+
+        </footer>
+    </main>
 </body>
 </html>
