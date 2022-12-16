@@ -33,10 +33,10 @@
         <div class="playlists-section">
             <h3>PLAYLISTS</h3>
             <!--Maybe make this a button below-->
-            <div class="create-playlists">
+            <a class="create-playlists">
                 <img src="./assets/img/add-svgrepo-com.svg">
-                <a><p>Create Playlist</p></a>
-            </div>
+                <p>Create Playlist</p>
+            </a>
             <ul class="list-of-playlists">
                 <li><a>Playlist</a></li>
                 <li><a>Playlist</a></li>
@@ -48,23 +48,25 @@
         </div>
 
         <section class="install-the-app-ad-section">
-            <div class="install-the-app-ad">
-            <img src="./assets/img/download.svg">
-            <p>Install App</p>
-            </div>
+            <a class="install-the-app-ad">
+                <img src="./assets/img/download.svg">
+                <p>Install App</p>
+            </a>
         </section>
 
         <section class="profile">
-            <img src="./assets/img/profile.svg">
-            <h3>John Doe</h3>
+            <a>
+                <img src="./assets/img/profile.svg">
+                <h3>John Doe</h3>
+            </a>
         </section>
     </section>
         
     <!--Header-->
     <header class="header">
-        <div class="upgrade">
+        <a class="upgrade">
             <p>Upgrade to Premium</p>
-        </div>
+        </a>
     </header>
 
     <!--Main Section-->
@@ -85,7 +87,7 @@
             <div class="played-album-container">
                 <div class="played-album">
                     <img src="./assets/Album Artwork/20150807_215617_7549_752895.jpeg">
-                    <p>Black Album</p>
+                    <p>Metallica (Remastered)</p>
                     <p>Metallica</p>
                  </div>
                 <div class="played-album">
@@ -167,7 +169,7 @@
             <div class="now-playing-album">
                 <img src="./assets/Album Artwork/20150807_215617_7549_752895.jpeg">
                 <div class="now-playing-album-text-info">
-                    <p class="album-name"> Black Album</p>
+                    <p class="album-name"> Nothing Else Matters</p>
                     <p class="artist-name"> Metallica</p>
                 </div>
         
@@ -181,13 +183,20 @@
 
         <section class="audio-player">
             <div class="icons">
-                <img class="shuffle-button" src="./assets/Player/shuffle-svgrepo-com.svg"> <!--shuffle icon-->
-                <img class="back-track-button" src="./assets/Player/backward-track-svgrepo-com.svg"> <!--back track icon-->
-                <img class="play-button" src="./assets/Player/play-svgrepo-com.svg"> <!--play icon-->
-                <img class="next-song-button" src="./assets/Player/next-svgrepo-com.svg"> <!--next track icon-->
-                <img class="repeat-button" src="./assets/Player/repeat-hand-drawn-circular-arrow-symbol-svgrepo-com.svg"> <!--repeat icon-->
+                <a><img class="shuffle-button" src="./assets/Player/shuffle-svgrepo-com.svg"> <!--shuffle icon--></a>
+                <a><img class="back-track-button" src="./assets/img/previous-svgrepo-com.svg"> <!--back track icon--></a>
+                <a><img class="play-button" src="./assets/Player/play-svgrepo-com.svg"> <!--play icon--></a>
+                <a><img class="next-song-button" src="./assets/img/next-svgrepo-com-2.svg"> <!--next track icon--></a>
+                <a><img class="repeat-button" src="./assets/Player/repeat-hand-drawn-circular-arrow-symbol-svgrepo-com.svg"> <!--repeat icon--></a>
             </div>
-            <audio controls src="./assets/Audio/kitson - t pain warp.mp3"></audio>
+            <div class="progress-bar-container">
+                <div class="play-time"><p>1:56</p></div>
+                <div class="progress-bar">
+                    <div class="play-time-bar"></div>
+                </div>
+                <div class="total-time"><p>6:29</p></div>
+            
+            </div>
             
         </section>
 
@@ -195,7 +204,9 @@
             <img src="./assets/img/list-svgrepo-com.svg">
             <img src="./assets/img/computer-svgrepo-com.svg">
             <img src="./assets/img/volume-svgrepo-com.svg">
-            <!--volume-->
+            <div class="volume">
+                <div class="current-volume"></div>
+            </div>
         </div>
     </footer>
 </html>

@@ -1,7 +1,7 @@
 /* @font-face {
     font-family: "SpotifyFont";
-    src: local(SpotifyFont), url("GothamBold.ttf") format("truetype"); */
-}
+    src: local(SpotifyFont), url("GothamBold.ttf") format("truetype"); 
+}  */
 
 
 html{
@@ -35,11 +35,14 @@ h3 {
     left: 0;
     grid-area: leftbar;
     display: grid;
-    grid-template-rows: 90px 180px 550px auto auto;
+    grid-template-rows: 90px min-content 800px min-content min-content;
+    column-width: auto;
     padding: 0px 20px 20px 20px;
     gap: 5px;
     background: black;
 }
+
+/* Logo Section */
 
 .logo {
     display: grid;
@@ -48,11 +51,12 @@ h3 {
 
 }
 
-
 .logo img {
     width: 100px;
     height: 34px;
 }
+
+/* Left Section Nav Bar */
 
 .left-section .left-nav-bar{
     grid-area: 2;
@@ -125,9 +129,8 @@ h3 {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-rows: repeat(6, auto);
     place-self: start;
-    color: #7D7E84;
+    color: #7D7E84; 
 }
 
 /* Instal the app button */
@@ -152,15 +155,14 @@ h3 {
     object-fit: contain;
 }
 
+/* Profile section */
 
-.left-section .profile{
+.left-section .profile a{
     display: grid;
     grid-template-columns: 40px auto;
     align-items: center;
     gap: 5px;
 }
-
-/* Profile section */
 
 .left-section .profile img{
     height: 20px;
@@ -402,34 +404,76 @@ footer .now-playing img{
 
 .footer .audio-player{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     align-items: center;
     place-items: center;
 }
+
+/* Controls for player */
 
 .footer .audio-player .icons{
     display: grid;
     grid-template-columns: repeat(5, auto);
     align-items: center;
+    gap: 40px;
 }
 
-.footer .audio-player .icons img{
+.footer .audio-player .icons a{
+    display: grid;
+    place-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: #282828;
+    border: none;
+    padding: 0px;
+    
+}
+
+.footer .audio-player .icons a img{
     height: 20px;
     width: 20px;
     object-fit: contain;
-    padding: 20px;
+    padding: 0px;
 }
 
-.footer .audio-player .icons img:nth-child(3){
+.footer .audio-player .icons .play-button{
     height: 40px;
     width: 40px;
-    object-fit: contain;
-    border: 1px white solid;
-    border-radius: 50%;
-    padding: 5px;
-} 
+    /* padding: 6px;
+    border: 2px solid white;
+    border-radius: 50%; */
+}
 
 
+/* Progress Bar */
+
+.progress-bar-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer .progress-bar-container .progress-bar {
+    width: 500px;
+    height: 5px;
+    background-color: #7D7E84;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+.progress-bar-container .progress-bar .play-time-bar{
+    width: 30%;
+    height: 100%;
+    background-color: #C1C1C1;
+}
+
+/* @keyframes fill {
+    from {background-color: red;}
+    to {background-color: yellow;}
+} */
+
+/* Right Hand Section */
 
 footer .controls{
     display: grid;
@@ -443,4 +487,16 @@ footer .controls img{
     width: 20px;
     height: 20px;
     object-fit: cover;
+}
+
+.volume {
+    background-color: #7D7E84;
+    height: 3px;
+    width: 100px;
+}
+
+.current-volume{
+    height: 100%;
+    width: 70%;
+    background-color: #C1C1C1
 }
