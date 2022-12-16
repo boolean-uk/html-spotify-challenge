@@ -1,0 +1,320 @@
+body{
+    padding: 0;
+     margin: 0;
+}
+.container{
+    display: grid;
+    grid-template:
+    "left main-container" 1fr
+    "left main-container" 0.5fr
+    "player-controls player-controls" 100px / 
+     140px 1fr;
+    color: white;
+    background-color: rgb(20,25,34); 
+     width: 100%;
+     height: 100%;
+}
+.player-control-button{
+    margin-top: 50px;
+}
+.topmenu{
+    background-color: black; 
+}
+.player-controls{
+    grid-area: player-controls;
+}
+.main-container{
+    grid-area: main-container;
+    
+}
+.topmenu{
+    text-align: right;
+    padding: 1rem;
+}
+.topmenu button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    border:1px solid white;
+}
+.categorymenu{
+    text-align: center;
+}
+.categorymenu ul{
+    list-style-type: none;
+    padding-left:3px;
+}
+.categorymenu ul li{
+    display: inline;
+    margin: 1rem;
+
+}
+.left{
+    grid-area: left;
+    border-right: 1px solid;
+    margin: 0px 0px 0px 30px;
+    background-color: rgb(0,0,0);
+    /* position:fixed;  */
+    margin-left: 0px;
+    /* bottom: 0;
+    top:0; */
+    
+
+}
+.logo{
+    padding-bottom: 40px;
+    padding-top: 10px;
+    display: grid;
+    grid-template:
+    "spotifylogo spotify" 60px/
+    50px 40px;
+}
+.spotifylogo{
+    grid-area: spotifylogo;
+    margin-left: 10px;
+}
+.spotify{
+    grid-area: spotify;
+    color: white;
+}
+.menuitem{
+    display: grid;
+    grid-template: 
+    "icon navtxt" 20px/
+    50px 80px;
+    margin-top: 20px;
+}
+
+.icon{
+    grid-area: icon;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.navtxt{
+    grid-area: navtxt;
+    margin:0px 0px 3px 3px;
+    color:white;
+    padding: 0px;
+    margin-left: 5px;
+    margin-top: 3px;
+      gap:0px;
+      height:20px;
+
+}
+p{
+    margin-top: 50px;
+}
+.likeitem{
+    display: grid;
+    grid-template-rows: auto;
+}
+.liketxt{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 8px;
+    color:white;
+}
+.installitem{
+    display: grid;
+    grid-template: 
+    "installicon installtxt" 40px/
+    50px 80px;
+    margin-top: 320px;
+    
+}
+.installicon{
+    grid-area: installicon;
+
+
+}
+.installtxt{
+    grid-area: installtxt;
+ 
+}
+.login{
+    display: grid;
+   display: inline;
+
+   
+    margin-top: 5px;
+}
+span{
+    margin-left: 8px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    padding: 1rem ;
+    gap: 5px; 
+    overflow-y:scroll; 
+    
+   }
+   .grid{
+     text-align: center;
+     gap:10px;
+     
+   }
+  .bar-future{
+    margin: 0;
+    display: inline-block;
+    width: 60%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: gray;
+
+   }
+   
+
+    .player-controls{
+     grid-area: player-controls; 
+    height: 50px;
+     padding-top: 300px; 
+     width: 98%; 
+    padding: 1rem;
+    color: white;
+    background-color:#282828;
+    text-align: center;
+      
+     position:sticky; 
+    bottom: 0;
+    left:0;
+    display: grid;
+    grid-template:
+    "song-playing favs player volume-controls"
+    / 200px 100px 450px 350px;
+      padding-top: 0px; 
+   }  
+   .player{
+    display: grid;
+    grid-template-rows: 30px 40px;
+   }
+   .song-playing,
+   .favs,
+   .player,
+   .volume-controls{
+    text-align:center;
+   }
+   .song-playing{
+    grid-area: song-playing;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 10px;
+    display: grid;
+    grid-template: 
+    "song-playing-cover song-playing-infos"
+    /1fr 1fr;
+    gap:1em;
+   }
+   .song-playing-cover{
+    grid-area: song-playing-cover;
+    text-align: right;
+   }
+   .song-playing-infos{
+    padding-top: 0px;
+    text-align: left;
+    grid-area: song-playing-infos;
+    margin-top: 0px;
+   }
+   .song-playing-artist{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+   } 
+   .song-playing-title{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    
+
+   }
+   .song-playing-artist{
+    color:gray;
+    font-size: smaller;
+   }
+   .song-playing-img{
+    width: 50px;
+    margin-top: 0px;
+   }
+   .favs {
+    grid-area: favs;
+    margin-top: 10px;
+    height: 10px;
+   }
+   .player{
+    grid-area: player;
+   }
+   .player-control-button{
+    height: 50px;
+    filter: invert(100%);
+    margin-right: 1em;
+    margin-top: 15px;
+   }
+   
+   .player-control-button:hover{
+    filter: invert(50%);
+   }
+   .favs-button{
+    margin-top:1em;
+    height: 22px;
+    filter:invert(50%);
+    margin-right: 1em;
+   }
+   .favs-button:hover{
+    filter:invert(100%)
+   }
+   .time-elapsed{
+    margin-top: 0px;
+    padding-top: 0px;
+   }
+   .volume-controls{
+    grid-area: volume-controls;
+    margin-top: 5px;
+  
+    float: right;
+     text-align: right;
+    justify-content: right; 
+    align-items: right;
+   }
+   .time-elapsed, .time-to-go{
+    font-size: small;
+    display: inline;
+   }
+   .bar-past{
+    margin: 0;
+   }
+   .progress{
+    display: inline;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    height: 5px;
+    border-radius: 4px;
+    border:none;
+   
+    position:relative; 
+     bottom: 0;
+     top:0;
+   }
+   .progress[value]{
+    background-color: white;
+   }
+   .song-progress-bar{
+    position: relative;
+    top:-4px;
+    margin-top: 0px;
+ margin-bottom: 0px;
+   }
+ 
+.volume-progress-bar{
+    position: relative;
+    top: -10px;
+    margin-top: 10px;
+    
+
+
+}
