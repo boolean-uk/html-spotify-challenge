@@ -8,7 +8,6 @@ body{
     margin:10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* check and remove all the borders */
 /* main container grid */
 .main-container {
     display:grid;
@@ -30,7 +29,6 @@ body{
     background-color: #000000; 
     padding:10px
 }
-/* here check the repetition of the classes again */
 .Spotify-logo >img {
     width:170px;
     height:70px;  
@@ -71,15 +69,16 @@ body{
 .create-list > i{
     font-size:40px
 }
-.name-list > span{
+.name-list .app{
     font-size:20px;
     filter:invert(40%)
 }
 .profile{
    margin:10px
 }
-.profile:second-child > span {
+.name {
     font-weight:700;
+    color:white;
 }
 hr{
     margin:5px
@@ -120,10 +119,7 @@ hr{
     background-color:#141922;
     padding:15px
 }
-/* check this below line also about the border and all and remove */
-/* .recently-played, .created-playlist, .popular-artist{
-    border: 1px dashed blue;
-}  */
+/* nav-bar */
 .nav-bar {
     display:grid;
     grid-template-columns: repeat(6, 150px);
@@ -150,7 +146,7 @@ hr{
     grid-gap:5px;
     padding:5px
 }
-/* here i created grid for to check how it works you have to create the good grid again */
+
 .song-cards {
     display:grid;
     grid-template-columns:repeat(6, 1fr);
@@ -165,7 +161,7 @@ hr{
     grid-row-gap: 10px;
     text-align:center
 }
-
+/* song card grids */
 .song-cards .song2{
     display:grid;
     grid-template-rows: 1fr 0.3fr;
@@ -179,6 +175,7 @@ hr{
     width:231px;
     height:250px;
     object-fit: cover;
+    box-shadow: 5px 10px 5px 5px rgba(14, 14, 14, 0.856);
 }
 .song3 .image >img {
 border-radius: 50%;
@@ -260,13 +257,13 @@ border-radius: 50%;
     width:500px;
     height:5px;
     border-radius: 10px;
-    margin-top:15px
+    margin-top:16px
 }
 .music-timer{
     display:flex;
     flex-direction: row;
     margin-top:3px;
-    padding-left:200px
+    padding-left:230px
 }
 .music-timer >div {
     margin:10px
