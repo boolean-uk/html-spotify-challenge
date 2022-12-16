@@ -13,6 +13,25 @@ a {
     text-decoration: none;
 }
 
+/* Additional Text  */
+
+a span {
+    padding-left: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/* FONT COLOURS  */
+
+.fcb3 {
+    color: #b3b3b3;
+}
+
+.fcWhite {
+    color: white;
+}
+
 
 /* ANIMATIONS  */
 
@@ -64,7 +83,6 @@ h2.mainAreaTitles:hover {
 /* MAIN CONTAINER  */
 
 .mainContainer {
-    /* height: 3000px;  remove/change eventually */
     display: grid;
     grid-template-columns: 385px 1fr;
     grid-template-rows: 1fr 90px;
@@ -168,8 +186,6 @@ h2.mainAreaTitles:hover {
 }
 
 .mainAreaTitles {
-
-    color: white;
     font-size: 1.6rem;
 }
 
@@ -181,7 +197,6 @@ h2.mainAreaTitles:hover {
 }
 
 .mainTitle {
-    color: white;
     font-size: 2rem;
     padding-bottom: 20px;
 }
@@ -226,7 +241,6 @@ h2.mainAreaTitles:hover {
 }
 
 .smallCardTitle > span {
-    color: white;
     font-size: 1rem;
     font-weight: bold;
     overflow: hidden;
@@ -242,9 +256,7 @@ h2.mainAreaTitles:hover {
     padding-bottom: 50px;
 }
 
-.titleAudio, 
-.titleTopMix,
-.titlePopWith {
+.titleGrid {
     padding: 0 0 0 30px;
     display: grid;
     grid-template-columns: max-content 1fr 100px;
@@ -252,16 +264,11 @@ h2.mainAreaTitles:hover {
     align-items: center;
 }
 
-.titleAudio > a:nth-child(2) , 
-.titleTopMix > a:nth-child(2) , 
-.titlePopWith > a:nth-child(2)  {
+.titleGrid > a:nth-child(2) {
     grid-area: showall;
 }
 
-.titleAudio > a > span, 
-.titleTopMix > a > span, 
-.titlePopWith > a > span {
-    color: #b3b3b3;
+.titleGrid > a > span {
     font-weight: bold;
     font-size: 0.7rem;
 }
@@ -305,6 +312,7 @@ h2.mainAreaTitles:hover {
     position: absolute;
     bottom: 20px;
     right: 20px;
+
     width: 50px;
     height: 50px;
     background-color: #1ed760;
@@ -331,7 +339,6 @@ h2.mainAreaTitles:hover {
 }
 
 .largerCardTitle > span {
-    color: white;
     font-size: 1rem;
     font-weight: bold;
     overflow: hidden;
@@ -377,8 +384,13 @@ h2.mainAreaTitles:hover {
     align-items: end;
 }
 
-.leftMenuLogo > img {
+.leftMenuLogo > .mainLogo {
     width: 130px;
+}
+
+.leftMenuLogo > .smallLogo {
+    display: none;
+    width: 80px;
 }
 
 /* NAV MENU  */
@@ -397,14 +409,6 @@ h2.mainAreaTitles:hover {
 li img {
     width: 26px;
 }
-
-a span {
-    color: #b3b3b3;
-    padding-left: 10px;
-    font-size: 0.85rem;
-    font-weight: bold;
-}
-
 
 /* CREATE PLAYLIST  */
 
@@ -495,7 +499,6 @@ hr.pl {
 }
 
 .allPlaylists > div > span {
-    color: #b3b3b3;
     font-size: 0.9rem;
 }
 
@@ -530,7 +533,6 @@ hr.pl {
 .installApp > span {
     font-weight: bold;
     font-size: 0.8rem;
-    color: #b3b3b3;
     margin-left: 5px;
     
 }
@@ -575,10 +577,6 @@ hr.pl {
     grid-area: title;
 }
 
-.lfArTitle span {
-    color: white;
-}
-
 .lfArAuthor span {
     font-weight: 400;
     font-size: 0.7rem;
@@ -593,15 +591,12 @@ hr.pl {
     gap: 10px;
 }
 
-.lfArHeart > svg {
+.lfArHeart > svg,
+.lfArPinP > svg  {
     width: 15px;
     color: #b3b3b3;
 }
 
-.lfArPinP > svg {
-    width: 15px;
-    color: #b3b3b3;
-}
 
 /* NOW PLAYING MID  */
 
@@ -678,7 +673,6 @@ hr.pl {
 
 .currentTime > span,
 .totalTime > span {
-    color: #b3b3b3;
     font-size: 0.7rem;
 }
 
@@ -728,4 +722,61 @@ hr.pl {
 .fullScreen svg {
     color: #b3b3b3;
     transform: translateY(3px);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .mainContainer {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .installApp {
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .mainContainer {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .leftMenuLogo > .mainLogo {
+        display: none;
+    }
+
+    .leftMenuLogo > .smallLogo {
+        display: block;
+        color: white;
+        transform: translate(-25px);
+    }
+
+    .lmwrap {
+        grid-template-columns: 30px;
+    }
+
+    .lmwrap span {
+        display: none;
+    }
+
+    .yourPlaylists > div > a > div > span {
+        display: none;
+    }
+
+    .pl {
+        display: none;
+    }
+
+    .allPlaylists {
+        display: none;
+    }
+
+    .installApp {
+        width: 80px;
+    }
+
+    .installApp > span {
+        display: none;
+    }
+    
 }
