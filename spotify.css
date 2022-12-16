@@ -112,12 +112,7 @@ body {
     padding-left: 0;
     line-height: 30px;
 }
-.left-menu .playlist span {
-   position:absolute;
-   top:335px;
-   left: 65px;
 
-}
 
 
 /* LEFT MENU - PROFILE*/
@@ -137,20 +132,14 @@ body {
 .profile .profile-name {
     color: white;
     font-weight: bold;
-    position: absolute;
-    bottom: 135px;
-    left: 50px;
+  
 }
 .profile hr {
     border-radius: 10px; 
     width: 260px;
     border: 1px rgb(97, 94, 94) solid;
 }
-.profile a.ins-app {
-    position: absolute;
-    bottom: 185px;
-    left: 50px;
-}
+
 /* LEFT MENU -  creative */
 .left-menu .options .icons svg:hover,
 .left-menu .options .icons-ex a:hover,
