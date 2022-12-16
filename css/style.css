@@ -16,8 +16,14 @@ a {
 
 /* ANIMATIONS  */
 
-.hoverWhiteHL:hover span {
+.hoverWhiteHL:hover span,
+.leftAreaIcons > a > .lfArHeart > svg:hover,
+.leftAreaIcons > a > .lfArPinP > svg:hover {
     color: white;
+}
+
+h2.mainAreaTitles:hover {
+    text-decoration: underline;
 }
 
 .smallCard:hover, 
@@ -26,7 +32,9 @@ a {
     background-color: #5f5d5d79;
 }
 
-.showAll:hover {
+.showAll:hover,
+.lfArTitle:hover,
+.lfArAuthor:hover > span {
     text-decoration: underline;
     color: white;
 }
@@ -138,6 +146,7 @@ a {
 }
 
 .mainAreaTitles {
+
     color: white;
     font-size: 1.6rem;
 }
@@ -216,8 +225,15 @@ a {
 .titlePopWith {
     padding: 0 0 0 30px;
     display: grid;
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: max-content 1fr 100px;
+    grid-template-areas: "title . showall";
     align-items: center;
+}
+
+.titleAudio > a:nth-child(2) , 
+.titleTopMix > a:nth-child(2) , 
+.titlePopWith > a:nth-child(2)  {
+    grid-area: showall;
 }
 
 .titleAudio > a > span, 
@@ -305,7 +321,7 @@ a {
 .leftMenuWrap {
     display: grid;
     height: 100%;
-    grid-template-rows: 65px 120px 650px 40px;
+    grid-template-rows: 65px 120px 1fr;
     gap: 25px;
 }
 
@@ -459,6 +475,7 @@ hr.pl {
     grid-template-columns: 50px 1fr;
     gap: 10px;
     align-items: center;
+    background-color: #000000;
 }
 
 .installApp > img {
@@ -482,4 +499,62 @@ hr.pl {
     bottom: 0;
     z-index: 1;
     background-color: #181818;
+
+    display: grid;
+    grid-template-columns: 385px 1fr 280px;
+    grid-template-rows: 90px;
+}
+
+/* LEFT AREA  */
+
+.leftArea {
+    display: grid;
+    grid-template-columns: 65px 1fr 60px;
+    grid-template-areas: "pfp title icons";
+    padding-left: 16px;
+    align-items: center;
+    gap: 5px;
+}
+
+.leftAreaPFP {
+    grid-area: pfp;
+}
+
+.leftAreaPFP > a > img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.leftAreaTitles {
+    grid-area: title;
+}
+
+.lfArTitle > span {
+    color: white;
+}
+
+.lfArAuthor > span {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.leftAreaIcons {
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 90px;
+    align-items: center;
+    gap: 10px;
+}
+
+.lfArHeart > svg {
+    width: 15px;
+    color: #b3b3b3;
+}
+
+.lfArPinP > svg {
+    width: 15px;
+    color: #b3b3b3;
 }
