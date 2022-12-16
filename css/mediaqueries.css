@@ -94,26 +94,28 @@
         grid-template-columns: repeat(5, 34px);
         justify-content: center;
     }
-    
+
     .play-controls>p {
         display: none;
     }
-    
+
     .time-left {
         width: 40px;
     }
-    
+
     /* Sound */
     .sound {
         grid-template-columns: 30px 100px;
         margin-right: 12px;
         margin-top: 0px;
     }
+
     .sound-buttons {
         display: inline;
     }
+
     .volumebar {
-margin-top: 40px;
+        margin-top: 40px;
     }
 
 }

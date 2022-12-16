@@ -25,11 +25,12 @@ button:hover {
 
 .created-for,
 .popular-artists,
-.recently-played, 
+.recently-played,
 main>.spotify-play>h2 {
-    margin-left:25px;
+    margin-left: 25px;
     margin-top: 15px;
 }
+
 /* Main Area */
 .main {
     grid-area: main;
@@ -83,7 +84,8 @@ main>.spotify-play>h2 {
     grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
     gap: 15px;
     overflow: hidden;
-    gap: minmax(20px, 30px);
+    justify-content: space-evenly;
+
 }
 
 .created-for>li,
@@ -105,6 +107,41 @@ main>.spotify-play>h2 {
     border-radius: 50%;
 }
 
+.overlay-play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    box-shadow: 5px 5px 5px #333;
+    border: none;
+    line-height: 52px;
+    transform: translate(62px, -130px);
+    opacity: 0;
+}
+
+.created-for .overlay-play {
+    transform: translate(65px, -82px);
+}
+
+.overlay-play-svg {
+    margin-top: 12px
+}
+
+.recently-played li:hover .overlay-play,
+.created-for li:hover .overlay-play,
+.popular-ppl li:hover .overlay-play {
+    opacity: 1;
+}
+
+.overlay-play:hover {
+background-color: #1fdf64;
+cursor: pointer;
+transform: scale(1.05) translate(56px, -125px);
+}
+
+.created-for .overlay-play:hover {
+    transform: translate(65px, -84px);
+}
 .popular-ppl {
     line-height: 1.4rem;
 }
@@ -123,6 +160,7 @@ h2 {
 h3 {
     margin-top: 5px;
 }
+
 .recently-played>li,
 .created-for>li {
     display: grid;
@@ -135,12 +173,11 @@ h3 {
     margin: 0px;
 }
 
-.recently-played>li:hover ,
-.created-for>li:hover ,
+.recently-played>li:hover,
+.created-for>li:hover,
 .popular-ppl>li:hover {
     background-color: #2a2a2a7a;
 }
-
 
 
 /* Scrollbar */
@@ -148,19 +185,19 @@ h3 {
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #151920;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #7B7E82ff;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
