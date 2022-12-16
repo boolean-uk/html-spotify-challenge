@@ -16,6 +16,6 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 ### Extension Criteria
 * :> &#9745; The left menu collapses as shown in `spotify-xs.png`.
 * :) &#9745; The list of albums expands and collapses to fill the available page space (see `spotify-md.png` and `spotify-s.png`)
-* &#9745; The top navigation list wraps as the page size is reduced.
+* :> &#9745; The top navigation list wraps as the page size is reduced.
 * :) &#9745; On hovering over cover images, a play icon appears overlaid.
 * :) &#9745; Only the main content area scrolls - it moves behind the upgrade bar and the player controls. The side menu also stays fixed as the main content scrolls.

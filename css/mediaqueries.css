@@ -1,3 +1,13 @@
+@media screen and (max-width: 1000px) {
+.top-nav {
+    grid-template-columns: minmax(600px,1fr);
+}
+
+.top-nav >ul {
+    grid-template-columns: repeat(3, 200px);
+}
+}
+
 @media screen and (max-width: 800px) {
 
     .container {
@@ -41,6 +51,7 @@
     .homelist>.hover>li {
         display: none;
     }
+
 
     /* .footer */
     .playback {

@@ -49,17 +49,18 @@ main>.spotify-play>h2 {
 
 .top-nav {
     display: grid;
-    grid-template-columns: 100px minmax(900px, 2fr) 100px;
+    grid-template-columns: minmax(800px,1fr);
     grid-template-areas:
-        ". ul .";
+        "ul";
+    justify-content: space-evenly;
+    place-items: center;
 }
 
 .top-nav>ul {
     grid-area: ul;
 
     display: grid;
-
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 200px);
     place-items: center;
 
     font-weight: 550;
@@ -85,7 +86,6 @@ main>.spotify-play>h2 {
     gap: 15px;
     overflow: hidden;
     justify-content: space-evenly;
-
 }
 
 .created-for>li,
@@ -98,6 +98,7 @@ main>.spotify-play>h2 {
 .created-for>li>img,
 .popular-artists>li>img,
 .recently-played>li>img {
+    padding-top: 10px;
     width: 194.5px;
     height: 194.5px;
     border-radius: 4px;
@@ -134,14 +135,15 @@ main>.spotify-play>h2 {
 }
 
 .overlay-play:hover {
-background-color: #1fdf64;
-cursor: pointer;
-transform: scale(1.05) translate(56px, -125px);
+    background-color: #1fdf64;
+    cursor: pointer;
+    transform: scale(1.05) translate(56px, -125px);
 }
 
 .created-for .overlay-play:hover {
     transform: translate(65px, -84px);
 }
+
 .popular-ppl {
     line-height: 1.4rem;
 }
