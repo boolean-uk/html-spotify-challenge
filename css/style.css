@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 ul {
     list-style: none;
 }
@@ -214,8 +218,6 @@ h2.mainAreaTitles:hover {
 
 .smallCard {
     height: 66px;
-    /* max-width: 420px; */
-    min-width: 240px;
     display: grid;
     grid-template-columns: 65px 1fr;
     grid-template-rows: 1fr;
@@ -361,7 +363,6 @@ h2.mainAreaTitles:hover {
 /* LEFT MENU  */
 
 .leftMenu {
-    height: 890px;
     grid-area: leftmenu;
     position: sticky;
     top: 0;
@@ -744,13 +745,24 @@ hr.pl {
         grid-template-columns: 200px 1fr;
     }
 
+    .footer {
+        grid-template-columns: min-content 1fr min-content;
+    }
+    .leftArea {
+        grid-template-columns: 65px 65px;
+        grid-template-areas: "pfp icons";
+        gap: 10px;
+    }
+    .leftAreaTitles {
+        display: none;
+    }
     .installApp {
         width: 200px;
     }
     
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
     .mainContainer {
         grid-template-columns: 80px 1fr;
     }
@@ -790,6 +802,22 @@ hr.pl {
     }
 
     .installApp > span {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: min-content 1fr;
+    }
+    .leftArea {
+        grid-template-columns: 65px 65px;
+        grid-template-areas: "pfp icons";
+        gap: 10px;
+    }
+    .leftAreaTitles {
+        display: none;
+    }
+
+    .additionalControls {
         display: none;
     }
     
