@@ -1,0 +1,530 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template:
+      " left-menu top" 100px
+      " left-menu main" 1000px
+      " foot foot"110px/
+      300px  1fr;
+    border: solid 1px black;
+    
+} 
+/* HEADER*/  
+.top {
+    grid-area: top;
+    display: grid;
+    background-color: rgb(21, 21, 21);
+    align-items: center;
+    position: relative;
+   
+}
+
+
+.top button{
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 40px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px 10px 30px;
+}
+
+/* LEFT MENU */
+.left-menu {
+    grid-area: left-menu;
+    display: grid;
+    border: solid 1px black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px 720px 100px;
+    background-color: black;
+    gap: 10px;
+}
+/* LEFT MENU - LOGO*/
+.spotify-logo{
+    display: grid;
+    padding: 30px 0px 0px 20px;
+}
+.spotify-logo svg{
+    width: 160px;  
+}
+/* LEFT MENU  - OPTIONS*/
+ .options {
+    display: grid;
+    grid-template:
+    "icons icons-ex"1fr/
+    40px 1fr;
+    margin-left: 20px;
+}
+.options .icons {
+    display: grid;
+    padding: 5px; 
+}
+
+
+.options .icons-ex a{
+    display: grid;
+    color: rgb(97, 94, 94);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    padding-top: 5px;
+}
+
+.options .icons-ex a.white {
+    color:white;
+}
+/* LEFT MENU - PLAYLIST*/
+.playlist {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    padding: 5px;
+    color: white;
+    
+}
+.playlist a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+ .playlist h4{
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.playlist p{
+    margin: 0px;
+    font-size: 20px;
+    color: rgb(159, 158, 158);
+}
+.playlist ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+}
+.left-menu .playlist a.span {
+   
+
+   padding-top: 5px;
+}
+
+
+/* LEFT MENU - PROFILE*/
+.profile {
+    align-items: center;
+}
+.profile svg {
+    width: 20px;
+    margin-left: 20px;
+    padding-top: 3px;
+    color: rgb(97, 94, 94);
+}
+.profile a {
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+.profile .profile-name {
+    color: white;
+    font-weight: bold;
+}
+.profile hr {
+    border-radius: 10px; 
+    width: 260px;
+    border: 1px rgb(97, 94, 94) solid;
+}
+
+/* LEFT MENU -  creative */
+.left-menu .options .icons svg:hover,
+.left-menu .options .icons-ex a:hover,
+.left-menu .playlist a:hover,
+.left-menu .profile a:hover{
+    color: white;
+    transition: 1s;
+}
+
+
+/* MAIN */
+.main{
+    grid-area: main;
+    display: grid;
+    background-color: rgb(35, 34, 34);
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "list-of-genre"
+    "recently-played"
+    "creato"
+    "artisti";
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+/* MAIN - LIST OF GENRE*/
+.main .list-of-genre {
+    display: grid;
+    place-items: center;
+    grid-area: list-of-genre;
+}
+.main .list-of-genre ul{
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 10px;
+    gap: 15px;    
+    font-size: 15px;
+}
+.main .list-of-genre ul a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+    font-weight: bold;   
+}
+
+.main .list-of-genre a:hover{
+    text-decoration: underline;
+    text-decoration-color: greenyellow; 
+}
+
+.main .list-of-genre a:hover::after{
+    width: 5%;
+}
+/* MAIN - RECENTLY PLAYED*/
+.main .recently-played {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+
+.main .recently-played .title a{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.main .recently-played .title a:hover{
+   text-decoration: underline;
+}
+
+.main .recently-played .grids {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+
+}
+.main .recently-played .grid-1,
+.main .recently-played .grid-2,
+.main .recently-played .grid-3,
+.main .recently-played .grid-4,
+.main .recently-played .grid-5,
+.main .recently-played .grid-6 {
+    display: grid;
+    grid-template-rows: 250px 80px;
+    margin-bottom: 50px;
+}
+.main .recently-played  .pics{  
+    display:grid;
+    place-items: center; 
+}
+
+.main .recently-played .explain{
+    display:grid;
+    text-align: center;
+    
+
+}
+.main .recently-played img {
+    width: 190px;
+    border-radius: 5px;
+}
+.main .recently-played h3{
+   margin: 5px;
+   font-size: 13px;
+}
+.main .recently-played p{
+    margin: 0px;
+    color: rgb(97, 94, 94);
+    font-size: 13px;
+}
+.main .recently-played a{
+    text-decoration: none;
+    color: white;
+}
+
+.main .recently-played .grids .grid-1:hover,
+.main .recently-played .grids .grid-2:hover,
+.main .recently-played .grids .grid-3:hover,
+.main .recently-played .grids .grid-4:hover,
+.main .recently-played .grids .grid-5:hover,
+.main .recently-played .grids .grid-6:hover  {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+
+
+
+
+/* MAIN - CREATO*/
+
+.main .creato {
+    grid-area: creato;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+    "title"
+    "grids";
+}
+.main .creato .title {
+    display: grid;
+}
+
+.title a.title {
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 0;  
+}
+.title a.title:hover {
+    text-decoration: underline;
+}
+.title p{
+    color: rgb(159, 158, 158) ;
+    margin-left: 20px;
+}
+
+.main .creato .grids {
+    display: grid;
+    grid-template-columns: 210px 210px 1fr;
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+}
+.main .creato .pics{  
+    display:grid;
+    place-items: center; 
+}
+.main .creato .grids .grid-1,
+.main .creato .grids .grid-2 {
+    display: grid;
+    grid-template-rows: 250px 40px;
+    margin-bottom: 50px;
+}
+
+.creato .grids .pics img {
+    width: 190px;
+    border-radius: 5px;
+}
+.creato .grids .explain {
+   color: white;
+   text-align: center;
+}
+.main .creato h3{
+    margin: 5px;
+    font-size: 13px;
+}
+
+.main .creato a{
+    text-decoration: none;
+    color: white;
+}
+
+.main .creato .grids .grid-1:hover,
+.main .creato .grids .grid-2:hover {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+ 
+
+
+
+/* MAIN - ARTISTI*/
+
+.main .artisti {
+    grid-area: artisti;
+    display: grid;
+    gap: 10px;
+    
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+    "title"
+    "grids";
+}
+
+
+.main .artisti .title {
+    display: grid;
+}
+.main .artisti .title a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.main .artisti .title a:hover {
+   text-decoration: underline;
+}
+.main .artisti .grids {
+    display: grid;
+    grid-template-columns: 210px 210px;
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+ 
+}
+
+.main .artisti .grids .grid-1,
+.main .artisti .grids .grid-2 {
+    display: grid;
+    grid-template-rows: 250px 80px;
+}
+.main .artisti .pics{  
+    display:grid;
+    place-items: center; 
+}
+.artisti .grids .pics img {
+    width: 190px;
+    border-radius: 50%;
+}
+.artisti .grids .explain {
+   color: white;
+   text-align: center;
+}
+.main .artisti h3{
+    margin: 5px;
+    font-size: 13px;
+}
+
+.main .artisti a{
+    text-decoration: none;
+    
+}
+
+.main .artisti .grids .grid-1:hover,
+.main .artisti .grids .grid-2:hover {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+/* FOOTER */ 
+
+.foot {
+    grid-area: foot;
+    display: grid;
+    background-color: rgb(21, 21, 21);
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+    gap: 5px;
+}
+
+.foot .playing {
+    display: grid;
+    padding-left: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.foot .playing .playing-img img {
+    width: 60px;
+    padding: 15px;
+}
+.foot .playing .playing-name h3{
+    color: white;
+    margin-bottom:5px;
+    padding-top: 5px;
+}
+.foot .playing .playing-name p{
+    color: rgb(159, 158, 158);
+    margin: 0px;
+}
+.foot .playing .playing-name a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+.foot .playing .playing-name a:hover{
+    text-decoration: underline;
+}
+.foot .playing .likes svg {
+    padding: 30px 0px 0px 20px;
+    
+}
+
+.foot .control-bar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+   
+}
+
+.foot .control-bar .controls {
+    display: grid;
+    grid-template-columns:  50px 50px 50px 50px 50px ;
+    place-items: center;
+    margin: auto;
+    padding-top:10px ;
+
+}
+.controls a{
+    color: white;
+
+}
+
+
+.indicate {
+    height: 3px;
+    border: solid 2px rgb(77, 76, 76);
+    border-radius: 30px;
+    width: 50%;
+    background-color: rgb(77, 76, 76);
+    overflow: hidden; 
+    margin: auto;
+    padding-top: 0px;
+   
+}
+
+.indicate:hover {
+    border: solid 2px rgb(146, 146, 150);
+}
+
+.box {
+    width: 0%;
+    height: 100%;
+    background-color:  rgb(146, 146, 150);
+    transition: 5s;
+}
+
+.indicate:hover .box {
+    width: 100%;
+}
+
+.foot .display {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 1fr;
+    place-items: center;
+    padding-left: 20px;
+}
+
+
+.wrapper {
+    height: 3px;
+    border: solid 2px rgb(77, 76, 76);
+    border-radius: 30px;
+    background-color: rgb(77, 76, 76);
+    overflow: hidden;
+    width: 50%;
+}
+
+.wrapper:hover {
+    border: solid 2px rgb(146, 146, 150);
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(146, 146, 150);
+    transition: 5s;
+}
+
+.wrapper:hover .bar {
+    width: 100%;
+}
