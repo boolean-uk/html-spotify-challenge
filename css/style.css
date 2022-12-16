@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template:
+    " left-menu header" 100px
+    " left-menu main" 700px
+    " foot foot"100px/
+    100px  1fr;
+    border: solid 1px black;
+} 
+
+.header {
+  grid-area: header;
+  display: grid;
+  border: solid 1px black;
+
+}
+
+.left-menu {
+  grid-area: left-menu;
+  display: grid;
+  border: solid 1px black;
+}
+
+.main{
+  grid-area: main;
+  display: grid;
+  border: solid 1px black;
+}
+
+.foot {
+  grid-area: foot;
+  display: grid;
+  border: solid 1px black;
+}
+
+
