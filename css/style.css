@@ -1,0 +1,824 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Additional Text  */
+
+a span {
+    padding-left: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/* FONT COLOURS  */
+
+.fcb3 {
+    color: #b3b3b3;
+}
+
+.fcWhite {
+    color: white;
+}
+
+
+/* ANIMATIONS  */
+
+.hoverWhiteHL:hover span,
+.leftAreaIcons > a > .lfArHeart > svg:hover,
+.leftAreaIcons > a > .lfArPinP > svg:hover {
+    color: white;
+}
+
+h2.mainAreaTitles:hover {
+    text-decoration: underline;
+}
+
+.smallCard:hover, 
+.largerCard:hover, 
+.hoverBG:hover {
+    background-color: #5f5d5d79;
+}
+
+.largerCard:hover .overlapPlay {
+    display: grid;
+}
+
+.showAll:hover,
+.lfArTitle > a > span:hover,
+.lfArAuthor > a > span:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.shuffleIcon:hover > svg,
+.backIcon:hover > svg,
+.forwardIcon:hover > svg,
+.repeatIcon:hover > svg {
+    color: white;
+}
+
+.playIcon:hover {
+    transform: scale(1.1);
+}
+
+.lyrics svg:hover,
+.queue svg:hover,
+.connectToDevice svg:hover,
+.soundIcon svg:hover,
+.fullScreen svg:hover {
+    color: white;
+}
+/* MAIN CONTAINER  */
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    grid-template-rows: 1fr 90px;
+    grid-template-areas: "leftmenu mainview"
+    "footer footer" 
+    ;
+}
+
+/* TOP BAR  */
+
+.header {
+    grid-area: mainview;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #260d109c;
+    display: grid;
+    grid-template-columns: 130px 1fr 200px;
+    grid-template-rows: 65px;
+    grid-template-areas: "arrows . profile";
+}
+
+/* FORWARD AND BACK ARROWS  */
+
+.headerArrows {
+    grid-area: arrows;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-left: 25px;
+}
+
+.headerArrows img {
+    width: 18px;
+}
+
+.leftArrow > img {
+    transform: translate(-2px);
+}
+
+.rightArrow > img {
+    transform: translate(2px);
+}
+
+.leftArrow, .rightArrow {
+    height: 33px;
+    width: 33px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* PROFILE  */
+
+.headerProfile {
+    grid-area: profile;
+    display: grid;
+    align-items: center;
+}
+
+.profile {
+    display: grid;
+    width: 160px;
+    height: 35px;
+    background-color: black;
+    grid-template-columns: 30px 1fr 30px;
+    border-radius: 25px;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.profilePic {
+    background-color: #535353;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.downArrow {
+    display: grid;
+    align-items: center;
+}
+
+.downArrow > img {
+    width: 12px;
+}
+
+/* MAIN VIEW AREA  */
+
+.mainArea {
+    grid-area: mainview;
+    background: linear-gradient(#2b0c0f, #121212) no-repeat;
+    background-size: auto 400px;
+    background-position: top;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+}
+
+.mainAreaTitles {
+    font-size: 1.6rem;
+}
+
+/* GOOD MORNING AREA  */
+
+
+.GoodMorning {
+    padding: 75px 0 50px 30px;
+}
+
+.mainTitle {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
+/* SMALL CARDS  */
+
+.gmCardArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fill, 66px);
+    gap: 20px;
+    padding-right: 25px;
+}
+
+.smallCard {
+    height: 66px;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    background-color: #2b2a2a79;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.smallCardPFP > img {
+    height: 66px;
+    width: 66px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.smallCardTitle {
+    height: 50px;
+    display: grid;
+    align-items: center;
+    
+    padding: 0px 20px 0px 0;
+}
+
+.smallCardTitle > span {
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+/* MAIN CARD AREA  */
+.audioBooks, 
+.topMixes,
+.popularWith {
+    padding-bottom: 50px;
+}
+
+.titleGrid {
+    padding: 0 0 0 30px;
+    display: grid;
+    grid-template-columns: max-content 1fr 100px;
+    grid-template-areas: "title . showall";
+    align-items: center;
+}
+
+.titleGrid > a:nth-child(2) {
+    grid-area: showall;
+}
+
+.titleGrid > a > span {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.audiobookArea, 
+.topMixArea, 
+.popWithArea {
+    padding: 25px 0 0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-rows: 290px;
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+}
+
+/* LARGER CARDS  */
+
+.largerCard {
+    height: 290px;
+    width: 200px;
+    background-color: #171717;
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr;
+    border-radius: 10px;
+    
+}
+
+.largerCardPFP {
+    display: grid;
+    place-items: center;
+}
+
+.coverContainer {
+    position: relative;
+}
+
+
+.overlapPlay {
+    display: none;
+    place-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+    background-color: #1ed760;
+    border-radius: 50%;
+}
+
+.overlapPlay > img {
+    transform: translate(2px);
+    width: 25px;
+    height: 25px;
+}
+
+.coverContainer > img {
+    height: 165px;
+    width: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.largerCardTitle {
+    display: grid;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.largerCardTitle > span {
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.largerCardAuthor {
+    display: grid;
+    padding: 0 10px 0 10px;
+}
+
+.largerCardAuthor > span {
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* LEFT MENU  */
+
+.leftMenu {
+    grid-area: leftmenu;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #000000;
+}
+
+.leftMenuWrap {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 65px 120px 1fr;
+    gap: 25px;
+}
+
+/* LOGO  */
+
+.leftMenuLogo {
+    display: grid;
+    margin: 0 0 0 25px;
+    align-items: end;
+}
+
+.leftMenuLogo > .mainLogo {
+    width: 130px;
+}
+
+.leftMenuLogo > .smallLogo {
+    display: none;
+    width: 80px;
+}
+
+/* NAV MENU  */
+
+.navMenu {
+    padding: 0 0 0 25px;
+}
+
+.lmwrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    height: 40px;
+}
+
+li img {
+    width: 26px;
+}
+
+/* CREATE PLAYLIST  */
+
+.yourPlaylists {
+    display: grid;
+    grid-template-rows: 40px 40px 20px 1fr;
+    grid-template-areas: 
+    "create"
+    "liked"
+    "hr"
+    "playlists";
+    padding-left: 25px;
+    align-items: center;
+}
+
+.createPlaylist {
+    grid-area: create;
+}
+
+.createPlaylistWrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.plusCon {
+    background-color: #b2b2b2;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+div.plusCon > span {
+    color: black;
+    padding-left: 0;
+    font-size: 1.4rem;
+}
+
+.likedSongs {
+    grid-area: liked;
+}
+
+.likedSongsWrap {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+div.heart {
+    background: linear-gradient(135deg, #340eaa, #829b9a);
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+div.heart > span {
+    padding-left: 0;
+    font-size: 1.3rem;
+}
+
+hr.pl {
+    grid-area: hr;
+    border:0;
+    width:95%;
+    background: #282828;
+    height: 1px;
+    
+}
+
+/* ALL PLAYLISTS  */
+
+.allPlaylistWrap {
+    padding-top: 10px;
+    grid-area: playlists;
+    height: 100%;
+}
+
+.allPlaylists {
+    display: grid;
+    grid-template-rows: repeat(autofill, 40px);
+    gap: 15px;
+}
+
+.allPlaylists > div > span {
+    font-size: 0.9rem;
+}
+
+.playlist3 {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+}
+
+.playlist3 > img {
+    width: 15px;
+}
+
+/* INSTALL APP  */
+
+.installApp {
+    height: 40px;
+    width: 385px;
+    position: fixed;
+    bottom: 90px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: #000000;
+}
+
+.installApp > img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.installApp > span {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    
+}
+
+/* FOOTER BAR  */
+
+.footer {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    background-color: #181818;
+
+    display: grid;
+    grid-template-columns: 385px 1fr 280px;
+    grid-template-rows: 90px;
+}
+
+/* LEFT AREA  */
+
+.leftArea {
+    display: grid;
+    grid-template-columns: 65px 1fr 60px;
+    grid-template-areas: "pfp title icons";
+    padding-left: 16px;
+    align-items: center;
+    gap: 5px;
+}
+
+.leftAreaPFP {
+    grid-area: pfp;
+}
+
+.leftAreaPFP > a > img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.leftAreaTitles {
+    grid-area: title;
+}
+
+.lfArAuthor span {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.leftAreaIcons {
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 90px;
+    align-items: center;
+    gap: 10px;
+}
+
+.lfArHeart > svg,
+.lfArPinP > svg  {
+    width: 15px;
+    color: #b3b3b3;
+}
+
+
+/* NOW PLAYING MID  */
+
+.nowPlaying {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+/* UPPER ROW  */
+
+.upperRow {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    grid-template-areas: ". playbuttons .";
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+.nowPlayingIcons {
+    grid-area: playbuttons;
+    display: grid;
+    grid-template-columns: repeat(5, 44px);
+    place-items: center;
+}
+
+.playIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.playIcon > svg {
+    transform: translate(1px);
+    color: black;
+}
+
+.repeatIcon > svg {
+    width: 20px;
+}
+
+.shuffleIcon > svg,
+.backIcon > svg,
+.forwardIcon > svg,
+.repeatIcon > svg {
+    color: #b3b3b3;
+}
+
+/* LOWER ROW  */
+
+.lowerRow {
+    display: grid;
+    grid-template-columns: 1fr 20px 5fr 20px 1fr;
+    grid-template-areas: ". current bar total .";
+    gap: 10px;
+}
+.currentTime {
+    grid-area: current;
+}
+
+.songBar {
+    grid-area: bar;
+    height: 5px;
+    background-color: #5e5e5e;
+    border-radius: 5px;
+    transform: translateY(7px);
+}
+
+.totalTime {
+    grid-area: total;
+}
+
+.currentTime > span,
+.totalTime > span {
+    font-size: 0.7rem;
+}
+
+/* ADDITIONAL CONTROLS  */
+
+.additionalControls {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 80px 20px;
+    grid-template-areas: "lyrics queue devices sound bar full";
+    gap: 15px;
+    padding: 0 25px 0 0;
+    place-items: center;
+}
+
+.lyrics {
+    grid-area: lyrics;
+}
+
+.queue {
+    grid-area: queue;
+}
+
+.connectToDevice {
+    grid-area: devices;
+}
+
+.soundIcon {
+    grid-area: sound;
+}
+
+.soundBar {
+    grid-area: bar;
+    height: 3px;
+    width: 100%;
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+
+.fullScreen {
+    grid-area: full;
+}
+
+.lyrics svg,
+.queue svg,
+.connectToDevice svg,
+.soundIcon svg,
+.fullScreen svg {
+    color: #b3b3b3;
+    transform: translateY(3px);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .mainContainer {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 320px 1fr 280px;;
+    }
+    .installApp {
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .mainContainer {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .footer {
+        grid-template-columns: min-content 1fr min-content;
+    }
+    .leftArea {
+        grid-template-columns: 65px 65px;
+        grid-template-areas: "pfp icons";
+        gap: 10px;
+    }
+    .leftAreaTitles {
+        display: none;
+    }
+    .installApp {
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 870px) {
+    .mainContainer {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .leftMenuLogo > .mainLogo {
+        display: none;
+    }
+
+    .leftMenuLogo > .smallLogo {
+        display: block;
+        color: white;
+        transform: translate(-25px);
+    }
+
+    .lmwrap {
+        grid-template-columns: 30px;
+    }
+
+    .lmwrap span {
+        display: none;
+    }
+
+    .yourPlaylists > div > a > div > span {
+        display: none;
+    }
+
+    .pl {
+        display: none;
+    }
+
+    .allPlaylists {
+        display: none;
+    }
+
+    .installApp {
+        width: 80px;
+    }
+
+    .installApp > span {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: min-content 1fr;
+    }
+    .leftArea {
+        grid-template-columns: 65px 65px;
+        grid-template-areas: "pfp icons";
+        gap: 10px;
+    }
+    .leftAreaTitles {
+        display: none;
+    }
+
+    .additionalControls {
+        display: none;
+    }
+    
+}
