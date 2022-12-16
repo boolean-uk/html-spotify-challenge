@@ -37,7 +37,7 @@ img:hover, h3:hover  {
 }
 .mainContainer {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 70px 1fr 100px;
     grid-template-areas: 
     "aside header"
@@ -73,6 +73,9 @@ aside {
     background-color: #080b12;
     padding-left: 15px;
     
+}
+#smallLogo {
+    display: none;
 }
 #logoTitle img {
     margin: 10px;
@@ -185,12 +188,19 @@ main p {
     height: 100%;
     object-fit: contain;
 } 
+.recentlyPlayed .playlist section {
+    display: grid;
+    justify-items: center;
+}
 .album {
     display: grid;
     grid-template-rows: 150px 75px ;
     justify-items: center;
 }
-
+.album div {
+    display: grid;
+    justify-items: center;
+}
 .album img {
     width: 100%;
     height: 100%;
@@ -242,6 +252,7 @@ main p {
     padding-left: 5px;
     
 }
+
 .currentlyListening a {
     color: white;
 }
@@ -352,4 +363,91 @@ span {
     background-color:#5a5a5a;
     animation: both;
     border-radius: 5px ;
+}
+
+@media screen and (max-width: 1230px)  {
+    .recentlyPlayed {
+        grid-template-columns: repeat(5, 150px);
+    }
+}
+@media screen and (max-width: 1060px) {
+    .recentlyPlayed {
+        grid-template-columns: repeat(4, 150px);
+    }
+    .libraryNavBar {
+        margin-left:5%;
+        margin-right:5%;
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .recentlyPlayed {
+        grid-template-columns: repeat(3, 150px);
+    }
+    .footer {
+        gap: 5px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .libraryNavBar {
+        margin: 0;
+        margin-top: 3px;
+    }
+ 
+
+}
+@media screen and (max-width: 760px ) {
+    .footer {
+        grid-template-columns: 145px 250px 200px;
+    }
+    .currentlyListening {
+        grid-template-columns: 40px 60px 20px;
+        grid-template-rows: 40px 20px;
+        grid-template-areas: 
+        "img nameandtitle icon"
+        ". . icon2"
+        ;
+        
+    }
+    .currentlyListening .songPlaying {
+        grid-area: img;
+    }
+    .currentlyListening div {
+        grid-area: nameandtitle;
+    }
+    .currentlyListening .icon {
+        grid-area: icon;
+    }
+    .currentlyListening #icon2 {
+        grid-area: icon2;
+        margin-top: 0;
+    }
+    aside h2, aside p, .mainNav div:last-of-type, 
+    #logoTitle, .createPlaylist, .playlists, .asideFooter {
+        display: none;
+    }
+    .mainContainer {
+        grid-template-columns: 50px 1fr;
+    }
+    #smallLogo {
+        display: block;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .progressBar {
+        width: 150px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        grid-template-columns: 145px 240px 150px;
+    }
+    .recentlyPlayed {
+        grid-template-columns: repeat(2, 150px);
+    }
+    .libraryNavBar ul #secondrow {
+        display: none
+    }
 }
