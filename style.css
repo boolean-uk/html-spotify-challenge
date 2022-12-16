@@ -1,0 +1,502 @@
+/* @font-face {
+    font-family: "SpotifyFont";
+    src: local(SpotifyFont), url("GothamBold.ttf") format("truetype"); 
+}  */
+
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.body{
+    margin: 10px auto;
+    display: grid;
+    grid-template:  
+    "leftbar header" 90px
+    "leftbar main" auto
+    "footer footer" 90px /
+    230px 1fr;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* left section */
+
+.left-section{
+    position: fixed;
+    left: 0;
+    grid-area: leftbar;
+    display: grid;
+    grid-template-rows: 90px min-content 800px min-content min-content;
+    column-width: auto;
+    padding: 0px 20px 20px 20px;
+    gap: 5px;
+    background: black;
+}
+
+/* Logo Section */
+
+.logo {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 34px;
+}
+
+/* Left Section Nav Bar */
+
+.left-section .left-nav-bar{
+    grid-area: 2;
+    display: grid;
+    place-items: start;
+}
+
+.left-section .left-nav-bar ul{
+    list-style: none;
+    display: grid;
+    padding: 0;
+}
+
+.left-section .left-nav-bar li img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.left-section .left-nav-bar li{
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+}
+
+.left-section .left-nav-bar h3 {
+    display: inline;
+    color: #7D7E84;
+}
+
+.left-section .left-nav-bar li:nth-child(1) h3 {
+    color: white;
+}
+
+
+.left-section .playlists-section{
+    grid-area: 3;
+    display: grid;
+    grid-template-rows: 20px 50px auto;
+    align-items: center;
+    justify-items: start;
+}
+
+.left-section .playlists-section .create-playlists{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-section .playlists-section .create-playlists img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.left-section .playlists-section .create-playlists p{
+    margin: 0;
+    color: #7D7E84;
+}
+
+
+
+.left-section .playlists-section .list-of-playlists{
+    list-style: none;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-self: start;
+    color: #7D7E84; 
+}
+
+/* Instal the app button */
+
+.left-section .install-the-app-ad-section{
+    display: grid;
+    place-items: end;
+    justify-items: start;
+    border-bottom: solid #7D7E84 1px;
+}
+
+.left-section .install-the-app-ad {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    color: #7D7E84;
+}
+
+.left-section .install-the-app-ad img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/* Profile section */
+
+.left-section .profile a{
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-section .profile img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #7D7E84;
+}
+
+/* Header */
+
+.header{
+    background-color: #080B13;
+    grid-area: header;
+    display: grid;
+    place-items: end;
+    align-items: center;
+}
+
+.header .upgrade p{
+    font-weight: bold;
+    border: 1px white solid;
+    display: inline;    
+    padding: 10px 40px 10px 40px;
+    border-radius: 30px;
+    margin-right: 10px;
+
+}
+
+/* Main Section */
+
+.main{
+    background-color: #141921;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 40px, 300px 300px 300px;
+}
+
+/* Main Nav */
+
+.main .main-nav {
+    grid-area: 1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.main .main-nav ul{
+    grid-area: 1 / 2;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 50px;
+    color: #7D7E84;
+    text-transform: uppercase;
+}
+
+/* Recently Played */
+
+.main img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.main .recently-played{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px
+}
+
+.main .recently-played h2{
+    margin: 0;
+    padding-left: 12px;
+}
+
+
+
+.main .recently-played .played-album-container{
+    display: grid;
+    grid-template-columns: repeat(6, 275px);
+    gap: 5px;
+
+}
+
+.main .recently-played .played-album-container .played-album{
+    display: grid;
+    place-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.main .recently-played .played-album-container .played-album p{
+    margin: 2px;
+    text-align: center;
+}
+
+.main .recently-played .played-album-container .played-album p:nth-child(3){
+    font-size: 14px;
+    color: #7D7E84;
+}
+
+
+/* Section 2 */
+
+.main .section-2{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0px 0px 0px 15px;
+}
+
+.main .section-2 .section-2-header{
+    line-height: 0.5rem;
+    margin: 0;
+    padding-left: 12px;
+}
+
+.main .section-2 .section-2-header p{
+    color: #7D7E84;
+}
+
+.main .section-2 .section-2-container {
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    gap: 5px;
+    
+}
+
+.main .section-2 .section-2-container .section-2-album{
+    display: grid;
+    place-items: center;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.main .section-2 .section-2-container .section-2-album p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Section 3 */
+
+.main .section-3{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 15px 0px 0px 15px;
+    margin-bottom: 20px;
+}
+
+.main .section-3 .section-3-header{
+    line-height: 0.5rem;
+    margin: 0;
+    padding-left: 12px;
+}
+
+.main .section-3 .section-3-header p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    color: #7D7E84
+}
+
+.main .section-3 .section-3-container {
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    gap: 5px;
+}
+
+.main .section-3 .section-3-container .section-3-album{
+    display: grid;
+    place-items: center;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.main .section-3 .section-3-container .section-3-album p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    grid-area: footer;
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+/* Left Bottom */
+
+.footer .now-playing {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.footer .now-playing .now-playing-album{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+}
+
+footer .now-playing .now-playing-album img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer .now-playing .now-playing-album .now-playing-album-text-info{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    margin-left: 10px;
+}
+
+.footer .now-playing .now-playing-album .now-playing-album-text-info p{
+    margin: 0;
+}
+
+.footer .now-playing .now-playing-album .now-playing-album-text-info p:nth-child(2){
+    font-size: 12px;
+    color: #7D7E84;
+
+}
+
+footer .now-playing img{
+    width: 20px;
+    height: 20px;
+
+}
+
+/* Player */
+
+.footer .audio-player{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    place-items: center;
+}
+
+/* Controls for player */
+
+.footer .audio-player .icons{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    gap: 40px;
+}
+
+.footer .audio-player .icons a{
+    display: grid;
+    place-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: #282828;
+    border: none;
+    padding: 0px;
+    
+}
+
+.footer .audio-player .icons a img{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    padding: 0px;
+}
+
+.footer .audio-player .icons .play-button{
+    height: 40px;
+    width: 40px;
+    /* padding: 6px;
+    border: 2px solid white;
+    border-radius: 50%; */
+}
+
+
+/* Progress Bar */
+
+.progress-bar-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer .progress-bar-container .progress-bar {
+    width: 500px;
+    height: 5px;
+    background-color: #7D7E84;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+.progress-bar-container .progress-bar .play-time-bar{
+    width: 30%;
+    height: 100%;
+    background-color: #C1C1C1;
+}
+
+/* @keyframes fill {
+    from {background-color: red;}
+    to {background-color: yellow;}
+} */
+
+/* Right Hand Section */
+
+footer .controls{
+    display: grid;
+    grid-template-columns: 25px 25px 25px auto;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+footer .controls img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.volume {
+    background-color: #7D7E84;
+    height: 3px;
+    width: 100px;
+}
+
+.current-volume{
+    height: 100%;
+    width: 70%;
+    background-color: #C1C1C1
+}
