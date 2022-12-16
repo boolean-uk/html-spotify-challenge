@@ -60,6 +60,12 @@ hr{
     border:0.5px solid grey;
   
 }
+
+p{
+    color:silver;
+    font-size: 11px;
+
+}
 .main.section1{
     display:grid;
     grid-template:
@@ -68,7 +74,7 @@ hr{
     "replayed"1fr
     "pics"1fr
     "comments"1fr/
-    1fr;
+     1fr;
 }
 
 .blankheader{
@@ -81,6 +87,7 @@ hr{
     justify-content: space-around;
     background-color: black;
     font-size: 13px;
+    width:100%;
     
    
     place-items: center;
@@ -108,13 +115,17 @@ hr{
 
 
     
-.left-menu>ul>li>hr{
+/*.left-menu>ul>li>hr{
     background-color: red;
-}
+}*/
 
 
 .footer{
-    background-color: aquamarine;
+    /*background-color: black;*/
+    display:grid;
+    place-content: center;
+      padding-left:400px;
+      font-size: 40px;
 }
 
 .main.section1{
@@ -125,7 +136,7 @@ hr{
     "replayed"1fr
     "pics"1fr
     "comments"1fr/
-    1fr;
+       1fr;
 }
 
 .Replayed,.select,.test{
@@ -133,20 +144,22 @@ hr{
     background-color:black;
     color:white;
     font-size: 20px;
+    width:100%;
     padding: 10px;
 }
 
 .pics,.picsection2,.picsection3{
     display: flex;
     flex-direction: row;
-    width:220px;
-    height:155px;
+    width:116px;
+    height:116px;
 }
 
 
  .comments,.comments2,.comments3{
     display:grid;
     grid-template-columns: repeat(5,auto);
+    font-size: 13px;
     text-align: left;
     border:none;
 
@@ -154,13 +167,17 @@ hr{
  /*::-webkit-scrollbar{
     display:none;}*/
 
-@media screen and (max-width:200px){
+        
+
+/*@media screen and (max-width:200px){
     body{
         color:green;
         display:grid;
         grid-template:repeat(2,auto)
     }
-}
+}*/
+
+
     
  
  
