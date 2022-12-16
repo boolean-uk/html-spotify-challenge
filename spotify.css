@@ -1,0 +1,693 @@
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+    max-height: 100vh;
+    
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template:
+      " left-menu top" 100px
+      " left-menu main" 1fr
+      " foot foot"110px/
+      minmax(180px, 300px)  minmax(758px, 1fr);
+      
+     
+    border: solid 1px black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+ 
+/* HEADER*/  
+.top {
+    grid-area: top;
+    display: grid;
+    background-color: rgb(21, 21, 21);
+    align-items: center;
+    
+}
+
+.top button{
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 40px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px 10px 30px;
+}
+
+/* LEFT MENU */
+.left-menu {
+    grid-area: left-menu;
+    display: grid;
+    border: solid 1px black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.8fr 5fr 1fr;
+    background-color: black;
+    gap: 10px;
+}
+/* LEFT MENU - LOGO*/
+.spotify-logo{
+    display: grid;
+    padding: 30px 0px 0px 20px;
+}
+.spotify-logo svg{
+    width: 160px;  
+}
+/* LEFT MENU  - OPTIONS*/
+ .options {
+    display: grid;
+    grid-template:
+    "icons icons-ex"1fr/
+    40px 1fr;
+    margin-left: 20px;
+}
+.options .icons {
+    display: grid;
+    padding: 5px; 
+}
+
+
+.options .icons-ex a{
+    display: grid;
+    color: rgb(97, 94, 94);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px;
+    padding-top: 5px;
+}
+
+.options .icons-ex a.white {
+    color:white;
+}
+/* LEFT MENU - PLAYLIST*/
+.playlist {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    padding: 5px;
+    color: white;
+    
+}
+.playlist a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+ .playlist h4{
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.playlist p{
+    margin: 0px;
+    font-size: 20px;
+    color: rgb(159, 158, 158);
+}
+.playlist ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+}
+.left-menu .playlist span {
+   position:absolute;
+   top:335px;
+   left: 65px;
+
+}
+
+
+/* LEFT MENU - PROFILE*/
+.profile {
+    align-items: center;
+}
+.profile svg {
+    width: 20px;
+    margin-left: 20px;
+    padding-top: 3px;
+    color: rgb(97, 94, 94);
+}
+.profile a {
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+.profile .profile-name {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 135px;
+    left: 50px;
+}
+.profile hr {
+    border-radius: 10px; 
+    width: 260px;
+    border: 1px rgb(97, 94, 94) solid;
+}
+.profile a.ins-app {
+    position: absolute;
+    bottom: 185px;
+    left: 50px;
+}
+/* LEFT MENU -  creative */
+.left-menu .options .icons svg:hover,
+.left-menu .options .icons-ex a:hover,
+.left-menu .playlist a:hover,
+.left-menu .profile a:hover{
+    color: white;
+    transition: 1s;
+}
+
+
+/* MAIN */
+main{
+    grid-area: main;
+    display: grid;
+    background-color: rgb(35, 34, 34);
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "list-of-genre"
+    "section-1"
+    "section-2"
+    "section-3";
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    
+}
+
+/* MAIN - LIST OF GENRE*/
+main .list-of-genre {
+    display: grid;
+    place-items: center;
+    grid-area: list-of-genre;
+}
+main .list-of-genre ul{
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 10px;
+    gap: 15px;    
+    font-size: 15px;
+}
+main .list-of-genre ul a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+    font-weight: bold;   
+}
+
+main .list-of-genre a:hover{
+    text-decoration: underline;
+    text-decoration-color: greenyellow; 
+}
+
+main .list-of-genre a:hover::after{
+    width: 5%;
+}
+/* MAIN - SECTION-1 */
+main .section-1 {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-area: section-1;
+}
+
+
+main .section-1 .title a{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+main .section-1 .title a:hover{
+   text-decoration: underline;
+}
+
+main .section-1 .grids {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(157px, 220px));
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+
+}
+main .section-1 .grid-1,
+main .section-1 .grid-2,
+main .section-1 .grid-3,
+main .section-1 .grid-4,
+main .section-1 .grid-5,
+main .section-1 .grid-6 {
+    display: grid;
+    grid-template-rows: 250px 80px;
+    margin-bottom: 50px;
+}
+main .section-1  .pics{  
+    display:grid;
+    place-items: center; 
+}
+
+main .section-1 .explain{
+    display:grid;
+    text-align: center;
+}
+main .section-1 img {
+    width: 190px;
+    border-radius: 5px;
+}
+main .section-1 h3{
+   margin: 5px;
+   font-size: 13px;
+}
+main .section-1 p{
+    margin: 0px;
+    color: rgb(97, 94, 94);
+    font-size: 13px;
+}
+main .section-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+main .section-1 .grids .grid-1:hover,
+main .section-1 .grids .grid-2:hover,
+main .section-1 .grids .grid-3:hover,
+main .section-1 .grids .grid-4:hover,
+main .section-1 .grids .grid-5:hover,
+main .section-1 .grids .grid-6:hover  {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+
+main .section-1 .grids  .pics .cardplaybutton {
+    position: absolute;
+    top: 220px;
+  left: 0;
+}
+
+main .section-1 .grids  .pics .cardplaybutton svg {
+    background: #1FDF64;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(140px, -50px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 50%);
+    opacity: 0;
+    transition: opacity .2s linear, transform .3s ease-out;
+}
+main .grids .grid-1 .pics,
+main .grids .grid-2 .pics,
+main .grids .grid-3 .pics,
+main .grids .grid-4 .pics,
+main .grids .grid-5 .pics, 
+main .grids .grid-6 .pics{
+    position: relative;
+}
+
+main .section-1 .grids .pics:hover .cardplaybutton svg {
+    opacity: 1;
+    transform: translate(140px, -70px);
+}
+
+
+
+
+
+
+/* MAIN - SECTION-2*/
+
+main .section-2 {
+    grid-area: section-2;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+    "title"
+    "grids";
+}
+main .section-2 .title {
+    display: grid;
+}
+
+.title a.title {
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 0;  
+}
+.title a.title:hover {
+    text-decoration: underline;
+}
+.title p{
+    color: rgb(159, 158, 158) ;
+    margin-left: 20px;
+}
+
+main .section-2  .grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+}
+main .section-2  .pics{  
+    display:grid;
+    place-items: center; 
+}
+main .section-2 .grids .grid-1,
+main .section-2 .grids .grid-2 {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    margin-bottom: 50px;
+}
+
+.section-2 .grids .pics img {
+    width: 190px;
+    border-radius: 5px;
+}
+.section-2 .grids .explain {
+   color: white;
+   text-align: center;
+   font-size: 13px;
+   padding-bottom: 5px;
+   
+}
+.main .section-2 h3{
+    margin: 5px;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+main .section-2 a{
+    text-decoration: none;
+    color: white;
+}
+
+main .section-2 .grids .grid-1:hover,
+main .section-2 .grids .grid-2:hover {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+ 
+
+main .section-2 .grids  .pics .cardplaybutton {
+    position: absolute;
+    top: 220px;
+  left: 0;
+}
+
+main .section-2 .grids  .pics .cardplaybutton svg {
+    background: #1FDF64;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(140px, -50px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 50%);
+    opacity: 0;
+    transition: opacity .2s linear, transform .3s ease-out;
+}
+main .grids .grid-1 .pics,
+main .grids .grid-2 .pics,
+main .grids .grid-3 .pics,
+main .grids .grid-4 .pics,
+main .grids .grid-5 .pics, 
+main .grids .grid-6 .pics{
+    position: relative;
+}
+
+main .section-2 .grids .pics:hover .cardplaybutton svg {
+    opacity: 1;
+    transform: translate(140px, -70px);
+}
+
+
+
+/* MAIN - SECTION-3*/
+
+main .section-3  {
+    grid-area: section-3;
+    display: grid;
+    gap: 10px;
+    
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+    "title"
+    "grids";
+}
+
+
+main .section-3 .title {
+    display: grid;
+}
+main .section-3 .title a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+main .section-3.title a:hover {
+   text-decoration: underline;
+}
+main .section-3 .grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+ 
+}
+
+main .section-3 .grids .grid-1,
+main .section-3 .grids .grid-2 {
+    display: grid;
+    grid-template-rows: 250px 80px;
+}
+main .section-3 .pics{  
+    display:grid;
+    place-items: center; 
+}
+.section-3 .grids .pics img {
+    width: 190px;
+    border-radius: 50%;
+}
+.section-3 .grids .explain {
+   color: white;
+   text-align: center;
+}
+main .section-3 h3{
+    margin: 5px;
+    font-size: 13px;
+}
+
+main .section-3 a{
+    text-decoration: none;
+    
+}
+
+main .section-3 .grids .grid-1:hover,
+main .section-3 .grids .grid-2:hover {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+main .section-3 .grids  .pics .cardplaybutton {
+    position: absolute;
+    top: 220px;
+  left: 0;
+}
+
+main .section-3 .grids  .pics .cardplaybutton svg {
+    background: #1FDF64;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(140px, -50px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 50%);
+    opacity: 0;
+    transition: opacity .2s linear, transform .3s ease-out;
+}
+main .grids .grid-1 .pics,
+main .grids .grid-2 .pics,
+main .grids .grid-3 .pics,
+main .grids .grid-4 .pics,
+main .grids .grid-5 .pics, 
+main .grids .grid-6 .pics{
+    position: relative;
+}
+
+main .section-3 .grids .pics:hover .cardplaybutton svg {
+    opacity: 1;
+    transform: translate(140px, -70px);
+}
+
+
+/* FOOTER */ 
+
+.foot {
+    grid-area: foot;
+    display: grid;
+    background-color: rgb(21, 21, 21);
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+    gap: 5px;
+}
+
+.foot .playing {
+    display: grid;
+    padding-left: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.foot .playing .playing-img img {
+    width: 60px;
+    padding: 15px;
+}
+.foot .playing .playing-name h3{
+    color: white;
+    margin-bottom:5px;
+    padding-top: 5px;
+}
+.foot .playing .playing-name p{
+    color: rgb(159, 158, 158);
+    margin: 0px;
+}
+.foot .playing .playing-name a{
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+}
+.foot .playing .playing-name a:hover{
+    text-decoration: underline;
+}
+.foot .playing .likes svg {
+    padding: 30px 0px 0px 20px;
+    
+}
+
+.foot .control-bar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+   
+}
+
+.foot .control-bar .controls {
+    display: grid;
+    grid-template-columns:  50px 50px 50px 50px 50px ;
+    place-items: center;
+    margin: auto;
+    padding-top:10px ;
+
+}
+.controls a{
+    color: white;
+
+}
+
+
+.indicate {
+    height: 3px;
+    border: solid 2px rgb(77, 76, 76);
+    border-radius: 30px;
+    width: 50%;
+    background-color: rgb(77, 76, 76);
+    overflow: hidden; 
+    margin: auto;
+    padding-top: 0px;
+   
+}
+
+.indicate:hover {
+    border: solid 2px rgb(146, 146, 150);
+}
+
+.box {
+    width: 0%;
+    height: 100%;
+    background-color:  rgb(146, 146, 150);
+    transition: 5s;
+}
+
+.indicate:hover .box {
+    width: 100%;
+}
+
+.foot .display {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 1fr;
+    place-items: center;
+    padding-left: 20px;
+}
+
+
+.wrapper {
+    height: 3px;
+    border: solid 2px rgb(77, 76, 76);
+    border-radius: 30px;
+    background-color: rgb(77, 76, 76);
+    overflow: hidden;
+    width: 50%;
+}
+
+.wrapper:hover {
+    border: solid 2px rgb(146, 146, 150);
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(146, 146, 150);
+    transition: 5s;
+}
+
+.wrapper:hover .bar {
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 939px) {
+    body{
+        grid-template-columns: 80px minmax(0, 1fr);
+    }
+    
+    .leftmenu .spotify-logo .spotify-logo--text{
+        display: none;
+    }
+  
+   
+    .left-menu .options .icons-ex {
+        display: none;
+    }
+
+    .left-menu .playlist {
+        display: none;
+    }
+    .left-menu .profile {
+        display: none;
+    }
+}
+  
+@media screen and (max-width:838px ){
+    main .list-of-genre ul{
+        display: none;
+    }
+    .foot .display {
+        display: none;
+    }
+} 
+
+  
+
+@media screen and (max-width: 522px) {
+    .top button {
+        display: none;
+    }
+    .foot .playing {
+        display: none;
+    }
+  
+   .foot .control-bar {
+     align-items: center;
+    justify-content: center;
+   }
+}
