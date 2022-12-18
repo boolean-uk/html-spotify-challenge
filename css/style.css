@@ -259,6 +259,7 @@ img{
 
 .popular.artist img{
     width: 200px;
+    border-radius: 50%;
 }
 .popular.artist p{
     margin-left: 30px;
