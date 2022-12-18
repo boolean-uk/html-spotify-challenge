@@ -28,11 +28,26 @@ main {
 
 #topBlank {
     background-color: #030814;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    padding-right: 80px;    
+}
+
+#topBlank div {
+    border: white solid 2px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#topBlank div span{
+    color: white;
 }
 
 #leftMenu {
     display: grid;
-    grid-template-rows: 150px repeat(9, 40px);
+    grid-template-rows: 150px repeat(9, 40px) 1fr;
     background-color: black;
     padding-left: 20px;
     font-size: 20px;
@@ -65,6 +80,39 @@ main {
 .fa-solid {
     color: gray;
     font-size: 40px;
+}
+
+#appProfile {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 600px;
+}
+
+#install {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    border-bottom: #808080 solid 2px;
+    padding: 10px;
+    margin-right: 50px;
+    align-items: center;
+      
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+#profile div img {
+    background-color: #808080;
+    border-radius: 50%;    
+}
+
+#profile div span {
+    color: white;
+    font-weight: bold;
 }
 
 /* main content */
