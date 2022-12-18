@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/59ab1ef207.js" crossorigin="anonymous"></script>
     <title>Spotify Challenge</title>
 </head>
 <body>
     <main>
         <div id="spotifyHome">
-            <span>Spotify</span>
+            <img src="./assets/img/logo.svg" alt="logo" width="150" height="75">
         </div>
-        <div id="topBlank">
-            <span>top blank</span>
+        <div id="topBlank">            
         </div>
         <div id="leftMenu">
             <div class="menuItems">
-                <div>icon</div>
+                <div><img src="./assets/img/home.svg" alt="home" width="30"></div>
                 <div><span>Home</span></div>
-                <div>icon</div>
+                <div><img src="./assets/img/search.svg" alt="search" width="30"></div>
                 <div><span>Search</span></div>
-                <div><span>icon</span></div>
+                <div><img src="./assets/img/libreria.svg" alt="library" width="30"></div>
                 <div><span>Your Library</span></div>
             </div>
-            <div><span>PLAYLISTS</span></div>
+            <div id="playlistsTitle"><span>PLAYLISTS</span></div>
             <div id="newPlaylist">
-                <div>icon</div>
+                <div><i class="fa-solid fa-square-plus"></i></div>
                 <div><span>New Playlist</span></div>
             </div>
             <div><span>Playlist 1</span></div>
@@ -38,7 +38,7 @@
             <div><span>Playlist 7</span></div>
         </div>
         <div class="mainContainer">
-            <div id="navBar">
+            <div id="navBar">                
                 <div class="navItem">
                     <span>In Library</span>
                 </div>
@@ -66,7 +66,62 @@
             <div class="music">
                 <div class="playlist">
                     <div class="artwork">
-                        <span>album</span>
+                        <img src="./assets/img/metal_lifting.jpg" alt="metal lifting">
+                    </div>
+                    <div class="playlistName">
+                        <span>Heavy Metal</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Subtitle</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/stranger.jpeg" alt="stranger">
+                    </div>
+                    <div class="playlistName">
+                        <span>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Kyle Dixon & Michael Stein</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/aquietplace.jpeg" alt="a quiet place">
+                    </div>
+                    <div class="playlistName">
+                        <span>A Quiet Place</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Subtitle</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/split.jpeg" alt="split">
+                    </div>
+                    <div class="playlistName">
+                        <span>Split</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Subtitle</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/cure.jpeg" alt="a cure for wellness">
+                    </div>
+                    <div class="playlistName">
+                        <span>Heavy Metal</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Subtitle</span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/sinister.jpeg" alt="sinister">
                     </div>
                     <div class="playlistName">
                         <span>Heavy Metal</span>
@@ -79,24 +134,77 @@
             
             <div class="listTitle">
                 <span>Created for you</span>
+                <p>The more you listen, the more accurate the suggestions will be</p>
             </div>
 
             <div class="music">
                 <div class="playlist">
                     <div class="artwork">
-                        <span>album</span>
+                        <img src="./assets/img/radar.jpeg" alt="radar">
                     </div>
                     <div class="playlistName">
-                        <span>Heavy Metal</span>
+                        <span>Release radar</span>
+                    </div>                    
+                </div>
+                <div class="playlist">
+                    <div class="artwork">
+                        <img src="./assets/img/mixdaily.jpeg" alt="daily mix">
                     </div>
-                    <div class="subtitle">
-                        <span>Subtitle</span>
-                    </div>
+                    <div class="playlistName">
+                        <span>Daily Mix 1</span>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="listTitle">
+                <span>Popular Artists</span>
+                <p>The more you listen, the more accurate the suggestions will be</p>
+            </div>
+
+            <div class="music">
+                <div class="playlist">
+                    <div class="artistProfile">
+                        <img src="./assets/img/youg.jpeg" alt="radar">
+                    </div>                                    
+                </div>
+                <div class="playlist">
+                    <div class="artistProfile">
+                        <img src="./assets/img/einaudi.jpeg" alt="">
+                    </div>                                       
                 </div>
             </div>
 
         </div>
     </main>
-    
+    <footer>
+        <div id="nowPlaying">
+            <div>
+                <img src="./assets/img/sinister.jpeg" alt="">
+            </div>
+            <div>
+                <p>Sinister</p>
+                <p>Band Name</p>
+            </div>
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-regular fa-folder"></i></div>
+            
+        </div>
+        <div id="playBar">
+            <div id="controls">
+                <div><i class="fa-solid fa-shuffle"></i></div>
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div><i class="fa-regular fa-circle-play"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+                <div><i class="fa-solid fa-arrow-rotate-right"></i></div>
+
+            </div>
+            <div id="timeBar">
+                <div><span>0:25</span></div>
+                <div id="fakeTime"><span style="width: 10%"></span></div>
+                <div><span>4:35</span></div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
