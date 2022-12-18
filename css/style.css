@@ -1,0 +1,63 @@
+* {
+    color: #717171;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "spotifyHome topBlank"
+    "leftMenu mainContainer";
+}
+
+#spotifyHome {
+    background-color: #000000;
+}
+
+#topBlank {
+    background-color: #030814;
+}
+
+#leftMenu {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    background-color: black;
+}
+
+
+.menuItems {
+    display: grid;
+    grid-template-columns: 60px 100px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#newPlaylist {
+    display: grid;
+    grid-template-columns: 80px 100px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: 50px 50px 1fr 50px  1fr;
+    background-color: #11141b;    
+}
+
+#navBar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px;
+    justify-items: right;
+}
+
+.music {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.playlist {
+    display: grid;
+    grid-template-rows: 1fr 40px 40px;
+    justify-items: center;
+}
