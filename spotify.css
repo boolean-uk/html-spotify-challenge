@@ -12,8 +12,6 @@ body {
       " left-menu main" 1fr
       " foot foot"110px/
       minmax(180px, 300px)  minmax(758px, 1fr);
-      
-     
     border: solid 1px black;
     width: 100vw;
     height: 100vh;
@@ -21,14 +19,17 @@ body {
     padding: 0;
 }
  
+
 /* HEADER*/  
 .top {
     grid-area: top;
     display: grid;
     background-color: rgb(21, 21, 21);
     align-items: center;
-    
+  position: relative;
+   
 }
+
 
 .top button{
     height: 50px;
@@ -78,9 +79,10 @@ body {
     display: grid;
     color: rgb(97, 94, 94);
     text-decoration: none;
-    font-size: 15px;
-    line-height: 40px;
+    font-size: 19px;
+    line-height: 45px;
     padding-top: 5px;
+
 }
 
 .options .icons-ex a.white {
@@ -98,7 +100,7 @@ body {
     text-decoration: none;
     color: rgb(97, 94, 94);
 }
- .playlist h4{
+ .playlist h3{
     margin: 0px;
     padding-bottom: 10px;
 }
@@ -113,6 +115,9 @@ body {
     line-height: 30px;
 }
 
+.left-menu .playlist a.span {
+   padding-top: 5px;
+}
 
 
 /* LEFT MENU - PROFILE*/
@@ -163,7 +168,6 @@ main{
     "section-3";
     scroll-behavior: smooth;
     overflow-y: scroll;
-    
 }
 
 /* MAIN - LIST OF GENRE*/
@@ -434,7 +438,7 @@ main .section-3 .title a {
     margin-left: 20px;
 }
 
-main .section-3.title a:hover {
+main .section-3 .title a:hover {
    text-decoration: underline;
 }
 main .section-3 .grids {
