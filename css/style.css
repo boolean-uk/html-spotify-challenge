@@ -1,3 +1,16 @@
+html
+{
+    color-scheme: dark !important;
+}
+
+*
+{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 body
 {
     margin: 0px;
@@ -7,7 +20,7 @@ body
     "left top" 1fr
     "left main" 8fr
     "bottom bottom" 1fr/
-    1fr 5fr;
+    250px 5fr;
     color: white;
     text-decoration: none;
 }
@@ -18,6 +31,8 @@ ul{
 
 .container
 {display: grid;}
+
+/*top part*/
 
 #headSection
 {
@@ -40,6 +55,8 @@ ul{
     text-align:center;
 }
 
+/*left section*/
+
 #leftSection{
     background-color: black;
     grid-area: left;
@@ -49,33 +66,144 @@ ul{
     "playlistNav" 250px
     "." 1fr
     "installApp" 30px
-    "profile" 50px
+    "profile" 50px;
 }
+
+#createPlaylistSVG
+{
+    background-color: aliceblue;
+    width: 25px;
+}
+
+/*main section*/
 
 #mainSection{
     background-color: rgb(20,25,34);
     grid-area: main;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    gap:50px;
+    overflow-y: scroll;
 }
+
+#playlistNav{
+    grid-area: playlistNav;
+}
+#mainIcon{grid-area: mainIcon;}
+#topNav{grid-area: topNav;}
+#installApp, #profileWidget
+{
+    margin-left: 50px;
+}
+
+#profileWidget{grid-area: profile;}
+#installApp{
+    grid-area: installApp;
+    height: 25px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    width: 150px;
+    margin: 0px;
+    margin-bottom: 25px;
+    border-bottom: 1px white solid;
+    place-self: center;
+}
+/*player*/ 
 
 #audioPlayer{
     background-color: rgb(40,40,40);
     grid-area: bottom;
 }
 
-#installApp, #profileWidget
+#mainSectionNav
 {
-    margin-left: 50px;
+    text-align: center;
 }
 
-#mainIcon{grid-area: mainIcon;}
-#topNav{grid-area: topNav;}
-#playlistNav{grid-area: playlistNav;}
+#mainSectionNav>ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px;
+    font-size: 1.1em;
+}
 
-#installApp{
-    grid-area: installApp;
+
+svg
+{
     height: 25px;
-    font-size: 0.8em;
 }
 
-#profileWidget{grid-area: profile;}
+.spotify-logo--text
+{
+    margin: 25px;
+    height: 50px;
+}
+
+.spotify-logo
+{
+    display: none;
+}
+
+@media screen and (max-width: 560px){
+
+    body
+    {
+        grid-template-columns: 50px 1fr;
+    }
+
+    #leftSection
+    {
+        width: 50px;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .spotify-logo--text
+    {
+        display: none;
+    }
+
+    .spotify-logo
+    {
+        display:initial;
+        height: 25px;
+    }
+
+    #topNav>ul
+    {
+        padding: 0px;
+    }
+
+    #leftSection span
+    {
+        display: none;
+    }
+
+    svg
+    {
+        height: 25px;
+    }
+
+    #playlistNav
+    {
+        display: none;
+    }
+
+    #profileWidget, #installApp
+    {
+        margin: 0px;
+    }
+
+    #installApp
+    {
+        border: none;
+    }
+}
