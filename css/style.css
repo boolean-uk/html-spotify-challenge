@@ -1,7 +1,4 @@
-html
-{
-    color-scheme: dark !important;
-}
+html {color-scheme: dark !important;}
 
 *
 {
@@ -25,12 +22,9 @@ body
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
-.container
-{display: grid;}
+ul  {list-style: none;}
+svg {height: 25px;}
+.container {display: grid;}
 
 /*top part*/
 
@@ -68,30 +62,27 @@ ul{
     "installApp" 30px
     "profile" 50px;
 }
+.spotify-logo--text
+{
+    margin: 25px;
+    height: 50px;
+}
 
+.spotify-logo
+{
+    display: none;
+}
 #createPlaylistSVG
 {
     background-color: aliceblue;
     width: 25px;
 }
-
-/*main section*/
-
-#mainSection{
-    background-color: rgb(20,25,34);
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap:50px;
-    overflow-y: scroll;
-}
-
 #playlistNav{
     grid-area: playlistNav;
 }
 #mainIcon{grid-area: mainIcon;}
 #topNav{grid-area: topNav;}
+
 #installApp, #profileWidget
 {
     margin-left: 50px;
@@ -109,13 +100,18 @@ ul{
     border-bottom: 1px white solid;
     place-self: center;
 }
-/*player*/ 
 
-#audioPlayer{
-    background-color: rgb(40,40,40);
-    grid-area: bottom;
+/*main section*/
+
+#mainSection{
+    background-color: rgb(20,25,34);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:50px;
+    overflow-y: scroll;
 }
-
 #mainSectionNav
 {
     text-align: center;
@@ -131,21 +127,11 @@ ul{
     font-size: 1.1em;
 }
 
+/*player*/ 
 
-svg
-{
-    height: 25px;
-}
-
-.spotify-logo--text
-{
-    margin: 25px;
-    height: 50px;
-}
-
-.spotify-logo
-{
-    display: none;
+#audioPlayer{
+    background-color: rgb(40,40,40);
+    grid-area: bottom;
 }
 
 @media screen and (max-width: 560px){
