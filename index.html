@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Spotify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="site-layout-container">
+      <nav class="left-menu">
+        <img id="logo" src="./assets/img/logo.svg" alt="" />
+        <ul class="nav-with-icons">
+          <img src="./assets/img/home.svg" alt="home icon" />
+          <li><a href="">Home</a></li>
+          <img src="./assets/img/search.svg" alt="search icon" />
+          <li><a href="">Search</a></li>
+          <img src="./assets/img/libreria.svg" alt="Your Library icon" />
+          <li><a href="">Your Library</a></li>
+        </ul>
+
+        <ul class="playlists">
+          <h3>PLAYLISTS</h3>
+          <li id="create-playlist"><a href="">Create playlist</a></li>
+          <li><a href="">Playlist 1</a></li>
+          <li><a href="">Playlist 2</a></li>
+          <li><a href="">Playlist 3</a></li>
+          <li><a href="">Playlist 4</a></li>
+          <li><a href="">Playlist 5</a></li>
+          <li><a href="">Playlist 6</a></li>
+          <li><a href="">Playlist 7</a></li>
+        </ul>
+
+        <!-- Make this a grid and add a border gap with the grey colour: -->
+        <div class="profile-info">
+          <img src="./assets/img/profile.svg" alt="" />
+
+          <a id="user-name" href="">John Doe</a>
+        </div>
+      </nav>
+
+      <header class="header"></header>
+      <nav class="top-nav"></nav>
+      <main class="main-content">
+        <section class="recently-played">
+          <h2>Recently Played</h2>
+          <div class="titles">
+            <div class="titles-recently-played">
+              <img
+                src="./assets/img/metal_lifting.jpg"
+                alt="Heavy Metal"
+                class="title-image"
+              />
+              <h3>Heavy Metal</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="titles-recently-played">
+              <img
+                src="./assets/img/stranger.jpeg"
+                alt=""
+                class="title-image"
+              />
+              <h3>
+                Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)
+              </h3>
+              <h4>Kyle Dixon & Michael Stein</h4>
+            </div>
+            <div class="titles-recently-played">
+              <img
+                src="./assets/img/aquietplace.jpeg"
+                alt=""
+                class="title-image"
+              />
+              <h3>A quiet place</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="titles-recently-played">
+              <img src="./assets/img/split.jpeg" alt="" class="title-image" />
+              <h3>Split</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="titles-recently-played">
+              <img src="./assets/img/cure.jpeg" alt="" class="title-image" />
+              <h3>A cure for wellness</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="titles-recently-played">
+              <img
+                src="./assets/img/sinister.jpeg"
+                alt=""
+                class="title-image"
+              />
+              <h3>Sinister</h3>
+              <h4>Subtitle</h4>
+            </div>
+          </div>
+        </section>
+        <section class="created-for"></section>
+        <section class="most-popular"></section>
+      </main>
+      <footer class="player-controls"></footer>
+    </div>
+  </body>
 </html>
