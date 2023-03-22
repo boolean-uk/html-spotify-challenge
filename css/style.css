@@ -1,0 +1,270 @@
+html {color-scheme: dark !important;}
+
+*
+{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+body
+{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 
+    "left top" 1fr
+    "left main" 8fr
+    "bottom bottom" 1fr/
+    250px 5fr;
+    color: white;
+    text-decoration: none;
+}
+
+ul  {list-style: none;}
+svg {height: 25px;}
+.container {display: grid;}
+
+/*top part*/
+
+#headSection
+{
+    background-color: rgb(8,11,18);
+    grid-area: top;
+    place-items: center end;
+    height: 100px;
+}
+
+#headSection>div
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px white solid;
+    border-radius: 1000px;
+    text-align:center;
+}
+
+/*left section*/
+
+#leftSection{
+    background-color: black;
+    grid-area: left;
+    grid-template:
+    "mainIcon" 100px
+    "topNav" 150px
+    "playlistNav" 250px
+    "." 1fr
+    "installApp" 30px
+    "profile" 50px;
+}
+.spotify-logo--text
+{
+    margin: 25px;
+    height: 50px;
+}
+
+.spotify-logo
+{
+    display: none;
+}
+#createPlaylistSVG
+{
+    background-color: aliceblue;
+    width: 25px;
+}
+#playlistNav{
+    grid-area: playlistNav;
+}
+#mainIcon{grid-area: mainIcon;}
+#topNav{grid-area: topNav;}
+
+#installApp, #profileWidget
+{
+    margin-left: 50px;
+}
+
+#profileWidget{grid-area: profile;}
+#installApp{
+    grid-area: installApp;
+    height: 25px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    width: 150px;
+    margin: 0px;
+    margin-bottom: 25px;
+    border-bottom: 1px white solid;
+    place-self: center;
+}
+
+/*main section*/
+
+#mainSection{
+    background-color: rgb(20,25,34);
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow-y: auto;
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+
+#mainSectionNav
+{
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+}
+
+#mainSectionNav>ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px;
+    font-size: 1.1em;
+}
+
+.titleList
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title
+{
+    min-width: 250px;
+    min-height: 350px;
+    height: 350px;
+    width: 250px;
+    text-align: center;
+}
+
+.title img
+{
+    height: 200px;
+    width: 200px;
+}
+
+.title h3
+{
+    font-size: 17px;
+    font-weight:bolder;
+}
+
+h4
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: grey;
+}
+
+#recent, #suggested, #popularArtists
+{   width: 100%;    }
+
+#popularArtists .title img
+{
+    box-sizing: border-box;
+    border-radius: 999px;
+}
+/*player*/ 
+
+#audioPlayer{
+    background-color: rgb(40,40,40);
+    grid-area: bottom;
+    grid-template-columns: 2fr 5fr 3fr;
+}
+
+#trackInfoSection
+{
+    padding: 5px;
+    grid-template-columns: 50px 4fr 25px 25px;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.75em;
+}
+
+#audioPlayer svg{
+    height: 25px;
+    width: 25px;
+}
+
+#playingImage
+{
+    height: 50px;
+}
+
+audio
+{
+    margin-left: 25%;
+    height: 80%;
+    width: 70%;
+}
+
+@media screen and (max-width: 650px){
+
+    body
+    {
+        grid-template-columns: 50px 1fr;
+    }
+
+    #leftSection
+    {
+        width: 50px;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .spotify-logo--text
+    {
+        display: none;
+    }
+
+    .spotify-logo
+    {
+        display:initial;
+        height: 25px;
+    }
+
+    #topNav>ul
+    {
+        padding: 0px;
+    }
+
+    #leftSection span
+    {
+        display: none;
+    }
+
+    svg
+    {
+        height: 25px;
+    }
+
+    #playlistNav
+    {
+        display: none;
+    }
+
+    #profileWidget, #installApp
+    {
+        margin: 0px;
+    }
+
+    #installApp
+    {
+        border: none;
+    }
+}
