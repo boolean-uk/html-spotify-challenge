@@ -42,16 +42,6 @@ body {
   color: white;
   font-size: 20px;
 }
-.search {
-  color: white;
-  font-size: 20px;
-  position: relative;
-  bottom: 4px;
-}
-.your-library {
-  color: white;
-  font-size: 20px;
-}
 
 .home-icon {
   width: 40px;
@@ -59,12 +49,46 @@ body {
   bottom: 37px;
   right: 55px;
 }
+.search {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}
 
 .search-icon {
   width: 40px;
   position: relative;
   bottom: 38px;
   right: 55px;
+}
+
+.your-library {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.your-library-icon {
+  width: 40px;
+  position: relative;
+  bottom: 45px;
+  right: 55px;
+}
+
+.createplaylist {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 120px;
+  left: 44px;
+}
+
+.createplaylist-icon {
+  width: 40px;
+  filter: invert(56%) sepia(87%) saturate(3605%) hue-rotate(181deg)
+    brightness(33%) contrast(30%);
 }
 
 /* Created a grid for the 4 rows */
@@ -105,4 +129,8 @@ body {
   background-color: yellowgreen;
   padding: 20px;
   height: 150px;
+}
+
+.hello {
+  color: blue;
 }
