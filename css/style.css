@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+/* Left-side-bar - fixed position */
+.left-side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Created a grid for the 4 rows */
+
+.grid {
+  display: grid;
+  grid-template:
+    "top-row"
+    "nav-row"
+    "main-row";
+  grid-template-rows: 175px 125px 1250px;
+  border: 1px dashed black;
+}
+
+/* Grid template areas */
+
+.top-row {
+  grid-area: top-row;
+  background-color: coral;
+}
+
+.nav-row {
+  grid-area: nav-row;
+  background-color: rgb(3, 85, 41);
+}
+
+.main-row {
+  grid-area: main-row;
+  background-color: crimson;
+}
+
+.bottom-row {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 5000px;
+  background-color: yellowgreen;
+  padding: 20px;
+}
