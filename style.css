@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+body {
+    background-color: black;
+}
+.container {
+    height: 100vh;
+    grid-template:
+    "left  main"   calc(100vh - 200px)
+    "audio audio" 200px /
+    350px   1fr;
+}
+
+/* SHORTCUTS TO RE-USE CLASS */
+.g {
+    display: grid;
+}
+
+/* LEFT-SIDEBAR */
+
+.left {
+    grid-area: left;
+    grid-template-rows: 100px 180px 130px 1fr 50px 80px;
+    padding-left: 40px;
+}
+
+.left > div:nth-child(1) > img {
+    height: 60px;
+}
+.left > div:nth-child(1) {
+    padding: 15px 0px;
+}
+
+.logo {
+    position: relative;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+}
+nav a {
+    text-decoration: none;
+}
+nav label {
+    font-size: 24px;
+    padding-left: 10px;
+}
+.playlist-list {
+    overflow: scroll;
+}
+.playlist > h2 {
+    padding-top: 20px;
+    color: white;
+}
+.playlist-list ul {
+    overflow: scroll;
+    list-style: none;
+}
+.playlist-list li {
+    margin: 20px 0;
+    font-size: 24px;
+}
+.submit {
+    color: black;
+    background-color: gray;
+    padding-bottom: 52px;
+}
+.submit, .newlist {
+    margin: 15px 0;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    display: inline;
+}
+.newlist {
+    background-color: black;
+    width: 200px;
+    font-size: 24px;
+    border: none;
+}
+.install-app {
+    border-bottom: solid 1px gray;
+    width: 90%;
+}
+.install-app img, .install-app p {
+    display: inline;
+}
+.install-app img {
+    height: 30px;
+}
+.install-app p {
+    font-size: 20px;
+}
+.profile img, .profile p {
+    display: inline;
+    font-size: 26px;
+    color: white;
+}
+.profile {
+    position: r;
+    padding-top: 10px;
+}
+.profile p {
+    padding-left: 15px;
+}
+
+
+
+
+/* HEADER */
+
+header {
+    background-color: rgb(24, 24, 24);
+    grid-area: header;
+    place-items: center end;
+    position: sticky;
+    width: calc(100vw - 350px);
+    height: 100px;
+    top: 0;
+    padding-right: 40px;
+    margin-left: -60px;
+}
+header > button {
+    width: 400px;
+    height: 70px;
+    border: solid white 2px;
+    border-radius: 35px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+main {
+    background-color: rgb(20, 21, 30);
+    grid-area: main;
+    width: calc(100vw - 350px);
+    overflow: scroll;
+    padding-left: 60px;
+    grid-template-rows: repeat(auto-fit, auto);
+}
+main h2 {
+    margin: 60px 0;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* TOP SONGS - GOOD MORNING */
+
+.listitem {
+    grid-template-columns: 100px 400px;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(128, 128, 128, 0.102);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100px;
+}
+.top-songs > .list {
+    grid-template-columns: repeat(auto-fit, 500px);
+    gap: 50px;
+}
+
+.listitem img {
+    width: 100px;
+    display: inline;
+}
+.top-songs span {
+    color: white;
+    padding-left: 15px;
+    font-size: 24px;
+}
+
+/* NAVIGATION */
+
+.genres {
+    grid-template-columns: repeat(auto-fit, 250px);
+    place-items: center;
+    margin: 50px 0px 20px;
+}
+.genres a {
+    height: 40px;
+    font-size: 24px;
+    font-weight: 550;
+}
+
+/* RECENTLY PLAYED */
+.recently-played {
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px;
+}
+.recentitem, .foryou, .newsong {
+    grid-template-rows: 250px auto auto;
+    width: 250px;
+}
+.recentitem img, .foryou img, .newsong img {
+    height: 250px;
+}
+h3 {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px 0;
+}
+.recentitem p, .madeforyou p, .newsong p {
+    text-align: center;
+    font-size: 22px;
+}
+
+/* MADE FOR YOU */
+.madeforyou, .newsongs {
+    grid-template-columns: repeat(auto-fit, 340px);
+    gap: 20px;
+}
+.madeforyou img, .newsongs img {
+    border-radius: 50%;
+}
+.foryou, .newsong {
+    background-color: rgba(128, 128, 128, 0.102);
+    box-sizing: auto;
+    padding: 20px;
+    width: 290px;
+    border-radius: 10px;
+}
+
+/* SOMETHING NEW */
+
+
+
+/* AUDIO SECTION */
+
+.audio {
+    grid-area: audio;
+    background-color: rgb(51, 51, 51);
+}

@@ -1,12 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Norify</title>
+  </head>
+  <body>
+    <div class="container g">
+      <!-- This will be my left-sidebar with navigations -->
+
+      <section class="left g">
+        <!-- Spotify title -->
+        <div class="">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </div>
+
+        <!-- Home/ search and libraries icon -->
+        <nav class="g">
+          <a href="" id="home"
+            ><img src="./assets/img/home.svg" alt="Home" class="logo" />
+            <label for="home">Home</label></a
+          >
+          <a href="" id="search"
+            ><img src="./assets/img/search.svg" alt="Search" class="logo" />
+            <label for="search">Search</label></a
+          >
+          <a href="" id="library"
+            ><img
+              src="./assets/img/libreria.svg"
+              alt="Libraries"
+              class="logo"
+            />
+            <label for="library">Libraries</label></a
+          >
+        </nav>
+
+        <!-- Playlist -->
+        <div class="playlist">
+          <h2>PLAYLIST</h2>
+          <form class="newlist g">
+            <input type="submit" value="+" class="submit" />
+            <input type="text" placeholder="New playlist..." class="newlist" />
+          </form>
+        </div>
+        <div class="playlist-list">
+          <ul>
+            <li>Get Rich or Die Tryin'</li>
+            <li>NoroAxper</li>
+            <li>Islah (Deluxe)</li>
+            <li>Gym</li>
+            <li>Romancin'</li>
+          </ul>
+        </div>
+
+        <!-- Install app -->
+        <div class="install-app">
+          <img
+            src="./assets/img/download.svg"
+            alt="download icon"
+            class="logo"
+          />
+          <p>Install app</p>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+          <svg
+            class="logo"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <p>NoroAxper</p>
+        </div>
+      </section>
+
+      <!-- This will be where all the main content is displayed -->
+
+      <main class="g">
+        <div class="header">
+            <header class="g">
+            <button>UPGRADE TO PREMIUM</button>
+            </header>
+        </div>
+
+
+        <h2>Good Morning</h2>
+        
+        <div class="top-songs">
+            <div class="list g">
+                <div class="listitem g">
+                    <img src="./assets/img/50cent.jpeg" alt="Get rich or die trying">
+                    <span> Get Rich or Die Tryin'</span>
+                </div>
+                <div class="listitem g">
+                    <img src="./assets/img/Taylor_Swift_-_Red.png" alt="Red">
+                    <span> NoroAxper</span>
+                </div>
+                <div class="listitem g">
+                    <img src="./assets/img/islah.jpeg" alt="Islah">
+                    <span> Islah (Deluxe)</span>
+                </div>
+                <div class="listitem g">
+                    <img src="./assets/img/dmx.jpeg" alt="Dmx">
+                    <span> Gym</span>
+                </div>
+                <div class="listitem g">
+                    <img src="./assets/img/bobby.jpeg" alt="Bobby">
+                    <span> Romancin'</span>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="genres g">
+            <a href="">RAP</a>
+            <a href="">ANTHEMS</a>
+            <a href="">CLASSIC</a>
+            <a href="">R & B</a>
+            <a href="">COUNTRY</a>
+            <a href="">HIP-HOP</a>
+        </nav>
+
+        <h2>Recently Played</h2>
+
+        <div class="recently-played g">
+            <div class="recentitem g">
+                <img src="./assets/img/adele.png" alt="Adele">
+                <h3>21</h3>
+                <p>Adele</p>
+            </div>
+            <div class="recentitem g">
+                <img src="./assets/img/bobby.jpeg" alt="Bobby">
+                <h3>She said disco</h3>
+                <p>Bobby Caldwell</p>
+            </div>
+            <div class="recentitem g">
+                <img src="./assets/img/cash.jpeg" alt="Johnny Cash">
+                <h3>Cash</h3>
+                <p>Johnny Cash</p>
+            </div>
+            <div class="recentitem g">
+                <img src="./assets/img/calmdown.jpeg" alt="Calm down">
+                <h3>Calm Down</h3>
+                <p>Rema & Selena Gomez</p>
+            </div>
+            <div class="recentitem g">
+                <img src="./assets/img/nwa.jpeg" alt="NWA">
+                <h3>Straight outta Compton</h3>
+                <p>N.W.A</p>
+            </div>
+        </div>
+
+        <h2>Made For You</h2>
+
+        <div class="madeforyou g">
+            <div class="foryou g">
+                <img src="./assets/img/noro.png" alt="Mix1">
+                <h3>Mix 1</h3>
+                <p>Kevin Gates, Taylor Swift</p>
+            </div>
+            <div class="foryou g">
+                <img src="./assets/img/noro2.png" alt="Mix2">
+                <h3>Mix 2</h3>
+                <p>Wizkid, Jorja Smith, Starboy</p>
+            </div>
+            <div class="foryou g">
+                <img src="./assets/img/noro3.png" alt="Mix3">
+                <h3>Mix 3</h3>
+                <p>The Weeknd, Drake, Omah Lay, Travis Scott</p>
+            </div>
+            <div class="foryou g">
+                <img src="./assets/img/noro4.png" alt="Mix 4">
+                <h3>Mix 4</h3>
+                <p>Beyonce, Tori Kelly, Rihanna, Meghan Trainor
+                </p>
+            </div>
+        </div>
+
+        <h2>Something New</h2>
+
+        <div class="newsongs g">
+            <div class="newsong g">
+                <img src="./assets/img/spice.jpeg" alt="Spice">
+                <h3>Conjugal Visit</h3>
+                <p>Spice, Vybz Kartel</p>
+            </div>
+            <div class="newsong g">
+                <img src="./assets/img/dolly.jpeg" alt="Dolly">
+                <h3>Islands in a stream</h3>
+                <p>Dolly Parton, Kenny Rogers</p>
+            </div>
+            <div class="newsong g">
+                <img src="./assets/img/beethoven.jpeg" alt="Beethoven">
+                <h3>Moonlight Sonata</h3>
+                <p>Beethoven</p>
+            </div>
+            <div class="newsong g">
+                <img src="./assets/img/dom.jpeg" alt="Dominic Fike">
+                <h3>3 Nights</h3>
+                <p>Dominic Fike</p>
+            </div>
+            <div class="newsong g">
+                <img src="./assets/img/ImagineDragonsEvolve.jpg" alt="Imagine Dragons Evolve">
+                <h3>Thunder</h3>
+                <p>Imagine Dragons</p>
+            </div>
+        </div>
+      </main>
+
+      <!-- This will be my audio control panel -->
+
+      <section class="audio"></section>
+    </div>
+  </body>
 </html>
