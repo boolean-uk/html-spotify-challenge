@@ -70,14 +70,39 @@
                 grid-area: music;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-auto-rows: 300px;
+                grid-auto-rows:max-content;
                 padding: 5px;
                 gap:5px;
                 overflow-y: scroll;
+                scroll-padding-bottom: 60px;
+                scroll-behavior: smooth;
+            }
+            .music::-webkit-scrollbar {
+                display:none;
             }
                 .card {
                     border: 1px dotted darkolivegreen;
+                    display: grid;
+                    grid-template-rows: 30px 1fr;
+                    grid-template-areas:
+                    "card_title"
+                    "suggestions";
+                    grid-auto-flow:row;
+                    gap:10px;
                 }
+                    .suggestions {
+                        grid-area: suggestions;
+                        align-self:center;
+                        justify-self:center;
+
+                    }
+                        .suggestions img {
+                            height: 200px;
+                            width: 200px;
+                            border: 1px dotted black;
+                            margin: 10px;
+                            object-fit: cover;
+                        }
 
 /* BOTTOM grid styling */
     .bottom {
