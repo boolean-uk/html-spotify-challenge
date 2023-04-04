@@ -1,0 +1,93 @@
+/* General styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "left header header"
+    "left nav nav"
+    "left main main"
+    "player player player";
+
+    height: 100vh;
+}
+
+/* Multiple selectors */
+
+.left-bar,
+.logo,
+ul,
+.profile,
+header,
+nav,
+main,
+.player{
+  border: #fff 2px dotted;
+}
+
+.actions{
+  border: darkred 2px solid;
+}
+
+/* LEFT BAR */
+
+.left-bar {
+  grid-area: left;
+  border: #fff 2px dotted;
+  
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+
+}
+
+.logo{
+margin: 10px;
+padding: 5px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 20px;
+}
+
+/* HEADER */
+header {
+  grid-area: header;
+
+}
+
+/* NAV */
+nav {
+  grid-area: nav;
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+/* 
+/* MAIN */
+main {
+  grid-area: main;
+}
+
+/* PLAYER */
+.player {
+  grid-area: player;
+}
