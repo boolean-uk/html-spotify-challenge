@@ -26,12 +26,6 @@ body {
 
 /* Multiple selectors */
 
-/* .left-bar,
-.logo,
-ul, */
-.profile,
-header,
-nav,
 main,
 .player {
   border: #fff 2px dotted;
@@ -41,21 +35,14 @@ main,
   border: darkred 2px solid;
 }
 
-img {
-  margin: 10px;
-  width: 20px;
-}
-
 a {
   color: #fff;
   text-decoration: none;
   padding: 5px;
 }
 
-main,
-nav {
-  background-color: #0d0d0d;
-}
+
+
 
 /* LEFT BAR */
 
@@ -66,6 +53,11 @@ nav {
   display: grid;
   grid-template-rows: 60px 1fr 50px;
 
+  font-size: small;
+}
+
+img {
+  margin: 10px;
 }
 
 .logo {
@@ -102,31 +94,87 @@ h3 {
 }
 
 .profile {
-  border: 1px solid #646464;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 10px;
+}
 
+.pic {
+  margin: 5px;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-pic {
+  margin: 0;
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 /* HEADER */
 header {
+  display: grid;
   grid-area: header;
+  background-color: #080B12;
+}
 
+.upgrade {
+  border: 1px solid grey;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  padding: 10px;
+}
+
+.upgrade:hover {
+  cursor: pointer;
 }
 
 /* NAV */
 nav {
   grid-area: nav;
-  height: 70px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-left: 30px;
-  margin-right: 30px;
+  gap: 20px;
+  height: 70px;
+
+  place-items: center;
+
+  background-color: #121212;
+
+  transition: ease-in-out 250ms;
+}
+
+.nav-bar-links:hover {
+  text-decoration: underline;
+  text-decoration-color: darkred;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
 }
 
 
-/* 
 /* MAIN */
 main {
   grid-area: main;
+  height: 1fr;
+}
+
+.recent {
+  border: 2px dotted crimson;
+  display: grid;
+  /* overflow: auto; */
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-rows: repeat(auto-fit, 150px);
+  gap: 30px;
+}
+
+.album {
+  border: 1px solid darkkhaki;
 }
 
 /* PLAYER */
