@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Gotham Rounded", sans-serif;
 }
 
 /* Left-side-bar - fixed position */
@@ -8,9 +9,62 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 250px;
+  width: 290px;
   background-color: #000000;
   padding: 20px;
+}
+
+/* Left-bar Logo and Heading */
+.spotify-logo {
+  width: 60px;
+  position: relative;
+  bottom: 100px;
+  left: 15px;
+}
+
+.spotify-heading {
+  color: white;
+  position: relative;
+  left: 80px;
+  bottom: 9px;
+  font-size: 27px;
+}
+
+/* Navigation; Home, Search, Library */
+
+.navigation {
+  position: relative;
+  bottom: 80px;
+  left: 45px;
+}
+
+.home {
+  color: white;
+  font-size: 20px;
+}
+.search {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}
+.your-library {
+  color: white;
+  font-size: 20px;
+}
+
+.home-icon {
+  width: 40px;
+  position: relative;
+  bottom: 37px;
+  right: 55px;
+}
+
+.search-icon {
+  width: 40px;
+  position: relative;
+  bottom: 38px;
+  right: 55px;
 }
 
 /* Created a grid for the 4 rows */
@@ -47,7 +101,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 5000px;
+  width: 2300px;
   background-color: yellowgreen;
   padding: 20px;
+  height: 150px;
 }
