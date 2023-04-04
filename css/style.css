@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+    background-color: black;
+    font-family: Verdana;
+}
+
+
+
+div {
+    /* border: dotted 2px white; */
+    margin: 5px
+}
+
+/* Outer grid */
+.grid {
+    display: grid;
+    margin: 0;
+    min-height: 100vh;
+    grid-template:
+        "nav top" 0.1fr
+        "nav header" 0.07fr
+        "nav main" 1fr
+        "player player" 0.1fr/
+        0.45fr 4fr;
+}
+
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 0.04fr 0.04fr;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    margin-left: 0px;
+}
+
+.top {
+    grid-area: top;
+    background-color: #080B12;
+    display: grid;
+}
+
+.header {
+    grid-area: header;
+    background-color: #141922;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(min-content, max-content));
+    justify-content: center;
+    align-content: center;
+    column-gap: 25px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #141922;
+}
+
+.player {
+    grid-area: player;
+    background-color: lightgreen;
+}
+
+/* Styling of the left bar/nav */
+
+.logo-container {
+    width: 70%;
+    display: grid;
+
+}
+
+.spotify-logo--text {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+}
+
+.top-left {
+    display: grid;
+    grid-template-rows: 0.07fr 0.111fr 0.333fr;
+    row-gap: 5px;
+}
+
+.root-menu {
+    display: grid;
+    align-items: center;
+
+}
+
+.root-menu>a {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    text-decoration: none;
+    color: #7D7F84;
+    font-size: 12px;
+    align-items: center;
+}
+
+.root-menu>a>div,
+.create-play>div {
+    margin: 2px;
+    display: grid;
+}
+
+.playlist-menu {
+    color: #7D7F84;
+}
+
+.playlist-menu>a {
+    text-decoration: none;
+    color: #7D7F84;
+    font-size: 12px;
+    align-items: center;
+    display: grid;
+    height: 10%;
+}
+
+
+
+.create-play {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    text-decoration: none;
+    color: #7D7F84;
+    font-size: 12px;
+    align-items: center;
+
+}
+
+.root-menu>a>div>svg {
+
+    width: 25px;
+    height: auto;
+    object-fit: cover;
+    place-self: center;
+}
+
+.create-play>div>svg {
+
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+    place-self: center;
+}
+
+.create-play>div>svg path {
+    fill: #7D7F84;
+}
+
+
+
+.download {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    text-decoration: none;
+    color: #7D7F84;
+    font-size: 12px;
+    align-items: center;
+}
+
+.download>div {
+    display: grid;
+    align-items: center;
+
+
+}
+
+.download>div>svg,
+.download-button.two>svg {
+    width: auto;
+    height: 15px;
+    object-fit: contain;
+    justify-content: center;
+
+}
+
+.download-button {
+    align-self: center;
+    justify-self: center;
+}
+
+.download.two {
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+}
+
+.download-button.two {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    place-content: center;
+    border: solid 1px white;
+
+}
+
+
+
+hr {
+    margin-top: 5px;
+}
+
+
+
+/* upgrade header */
+
+#upgrade {
+    display: grid;
+    color: white;
+    border: solid 1.5px white;
+    width: 15%;
+    height: 50%;
+    border-radius: 25px;
+    align-self: center;
+    justify-self: right;
+    margin-right: 20px;
+    place-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #080B12;
+}
+
+#upgrade>p {
+    background-color: #080B12;
+}
+
+/* header menu */
+
+.header-button {
+    display: inline;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    place-content: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: #7D7F84;
+}
+
+.header-button>p {
+    background-color: transparent;
+
+}
+
+a {
+    width: 100%;
+    margin: 0px;
+    border-left: solid 1px transparent;
+}
+
+a>div {
+    margin-left: 20px;
+}
+
+.root-menu>a>div {
+    margin-left: 20px;
+}
+
+a:hover {
+    border-left: solid 1px yellow;
+    /* transition: ease-in 100ms; */
+    text-align: 0;
+}
