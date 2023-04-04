@@ -1,0 +1,54 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/* turn the main in index.html in to a grid, left-menu on the left, header at the top, main in the middle and footer at the bottom */
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "left-menu header"
+    "left-menu main"
+    "footer footer"; 
+} 
+
+.left-menu { 
+    grid-area: left-menu; 
+    border: solid 1px black;
+    /* background-color: black; */
+} 
+
+.header { 
+    grid-area: header; 
+    border: solid 1px black;
+}  
+
+.main { 
+    grid-area: main; 
+    border: solid 1px black;
+}  
+
+.footer {  															
+    grid-area: footer;   
+    border: solid 1px black;
+}
+
+.fa-spotify {
+    /* color: white; */
+}
+
+.fa-spotify-library {
+    fill: black;
+}
