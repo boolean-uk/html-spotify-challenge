@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "left top"
+        "left main"
+        "playbar playbar";
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 20% 800px 10%;
+}
+
+.left {
+    grid-area: left;
+    background-color: darkgoldenrod;
+    color: gray;
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+.left>div>img:first-of-type {
+    padding-left: 25px;
+}
+
+.left>div>h3 {
+    padding-left: 25px;
+    color: white;
+}
+
+.left>div>ul:last-of-type {
+    padding-left: 25px;
+    display: grid;
+    gap: 20px;
+}
+
+.left * a {
+    text-decoration: none;
+    color: gray;
+    display: inline;
+}
+
+.left * a:hover {
+
+    color: white;
+    border-left: solid 4px yellowgreen;
+
+}
+
+.left * ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.left * img {
+    padding-left: 25px;
+}
+
+.top {
+    grid-area: top;
+    background-color: rgb(37, 37, 37);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(31, 31, 41);
+}
+
+.playbar {
+    grid-area: playbar;
+    background-color: gray;
+    position: sticky;
+    bottom: 20px;
+}
