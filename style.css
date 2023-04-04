@@ -3,14 +3,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Gotham Rounded', sans-serif;
 }
 
 body {
     height: 100vh;
 }
 
-/* turn the main in index.html in to a grid, left-menu on the left, header at the top, main in the middle and footer at the bottom */
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: pointer;
+  }
 
 main {
     height: 100%;
@@ -24,31 +30,124 @@ main {
     "footer footer"; 
 } 
 
+/* Left Menu */
+
 .left-menu { 
     grid-area: left-menu; 
-    border: solid 1px black;
-    /* background-color: black; */
+    background-color: black;
+    padding: 0px 25px;
+    display: grid;
+    grid-template-rows: 75px min-content min-content 1fr 50px;
+    color: #a3a3a3;
 } 
+
+.left-menu > .spotify-logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+.spotify-logo > i {
+    align-self: center;
+}
+
+.left-navigation {
+    display: grid;
+    grid-template-rows: repeat(3,min-content);
+    grid-gap: 15px;
+    font-size: 14px;
+    padding: 25px 0;
+    font-weight: bold;
+}
+
+.left-menu > .left-navigation > a > div > span {
+    padding-left: 10px;
+}
+
+.left-menu a:hover {
+    color: white;
+}
+
+.playlist {
+    display: grid;
+    grid-template-rows: repeat(3,min-content);
+    grid-gap: 10px;
+}
+
+.playlist-title {
+    font-size: 18px;
+}
+
+.create-playlist {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.playlist-list {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.app {
+    align-self: end;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #a3a3a3;
+}
+
+.profile {
+    align-self: center;
+}
+
+/* Header */
 
 .header { 
     grid-area: header; 
     border: solid 1px black;
+    background-color: #080b12;
+    color: white;
+    /* position: relative;
+    text-align: right; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }  
+
+.upgrade {
+    /* position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-10px, -50%); */
+    margin-right: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 20px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.header > a:hover {
+    font-weight: bold;
+}
+
+
+
 
 .main { 
     grid-area: main; 
     border: solid 1px black;
+    background-color: #141922;
 }  
 
 .footer {  															
     grid-area: footer;   
     border: solid 1px black;
-}
-
-.fa-spotify {
-    /* color: white; */
-}
-
-.fa-spotify-library {
-    fill: black;
+    background-color: #282828;
 }
