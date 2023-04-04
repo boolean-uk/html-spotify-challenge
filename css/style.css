@@ -26,7 +26,7 @@ body {
 
 /* Multiple selectors */
 
-main,
+.left-bar,
 .player {
   border: #fff 2px dotted;
 }
@@ -42,34 +42,32 @@ a {
 }
 
 
-
-
 /* LEFT BAR */
 
 .left-bar {
   grid-area: left;
-  border: #fff 2px dotted;
-
+  
   display: grid;
   grid-template-rows: 60px 1fr 50px;
 
   font-size: small;
 }
 
-img {
-  margin: 10px;
-}
 
-.logo {
+
+.brand {
   margin: 10px;
   padding: 5px;
 }
 
+h1 {
+  padding: 5px 60px;
+}
 .spotify-logo {
   width: 40px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 5px;
+  left: 5px;
 }
 
 ul {
@@ -80,8 +78,8 @@ li {
   margin-bottom: 5px;
 }
 
-h4 {
-  padding: 5px 60px;
+img {
+  margin: 10px;
 }
 
 h3 {
