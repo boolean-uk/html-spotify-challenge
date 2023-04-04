@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Gotham Rounded";
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+}
+
+/* big box border*/
+
+/* header, */
+/* nav, */
+/* .control-bar, */
+/* main, */
+/* body > div { */
+/*   border: 2px solid lightgreen; */
+/*   border-radius: 8px; */
+/* } */
+
+/* small gox border */
+.empty {
+  border: 2px solid lightblue;
+  border-radius: 8px;
+}
+
+body {
+  background-color: #080B12;
+  height: 100vh;
+  grid-template-areas: 
+  "nav header"
+  "nav main"
+  "control-bar control-bar"
+  ;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 260px 5fr;
+}
+
+header {
+  grid-area: header;
+  grid-template-columns: 1fr 250px;
+  align-content: center;
+}
+
+header > .upgrade {
+  height: 55px;
+  align-self: center;
+  border-radius: 80px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  text-justify: center;
+  padding: 17px 0;
+  text-decoration: none;
+  margin: 9px;
+}
+
+main {
+  grid-area: main;
+  background-color: #141922;
+}
+
+nav {
+  grid-area: nav;
+  grid-template-rows: 100px repeat(3, 50px) 60px 80px repeat(4, 50px) 1fr 50px 1px 50px;
+  row-gap: 10px;
+  background-color: #000000;
+}
+
+nav .logo {
+  width: 80%;
+  margin: 4px;
+  margin-left: -3px;
+}
+
+nav > .home img {
+  height: 40px;
+  display: inline-block;
+}
+
+nav > a,
+nav > div {
+  margin-left: 17px;
+  grid-template-columns: 40px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+nav > div.playlists {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav > * {
+  text-decoration: none;
+}
+
+nav > a.playlist {
+  grid-template-columns: auto;
+}
+
+nav > a > .new-playlist {
+  height: 45px;
+  width: 45px;
+  color: black;
+  display: inline-block;
+  background-color: lightgray;
+  text-align: center;
+  padding: 2px 0;
+  font-weight: 600;
+  font-size: 2.1rem;
+}
+
+nav > .download-app {
+  font-size: 1rem;
+  margin-left: 7px;
+}
+
+nav > .profile {
+  column-gap: 0;
+}
+
+nav > .profile > img {
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.control-bar {
+  grid-area: control-bar;
+  background-color: #282828;
+}
