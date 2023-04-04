@@ -8,37 +8,53 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container-grid {
   display: grid;
   grid-template-columns: 260px 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 60px 1fr;
   grid-template-areas:
     "left header header"
     "left nav nav"
     "left main main"
     "player player player";
 
-    height: 100vh;
+  height: 100vh;
 }
 
 /* Multiple selectors */
 
-.left-bar,
+/* .left-bar,
 .logo,
-ul,
+ul, */
 .profile,
 header,
 nav,
 main,
-.player{
+.player {
   border: #fff 2px dotted;
 }
 
-.actions{
+.actions {
   border: darkred 2px solid;
+}
+
+img {
+  margin: 10px;
+  width: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+main,
+nav {
+  background-color: #0d0d0d;
 }
 
 /* LEFT BAR */
@@ -46,22 +62,48 @@ main,
 .left-bar {
   grid-area: left;
   border: #fff 2px dotted;
-  
+
   display: grid;
-  grid-template-rows: 60px 1fr 60px;
+  grid-template-rows: 60px 1fr 50px;
 
 }
 
-.logo{
-margin: 10px;
-padding: 5px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
+.logo {
+  margin: 10px;
   padding: 5px;
-  margin: 20px;
+}
+
+.spotify-logo {
+  width: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+h4 {
+  padding: 5px 60px;
+}
+
+h3 {
+  margin: 30px 10px 5px;
+}
+
+.playlists {
+  margin: 10px;
+  line-height: 2.5;
+}
+
+.profile {
+  border: 1px solid #646464;
+
 }
 
 /* HEADER */
