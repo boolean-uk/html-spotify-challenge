@@ -161,21 +161,27 @@ nav {
 /* MAIN */
 main {
   grid-area: main;
-  height: 1fr;
+  overflow: auto;
 }
 
-.recent {
+.recent,
+.your-albums {
   border: 2px dotted crimson;
   display: grid;
-  /* overflow: auto; */
+
   grid-template-columns: repeat(auto-fit, 150px);
   grid-template-rows: repeat(auto-fit, 150px);
   gap: 30px;
 }
 
-.album {
-  border: 1px solid darkkhaki;
+.recent-album>img,
+.album>img {
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  margin: 30px;
 }
+
 
 /* PLAYER */
 .player {
