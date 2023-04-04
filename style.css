@@ -60,7 +60,7 @@
             "upgrade"
             "music";
             grid-template-rows: 60px 1fr;
-            max-height: 88vh;
+            max-height: 100vh;
         }
             .upgrade {
                 grid-area: upgrade;
@@ -74,34 +74,40 @@
                 padding: 5px;
                 gap:5px;
                 overflow-y: scroll;
-                scroll-padding-bottom: 60px;
                 scroll-behavior: smooth;
+                padding-bottom: 120px;
             }
             .music::-webkit-scrollbar {
                 display:none;
             }
+/* CARD styling */
                 .card {
-                    border: 1px dotted darkolivegreen;
+                    border: 1px solid darkolivegreen;
                     display: grid;
                     grid-template-rows: 30px 1fr;
                     grid-template-areas:
                     "card_title"
                     "suggestions";
-                    grid-auto-flow:row;
                     gap:10px;
+                    padding: 5px;
                 }
                     .suggestions {
                         grid-area: suggestions;
-                        align-self:center;
-                        justify-self:center;
-
+                        place-self: center;
+                        display: grid;
+                        max-width: 95%;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 5px;
+                        padding: 5px 50px 5px 50px;
+                        margin:5px;
                     }
                         .suggestions img {
-                            height: 200px;
-                            width: 200px;
+                            max-height: 200px;
+                            max-width: 200px;
                             border: 1px dotted black;
                             margin: 10px;
                             object-fit: cover;
+                            justify-self: center;   
                         }
 
 /* BOTTOM grid styling */
