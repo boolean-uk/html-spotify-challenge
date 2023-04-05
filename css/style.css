@@ -199,7 +199,7 @@ body {
     "nav-row"
     "main-row";
   grid-template-rows: 175px 125px 1250px;
-  border: 1px dashed black;
+
   overflow-x: hidden;
 }
 
@@ -302,15 +302,9 @@ body {
 
 .magnifying-icon {
   position: relative;
-  left: 1700px;
+  left: 1730px;
   bottom: 50px;
   width: 30px;
-}
-
-.magnifying-icon,
-.most-relevant,
-.downward-arrow:hover {
-  cursor: pointer;
 }
 
 .most-relevant {
@@ -318,7 +312,7 @@ body {
   font-family: "Gotham Office", sans-serif;
   font-size: 30;
   position: relative;
-  left: 1760px;
+  left: 1800px;
   bottom: 100px;
   margin-top: 20px;
 }
@@ -328,13 +322,21 @@ body {
     brightness(10%) contrast(10%);
   width: 18px;
   position: relative;
-  left: 1900px;
+  left: 1933px;
   bottom: 136px;
+}
+
+.title-playlists,
+.magnifying-icon,
+.most-relevant,
+.downward-arrow:hover {
+  cursor: pointer;
 }
 /* Main-Row */
 .main-row {
   grid-area: main-row;
   background-color: #000000dd;
+  height: 4000px;
 }
 
 .heavy-metal-img {
@@ -364,7 +366,7 @@ body {
 .stranger-img {
   position: relative;
   left: 620px;
-  bottom: 330px;
+  bottom: 328px;
 }
 
 .album-name2 {
@@ -389,7 +391,7 @@ body {
 .quiet-place-img {
   position: relative;
   left: 890px;
-  bottom: 737px;
+  bottom: 725px;
 }
 
 .album-name3 {
@@ -398,7 +400,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 950px;
-  bottom: 745px;
+  bottom: 730px;
 }
 
 .subtitle3 {
@@ -407,13 +409,13 @@ body {
   font-size: 15px;
   position: relative;
   left: 980px;
-  bottom: 755px;
+  bottom: 740px;
 }
 
 .split-img {
   position: relative;
   left: 1163px;
-  bottom: 1090px;
+  bottom: 1075px;
 }
 
 .album-name4 {
@@ -422,7 +424,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 1260px;
-  bottom: 1095px;
+  bottom: 1080px;
 }
 
 .subtitle4 {
@@ -431,13 +433,13 @@ body {
   font-size: 15px;
   position: relative;
   left: 1255px;
-  bottom: 1105px;
+  bottom: 1093px;
 }
 
 .cure-img {
   position: relative;
   left: 1430px;
-  bottom: 1440px;
+  bottom: 1427px;
 }
 
 .album-name5 {
@@ -446,7 +448,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 1455px;
-  bottom: 1445px;
+  bottom: 1432px;
 }
 
 .subtitle5 {
@@ -455,9 +457,129 @@ body {
   font-size: 15px;
   position: relative;
   left: 1520px;
-  bottom: 1455px;
+  bottom: 1445px;
 }
 
+.sinister-img {
+  position: relative;
+  left: 1700px;
+  bottom: 1778px;
+}
+
+.album-name6 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1790px;
+  bottom: 1783px;
+}
+
+.subtitle6 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1795px;
+  bottom: 1796px;
+}
+
+.created-for {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+  bottom: 1730px;
+}
+
+.more-you-listen {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 400px;
+  bottom: 1750px;
+}
+
+.release-radar-img {
+  position: relative;
+  left: 346px;
+  bottom: 1730px;
+}
+
+.album-name7 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 395px;
+  bottom: 1730px;
+}
+
+.daily-mix-img {
+  position: relative;
+  left: 610px;
+  bottom: 2047px;
+}
+
+.album-name8 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 670px;
+  bottom: 2047px;
+}
+
+.popular-artists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+  bottom: 2020px;
+}
+
+.more-you-listen2 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 400px;
+  bottom: 2040px;
+}
+
+.lana-img {
+  position: relative;
+  left: 350px;
+  bottom: 2023px;
+  border-radius: 50%;
+}
+
+.album-name9 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 380px;
+  bottom: 2025px;
+}
+.einadui {
+  position: relative;
+  left: 615px;
+  bottom: 2340px;
+  border-radius: 50%;
+}
+
+.album-name10 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 685px;
+  bottom: 2342px;
+}
 .heavy-metal-img,
 .album-name1,
 .subtitle1:hover,
@@ -471,7 +593,18 @@ body {
 .album-name4 .subtitle4,
 .cure-img,
 .album-name5,
-.subtitle5 {
+.subtitle5,
+.sinister-img,
+.album-name6,
+.subtitle6,
+.created-for,
+.release-radar-img,
+.album-name7,
+.popular-artists,
+.lana-img,
+.album-name9,
+.einadui,
+.album-name10 {
   cursor: pointer;
 }
 
