@@ -410,6 +410,54 @@ body {
   bottom: 755px;
 }
 
+.split-img {
+  position: relative;
+  left: 1163px;
+  bottom: 1090px;
+}
+
+.album-name4 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1260px;
+  bottom: 1095px;
+}
+
+.subtitle4 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1255px;
+  bottom: 1105px;
+}
+
+.cure-img {
+  position: relative;
+  left: 1430px;
+  bottom: 1440px;
+}
+
+.album-name5 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1455px;
+  bottom: 1445px;
+}
+
+.subtitle5 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1520px;
+  bottom: 1455px;
+}
+
 .heavy-metal-img,
 .album-name1,
 .subtitle1:hover,
@@ -418,7 +466,12 @@ body {
 .subtitle2,
 .quiet-place-img,
 .album-name3,
-.subtitle3 {
+.subtitle3,
+.split-img,
+.album-name4 .subtitle4,
+.cure-img,
+.album-name5,
+.subtitle5 {
   cursor: pointer;
 }
 
