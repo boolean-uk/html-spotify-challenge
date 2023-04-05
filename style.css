@@ -252,6 +252,24 @@ h3 {
 
 /* AFTER EFFECTS */
 
+.cover-play {
+    height: 100px;
+    width: 100px;
+    /* position: relative;
+    bottom: 300px;
+    left: 120px; */
+}
+.coverbox {
+    opacity: 0;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    place-items: center;
+    margin-top: -440px;
+}
+.coverbox:hover, .recentitem > img:hover {
+    opacity: 100;
+}
 .cool-border {
     position: relative;
 }
