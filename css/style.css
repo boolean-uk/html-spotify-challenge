@@ -26,8 +26,7 @@ body {
 
 /* Multiple selectors ----------------------------- */
 
-.left-bar,
-.player-bar {
+.left-bar {
   border: #fff 2px dotted;
 }
 
@@ -138,7 +137,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  height: 70px;
+  height: 60px;
 
   place-items: center;
 
@@ -163,7 +162,7 @@ main {
 
 .recent,
 .your-albums {
-  border: 2px dotted crimson;
+  /* border: 2px dotted crimson; */
   display: grid;
 
   grid-template-columns: repeat(auto-fit, 150px);
@@ -191,7 +190,6 @@ main {
   background-color: #282828;
 }
 
-
 .playing-now {
   display: grid;
   grid-template-columns: 1fr 100px;
@@ -215,8 +213,9 @@ main {
   transition: ease-in-out 250ms;
 }
 
-.like-add:hover {
+.like-add-icons:hover {
   cursor: pointer;
+
 }
 
 /* PLAYER ------------------------------------------ */
@@ -250,7 +249,6 @@ audio::-webkit-media-controls-panel {
   background-color: #282828;
 }
 
-
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-current-time-display,
@@ -260,19 +258,28 @@ audio::-webkit-media-controls-time-remaining-display {
   padding: 3px;
   margin: 3px;
 
+  transition: ease-in-out 250ms;
 }
 
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-mute-button:hover,
+audio::-webkit-media-controls-current-time-display:hover,
+audio::-webkit-media-controls-time-remaining-display:hover {
+  background-color: #c1bfbf;
+}
+
+
 audio::-webkit-media-controls-timeline {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50px;
 }
 
 audio::-webkit-media-controls-volume-slider {
-  color: #fff;
+  color: #6e6c6c;
 }
 
 audio::-webkit-media-controls-volume-slider-container {
-  background-color: #fff;
+  background-color: #898888;
   border-radius: 50px;
 }
 
@@ -283,5 +290,12 @@ audio::-webkit-media-controls-volume-slider-container {
   grid-template-columns: 30px 30px;
   place-items: center;
   gap: 20px;
+  margin-left: 60px;
+
+  transition: ease-in-out 250ms;
 }
 
+.more-settings:hover {
+  background-color: #c1bfbf;
+  cursor: pointer;
+}
