@@ -23,8 +23,9 @@ h2 {
 h3 {
     font-size: medium;
 }
-hr {
-    color: rgb(68, 68, 68);
+hr, p {
+    color: rgb(128, 128, 128);
+    font-weight: bold;
 }
 .sidebar img {
     color:white;
@@ -100,6 +101,13 @@ a:hover {
                         align-items: center;
                         width: 160px;
                         padding:10px;
+                        
+                    }
+                    #menu_home, #menu_search, #menu_library {
+                        border-left: solid 5px transparent;
+                    }
+                    #menu_home {
+                        border-left: solid 5px seagreen;
                     }
 /* PLAYLISTS styling */       
             .playlists {
@@ -157,6 +165,7 @@ a:hover {
             display:grid;
             grid-template-areas:
             "upgrade"
+            "catagories"
             "music";
             grid-template-rows: 100px 1fr;
             max-height: 100vh;
@@ -179,6 +188,17 @@ a:hover {
                     align-items: center;
                     justify-content: center;
                 }
+            .catagories ul {
+                grid-area: catagories;
+                display: grid;
+                grid-auto-flow: column;
+                gap: 5%;
+                place-content:center;
+                margin:10px;
+            }
+            .catagories ul li:first-child {
+                border-bottom: 5px solid seagreen;
+            }
 /* MUSIC styling */
             .music {
                 grid-area: music;
@@ -193,16 +213,26 @@ a:hover {
             }
             
 /* CARD styling */
+               
                 .card {
-                    border: 1px solid darkolivegreen;
                     display: grid;
                     grid-template-rows: 30px 1fr;
                     grid-template-areas:
                     "card_title"
+                    "tagline"
                     "suggestions";
                     gap:10px;
                     padding: 5px;
-                }
+                } 
+                    .card h2 {
+                        grid-area: card_title;
+                        font-size:larger;
+                        padding: 20px;
+                    }
+                    .tagline {
+                        grid-area: tagline;
+                        padding: 10px 0 0 20px;
+                    }
                     .suggestions {
                         grid-area: suggestions;
                         place-self: center;
@@ -212,14 +242,25 @@ a:hover {
                         gap: 5px;
                         padding: 5px 50px 5px 50px;
                         margin:5px;
+                        justify-self:start;
                     }
+                        .card_item {
+                            text-align: center;
+                        }
+                        .card_item h3 {
+                            margin:5px;
+                            max-width: 200px;
+                        }
                         .suggestions img {
                             max-height: 200px;
                             max-width: 200px;
-                            border: 1px dotted black;
-                            margin: 10px;
+                            margin: 5px;
                             object-fit: cover;
-                            justify-self: center;   
+                            justify-self: start;   
+                        }
+                        .pop_artist img {
+                            border-radius: 50%;
+                            object-fit: cover;
                         }
 
 /* BOTTOM grid styling */
@@ -241,7 +282,7 @@ a:hover {
             grid-template-columns: 2fr 4fr 1fr 1fr;
             grid-template-areas: "current_art current_song like folder";
             padding: 5px;
-            gap: 2px;
+            gap: 3px;
         }
             #current_art {
                 grid-area: current_art;
@@ -253,11 +294,16 @@ a:hover {
             #current_song {
                 grid-area: current_song;
                 place-self: center;
+                
+            }
+            #current_song h3, p {
+                font-size: small;
             }
             #like, #folder {
                 width: 20px;
                 object-fit: contain;
                 place-self: center;
+                margin: 2px;
             }
             #like {
                 grid-area: like;
@@ -355,7 +401,7 @@ a:hover {
             grid-template-columns: 1fr 1fr 1fr 3fr;
             grid-template-areas: "list computer speaker vol_bar";
             padding: 5px;
-            gap: 5px;
+            gap: 5%;
             align-items: center;
         }
             #list, #computer, #speaker {
