@@ -11,6 +11,19 @@
   display: grid;
 }
 
+.understate {
+  color: #717171;
+}
+
+.understate2 {
+  color: #919191;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* big box border*/
 
 /* header, */
@@ -22,9 +35,19 @@
 /*   border-radius: 8px; */
 /* } */
 
-/* small gox border */
-.empty {
+/* small box border */
+.empty,
+.control-bar > div {
   border: 2px solid lightblue;
+  border-radius: 8px;
+}
+
+/* smallest box border */
+.emtpy,
+.control-bar > div > div
+/* main > div > div { */
+{
+  border: 2px solid lightgreen;
   border-radius: 8px;
 }
 
@@ -36,7 +59,7 @@ body {
   "nav main"
   "control-bar control-bar"
   ;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 90px 1fr 90px;
   grid-template-columns: 260px 5fr;
 }
 
@@ -55,13 +78,77 @@ header > .upgrade {
   text-align: center;
   text-justify: center;
   padding: 17px 0;
-  text-decoration: none;
   margin: 9px;
 }
 
 main {
   grid-area: main;
   background-color: #141922;
+  grid-template-rows: 70px 1fr;
+  overflow: hidden;
+}
+
+main > .top-nav {
+  grid-template-columns: repeat(6, minmax(auto, max-content));
+  column-gap: 30px;
+  justify-content: center;
+}
+
+main > .top-nav > a {
+  place-self: center;
+  display: grid;
+}
+
+main > .top-nav > a > .selected-bar {
+  justify-self: center;
+  background-color: #ADFF2F;
+  height: 6px;
+  width: 40px;
+  position: relative;
+  top: 0;
+  left: 0;;
+}
+
+main > .top-nav > a + a > .selected-bar {
+  background: none;
+}
+
+main > .main-content {
+  overflow: auto;
+}
+
+main > .main-content > .cards-section {
+  margin-left: 20px;
+  padding-bottom: 30px;
+  grid-template-rows: 40px 1fr;
+}
+
+main > .main-content > .cards-section > .cards {
+  grid-template-columns: repeat(auto-fit, 170px);
+  column-gap: 30px;
+  row-gap: 10px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+main > .main-content > .cards-section > .cards > .card {
+  padding-top: 10px;
+  grid-template-rows: 170px 1fr;
+}
+
+main > .main-content > .cards-section > .cards > .card > p {
+  padding-top: 9px;
+  text-align: center;
+}
+
+main > .main-content > .cards-section > .cards > .card > img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+main > .main-content > .cards-section > .cards > .card .subtitle {
+  position: relative;
+  top: 5px;
 }
 
 nav {
@@ -78,11 +165,6 @@ nav > div {
   column-gap: 10px;
   align-items: center;
   font-size: 1rem;
-  color: #717171;
-}
-
-nav > * {
-  text-decoration: none;
 }
 
 nav .logo {
@@ -146,4 +228,25 @@ nav > .profile > img {
 .control-bar {
   grid-area: control-bar;
   background-color: #282828;
+  grid-template-columns: 1fr 2fr 1fr;
 }
+
+.control-bar > div {
+  padding: 10px;
+}
+
+.control-bar > .track-info {
+  grid-template-columns: 60px 1fr 25px 25px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.control-bar > .track-info > p {
+  margin-right: auto;
+}
+
+.control-bar > .track-info > a > img {
+  width: 100%;
+}
+
+
