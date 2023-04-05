@@ -14,6 +14,9 @@ ul {
 h2 {
     font-size: large;
 }
+h3 {
+    font-size: medium;
+}
 /* SCROLL behaviour */
 .music::-webkit-scrollbar, .playlists::-webkit-scrollbar {
                 display:none;
@@ -124,16 +127,22 @@ h2 {
             .upgrade {
                 grid-area: upgrade;
                 display:grid;
-                grid-template-areas: ". upgrade_button";
+                grid-template-areas: ". upgrade_now";
                 grid-template-columns: 1fr 200px;
             }
-                .upgrade button {
-                    grid-area: upgrade_button;
+                .upgrade a {
+                    grid-area: upgrade_now;
                     height:40px;
                     width:180px;
                     place-self: center;
                     border: solid 1px red;
-                    border-radius: 5px;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    display:inline-flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 /* MUSIC styling */
             .music {
@@ -145,7 +154,7 @@ h2 {
                 gap:10px;
                 overflow-y: scroll;
                 scroll-behavior: smooth;
-                padding-bottom: 120px;
+                padding-bottom: 125px;
             }
             
 /* CARD styling */
@@ -190,12 +199,78 @@ h2 {
         height: 120px;
         width: 100vw;
     }
+/* PLAYING styling */
         .playing {
             grid-area: playing;
+            display: grid;
+            grid-template-columns: 2fr 4fr 1fr 1fr;
+            grid-template-areas: "current_art current_song like folder";
+            padding: 5px;
+            gap: 2px;
         }
+            #current_art {
+                grid-area: current_art;
+                height:40px;
+                width:40px;
+                object-fit: contain;
+                place-self: center;
+            }
+            #current_song {
+                grid-area: current_song;
+                place-self: center;
+            }
+            #like, #folder {
+                width: 20px;
+                object-fit: contain;
+                place-self: center;
+            }
+            #like {
+                grid-area: like;
+            }
+            #folder {
+                grid-area: folder;
+            }
+
+/* CONTROLS styling */
         .controls {
             grid-area: controls;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "playback"
+            "progress";
+            padding: 5px;
+            gap: 2px;
         }
+            .playback {
+                grid-area: playback;
+                display: grid;
+                grid-template-areas: "shuffle_track back_track play_track forward_track repeat_track";
+                grid-template-columns: 20px 20px 40px 20px 20px;
+                gap: 20px;
+                place-content: center;
+                align-items: center;
+            }
+                .playback a {
+                    object-fit: contain;
+                    max-width: 50px;
+                }
+                .playback:nth(1) {
+                    grid-area: shuffle_track;
+                }
+                .playback:nth(2) {
+                    grid-area: back_track;
+                }
+                .playback:nth(3) {
+                    grid-area: play_track;
+                }
+                .playback:nth(4) {
+                    grid-area: forward_track;
+                }
+                .playback:nth(5) {
+                    grid-area: repeat_track;
+                }
+/* VOLUME styling */
         .volume {
             grid-area: volume;
         }
