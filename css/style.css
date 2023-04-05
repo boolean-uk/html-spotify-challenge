@@ -17,6 +17,9 @@ h2 {
 h3 {
     font-size: medium;
 }
+hr {
+    color: lightslategray;
+}
 /* SCROLL behaviour */
 .music::-webkit-scrollbar, .playlists::-webkit-scrollbar {
                 display:none;
@@ -96,7 +99,7 @@ h3 {
                 overflow-y: scroll;
                 scroll-behavior: smooth;
             }
-                .named_playlist {
+                .named_playlist, #new_playlist img {
                     padding: 5px;
                 } 
 /* PROFILE styling */
@@ -107,10 +110,9 @@ h3 {
                 grid-template-areas:
                 "install"
                 "user_profile";
-                
                 padding: 5px;
                 place-content: center;
-                
+        
             }
 
 /* MAIN styling */
@@ -270,7 +272,82 @@ h3 {
                 .playback:nth(5) {
                     grid-area: repeat_track;
                 }
+/* CONTROLS progress bar */
+            .progress {
+                grid-area: progress;
+                place-self: center;
+                display:grid;
+                grid-template-areas: "time_played progress_bar time_remaining";
+                grid-template-columns: 50px 1fr 50px;
+            }
+                #progress_bar, #progress_value,
+                #vol_max, #vol_current {
+                    border-radius: 10px;
+                    align-items: center;
+                    display: flex;
+                    height: 5px;
+                    margin: 0 20px;
+                }
+                #progress_bar {
+                    grid-area: progress_bar;
+                    background-color: lightslategrey;
+                    width: 300px;
+                    place-self: center;
+                    } 
+                #progress_value {
+                    grid-area: progress_bar;
+                    background-color: lightgray;
+                    width: 50px;
+                    align-self: center;
+                    justify-self: start;
+                    }
+                .progress h3 {
+                    place-self: center;
+                }
+                .progress h3:nth-of-type(1) {
+                    grid-area: time_played;
+                }
+                .progress h3:nth-of-type(2) {
+                    grid-area: time_remaining;
+                }
 /* VOLUME styling */
         .volume {
             grid-area: volume;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 3fr;
+            grid-template-areas: "list computer speaker vol_bar";
+            padding: 5px;
+            gap: 5px;
+            align-items: center;
         }
+            #list, #computer, #speaker {
+                width: 20px;
+                object-fit: contain; 
+                }
+                #list {
+                    grid-area: list;
+                }
+                #computer {
+                    grid-area: computer;
+                }
+                #speaker {
+                    grid-area: speaker;
+                }
+
+            #vol_max, #vol_current {
+                grid-area: vol_bar;
+                justify-self: start;
+                margin: 0 5px 0 0;
+            }
+                #vol_max {
+                    background-color: lightslategrey;
+                    width: 100px;
+                }
+                #vol_current {
+                    background-color: lightgray;
+                    width: 25px;
+                }
+
+
+/* media query
+900px width 1st step down */

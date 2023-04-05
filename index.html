@@ -130,8 +130,12 @@
                     <h3>Song Name</h3>
                     <p>Band Name</p>
                 </div>
-                <img id="like" src="./assets/img/heart-thin-icon.svg" alt="like icon">
-                <img id="folder" src="./assets/img/folder-line-icon.svg" alt="folder icon">
+                <a id="like" href="#">
+                    <img  src="./assets/img/heart-thin-icon.svg" alt="like icon">
+                </a>
+                <a id="folder" href="#">
+                    <img  src="./assets/img/folder-line-icon.svg" alt="folder icon">
+                </a>
             </section>
 
             <section class="controls">
@@ -143,12 +147,25 @@
                     <a href="#"><img src="./assets/img/repeat-icon.svg" alt="controls repeat icon"></a>
                 </div>
                 <div class="progress">
-
+                    <h3 id="time_played">0:25</h3>
+                    <div id="progress_bar"></div>
+                    <div id="progress_value"></div>
+                    <h3 id="time_remaining">4:35</h3>   
                 </div>
             </section>
 
             <section class="volume">
-                volume
+                <a id="list">
+                    <img src="./assets/img/list-view-icon.svg" alt="volume controls">
+                </a>
+                <a id="computer">
+                    <img src="./assets/img/monitor-icon.svg" alt="volume controls">
+                </a>
+                <a id="speaker">
+                    <img src="./assets/img/volume-icon.svg" alt="volume controls">
+                </a>
+                <div id="vol_max"></div>
+                <div id="vol_current"></div>
             </section>
 
         </section>
