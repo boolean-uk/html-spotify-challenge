@@ -9,15 +9,24 @@
   display: grid;
 }
 
+body {
+  grid-template:
+  'left-bar header' 100px
+  'left-bar main' calc(100vh - 200px)
+  'footer footer' 100px /
+  300px calc(100vw - 300px);
+  background-color: rgb(20, 25, 34);
+}
 header {
+  grid-area: header;
   height: 100px;
-  width: 80vw;
+  width: calc(100vw - 300px);
 
   position: fixed;
   top: 0;
   right: 0;
 
-  background-color: rgb(27, 27, 27);
+  background-color: rgba(0, 0, 0, 0.4) 
 }
 
 header > button {
@@ -37,28 +46,28 @@ header > button {
 }
 
 .side-bar {
-  height: 100vh;
-  width: 20vw;
+  grid-area: side-bar;
+  height: calc(100vh - 100px);
+  width: 300px;
 
   grid-template: 
   'logo' 100px 
-  'nav' 200px
-  'playlists' 1fr;
+  'nav' 150px
+  'playlists-container' 1fr;
   position: fixed;
   left: 0;
   background-color: black;
-  align-items: center;
 }
 
 .side-bar > svg {
   grid-area: logo;
-  height: 100px;
+  height: 90px;
   padding: 10px;
 }
 
 .side-bar > nav {
   grid-area: nav;
-  padding: 10px;
+  padding: 1px;
 }
 
 .side-bar > nav > .button {
@@ -83,6 +92,111 @@ header > button {
   transition: 0.2s ease-in-out;
 }
 
+.side-bar > .playlists-container {
+  grid-area: playlists-container;
+  grid-template: 
+  'header' 50px
+  'create' 50px
+  'playlists' 1fr
+  'profile-section' 100px;
+  color: rgb(108, 108, 108);
+  padding: 10px;
+}
+
+.side-bar > .playlists-container > h2 {
+  grid-area: header;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.side-bar > .playlists-container > .create-playlist > p {
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.side-bar > .playlists-container > .create-playlist:hover > i {
+  color: rgb(33, 33, 33);
+}
+
+.side-bar > .playlists-container > .playlists > .playlist {
+  margin-bottom: 20px;
+}
+.side-bar > .playlists-container > .playlists > .playlist > p {
+  font-size: 1.3rem;
+}
+
+.side-bar > .profile-section > .download {
+  grid-template-areas: '. .';
+  grid-template-columns: 50px;
+  align-items: center;
+}
+.side-bar > .profile-section > .download > svg {
+  width: 40px;
+  fill: rgb(108, 108, 108);
+}
+
+.side-bar > .profile-section > .download > p {
+  color: rgb(108, 108, 108);
+  display: inline;
+}
+
+.side-bar > .profile-section > hr {
+  width: 280px;
+  border: 1px solid rgb(108, 108, 108);
+  margin-left: 10px;
+}
+.side-bar > .profile-section > .profile {
+  grid-template-areas: '. .';
+  grid-template-columns: 50px;
+  align-items: center;
+}
+.side-bar > .profile-section > .profile > .profile-picture {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: grey;
+  overflow: hidden;
+
+  margin: 10px;
+  display: inline-block;
+}
+
+.side-bar > .profile-section > .profile > .profile-picture > svg {
+  object-fit: cover;
+  fill: white;
+}
+
+.side-bar > .profile-section > .profile > p {
+  display: inline;
+  margin-left: 10px;
+
+  font-size: 1.5rem;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(20, 25, 34);
+  justify-items: center;
+
+}
+footer {
+  grid-area: footer;
+  height: 100px;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(33, 33, 33);
+}
+
+.hover:hover {
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 .side-bar > nav > .button:hover > p {
   cursor: pointer;
   color: white;
@@ -93,21 +207,10 @@ header > button {
   filter: none
 }
 
-.side-bar > .playlists {
-  grid-area: playlists;
-}
-
-.side-bar > .playlists > h2 {
+.side-bar > .playlists-container > .create-playlist:hover > i {
   color: white;
-  font-size: 2rem;
-}
-footer {
-  height: 100px;
-  width: 100vw;
-
-  position: fixed;
-  bottom: 0;
-  background-color: rgb(33, 33, 33);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 
