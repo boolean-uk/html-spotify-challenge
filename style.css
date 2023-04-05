@@ -63,19 +63,31 @@
     color: #ffffff;
   }
 
-  .install > a {
+  .install a {
     color: #b3b3b3 ;
     font-size: 14px;
     text-decoration: none;
   }
 
-  .profile  {
-    color: #b3b3b3;
-    font-size: 15px;
+  .install span:hover,
+  .install span:active,
+  .install span:focus
+  {
+  color: #ffffff;
   }
 
-  .profile span:hover,
-  .profile span:hover.{
+  .profile  {
+    color: #b3b3b3;
+    font-size: 14px;
+  }
+
+  .profile > a {
+    width: 350px;
+    text-decoration: none;
+    color: #989898;
+  }
+
+  .profile span:hover{
     color: #ffffff;
 
   }
@@ -101,7 +113,6 @@
   .topbar .navbar button {
     background-color: #ffffff;
     color: #000000;
-   
     font-weight: bold;
     margin-left: 20px;
     padding: 14px 30px;
@@ -119,12 +130,12 @@
     align-items: center;
   }
 
-
   .spotify-playlists .navbar_bottom ul li {
     display: inline-block;
     margin: 0px 10px;
     width: 80px;
   }
+
 .spotify-playlists .navbar_bottom {
     display: grid;
     grid-template-columns: 100px;
@@ -209,6 +220,7 @@ color: #ffffff;
     opacity: 1;
     transform: translateY(-20px);
   }
+
   .spotify-playlists .list .item h4 {
     color: #ffffff;
     font-size: 14px;
@@ -223,8 +235,28 @@ color: #ffffff;
     line-height: 20px;
     font-weight: 600;
   }
-
- .control {
-
- }
   
+ .spotify-player {
+  background-color: #252525;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: grid;
+  align-items: center;
+}
+
+.spotify-player img {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  padding: 15px;
+}
+
+.spotify-player .play-pause:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
