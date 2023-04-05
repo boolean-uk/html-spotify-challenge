@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: "Gotham Rounded", sans-serif;
 }
 
 /* Left-side-bar - fixed position */
@@ -39,56 +38,143 @@ body {
 }
 
 .home {
-  color: white;
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
+  position: relative;
+  right: 10px;
 }
 
 .home-icon {
   width: 40px;
   position: relative;
   bottom: 37px;
-  right: 55px;
+  right: 70px;
 }
 .search {
-  color: white;
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
   bottom: 4px;
+  right: 10px;
 }
 
 .search-icon {
   width: 40px;
   position: relative;
   bottom: 38px;
-  right: 55px;
+  right: 70px;
 }
 
 .your-library {
-  color: white;
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
   bottom: 10px;
+  right: 10px;
 }
 
 .your-library-icon {
   width: 40px;
   position: relative;
   bottom: 45px;
-  right: 55px;
+  right: 70px;
 }
 
 .createplaylist {
-  color: white;
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
   bottom: 120px;
-  left: 44px;
+  left: 32px;
 }
 
 .createplaylist-icon {
+  filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+
+  position: relative;
+  bottom: 195px;
+  right: 20px;
+}
+
+.likedsongs {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 204px;
+  left: 32px;
+}
+
+.likedsongs-icon {
+  filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+
   width: 40px;
-  filter: invert(56%) sepia(87%) saturate(3605%) hue-rotate(181deg)
-    brightness(33%) contrast(30%);
+  position: relative;
+  bottom: 240px;
+  right: 22px;
+}
+
+.createandliked {
+  position: relative;
+  bottom: 230px;
+  border: 0.1em solid rgba(128, 128, 128, 0.256);
+  width: 255px;
+}
+
+.home:hover,
+.search:hover,
+.your-library:hover,
+.createplaylist:hover,
+.likedsongs:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/* Playlists */
+.Bhangra-Party-Mix,
+.Hollywood-Beach-Vibes,
+.Spanish-Gym-Hits,
+.Running-Music-2023-Workout,
+.Party-Playlist-2023,
+.Afro-Beats,
+.AP-Dhillon,
+.Motown-Greatest-Hits,
+.Meditation,
+.Feel-Good-Happy-Mix,
+.Diljit-Dosanjh,
+.Peaceful-Music,
+.Hip-Pop {
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 22;
+  position: relative;
+  left: 19px;
+  bottom: 220px;
+  margin-top: 24px;
+}
+
+.Bhangra-Party-Mix:hover,
+.Bhangra-Party-Mix:hover,
+.Hollywood-Beach-Vibes:hover,
+.Spanish-Gym-Hits:hover,
+.Running-Music-2023-Workout:hover,
+.Party-Playlist-2023:hover,
+.Afro-Beats:hover,
+.AP-Dhillon:hover,
+.Motown-Greatest-Hits:hover,
+.Meditation:hover,
+.Feel-Good-Happy-Mix:hover,
+.Diljit-Dosanjh:hover,
+.Peaceful-Music:hover,
+.Hip-Pop:hover {
+  cursor: default;
+  color: white;
 }
 
 /* Created a grid for the 4 rows */
@@ -107,7 +193,7 @@ body {
 
 .top-row {
   grid-area: top-row;
-  background-color: coral;
+  background-color: #000003ee;
 }
 
 .nav-row {
@@ -126,7 +212,7 @@ body {
   left: 0;
   right: 0;
   width: 2300px;
-  background-color: yellowgreen;
+  background-color: rgb(33, 28, 28);
   padding: 20px;
   height: 150px;
 }

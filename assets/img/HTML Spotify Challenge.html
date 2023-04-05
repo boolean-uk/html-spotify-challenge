@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Spotify Challenge</title>
+    
+
+    
+  <link rel="stylesheet" href="./HTML Spotify Challenge_files/style.css"><link href="./HTML Spotify Challenge_files/gotham-rounded" rel="stylesheet"></head>
+  <body>
+    <!-- Left-Bar -->
+    <!-- Left-Bar Starts -->
+
+    <div class="left-side-bar">
+      <!-- Logo and Heading -->
+      <div class="spotify-heading"><h2>Spotify</h2></div>
+      <div class="spotify-logo">
+        <img src="./HTML Spotify Challenge_files/logo-small.svg">
+      </div>
+
+      <!-- Home, Search, Your Library -->
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <span class="home">Home</span>
+            <div class="home-icon">
+              <img src="./HTML Spotify Challenge_files/home.svg">
+            </div>
+          </li>
+
+          <li>
+            <span class="search">Search</span>
+            <div class="search-icon">
+              <img src="./HTML Spotify Challenge_files/search.svg">
+            </div>
+          </li>
+
+          <li>
+            <span class="your-library">Your Library</span>
+            <div class="your-library-icon">
+              <img src="./HTML Spotify Challenge_files/libreria.svg">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <br>
+
+      <div class="createplaylist-likedsongs">
+        <ul>
+          <li>
+            <span class="createplaylist">Create Playlist</span>
+            <div class="createplaylist-icon">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36.00px" height="122.88px" viewBox="0 0 122.88 122.88" enable-background="new 0 0 122.88 122.88" xml:space="preserve">
+                <g>
+                  <path d="M7.513,0h107.854c2.066,0,3.944,0.845,5.306,2.207s2.207,3.24,2.207,5.306v107.854c0,2.066-0.846,3.944-2.207,5.306 c-1.361,1.362-3.239,2.207-5.306,2.207H7.513c-2.066,0-3.945-0.845-5.306-2.207C0.845,119.312,0,117.434,0,115.367V7.513 c0-2.066,0.845-3.945,2.207-5.306S5.447,0,7.513,0L7.513,0z M26.627,63.993c0.653,0.653,1.556,1.058,2.553,1.058h28.515h0.134 v0.134v28.515c0,0.997,0.404,1.9,1.058,2.554s1.556,1.058,2.553,1.058c0.997,0,1.9-0.404,2.554-1.058s1.057-1.557,1.057-2.554 V65.185v-0.134h0.134h28.516c0.997,0,1.9-0.404,2.554-1.058s1.058-1.557,1.058-2.554c0-0.996-0.404-1.899-1.058-2.553 s-1.557-1.057-2.554-1.057H65.184H65.05v-0.134V29.18c0-0.997-0.403-1.9-1.057-2.553s-1.557-1.058-2.554-1.058 c-0.997,0-1.899,0.404-2.553,1.058s-1.058,1.556-1.058,2.553v28.515v0.134h-0.134H29.18c-0.997,0-1.9,0.404-2.553,1.057 s-1.058,1.557-1.058,2.553C25.569,62.437,25.974,63.34,26.627,63.993L26.627,63.993z"></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- What's playing -->
+
+      <div class="whats-playing"></div>
+
+      <!-- Left-Bar Div Ends -->
+    </div>
+    <!-- Left-Bar Div Ends -->
+
+    <!-- ........................................... -->
+
+    <!-- Grid Starts = 4 rows -->
+    <div class="grid">
+      <!-- Row 1 - Top-Row -->
+      <div class="top-row"></div>
+
+      <!-- Row 2 - Nav-Row (Within row 2 (Playlists, Podcasts, Audiobooks, Artists, Albums)) -->
+
+      <nav class="nav-row">nav</nav>
+
+      <!-- Row 3 - Main-Row (Album Covers) -->
+      <section class="main-row"></section>
+
+      <!-- Row 4 - Bottom-Row (Controls) -->
+
+      <section class="bottom-row">bottom-row</section>
+
+      <!-- Grid Ends -->
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
