@@ -4,10 +4,6 @@
    box-sizing: inherit;
 }
 
-:root {
-   --bottom-space: 11px;
-}
-
 body {
    box-sizing: border-box;
    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -223,7 +219,6 @@ section.sidebar {
    text-transform: uppercase;
    font-weight: bold;
    font-size: 13px;
-   /* text-align: center; */
 }
 
 .playlist-area {
