@@ -1,0 +1,195 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "left top"
+        "left main"
+        "playbar playbar";
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 5% 90% 100px;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.left {
+    grid-area: left;
+    background-color: black;
+    color: gray;
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+
+.left>div>h3 {
+    padding-left: 25px;
+    color: white;
+}
+
+.left>div>ul:last-of-type {
+    padding-left: 25px;
+    display: grid;
+    gap: 20px;
+}
+
+.left>div:last-of-type {
+    margin: 15px;
+
+}
+
+
+
+.left * a:hover {
+
+    color: white;
+    border-left: solid 4px yellowgreen;
+
+}
+
+.left * ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.left * img {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+
+
+.top {
+    grid-area: top;
+    background-color: rgb(37, 37, 37);
+}
+
+.top>button {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 30%;
+    color: white;
+    background: inherit;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: solid 2px white;
+    padding: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(31, 31, 41);
+    display: grid;
+    grid-template-rows: 3% 97%;
+}
+
+.mainheader {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 130px);
+    justify-content: end;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.mainheader * a:hover {
+    border-bottom: solid 2px yellowgreen;
+}
+
+
+.main * h2 {
+    color: white;
+    margin: 2px;
+}
+
+.main * h5 {
+    margin: 2px;
+}
+
+.main * p {
+    color: gray;
+    font-size: small;
+    margin: 2px;
+}
+
+.main * img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.recentlyplayed {
+    color: white;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    text-align: center;
+}
+
+.johndoe {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+
+}
+
+.popularartisti {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+}
+
+.popularartisti>div>img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.playbar {
+    grid-area: playbar;
+    background-color: rgb(36, 34, 34);
+    position: sticky;
+    bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr 20%
+}
+
+.playbar_left {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-content: center;
+}
+
+.whitetext {
+    60 color: white;
+}
+
+.smallertext {
+    font-size: small;
+}
+
+.playbar_left_right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60px);
+}
+
+.playbar_middle {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+
+.musicplayer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30px);
+    position: relative;
+    left: 100px;
+}
+
+.playbar_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
