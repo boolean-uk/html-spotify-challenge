@@ -11,37 +11,41 @@ body {
     height: 100vh;
 }
 
-.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+.reset-a,
+.reset-a:hover,
+.reset-a:visited,
+.reset-a:focus,
+.reset-a:active {
     text-decoration: none;
     color: inherit;
     outline: 0;
     cursor: pointer;
-  }
+}
 
 main {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 260px 1fr;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: 
-    "left-menu header"
-    "left-menu main"
-    "footer footer"; 
-} 
+    grid-template-rows: 80px 1fr 90px;
+    grid-template-areas:
+        "left-menu header"
+        "left-menu main"
+        "footer footer";
+}
 
 /* Left Menu */
 
-.left-menu { 
-    grid-area: left-menu; 
+.left-menu {
+    grid-area: left-menu;
     background-color: black;
     padding: 0px 25px;
     display: grid;
     grid-template-rows: 75px min-content min-content 1fr 50px;
     color: #a3a3a3;
-} 
+}
 
-.left-menu > .spotify-logo {
+.left-menu>.spotify-logo {
     color: white;
     font-size: 26px;
     font-weight: bold;
@@ -52,20 +56,20 @@ main {
     grid-gap: 5px;
 }
 
-.spotify-logo > i {
+.spotify-logo>i {
     align-self: center;
 }
 
 .left-navigation {
     display: grid;
-    grid-template-rows: repeat(3,min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 15px;
     font-size: 14px;
     padding: 25px 0;
     font-weight: bold;
 }
 
-.left-menu > .left-navigation > a > div > span {
+.left-menu>.left-navigation>a>div>span {
     padding-left: 10px;
 }
 
@@ -75,7 +79,7 @@ main {
 
 .playlist {
     display: grid;
-    grid-template-rows: repeat(3,min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 10px;
 }
 
@@ -107,8 +111,8 @@ main {
 
 /* Header */
 
-.header { 
-    grid-area: header; 
+.header {
+    grid-area: header;
     border: solid 1px black;
     background-color: #080b12;
     color: white;
@@ -117,7 +121,7 @@ main {
     justify-content: right;
     /* I have used a tiny bit of flex here because for positioning a single
     item like this it's far, far better than grid! */
-}  
+}
 
 .upgrade {
     margin-right: 20px;
@@ -129,88 +133,40 @@ main {
     font-size: 14px;
 }
 
-.header > a:hover {
+.header>a:hover {
     font-weight: bold;
 }
 
 /* Main Section Header*/
 
-/* .main { 
-    grid-area: main; 
+.main {
+    grid-area: main;
     border: solid 1px black;
     background-color: #141922;
     display: grid;
-    grid-template-rows: 50px repeat(3, auto);
+    grid-template-rows: min-content repeat(3, auto);
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-  }  
-  
-  .main-header {
-    color: #a3a3a3;
-    text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(min-content, 120px));
-    grid-gap: 20px;
-    margin: auto;
-    grid-auto-rows: auto;
-  }
-  
-  @media screen and (max-width: 862px) {
-    .main-header {
-      grid-template-rows: auto auto;
-    }
-    
-    .main-header a:nth-child(6) {
-      grid-row: 2;
-    }
-  } */
+}
 
-  .main { 
-    grid-area: main; 
-    border: solid 1px black;
-    background-color: #141922;
-    display: grid;
-    grid-template-rows: auto repeat(3, auto);
-    height: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
-  }  
+/* grid-template-columns: repeat(6, minmax(min-content, 120px)); */
+
 
 .main-header {
     color: #a3a3a3;
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 100px));
-    place-content: center;
-    grid-gap: 20px;
+    grid-template-columns: repeat(6, min-content);
+    grid-gap: 30px;
+    margin: auto;
+    padding: 10px 0;
     font-size: 14px;
-    border-bottom: solid 1px red;
-    padding: 20px;
+    place-items: center;
+    white-space: nowrap;
 }
 
-@media only screen and (max-width: 862px) {
-    .main-header {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: auto auto;
-      row-gap: 20px;
-    }
-    .main-header > *:nth-child(6) {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        place-self: center;
-        margin: auto;
-    }
-  }
-
-
-
-  
-
-
-
-
-.main-header > a:hover {
+.main-header>a:hover {
     color: white;
     text-decoration: underline;
     text-decoration-color: #95dc2d;
@@ -218,7 +174,7 @@ main {
     text-underline-offset: 10px;
 }
 
-.main-header > a:focus {
+.main-header>a:focus {
     color: white;
     text-decoration: underline;
     text-decoration-color: #95dc2d;
@@ -226,51 +182,328 @@ main {
     text-underline-offset: 10px;
 }
 
-/* Main Section Music */
+/* Recently Played Section */
 
 .recently-played {
     display: grid;
-    grid-template-rows: min-content auto;
+    grid-template-rows: repeat(2, min-content);
     grid-gap: 30px;
+    padding: 10px 20px;
 }
 
 .recently-played-music {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, 180px);
     grid-auto-rows: 1fr;
     grid-gap: 10px;
 }
 
 .recently-played .artist-name {
     color: #a3a3a3;
+    font-size: 12px;
 }
 
-.recently-played h1, .album-title {
+.recently-played .album-title {
+    font-size: 16px;
     color: white;
 }
 
-.recently-played, .user-created, .popular-artists {
-    border: solid 1px red;
+.recently-played h1 {
+    color: white;
+    font-size: 22px;
 }
 
 .album {
-    /* width: 150px; */
     width: 100%;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     display: grid;
-    max-height: 100%;
+    grid-template-rows: repeat(3, min-content);
+    text-align: center;
+    grid-gap: 10px;
+    padding: 0 10px 10px 10px;
+    position: relative;
 }
 
-.album > img {
-    /* width: 150px;
-    height: 150px; */
+.album>img {
     width: 100%;
 }
 
+/* User Recommended Section */
 
+.user-recommended {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 10px;
+    padding: 10px 20px;
+}
 
-.footer {  															
-    grid-area: footer;   
+.user-recommended-playlists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.recommended-playlist {
+    width: 100%;
+    /* border: solid 1px green; */
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    max-height: 100%;
+    text-align: center;
+    grid-gap: 10px;
+    padding: 0 10px 10px 10px;
+    position: relative;
+}
+
+.recommended-playlist>img {
+    width: 100%;
+}
+
+.user-recommended>h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.user-recommended>span {
+    color: #a3a3a3;
+    padding-bottom: 10px;
+}
+
+.recommended-playlist>.playlist-title {
+    color: white;
+    font-size: 16px;
+}
+
+/* Popular Artists Section */
+
+.popular-artists {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 10px;
+    padding: 10px 20px;
+}
+
+.popular-artist-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.popular-artist-album {
+    width: 100%;
+    /* border: solid 1px green; */
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    max-height: 100%;
+    text-align: center;
+    grid-gap: 10px;
+    padding: 0 10px 10px 10px;
+    position: relative;
+}
+
+.popular-artist-album>img {
+    width: 100%;
+}
+
+.popular-artists>h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.popular-artists>span {
+    color: #a3a3a3;
+    padding-bottom: 10px;
+}
+
+.recommended-playlist>.playlist-title {
+    color: white;
+    font-size: 16px;
+}
+
+.popular-artist-album>.artist-title {
+    color: white;
+    font-size: 16px;
+}
+
+/* Play Icon */
+
+.album:hover .play-icon {
+    display: block;
+}
+
+.recommended-playlist:hover .play-icon {
+    display: block;
+}
+
+.popular-artist-album:hover .play-icon {
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    display: none;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #1fdf64;
+    border-radius: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.play-shift {
+    top: 68%;
+    left: 80%;
+}
+
+.play-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsiveness */
+
+.album:hover,
+.recommended-playlist:hover,
+.popular-artist-album:hover {
+    background-color: rgba(42, 53, 72, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
     border: solid 1px black;
     background-color: #282828;
+    display: grid;
+    grid-template-columns: 260px 1fr 260px;
+}
+
+.now-playing {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    align-items: center;
+    padding-left: 10px;
+    grid-gap: 10px;
+}
+
+.now-playing>img {
+    height: 56px;
+}
+
+.song-details>.title {
+    color: white;
+    font-size: 14px;
+}
+
+.song-details>.artist {
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.now-playing-icons {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-gap: 20px;
+    justify-content: right;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.fa-folder,
+.fa-heart {
+    color: #a3a3a3;
+}
+
+.fa-folder:hover,
+.fa-heart:hover {
+    color: white;
+}
+
+.volume-controls {
+    display: grid;
+    grid-template-columns: repeat(3, min-content) 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.volume-controls>i {
+    color: white;
+}
+
+/* I apologise so much for this bodge! */
+
+.volume-controls>p {
+    padding-bottom: 15px;
+}
+
+.volume-controls>p>.white {
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+
+.volume-controls>p>.grey {
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #a3a3a3;
+    text-decoration-thickness: 5px;
+}
+
+/* Music Controls Section */
+
+.music-controls {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.music-control-buttons>i {
+    color: white;
+    padding: 0px 10px;
+}
+
+.play-area {
+    display: grid;
+    grid-template-columns: 50px minmax(200px, 500px) 50px;
+    grid-gap: 10px;
+    place-items: center;
+    padding: 0px 50px;
+}
+
+.play-area span {
+    color: white;
+    font-size: 12px;
+}
+
+.play-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #5a5a5a;
+    position: relative;
+}
+
+.play-progress {
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    animation: progress 275s linear;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
