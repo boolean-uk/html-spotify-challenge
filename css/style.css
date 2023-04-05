@@ -156,7 +156,7 @@ body {
   position: relative;
   left: 19px;
   bottom: 220px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .Bhangra-Party-Mix:hover,
@@ -187,20 +187,89 @@ body {
     "main-row";
   grid-template-rows: 175px 125px 1250px;
   border: 1px dashed black;
+  overflow-x: hidden;
 }
 
 /* Grid template areas */
-
+/* Top-Row */
 .top-row {
   grid-area: top-row;
   background-color: #000003ee;
 }
 
-.nav-row {
-  grid-area: nav-row;
-  background-color: rgb(3, 85, 41);
+.previous-icon {
+  filter: invert(56%) sepia(100%) saturate(3605%) hue-rotate(181deg)
+    brightness(10%) contrast(10%);
+  position: relative;
+  left: 400px;
+  top: 10px;
 }
 
+.previous-icon:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.next-icon:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.next-icon {
+  filter: invert(56%) sepia(100%) saturate(3605%) hue-rotate(181deg)
+    brightness(10%) contrast(10%);
+  position: relative;
+  left: 470px;
+  bottom: 117px;
+}
+
+.playlists {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 600px;
+  bottom: 210px;
+}
+
+.podcasts {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 730px;
+  bottom: 255px;
+}
+
+.audiobooks {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 870px;
+  bottom: 301px;
+}
+
+.artists {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 600px;
+  bottom: 210px;
+}
+/* 
+.username {
+  color: rgb(206, 21, 21);
+} */
+
+/* Nav-Row = Playlists, Podcasts, Audiobooks, Artists, Albums */
+.nav-row {
+  grid-area: nav-row;
+  background-color: #000000e1;
+}
+
+/* Main-Row */
 .main-row {
   grid-area: main-row;
   background-color: crimson;
@@ -211,12 +280,45 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 2300px;
+  width: 2500px;
   background-color: rgb(33, 28, 28);
   padding: 20px;
-  height: 150px;
+  height: 110px;
 }
 
-.hello {
-  color: blue;
+.Album-Cover {
+  position: relative;
+  top: 10px;
+}
+
+.Song-Name {
+  position: relative;
+  bottom: 80px;
+  left: 115px;
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 18px;
+}
+
+.Artist-Name {
+  position: relative;
+  bottom: 90px;
+  left: 115px;
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+}
+
+/* .Song-Name:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  width: 40px;
+} */
+
+.Heart-Icon {
+  /* width: 3000px; */
+  color: rgb(0, 179, 255);
+  /* position: relative;
+  top: 500px;
+  left: 500px; */
 }
