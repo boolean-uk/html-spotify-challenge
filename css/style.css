@@ -12,7 +12,7 @@
 body {
   grid-template:
   'left-bar header' 100px
-  'left-bar main' calc(100vh - 200px)
+  'left-bar main' auto
   'footer footer' 100px /
   300px calc(100vw - 300px);
   background-color: rgb(20, 25, 34);
@@ -20,7 +20,7 @@ body {
 header {
   grid-area: header;
   height: 100px;
-  width: calc(100vw - 300px);
+  width: 100vw;
 
   position: fixed;
   top: 0;
@@ -42,7 +42,7 @@ header > button {
 
   font-size: 2rem;
   color: white;
-  background-color: rgb(27, 27, 27);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .side-bar {
@@ -143,12 +143,13 @@ header > button {
 .side-bar > .profile-section > hr {
   width: 280px;
   border: 1px solid rgb(108, 108, 108);
-  margin-left: 10px;
+  margin: 10px;
 }
 .side-bar > .profile-section > .profile {
   grid-template-areas: '. .';
   grid-template-columns: 50px;
   align-items: center;
+  margin-bottom: 15px;
 }
 .side-bar > .profile-section > .profile > .profile-picture {
   width: 40px;
@@ -179,7 +180,98 @@ main {
   grid-area: main;
   background-color: rgb(20, 25, 34);
   justify-items: center;
+  padding: 10px;
+}
 
+main > nav {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+main > nav > a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  font-size: 1.5rem;
+  margin: 0 5px 0 5px;
+}
+
+main > .main-content {
+  width: calc(100vw - 300px);
+  grid-template:
+  'recently-played' 400px
+  'just-for-you' 400px
+  'popular-artists' 400px /
+  calc(100vw - 300px);
+  gap: 50px;
+}
+
+main > .main-content > .recently-played {
+  grid-area: recently-played;
+  
+}
+
+main > .main-content > .just-for-you {
+  grid-area: just-for-you;
+}
+
+main > .main-content > .popular-artists {
+  grid-area: popular-artists;
+}
+.recently-played > h2,
+.just-for-you > h2,
+.popular-artists > h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.recently-played > p,
+.just-for-you > p,
+.popular-artists > p {
+  font-size: 1.5rem;
+  color: rgb(108, 108, 108);
+  max-width: 20vw;
+}
+.cards {
+  grid-template-areas: '. . . . . .';
+  grid-template-columns: repeat(6, 250px);
+  grid-auto-flow: column dense;
+  gap: 25px;
+  
+}
+
+.cards > .card {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+}
+
+.cards > .card > .image-container,
+.cards > .card > .image-container-round {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.cards > .card > .image-container > img,
+.cards > .card > .image-container-round > img {
+  width: 250px;
+  height: 250px;
+}
+
+.cards > .card > .image-container-round > img {
+  border-radius: 50%;
+}
+
+
+.cards > .card > p {
+  max-width: 250px;
+  color: rgb(108, 108, 108);
+  text-align: center;
+}
+.cards > .card > h2 {
+  max-width: 250px;
+  color: white;
+  text-align: center;
 }
 footer {
   grid-area: footer;
@@ -189,6 +281,11 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: rgb(33, 33, 33);
+
+  grid-template:
+  'song play-stop volume' 50px
+  'song song-bar volume' 50px /
+  1fr 3fr 1fr
 }
 
 .hover:hover {
@@ -212,5 +309,4 @@ footer {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
-
 
