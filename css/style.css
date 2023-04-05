@@ -2,6 +2,30 @@
     margin:0;
 }
 
+/* GLOBAL styling */
+ul {
+    list-style: none;
+    padding:0;
+    display:grid;
+    grid-auto-flow: rows;
+    gap: 5px;
+    margin: 0; 
+}
+h2 {
+    font-size: large;
+}
+/* SCROLL behaviour */
+.music::-webkit-scrollbar, .playlists::-webkit-scrollbar {
+                display:none;
+            }
+/* construction lines */
+    .logo, .menu, .playlists, .profile, 
+    .playing, .controls, .volume,
+    .upgrade, .music {
+        border: 1px dashed black;
+    }
+
+/* TOP GRID */
 .grid {
     display:grid;
     grid-template-areas:
@@ -11,14 +35,6 @@
     height: 100vh;
     width:100vw;
 }
-
-/* construction lines */
-    .logo, .menu, .playlists, .profile, 
-    .playing, .controls, .volume,
-    .upgrade, .music {
-        border: 1px dashed black;
-    }
-
 /* TOP grid styling */
     .top {
         grid-area: top;
@@ -36,7 +52,7 @@
             "menu"
             "playlists"
             "profile";
-            grid-template-rows: 100px 250px 1fr 100px;
+            grid-template-rows: 100px 1fr 3fr 100px;
             padding-bottom: 120px;
         }
             .logo {
@@ -48,43 +64,50 @@
                     position: relative;
                     top: 10px;
                 }
-/* MENU styling */
+/* MENU & PLAYLIST anchors styling */
             nav {
                 grid-area: menu;
                 gap:5px;
                 padding: 5px;
             }
-                nav ul {
-                    list-style: none;
-                    padding:0;  
-                    display:grid;
-                    grid-auto-flow: rows;
-                    list-style: none;
-                    gap: 2px;
-                    margin: 0;
-                }
-                nav ul li img {
+                nav ul li img, #new_playlist img, 
+                .install img, .user_profile img {
                     height:40px;
                     width: 40px;
                     padding: 0 10px 0 0;
                     align-self: center;
                 }
-                    #menu_home {  
+                    #menu_home a, #menu_search a, #menu_library a,
+                    #new_playlist a,
+                    .install a, .user_profile a {  
                         border: solid 1px red;
+                        border-radius: 5px;
+                        display:inline-flex;
+                        align-items: center;
+                        width: 180px;
                     }
-                    #menu_search {
-                        border: solid 1px red;/* grid-area:menu_search; */
-                    }
-                    #menu_library {
-                        border: solid 1px red;
-                    }
-                
-                    
+/* PLAYLISTS styling */       
             .playlists {
                 grid-area:playlists;
+                padding: 5px;
+                overflow-y: scroll;
+                scroll-behavior: smooth;
             }
+                .named_playlist {
+                    padding: 5px;
+                } 
+/* PROFILE styling */
             .profile {
                 grid-area:profile;
+                display:grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "install"
+                "user_profile";
+                
+                padding: 5px;
+                place-content: center;
+                
             }
 
 /* MAIN styling */
@@ -100,7 +123,18 @@
         }
             .upgrade {
                 grid-area: upgrade;
+                display:grid;
+                grid-template-areas: ". upgrade_button";
+                grid-template-columns: 1fr 200px;
             }
+                .upgrade button {
+                    grid-area: upgrade_button;
+                    height:40px;
+                    width:180px;
+                    place-self: center;
+                    border: solid 1px red;
+                    border-radius: 5px;
+                }
 /* MUSIC styling */
             .music {
                 grid-area: music;
@@ -113,9 +147,7 @@
                 scroll-behavior: smooth;
                 padding-bottom: 120px;
             }
-            .music::-webkit-scrollbar {
-                display:none;
-            }
+            
 /* CARD styling */
                 .card {
                     border: 1px solid darkolivegreen;
