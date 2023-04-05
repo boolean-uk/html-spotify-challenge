@@ -35,6 +35,20 @@ a:hover {
     font-weight: bolder;
 }
 
+.overlay {
+    display:none;
+    position: relative;
+    bottom: 200px;
+    height:150px;
+    width:150px;
+    padding: 10px;
+    z-index: 99;
+}
+.card_item:hover .overlay{
+    display: inline;
+    opacity: 75%
+}
+
 
 /* SCROLL behaviour */
 .music::-webkit-scrollbar, .playlists::-webkit-scrollbar {
@@ -255,8 +269,7 @@ a:hover {
                             max-height: 200px;
                             max-width: 200px;
                             margin: 5px;
-                            object-fit: cover;
-                            justify-self: start;   
+                            object-fit: cover;   
                         }
                         .pop_artist img {
                             border-radius: 50%;
