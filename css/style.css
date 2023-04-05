@@ -4,7 +4,7 @@
   box-sizing: border-box;
   color: white;
   font-family: "Gotham Rounded";
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .grid {
@@ -66,9 +66,23 @@ main {
 
 nav {
   grid-area: nav;
-  grid-template-rows: 100px repeat(3, 50px) 60px 80px repeat(4, 50px) 1fr 50px 1px 50px;
+  grid-template-rows: 100px repeat(3, 35px) 45px 65px repeat(4, 35px) 1fr 50px 1px 50px;
   row-gap: 10px;
   background-color: #000000;
+}
+
+nav > a,
+nav > div {
+  margin-left: 17px;
+  grid-template-columns: 35px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  font-size: 1rem;
+  color: #717171;
+}
+
+nav > * {
+  text-decoration: none;
 }
 
 nav .logo {
@@ -77,28 +91,24 @@ nav .logo {
   margin-left: -3px;
 }
 
-nav > .home img {
-  height: 40px;
-  display: inline-block;
-}
-
-nav > a,
-nav > div {
-  margin-left: 17px;
-  grid-template-columns: 40px 1fr;
-  column-gap: 10px;
-  align-items: center;
-  font-size: 1.2rem;
+nav > .playlists,
+nav > .home,
+nav > .profile {
+  color: white;
 }
 
 nav > div.playlists {
   margin-top: 25px;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-nav > * {
-  text-decoration: none;
+nav .selected-bar {
+  position: absolute;
+  left: 0px;
+  background-color: #ADFF2F;
+  height: 40px;
+  width: 6px;
 }
 
 nav > a.playlist {
@@ -106,15 +116,16 @@ nav > a.playlist {
 }
 
 nav > a > .new-playlist {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   color: black;
   display: inline-block;
   background-color: lightgray;
   text-align: center;
-  padding: 2px 0;
-  font-weight: 600;
-  font-size: 2.1rem;
+  /* padding: 2px 0; */
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: Roboto;
 }
 
 nav > .download-app {
@@ -128,7 +139,7 @@ nav > .profile {
 
 nav > .profile > img {
   height: 30px;
-  background-color: lightgray;
+  background-color: darkgray;
   border-radius: 50%;
 }
 
