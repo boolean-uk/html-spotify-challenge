@@ -27,6 +27,15 @@ body {
   left: 80px;
   bottom: 9px;
   font-size: 27px;
+  font-family: "Gotham Rounded", sans-serif;
+}
+
+.playlists,
+.podcasts,
+.audiobooks,
+.artists,
+.albums:hover {
+  cursor: pointer;
 }
 
 /* Navigation; Home, Search, Library */
@@ -149,7 +158,9 @@ body {
 .Feel-Good-Happy-Mix,
 .Diljit-Dosanjh,
 .Peaceful-Music,
-.Hip-Pop {
+.Hip-Pop,
+.Bollywood,
+.Classical {
   color: #ece3e3d4;
   font-family: "Gotham Office", sans-serif;
   font-size: 22;
@@ -172,7 +183,9 @@ body {
 .Feel-Good-Happy-Mix:hover,
 .Diljit-Dosanjh:hover,
 .Peaceful-Music:hover,
-.Hip-Pop:hover {
+.Hip-Pop:hover,
+.Bollywood:hover,
+.Classical:hover {
   cursor: default;
   color: white;
 }
@@ -224,7 +237,7 @@ body {
 }
 
 .playlists {
-  color: #ece3e3d4;
+  color: white;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
@@ -233,7 +246,7 @@ body {
 }
 
 .podcasts {
-  color: #ece3e3d4;
+  color: white;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
@@ -242,7 +255,7 @@ body {
 }
 
 .audiobooks {
-  color: #ece3e3d4;
+  color: white;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
@@ -251,30 +264,165 @@ body {
 }
 
 .artists {
-  color: #ece3e3d4;
+  color: white;
   font-family: "Gotham Rounded", sans-serif;
   font-size: 20px;
   position: relative;
-  left: 600px;
-  bottom: 210px;
+  left: 1040px;
+  bottom: 347px;
+}
+
+.albums {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1165px;
+  bottom: 390px;
 }
 /* 
 .username {
   color: rgb(206, 21, 21);
 } */
 
-/* Nav-Row = Playlists, Podcasts, Audiobooks, Artists, Albums */
+/* Nav-Row */
 .nav-row {
   grid-area: nav-row;
   background-color: #000000e1;
 }
 
+.title-playlists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 400px;
+  top: 20px;
+}
+
+.magnifying-icon {
+  position: relative;
+  left: 1700px;
+  bottom: 50px;
+  width: 30px;
+}
+
+.magnifying-icon,
+.most-relevant,
+.downward-arrow:hover {
+  cursor: pointer;
+}
+
+.most-relevant {
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 30;
+  position: relative;
+  left: 1760px;
+  bottom: 100px;
+  margin-top: 20px;
+}
+
+.downward-arrow {
+  filter: invert(56%) sepia(100%) saturate(3605%) hue-rotate(181deg)
+    brightness(10%) contrast(10%);
+  width: 18px;
+  position: relative;
+  left: 1900px;
+  bottom: 136px;
+}
 /* Main-Row */
 .main-row {
   grid-area: main-row;
-  background-color: crimson;
+  background-color: #000000dd;
 }
 
+.heavy-metal-img {
+  position: relative;
+  left: 350px;
+  top: 25px;
+}
+
+.album-name1 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 410px;
+  top: 20px;
+}
+
+.subtitle1 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 430px;
+  top: 10px;
+}
+
+.stranger-img {
+  position: relative;
+  left: 620px;
+  bottom: 330px;
+}
+
+.album-name2 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 640px;
+  bottom: 338px;
+  inline-size: 240px;
+}
+
+.subtitle2 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 640px;
+  bottom: 340px;
+}
+
+.quiet-place-img {
+  position: relative;
+  left: 890px;
+  bottom: 737px;
+}
+
+.album-name3 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 950px;
+  bottom: 745px;
+}
+
+.subtitle3 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 980px;
+  bottom: 755px;
+}
+
+.heavy-metal-img,
+.album-name1,
+.subtitle1:hover,
+.stranger-img,
+.album-name2,
+.subtitle2,
+.quiet-place-img,
+.album-name3,
+.subtitle3 {
+  cursor: pointer;
+}
+
+/* Bottom-Row */
 .bottom-row {
   position: fixed;
   bottom: 0;
