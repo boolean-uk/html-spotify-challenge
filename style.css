@@ -236,27 +236,120 @@ color: #ffffff;
     font-weight: 600;
   }
   
- .spotify-player {
-  background-color: #252525;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  display: grid;
-  align-items: center;
-}
+  .footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: #252525;
+    position: fixed;
+    place-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    gap: 20px;
+ }
 
-.spotify-player img {
-  width: 60px;
-  height: 60px;
-  margin: 0 20px;
-  padding: 15px;
-}
+ .footer .footer_nav {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr auto;
+    gap: 10px;
+    place-items: center;
+ }
 
-.spotify-player .play-pause:hover {
-  opacity: 0.8;
-  transition: opacity 0.2s ease-in-out;
-}
+  .footer .footer_nav {
+  color: #ffffff
+ }
 
+ .footer .footer_nav .fa {
+  color: #ffffff
+ }
+ 
+ .footer .footer_nav img {
+    height: 60px;
+    margin-right: 14px;
+ }
+ 
+ .footer .footer_nav div p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: -20px;
+    color: #ffffff;
+ }
+ 
+ .footer .footer_nav div span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #a3a0a0;
+ }
+ 
+ .footer .footer_nav div {
+    margin-right: 35px;
+ }
+ 
+ .footer .control {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-items: center;
+    gap: 11px;
+    color: #ffffff;
+ }
+ 
+ .footer .control .control-button {
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    gap: 25px;
+    place-items: center;
+ }
+ 
+ .footer .control .control-button .play-button {
+    font-size: 30px;
+
+ }
+ 
+ .footer .play {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+ }
+ 
+ .footer progress {
+    border-radius: 7px;
+    width: 80%;
+    height: 22px;
+ }
+ 
+ .footer progress[value] {
+    width: 400px;
+    height: 3px;
+ }
+ 
+ .footer progress[value]::-webkit-progress-bar {
+    background-color: #a3a0a0;
+    border-radius: 2px;
+ }
+ 
+ .footer progress::-webkit-progress-value {
+    background-color: rgb(228, 228, 233);
+    border-radius: 7px;
+ }
+ 
+ .footer .play span {
+    font-size: 11px;
+    margin: 0 15px;
+ }
+ 
+ .footer .audio_control {
+    display: grid;
+    grid-template-columns: repeat(3, 20px) 1fr;
+    gap: 20px;
+    margin-right: 15px;
+    place-items: center;
+    color: #ffffff;
+ }
+ 
+ .audio_control progress[value] {
+    width: 120px;
+    height: 3px;
+ }
