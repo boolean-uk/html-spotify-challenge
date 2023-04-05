@@ -104,11 +104,15 @@ a:hover {
 /* PLAYLISTS styling */       
             .playlists {
                 grid-area:playlists;
-                padding: 5px;
+                padding: 5px 5px 5px 20px;
                 overflow-y: scroll;
                 scroll-behavior: smooth;
             }
-                .named_playlist, #new_playlist img {
+                #new_playlist {
+                    position: relative;
+                    right: 5px;
+                }
+                .named_playlist {
                     padding: 5px;
                 } 
 /* PROFILE styling */
@@ -287,8 +291,6 @@ a:hover {
             }
                 .playback a {
                     object-fit: contain;                   
-                    border: 1px solid red;
-                    border-radius: 50%; 
                     padding: 2px;
                 }
                 .playback:nth(1) {
