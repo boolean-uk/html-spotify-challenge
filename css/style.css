@@ -1,4 +1,4 @@
-/* General styling*/
+/* General styling ---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -24,10 +24,9 @@ body {
   height: 100vh;
 }
 
-/* Multiple selectors */
+/* Multiple selectors ----------------------------- */
 
 .left-bar,
-.player,
 .player-bar {
   border: #fff 2px dotted;
 }
@@ -43,7 +42,7 @@ a {
 }
 
 
-/* LEFT BAR */
+/* LEFT BAR -------------------------------------------- */
 
 .left-bar {
   grid-area: left;
@@ -53,8 +52,6 @@ a {
 
   font-size: small;
 }
-
-
 
 .brand {
   margin: 10px;
@@ -115,7 +112,7 @@ h3 {
   border-radius: 50%;
 }
 
-/* HEADER */
+/* HEADER ------------------------------------- */
 header {
   display: grid;
   grid-area: header;
@@ -135,7 +132,7 @@ header {
   cursor: pointer;
 }
 
-/* NAV */
+/* NAV ------------------------------------------ */
 nav {
   grid-area: nav;
   display: grid;
@@ -158,7 +155,7 @@ nav {
 }
 
 
-/* MAIN */
+/* MAIN -------------------------------------- */
 main {
   grid-area: main;
   overflow: auto;
@@ -183,7 +180,7 @@ main {
 }
 
 
-/* PLAYER */
+/* PLAYER --------------------------------------- */
 .player-bar {
   grid-area: player;
 
@@ -222,37 +219,47 @@ main {
   cursor: pointer;
 }
 
-/* PLAYER */
-.player {
+/* PLAYER ------------------------------------------ */
+/* .player {
   display: grid;
   grid-template-columns: 50px 50px 60px 50px 50px;
-
+  justify-content: center;
+  padding-top: 5px;
 }
 
+.time-bar {
+  display: grid;
+  grid-template-columns: 30px 1fr 20px;
+  gap: 20px;
+  justify-self: center;
+}
 
+.timeline {
+  border: 2px solid #716f6f;
+  height: 1px;
+  width: 200px;
+} */
 
-/* AUDIO */
+/* AUDIO --------------------------------------------- */
 
 audio {
   margin: 10px;
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #090B11;
+  background-color: #282828;
 }
 
-audio::-webkit-media-controls-play-button {
-  display: hide;
-}
 
-/* 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display {
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 50px;
   padding: 3px;
+  margin: 3px;
+
 }
 
 audio::-webkit-media-controls-timeline {
@@ -262,10 +269,19 @@ audio::-webkit-media-controls-timeline {
 
 audio::-webkit-media-controls-volume-slider {
   color: #fff;
-
 }
 
 audio::-webkit-media-controls-volume-slider-container {
-  background-color: #464646;
+  background-color: #fff;
   border-radius: 50px;
-} */
+}
+
+/* MORE SETTINGS ------------------------------ */
+
+.more-settings {
+  display: grid;
+  grid-template-columns: 30px 30px;
+  place-items: center;
+  gap: 20px;
+}
+
