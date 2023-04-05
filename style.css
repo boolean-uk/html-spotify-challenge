@@ -133,45 +133,141 @@ main {
     font-weight: bold;
 }
 
-/* Main Section */
+/* Main Section Header*/
 
-.main { 
+/* .main { 
     grid-area: main; 
     border: solid 1px black;
     background-color: #141922;
     display: grid;
-    grid-template-rows: 50px repeat(3,1fr);
-}  
+    grid-template-rows: 50px repeat(3, auto);
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }  
+  
+  .main-header {
+    color: #a3a3a3;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(min-content, 120px));
+    grid-gap: 20px;
+    margin: auto;
+    grid-auto-rows: auto;
+  }
+  
+  @media screen and (max-width: 862px) {
+    .main-header {
+      grid-template-rows: auto auto;
+    }
+    
+    .main-header a:nth-child(6) {
+      grid-row: 2;
+    }
+  } */
+
+  .main { 
+    grid-area: main; 
+    border: solid 1px black;
+    background-color: #141922;
+    display: grid;
+    grid-template-rows: auto repeat(3, auto);
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }  
 
 .main-header {
     color: #a3a3a3;
     text-transform: uppercase;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 100px));
     place-content: center;
-    padding-top: 30px;
-    grid-template-columns: repeat(6,auto);
-    grid-template-rows: 50px;
-    grid-gap: 30px;
+    grid-gap: 20px;
     font-size: 14px;
+    border-bottom: solid 1px red;
+    padding: 20px;
 }
 
-.main-header > a:hover, a:focus {
+@media only screen and (max-width: 862px) {
+    .main-header {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto auto;
+      row-gap: 20px;
+    }
+    .main-header > *:nth-child(6) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        place-self: center;
+        margin: auto;
+    }
+  }
+
+
+
+  
+
+
+
+
+.main-header > a:hover {
     color: white;
     text-decoration: underline;
-    /* text-decoration-color: green;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 10px; */
-    border-bottom: solid 5px green;
-    width: 50%;
-    left: 50px;
-}
-
-/* .main-header > a:focus {
-    text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #95dc2d;
     text-decoration-thickness: 5px;
     text-underline-offset: 10px;
-} */
+}
+
+.main-header > a:focus {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #95dc2d;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+
+/* Main Section Music */
+
+.recently-played {
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-gap: 30px;
+}
+
+.recently-played-music {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.recently-played .artist-name {
+    color: #a3a3a3;
+}
+
+.recently-played h1, .album-title {
+    color: white;
+}
+
+.recently-played, .user-created, .popular-artists {
+    border: solid 1px red;
+}
+
+.album {
+    /* width: 150px; */
+    width: 100%;
+    border: solid 1px green;
+    display: grid;
+    max-height: 100%;
+}
+
+.album > img {
+    /* width: 150px;
+    height: 150px; */
+    width: 100%;
+}
+
+
 
 .footer {  															
     grid-area: footer;   
