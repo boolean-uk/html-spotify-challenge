@@ -1,6 +1,12 @@
 *{
     margin:0;
+    color:lightgray;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
 }
+
+
 
 /* GLOBAL styling */
 ul {
@@ -18,18 +24,21 @@ h3 {
     font-size: medium;
 }
 hr {
-    color: lightslategray;
+    color: rgb(68, 68, 68);
 }
+.sidebar img {
+    color:white;
+}
+a:hover {
+    background-color: seagreen;
+    font-weight: bolder;
+}
+
+
 /* SCROLL behaviour */
 .music::-webkit-scrollbar, .playlists::-webkit-scrollbar {
-                display:none;
-            }
-/* construction lines */
-    .logo, .menu, .playlists, .profile, 
-    .playing, .controls, .volume,
-    .upgrade, .music {
-        border: 1px dashed black;
-    }
+    display:none;
+}
 
 /* TOP GRID */
 .grid {
@@ -51,7 +60,7 @@ hr {
 /* SIDEBAR styling */        
         .sidebar {
             grid-area: sidebar;
-            background-color: lightsalmon;
+            background-color: rgb(0, 0, 0);
             display: grid;
             grid-template-areas:
             "logo"
@@ -77,20 +86,20 @@ hr {
                 padding: 5px;
             }
                 nav ul li img, #new_playlist img, 
-                .install img, .user_profile img {
+                #install img, #user_profile img {
                     height:40px;
                     width: 40px;
-                    padding: 0 10px 0 0;
+                    padding: 0 5px 0 0;
                     align-self: center;
                 }
                     #menu_home a, #menu_search a, #menu_library a,
                     #new_playlist a,
-                    .install a, .user_profile a {  
-                        border: solid 1px red;
-                        border-radius: 5px;
+                    #install a, #user_profile a {  
+                        border-radius: 25px;
                         display:inline-flex;
                         align-items: center;
-                        width: 180px;
+                        width: 160px;
+                        padding:10px;
                     }
 /* PLAYLISTS styling */       
             .playlists {
@@ -109,16 +118,38 @@ hr {
                 grid-template-rows: 1fr 1fr;
                 grid-template-areas:
                 "install"
+                "hr"
                 "user_profile";
                 padding: 5px;
                 place-content: center;
-        
+                gap: 5px;
+                
             }
+                #install {
+                    grid-area: install;
+                }
+                    #install img {
+                        width: 30px;
+                        padding: 0 15px 0 5px;
+                    }
+
+                #user_profile {
+                    grid-area: user_profile;
+                }
+                    #user_profile img {
+                        margin: 5px;
+                        padding:0;
+                        border-radius: 50%;
+                        background-color: rgb(68, 68, 68);
+                    }
+                    #user_profile h3 {
+                        padding-left: 5px;
+                    }
 
 /* MAIN styling */
         .main {
             grid-area: main;
-            background-color: lightcoral;
+            background-color: rgb(20, 25, 34);
             display:grid;
             grid-template-areas:
             "upgrade"
@@ -131,17 +162,15 @@ hr {
                 display:grid;
                 grid-template-areas: ". upgrade_now";
                 grid-template-columns: 1fr 200px;
+                background-color: rgb(8, 11, 18);
             }
                 .upgrade a {
                     grid-area: upgrade_now;
                     height:40px;
                     width:180px;
                     place-self: center;
-                    border: solid 1px red;
-                    border-top-left-radius: 25px;
-                    border-top-right-radius: 25px;
-                    border-bottom-right-radius: 25px;
-                    border-bottom-left-radius: 25px;
+                    border: solid 2px lightgray;
+                    border-radius: 100px;
                     display:inline-flex;
                     align-items: center;
                     justify-content: center;
@@ -195,10 +224,10 @@ hr {
         display:grid;
         grid-template-areas: "playing controls volume";
         grid-template-columns: 200px 1fr 200px;
-        background-color: lightseagreen;
+        background-color: rgb(40, 40, 40);
         position:fixed;
         bottom: 0;
-        height: 120px;
+        height: 100px;
         width: 100vw;
     }
 /* PLAYING styling */
@@ -252,10 +281,15 @@ hr {
                 gap: 20px;
                 place-content: center;
                 align-items: center;
+                padding: 5px;
+                position:relative;
+                top: 5px;
             }
                 .playback a {
-                    object-fit: contain;
-                    max-width: 50px;
+                    object-fit: contain;                   
+                    border: 1px solid red;
+                    border-radius: 50%; 
+                    padding: 2px;
                 }
                 .playback:nth(1) {
                     grid-area: shuffle_track;
@@ -279,6 +313,8 @@ hr {
                 display:grid;
                 grid-template-areas: "time_played progress_bar time_remaining";
                 grid-template-columns: 50px 1fr 50px;
+                position:relative;
+                bottom: 15px;
             }
                 #progress_bar, #progress_value,
                 #vol_max, #vol_current {
@@ -348,6 +384,10 @@ hr {
                     width: 25px;
                 }
 
+/* SVG filter */
+.svg {
+    filter:invert()
+}
 
 /* media query
 900px width 1st step down */
