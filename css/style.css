@@ -195,6 +195,7 @@ a:hover, .named_playlist a p:hover {
                 grid-template-areas: ". upgrade_now";
                 grid-template-columns: 1fr 200px;
                 background-color: rgb(8, 11, 18);
+                position: sticky;
             }
                 .upgrade a {
                     grid-area: upgrade_now;
@@ -214,6 +215,7 @@ a:hover, .named_playlist a p:hover {
                 gap: 5%;
                 place-content:center;
                 margin:10px;
+                position: sticky;
             }
             .catagories ul li a:hover {
                 border-bottom: 5px solid seagreen;
@@ -229,7 +231,7 @@ a:hover, .named_playlist a p:hover {
                 gap:10px;
                 overflow-y: scroll;
                 scroll-behavior: smooth;
-                padding-bottom: 125px;
+                padding-bottom: 100px;
             }
             
 /* CARD styling */
@@ -470,3 +472,7 @@ a:hover, .named_playlist a p:hover {
 
 /* media query
 900px width 1st step down */
+
+@media screen and (max-width: 900px) {
+    
+}
