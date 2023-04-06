@@ -98,6 +98,19 @@ a:hover, .named_playlist a p:hover {
                     position: relative;
                     top: 10px;
                 }
+                .logo_alt {
+                    visibility: hidden;
+                    grid-area: logo;
+                    padding: 10px;
+                    margin: 5px;
+                    height: 50px;
+                    width: 50px;
+                    position: relative;
+                    top: 10px;
+                    object-fit: contain;
+                    place-self:start;
+                }
+
 /* MENU & PLAYLIST anchors styling */
             nav {
                 grid-area: menu;
@@ -473,6 +486,31 @@ a:hover, .named_playlist a p:hover {
 /* media query
 900px width 1st step down */
 
-@media screen and (max-width: 900px) {
-    
+@media screen and (max-width: 850px) {
+    .top {
+        grid-area: top;
+        display:grid;
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 80px 1fr;
+    }
+    .logo_alt {
+        visibility: visible;
+    }
+        .logo img {
+            display: none;
+        }
+
+
+
+    .bottom {
+        grid-area: bottom;
+        display:grid;
+        grid-template-areas: ". playing controls volume .";
+        grid-template-columns: 1fr 100px 300px 100px 1fr;
+        background-color: rgb(40, 40, 40);
+        position:fixed;
+        bottom: 0;
+        height: 100px;
+        width: 100vw;
+    }
 }
