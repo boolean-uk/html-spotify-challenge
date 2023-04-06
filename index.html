@@ -4,9 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify</title>
 </head>
 <body>
-    
+    <div class="container">
+        <section class="leftbar">
+            <div class="brand">
+                <img class="spotify" src="images/icons/spotify.svg" alt="spotify" width="50px" />
+                <h1>Spotify</h1>
+            </div>
+            <div class="actions">
+              <ul>
+                <li>
+                  <a class="index" href="#">
+                    <img class="icons" src="images/icons/home-icon.svg" width="20px">
+                      Home
+                  </a>
+                </li>
+                <li>
+                  <a class="index" href="#">
+                    <img class="icons" src="images/icons/search.svg" width="20px">
+                    Search
+                  </a>
+                </li>
+                <li>
+                  <a class="index" href="#">
+                    <img class="icons" src="images/icons/lib.svg" width="20px">
+                    Library
+                  </a>
+                </li>
+              </ul>
+              <h3>Playlist</h3>
+              <ul>
+                <li><a class="playlists" href="#"><img src="images/icons/create.svg" width="25px"> 〶 Create
+                Playlist </a></li>
+                <li><a class="playlists" href="#"> © Classics </a></li>
+                <li><a class="playlists" href="#"> ℳ Winter Recap</a></li>
+                <li><a class="playlists" href="#"> ♖  Gym</a></li>
+                <li><a class="playlists" href="#"> ☕︎ Theraphy</a></li>
+                <li><a class="playlists" href="#"> ☣︎ Relaxation </a></li>
+                <li><a class="playlists" href="#">❆ Atmosphere</a></li>
+              </ul>
+            </div>
+            <div class="profile">
+                <div class="pic">
+                    <img class="profile-pic" src="images/albumcover/Koh Tao.jpg" alt="profile pic" width="30px">
+                </div>
+                <div class="name">Kocibey</div>
+            </div>
+        </section>
+        <header>
+            <p class="top">Upgrade to Pro</p>
+        </header>
+        <nav>
+            <a class="navbar" href="#"> Featured </a>
+            <a class="navbar" href="#"> Podcast </a>
+            <a class="navbar" href="#"> Chart </a>
+            <a class="navbar" href="#"> Genre </a>
+            <a class="navbar" href="#"> New </a>
+            <a class="navbar" href="#"> Find </a>
+        </nav>
+        <main>
+            <h3>Recently played</h3>
+            <div class="recent">
+              <div class="recent">
+                <img src="images/albumcover/Creep.png" alt="creep" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Demons.png" alt="id2" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Heat Waves.png" alt="hw" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Coldplay_-_Fix_You.jpg" alt="fix you" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Mama Don't Cry.png" alt="mama" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Shape.png" alt="shapeofyou" width="150px">
+              </div>
+              <div class="recent">
+                <img src="images/albumcover/Runaway.png" alt="aurora" width="150px">
+              </div>
+            </div>
+            <br><br>
+            <h3>Your Albums</h3>
+            <div class="your-albums">
+              <div class="album">
+                <img src="images/albumcover/Coldplay_-_Fix_You.jpg" alt="coldplay" width="152px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Mama Don't Cry.png" alt="Jaeigh" width="152px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Linkinpark.png" alt="linkinpark" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Linkinpark2.png" alt="lp2" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Runaway.png" alt="aurora" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Demons.png" alt="imaginedragon" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Stolen Dance.png" alt="milkychance" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Heat Waves.png" alt="glassanimals" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/Shape.png" alt="shape" width="150px">
+              </div>
+              <div class="album">
+                <img src="images/albumcover/id.png" alt="id" width="150px">
+                </div>
+            </div>
+        </main>
+        <div class="playing">
+            <div class="playingnow">
+              <img src="/images/albumcover/Creep.png" alt="radiohead" width="60px">
+              <div class="title">
+                <h5>Radiohead</h5>
+                <p>Creep</p>
+                </div>
+            </div>
+            <div class="like">
+              <img class="bottomicon" src="images/icons/folder.svg" alt="folder" width="20px">
+              <img class="bottomicon" src="images/icons/likesymbol.svg" alt="heart icon" width="20px">
+            </div>
+            <div>
+              <audio controls src="Creep - Radiohead.mp3" style= "width: 100%"></audio>
+            </div>
+            <div class="bottomsettings">
+              <div class="options">
+                <img src="images/icons/bulletlist.svg" alt="options" width="20px">
+              </div>
+              <div class="share"> 
+                <img src="images/icons/share.svg" alt="share" width="20px">
+              </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
