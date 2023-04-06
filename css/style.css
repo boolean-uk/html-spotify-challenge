@@ -7,6 +7,9 @@ div {
     margin: 5px
 }
 
+body {
+    background-color: #080B12;
+}
 /* Outer grid */
 .grid {
     display: grid;
@@ -24,15 +27,25 @@ div {
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
+    
 }
 
 .top {
     grid-area: top;
     background-color: #080B12;
     display: grid;
+    grid-template-columns: 1fr;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        right: 0;
+        height: 7%;
+        margin-left: 250px;
 }
 
 .header {
@@ -60,7 +73,7 @@ div {
         bottom: 0;
         min-height: 100px;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         bottom: 0;
         left: 0;
         right: 0;
@@ -70,10 +83,12 @@ div {
 .logo-container {
     width: 60%;
     display: grid;
+    margin-top: 10px;
 }
 
 /* small logo when collapsing */
 .spotify-logo--text {
+
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -205,11 +220,11 @@ hr {
     color: white;
     border: solid 1.5px white;
     width: 150px;
-    height: 50%;
+    height: 70%;
     border-radius: 25px;
     align-self: center;
     justify-self: right;
-    margin-right: 20px;
+
     place-content: center;
     text-decoration: none;
     font-size: 14px;
@@ -381,12 +396,13 @@ font-size: 15px;
     margin: 0 auto;
     left: 0px;
     right: -90px;
-    z-index: 1;
+
     background-color: #141922;
     border-radius: 100%;
     justify-self: center;
     opacity: 0;
     transition: all ease 0.4s;
+    z-index: 0;
 
 }
 
