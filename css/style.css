@@ -728,7 +728,7 @@ body {
   left: 0;
   right: 0;
   width: 2500px;
-  background-color: rgb(25, 23, 23);
+  background-color: rgba(25, 23, 23);
   padding: 20px;
   height: 110px;
 }
@@ -862,5 +862,63 @@ body {
 .phone-icon,
 .speaker-icon,
 .full-screen-icon:hover {
+  cursor: pointer;
+}
+
+.time-before {
+  color: white;
+  font-family: "Gotham Office", sans-serif;
+  position: relative;
+  bottom: 414px;
+  left: 555px;
+  font-size: 13px;
+}
+
+.time-after {
+  color: white;
+  font-family: "Gotham Office", sans-serif;
+  position: relative;
+  bottom: 430px;
+  left: 1118px;
+  font-size: 13px;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 0.45em;
+  background-color: grey;
+  border-radius: 1.5em;
+  position: relative;
+  bottom: 440px;
+  left: 600px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.vol-bar {
+  width: 147px;
+  height: 0.4em;
+  background-color: grey;
+  border-radius: 1.5em;
+  position: relative;
+  bottom: 455px;
+  left: 1528px;
+  overflow: hidden;
+}
+
+.vol-fill {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+.progress-bar,
+.vol-bar,
+.progress-fill:hover {
   cursor: pointer;
 }
