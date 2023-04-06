@@ -340,8 +340,8 @@ color: #ffffff;
  }
  
  .footer progress::-webkit-progress-value {
-    background-color: rgb(228, 228, 233);
-    border-radius: 7px;
+    background-color: #ffffff;
+    border-radius: 10px;
  }
  
  .footer .play span {
@@ -362,4 +362,14 @@ color: #ffffff;
  .audio_control progress[value] {
     width: 140px;
     height: 5px;
+ }
+
+ @media screen and (max-width: 863px) {
+  .grid {
+    grid-template-columns: 80px 1fr;
+  }
+  .sidebar .logo {
+    display: none;
+  }
+  
  }
