@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+.page {
+    display: grid;
+    grid-template: 
+    "left-side-bar main-right-area" 1fr /
+    200px 1fr;
+    border: 3px dotted blue;
+    
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    border: 3px dotted blue;
+}
+
+
+.left-side-bar {
+    display: grid;
+    grid-area: left-side-bar;
+    grid-template:
+        "spotify-logo" 20px
+        "left-menu" 150px
+        "playlist" 300px
+        "bottom-section" 150px /
+        200px;
+    border: 3px dotted orange;
+}
+
+.spotify-logo img {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+}
+
+.left-menu {
+    display: grid;
+    grid-area: left menu;
+    grid-template-columns: 55px 50px;
+    margin-top: 50px;
+    border: 3px dotted red;
+}
+
+.left-menu img {
+    align-self: center;
+    padding-left: 20px;
+    
+}
+
+p {
+    place-content: center;
+    margin-top: 25px;
+    font-size: small;
+    
+}
+
+.playlist {
+    padding: 20px;
+    margin-top: 30px;
+     
+}
+
+.create {
+    padding-bottom: 10px;
+    align-items: right;
+
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    font-size: small;
+}
+
+.bottom-section {
+    display: grid;
+    grid-area: bottom-section;
+    grid-template-columns: 30px 100px;
+    padding-top: 480px;
+    /* margin-top: 10px; */
+}
+
+.download {
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: small;
+    /* place-items: bottom;
+    justify-self: center; */
+  
+}
+
+.profile {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: small;
+    /* place-items: bottom;
+    justify-self: center; */
+    
+}
+
+.bottom-section img {
+    padding-left: 10px;
+}
+
+.main-right-area {
+    display: grid;
+    grid-area: main-right-area;
+    grid-template:
+        "upgrade" 80px
+        "top-nav" 60px
+        "main-area" auto
+        "control-bar" 80px /
+        1fr;
+    border: 3px dotted yellow;
+
+}
+
+.upgrade {
+    display: grid;
+    grid-area: upgrade;
+    grid-template-rows: 80px;
+    align-items: center;
+    justify-content: right;
+    border: 3px dotted red;
+}
+
+.upgrade-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    
+}
+
+.top-nav {
+    display: grid;
+    grid-area: top-nav;
+    grid-template-rows: 40px;
+    border: 3px dotted red;
+    place-items: center;
+}
+
+.main-area {
+    display: grid;
+    grid-area: main-area;
+    grid-template-area:
+    'recent' 300px
+    'created' 300px
+    'popular' 300px / 
+    800px;
+    border: 3px dotted red;
+}
+
+.recent {
+    height: 300px;
+}
+
+.recent img {
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+h3{
+    margin-top: 40px;
+}
+
+.metal {
+display: inline;
+position: relative;
+top: 12px;
+left: 30px
+}
+
+.image2 {
+    position: relative;
+    bottom: 227px;
+    left: 160px
+
+}
+
+.stranger-things {
+    display: inline;
+    position: relative;
+    /* bottom: 10px; */
+    /* left: 65px */
+    top: 31px;
+    right: 140px
+}
+
+
+.image3 {
+    position: relative;
+    bottom: 515px;
+    left: 320px
+}
+
+.quiet {
+    /* display: inline; */
+    position: relative;
+    bottom: 525px;
+    left: 350px
+}
+
+.image4 {
+    position: relative;
+    bottom: 724px;
+    left: 480px
+}
+
+.split{
+    display: inline;
+    position: relative;
+    bottom: 710px;
+    left: 540px
+}
+
+.image5 {
+    position: relative;
+    bottom: 912px;
+    left: 640px
+}
+
+.cure {
+    display: inline;
+    position: relative;
+    bottom: 900px;
+    left: 660px
+}
+
+.image6 {
+    position: relative;
+    bottom: 1100px;
+    left: 800px
+}
+
+.sinister {
+    display: inline;
+    position: relative;
+    bottom: 1090px;
+    left: 850px
+}
+
+.created {
+    height: 300px;
+    margin-top: 100px;
+   
+}
+
+
+
+/* .recent {
+    display: grid;
+    grid-template-columns: repeat(6, 140px)
+  
+
+} */
+
+.created img {
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.popular{
+    height: 200px;
+}
+
+.control-bar {
+    display: grid;
+    grid-area: control-bar;
+    grid-template-rows: 60px;
+    border: 3px dotted red;
+}
