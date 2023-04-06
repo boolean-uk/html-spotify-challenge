@@ -8,6 +8,7 @@
 body {
     display: grid;
     grid-template-rows: 90vh 10vh;
+    min-width: 100px;
 }
 
 body > section {
@@ -21,6 +22,7 @@ body > section {
     grid-template-rows: 100px 80vh;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 19%, rgba(8,167,20,1) 100%);
+    white-space: nowrap;
 } 
 
 nav {
@@ -31,17 +33,71 @@ nav {
     padding-left: 20px;
 }
 
-footer {
+footer {    
     background-color: rgb(59, 59, 59);
     display: grid;
-    grid-template-columns: 30vw 40vw 30vw;
-    
+    grid-template-columns: 30vw 40vw 30vw;    
+}
+
+.songcontrol {
+    display: grid;
+    grid-template-rows: 0.6fr 0.4fr;
+}
+
+.playbackcontrol {
+    display: grid;
+    grid-template-columns: 1fr 30px repeat(3, 50px) 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 0.2fr 30px 1fr 30px 0.2fr;
+}
+
+.playbacktime {
+    color: white;
+}
+
+.songlengthcontainer {
+    justify-self:center ;
+}
+
+.songlengthinner {
+    background-color: white;
+    width: 24vw;
+    height: 5px;
+    margin-top: 9px;
+    border-radius: 30px;
+}
+
+.seekicon {
+    height: 30px;
+    filter: invert(93%) sepia(94%) saturate(25%) hue-rotate(22deg) brightness(107%) contrast(106%);
+}
+
+.shuffle {
+    padding-right: 10px;
+}
+
+.play {
+    height: 45px;
+    filter: invert(93%) sepia(94%) saturate(25%) hue-rotate(22deg) brightness(107%) contrast(106%);
+}
+
+.audiorepeat {
+    height: 19px;
+    filter: invert(93%) sepia(94%) saturate(25%) hue-rotate(22deg) brightness(107%) contrast(106%);
+    padding-left: 10px;
+
 }
 
 .songinfo {
     display: grid;
     grid-template-columns: 200px 1fr;
     overflow: hidden;
+    min-width: 50px
 }
 
 .songalign {
@@ -53,24 +109,78 @@ footer {
     padding-left: 15px;
 }
 
+.songartist {
+    color: rgb(176, 176, 176)
+}
+
 .songalign > img {
     padding-left: 10px
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
+
+    .songalign > img {
+        justify-self: center;
     
+    }
+
+    .songalign > div + div {
+        display: none
+    }
+
+    .songalign {
+    }
 
 }
 
 .audiocontrol {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 215px;
+}
+
+.audiobuttons {
+    display: grid;
+    grid-template-columns: repeat(3, 35px) 110px;
+    justify-items: center;
+    align-items: center;
+}
+
+.audioicon {
+    height: 22px;
+    filter: invert(93%) sepia(94%) saturate(25%) hue-rotate(22deg) brightness(107%) contrast(106%);
+}
+
+.volumeouter {
+    height: 5px;
+    width: 85px;
+    background-color: rgb(145, 145, 145);
+    border-radius: 20px;
+    margin-right: 20px;
+
+}
+
+.volumeinner {
+    height: 5px;
+    width: 60px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(min-content, max-content));
+    justify-content: center;
+    align-content: center;
+    column-gap: 25px;
+    color: white;
 }
 
 .mainbody {
     display: grid;
     grid-template-rows: 100px 50px 1fr 50px 1fr;
     overflow-y: scroll; 
+    min-width: 350px;
 }
 
 h1 {
