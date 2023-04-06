@@ -1,0 +1,159 @@
+/* ------------------------------- GLOBAL ATTRIBUTES ------------------------ */
+* {
+    margin: 0;
+    padding: 0px;  
+    font-family: fantasy;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+    /* overflow: scroll;    */
+}
+
+.gridmain {
+    display: grid;
+    grid-template-areas:  
+    "leftbar main";
+    grid-template-columns: 20% 80%;    
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border-style: none;
+    
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border-left: chartreuse;
+}
+
+button:active {
+    background-color: grey;
+    color: white;
+}
+
+/* ------------------------------------------LEFTBAR------------------------  */
+
+
+#leftbar {
+    background-color: black;
+    color: lightgray;
+    
+}
+
+.logobutton {
+    background-color: black;
+    color: white;
+}
+
+.menu {
+    background-color: black;
+    color: lightgray;
+}
+
+.menu>img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.downloadbutton {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+
+.profile {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+
+.playlist {
+    background-color: black;
+    color: lightgray;
+}
+
+.create {
+    background-color: black;
+    color: lightgray;
+}
+
+/* -----------------------------------------MAIN---------------------------- */
+
+#main {
+    display: grid;
+    grid-template-areas: 
+    "upgrade"
+    "navbar"
+    "recent"
+    "foryou"
+    "popular";
+    grid-template-rows: 100px 50px 1fr 1fr 1fr;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.upgrade {
+    background-color: rgb(28, 28, 46);
+    /* align-items: right;
+    justify-items: center; */
+}
+
+.install {
+    background-color: rgb(28, 28, 46);
+    border-style: solid 2px;
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+    height: 25px;
+    width: 200px;
+    font-size: 20px;
+    align-content: right;    
+}
+
+.navbar {
+    background-color: rgb(32, 37, 51);
+    color: white;
+}
+
+.nav {
+    background-color: rgb(32, 37, 51);
+    color: white;
+    
+}
+.music {
+    display: inline;
+    background-color: rgb(32, 37, 51);
+    color: white;
+}
+
+.music >ul {
+    display: inline;
+
+}
+
+
+.album {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* ------------------------------------NOW PLAYING----------------------------- */
+
+.nowplaying {
+    grid-area: nowplaying;
+    background-color: darkgrey;
+    color: white;
+    display: grid;
+    grid-template-areas:  
+    "song controls volume";
+    grid-template-columns: 20% 60% 20%;
+}
+
+.albumsmall {
+    max-height: 30px;
+    max-width: 30px;
+}
