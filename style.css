@@ -1,9 +1,10 @@
+/* Universal Styling */
+
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: sans-serif; */
     font-family: 'Gotham Rounded', sans-serif;
 }
 
@@ -21,6 +22,22 @@ body {
     outline: 0;
     cursor: pointer;
 }
+
+.white16 {
+    color: white;
+    font-size: 16px;
+}
+
+.white22 {
+    color: white;
+    font-size: 22px;
+}
+
+.cover {
+    width: 100%;
+}
+
+/* Main Layout */
 
 main {
     height: 100%;
@@ -50,14 +67,10 @@ main {
     font-size: 26px;
     font-weight: bold;
     display: grid;
-    align-content: center;
+    align-items: center;
     grid-template-columns: min-content 1fr;
     grid-template-rows: auto;
     grid-gap: 5px;
-}
-
-.spotify-logo>i {
-    align-self: center;
 }
 
 .left-navigation {
@@ -69,7 +82,7 @@ main {
     font-weight: bold;
 }
 
-.left-menu>.left-navigation>a>div>span {
+.left-navigation .left-menu-text {
     padding-left: 10px;
 }
 
@@ -113,7 +126,6 @@ main {
 
 .header {
     grid-area: header;
-    border: solid 1px black;
     background-color: #080b12;
     color: white;
     display: flex;
@@ -150,9 +162,6 @@ main {
     overflow-y: scroll;
 }
 
-/* grid-template-columns: repeat(6, minmax(min-content, 120px)); */
-
-
 .main-header {
     color: #a3a3a3;
     text-transform: uppercase;
@@ -166,7 +175,7 @@ main {
     white-space: nowrap;
 }
 
-.main-header>a:hover {
+.main-header > a:hover {
     color: white;
     text-decoration: underline;
     text-decoration-color: #95dc2d;
@@ -193,7 +202,6 @@ main {
 
 .recently-played-music {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
     grid-template-columns: repeat(auto-fit, 180px);
     grid-auto-rows: 1fr;
     grid-gap: 10px;
@@ -204,29 +212,14 @@ main {
     font-size: 12px;
 }
 
-.recently-played .album-title {
-    font-size: 16px;
-    color: white;
-}
-
-.recently-played h1 {
-    color: white;
-    font-size: 22px;
-}
-
 .album {
     width: 100%;
-    /* border: solid 1px green; */
     display: grid;
     grid-template-rows: repeat(3, min-content);
     text-align: center;
     grid-gap: 10px;
     padding: 0 10px 10px 10px;
     position: relative;
-}
-
-.album>img {
-    width: 100%;
 }
 
 /* User Recommended Section */
@@ -257,23 +250,9 @@ main {
     position: relative;
 }
 
-.recommended-playlist>img {
-    width: 100%;
-}
-
-.user-recommended>h1 {
-    color: white;
-    font-size: 22px;
-}
-
 .user-recommended>span {
     color: #a3a3a3;
     padding-bottom: 10px;
-}
-
-.recommended-playlist>.playlist-title {
-    color: white;
-    font-size: 16px;
 }
 
 /* Popular Artists Section */
@@ -294,7 +273,6 @@ main {
 
 .popular-artist-album {
     width: 100%;
-    /* border: solid 1px green; */
     display: grid;
     grid-template-rows: repeat(2, min-content);
     max-height: 100%;
@@ -304,28 +282,13 @@ main {
     position: relative;
 }
 
-.popular-artist-album>img {
-    width: 100%;
-}
-
-.popular-artists>h1 {
-    color: white;
-    font-size: 22px;
-}
-
 .popular-artists>span {
     color: #a3a3a3;
     padding-bottom: 10px;
 }
 
-.recommended-playlist>.playlist-title {
-    color: white;
-    font-size: 16px;
-}
-
-.popular-artist-album>.artist-title {
-    color: white;
-    font-size: 16px;
+.popular-artist-album > img {
+    border-radius: 100%;
 }
 
 /* Play Icon */
@@ -356,7 +319,7 @@ main {
 }
 
 .play-shift {
-    top: 68%;
+    top: 67%;
     left: 80%;
 }
 
@@ -496,7 +459,7 @@ main {
     height: 100%;
     background-color: white;
     position: absolute;
-    animation: progress 275s linear;
+    animation: progress 155s linear;
 }
 
 @keyframes progress {
@@ -595,9 +558,9 @@ main {
     .left-menu {
         grid-area: left-menu;
         background-color: black;
-        padding: 0px 30px;
+        padding: 0 30px 10px 30px;
         display: grid;
-        grid-template-rows: 75px min-content 1fr 50px;
+        grid-template-rows: 75px min-content 1fr min-content;
         color: #a3a3a3;
         justify-content: center;
     }
@@ -619,3 +582,4 @@ main {
             "footer footer";
     }
 }
+
