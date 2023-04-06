@@ -134,6 +134,49 @@ main {
     align-self: center;
 }
 
+/* Left-Menu Small */
+
+.left-menu-small {
+    grid-area: left-menu;
+    visibility: hidden;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-gap: 20px;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.spotify-logo-small {
+    color: white;
+}
+
+.left-menu-small > div > a i {
+    color: #a3a3a3;
+}
+
+.left-navigation-small > a:hover {
+    border-left: solid 3px #95dc2d;
+    padding-left: 8px;
+    transform: translate(-6px, 0);
+}
+
+.left-navigation-small > a:focus {
+    border-left: solid 3px #95dc2d;
+    padding-left: 8px;
+    transform: translate(-6px, 0);
+}
+
+.left-navigation-small {
+    justify-items: center;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.app-small {
+    align-self: end;
+}
+
 /* Header */
 
 .header {
@@ -165,7 +208,6 @@ main {
 
 .main {
     grid-area: main;
-    border: solid 1px black;
     background-color: #141922;
     display: grid;
     grid-template-rows: min-content repeat(3, auto);
@@ -391,12 +433,12 @@ main {
     padding-right: 10px;
 }
 
-.fa-folder,
+.folder2,
 .fa-heart {
     color: #a3a3a3;
 }
 
-.fa-folder:hover,
+.folder2:hover,
 .fa-heart:hover {
     color: white;
 }
@@ -568,13 +610,11 @@ main {
     }
 
     .left-menu {
-        grid-area: left-menu;
-        background-color: black;
-        padding: 0 30px 10px 30px;
-        display: grid;
-        grid-template-rows: 75px min-content 1fr min-content;
-        color: #a3a3a3;
-        justify-content: center;
+        visibility: hidden;
+    }
+
+    .left-menu-small {
+        visibility: visible;
     }
 
     .app {
