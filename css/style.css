@@ -35,17 +35,30 @@ a:hover {
     font-weight: bolder;
 }
 
-.overlay {
-    display:none;
+/* .overlay {
+    visibility: hidden;
     position: relative;
-    bottom: 200px;
-    height:150px;
-    width:150px;
-    padding: 10px;
+    height:110px;
+    width:110px;
+    padding: 50px;
     z-index: 99;
+    object-fit: contain;
+} */
+
+/* PLAY on hover over playlist */
+.card_item a {
+        grid-area: art;
+        place-self: center;
+}
+.overlay {
+    width: 50px;
+    height: 50px;
+    visibility:hidden;
+    background-color: rgb(139, 46, 125);
+    border-radius: 50%;
 }
 .card_item:hover .overlay{
-    display: inline;
+    visibility: visible;
     opacity: 75%
 }
 
@@ -260,18 +273,30 @@ a:hover {
                     }
                         .card_item {
                             text-align: center;
+                            display:grid;
+                            grid-template-areas: 
+                            "art"
+                            "h3"
+                            "p";
+                            grid-template-rows: 200px 1fr 1fr;
                         }
                         .card_item h3 {
+                            grid-area: h3;
                             margin:5px;
                             max-width: 200px;
                         }
+                        .card_item p {
+                            grid-area: p;
+                        }
                         .suggestions img {
+                            grid-area: art;
                             max-height: 200px;
                             max-width: 200px;
                             margin: 5px;
                             object-fit: cover;   
                         }
                         .pop_artist img {
+                            grid-area: art;
                             border-radius: 50%;
                             object-fit: cover;
                         }
