@@ -253,4 +253,23 @@ nav > .profile > img {
   width: 100%;
 }
 
+.control-bar > .media-controls {
+  justify-content: center;
+}
 
+.control-bar > .media-controls > .discrete-controls {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.control-bar > .media-controls > .discrete-controls > img {
+  width: 25px;
+}
+
+.control-bar > .media-controls > .discrete-controls > .play-icon {
+  width: 30px;
+}
+
+.control-bar > .media-controls > .discrete-controls > .prev-icon {
+  transform: scaleX(-1);
+}
