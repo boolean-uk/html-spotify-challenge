@@ -82,6 +82,18 @@ main {
     font-weight: bold;
 }
 
+.left-navigation > a:hover {
+    border-left: solid 3px #95dc2d;
+    padding-left: 20px;
+    transform: translate(-23px, 0);
+}
+
+.left-navigation > a:focus {
+    border-left: solid 3px #95dc2d;
+    padding-left: 20px;
+    transform: translate(-23px, 0);
+}
+
 .left-navigation .left-menu-text {
     padding-left: 10px;
 }
