@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .layout {
@@ -13,17 +14,12 @@ body {
     grid-template-columns: minmax(220px, 1fr) 6fr;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+    /* padding: 0px 10px; */
 
 }
 
-.play-bar {
-    background-color: rgb(44, 44, 44);
-    height: 100%;
-    width: 100%;
-    grid-area: play;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-}
+
 
 main {
     background-color: rgb(29, 29, 48);
@@ -31,13 +27,16 @@ main {
     height: 1fr; */
     grid-area: main;
     overflow: scroll;
+    /* padding: 10px; */
     /* height: calc(100vh-100px); */
     /* padding: 5px; */
 }
 
 .top {
     height: 80px;
-    background-color:rgb(13, 13, 49)
+    background-color:rgb(13, 13, 49);
+    position: sticky;
+    top:0px
 }
 
 .top > button {
@@ -49,4 +48,204 @@ main {
     color: white;
     float:right;
     margin: 15px 10px;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.nav {
+    padding:15px;
+}
+
+.nav > img {
+    max-height: 50px;
+    max-width: 50px;
+    /* display:inline-block; */
+    clear:left;
+}
+
+#logo {
+    max-width: 200px;
+    max-height:200px;
+    display:block;
+
+}
+
+p {
+    color:grey;
+}
+
+.app {
+    /* justify-items: end; */
+    /* float: bottom; */
+    /* position: absolute;
+    bottom: 0px; */
+    margin-top: 50px;
+}
+
+.grey {
+    color: grey;
+}
+
+.genres {
+    text-align: center;
+}
+.genres > p {
+    display: inline-block;
+    margin: 10px 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.youg, .man {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.play-bar {
+    background-color: rgb(44, 44, 44);
+    height: 100%;
+    width: 100%;
+    grid-area: play;
+    text-align: center;
+    /* padding: 10px; */
+    /* display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); */ 
+}
+
+.pb {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.current-song {
+    float: left;
+    width: 250px;
+    text-align: left;
+
+}
+
+.song-volume {
+    float: right;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    width: 250px;
+}
+
+/* .song-options .pb {
+    margin: 0px 200px;
+} */
+
+.song-options {
+    width: 400px;
+}
+
+.clear {
+    clear: right;
+}
+
+.test {
+    display: inline-block;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+  }
+
+.sin {
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    margin-top: 15px;
+  }
+
+.icon {
+    max-height: 35px;
+    max-width: 35px;
+    float: right;
+    margin: 22.5px 5px;
+    /* color: grey; */
+    /* filter: grey; */
+
+}
+
+.current-song > div {
+    display: inline-block;
+    /* text-align: left; */
+}
+
+.close {
+    margin: 5px;
+    text-align: left;
+}
+
+/* .text {
+    text-align: left;
+} */
+
+.text {
+    /* position:relative; */
+    margin: 15px 5px;
+
+
+}
+
+.white {
+    color: white;
+}
+
+.space {
+    padding: 10px;
+
+}
+
+.recent-played, .create-playlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 20px;
+}
+
+.small {
+    float: left;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.volume-bar {
+    height:8px;
+    width: 150px;
+    background-color: rgb(167, 167, 167);
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 25px;
+
+}
+
+.volume {
+    height:100%;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.time > p {
+    display: inline-block;
+    font-size: 10px;
+    color: white;
+}
+
+/* .volume-bar .two {
+    width:250px;
+} */
+
+#position {
+    width: 250px;
+    margin-top: 20px;
+
 }
