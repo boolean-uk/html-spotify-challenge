@@ -221,14 +221,17 @@ a:hover, .named_playlist a p:hover {
                     align-items: center;
                     justify-content: center;
                 }
+           
             .catagories ul {
                 grid-area: catagories;
                 display: grid;
-                grid-auto-flow: column;
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
                 gap: 5%;
                 place-content:center;
                 margin:10px;
+                padding: 5px;
                 position: sticky;
+                
             }
             .catagories ul li a:hover {
                 border-bottom: 5px solid seagreen;
@@ -482,11 +485,16 @@ a:hover, .named_playlist a p:hover {
 .svg {
     filter:invert()
 }
-
-/* media query
-900px width 1st step down */
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 850px) {
+    .playing, .controls, .volume {
+        transform: scale(80%);
+    }
+    #progress_bar {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 800px) {
     .top {
         grid-area: top;
         display:grid;
@@ -499,18 +507,18 @@ a:hover, .named_playlist a p:hover {
         .logo img {
             display: none;
         }
-
-
+        .sidebar p, .sidebar h2, #new_playlist, #user_profile h3, hr {
+            display:none;
+        }
 
     .bottom {
-        grid-area: bottom;
-        display:grid;
-        grid-template-areas: ". playing controls volume .";
-        grid-template-columns: 1fr 100px 300px 100px 1fr;
-        background-color: rgb(40, 40, 40);
-        position:fixed;
-        bottom: 0;
-        height: 100px;
-        width: 100vw;
-    }
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+               
 }
+
+/* @media screen and (max-width: 650px) {
+    body {
+        min-width: 650px;
+    }
+} */
