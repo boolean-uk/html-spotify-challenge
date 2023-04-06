@@ -128,6 +128,8 @@ nav:first-child > a {
     align-content: center;
     justify-content: end;
     position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .spotify-upgrade > button{
@@ -154,16 +156,16 @@ main{
 
 main::-webkit-scrollbar{
     width: 10px;
- }
+}
 
  main::-webkit-scrollbar-track{
      background: transparent
- }
+}
 
  main::-webkit-scrollbar-thumb{
      background: #6d6d6d;
 
- }
+}
 
 
 main > h2 , .afternoon-playlists , .tailored-playlists , .your-shows , .recently-played{
@@ -190,13 +192,6 @@ main > nav > a{
     color: #b3b3b3;
 }
 
-.playlist-cover:first-of-type > svg{
-    padding: 18px;
-    height: 60px;
-    width: 60px;
-    background-image: linear-gradient(to bottom right, purple, white);
-    object-fit: cover;
-}
 
 .afternoon-playlists > .playlist-cover > img{
     height: 60px;
@@ -213,17 +208,17 @@ main > nav > a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, max-content);
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding-right: 15px;
-    margin-top: 20px;
+    
 }
 
 .tailored-playlists{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(1fr, fit-content));
-   grid-template-rows: 1fr;
+   grid-template-columns: repeat(auto-fit, minmax(10px, 175px));
+   gap: 5px;
+   margin: 20px 0;
    justify-content: start;
-
    
 }
 
@@ -233,9 +228,98 @@ main > nav > a{
     border-radius: 2px;
     background-color: #4441506b;
     width: calc(140px + 15px + 15px);
-    /* justify-items: center; */
-    /* grid-auto-rows: max-content; */
 }
+
+.tailored-playlists > .playlist-cover{
+    grid-template-rows: auto auto 1fr;
+    height: 246.4px;
+}
+
+.tailored-playlists > .playlist-cover > svg{
+    position: relative;
+    bottom: 115px;
+    left: 105px;
+}
+
+.tailored-playlists > .playlist-cover:nth-child(2) > svg , .tailored-playlists > .playlist-cover:nth-child(3) > svg , .tailored-playlists > .playlist-cover:nth-child(5) > svg{
+    position: relative;
+    bottom: 100px;
+    left: 105px;
+}
+
+.your-shows{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 175px));
+    gap: 5px;
+    margin: 20px 0;
+    justify-content: start;
+}
+
+.your-shows > .playlist-cover{
+     
+     padding: 15px;
+     border-radius: 2px;
+     background-color: #4441506b;
+     width: calc(140px + 15px + 15px);
+}
+ 
+.your-shows > .playlist-cover{
+     grid-template-rows: auto auto 1fr;
+     height: 246.4px;
+}
+ 
+.your-shows > .playlist-cover > svg{
+     position: relative;
+     bottom: 115px;
+     left: 105px;
+}
+ 
+.your-shows > .playlist-cover:nth-child(2) > svg , .your-shows > .playlist-cover:nth-child(3) > svg{
+     position: relative;
+     bottom: 100px;
+     left: 105px;
+}
+
+.your-shows > .playlist-cover:nth-child(1) > svg{
+    position: relative;
+    bottom: 82px;
+     left: 105px;
+}
+
+.recently-played{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 175px));
+    gap: 5px;
+    margin: 20px 0;
+    justify-content: start;
+}
+ 
+.recently-played > .playlist-cover{
+     
+     padding: 15px;
+     border-radius: 2px;
+     background-color: #4441506b;
+     width: calc(140px + 15px + 15px);
+}
+ 
+.recently-played > .playlist-cover{
+     grid-template-rows: auto auto 1fr;
+     height: 246.4px;
+}
+ 
+.recently-played > .playlist-cover > svg{
+     position: relative;
+     bottom: 112px;
+     left: 105px;
+}
+ 
+
+.recently-played > .playlist-cover:nth-child(1) > svg{
+    position: relative;
+    bottom: 82px;
+     left: 105px;
+}
+
 
 p:nth-child(n+3){
     color: #b3b3b3;
@@ -259,7 +343,7 @@ p:nth-child(n+3){
     align-items: center;
 }
 
-.playlist-cover > p > svg{
+.playlist-cover > svg , .afternoon-playlists > .playlist-cover > p > svg{
     height: 30px;
     width: 30px;
     background-color: black;
@@ -267,13 +351,9 @@ p:nth-child(n+3){
     visibility: hidden;
 }
 
-.tailored-playlists > .playlist-cover > p > svg{
-    position: relative;
-    bottom: 95px;
-    left: 67px;
-}
 
-.playlist-cover:hover > p > svg{
+
+.playlist-cover:hover > svg , .afternoon-playlists > .playlist-cover:hover > p > svg{
     visibility: visible;
 }
 
@@ -286,9 +366,138 @@ p:nth-child(n+3){
 
 }
 
-.afternoon-playlists > .playlist-cover:hover , .tailored-playlists > .playlist-cover:hover{
+.afternoon-playlists > .playlist-cover:hover , .tailored-playlists > .playlist-cover:hover , .your-shows > .playlist-cover:hover , .recently-played > .playlist-cover:hover{
     border-bottom: none;
     color: white;
     background-color:  #9a97a55b;
 }
 
+.play-bar{
+    width: 100vw;
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: 241px 1fr max-content;
+    color: white;
+}
+
+.song-playing{
+    display: grid;
+    grid-template-columns: repeat(2, max-content) auto;
+    place-items: center;
+}
+
+.play-settings{
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    place-content: center;
+
+}
+
+.play-settings > p{
+    font-size: 10px;
+    
+}
+
+.song-playing > nav > a{
+    display: block;
+    color: white; 
+    font-size: smaller; 
+    line-height: 180%; 
+}
+
+.play-settings > span > button{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: transparent;
+    border: none;
+
+}
+
+.play-settings > span > button:nth-child(3) {
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+.play-settings > span > button:hover > svg{
+    cursor: pointer;
+    fill: white;
+}
+
+.play-settings > span > button > svg{
+   fill: rgb(131, 131, 131);
+}
+
+.play-settings > span > button:nth-child(3) > svg{
+    fill: black;
+    display: grid;
+    place-items: center;
+ }
+
+.play-settings >  span{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(5, max-content);
+    gap: 15px;
+}
+
+
+.play-settings > span > p{
+    font-size: 10px;
+    height: fit-content;
+}
+
+
+
+.song-playing > nav > a > svg{
+    fill: rgba(255, 255, 255, 0.445);
+}
+
+.song-playing > nav > a > svg:hover{
+    fill: white
+}
+
+.play-settings > img{
+    height: 20px;
+}
+
+.song-playing > nav > a:hover{
+    text-decoration: underline;
+}
+
+
+.song-playing > nav > a:nth-child(2){
+   font-size: 8px;   
+}
+.song-playing > img{
+    height: 40px;
+    margin: 0 20px;
+}
+
+.volume{
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    align-items: center;
+    gap: 5px;
+    margin-right: 30px;
+}
+.volume > button{
+    background-color: transparent;
+    border: none;
+    max-height: 20px;
+    max-width: fit-content;
+}
+
+.volume > button:hover{
+    cursor: pointer;
+    
+}
+.volume > button > svg{
+    fill: rgb(131, 131, 131);
+}
+.volume > button:hover > svg{
+    fill: white;
+}
+
+input{
+    height: 5px;
+}
