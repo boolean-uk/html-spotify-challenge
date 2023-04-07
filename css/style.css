@@ -33,11 +33,6 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-.left-bar {
-  border: #fff 2px dotted;
-}
-
-
 
 .recent,
 .your-albums {
@@ -95,10 +90,6 @@ h1 {
   width: 25px;
 }
 
-.action-item-label {}
-
-.action-item {}
-
 ul {
   list-style: none;
 }
@@ -107,9 +98,6 @@ li {
   margin-bottom: 5px;
 }
 
-/* img {
-  margin: 10px;
-} */
 
 h3 {
   margin: 30px 10px 5px;
@@ -128,13 +116,12 @@ h3 {
 }
 
 .profile-pic {
-  margin: 0;
+  margin: 10px;
   object-fit: contain;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
-
 
 /* HEADER ------------------------------------- */
 
@@ -160,7 +147,6 @@ nav {
   display: grid;
 
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-
 
   height: 60px;
 
@@ -188,7 +174,6 @@ main {
 
 .recent,
 .your-albums {
-
   display: grid;
 
   grid-template-columns: repeat(auto-fit, 200px);
@@ -196,38 +181,41 @@ main {
   gap: 10px;
 }
 
-.recent-album:hover>img:nth-child(2) {
+.recent-album:hover>img:nth-child(2),
+.album:hover>img:nth-child(2) {
   display: block;
-
 }
 
 .recent-album,
-{
+.album {
   position: relative;
 }
-
-.hover-image {
-  width: 60px;
-  height: 60px;
-  z-index: 10;
-  
-  opacity: 0.75;
-  margin: 20px;
-  display: none;
-}
-
-.recent-album>img {
-  position: absolute;
-}
-
 
 .recent-album>img,
 .album>img {
   object-fit: contain;
-  z-index: 5;
   width: 150px;
   height: 150px;
   margin: 30px;
+
+}
+
+.hover-image {
+  display: none;
+
+  width: 60px;
+  height: 60px;
+  padding: 30px;
+  /**/
+
+  position: absolute;
+  /* */
+  top: 0;
+  /**/
+  opacity: 0.65;
+  background-color: #ffffff41;
+  /**/
+
 
 }
 
@@ -252,6 +240,7 @@ main {
 .playing-now {
   display: grid;
   grid-template-columns: 1fr 100px;
+  margin: 10px;
 }
 
 .title-playing {
