@@ -95,9 +95,7 @@ h1 {
 
 .action-item-label {}
 
-.action-item {
-  
-}
+.action-item {}
 
 ul {
   list-style: none;
@@ -127,13 +125,6 @@ h3 {
   gap: 10px;
 }
 
-.pic {
-  margin: 5px;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-}
-
 .profile-pic {
   margin: 0;
   object-fit: contain;
@@ -141,6 +132,7 @@ h3 {
   height: 30px;
   border-radius: 50%;
 }
+
 
 /* HEADER ------------------------------------- */
 
@@ -358,11 +350,14 @@ audio::-webkit-media-controls-volume-slider-container {
     grid-template-columns: 50px 1fr;
   }
 
-  .action-list-label {
-    display: hidden;
+  .action-item-label {
+    display: none;
   }
 
-  .name
+  .profile-name {
+    display: none;
+  }
+
   /* .index,
   .profile>.name {
     display: none;
