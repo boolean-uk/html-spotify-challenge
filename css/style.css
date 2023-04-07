@@ -12,19 +12,26 @@ body {
 }
 
 .container-grid {
+  /* FIX NUMBERS */
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 240px 1fr;
   grid-template-rows: 60px 1fr;
   grid-template-areas:
-    "left header header"
-    "left nav nav"
-    "left main main"
-    "player player player";
+    "left header"
+    "left nav"
+    "left main"
+    "player player";
 
   height: 100vh;
 }
 
+
+
 /* Multiple selectors ----------------------------- */
+body::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  display: none;
+}
 
 .left-bar {
   border: #fff 2px dotted;
@@ -34,12 +41,22 @@ body {
   border: darkred 2px solid;
 }
 
+.recent,
+.your-albums {
+  border: 2px dotted crimson;
+}
+
 a {
   color: #fff;
   text-decoration: none;
   padding: 5px;
+
 }
 
+.spotify-logo:hover,
+.upgrade:hover {
+  cursor: pointer;
+}
 
 /* LEFT BAR -------------------------------------------- */
 
@@ -66,6 +83,20 @@ h1 {
   position: absolute;
   top: 5px;
   left: 5px;
+}
+
+.action-item-icon {}
+
+.action-item-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.action-item-label {}
+
+.action-item {
+  
 }
 
 ul {
@@ -112,6 +143,7 @@ h3 {
 }
 
 /* HEADER ------------------------------------- */
+
 header {
   display: grid;
   grid-area: header;
@@ -127,11 +159,10 @@ header {
   padding: 10px;
 }
 
-.upgrade:hover {
-  cursor: pointer;
-}
+
 
 /* NAV ------------------------------------------ */
+
 nav {
   grid-area: nav;
   display: grid;
@@ -143,7 +174,7 @@ nav {
 
   background-color: #282828;
 
-  transition: ease-in-out 250ms;
+  transition: all ease-in-out 2s;
 }
 
 .nav-bar-links:hover {
@@ -155,6 +186,7 @@ nav {
 
 
 /* MAIN -------------------------------------- */
+
 main {
   grid-area: main;
   overflow: auto;
@@ -162,24 +194,31 @@ main {
 
 .recent,
 .your-albums {
-  /* border: 2px dotted crimson; */
+
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: repeat(auto-fit, 150px);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(auto-fit, 200px);
+  gap: 10px;
 }
 
 .recent-album>img,
 .album>img {
   object-fit: contain;
+
   width: 150px;
   height: 150px;
   margin: 30px;
 }
 
+.album:hover,
+.recent-album:hover {
+  cursor: pointer;
+
+}
 
 /* PLAYER --------------------------------------- */
+
 .player-bar {
   grid-area: player;
 
@@ -213,17 +252,28 @@ main {
   transition: ease-in-out 250ms;
 }
 
+.playing-now:hover,
 .like-add-icons:hover {
   cursor: pointer;
 
 }
 
 /* PLAYER ------------------------------------------ */
-/* .player {
+.player {
   display: grid;
   grid-template-columns: 50px 50px 60px 50px 50px;
+  grid-template-rows: 40px;
   justify-content: center;
   padding-top: 5px;
+  border: 2px dotted #fff;
+}
+
+.shuffle:hover,
+.back:hover,
+.play:hover,
+.forward:hover,
+.repeat:hover {
+  cursor: pointer;
 }
 
 .time-bar {
@@ -231,17 +281,18 @@ main {
   grid-template-columns: 30px 1fr 20px;
   gap: 20px;
   justify-self: center;
+  border: 2px solid #fff;
 }
 
 .timeline {
   border: 2px solid #716f6f;
   height: 1px;
-  width: 200px;
-} */
+  width: 300px;
+}
 
 /* AUDIO --------------------------------------------- */
 
-audio {
+/* audio {
   margin: 10px;
 }
 
@@ -258,7 +309,7 @@ audio::-webkit-media-controls-time-remaining-display {
   padding: 3px;
   margin: 3px;
 
-  transition: ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
 }
 
 audio::-webkit-media-controls-play-button:hover,
@@ -281,7 +332,7 @@ audio::-webkit-media-controls-volume-slider {
 audio::-webkit-media-controls-volume-slider-container {
   background-color: #898888;
   border-radius: 50px;
-}
+} */
 
 /* MORE SETTINGS ------------------------------ */
 
@@ -295,7 +346,33 @@ audio::-webkit-media-controls-volume-slider-container {
   transition: ease-in-out 250ms;
 }
 
-.more-settings:hover {
-  background-color: #c1bfbf;
+.options:hover,
+.share:hover {
   cursor: pointer;
+}
+
+/* MEDIA QUERIES -----------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .action-list-label {
+    display: hidden;
+  }
+
+  .name
+  /* .index,
+  .profile>.name {
+    display: none;
+  } */
+
+  /* .icons {
+    width: 15px;
+  } */
+
+  /* .spotify-logo {
+    width: 30px;
+  } */
 }
