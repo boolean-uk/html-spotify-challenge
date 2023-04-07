@@ -9,12 +9,13 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
+  min-width: 450px;
 }
 
 .container-grid {
   /* FIX NUMBERS */
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 200px 1fr;
   grid-template-rows: 60px 1fr;
   grid-template-areas:
     "left header"
@@ -23,6 +24,7 @@ body {
     "player player";
 
   height: 100vh;
+
 }
 
 
@@ -33,11 +35,6 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-
-.recent,
-.your-albums {
-  border: 2px dotted crimson;
-}
 
 a {
   color: #fff;
@@ -145,13 +142,12 @@ header {
 nav {
   grid-area: nav;
   display: grid;
-
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-
-  height: 60px;
-
   place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 
+  /* grid-template-columns: repeat(6, 1fr); */
+  height: 60px;
+  gap: 20px;
   background-color: #282828;
 
   transition: all ease-in-out 2s;
@@ -231,16 +227,26 @@ main {
   grid-area: player;
 
   display: grid;
-  grid-template-columns: 200px 80px 1fr 200px;
+  grid-template-columns: 1fr 80px 1fr 200px;
   grid-template-rows: 80px;
+
+
   column-gap: 40px;
   background-color: #282828;
 }
 
+/* SONG PLAYING ----------------------------------- */
 .playing-now {
+
   display: grid;
-  grid-template-columns: 1fr 100px;
-  margin: 10px;
+  grid-template-columns: 80px 120px;
+
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.playing-now>img {
+  margin: 10px 20px 10px 10px;
+  width: 60px;
 }
 
 .title-playing {
@@ -254,8 +260,9 @@ main {
 }
 
 .like-add {
+
   display: grid;
-  grid-template-columns: 40px 30px;
+  grid-template-columns: 30px 30px;
   place-items: center;
 
   transition: ease-in-out 250ms;
@@ -267,18 +274,16 @@ main {
 
 }
 
-/* PLAYER ------------------------------------------ */
+/* PLAYER COMMANDS ------------------------------------------ */
 .player {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
-  /* grid-template-rows: 40px;
-  justify-content: center;
-  padding-top: 5px;
-  border: 2px dotted #fff; */
+
 }
 
 .audio-controls {
+
   display: grid;
   grid-template-columns: repeat(5, 50px);
   column-gap: 5px;
@@ -295,6 +300,7 @@ main {
 }
 
 .time-bar {
+
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   gap: 30px;
@@ -355,6 +361,7 @@ audio::-webkit-media-controls-volume-slider-container {
 /* MORE SETTINGS ------------------------------ */
 
 .more-settings {
+
   display: grid;
   grid-template-columns: 30px 30px;
   place-items: center;
@@ -371,7 +378,7 @@ audio::-webkit-media-controls-volume-slider-container {
 
 /* MEDIA QUERIES -----------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .container-grid {
     grid-template-columns: 70px 1fr;
   }
@@ -385,6 +392,33 @@ audio::-webkit-media-controls-volume-slider-container {
 
   nav>a:nth-child(n+5) {
     grid-column: span 2;
+
   }
 
+  .playing-now>img {
+    width: 40px;
+    align-self: center;
+  }
+
+  .title-playing {
+    margin-left: -20px;
+
+  }
+
+  .like-add {
+    grid: none;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: -60px;
+  }
+
+  
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    height: 80px;
+  }
 }
