@@ -37,9 +37,7 @@ main::-webkit-scrollbar {
   border: #fff 2px dotted;
 }
 
-.actions {
-  border: darkred 2px solid;
-}
+
 
 .recent,
 .your-albums {
@@ -62,7 +60,7 @@ a {
 
 .left-bar {
   grid-area: left;
-
+  background-color: #2d2d2d;
   display: grid;
   grid-template-rows: 60px 1fr 50px;
 
@@ -81,16 +79,20 @@ h1 {
 .spotify-logo {
   width: 40px;
   position: absolute;
-  top: 5px;
-  left: 5px;
-}
+  top: 13px;
+  left: 13px;
 
-.action-item-icon {}
+}
 
 .action-item-link {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50px 1fr;
   align-items: center;
+}
+
+.action-item-icon {
+  margin: 0 15px;
+  width: 25px;
 }
 
 .action-item-label {}
@@ -105,9 +107,9 @@ li {
   margin-bottom: 5px;
 }
 
-img {
+/* img {
   margin: 10px;
-}
+} */
 
 h3 {
   margin: 30px 10px 5px;
@@ -151,15 +153,15 @@ header {
   padding: 10px;
 }
 
-
-
 /* NAV ------------------------------------------ */
 
 nav {
   grid-area: nav;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+
   height: 60px;
 
   place-items: center;
@@ -194,13 +196,39 @@ main {
   gap: 10px;
 }
 
+.recent-album:hover>img:nth-child(2) {
+  display: block;
+
+}
+
+.recent-album,
+{
+  position: relative;
+}
+
+.hover-image {
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  
+  opacity: 0.75;
+  margin: 20px;
+  display: none;
+}
+
+.recent-album>img {
+  position: absolute;
+}
+
+
 .recent-album>img,
 .album>img {
   object-fit: contain;
-
+  z-index: 5;
   width: 150px;
   height: 150px;
   margin: 30px;
+
 }
 
 .album:hover,
@@ -253,11 +281,20 @@ main {
 /* PLAYER ------------------------------------------ */
 .player {
   display: grid;
-  grid-template-columns: 50px 50px 60px 50px 50px;
-  grid-template-rows: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  /* grid-template-rows: 40px;
   justify-content: center;
   padding-top: 5px;
-  border: 2px dotted #fff;
+  border: 2px dotted #fff; */
+}
+
+.audio-controls {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  column-gap: 5px;
+  place-items: center;
+  padding-top: 5px;
 }
 
 .shuffle:hover,
@@ -270,16 +307,16 @@ main {
 
 .time-bar {
   display: grid;
-  grid-template-columns: 30px 1fr 20px;
-  gap: 20px;
-  justify-self: center;
-  border: 2px solid #fff;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 30px;
+  place-items: center;
+  /* border: 2px solid #fff; */
 }
 
 .timeline {
   border: 2px solid #716f6f;
   height: 1px;
-  width: 300px;
+  width: 30vw;
 }
 
 /* AUDIO --------------------------------------------- */
@@ -347,27 +384,18 @@ audio::-webkit-media-controls-volume-slider-container {
 
 @media screen and (max-width: 600px) {
   .container-grid {
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 70px 1fr;
   }
 
-  .action-item-label {
+  .action-item-label,
+  .profile-name,
+  .playlists {
+
     display: none;
   }
 
-  .profile-name {
-    display: none;
+  nav>a:nth-child(n+5) {
+    grid-column: span 2;
   }
 
-  /* .index,
-  .profile>.name {
-    display: none;
-  } */
-
-  /* .icons {
-    width: 15px;
-  } */
-
-  /* .spotify-logo {
-    width: 30px;
-  } */
 }
