@@ -9,8 +9,9 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
-  min-width: 450px;
+
 }
+
 
 .container-grid {
   /* FIX NUMBERS */
@@ -23,10 +24,9 @@ body {
     "left main"
     "player player";
 
-  height: 100vh;
+  max-height: 100vh;
 
 }
-
 
 
 /* Multiple selectors ----------------------------- */
@@ -47,6 +47,13 @@ a {
 .upgrade:hover {
   cursor: pointer;
 }
+
+/* header,
+nav,
+main,
+.player-bar {
+  min-width: 580px;
+} */
 
 /* LEFT BAR -------------------------------------------- */
 
@@ -126,6 +133,7 @@ header {
   display: grid;
   grid-area: header;
   background-color: #080B12;
+
 }
 
 .upgrade {
@@ -147,6 +155,7 @@ nav {
 
   /* grid-template-columns: repeat(6, 1fr); */
   height: 60px;
+
   gap: 20px;
   background-color: #282828;
 
@@ -377,8 +386,14 @@ audio::-webkit-media-controls-volume-slider-container {
 }
 
 /* MEDIA QUERIES -----------------------------------*/
+@media screen and (max-width: 900px) {
+  nav {
+    height: 80px;
+  }
+}
 
 @media screen and (max-width: 800px) {
+
   .container-grid {
     grid-template-columns: 70px 1fr;
   }
@@ -400,9 +415,13 @@ audio::-webkit-media-controls-volume-slider-container {
     align-self: center;
   }
 
+  .audio-controls,
+  .minutes {
+    margin-right: 30px;
+  }
+
   .title-playing {
     margin-left: -20px;
-
   }
 
   .like-add {
@@ -414,11 +433,21 @@ audio::-webkit-media-controls-volume-slider-container {
     margin-left: -60px;
   }
 
-  
-}
+  .player {
+    grid-template-columns: 100px;
+    margin-left: -50px;
+  }
 
-@media screen and (max-width: 900px) {
-  nav {
-    height: 80px;
+  .timeline {
+    width: 100px;
+  }
+
+  .more-settings {
+    grid: none;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: 60px;
   }
 }
