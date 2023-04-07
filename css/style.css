@@ -148,6 +148,15 @@ body {
 
 /* Playlists */
 
+.scroll-bar {
+  overflow-y: scroll;
+  width: 300px;
+  background-color: #000000;
+  height: 500px;
+  position: relative;
+  bottom: 220px;
+}
+
 .Bhangra-Party-Mix,
 .Hollywood-Beach-Vibes,
 .Spanish-Gym-Hits,
@@ -168,8 +177,6 @@ body {
   font-size: 22;
   position: relative;
   left: 19px;
-  bottom: 220px;
-  margin-top: 20px;
 }
 
 .Bhangra-Party-Mix:hover,
@@ -906,7 +913,7 @@ body {
   background-color: grey;
   border-radius: 1.5em;
   position: relative;
-  bottom: 455px;
+  bottom: 490px;
   left: 1528px;
   overflow: hidden;
 }
