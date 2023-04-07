@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets\fontawesome\css\fontawesome.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\brands.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\regular.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\solid.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham-rounded?styles=36541,36543,36545" rel="stylesheet">
+    <title>Spotify</title>
 </head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/gotham-rounded?styles=36541,36543,36545');
+</style>
+
 <body>
-    
+    <main>
+        <section class="left-menu">
+            <div class="spotify-logo">
+                <i class="fa-brands fa-spotify fa-xl"></i>
+                <span class="spotify-logo-text">Spotify</span>
+            </div>
+            <nav class="left-navigation">
+                <a href="#" class="reset-a">
+                    <div class="home-button">
+                        <i class="fa-solid fa-house fa-xl"></i>
+                        <span class="left-menu-text">Home</span>
+                    </div>
+                </a>
+                <a href="#" class="reset-a">
+                    <div class="search-button">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <span class="left-menu-text">Search</span>
+                    </div>
+                </a>
+                <a href="#" class="reset-a">
+                    <div class="your-library-button">
+                        <i class="fa-regular fa-folder fa-xl"></i>
+                        <span class="left-menu-text">Your Library</span>
+                    </div>
+                </a>
+            </nav>
+            <nav class="playlist">
+                <h2 class="playlist-title">
+                    PLAYLIST
+                </h2>
+                <a href="#" class="reset-a">
+                    <div class="create-playlist">
+                        <i class="fa-solid fa-square-plus fa-3x"></i>
+                        <span>Create Playlist</span>
+                    </div>
+                </a>
+                <div class="playlist-list">
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                    <a href="#" class="reset-a">
+                        <span>Playlist Name</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="app">
+                <a href="#" class="reset-a">
+                    <div class="app-button">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span class="left-menu-text">Install App</span>
+                    </div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="#" class="reset-a">
+                    <div class="profile-button">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="left-menu-text">Alex Shaw</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="left-menu-small">
+            <div class="spotify-logo-small">
+                <i class="fa-brands fa-spotify fa-2xl"></i>
+            </div>
+            <div class="left-navigation-small">
+                <a href="" class="reset-a">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+                <a href="" class="reset-a">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+                <a href="" class="reset-a">
+                    <i class="fa-regular fa-folder fa-xl"></i>
+                </a>
+            </div>
+            <div class="app-small">
+                <a href="#" class="reset-a">
+                    <div class="app-button-small">
+                        <i class="fa-regular fa-circle-down fa-xl"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="profile-small">
+                <a href="#" class="reset-a">
+                    <div class="profile-button">
+                        <i class="fa-regular fa-user fa-xl"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <header class="header">
+            <a href="#" class="reset-a">
+                <div class="upgrade">
+                    <span>UPGRADE TO PREMIUM</span>
+                </div>
+            </a>
+        </header>
+        <section class="main">
+            <header class="main-header">
+                <a href="#" class="reset-a">
+                    <span>Featured</span>
+                </a>
+                <a href="#" class="reset-a">
+                    <span>Podcast</span>
+                </a>
+                <a href="#" class="reset-a">
+                    <span>Charts</span>
+                </a>
+                <a href="#" class="reset-a">
+                    <span>Genres</span>
+                </a>
+                <a href="#" class="reset-a">
+                    <span>What's New</span>
+                </a>
+                <a href="#" class="reset-a">
+                    <span>Discover</span>
+                </a>
+            </header>
+            <section class="recently-played">
+                <h1 class="white22">Recently Played</h1>
+                <div class="recently-played-music">
+                    <div class="album">
+                        <img src="assets\img\metal_lifting.jpg" alt="Heavy Metal Cover" class="cover">
+                        <h3 class="album-title white16">Heavy Metal</h3>
+                        <span class="artist-name">Subtitle</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="assets\img\stranger.jpeg" alt="Stranger Things Cover" class="cover">
+                        <h3 class="album-title white16">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                        <span class="artist-name">Kyle Divon & Michael Stein</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="assets\img\aquietplace.jpeg" alt="A Quiet Place Cover" class="cover">
+                        <h3 class="album-title white16">A quiet place</h3>
+                        <span class="artist-name">Subtitle</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="assets\img\split.jpeg" alt="Split Cover" class="cover">
+                        <h3 class="album-title white16">Split</h3>
+                        <span class="artist-name">Subtitle</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="assets\img\cure.jpeg" alt="A Cure For Wellness Cover" class="cover">
+                        <h3 class="album-title white16">A cure for wellness</h3>
+                        <span class="artist-name">Subtitle</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="assets\img\sinister.jpeg" alt="Sinister Cover" class="cover">
+                        <h3 class="album-title white16">Sinister</h3>
+                        <span class="artist-name">Subtitle</span>
+                        <div class="play-icon">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="user-recommended">
+                <h1 class="white22">Created by Alex Shaw</h1>
+                <span>The more you listen, the more accurate the suggestions will be.</span>
+                <div class="user-recommended-playlists">
+                    <div class="recommended-playlist">
+                        <img src="assets\img\radar.jpeg" alt="Release Radar Cover" class="cover">
+                        <h3 class="playlist-title white16">Release Radar</h3>
+                        <div class="play-icon play-shift">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="recommended-playlist">
+                        <img src="assets\img\mixdaily.jpeg" alt="Daily Mix Cover" class="cover">
+                        <h3 class="playlist-title white16">Daily Mix 1</h3>
+                        <div class="play-icon play-shift">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular-artists">
+                <h1 class="white22">Most Popular Artists</h1>
+                <span>The more you listen, the more accurate the suggestions will be.</span>
+                <div class="popular-artist-main">
+                    <div class="popular-artist-album">
+                        <img src="assets\img\youg.jpeg" alt="Young & Beautiful Cover" class="cover">
+                        <h3 class="artist-title white16">Lana Del Rey</h3>
+                        <div class="play-icon play-shift">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                    <div class="popular-artist-album">
+                        <img src="assets\img\einaudi.jpeg" alt="Ludovico Einaudi Cover" class="cover">
+                        <h3 class="artist-title white16">Ludovico Einaudi</h3>
+                        <div class="play-icon play-shift">
+                            <img src="assets\img\playicon.svg" alt="Play Icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="now-playing">
+                <img src="assets\img\sinister.jpeg" alt="Sinister Cover">
+                <div class="song-details">
+                    <span class="title">Sinister</span>
+                    <span class="artist">Artist Name</span>
+                </div>
+                <div class="now-playing-icons">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                    <i class="fa-regular fa-folder folder2 fa-xl"></i>
+                </div>
+            </div>
+            <div class="music-controls">
+                <div class="music-control-buttons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="play-area">
+                    <span class="start-time">0:00</span>
+                    <div class="play-bar">
+                        <div class="play-progress"></div>
+                    </div>
+                    <span class="end-time">2:35</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <i class="fa-solid fa-list fa-lg"></i>
+                <i class="fa-solid fa-display fa-lg"></i>
+                <i class="fa-solid fa-volume-high fa-lg"></i>
+                <!-- I apologise so much for this bodge! -->
+                <p><span class="white">........</span><span class="grey">.......................</span></p>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>
