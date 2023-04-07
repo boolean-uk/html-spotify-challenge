@@ -259,7 +259,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 730px;
-  bottom: 255px;
+  bottom: 253px;
 }
 
 .audiobooks {
@@ -268,7 +268,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 870px;
-  bottom: 301px;
+  bottom: 297px;
 }
 
 .artists {
@@ -277,7 +277,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 1040px;
-  bottom: 347px;
+  bottom: 340px;
 }
 
 .albums {
@@ -286,7 +286,7 @@ body {
   font-size: 20px;
   position: relative;
   left: 1165px;
-  bottom: 390px;
+  bottom: 385px;
 }
 
 /* Nav-Row */
@@ -454,6 +454,14 @@ body {
   position: relative;
   left: 1035px;
   bottom: 1670px;
+}
+
+.play-button-3rd {
+  grid-area: subtitle3;
+  filter: invert(100%);
+  position: relative;
+  left: 1040px;
+  bottom: 1880px;
 }
 
 .forthpic {
@@ -705,6 +713,7 @@ body {
 .album-name2,
 .subtitle2,
 .quiet-place-img,
+.play-button-3rd,
 .album-name3,
 .subtitle3,
 .split-img,
@@ -928,4 +937,16 @@ body {
 .vol-bar,
 .progress-fill:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1070px) {
+  .main {
+    grid-template-columns: repeat(4, 500px);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .main {
+    grid-template-columns: repeat(3, 500px);
+  }
 }
