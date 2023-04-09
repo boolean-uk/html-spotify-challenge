@@ -304,10 +304,68 @@ footer > .song-info > .title {
 footer > .song-info > .buttons > i {
   color: rgb(108, 108, 108);
 }
+
+footer > .play-stop {
+  grid-area: play-stop;
+  place-items: center;
+}
+footer > .play-stop > div {
+  grid-template-areas: '. . . . .';
+  gap: 50px;
+  color: white;
+  padding-top: 10px;
+}
+
+footer > .volume {
+  grid-area: volume;
+  grid-template-areas: 'volume-buttons volume-bar .';
+  grid-template-columns: 100px 1fr 1fr;
+  place-items: center;
+}
+
+footer > .volume > div {
+  grid-area: volume-buttons;
+  grid-template-areas: '. . .';
+  color: white;
+  place-items: center;
+  display: inline-block;
+  height: 25px;
+}
+
+footer > .volume > .volume-bar {
+  padding-left: 100px;
+  grid-area: volume-bar;
+  width: 100px;
+  height: 0px;
+  border: 2px solid rgb(118, 118, 118);
+  border-radius: 1px;
+}
+
+footer > .volume > .volume-bar > div {
+  border-radius: 1px;
+  width: 50px;
+  border: 1px solid rgb(54, 54, 54);
+}
+
+footer > .song-bar {
+  grid-area: song-bar;
+  place-items: center;
+  
+}
+
+footer > .song-bar > div {
+  display: inline-block;
+  height: 0px;
+  width: 40vw;
+  border: 2px solid rgb(118, 118, 118);
+  margin-bottom: 25px;
+}
+
 .hover:hover {
   color: white;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  display: inline-block;
 }
 
 .side-bar > nav > .button:hover > p {
