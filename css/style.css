@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   font-family: "Gotham Rounded";
   font-weight: 500;
+  color: white;
 }
 
 .grid {
@@ -22,6 +22,7 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 /* big box border*/
@@ -36,16 +37,13 @@ a {
 /* } */
 
 /* small box border */
-.empty,
-.control-bar > div {
+.empty {
   border: 2px solid lightblue;
   border-radius: 8px;
 }
 
 /* smallest box border */
-.emtpy,
-.control-bar > div > div
-/* main > div > div { */
+.emtpy
 {
   border: 2px solid lightgreen;
   border-radius: 8px;
@@ -254,7 +252,7 @@ nav > .profile > img {
 }
 
 .control-bar > .media-controls {
-  justify-content: center;
+  justify-items: center;
 }
 
 .control-bar > .media-controls > .discrete-controls {
@@ -273,3 +271,55 @@ nav > .profile > img {
 .control-bar > .media-controls > .discrete-controls > .prev-icon {
   transform: scaleX(-1);
 }
+
+.control-bar > .media-controls > .scrubber {
+  min-width: 250px;
+  max-width: 30vw;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.control-bar > .media-controls > .scrubber > .slider {
+  min-width: 160px;
+  width: 23vw;
+  height: 4px;
+}
+
+.control-bar > .audio-controls > div,
+.control-bar > .media-controls > .scrubber > div {
+  width: 100%;
+  height: 4px;
+  background-color: #5E5E5E;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.control-bar > .audio-controls > div > div,
+.control-bar > .media-controls > .scrubber > .slider > div > div {
+  width: 20%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.slider {
+  background-color: #ffffff;
+}
+
+.control-bar > .audio-controls {
+  align-content: center;
+  grid-template-columns: repeat(3, 25px) minmax(300px, 40px);
+  column-gap: 10px;
+  max-width: 400px;
+}
+
+.control-bar > .audio-controls img {
+  width: 25px;
+}
+
+.control-bar > .audio-controls * {
+  align-self: center;
+}
+
