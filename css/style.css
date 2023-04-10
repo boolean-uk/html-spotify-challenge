@@ -317,7 +317,7 @@ a>div,
         font-weight: 600;
     }
 
-                                                                .cd-boxes {
+.cd-boxes {
         display: grid;
         justify-items: center;
         width: 210px;
@@ -396,7 +396,6 @@ font-size: 15px;
     margin: 0 auto;
     left: 0px;
     right: -90px;
-
     background-color: #141922;
     border-radius: 100%;
     justify-self: center;
@@ -433,13 +432,14 @@ font-size: 15px;
 
  .box {
     align-items: center;
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 0px;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 60px 80px 40px 40px;
+        margin: 10px;
         column-gap: 2px;
         z-index: 1;
 
- }
+}
 
  .inner-box {
     display: grid;
@@ -582,6 +582,7 @@ font-size: 15px;
      width: 245px;
      height: 20px;
  }
+
 
  .box.right {
      display: grid;
