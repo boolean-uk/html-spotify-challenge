@@ -3,16 +3,18 @@
     margin: 0;
     padding: 0px;  
     font-family: fantasy;
-    max-height: 100vh;
+    max-height: 100%;
     scroll-behavior: smooth;
-    /* overflow: scroll;    */
+    box-sizing: border-box;
 }
 
 .gridmain {
     display: grid;
     grid-template-areas:  
     "leftbar main";
-    grid-template-columns: 20% 80%;    
+    grid-template-columns: 15% 85%;
+    height: 100vh;   
+    overflow-y: scroll;   
 }
 
 li {
@@ -20,14 +22,13 @@ li {
 }
 
 button {
-    border-style: none;
-    
+    border-style: none;    
 }
 
 button:hover {
     background-color: black;
     color: white;
-    border-left: chartreuse;
+    border-left-color: chartreuse;
 }
 
 button:active {
@@ -41,17 +42,20 @@ button:active {
 #leftbar {
     background-color: black;
     color: lightgray;
-    
+    height: 95%;
+    overflow-y: scroll;       
 }
 
 .logobutton {
     background-color: black;
     color: white;
+    padding-left: 15px;
 }
 
 .menu {
     background-color: black;
     color: lightgray;
+    padding-left: 15px;
 }
 
 .menu>img {
@@ -62,23 +66,30 @@ button:active {
 .downloadbutton {
     max-height: 30px;
     max-width: 30px;
+    padding-left: 15px;
 }
 
 
 .profile {
     max-height: 30px;
     max-width: 30px;
+    padding-left: 15px;
 }
 
 
 .playlist {
     background-color: black;
     color: lightgray;
+    padding-left: 15px;
 }
 
 .create {
     background-color: black;
     color: lightgray;
+    padding-left: 15px;
+}
+.playlistheader {
+    padding-left: 15px;
 }
 
 /* -----------------------------------------MAIN---------------------------- */
@@ -92,14 +103,13 @@ button:active {
     "foryou"
     "popular";
     grid-template-rows: 100px 50px 1fr 1fr 1fr;
-    height: 100vh;
+    height: 95%;
     overflow-y: scroll;
 }
 
 .upgrade {
-    background-color: rgb(28, 28, 46);
-    /* align-items: right;
-    justify-items: center; */
+    background-color: rgb(28, 28, 46);    
+    /* place-items: center; */
 }
 
 .install {
@@ -108,20 +118,27 @@ button:active {
     color: white;
     border-color: white;
     border-radius: 25px;
-    height: 25px;
-    width: 200px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 300px;
     font-size: 20px;
-    align-content: right;    
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 65vw;
+    /* margin-top: ; */
+    /* justify-self: right; */
 }
 
 .navbar {
     background-color: rgb(32, 37, 51);
     color: white;
+    place-items: center;
 }
 
 .nav {
     background-color: rgb(32, 37, 51);
     color: white;
+    margin: 10px;
     
 }
 .music {
@@ -130,9 +147,8 @@ button:active {
     color: white;
 }
 
-.music >ul {
+.music>ul {
     display: inline;
-
 }
 
 
@@ -141,19 +157,32 @@ button:active {
     max-width: 100px;
 }
 
+h6  {
+    color: gray;
+}
+
+/* .popular {
+    border-image: circle;
+} */
+
 /* ------------------------------------NOW PLAYING----------------------------- */
 
-.nowplaying {
+#nowplaying {
     grid-area: nowplaying;
     background-color: darkgrey;
     color: white;
     display: grid;
     grid-template-areas:  
-    "song controls volume";
+    "song controls volume";    
     grid-template-columns: 20% 60% 20%;
+    max-height: 5%;    
 }
 
 .albumsmall {
     max-height: 30px;
     max-width: 30px;
+}
+
+.controls {
+    display: grid;
 }

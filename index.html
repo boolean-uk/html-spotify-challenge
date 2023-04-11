@@ -8,36 +8,48 @@
     <title>Spotify Clone</title>
 </head>
 <body>
-    <div class="gridmain">
-<!-- Leftbar -->
+    <main class="gridmain">
+<!------------------------------------------------------------- Leftbar --------------------------------------------------->
         <section id="leftbar">
             <div class="logo">
                 <button class="logobutton"><img src="assets\img\logo-small.svg" alt="spotify logo" height="75px"><a href="spotify.html" target="_top"></a><h1>Spotify</h1></button>                
             </div>
             <ul class="leftbuttons">
-                <button class="menu"><img src="assets\img\home.svg" alt="home"><p>Home</p></button>
-                <button class="menu"><img src="assets\img\search.svg" alt="search"><p>Search</p></button>
-                <button class="menu"><img src="assets\img\libreria.svg" alt="library"><p>Your Library</p></button>
+                <li><button class="menu"><img src="assets\img\home.svg" alt="home"><p>Home</p></button></li>
+                    
+                <li><button class="menu"><img src="assets\img\search.svg" alt="search"><p>Search</p></button></li>
+
+                <li><button class="menu"><img src="assets\img\libreria.svg" alt="library"><p>Your Library</p></button></li>
+
                 <br>
                 <br>
-                <h2>PLAYLIST</h2>
-                <button class="create"><p>Create Playlist</p></button>
-                <button class="playlist"><p>Playlist Name</p></button>
-                <button class="playlist"><p>Playlist Name</p></button>
-                <button class="playlist"><p>Playlist Name</p></button>
-                <button class="playlist"><p>Playlist Name</p></button>
-                <button class="playlist"><p>Playlist Name</p></button> 
-                <button class="playlist"><p>Playlist Name</p></button> 
-                <button class="playlist"><p>Playlist Name</p></button> 
-                <button class="playlist"><img class="downloadbutton" src="assets\img\download.svg" alt="download song"><p>Download</p></button>
+
+                <h2 class="playlistheader">PLAYLIST</h2>
+                <br>   
+                <li><button class="create"><p>Create Playlist</p></button></li>
+                <br>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <li><button class="playlist"><p>Playlist Name</p></button></li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <li><button class="playlist"><img class="downloadbutton" src="assets\img\download.svg" alt="download song"><p>Download</p></button></li>
             </ul>
+            <br>
             <hr>
             <br>
             <div>
                 <img class="profile" src="assets\img\profile.svg" alt="profile"><p>Jay Vithani</p>
             </div>
         </section>
-<!-- Main -->
+<!--------------------------------------------------------------- Main ------------------------------------------------->
         <section id="main">
             <div class="upgrade">
                 <button class="install">INSTALL UPGRADE</button>
@@ -139,8 +151,8 @@
                     </div>
                 </div>
         </section>   
-<!-- Playback -->
-            <section id="nowplaying">
+<!------------------------------------------------------ Playback ---------------------------------------------------------->
+            <footer id="nowplaying">
                 <div class="song">
                     <img class= "albumsmall" src="assets\img\sinister.jpeg" alt="now playing">
                     <p class="track">Sinister</p>
@@ -157,7 +169,7 @@
                 </div>
                 <div class="volume">
                 </div>
-        </section>
-    </div>   
+            </footer>
+        </main>   
 </body>
 </html>
