@@ -6,6 +6,7 @@
     max-height: 100%;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    /* display: inline; */
 }
 
 .gridmain {
@@ -14,16 +15,16 @@
     "leftbar main";
     grid-template-columns: 15% 85%;
     height: 100vh;   
-    overflow-y: scroll;   
+    overflow-y: scroll;    
 }
 
 li {
     list-style: none;
 }
 
-button {
+/* button {
     border-style: none;    
-}
+} */
 
 button:hover {
     background-color: black;
@@ -56,6 +57,11 @@ button:active {
     background-color: black;
     color: lightgray;
     padding-left: 15px;
+    display: inline;
+}
+
+.menu>button{
+    display: inline;
 }
 
 .menu>img {
@@ -103,18 +109,20 @@ button:active {
     "foryou"
     "popular";
     grid-template-rows: 100px 50px 1fr 1fr 1fr;
+    grid-template-columns:;
     height: 95%;
     overflow-y: scroll;
+    place-items: inline;
 }
 
 .upgrade {
-    background-color: rgb(28, 28, 46);    
+    background-color: rgb(28, 28, 46);  
     /* place-items: center; */
 }
 
 .install {
     background-color: rgb(28, 28, 46);
-    border-style: solid 2px;
+    border-style: solid 2px white;
     color: white;
     border-color: white;
     border-radius: 25px;
@@ -125,6 +133,7 @@ button:active {
     text-align: center;
     margin-top: 30px;
     margin-left: 65vw;
+    position:relative;
     /* margin-top: ; */
     /* justify-self: right; */
 }
@@ -138,8 +147,11 @@ button:active {
 .nav {
     background-color: rgb(32, 37, 51);
     color: white;
-    margin: 10px;
-    
+    margin: 10px;    
+}
+
+.nav:hover {
+    border-bottom-color: chartreuse;
 }
 .music {
     display: inline;
@@ -151,6 +163,9 @@ button:active {
     display: inline;
 }
 
+.recents>ul>li {
+    display:inline;
+}
 
 .album {
     max-height: 100px;
@@ -161,9 +176,9 @@ h6  {
     color: gray;
 }
 
-/* .popular {
-    border-image: circle;
-} */
+.mostpopular>img {
+    border-radius: 50%;
+}
 
 /* ------------------------------------NOW PLAYING----------------------------- */
 
@@ -186,3 +201,4 @@ h6  {
 .controls {
     display: grid;
 }
+
