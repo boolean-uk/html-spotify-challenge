@@ -23,10 +23,11 @@ li {
 }
 
 /* button {
-    border-style: none;    
+    border-style: none; 
 } */
 
-button:hover {
+/* button:hover {
+    border-style: solid;
     background-color: black;
     color: white;
     border-left-color: chartreuse;
@@ -35,39 +36,93 @@ button:hover {
 button:active {
     background-color: grey;
     color: white;
-}
+} */
 
 /* ------------------------------------------LEFTBAR------------------------  */
 
 
 #leftbar {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "menubuttons"
+    "allplaylist"
+    "onlyprofile";
+    grid-template-rows: 100px;
+    grid-template-columns: 100%;    
     background-color: black;
-    color: lightgray;
+    color: darkgray;
     height: 95%;
     overflow-y: scroll;       
 }
-
 .logobutton {
+    border-style: none;
     background-color: black;
     color: white;
-    padding-left: 15px;
+    padding-left: 0px;
+    width: 99%;
+    height: 100px;
+}
+
+.logoactual {
+    padding-left: 0px;
+    width: 170px;
+    
+}
+
+.leftbuttons{
+    display: inline;
+    height: 30px;
+    width: 99%;
+}
+
+.menubuttons {
+    margin-bottom: 5px;
+    border-style: hidden;
 }
 
 .menu {
+    border-style: hidden;
     background-color: black;
     color: lightgray;
     padding-left: 15px;
-    display: inline;
+    /* display: inline; */
 }
-
-.menu>button{
-    display: inline;
-}
-
-.menu>img {
+.menuimg{
     max-height: 30px;
-    max-width: 30px;
+    width: 99%;
 }
+
+.menu:hover {
+    /* border-style: none; */
+    background-color: black;
+    color: white;
+    border-left-color: chartreuse;
+}
+
+.menu:active {
+    background-color: grey;
+    color: white;
+}
+
+
+
+.allplaylist {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.playlistheader {
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* .leftbuttons>menu>img {
+    max-height: 30px;
+    width: 99%;
+} */
 
 .downloadbutton {
     max-height: 30px;
@@ -87,6 +142,7 @@ button:active {
     background-color: black;
     color: lightgray;
     padding-left: 15px;
+    margin-bottom: 5px;
 }
 
 .create {
@@ -112,7 +168,7 @@ button:active {
     grid-template-columns:;
     height: 95%;
     overflow-y: scroll;
-    place-items: inline;
+    
 }
 
 .upgrade {
@@ -141,18 +197,21 @@ button:active {
 .navbar {
     background-color: rgb(32, 37, 51);
     color: white;
-    place-items: center;
+    text-align: center;
 }
 
 .nav {
     background-color: rgb(32, 37, 51);
     color: white;
-    margin: 10px;    
+    margin: 10px;
+    border-radius: 25px;
+    padding: 2px 5px 2px 5px;  
 }
 
-.nav:hover {
+/* .nav:hover {
     border-bottom-color: chartreuse;
-}
+} */
+
 .music {
     display: inline;
     background-color: rgb(32, 37, 51);
