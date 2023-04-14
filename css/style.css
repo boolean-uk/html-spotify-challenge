@@ -15,9 +15,10 @@ body {
 .page {
     display: grid;
     grid-template:
-        "left-side-bar main-right-area" auto /
+        "left-side-bar main-right-area" 
+        "control-bar control-bar" 150px/
         250px 1fr;
-    border: 3px dotted blue;
+    /* border: 3px dotted blue; */
 
 }
 
@@ -36,9 +37,10 @@ img {
         "spotify-logo" 20px
         "left-menu" 150px
         "playlist" 300px
-        "bottom-section" 150px /
+        "bottom-section" 100px /
         200px;
-    border: 3px dotted orange;
+    height: 1200px;
+    /* border: 3px dotted orange; */
 }
 
 .spotify-logo img {
@@ -157,43 +159,6 @@ li {
     right: 40px;
 }
 
-.album-now {
-    display: grid;
-    grid-area: album-now;
-    grid-template-columns: 65px 150px;
-    width: 40px;
-    height: 40px;
-    border: 3px dotted red;
-}
-
-.playing-now {
-    position: relative;
-    bottom: 60px;
-    left: 60px;
-}
-
-.playing-now1 {
-    position: relative;
-    bottom: 80px;
-    left: 60px;
-}
-
-.invert-like {
-    filter: invert(100%);
-    position: relative;
-    left: 70px;
-    top: 10px
-}
-
-.invert-folder {
-    filter: invert(100%);
-    width: 15px;
-    position: relative;
-    left: 150px;
-    bottom: 130px
-}
-
-
 .main-right-area {
     display: grid;
     grid-area: main-right-area;
@@ -201,9 +166,10 @@ li {
         "upgrade" 80px
         "top-nav" 60px
         "main-area" 1fr
-        "control-bar" 100px /
+        "control-bar" 0px /
         1fr;
-    border: 3px dotted yellow;
+        background-color: #141922;
+    /* border: 3px dotted yellow; */
 
 }
 
@@ -213,7 +179,8 @@ li {
     grid-template-rows: 80px;
     align-items: center;
     justify-content: right;
-    border: 3px dotted red;
+    background-color: #080b12;
+    /* border: 3px dotted red; */
 }
 
 .upgrade-button {
@@ -229,8 +196,9 @@ li {
     display: grid;
     grid-area: top-nav;
     grid-template-rows: 40px;
-    border: 3px dotted red;
+    /* border: 3px dotted red; */
     place-items: center;
+    margin-top: 20px;
 }
 
 .links {
@@ -253,7 +221,7 @@ a {
     grid-area: main-area;
     grid-template-rows:
         'recent' 350px 'created' 250px 'popular' 200px;
-    border: 3px dotted red;
+    /* border: 3px dotted red; */
 }
 
 .album-title {
@@ -266,26 +234,26 @@ a {
     grid-template-columns: repeat(6, 150px);
     grid-template-rows: 250px;
     gap: 10px;
-    margin-top: 30px;
-    border: 3px dotted orange;
+    padding-left: 20px;
+    /* border: 3px dotted orange; */
 }
 
 .created {
     display: grid;
     grid-template-columns: repeat(6, 150px);
-    grid-template-rows: 250px;
+    grid-template-rows: 200px;
     gap: 10px;
-    margin-top: 30px;
-    border: 3px dotted blue;
+    padding-left: 20px;
+    /* border: 3px dotted blue; */
 }
 
 .popular {
     display: grid;
     grid-template-columns: repeat(6, 150px);
-    grid-template-rows: 225px;
+    grid-template-rows: 200px;
     gap: 10px;
-    margin-top: 30px;
-    border: 3px dotted blueviolet;
+    padding-left: 20px;
+    /* border: 3px dotted blueviolet; */
 }
 
 .album-cube {
@@ -308,19 +276,68 @@ a {
 }
 
 h3 {
-    margin-top: 30px;
+    margin-top:20px;
+    padding-left: 20px;
+}
+
+.recommended {
+margin-top: 0px;
+padding-left: 20px;
 }
 
 .control-bar {
     display: grid;
+    grid-area: control-bar;
     place-items: center;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    background-color: #282828;
     /* border: 3px dotted red; */
+}
+
+.album-now {
+    display: grid;
+    grid-area: album-now;
+    grid-template-columns: 65px 150px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 740px;
+    /* border: 3px dotted red; */
+}
+
+.playing-now {
+    position: relative;
+    bottom: 60px;
+    right: 680px;
+}
+
+.playing-now1 {
+    position: relative;
+    bottom: 80px;
+    right: 680px;
+}
+
+
+.invert-like {
+    filter: invert(100%);
+    position: relative;
+    right: 610px;
+    bottom: 130px
+}
+
+.invert-folder {
+    filter: invert(100%);
+    width: 15px;
+    position: relative;
+    right: 600px;
+    bottom: 130px
 }
 
 .icon {
     display: grid;
     grid-template-columns: repeat(5, 60px);
+    position: relative;
+    bottom: 170px;
     /* border: 3px dotted green; */
 
 }
@@ -338,13 +355,13 @@ label {
 .number {
     position: relative;
     right: 55px;
-    top: 20px;
+    bottom: 140px;
 }
 
 .number1 {
     position: relative;
-    left: 260px;
-    bottom: 16px;
+    left: 200px;
+    bottom: 176px;
 }
 
 .slide-container {
@@ -354,13 +371,16 @@ label {
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
+    width: 130%;
     height: 3px;
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    position: relative;
+    bottom: 160px;
+    right: 20px;
 }
 
 .slider:hover {
@@ -376,17 +396,19 @@ label {
 }
 
 .small-slide-container {
-    width: 50%;
+    width: 60%;
     position: relative;
     left: 650px;
-    bottom: 60px
+    bottom: 50px;
+    /* border: 3px dotted green; */
+
 }
 
 .invert-list {
     filter: invert(100%);
     width: 15px;
     position: relative;
-    right: 120px;
-    bottom: 38px;
+    left: 530px;
+    bottom: 250px;
     padding: 6px
 }
