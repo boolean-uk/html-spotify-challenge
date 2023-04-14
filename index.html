@@ -4,9 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <div class="layout">
+
+<!-- LEFT COLUMN -->
+
+        <section class="left">
+            <div class="left-spotify-logo">
+                <img src="assets/img/logo.svg">
+            </div>
+
+<!-- left nav -->
+
+            <nav class="left-nav">
+                <div>
+                    <button class="btn">
+                        <img src="assets\img\home.svg">
+                        <span>Home</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn">
+                        <img src="assets\img\search.svg">
+                        <span>Search</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn">
+                        <img src="assets\img\libreria.svg">
+                        <span>Your Libraries</span>
+                    </button>
+                </div>
+            </nav>
+
+<!-- playlist -->
+
+            <div class="playlist-container">
+                <h3>PLAYLIST</h3>
+                <button class="pl-btn">
+                        <div class="add-playlist">+</div>
+                        <h3>Create Playlist</h3>
+                </button>
+                <ul>
+                    <li>Playlist 1</li>
+                    <li>Playlist 2</li>
+                    <li>Playlist 3</li>
+                    <li>Playlist 4</li>
+                    <li>Playlist 5</li>
+                    <li>Playlist 6</li>
+                    <li>Playlist 7</li>
+                </ul>
+            </div>
+
+<!-- left footer/user info -->
+
+            <div class="left-user-info">
+                <img src="assets/img/boolean.jpg">
+                <span>Boolean UK</span>
+            </div>
+        </section>
+
+<!-- LEFT COLUMN END -->
+
+<!-- MAIN SECTION START -->
+
+        <section class="main">
+
+<!-- sticky header -->
+
+            <div class="header">
+                <div>
+                    <button>GET PREMIUM</button>
+                </div>
+            </div>
+
+<!-- main nav -->
+        
+            <nav class="main-nav">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                FEATURED
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                PODCASTS
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                CHARTS
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                WHAT'S NEW
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                DISCOVER
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+<!-- recently played -->
+
+            <h1>Recently played</h1>
+            <div class="album-container">
+                <div class="album-info">
+                    <img src="assets/img/metal_lifting.jpg">
+                    <p>Heavy Metal</p>
+                    <p>Subtitle</p>
+                </div>
+                <div class="album-info">
+                    <img src="assets/img/stranger.jpeg">
+                    <p>
+                        Stranger Things, vol. <br>
+                        1 (a Netflix Original <br>
+                        Series Soundtrack)
+                    </p>
+                    <p>Kyle Dixon & Michael Stein</p>
+                </div>
+                <div class="album-info">
+                    <img src="assets/img/aquietplace.jpeg">
+                    <p>A quiet place</p>
+                    <p>Subtitle</p>
+                </div>
+                <div class="album-info">
+                    <img src="assets/img/split.jpeg">
+                    <p>Split</p>
+                    <p>Subtitle</p>
+                </div>
+                <div class="album-info">
+                    <img src="assets/img/cure.jpeg">
+                    <p>A cure for wellness</p>
+                    <p>Subtitle</p>
+                </div>
+                <div class="album-info">
+                    <img src="assets/img/sinister.jpeg">
+                    <p>Sinister</p>
+                    <p>Subtitle</p>
+                </div>
+            </div>
+
+        </section>
+
+<!-- MAIN SECTION END -->
+
+<!-- FOOTER SECTION START -->
+
+        <section class="footer">
+
+<!-- left song info -->
+
+            <div class="now-playing">
+                <img src="assets/img/sinister.jpeg">
+                <div class="song-info">
+                    <h5>Sinister</h5>
+                    <p>Brano Nome</p>
+                </div>
+            </div>
+            
+<!-- song controls -->
+            
+            <div class="play-controls">
+                <div class="button-container">
+                    <div>
+                        <img class="hover" src="assets/svg/back-15.svg">
+                    </div>
+                    <div>
+                        <img class="hover" src="assets/svg/back.svg">
+                    </div>
+                    <div class="play-btn">
+                        <img src="assets/svg/play.svg">
+                    </div>
+                    <div>
+                        <img class="hover" src="assets/svg/forward.svg">
+                    </div>
+                    <div>
+                        <img class="hover" src="assets/svg/forward-15.svg">
+                    </div>
+                </div>
+                <div class="playback-time">
+                    <p class="time-played">0:25</p>
+                    <div class="status-bar">
+                        <div></div>
+                    </div>
+                    <p class="song-length">4:35</p>
+                </div>
+            </div>
+
+ <!-- volume controls  -->
+
+            <div class="volume-controls">
+                <div>
+                    <img src="assets/svg/queue.svg">
+                </div>
+                <div>
+                    <img src="assets/svg/devices.svg">
+                </div>
+                <div>
+                    <img src="assets/svg/volume.svg">
+                </div>
+                <div class="slider">
+                    <div></div>
+                </div>
+                <div>
+                    <img src="assets/svg/expand.svg">
+                </div>
+            </div>
+
+        </section>
+
+<!-- FOOTER SECTION END -->
+
+    </div>
 </body>
 </html>
