@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.grid {
+  display: grid;
+}
+
+body {
+  grid-template:
+  'left-bar header' 100px
+  'left-bar main' auto
+  'footer footer' 100px /
+  300px calc(100vw - 300px);
+  background-color: rgb(20, 25, 34);
+}
+header {
+  grid-area: header;
+  height: 100px;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.4) 
+}
+
+header > button {
+  width: 300px;
+  height: 50px;
+
+  position: fixed;
+  right: 0;
+  margin: 25px;
+
+  border: 2px solid white;
+  border-radius: 25px;
+
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.side-bar {
+  grid-area: side-bar;
+  height: calc(100vh - 100px);
+  width: 300px;
+
+  grid-template: 
+  'logo' 100px 
+  'nav' 150px
+  'playlists-container' 1fr;
+  position: fixed;
+  left: 0;
+  background-color: black;
+}
+
+.side-bar > svg {
+  grid-area: logo;
+  height: 90px;
+  padding: 10px;
+}
+
+.side-bar > nav {
+  grid-area: nav;
+  padding: 1px;
+}
+
+.side-bar > nav > .button {
+  display: grid;
+  grid-template-areas: '. .';
+  grid-template-columns: 50px;
+  align-items: center;
+  margin: 5px;
+}
+
+.side-bar > nav > .button > p {
+  display: inline;
+  color: rgb(108, 108, 108);
+  font-size:1.5rem; 
+  transition: 0.2s ease-in-out;
+}
+
+.side-bar > nav > .button > svg {
+  width: 40px;
+  display: inline;
+  filter: invert(43%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(95%) contrast(84%);
+  transition: 0.2s ease-in-out;
+}
+
+.side-bar > .playlists-container {
+  grid-area: playlists-container;
+  grid-template: 
+  'header' 50px
+  'create' 50px
+  'playlists' 1fr
+  'profile-section' 100px;
+  color: rgb(108, 108, 108);
+  padding: 10px;
+}
+
+.side-bar > .playlists-container > h2 {
+  grid-area: header;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.side-bar > .playlists-container > .create-playlist > p {
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.side-bar > .playlists-container > .create-playlist:hover > i {
+  color: rgb(33, 33, 33);
+}
+
+.side-bar > .playlists-container > .playlists > .playlist {
+  margin-bottom: 20px;
+}
+.side-bar > .playlists-container > .playlists > .playlist > p {
+  font-size: 1.3rem;
+}
+
+.side-bar > .profile-section > .download {
+  grid-template-areas: '. .';
+  grid-template-columns: 50px;
+  align-items: center;
+}
+.side-bar > .profile-section > .download > svg {
+  width: 40px;
+  fill: rgb(108, 108, 108);
+}
+
+.side-bar > .profile-section > .download > p {
+  color: rgb(108, 108, 108);
+  display: inline;
+}
+
+.side-bar > .profile-section > hr {
+  width: 280px;
+  border: 1px solid rgb(108, 108, 108);
+  margin: 10px;
+}
+.side-bar > .profile-section > .profile {
+  grid-template-areas: '. .';
+  grid-template-columns: 50px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.side-bar > .profile-section > .profile > .profile-picture {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: grey;
+  overflow: hidden;
+
+  margin: 10px;
+  display: inline-block;
+}
+
+.side-bar > .profile-section > .profile > .profile-picture > svg {
+  object-fit: cover;
+  fill: white;
+}
+
+.side-bar > .profile-section > .profile > p {
+  display: inline;
+  margin-left: 10px;
+
+  font-size: 1.5rem;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(20, 25, 34);
+  justify-items: center;
+  padding: 10px;
+}
+
+main > nav {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+main > nav > a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  font-size: 1.5rem;
+  margin: 0 5px 0 5px;
+}
+
+main > .main-content {
+  width: calc(100vw - 300px);
+  grid-template:
+  'recently-played' auto
+  'just-for-you' auto
+  'popular-artists' auto /
+  calc(100vw - 300px);
+  gap: 50px;
+}
+
+main > .main-content > .recently-played {
+  grid-area: recently-played;
+  
+}
+
+main > .main-content > .just-for-you {
+  grid-area: just-for-you;
+}
+
+main > .main-content > .popular-artists {
+  grid-area: popular-artists;
+}
+.recently-played > h2,
+.just-for-you > h2,
+.popular-artists > h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.recently-played > p,
+.just-for-you > p,
+.popular-artists > p {
+  font-size: 1.5rem;
+  color: rgb(108, 108, 108);
+  max-width: 20vw;
+}
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  
+}
+
+.cards > .card {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+}
+
+.cards > .card > .image-container,
+.cards > .card > .image-container-round {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.cards > .card > .image-container > img,
+.cards > .card > .image-container-round > img {
+  width: 250px;
+  height: 250px;
+}
+
+.cards > .card > .image-container-round > img {
+  border-radius: 50%;
+}
+
+
+.cards > .card > p {
+  max-width: 250px;
+  color: rgb(108, 108, 108);
+  text-align: center;
+}
+.cards > .card > h2 {
+  max-width: 250px;
+  color: white;
+  text-align: center;
+}
+footer {
+  grid-area: footer;
+  height: 100px;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(33, 33, 33);
+
+  grid-template:
+  'song-info play-stop volume' 50px
+  'song-info song-bar volume' 50px /
+  1fr 3fr 1fr
+}
+
+footer > .song-info {
+  grid-area: song-info;
+  grid-template-areas: 'song-cover title buttons';
+  grid-template-columns: 75px 125px 125px;
+  place-items: center;
+}
+
+footer > .song-info > img {
+  grid-area: song-cover;
+}
+
+footer > .song-info > .title {
+  color: white;
+}
+
+footer > .song-info > .buttons > i {
+  color: rgb(108, 108, 108);
+}
+
+footer > .play-stop {
+  grid-area: play-stop;
+  place-items: center;
+}
+footer > .play-stop > div {
+  grid-template-areas: '. . . . .';
+  gap: 50px;
+  color: white;
+  padding-top: 10px;
+}
+
+footer > .volume {
+  grid-area: volume;
+  grid-template-areas: 'volume-buttons volume-bar .';
+  grid-template-columns: 100px 1fr 1fr;
+  place-items: center;
+}
+
+footer > .volume > div {
+  grid-area: volume-buttons;
+  grid-template-areas: '. . .';
+  color: white;
+  place-items: center;
+  display: inline-block;
+  height: 25px;
+}
+
+footer > .volume > .volume-bar {
+  padding-left: 100px;
+  grid-area: volume-bar;
+  width: 100px;
+  height: 0px;
+  border: 2px solid rgb(118, 118, 118);
+  border-radius: 1px;
+}
+
+footer > .volume > .volume-bar > div {
+  border-radius: 1px;
+  width: 50px;
+  border: 1px solid rgb(54, 54, 54);
+}
+
+footer > .song-bar {
+  grid-area: song-bar;
+  place-items: center;
+  
+}
+
+footer > .song-bar > div {
+  display: inline-block;
+  height: 0px;
+  width: 40vw;
+  border: 2px solid rgb(118, 118, 118);
+  margin-bottom: 25px;
+}
+
+.hover:hover {
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.side-bar > nav > .button:hover > p {
+  cursor: pointer;
+  color: white;
+}
+
+.side-bar > nav > .button:hover > svg {
+  cursor: pointer;
+  filter: none
+}
+
+.side-bar > .playlists-container > .create-playlist:hover > i {
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
