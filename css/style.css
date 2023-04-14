@@ -12,7 +12,8 @@
 .gridmain {
     display: grid;
     grid-template-areas:  
-    "leftbar main";
+    "leftbar main"
+    "nowplaying nowplaying";
     grid-template-columns: 15% 85%;
     height: 100vh;   
     overflow-y: scroll;    
@@ -249,7 +250,7 @@ h6  {
     grid-template-areas:  
     "song controls volume";    
     grid-template-columns: 20% 60% 20%;
-    max-height: 5%;    
+    max-height: 5%;  
 }
 
 .albumsmall {
