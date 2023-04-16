@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+.page {
+    display: grid;
+    grid-template:
+        "left-side-bar main-right-area" 
+        "control-bar control-bar" 150px/
+        250px 1fr;
+    /* border: 3px dotted blue; */
+
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    /* border: 3px dotted blue; */
+}
+
+
+.left-side-bar {
+    display: grid;
+    grid-area: left-side-bar;
+    grid-template:
+        "spotify-logo" 20px
+        "left-menu" 150px
+        "playlist" 300px
+        "bottom-section" 100px /
+        200px;
+    height: 1200px;
+    /* border: 3px dotted orange; */
+}
+
+.spotify-logo img {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+}
+
+.left-menu {
+    display: grid;
+    grid-area: left-menu;
+    grid-template-columns: 55px 50px;
+    margin-top: 50px;
+    /* border: 3px dotted red; */
+}
+
+.left-menu img {
+    align-self: center;
+    padding-left: 20px;
+
+}
+
+.create {
+    display: grid;
+    grid-area: create;
+    grid-template-columns: 55px 150px;
+    padding-bottom: 10px;
+    /* border: 3px dotted red; */
+
+}
+
+span {
+    position: relative;
+    top: 21px;
+    right: 15px;
+    font-size: small;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.invert-play {
+    filter: invert(100%);
+    position: relative;
+    bottom: 160px;
+    left: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+p {
+    place-content: center;
+    margin-top: 25px;
+    font-size: small;
+    position: relative;
+    bottom: 2px;
+
+}
+
+.playlist {
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+.create-playlist {
+    font-size: small;
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    font-size: small;
+}
+
+.bottom-section {
+    display: grid;
+    grid-area: bottom-section;
+    grid-template-columns: 50px 150px;
+    padding-top: 620px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+.download {
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+    font-size: small;
+}
+
+.profile {
+    font-size: small;
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+
+}
+
+.install-app {
+    padding-left: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+}
+
+.sara {
+    padding-left: 10px;
+    position: relative;
+    bottom: 10px;
+    right: 40px;
+}
+
+.main-right-area {
+    display: grid;
+    grid-area: main-right-area;
+    grid-template:
+        "upgrade" 80px
+        "top-nav" 60px
+        "main-area" 1fr
+        "control-bar" 0px /
+        1fr;
+        background-color: #141922;
+    /* border: 3px dotted yellow; */
+
+}
+
+.upgrade {
+    display: grid;
+    grid-area: upgrade;
+    grid-template-rows: 80px;
+    align-items: center;
+    justify-content: right;
+    background-color: #080b12;
+    /* border: 3px dotted red; */
+}
+
+.upgrade-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+.top-nav {
+    display: grid;
+    grid-area: top-nav;
+    grid-template-rows: 40px;
+    /* border: 3px dotted red; */
+    place-items: center;
+    margin-top: 20px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    font-size: small;
+}
+
+.links:hover {
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-area {
+    display: grid;
+    grid-area: main-area;
+    grid-template-rows:
+        'recent' 350px 'created' 250px 'popular' 200px;
+    /* border: 3px dotted red; */
+}
+
+.album-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recent {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 250px;
+    gap: 10px;
+    padding-left: 20px;
+    /* border: 3px dotted orange; */
+}
+
+.created {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 200px;
+    gap: 10px;
+    padding-left: 20px;
+    /* border: 3px dotted blue; */
+}
+
+.popular {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 200px;
+    gap: 10px;
+    padding-left: 20px;
+    /* border: 3px dotted blueviolet; */
+}
+
+.album-cube {
+    width: 150px;
+    height: 225px;
+    /* border: 3px dotted white; */
+}
+
+.album-circle img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+}
+
+.album {
+    width: 140px;
+    height: 140px;
+    /* margin-top: 20px; */
+}
+
+h3 {
+    margin-top:20px;
+    padding-left: 20px;
+}
+
+.recommended {
+margin-top: 0px;
+padding-left: 20px;
+}
+
+.control-bar {
+    display: grid;
+    grid-area: control-bar;
+    place-items: center;
+    /* padding-bottom: 40px; */
+    background-color: #282828;
+    /* border: 3px dotted red; */
+}
+
+.album-now {
+    display: grid;
+    grid-area: album-now;
+    grid-template-columns: 65px 150px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 740px;
+    /* border: 3px dotted red; */
+}
+
+.playing-now {
+    position: relative;
+    bottom: 60px;
+    right: 680px;
+}
+
+.playing-now1 {
+    position: relative;
+    bottom: 80px;
+    right: 680px;
+}
+
+
+.invert-like {
+    filter: invert(100%);
+    position: relative;
+    right: 610px;
+    bottom: 130px
+}
+
+.invert-folder {
+    filter: invert(100%);
+    width: 15px;
+    position: relative;
+    right: 600px;
+    bottom: 130px
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    position: relative;
+    bottom: 170px;
+    /* border: 3px dotted green; */
+
+}
+
+.invert-icon {
+    filter: invert(100%);
+
+}
+
+label {
+    font-size: x-small;
+
+}
+
+.number {
+    position: relative;
+    right: 55px;
+    bottom: 140px;
+}
+
+.number1 {
+    position: relative;
+    left: 200px;
+    bottom: 176px;
+}
+
+.slide-container {
+    width: 100%
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 130%;
+    height: 3px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: relative;
+    bottom: 160px;
+    right: 20px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+    background: white;
+    cursor: pointer;
+}
+
+.small-slide-container {
+    width: 60%;
+    position: relative;
+    left: 650px;
+    bottom: 50px;
+    /* border: 3px dotted green; */
+
+}
+
+.invert-list {
+    filter: invert(100%);
+    width: 15px;
+    position: relative;
+    left: 530px;
+    bottom: 250px;
+    padding: 6px
+}

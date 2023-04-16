@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
+
 <body>
-    
+    <div class="page">
+        <!-- left-side-bar -->
+        <section class="left-side-bar">
+            <div class="spotify-logo">
+                <img logo src="/assets/img/logo.svg " alt="spotify-logo">
+            </div>
+            <nav class="left-menu">
+                <img src="/assets/img/home.svg" alt="home">
+                <p><b>Home</b></p>
+                <img src="/assets/img/search.svg" alt="search">
+                <p>Search</p>
+                <img src="/assets/img/libreria.svg" alt="library">
+                <p>Library</p>
+            </nav>
+            <nav class="playlist">
+                <p><b>PLAYLIST</b></p>
+                <div class="create">
+                    <img class="invert" src="/assets/img/plus-symbol-button-svgrepo-com.svg" alt="plus-icon">
+                    <div class="create-playlist"><a href="create-playlist">Create Playlist</a></div>
+                    <!-- <p>Create Playlist</p> -->
+                </div>
+                <ul>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                    <li>Playlist Name</li>
+                </ul>
+            </nav>
+            <!-- bottom-section -->
+            <div class="bottom-section">
+                <div class="install-app"><img src="/assets/img/download.svg" alt="download">
+                    <a href="download" class="download">Install</a>
+                </div>
+                <div class="sara"><img src="/assets/img/profile.svg" alt="profile">
+                    <a href="profile" class="profile">Sara Beazley</a>
+                </div>
+               
+            </div>
+        </section>
+        <!-- main-right-area -->
+        <section class="main-right-area">
+            <!-- upgrade-button -->
+            <div class="upgrade">
+                <button class="upgrade-button">CHOOSE UPGRADE</button>
+            </div>
+            <!-- top nav bar -->
+            <nav class="top-nav">
+                <div class="links">
+                    <a href="https://www.bing.com/search?q=featured&FORM=ATUR01&PC=ATUR&PTAG=ATUR01RAND">FEATURED</a>
+                    <a
+                        href="https://www.bing.com/search?q=podcast&pc=0APP&ptag=C1N8425A980943E8E8&form=CONBNT&conlogo=CT3210127">PODCAST</a>
+                    <a
+                        href="https://www.bing.com/search?q=chart&pc=0APP&ptag=C15N409AC412D6EC08&form=CONBNT&conlogo=CT3210127">CHART</a>
+                    <a
+                        href="https://www.bing.com/search?q=genre&pc=0APP&ptag=C1N8425A980943E8E8&form=CONBNT&conlogo=CT3210127">GENRE</a>
+                    <a
+                        href="https://www.bing.com/search?q=new&pc=0APP&ptag=C24N813A980943E8E8&form=CONBNT&conlogo=CT3210127">NEW
+                        IN</a>
+                    <a
+                        href="https://www.bing.com/search?q=discover+meaning&qs=SS&pq=discover+meaning&sc=10-16&cvid=C734887AF0AC484DAF27F60314D3C46E&FORM=QBRE&sp=1&ghc=1&lq=0">DISCOVER</a>
+                </div>
+            </nav>
+            <!-- main area -->
+            <section class="main-area">
+                <h3>Recently played</h3>
+                <!-- recently played -->
+                <div class="recent">
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/metal_lifting.jpg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Heavy Metal</b></p>
+                            <p class="album-title">Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/stranger.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</b>
+                            </p>
+                            <p class="album-title">Kyle Dixon & Michael Stein</p>
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/aquietplace.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>A quiet place</b></p>
+                            <p class="album-title">Subtitle</p>
+                            <img class="invert-play"
+                                src="/assets/img/multimedia-play-icon-circle-button-svgrepo-com.svg" alt="play-icon">
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/split.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Split</b></p>
+                            <p class="album-title">Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/cure.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>A cure for wellness</b></p>
+                            <p class="album-title">Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/sinister.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Sinister</b></p>
+                            <p class="album-title">Subtitle</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- created for SJB -->
+                <h3>Created for Sara Beazley</h3>
+               <p class="recommended">Recommended for you</p>
+                <div class="created">
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/radar.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Release Radar</b></p>
+                        </div>
+                    </div>
+                    <div class="album-cube">
+                        <img class="album" src="/assets/img/mixdaily.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Daily Mix 1</b></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- popular artists -->
+                <h3>Popular artists</h3>
+                <p class="recommended">Recommended for you</p>
+                <div class="popular">
+                    <div class="album-circle">
+                        <img class="album" src="/assets/img/radar.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Release Radar</b></p>
+                        </div>
+                    </div>
+                    <div class="album-circle">
+                        <img class="album" src="/assets/img/mixdaily.jpeg" alt="album">
+                        <div>
+                            <p class="album-title"><b>Daily Mix 1</b></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="control-bar">
+            <div class="playing"><img class="album-now" src="/assets/img/sinister.jpeg" alt="album">
+                <p class="playing-now"><b>Sinister</b></p>
+                <p class="playing-now1">Subtitle</p>
+            <img class="invert-like" src="/assets/img/heart-outline-svgrepo-com.svg" alt="like">
+            <img class="invert-folder" src="/assets/img/folder-outline-svgrepo-com.svg" alt="like">
+        </div>
+            <div class="icon">
+                <img class="invert-icon" src="/assets/img/shuffle-240-svgrepo-com (1).svg" alt="shuffle">
+                <img class="invert-icon" src="/assets/img/step-backward-svgrepo-com.svg" alt="rewind">
+                <img class="invert-icon" src="/assets/img/multimedia-play-icon-circle-button-svgrepo-com.svg"
+                    alt="play">
+                <img class="invert-icon" src="/assets/img/step-forward-svgrepo-com.svg" alt="forward">
+                <img class="invert-icon" src="/assets/img/arrow-repeat-236-svgrepo-com.svg" alt="forward">
+            </div>
+            <div>
+                <label class="number">0.25
+                </label>
+                <div class="slide-container">
+                    <input type="range" min="0" max="10" value="0-10mins" class="slider" id="myRange" />
+                    <label class="number1">4.35</label>
+                </div>
+                <div class="small-slide-container">
+                    <input type="range" min="0" max="5" value="0-5vol" class="slider" id="myVolume" />
+                    </div>
+                    <div>
+                    <img class="invert-list" src="/assets/img/list-1509-svgrepo-com.svg" alt="list">
+                    <img class="invert-list" src="/assets/img/screen-desktop-svgrepo-com.svg" alt="screen">
+                    <img class="invert-list"
+                        src="/assets/img/multimedia-audio-music-sound-max-speaker-volume-icon-svgrepo-com.svg"
+                        alt="audio">
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
 </body>
+
 </html>
