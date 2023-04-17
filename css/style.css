@@ -10,13 +10,14 @@
 }
 
 .gridmain {
+    grid-area: gridmain;
     display: grid;
     grid-template-areas:  
     "leftbar main"
     "nowplaying nowplaying";
     grid-template-columns: 15% 85%;
     height: 100vh;   
-    overflow-y: scroll;    
+    overflow-y: scroll;     
 }
 
 li {
@@ -43,6 +44,7 @@ button:active {
 
 
 #leftbar {
+    grid-area: leftbar;
     display: grid;
     grid-template-areas: 
     "logo"
@@ -56,6 +58,7 @@ button:active {
     height: 95%;
     overflow-y: scroll;       
 }
+
 .logobutton {
     border-style: none;
     background-color: black;
@@ -158,6 +161,7 @@ button:active {
 /* -----------------------------------------MAIN---------------------------- */
 
 #main {
+    grid-area: main;
     display: grid;
     grid-template-areas: 
     "upgrade"
@@ -165,16 +169,16 @@ button:active {
     "recent"
     "foryou"
     "popular";
-    grid-template-rows: 100px 50px 1fr 1fr 1fr;
-    grid-template-columns:;
+    grid-template-rows: 100px 50px 1fr 1fr 1fr;    
     height: 95%;
-    overflow-y: scroll;
-    
+    overflow-y: scroll;    
 }
 
 .upgrade {
     background-color: rgb(28, 28, 46);  
     /* place-items: center; */
+    position: sticky;
+    top: 0;
 }
 
 .install {
@@ -199,6 +203,8 @@ button:active {
     background-color: rgb(32, 37, 51);
     color: white;
     text-align: center;
+    position: sticky;
+    top: 15%;
 }
 
 .nav {
@@ -236,8 +242,24 @@ h6  {
     color: gray;
 }
 
-.mostpopular>img {
+.recents {
+    grid-area: recents;
+    display: grid;
+    grid-template-areas: 
+    "metal stranger quiet split cure sinister" ;
+}
+
+.mostpopular {
+    grid-area: mostpopular;
+    display: grid;
+    grid-template-areas: 
+    "young einaudi" ;
+}
+
+.albumround{
     border-radius: 50%;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 /* ------------------------------------NOW PLAYING----------------------------- */
@@ -250,7 +272,7 @@ h6  {
     grid-template-areas:  
     "song controls volume";    
     grid-template-columns: 20% 60% 20%;
-    max-height: 5%;  
+    max-height: 100%;  
 }
 
 .albumsmall {
@@ -260,5 +282,21 @@ h6  {
 
 .controls {
     display: grid;
+    grid-area: controls;
+    grid-template-areas:
+    "controls"
+    "slider";
+    text-align: center;
+}
+
+.controller {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.controller>img {
+    max-width: 20px;
+    max-height: 20px;
+    
 }
 
