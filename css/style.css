@@ -16,6 +16,7 @@
     "leftbar main"
     "nowplaying nowplaying";
     grid-template-columns: 15% 85%;
+    grid-template-rows: 90% 10%;
     height: 100vh;   
     overflow-y: scroll;     
 }
@@ -74,10 +75,27 @@ button:active {
     
 }
 
+.logobutton:hover {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-left-color: chartreuse;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+}
+
+.logobutton:active {
+    background-color: darkgrey;
+    color: white;
+}
+
+
+
 .leftbuttons{
     display: inline;
     height: 30px;
-    width: 99%;
+    width: 170px;
 }
 
 .menubuttons {
@@ -92,20 +110,23 @@ button:active {
     padding-left: 15px;
     /* display: inline; */
 }
-.menuimg{
+.menu>.menuimg{
     max-height: 30px;
     width: 99%;
 }
 
 .menu:hover {
-    /* border-style: none; */
+    border-style: solid;
     background-color: black;
     color: white;
     border-left-color: chartreuse;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
 }
 
 .menu:active {
-    background-color: grey;
+    background-color: darkgrey;
     color: white;
 }
 
@@ -122,18 +143,11 @@ button:active {
     font-size: 1rem;
 }
 
-
-/* .leftbuttons>menu>img {
-    max-height: 30px;
-    width: 99%;
-} */
-
 .downloadbutton {
     max-height: 30px;
-    max-width: 30px;
+    max-width: 170px;
     padding-left: 15px;
 }
-
 
 .profile {
     max-height: 30px;
@@ -141,19 +155,64 @@ button:active {
     padding-left: 15px;
 }
 
-
 .playlist {
+    border-style: hidden;
     background-color: black;
     color: lightgray;
     padding-left: 15px;
     margin-bottom: 5px;
 }
 
+.playlist:hover {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-left-color: chartreuse;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black; 
+    
+}
+
+.playlist:active {
+    background-color: darkgrey;
+    color: black;
+}
+
 .create {
+    border-style: hidden;
     background-color: black;
     color: lightgray;
     padding-left: 15px;
+    place-content: center;
 }
+
+.create:hover {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-left-color: chartreuse;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black; 
+    
+}
+
+.create:active {
+    background-color: darkgrey;
+    color: black;
+}
+
+.create {
+    max-width: 170px;
+    max-height: 40px;
+}
+
+.create>.add {
+    max-width: 20px;
+    max-height: 20px;    
+}
+
 .playlistheader {
     padding-left: 15px;
 }
@@ -168,36 +227,44 @@ button:active {
     "navbar"
     "recent"
     "foryou"
-    "popular";
+    "popular";    
     grid-template-rows: 100px 50px 1fr 1fr 1fr;    
     height: 95%;
     overflow-y: scroll;    
 }
 
 .upgrade {
-    background-color: rgb(28, 28, 46);  
-    /* place-items: center; */
+    background-color: rgb(28, 28, 46); 
     position: sticky;
     top: 0;
 }
 
 .install {
     background-color: rgb(28, 28, 46);
-    border-style: solid 2px white;
-    color: white;
-    border-color: white;
+    border: solid 2px white;
+    color: white;    
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     height: 40px;
     width: 300px;
     font-size: 20px;
     text-align: center;
     margin-top: 30px;
-    margin-left: 65vw;
-    position:relative;
-    /* margin-top: ; */
-    /* justify-self: right; */
+    margin-left: 65vw;    
 }
+
+.install:hover {
+    color: chartreuse;
+    border-color: chartreuse;
+
+}
+.install:active {
+    background-color: darkgray;
+    color: black;
+    border-color: rgb(28, 28, 46);
+}
+
+
 
 .navbar {
     background-color: rgb(32, 37, 51);
@@ -209,29 +276,26 @@ button:active {
 
 .nav {
     background-color: rgb(32, 37, 51);
-    color: white;
+    color: darkgrey;
     margin: 10px;
-    border-radius: 25px;
-    padding: 2px 5px 2px 5px;  
+    padding: 2px 5px 2px 5px;
+    border-style: solid; 
+    border-color: rgb(32, 37, 51);
+    
 }
 
-/* .nav:hover {
-    border-bottom-color: chartreuse;
-} */
+.nav:hover {
+    border-width: 1px;
+    color: white;
+    border-bottom: 3px solid chartreuse;
+}
 
 .music {
     display: inline;
     background-color: rgb(32, 37, 51);
-    color: white;
+    color: white; 
 }
 
-.music>ul {
-    display: inline;
-}
-
-.recents>ul>li {
-    display:inline;
-}
 
 .album {
     max-height: 100px;
@@ -247,13 +311,23 @@ h6  {
     display: grid;
     grid-template-areas: 
     "metal stranger quiet split cure sinister" ;
+    grid-template-columns: repeat(1fr,5);
+}
+
+.createdfor {
+    grid-area: foryou;
+    display: grid;
+    grid-template-areas: 
+    "radar daily1 . . . ." ;
+    grid-template-columns: repeat(1fr,5);
 }
 
 .mostpopular {
     grid-area: mostpopular;
     display: grid;
     grid-template-areas: 
-    "young einaudi" ;
+    "young einaudi . . . ." ;
+    grid-template-columns: repeat(1fr,5);
 }
 
 .albumround{
@@ -266,7 +340,7 @@ h6  {
 
 #nowplaying {
     grid-area: nowplaying;
-    background-color: darkgrey;
+    background-color: rgb(43, 43, 43);
     color: white;
     display: grid;
     grid-template-areas:  
@@ -290,13 +364,56 @@ h6  {
 }
 
 .controller {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 25px;
+    max-height: 25px;
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+    border-style: hidden;
+    margin: 5px 15px 0px 15px;
 }
 
 .controller>img {
     max-width: 20px;
-    max-height: 20px;
-    
+    max-height: 20px;    
 }
 
+.controller:hover {
+    background-color: darkgray;
+}
+
+.volume {
+    grid-area: volume;
+    display: grid;
+    grid-template-areas:  
+    "volumebuttons volumeslider";
+    place-items: center;
+}
+.volumebuttons {
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+    max-width: 25px;
+    max-height: 25px;
+    border-style: hidden;
+    margin: 5px 15px 0px 15px;
+}
+
+.volumebuttons:hover {
+    background-color: darkgray;
+}
+.volumebuttons>img {
+    max-width: 20px;
+    max-height: 20px;    
+}
+
+.artist {
+    font-size: .75rem;
+    color: darkgray
+}
+
+.track {
+    font-size: 1rem
+}
+
+.slider {
+    max-width: 1fr;
+}
