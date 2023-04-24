@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: "Gotham Rounded", sans-serif;
+}
+
+/* Left-side-bar - fixed position */
+.left-side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 290px;
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Left-bar Logo and Heading */
+.spotify-logo {
+  width: 60px;
+  position: relative;
+  bottom: 100px;
+  left: 15px;
+}
+
+.spotify-heading {
+  color: white;
+  position: relative;
+  left: 80px;
+  bottom: 9px;
+  font-size: 27px;
+}
+
+/* Navigation; Home, Search, Library */
+
+.navigation {
+  position: relative;
+  bottom: 80px;
+  left: 45px;
+}
+
+.home {
+  color: white;
+  font-size: 20px;
+}
+
+.home-icon {
+  width: 40px;
+  position: relative;
+  bottom: 37px;
+  right: 55px;
+}
+.search {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}
+
+.search-icon {
+  width: 40px;
+  position: relative;
+  bottom: 38px;
+  right: 55px;
+}
+
+.your-library {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.your-library-icon {
+  width: 40px;
+  position: relative;
+  bottom: 45px;
+  right: 55px;
+}
+
+.createplaylist {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 120px;
+  left: 44px;
+}
+
+.createplaylist-icon {
+  filter: invert(56%) sepia(87%) saturate(3605%) hue-rotate(181deg)
+    brightness(33%) contrast(30%);
+  position: relative;
+  bottom: 195px;
+  right: 8px;
+}
+
+/* Created a grid for the 4 rows */
+
+.grid {
+  display: grid;
+  grid-template:
+    "top-row"
+    "nav-row"
+    "main-row";
+  grid-template-rows: 175px 125px 1250px;
+  border: 1px dashed black;
+}
+
+/* Grid template areas */
+
+.top-row {
+  grid-area: top-row;
+  background-color: coral;
+}
+
+.nav-row {
+  grid-area: nav-row;
+  background-color: rgb(3, 85, 41);
+}
+
+.main-row {
+  grid-area: main-row;
+  background-color: crimson;
+}
+
+.bottom-row {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2300px;
+  background-color: yellowgreen;
+  padding: 20px;
+  height: 150px;
+}
+
+.hello {
+  color: blue;
+}

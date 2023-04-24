@@ -1,0 +1,981 @@
+body {
+  margin: 0;
+  max-width: 4000px;
+}
+
+/* Left-side-bar - fixed position */
+.left-side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 290px;
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Left-bar Logo and Heading */
+.spotify-logo {
+  width: 60px;
+  position: relative;
+  bottom: 100px;
+  left: 15px;
+}
+
+.spotify-heading {
+  color: white;
+  position: relative;
+  left: 80px;
+  bottom: 9px;
+  font-size: 27px;
+  font-family: "Gotham Rounded", sans-serif;
+}
+
+.playlists,
+.podcasts,
+.audiobooks,
+.artists,
+.albums:hover {
+  cursor: pointer;
+}
+
+/* Navigation; Home, Search, Library, Create playlist and Liked songs*/
+
+.navigation {
+  position: relative;
+  bottom: 80px;
+  left: 45px;
+}
+
+.home {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  right: 10px;
+}
+
+.home-icon {
+  width: 40px;
+  position: relative;
+  bottom: 37px;
+  right: 70px;
+}
+.search {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+  right: 10px;
+}
+
+.search-icon {
+  width: 40px;
+  position: relative;
+  bottom: 38px;
+  right: 70px;
+}
+
+.your-library {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+
+.your-library-icon {
+  width: 40px;
+  position: relative;
+  bottom: 45px;
+  right: 70px;
+}
+
+.createplaylist {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 120px;
+  left: 32px;
+}
+
+.createplaylist-icon {
+  filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+
+  position: relative;
+  bottom: 195px;
+  right: 20px;
+}
+
+.likedsongs {
+  color: #ece3e3d4;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 204px;
+  left: 32px;
+}
+
+.likedsongs-icon {
+  filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+
+  width: 40px;
+  position: relative;
+  bottom: 240px;
+  right: 22px;
+}
+
+.createandliked {
+  position: relative;
+  bottom: 230px;
+  border: 0.1em solid rgba(128, 128, 128, 0.256);
+  width: 255px;
+}
+
+.home:hover,
+.search:hover,
+.your-library:hover,
+.createplaylist:hover,
+.likedsongs:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/* Playlists */
+
+.scroll-bar {
+  overflow-y: scroll;
+  width: 300px;
+  background-color: #000000;
+  height: 500px;
+  position: relative;
+  bottom: 220px;
+  overflow-x: hidden;
+}
+
+.Bhangra-Party-Mix,
+.Hollywood-Beach-Vibes,
+.Spanish-Gym-Hits,
+.Running-Music-2023-Workout,
+.Party-Playlist-2023,
+.Afro-Beats,
+.AP-Dhillon,
+.Motown-Greatest-Hits,
+.Meditation,
+.Feel-Good-Happy-Mix,
+.Diljit-Dosanjh,
+.Peaceful-Music,
+.Hip-Pop,
+.Bollywood,
+.Classical {
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 22;
+  position: relative;
+  left: 19px;
+}
+
+.Bhangra-Party-Mix:hover,
+.Bhangra-Party-Mix:hover,
+.Hollywood-Beach-Vibes:hover,
+.Spanish-Gym-Hits:hover,
+.Running-Music-2023-Workout:hover,
+.Party-Playlist-2023:hover,
+.Afro-Beats:hover,
+.AP-Dhillon:hover,
+.Motown-Greatest-Hits:hover,
+.Meditation:hover,
+.Feel-Good-Happy-Mix:hover,
+.Diljit-Dosanjh:hover,
+.Peaceful-Music:hover,
+.Hip-Pop:hover,
+.Bollywood:hover,
+.Classical:hover {
+  cursor: default;
+  color: white;
+}
+
+/* Created a grid for the 4 rows */
+
+.grid {
+  display: grid;
+  grid-template:
+    "top-row"
+    "nav-row"
+    "main-row";
+  grid-template-rows: 175px 125px 1250px;
+
+  overflow-x: hidden;
+}
+
+/* Grid template areas */
+/* Top-Row */
+.top-row {
+  grid-area: top-row;
+  background-color: #000003ee;
+}
+
+.previous-icon {
+  filter: invert(56%) sepia(100%) saturate(3605%) hue-rotate(181deg)
+    brightness(10%) contrast(10%);
+  position: relative;
+  left: 400px;
+  top: 10px;
+}
+
+.previous-icon:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.next-icon:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.next-icon {
+  filter: invert(80%);
+  position: relative;
+  left: 470px;
+  bottom: 117px;
+}
+
+.playlists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 600px;
+  bottom: 210px;
+}
+
+.podcasts {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 730px;
+  bottom: 253px;
+}
+
+.audiobooks {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 870px;
+  bottom: 297px;
+}
+
+.artists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1040px;
+  bottom: 340px;
+}
+
+.albums {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1165px;
+  bottom: 385px;
+}
+
+.PSingh {
+  color: white;
+  background-color: #000003ee;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+  position: relative;
+  left: 1604px;
+  bottom: 435px;
+  border: none;
+}
+
+.user-icon {
+  filter: invert(100%);
+  position: relative;
+  left: 1613px;
+  bottom: 482px;
+}
+
+.down-arrow {
+  filter: invert(100%);
+  position: relative;
+  left: 1745px;
+  bottom: 513px;
+}
+
+/* Nav-Row */
+.nav-row {
+  grid-area: nav-row;
+  background-color: #000000e1;
+}
+
+.title-playlists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 370px;
+  top: 20px;
+}
+
+.magnifying-icon {
+  position: relative;
+  left: 1550px;
+  bottom: 50px;
+  width: 30px;
+}
+
+.most-relevant {
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 30;
+  position: relative;
+  left: 1620px;
+  bottom: 100px;
+  margin-top: 20px;
+}
+
+.downward-arrow {
+  filter: invert(56%) sepia(100%) saturate(3605%) hue-rotate(181deg)
+    brightness(10%) contrast(10%);
+  width: 17px;
+  position: relative;
+  left: 1750px;
+  bottom: 135px;
+}
+
+.title-playlists,
+.magnifying-icon,
+.most-relevant,
+.downward-arrow:hover {
+  cursor: pointer;
+}
+/* Main-Row */
+.main-row {
+  grid-area: main-row;
+  background-color: #000000dd;
+  height: 4000px;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 2000px);
+  grid-template-columns: repeat(6, 370px);
+}
+
+.firstpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "heavy-metal-img"
+    "album-name1"
+    "subtitle1";
+}
+
+.heavy-metal-img {
+  grid-area: heavy-metal-img;
+  position: relative;
+  left: 370px;
+  top: 25px;
+}
+
+.album-name1 {
+  grid-area: album-name1;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 440px;
+  bottom: 210px;
+}
+
+.subtitle1 {
+  grid-area: subtitle1;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 470px;
+  bottom: 270px;
+}
+
+.secondpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "stranger-img"
+    "album-name2"
+    "subtitle2";
+}
+
+.stranger-img {
+  grid-area: stranger-img;
+  position: relative;
+  left: 660px;
+  bottom: 676px;
+}
+
+.album-name2 {
+  grid-area: album-name2;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 680px;
+  bottom: 910px;
+  inline-size: 240px;
+}
+
+.subtitle2 {
+  grid-area: subtitle2;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 680px;
+  bottom: 920px;
+}
+
+.thirdpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "quiet-place-img"
+    "album-name3"
+    "subtitle3";
+}
+
+.quiet-place-img {
+  grid-area: quiet-place-img;
+  position: relative;
+  left: 950px;
+  bottom: 1375px;
+}
+
+.album-name3 {
+  grid-area: album-name3;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1000px;
+  bottom: 1610px;
+}
+
+.subtitle3 {
+  grid-area: subtitle3;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1035px;
+  bottom: 1670px;
+}
+
+.play-button-3rd {
+  grid-area: subtitle3;
+  filter: invert(100%);
+  position: relative;
+  left: 1040px;
+  bottom: 1880px;
+}
+
+.forthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "split-img"
+    "album-name4"
+    "subtitle4";
+}
+
+.split-img {
+  grid-area: split-img;
+  position: relative;
+  left: 1240px;
+  bottom: 2075px;
+}
+
+.album-name4 {
+  grid-area: album-name4;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1340px;
+  bottom: 2310px;
+}
+
+.subtitle4 {
+  grid-area: subtitle4;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1335px;
+  bottom: 2370px;
+}
+
+.fifthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "cure-img"
+    "album-name5"
+    "subtitle5";
+}
+
+.cure-img {
+  grid-area: cure-img;
+  position: relative;
+  left: 1530px;
+  bottom: 2776px;
+}
+
+.album-name5 {
+  grid-area: album-name5;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1560px;
+  bottom: 3010px;
+}
+
+.subtitle5 {
+  grid-area: subtitle5;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1620px;
+  bottom: 3070px;
+}
+
+.sixthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "sinister-img"
+    "album-name6"
+    "subtitle6";
+}
+
+.sinister-img {
+  grid-area: sinister-img;
+  position: relative;
+  left: 1820px;
+  bottom: 3476px;
+}
+
+.album-name6 {
+  grid-area: album-name6;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 1915px;
+  bottom: 3708px;
+}
+
+.subtitle6 {
+  grid-area: subtitle6;
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  left: 1920px;
+  bottom: 3770px;
+}
+
+.created-for {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  top: 450px;
+  right: 4px;
+}
+
+.more-you-listen {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  top: 430px;
+  left: 0px;
+}
+
+.seventhpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "release-radar-img"
+    "album-name7";
+}
+
+.release-radar-img {
+  grid-area: release-radar-img;
+  position: relative;
+  right: 375px;
+  top: 600px;
+}
+
+.album-name7 {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  right: 310px;
+  top: 360px;
+}
+
+.eighthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "daily-mix-img"
+    "album-name8";
+}
+
+.daily-mix-img {
+  grid-area: daily-mix-img;
+  position: relative;
+  bottom: 100px;
+  right: 90px;
+}
+
+.album-name8 {
+  grid-area: album-name8;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 340px;
+  right: 15px;
+}
+
+.popular-artists {
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 30px;
+  position: relative;
+  top: 940px;
+  right: 745px;
+}
+
+.more-you-listen2 {
+  color: #ece3e370;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+  position: relative;
+  top: 920px;
+  right: 745px;
+}
+
+.ninthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "lana-img"
+    "album-name9";
+}
+.lana-img {
+  grid-area: lana-img;
+  position: relative;
+  top: 1090px;
+  right: 1113px;
+}
+
+.album-name9 {
+  grid-area: album-name9;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 850px;
+  right: 1076px;
+}
+
+.tenthpic {
+  display: grid;
+  grid-template-rows: 500px 100px 100px;
+  grid-template-areas:
+    "einadui"
+    "album-name10";
+}
+
+.einadui {
+  grid-area: einadui;
+  position: relative;
+  top: 390px;
+  right: 830px;
+}
+
+.album-name10 {
+  grid-area: album-name10;
+  color: white;
+  font-family: "Gotham Rounded", sans-serif;
+  font-size: 20px;
+  position: relative;
+  right: 740px;
+  top: 150px;
+}
+
+.heavy-metal-img,
+.album-name1,
+.subtitle1:hover,
+.stranger-img,
+.album-name2,
+.subtitle2,
+.quiet-place-img,
+.play-button-3rd,
+.album-name3,
+.subtitle3,
+.split-img,
+.album-name4 .subtitle4,
+.cure-img,
+.album-name5,
+.subtitle5,
+.sinister-img,
+.album-name6,
+.subtitle6,
+.created-for,
+.release-radar-img,
+.album-name7,
+.popular-artists,
+.daily-mix-img,
+.album-name8,
+.lana-img,
+.album-name9,
+.einadui,
+.album-name10 {
+  cursor: pointer;
+}
+
+/* Bottom-Row */
+.bottom-row {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2500px;
+  background-color: rgba(25, 23, 23);
+  padding: 20px;
+  height: 110px;
+}
+
+.Album-Cover {
+  position: relative;
+  top: 10px;
+}
+
+.Song-Name {
+  position: relative;
+  bottom: 80px;
+  left: 115px;
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 18px;
+}
+
+.Artist-Name {
+  position: relative;
+  bottom: 90px;
+  left: 115px;
+  color: #ece3e3d4;
+  font-family: "Gotham Office", sans-serif;
+  font-size: 15px;
+}
+
+/* .Song-Name:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  width: 40px;
+} */
+
+.Heart-Icon {
+  filter: invert(100%);
+  position: relative;
+  bottom: 140px;
+  left: 380px;
+  width: 25px;
+}
+
+.shuffle-icon {
+  filter: invert(50%);
+  position: relative;
+  bottom: 200px;
+  left: 720px;
+  width: 25px;
+}
+
+.backward-icon {
+  filter: invert(50%);
+  position: relative;
+  bottom: 226px;
+  left: 776px;
+  width: 20px;
+}
+
+.play-icon {
+  filter: invert(80%);
+  position: relative;
+  bottom: 265px;
+  left: 824px;
+  width: 50px;
+}
+
+.forward-icon {
+  filter: invert(50%);
+  position: relative;
+  bottom: 306px;
+  left: 900px;
+  width: 20px;
+}
+
+.repeat-icon {
+  filter: invert(50%);
+  position: relative;
+  bottom: 331px;
+  left: 950px;
+  width: 25px;
+}
+
+.mircophone-icon {
+  filter: invert(50%);
+  position: relative;
+  bottom: 330px;
+  left: 1550px;
+}
+
+.queue-icon {
+  filter: invert(80%);
+  position: relative;
+  bottom: 355px;
+  left: 1405px;
+  width: 25px;
+}
+
+.phone-icon {
+  filter: invert(80%);
+  position: relative;
+  bottom: 383px;
+  left: 1450px;
+  width: 23px;
+}
+
+.speaker-icon {
+  filter: invert(80%);
+  position: relative;
+  bottom: 410px;
+  left: 1490px;
+  width: 23px;
+}
+
+.full-screen-icon {
+  filter: invert(80%);
+  position: relative;
+  bottom: 433px;
+  left: 1690px;
+  width: 18px;
+}
+
+.Album-Cover,
+.Song-Name,
+.Artist-Name,
+.Heart-Icon,
+.shuffle-icon,
+.backward-icon,
+.play-icon,
+.forward-icon,
+.repeat-icon,
+.queue-icon,
+.phone-icon,
+.speaker-icon,
+.full-screen-icon:hover {
+  cursor: pointer;
+}
+
+.time-before {
+  color: white;
+  font-family: "Gotham Office", sans-serif;
+  position: relative;
+  bottom: 414px;
+  left: 555px;
+  font-size: 13px;
+}
+
+.time-after {
+  color: white;
+  font-family: "Gotham Office", sans-serif;
+  position: relative;
+  bottom: 430px;
+  left: 1118px;
+  font-size: 13px;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 0.45em;
+  background-color: grey;
+  border-radius: 1.5em;
+  position: relative;
+  bottom: 440px;
+  left: 600px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.vol-bar {
+  width: 147px;
+  height: 0.4em;
+  background-color: grey;
+  border-radius: 1.5em;
+  position: relative;
+  bottom: 490px;
+  left: 1528px;
+  overflow: hidden;
+}
+
+.vol-fill {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+.progress-bar,
+.vol-bar,
+.progress-fill:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1070px) {
+  .main {
+    grid-template-columns: repeat(4, 500px);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .main {
+    grid-template-columns: repeat(3, 500px);
+  }
+}
