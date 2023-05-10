@@ -1,0 +1,164 @@
+
+@media screen and (max-width:932px){
+    .pages li a,
+    .playlists,
+    .logo h1,
+    .app-install button,
+    .profile span{
+        display: none;
+    }
+
+    .app-install{
+        border-bottom: none;
+    }
+    header span{
+        margin-left: 5rem;
+    }
+    .sidebar{
+        width: 6rem;
+    }
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .logo i{
+        font-size: 2.5rem;
+    }
+    .pages li{
+        margin-bottom: 1rem;
+    }
+    main{
+        margin-left: 6rem;
+    }
+
+    footer{
+        grid-template-columns: .5fr max-content .5fr;
+        font-size: 1rem;
+    }
+
+    .footer-left .cover-img{
+        margin-right: 1rem;
+        align-items: center;
+    }
+    .cover-img p{
+        font-size: 1rem;
+    }
+    .volume-setting {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:784px){
+    .line .play-line{
+        width: 15rem;
+    }
+    .volume-setting .volume-line {
+        width: 7rem;
+    }
+    .like-icon i, .play-icons i, .volume-setting i, .top-group a {
+        font-size: 1.2rem;
+    }
+    .fa-play-circle{
+        font-size: 1.5rem !important;
+    }
+    .cover-img img {
+        width: 4rem;
+    }
+}
+
+
+@media screen and (max-height:766px){
+    .install{
+        z-index: 99;
+        background-color: var(--sidebar-color);
+        left: 0;
+        padding-left: 2rem;
+    } 
+
+    .lists{
+        height: 30vh;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-middle .play-icons,
+    .footer-middle .line,
+    .footer-right,
+    .footer-right .volume-setting{
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width:522px){
+    footer{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+        height: 10rem;
+        top: 90%;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .install{
+        display: none;
+    }
+    .pages{
+        flex-direction: row;
+        margin-right: 2rem;
+    }
+    .pages li{
+        margin-right: 2rem;
+    }
+    .pages img{
+        width: 3rem;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:444px){
+    .top-song-container{
+        grid-template-columns: repeat(auto-fit,30rem);
+    }
+}
+
+@media screen and (max-width:417px){
+    .albums{
+        justify-content: center;
+    }
+    .top-song-container{
+        justify-content: center;
+    }
+    .recently-played-row h2,
+    .good-morning-row h2,
+    .title{
+        text-align: center;
+    }
+    .top-group{
+        margin: 2rem;
+    }
+    .top-group a{
+        font-size: 1rem;
+    }
+    .underline::after{
+        right: 5px;
+        top: 2rem;
+    }
+    header span{
+        margin-left: 0;
+    }
+    .top-group a{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width:280px){
+    .top-song-container{
+        grid-template-columns: repeat(auto-fit,20rem);
+    }
+}
+
+
+
