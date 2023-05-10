@@ -1,0 +1,113 @@
+.sidebar{
+    background-color: var(--sidebar-color);
+    font-size: 2rem;
+    width: 25rem;
+    height: calc(100vh - 12rem);
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.sidebar,
+.pages,
+.playlists{
+    display: flex;
+    flex-direction: column;
+}
+
+.pages,
+.playlists,
+.install,
+.lists{
+    list-style: none;
+}
+.lists{
+    overflow-y: auto;
+    height: 40vh;
+}
+.logo h1{
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.logo i{
+    font-size: 3rem;
+}
+
+.pages{
+    margin-bottom: 2rem;
+}
+
+.pages img,
+.profile img{
+    width: 2rem;
+}
+
+.profile{
+    margin-top: 1rem;
+}
+
+.pages a,
+.playlists a{
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+.playlists li{
+    padding-bottom: 1rem;
+}
+
+.pages a:hover,
+.playlists a:hover{
+    color: var(--white-color);
+}
+
+.playlists{
+    position: relative;
+}
+.plus-btn{
+    display: flex;
+    gap: 1rem;
+}
+.plus-btn i{
+    font-size: 3.5rem;
+}
+.playlists p{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.install{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+    padding-right: 1rem;
+    z-index: 99;
+}
+.app-install{
+    border-bottom: 1px solid var(--white-color);
+    width: 90%;
+    text-align: left;
+    padding: 1rem 0;
+    display: flex;
+}
+
+.app-install img{
+    width: 3rem;
+    padding-right: 1rem;
+}
+
+.app-btn{
+    color: var(--grey-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.app-btn:hover{
+    color: var(--white-color);
+}

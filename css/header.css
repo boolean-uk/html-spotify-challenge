@@ -1,0 +1,40 @@
+header{
+    background-color: var(--header-color);
+    opacity: .8;
+    height: 7rem;
+    width: 100%;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+
+header button{
+    text-transform: uppercase;
+    outline: none;
+    float: right;
+    padding:  1rem 2rem;
+    background-color: var(--header-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+header span{
+    margin-left: 25rem;
+}
+
+header i{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+header button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.54), 0 12px 3px rgba(0,0,0,0.32);border:0;
+    border: 1px solid var(--white-color);
+}
