@@ -13,7 +13,7 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; CSS class names are descriptive.
 * &#9745; HTML is semantic and well structured.
 
-![Alt text](Spotify-full-screen.png)
+![Full screen recreateion](assets/img/Spotify-full-screen.png)
 
 ### Extension Criteria
 * &#9745; The left menu collapses as shown in `spotify-xs.png`.
@@ -22,4 +22,4 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; On hovering over cover images, a play icon appears overlaid.
 * &#9745; Only the main content area scrolls - it moves behind the upgrade bar and the player controls. The side menu also stays fixed as the main content scrolls.
 
-![Alt text](minimized-spotify.png)
+![minimized spotify](assets/img/minimized-spotify.png)
