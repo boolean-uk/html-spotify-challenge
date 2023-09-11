@@ -364,12 +364,5 @@ color: #ffffff;
     height: 5px;
  }
 
- @media screen and (max-width: 863px) {
-  .grid {
-    grid-template-columns: 80px 1fr;
-  }
-  .sidebar .logo {
-    display: none;
-  }
-  
- }
+
+ 
