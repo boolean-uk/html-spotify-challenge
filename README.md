@@ -4,7 +4,7 @@ A Spotify clone using HTML, CSS, and JavaScript, showcasing front-end skills in 
 
 ## Table of contents
 
--   [WeShare]
+-   [Spotify Clone]
     -   [Table of contents](#table-of-contents)
     -   [General info](#general-info)
     -   [UI Screenshots](#ui-screenshots)
