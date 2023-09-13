@@ -1,6 +1,6 @@
 # Spotify
 At Boolean UK we were set a challenge to replicate Spotify. I used HTML, CSS to both look and perform as similar as possible with the abilities I had at that time. I am most proud of my implementation to allow website to be responsive on different screen resolutions very similar to Spotify's, also i inplemented on hover efects on the carda to display play button.
-<img src=""/>
+<img src="./assets//img/my-spotify-version.png" alt="my-sotify version"/>
 ## Assesment Criteria
 * &#9745; The overall structure of the layout reflects the `spotify-lg.png` reference image. 
 * &#9745; Fonts, colors and spacings used are similar (they don't need to be identical) to the reference images
