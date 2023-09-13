@@ -1,11 +1,6 @@
 # Spotify
-Today we are building the UI for Spotify. This exercise will put into practice everything we have learned about HTML & CSS. Layouts for apps are different to websites so this will put your CSS Grid skills to the test!
-
-## Instructions
-In the `screens` folder you will see images of spotify at different resolutions. Your goal is replicate this layout structure as closely as possible. The image assets needed to complete the exercise are in the `assets/img` folder.
-
-For the player icons, you can use your own images or Font Awesome icons (https://fontawesome.com/v4.7/icons/).
-
+At Boolean UK we were set a challenge to replicate Spotify. I used HTML, CSS to both look and perform as similar as possible with the abilities I had at that time. I am most proud of my implementation to allow website to be responsive on different screen resolutions very similar to Spotify's, also i inplemented on hover efects on the carda to display play button.
+<img src=""/>
 ## Assesment Criteria
 * &#9745; The overall structure of the layout reflects the `spotify-lg.png` reference image. 
 * &#9745; Fonts, colors and spacings used are similar (they don't need to be identical) to the reference images
