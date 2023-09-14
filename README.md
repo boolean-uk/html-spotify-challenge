@@ -12,6 +12,7 @@ A Spotify clone using HTML, CSS, and JavaScript, showcasing front-end skills in 
 
 ## General info
 
+A Spotify clone using HTML, CSS, and JavaScript, showcasing front-end skills in web page layout, styling, and responsiveness.
 
 ## UI Screenshots
 
