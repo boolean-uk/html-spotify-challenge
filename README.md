@@ -1,7 +1,5 @@
 # Spotify Clone - HTML & CSS  
 
-A Spotify clone using HTML, CSS, and JavaScript, showcasing front-end skills in web page layout, styling, and responsiveness.
-
 ## Table of contents
 
 -   [Spotify Clone]
