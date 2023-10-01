@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Rounded";
+  font-weight: 500;
+  color: white;
+}
+
+.grid {
+  display: grid;
+}
+
+.understate {
+  color: #717171;
+}
+
+.understate2 {
+  color: #919191;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* big box border*/
+
+/* header, */
+/* nav, */
+/* .control-bar, */
+/* main, */
+/* body > div { */
+/*   border: 2px solid lightgreen; */
+/*   border-radius: 8px; */
+/* } */
+
+/* small box border */
+.empty {
+  border: 2px solid lightblue;
+  border-radius: 8px;
+}
+
+/* smallest box border */
+.emtpy
+{
+  border: 2px solid lightgreen;
+  border-radius: 8px;
+}
+
+body {
+  background-color: #080B12;
+  height: 100vh;
+  grid-template-areas: 
+  "nav header"
+  "nav main"
+  "control-bar control-bar"
+  ;
+  grid-template-rows: 90px 1fr 90px;
+  grid-template-columns: 260px 5fr;
+}
+
+header {
+  grid-area: header;
+  grid-template-columns: 1fr 250px;
+  align-content: center;
+}
+
+header > .upgrade {
+  height: 55px;
+  align-self: center;
+  border-radius: 80px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  text-justify: center;
+  padding: 17px 0;
+  margin: 9px;
+}
+
+main {
+  grid-area: main;
+  background-color: #141922;
+  grid-template-rows: 70px 1fr;
+  overflow: hidden;
+}
+
+main > .top-nav {
+  grid-template-columns: repeat(6, minmax(auto, max-content));
+  column-gap: 30px;
+  justify-content: center;
+}
+
+main > .top-nav > a {
+  place-self: center;
+  display: grid;
+}
+
+main > .top-nav > a > .selected-bar {
+  justify-self: center;
+  background-color: #ADFF2F;
+  height: 6px;
+  width: 40px;
+  position: relative;
+  top: 0;
+  left: 0;;
+}
+
+main > .top-nav > a + a > .selected-bar {
+  background: none;
+}
+
+main > .main-content {
+  overflow: auto;
+}
+
+main > .main-content > .cards-section {
+  margin-left: 20px;
+  padding-bottom: 30px;
+  grid-template-rows: 40px 1fr;
+}
+
+main > .main-content > .cards-section > .cards {
+  grid-template-columns: repeat(auto-fit, 170px);
+  column-gap: 30px;
+  row-gap: 10px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+main > .main-content > .cards-section > .cards > .card {
+  padding-top: 10px;
+  grid-template-rows: 170px 1fr;
+}
+
+main > .main-content > .cards-section > .cards > .card > p {
+  padding-top: 9px;
+  text-align: center;
+}
+
+main > .main-content > .cards-section > .cards > .card > img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+main > .main-content > .cards-section > .cards > .card .subtitle {
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  grid-area: nav;
+  grid-template-rows: 100px repeat(3, 35px) 45px 65px repeat(4, 35px) 1fr 50px 1px 50px;
+  row-gap: 10px;
+  background-color: #000000;
+}
+
+nav > a,
+nav > div {
+  margin-left: 17px;
+  grid-template-columns: 35px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+nav .logo {
+  width: 80%;
+  margin: 4px;
+  margin-left: -3px;
+}
+
+nav > .playlists,
+nav > .home,
+nav > .profile {
+  color: white;
+}
+
+nav > div.playlists {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+nav .selected-bar {
+  position: absolute;
+  left: 0px;
+  background-color: #ADFF2F;
+  height: 40px;
+  width: 6px;
+}
+
+nav > a.playlist {
+  grid-template-columns: auto;
+}
+
+nav > a > .new-playlist {
+  height: 40px;
+  width: 40px;
+  color: black;
+  display: inline-block;
+  background-color: lightgray;
+  text-align: center;
+  /* padding: 2px 0; */
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: Roboto;
+}
+
+nav > hr {
+  margin: 0 15px;
+}
+
+nav > .download-app {
+  font-size: 1rem;
+  margin-left: 7px;
+}
+
+nav > .profile {
+  column-gap: 0;
+}
+
+nav > .profile > img {
+  height: 30px;
+  background-color: darkgray;
+  border-radius: 50%;
+}
+
+.control-bar {
+  grid-area: control-bar;
+  background-color: #282828;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.control-bar > div {
+  padding: 10px;
+}
+
+.control-bar > .track-info {
+  grid-template-columns: 60px 1fr 25px 25px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.control-bar > .track-info > p {
+  margin-right: auto;
+}
+
+.control-bar > .track-info > a > img {
+  width: 100%;
+}
+
+.control-bar > .media-controls {
+  justify-items: center;
+}
+
+.control-bar > .media-controls > .discrete-controls {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.control-bar > .media-controls > .discrete-controls > img {
+  width: 25px;
+}
+
+.control-bar > .media-controls > .discrete-controls > .play-icon {
+  width: 30px;
+}
+
+.control-bar > .media-controls > .discrete-controls > .prev-icon {
+  transform: scaleX(-1);
+}
+
+.control-bar > .media-controls > .scrubber {
+  min-width: 250px;
+  max-width: 30vw;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.control-bar > .media-controls > .scrubber > .slider {
+  min-width: 160px;
+  width: 23vw;
+  height: 4px;
+}
+
+.control-bar > .audio-controls > div,
+.control-bar > .media-controls > .scrubber > div {
+  width: 100%;
+  height: 4px;
+  background-color: #5E5E5E;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.control-bar > .audio-controls > div > div,
+.control-bar > .media-controls > .scrubber > .slider > div > div {
+  width: 20%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.slider {
+  background-color: #ffffff;
+}
+
+.control-bar > .audio-controls {
+  align-content: center;
+  grid-template-columns: repeat(3, 25px) minmax(300px, 40px);
+  column-gap: 10px;
+  max-width: 400px;
+}
+
+.control-bar > .audio-controls img {
+  width: 25px;
+}
+
+.control-bar > .audio-controls * {
+  align-self: center;
+}
+

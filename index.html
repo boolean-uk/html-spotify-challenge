@@ -1,12 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify 2.0</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/gotham-rounded" rel="stylesheet">
 </head>
-<body>
-    
-</body>
+  <body class="grid">
+   <header class="grid">
+     <div class="sep"></div>
+     <a href="link-to-upgrade" class="upgrade">UPGRADE</a>
+   </header> 
+   <nav class="grid">
+     <a class="logo-link" href="index.html"><img class="logo" height=100% src="assets/img/logo.svg" alt=""></a>
+     <a class="home grid" href=""><div class="selected-bar"></div><img src="assets/img/home.svg" alt="">Home</a>
+     <a class="understate search grid" href=""><img src="assets/img/search.svg" alt="">Search</a>
+     <a class="understate library grid" href=""><img src="assets/img/libreria.svg" alt="">Library</a>
+     <div class="playlists">PLAYLISTS</div>
+     <a class="understate create-playlist grid" href=""><div class="new-playlist">+</div>Create Playlist</a>
+     <a class="understate playlist grid" href="">New Playlist</a>
+     <a class="understate playlist grid" href="">New Playlist</a>
+     <a class="understate playlist grid" href="">New Playlist</a>
+     <a class="understate playlist grid" href="">New Playlist</a>
+     <div></div>
+     <a class="understate download-app grid" href=""><img src="assets/img/download.svg" alt="">Download the app</a>
+     <hr>
+     <a class="profile grid" href=""><img src="assets/img/profile.svg" alt="">Todd Griffin</a>
+   </nav>
+   <main class="grid">
+     <div class="top-nav grid">
+       <a href="">Featured<div class="selected-bar"></div></a>
+       <a class="understate" href="">Podcasts<div class="selected-bar"></div></a>
+       <a class="understate" href="">Charts<div class="selected-bar"></div></a>
+       <a class="understate" href="">Genres<div class="selected-bar"></div></a>
+       <a class="understate" href="">What's new<div class="selected-bar"></div></a>
+       <a class="understate" href="">Discover<div class="selected-bar"></div></a>
+     </div>
+     <div class="main-content grid">
+       <div class="cards-section grid">
+         <h2>Recently Played</h2>
+         <div class="cards grid">
+           <div class="card grid">
+             <img src="assets/img/metal_lifting.jpg" alt="metal playlist">
+             <p>Heavy Metal
+             <br>
+             <span class="understate subtitle">Subtitle</span>
+             </p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/stranger.jpeg" alt="stranger things soundtrack">
+             <p>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+             <br>
+             <span class="understate subtitle">Kyle Dixon & Micheal Stein</span>
+             </p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/aquietplace.jpeg" alt="a quiet place soundtrack">
+             <p>A Quiet Place Soundtrack
+             <br>
+             <span class="understate subtitle">Subtitle</span>
+             </p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/split.jpeg" alt="split soundtrack">
+             <p>Split Soundtrack
+             <br>
+             <span class="understate subtitle">Subtitle</span>
+             </p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/cure.jpeg" alt="a cure for wellness soundtrack">
+             <p>A Cure for Wellness Soundtrack
+             <br>
+             <span class="understate subtitle">Subtitle</span>
+             </p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/sinister.jpeg" alt="sinister soundtrack">
+             <p>Sinister Soundtrack
+             <br>
+             <span class="understate subtitle">Subtitle</span>
+             </p>
+           </div>
+         </div>
+       </div>
+       <div class="cards-section grid">
+         <h2>Created for You</h2>
+         <div class="cards grid">
+           <div class="card grid">
+             <img src="assets/img/radar.jpeg" alt="release radar">
+             <p>New Releases</p>
+           </div>
+           <div class="card grid">
+             <img src="assets/img/mixdaily.jpeg" alt="stranger things soundtrack">
+             <p>Daily Mix 1</p>
+           </div>
+         </div>
+       </div>
+       <div class="cards-section grid">
+         <h2>Popular Artists</h2>
+         <div class="cards grid">
+           <div class="card grid">
+             <img class="artist-pic" src="assets/img/youg.jpeg" alt="young and beautiful">
+             <p>Lana Del Ray</p>
+           </div>
+           <div class="card grid">
+             <img class="artist-pic" src="assets/img/einaudi.jpeg" alt="stranger things soundtrack">
+             <p>Einaudi</p>
+           </div>
+         </div>
+       </div>
+       <div class="cards-section grid"></div>
+     </div>
+   </main>
+   <footer class="control-bar grid">
+     <div class="track-info grid">
+       <a href=""><img src="assets/img/sinister.jpeg" alt=""></a>
+       <p class="grid"><a href="">Track title</a><a href="" class="understate2">Artist</a></p>
+       <a href=""><img src="assets/icons/heart.svg" alt=""></a>
+       <a href="" class="open-folder grid"><img src="assets/icons/folder.svg" alt=""></a>
+     </div>
+     <div class="media-controls grid">
+       <div class="discrete-controls grid">
+         <img class="shuffle-icon" src="assets/icons/shuffle-svgrepo-com.svg" alt="">
+         <img class="prev-icon" src="assets/icons/next-svgrepo-com.svg" alt="">
+         <img class="play-icon" src="assets/icons/play-circle-svgrepo-com.svg" alt="">
+         <img class="next-icon" src="assets/icons/next-svgrepo-com.svg" alt="">
+         <img class="refresh-icon" src="assets/icons/refresh-svgrepo-com.svg" alt="">
+       </div>
+       <div class="scrubber grid">
+         <p>0:25</p>
+         <div class="slider grid">
+           <div><div></div></div>
+         </div>
+         <p>4:35</p>
+       </div>
+     </div>
+     <div class="audio-controls grid">
+       <a href=""><img src="assets/icons/list-1508-svgrepo-com.svg" alt=""></a>
+       <a href=""><img src="assets/icons/screen-desktop-svgrepo-com.svg" alt=""></a>
+       <a href=""><img src="assets/icons/volume-max-svgrepo-com.svg" alt=""></a>
+       <div class="scrubber grid"><div class="slider grid"></div></div>
+     </div>
+   </footer>
+      
+  </body>
 </html>
