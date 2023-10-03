@@ -1,0 +1,104 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Declarations */
+
+body {
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template:
+    "left                  core      right"
+    "left                  core      right"
+    "footer                footer    footer" 120px /
+    minmax(200px, 300px)    1fr    minmax(200px, 300px)
+    ;
+    width: 100vw;
+    height: 100vh;
+    gap: 8px;
+}
+
+#left-side, #core, #player, #right-side {
+    border: 2px dotted aquamarine;
+    border-radius: 5px;
+}
+
+.upgrade-bar, .core__nav, .core__main {
+    border: 2px dotted coral;
+}
+
+/* Navigation */
+
+#left-side {
+    grid-area: left;
+}
+
+
+/* Current Song */
+
+#right-side {
+    grid-area: right;
+}
+
+
+/* Core Section */
+
+#core {
+    display: grid;
+    grid-template: 
+    "upgrade" 75px
+    "nav" 40px
+    "main" 1fr
+    ;
+    grid-area: core;
+    min-width: 550px;
+}
+
+/* Upgrade Bar */
+
+.upgrade-bar {
+    grid-area: upgrade;
+}
+
+/* Core Nav */
+
+.core__nav {
+    grid-area: nav;
+}
+
+/* Core Play Nav */
+
+.core__main {
+    grid-area: main;
+}
+
+
+/* Player */
+
+#player {
+    grid-area: footer;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template:
+        "left                  core"
+        "left                  core"
+        "footer                footer" 120px /
+        minmax(200px, 300px)    1fr
+    }
+
+    #right-side {
+        display: none;
+    }
+}
