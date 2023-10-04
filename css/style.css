@@ -3,7 +3,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
 }
 
 a {
@@ -11,9 +12,16 @@ a {
     color: rgb(109, 109, 109);
 }
 
+a:hover{
+    color: white;
+}
+
 main {
     grid-area: main;
     background-color: rgb(20,25,34);
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
 }
 
 footer {
@@ -41,7 +49,7 @@ header {
     "left-menu header" 100px
     "left-menu main" 750px /*Change after filled in */
     "footer    footer" 100px/
-    240px     1fr;
+    250px     1fr;
 }
 
 
@@ -62,6 +70,10 @@ header {
     background-color: rgba(109, 109, 109, 0.466);
 }
 
+/* LEFT-MENU */
+
+
+
 .left-menu {
     grid-area: left-menu;
 
@@ -80,6 +92,12 @@ header {
     display: grid;
     gap: 12px;
     margin-bottom: 30px;
+}
+
+.selected-vert{
+    position: relative;
+    top: 4px;
+    right: 60px;
 }
 
 .home-nav a {
@@ -116,6 +134,8 @@ header {
     gap: 10px;
 }
 
+
+
 .profile {
     color: white;
     border-top: solid rgba(109, 109, 109, 0.333) 1px;
@@ -134,3 +154,24 @@ header {
     border: solid rgba(109, 109, 109, 0.874);
 }
 
+
+/* MAIN */
+
+
+.main-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+.main-nav p{
+    display: inline;
+    padding-left: 20px;
+    text-align: center;
+    color: rgb(123, 126, 130);
+}
+
+.selected-hoz {
+    text-align: left;
+    position: relative;
+    left: 340px;
+    bottom: 14px;
+}
