@@ -3,8 +3,17 @@
     font-weight: 700;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, .white {
     color: white;
+}
+
+img {
+    width: 30px;
+}
+
+
+.inline-block {
+    display: inline-block;
 }
 
 body {
@@ -13,7 +22,7 @@ body {
     grid-template-areas:
     "left main"
     "footer footer" ;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 220px 1fr;
     grid-template-rows: 1fr 100px;
     margin: 0px;
     height: 100vh;
@@ -26,12 +35,79 @@ aside {
     padding: 10px;
 }
 
+#logo {
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    /* position: relative; */
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+
 #user {
     height: 100px;
-    background-color: yellow;
+    /* background-color: purple; */
     position: fixed;
-    bottom: 110px;
-    width: 230px;
+    bottom: 90px;
+    width: 200px;
+}
+
+#create {
+    background-color: rgb(145, 145, 145);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+}
+
+#create > p {
+    color: black;
+    font-size: 40px;
+    font-weight: 1000;
+    /* display: inline-block; */
+}
+
+#playlist-text {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+
+}
+
+#download {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+#install {
+    padding-left: 10px;
+}
+
+#user > hr {
+    background-color: grey;
+    border: none;
+    height: 1px;
+}
+
+#user-pic {
+    background-color: grey;
+    border-radius: 50%;
+    width: 27px;
+    margin-left: 5px;
+}
+
+#name {
+    position: relative;
+    left: 10px;
+    bottom: 8px;
 }
 
 /* Styling focused on the main content*/
@@ -40,6 +116,10 @@ main {
     background-color: antiquewhite;
 }
 
+.test {
+    width: 100px;
+    /* color: white; */
+}
 
 /* Styling focused on the footer section*/
 
