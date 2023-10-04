@@ -14,6 +14,7 @@
     "footer        footer"  100px /
       200px         1fr;       
         height: 100vh;
+        width: 100vw;
  }
 
  .main-grid {
@@ -47,14 +48,252 @@
     background-color: black;
 }
 
+.title {
+    margin: 20px 0 20px 60px;
+}
+
+.logo-icon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    left:  20px;
+    top: 15px;
+}
+
+.left1 {
+    color: grey;
+   font-size: 13px;
+   padding: 20px 0 50px 50px;
+}
+
+.home {
+    color: white;
+}
+
+.home-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 25px;
+    top: 82px;
+}
+
+.search-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 25px;
+    top: 115px;
+}
+
+.libary-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 25px;
+    top: 145px;
+}
+
+.playlist {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 20px 15px;
+}
+
+.create-playlist {
+    color: grey;
+    font-size: 13px;
+    padding: 0 0 20px 60px;
+
+}
+
+.plus-icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top: 240px;
+}
+
+.list {
+    color: grey;
+    line-height: 2.1;
+    font-size: 12px;
+    padding: 0 0 10px 15px;
+}
+
+.install {
+    color: grey;
+    font-size: 12px;
+    margin-top: 200px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+.small-icon {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 20px;
+    top: 672px;
+}
+
+hr {
+    color: grey;
+    margin: 0 20px 0px 20px;
+}
+
+.profile {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+
+.profile-icon {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 17px;
+    top: 705px;
+}
+
 
 .main {
 grid-area: main;
 background-color: rgb(27, 25, 38);
 }
 
+.main-nav {
+    display: grid;
+    grid-area: main;
+    font-size: 11px;
+    margin-top: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 180px;
+    padding-right: 160px;
+    
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(7, 200, 7);
+    
+}
+
+
 .footer {
     grid-area: footer;
     background-color: rgb(42, 41, 41);
 }
 
+.album {
+    color: white;
+    font-size: 11px;
+    margin: 40px 0 0 50px;
+
+}
+
+.album-cover {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 790px;
+    left: 15px;
+    border-radius: 5px;
+}
+
+.singer {
+    color: grey;
+    font-size: 10px;
+    margin-left: 50px;
+}
+
+.heart-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 190px;
+    top: 800px;
+}
+
+
+.save-icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 230px;
+    top: 803px;
+}
+
+
+.shuffle-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 405px;
+    top: 770px;
+}
+
+.rewind-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 435px;
+    top: 770px;
+}
+
+
+.play-icon{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 485px;
+    top: 768px;
+}
+
+
+.forward-icon {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    left: 535px;
+    top: 770px;
+}
+
+.replay-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 560px;
+    top: 770px;
+}
+
+.options-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 740px;
+    top: 780px;
+}
+
+.share-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 770px;
+    top: 780px;
+}
+
+.volume-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 800px;
+    top: 780px;
+}
