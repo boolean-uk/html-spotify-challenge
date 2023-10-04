@@ -175,11 +175,39 @@ a:hover {
     gap: 10px;
     align-items: center;
     justify-items: center;
+    position: relative;
 }
 
 .album > img {
     width: 250px;
     height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    transition: 0.5s ease;
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.overlay > img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .album > a {
