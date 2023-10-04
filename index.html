@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="assets/img/logo.svg" alt="logo" class="header__logo-img">
+            </div>
+            <nav class="navigation">
+                <a href="#" class="navigation__item">
+                    <img src="assets/img/home.svg" alt="home" class="navigation__item-icon svg-fill">
+                    <span class="navigation__item-text">Home</span>
+                </a>
+                <a href="#" class="navigation__item">
+                    <img src="assets/img/search.svg" alt="home" class="navigation__item-icon svg-fill">
+                    <span class="navigation__item-text">Search</span>
+                </a>
+                <a href="#" class="navigation__item">
+                    <img src="assets/img/libreria.svg" alt="home" class="navigation__item-icon svg-fill">
+                    <span class="navigation__item-text">Library</span>
+                </a>
+            </nav>
+            <section class="playlist">
+                <div class="playlist__title">
+                    <h2 class="playlist__title-text">Playlist</h2>
+                </div>
+                <div class="playlist__create">
+                    <button class="playlist__create-button">+</button>
+                    <span class="playlist__create-text">Create Playlist</span>
+                </div>
+                <ul class="playlist__list">
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                    <li class="playlist__list-item">
+                        <span class="playlist__list-text">None playlist</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="profile">
+                <div class="profile__download">
+                    <img src="assets/img/download.svg" alt="download" class="profile__download-icon svg-fill">
+                    <span class="profile__download-text">Install app</span>
+                </div>
+                <div class="profile__content">
+                    <div class="profile__content-photo"></div>
+                    <h3 class="profile__content-title">Nazar Tymiv</h3>
+                </div>
+            </section>
+        </header>
+        <main class="content">content</main>
+        <div class="tools"></div>
+    </div>
 </body>
+
 </html>

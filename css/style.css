@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 1fr 70px;
+    overflow: hidden;
+}
+
+.svg-fill {
+    filter: invert(44%) sepia(3%) saturate(0%) hue-rotate(52deg) brightness(94%) contrast(91%);
+    transition: all .1s ease-in;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    max-height: 1100px;
+}
+
+.header__logo {
+    padding: 25px 25px 0 25px;
+    width: 100%;
+    max-height: 75px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.header__logo-img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.navigation__item {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 25px;
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation__item:nth-child(1):before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #adff2f;
+    left: 1px;
+    border-radius: 100px;
+}
+
+.navigation__item-icon {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.navigation__item:nth-child(1) .navigation__item-text,
+.navigation__item:hover .navigation__item-text,
+.playlist__create:hover .playlist__create-text,
+.playlist__list-item:hover .playlist__list-text,
+.profile__download:hover .profile__download-text {
+    color: #fff;
+}
+
+.navigation__item:nth-child(1) .svg-fill,
+.navigation__item:hover .svg-fill,
+.profile__download:hover .svg-fill {
+    filter: invert(0);
+}
+
+.navigation__item-text {
+    color: #717171;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .1s ease-in;
+}
+
+.playlist {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.playlist__title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.playlist__title-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.playlist__create {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.playlist__create-button {
+    width: 40px;
+    height: 40px;
+    background: #a3a3a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.playlist__create-text {
+    color: #717171;
+    transition: all .1s ease-in;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.playlist__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist__list-item {
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.playlist__list-text {
+    font-size: 15px;
+    color: #717171;
+    font-weight: 600;
+    transition: all .1s ease-in;
+}
+
+.profile {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+}
+
+.profile__download {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #656565;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.profile__download-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.profile__download-text {
+    color: #717171;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all .1s ease-in;
+}
+
+.profile__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.profile__content-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-image: url(../assets/photo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.profile__content-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* content */
+.content {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* tools */
+.tools {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    grid-column: 1 / -1;
+    color: #fff;
+    background-color: #282828;
+}
