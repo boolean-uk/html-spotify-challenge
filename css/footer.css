@@ -1,0 +1,135 @@
+.footer {
+    grid-template-columns: 250px 1fr 300px;
+    align-items: center;
+    background-color: rgb(49, 56, 56);
+    color: white;
+}
+
+/* CURRENTLY PLAYING */
+.currently-playing {
+    grid-template-columns: 50px 1fr repeat(2, 20px);
+    padding: 0 15px 0 20px;
+    gap: 15px;
+    align-items: center;
+}
+
+.current-song-text {
+    text-decoration: none;
+    color: white;
+}
+
+.currently-playing span {
+    font-size: 12px;
+    color: rgb(178, 175, 175);
+}
+
+.current-song-text:hover, .current-song-text:hover span {
+    text-decoration: underline;
+    color: white;
+}
+
+.hover-green:hover {
+    filter: var(--spotify-green-hover-color);
+}
+
+/* PLAYBACK CONTROLS */
+.playback-controls {
+    grid-template-rows: repeat(2, 30px);
+    gap: 10px;
+    justify-items: center;
+}
+
+.playback-control-buttons {
+    grid-template-columns: repeat(5, 40px);
+    place-items: center;
+}
+
+.hover-white:hover {
+    filter: var(--white-hover-color)
+}
+
+.playback-time-bar {
+    grid-template-columns: 20px 400px 20px;
+    gap: 25px;
+    align-items: center;
+}
+
+.playback-time-bar p {
+    font-size: 10px;
+}
+
+.time-slider {
+    grid-template-columns: repeat(2, auto);
+    height: 2px;
+    align-items: center;
+    position: relative;
+}
+
+.time-played {
+    width: 80px;
+    border: solid 2px white;
+    border-radius: 3px;
+}
+
+.time-remaining {
+    width: 320px;
+    border: solid 2px gray;
+    border-radius: 3px;
+}
+
+.white-circle-time {
+    position: absolute;
+    left: 80px;
+    opacity: 0;
+}
+
+.playback-time-bar:hover .time-played {
+    filter: var(--spotify-green-hover-color);
+}
+
+.playback-time-bar:hover .white-circle-time {
+    opacity: 100%;
+    color: #f8f9e9;
+}
+
+/* LISTENING CONTROLS */
+.listening-controls {
+    grid-template-columns: repeat(3, 20px) 130px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.volume-slider {
+    grid-template-columns: repeat(2, auto);
+    height: 2px;
+    align-items: center;
+    position: relative;
+}
+
+.current-volume {
+    width: 30px;
+    border: solid 2px white;
+    border-radius: 3px;
+}
+
+.remaining-volume {
+    width: 100px;
+    border: solid 2px gray;
+    border-radius: 3px;
+}
+
+.white-circle-volume {
+    position: absolute;
+    left: 30px;
+    opacity: 0;
+}
+
+.volume-slider:hover .current-volume {
+    filter: var(--spotify-green-hover-color);
+}
+
+.volume-slider:hover .white-circle-volume {
+    opacity: 100%;
+    color: #f8f9e9;
+}

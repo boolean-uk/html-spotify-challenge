@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/global-variables.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/left.menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -56,11 +57,11 @@
                         <p>Create Playlist</p>
                     </a>
                     <ul class="playlists-list grid">
-                        <li><a class="grid" href="#">Playlist 1</a></li>
-                        <li><a class="grid" href="#">Playlist 2</a></li>
-                        <li><a class="grid" href="#">Playlist 3</a></li>
-                        <li><a class="grid" href="#">Playlist 4</a></li>
-                        <li><a class="grid" href="#">Playlist 5</a></li>
+                        <li><a class="grid" href="#">Happy Songs</a></li>
+                        <li><a class="grid" href="#">Sad Songs</a></li>
+                        <li><a class="grid" href="#">Chill</a></li>
+                        <li><a class="grid" href="#">Gym</a></li>
+                        <li><a class="grid" href="#">Drive Tunes</a></li>
                     </ul>
                 </nav>
                 <a class="install-app grid" href="#">
@@ -90,10 +91,65 @@
             </div>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
-            <div class="currently-playing">Currently Playing</div>
-            <div class="playback-controls">Playback Controls</div>
-            <div class="listening-controls">Listening Controls</div>
+        <footer class="footer grid">
+            <div class="currently-playing grid">
+                <img src="./assets/img/sinister.jpeg" alt="sinister cover" width="50">
+                <a class="current-song-text" href="#">
+                    <p><strong>Sinister</strong><br><span>Brano Nome</span></p>
+                </a>
+                <a class="hover-green" href="#">
+                    <img src="./svgs/like-icon.svg" alt="like icon" width="20">
+                </a>
+                <a class="hover-green" href="#">
+                    <img src="./svgs/folder-icon.svg" alt="folder icon" width="20">
+                </a>
+            </div>
+            <div class="playback-controls grid">
+                <div class="playback-control-buttons grid">
+                    <a class="hover-green" href="#">
+                        <img src="./svgs/shuffle-icon.svg" alt="shuffle icon" width="20">
+                    </a>
+                    <a class="hover-white" href="#">
+                        <img src="./svgs/skip-back.svg" alt="skip back" width="20">
+                    </a>
+                    <a href="#">
+                        <img src="./svgs/play-icon.svg" alt="play icon" width="25">
+                    </a>
+                    <a class="hover-white" href="#">
+                        <img src="./svgs/skip-forward.svg" alt="skip forward" width="20">
+                    </a>
+                    <a class="hover-green" href="#">
+                        <img src="./svgs/repeat-icon.svg" alt="repeat icon" width="20">
+                    </a>
+                </div>
+                <div class="playback-time-bar grid">
+                    <p>0:25</p>
+                    <div class="time-slider grid">
+                        <div class="time-played">
+                        </div>
+                        <img class="white-circle-time" src="./svgs/white-circle.svg" alt="white circle" width="10px">
+                        <div class="time-remaining"></div>
+                    </div>
+                    <p>4:35</p>
+                </div>
+            </div>
+            <div class="listening-controls grid">
+                <a class="hover-white" href="#">
+                    <img src="./svgs/queue-icon.svg" alt="queue icon" width="18">
+                </a>
+                <a class="hover-white" href="#">
+                    <img src="./svgs/screen-icon.svg" alt="screen icon" width="15">
+                </a>
+                <a class="hover-white" href="#">
+                    <img src="./svgs/volume-icon.svg" alt="volume icon" width="20">
+                </a>
+                <div class="volume-slider grid">
+                    <div class="current-volume">
+                    </div>
+                    <img class="white-circle-volume" src="./svgs/white-circle.svg" alt="white circle" width="10px">
+                    <div class="remaining-volume"></div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

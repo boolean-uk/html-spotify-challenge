@@ -68,7 +68,7 @@
 }
 
 .playlists-list {
-    grid-template-rows: repeat(auto-fit, 35px);
+    grid-auto-rows: 35px;
 }
 
 .playlists-list a {
