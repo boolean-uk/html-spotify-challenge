@@ -1,0 +1,105 @@
+* {
+  color: rgb(219, 219, 219);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: 'Gill Sans';
+  letter-spacing: 0.03em;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "sidebar main"
+  "playBar playBar";
+  grid-template-rows: 60px 1fr 80px;
+  grid-template-columns: 250px 1fr;
+  background: #202020;
+  overflow: hidden;
+  
+}
+
+.header {
+  grid-area: header;
+  background: #333333;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+  background: linear-gradient(45deg, #333333 0%, #202020 100%);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  overflow-y: scroll;
+  padding: 0px 20px;
+}
+
+section {
+}
+
+.itemContainer {
+  display: grid;
+  grid-gap: 15px;
+  margin: 20px 0;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(auto-fill, min-content);
+  align-self:center;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.cover, .artist {
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.artist {
+  border-radius: 100%;
+}
+
+.cover:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+}
+
+.item .text {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.item .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item .subtitle {
+  padding: 10px;
+  font-size: 12px;
+  color: #6b6b6b;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.playBar {
+  grid-area: footer;
+  background: #333333;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+p {
+
+}
