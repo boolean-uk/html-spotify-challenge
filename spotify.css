@@ -37,10 +37,26 @@
     background-color: rgb(6, 6, 6);
 }
 
-.upgrade {
+.upgrade{
+    display: grid;
+    display: inline-block;
+    grid-area: header;
+    color: white;
+    border: solid 1px white;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 800px;
+    margin-top: 30px;
+    
+}
+
+.upgrade a {
     color: white;
 }
 
+a:hover > .upgrade {
+    color: rgb(7, 218, 7);
+}
 
 .left-menu {
     color: white;
