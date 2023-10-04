@@ -332,19 +332,21 @@ svg {
     grid-template: 270px 180px / 1fr;
     border-radius: 8px;
     background-color: #2b2a2a;
+    overflow: hidden;
 }
 
 .right-side__band-info--cover {
-    background-image: url(../assets/img/crystal-castles-band-cover.jpeg);
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 
 .right-side__band-info--cover > span {
-    position: relative;
+    position: absolute;
     font-size: 1.2rem;
     top: 15px;
     left: 15px;
     color: #fff;
+    z-index: 999;
 }
 
 .right-side__band-info--box {
