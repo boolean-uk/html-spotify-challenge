@@ -345,8 +345,37 @@ padding: 2px;
 .name-container {
     grid-area: name-container;
     border: 1px dashed white;
+
+    display: grid;
+    grid-template: "name-icon name-text";
+    grid-template-columns: 55px 1fr;
+    gap: 2px;
+    padding: 2px;
 }
 
+.name-icon {
+grid-area: name-icon;
+border: 1px dashed white;
+}
+
+.name-icon > img {
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    width: 35px;
+    margin-left: 15px;
+    margin-top: 16px;
+}
+
+.name-text {
+    grid-area: name-text;
+    border: 1px dashed white;
+}
+
+.name-text > p {
+    color: white;
+    margin-left: 3px;
+    margin-top: 26px;
+}
 
 /* ------------------------------- */
 /* HEADER */
