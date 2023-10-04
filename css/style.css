@@ -23,6 +23,14 @@
 .header {
   grid-area: header;
   background: #333333;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  padding: 20px;
+}
+
+.header img {
+  height: 30px;
 }
 
 .sidebar {
@@ -36,6 +44,13 @@
 
 .sideNav div {
   border-left: rgba(0, 0, 0, 0) 3px solid;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-content: end;
+}
+
+.sideNav img {
+  width: 20px;
 }
 
 .sideNav div:hover, .sideNav div#active {
@@ -108,6 +123,7 @@
 
 .cover, .artist, .icon {
   overflow: hidden;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -149,6 +165,34 @@ img {
 .playBar {
   grid-area: playBar;
   background: #333333;
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  padding: 10px;
+}
+
+.playingNow {
+  height: 30px;
+  width: 250px;
+}
+
+.playingNow img {
+
+}
+
+.trackControl {
+  display: grid;
+  justify-content: center;
+}
+
+.trackControl .progressBar {
+  height: 4px;
+  background-color: #8b8b8b;
+  border-radius: 2px;
+  width: 400px;
+}
+
+.options {
+
 }
 
 h2 {
