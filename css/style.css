@@ -13,13 +13,16 @@
   --header-bg: #080b12;
   --menu-bar-bg: #000;
   --main-bg: #141922;
-  --footer-bg: #282828
+  --footer-bg: #282828;
+
+  --logo-bg: #fff;
 }
 
 body {
   background-color: #222;
 
   font-family: sans-serif;
+  color: var(--logo-bg);
 }
 
 body, .container {
@@ -28,17 +31,39 @@ body, .container {
 
 /* ======== bob the builder ======== */
 
-.grid {
-  display: grid;
-}
 
 .container {
   grid-template-areas:
-    "menu-bar header"
-    "menu-bar main"
-    "footer footer";
+  "menu-bar header"
+  "menu-bar main"
+  "footer footer";
   grid-template-columns: var(--menu-bar-width) 1fr;
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
+}
+
+.grid {
+  display: grid;
+  place-content: center;
+}
+
+.col {
+  grid-auto-flow: column;
+}
+
+.logo {
+  background-color: var(--logo-bg);
+
+  overflow: hidden;
+
+  padding: 10px;
+}
+
+.logo img {
+  height: 24px;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 /* ======== header ======== */
@@ -55,6 +80,12 @@ header {
   grid-area: menu-bar;
 
   background-color: var(--menu-bar-bg);
+
+  align-content: start;
+}
+
+nav.side img {
+  height: 24px;
 }
 
 /* ======== main ======== */
@@ -64,6 +95,8 @@ main {
 
   background-color: var(--main-bg);
 }
+
+/* ======== footer ======== */
 
 footer {
   grid-area: footer;
