@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--darkblack);
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     "left     core      right"
     "left     core      right"
     "footer   footer    footer" 100px /
-    300px     1fr       300px
+    300px     1fr       380px
     ;
     width: 100vw;
     height: 100vh;
@@ -210,6 +210,7 @@ svg {
 .left-side__library--albums-sel__info {
     display: grid;
     align-items: center;
+    line-height: 1.4rem;
     padding: 0.35rem 0;
     padding-left: 0.3rem;
 }
@@ -230,7 +231,217 @@ svg {
 /* Current Song */
 
 #right-side {
+    display: grid;
+    grid-template: 40px 410px 450px 120px / 1fr;
     grid-area: right;
+    padding: 0.6rem 0;
+    padding-left: 0.9rem;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+#right-side::-webkit-scrollbar {
+    width: 0.9rem;
+}
+
+#right-side::-webkit-scrollbar-track {
+    background: var(--coreblack);
+    border-radius: 12px;
+}
+
+#right-side::-webkit-scrollbar-thumb {
+    display: none;
+    background: var(--darkgrey);
+    border-radius: 20px;
+}
+
+#right-side::-webkit-scrollbar-thumb:hover {
+    display: block;
+    background: var(--darkgrey);
+    border-radius: 20px;
+}
+
+.right-side__location {
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 1fr 40px;
+}
+
+.right-side__location > h3 {
+    font-size: 1.1rem ;
+    color: #fff;
+    padding-left: 0.2rem;
+}
+
+.right-side__location > svg {
+    position: relative;
+    fill: var(--icongrey);
+    left: 20px;
+}
+
+/* Song Cover */
+
+.right-side__song-cover {
+    display: grid;
+    place-items: center;
+}
+
+.right-side__song-cover > img {
+    border-radius: 10px;
+}
+
+.right-side__song-cover--info {
+    display: grid;
+    width: 100%;
+    grid-template: 1fr / 1fr 60px;
+}
+
+.right-side__song-cover--info__left {
+    line-height: 1.3rem;
+    padding-top: 0.35rem;
+}
+
+.right-side__song-cover--info__left > p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.right-side__song-cover--info__left > span {
+    font-size: 0.9rem;
+    color: var(--icongrey);
+}
+
+.right-side__song-cover--info__right {
+    display: grid;
+    grid-template: 1fr / 50% 50%;
+    place-items: center;
+}
+
+.right-side__song-cover--info__right > svg {
+    fill: var(--icongrey);
+}
+
+.right-side__song-cover--info__right > svg:nth-child(1) {
+    fill: var(--green);
+}
+
+/* Song Info */
+
+.right-side__band-info {
+    display: grid;
+    grid-template: 270px 180px / 1fr;
+    border-radius: 8px;
+    background-color: #2b2a2a;
+}
+
+.right-side__band-info--cover {
+    background-image: url(/assets/img/crystal-castles-band-cover.jfif);
+    background-size: cover;
+}
+
+.right-side__band-info--cover > span {
+    position: relative;
+    font-size: 1.2rem;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+}
+
+.right-side__band-info--box {
+    display: grid;
+    grid-template: 50px 50px 80px / 1fr;
+}
+
+.right-side__band-info--box h2 {
+    color: #fff;
+}
+
+.right-side__band-info--box__follow, .right-side__band-info--box__name, .right-side__band-info--box__info {
+    display: grid;
+    align-items: center;
+    padding: 0 0.6rem;
+}
+
+.right-side__band-info--box__follow {
+    grid-template: 1fr / 75% 25%;
+}
+
+.right-side__band-info--box__follow > h3 {
+    font-size: 0.95rem;
+    color: var(--icongrey);
+}
+
+
+.right-side__band-info--box__follow > button {
+    border: 1px solid var(--icongrey);
+    background-color: #2b2a2a;
+    padding: 0.3rem;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.right-side__band-info--box__info> p {
+    color: var(--icongrey);
+    font-size: 0.82rem;
+}
+
+/* Queue */
+
+.right-side__queue {
+    display: grid;
+    grid-template: 30px 1fr / 1fr;
+    padding: 0.5rem;
+    background-color: #2b2a2a;
+    border-radius: 8px;
+}
+
+.right-side__queue--next {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+}
+
+.right-side__queue--next > p {
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.right-side__queue--next > span {
+    font-size: 0.8rem;
+    color: var(--icongrey);
+}
+
+.right-side__queue--current {
+    display: grid;
+    grid-template: 1fr / 30px 60px 1fr;
+    place-items: center;
+}
+
+.right-side__queue--current > svg {
+    fill: var(--icongrey);
+}
+
+.right-side__queue--current > img {
+    border-radius: 6px;
+}
+
+.right-side__queue--song {
+    display: grid;
+    align-items: center;
+    padding-left: 0.5rem;
+    width: 100%;
+    line-height: 1.4rem;
+}
+
+.right-side__queue--song > p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.right-side__queue--song > span {
+    font-size: 0.8rem;
+    color: var(--icongrey);
 }
 
 
@@ -411,7 +622,7 @@ svg {
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1260px) {
     .container {
         grid-template:
         "left                  core"
