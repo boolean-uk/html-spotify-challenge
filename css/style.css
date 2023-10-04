@@ -16,6 +16,10 @@
   --footer-bg: #282828;
 
   --logo-bg: #fff;
+  --selector-bg: #adff2f;
+  --hover-bg: #ffffff50;
+
+  font-size: 12px;
 }
 
 body {
@@ -25,25 +29,38 @@ body {
   color: var(--logo-bg);
 }
 
-body, .container {
+body,
+.container {
   height: 100vh;
 }
 
 /* ======== bob the builder ======== */
 
+li {
+  list-style: none;
+}
 
 .container {
   grid-template-areas:
-  "menu-bar header"
-  "menu-bar main"
-  "footer footer";
+    "menu-bar header"
+    "menu-bar main"
+    "footer footer";
   grid-template-columns: var(--menu-bar-width) 1fr;
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
 }
 
 .grid {
   display: grid;
-  place-content: center;
+  align-content: center;
+}
+
+.flex {
+  display: flex;
+  align-content: center;
+}
+
+.row {
+  flex-direction: column;
 }
 
 .col {
@@ -66,6 +83,20 @@ body, .container {
   border-radius: 50%;
 }
 
+.rounded-right {
+  border-radius: 0 50ch 50ch 0;
+  padding-right: 1ch;
+}
+
+.rel {
+  position: relative;
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: var(--hover-bg);
+}
+
 /* ======== header ======== */
 
 header {
@@ -79,13 +110,74 @@ header {
 .menu-bar {
   grid-area: menu-bar;
 
-  background-color: var(--menu-bar-bg);
-
   align-content: start;
+  justify-items: start;
+
+  padding: 16px;
+  gap: 24px;
+
+  font-size: 0.8rem;
+
+  background-color: var(--menu-bar-bg);
 }
 
-nav.side img {
+.menu-bar img {
   height: 24px;
+}
+
+nav.side *,
+.playlist-container *,
+.menu-footer * {
+  column-gap: 8px;
+}
+
+.selector {
+  display: none;
+
+  position: absolute;
+
+  left: 0;
+
+  width: 4px;
+  height: 24px;
+
+  background-color: var(--selector-bg);
+}
+
+#selected {
+  display: unset;
+}
+
+.playlist-container li {
+  padding: 6px 0;
+}
+
+.playlist-container h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.menu-footer {
+  width: 100%;
+}
+
+.menu-footer img {
+  height: 16px;
+}
+
+.install {
+  border-bottom: 1px solid white;
+
+  padding: 8px 0;
+}
+
+.profile {
+  padding: 8px 0;
+}
+
+.profile .icon {
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* ======== main ======== */
