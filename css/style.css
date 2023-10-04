@@ -21,6 +21,7 @@ body {
     "footer             footer" 100px/
    250px;
   height: 100vh;
+  /* width: 100%; */
    
 }
 
@@ -592,11 +593,56 @@ border: 1px dashed white;
     color: white;
 }
 
+/* ALBUM ONE */
+
 .albumsOne-con {
     grid-area: albumsOne-con;
     border: 1px dashed white;
+    display: grid;
+    grid-template: "albumOne-1 albumOne-2 albumOne-3 albumOne-4 albumOne-5 albumOne-6";
+    grid-template-columns: repeat(6, minmax (0, 1fr));
+   
+    gap: 20px;
+    padding: 5px;
 }
 
+.albumOne-1 {
+    grid-area: albumOne-1;
+    border: 1px dashed white;
+    margin-left: 20px;
+
+}
+
+
+.albumOne-2 {
+    grid-area: albumOne-2;
+    border: 1px dashed white;
+
+}
+
+.albumOne-3 {
+    grid-area: albumOne-3;
+    border: 1px dashed white;
+
+}
+
+.albumOne-4 {
+    grid-area: albumOne-4;
+    border: 1px dashed white;
+
+}
+
+.albumOne-5 {
+    grid-area: albumOne-5;
+    border: 1px dashed white;
+
+}
+
+.albumOne-6 {
+    grid-area: albumOne-6;
+    border: 1px dashed white;
+
+}
 .created-by-con {
     grid-area: created-by-con;
     border: 1px dashed white;
