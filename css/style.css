@@ -6,9 +6,12 @@
 }
 
 body {
-    background-color: lightsteelblue;
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
+/* ------------------------------- */
+/* CONTAINER */
 
 .container {
     display: grid;
@@ -21,21 +24,94 @@ body {
    
 }
 
+/* ------------------------------- */
+/* LEFT-SIDE */
+
 .left-side-bar {
     grid-area:left-side-bar  ;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "logo-container"
+    "nav-container"
+    "playlist-container"
+    "install-app-container"
+    "name-container";
+    grid-template-rows: 80px 120px 1fr 60px 70px ;
+
+    padding: 3px;
+    gap:2px;
+    background-color: rgba(0, 0, 0, 0.314);
 }
+
+.logo-container {
+    grid-area: logo-container;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "logo spotify-name";
+    grid-template-columns: 70px 1fr ;
+    padding: 3px;
+    gap:3px;
+}
+
+.logo {
+    grid-area: logo;
+    border: 1px dashed black;
+}
+
+.logo > img {
+    width: 48px;
+    padding-left: 19px;
+    padding-top: 10px;
+}
+
+.spotify-name {
+    grid-area:spotify-name ;
+    border: 1px dashed black;
+    color: white;
+    padding-top: 20px;
+}
+
+.nav-container {
+    grid-area: nav-container;
+    border: 1px dashed black;
+}
+
+.playlist-container {
+    grid-area: playlist-container;
+    border: 1px dashed black;
+}
+
+.install-app-container{
+    grid-area: install-app-container;
+    border: 1px dashed black;
+}
+
+.name-container {
+    grid-area: name-container;
+    border: 1px dashed black;
+}
+
+
+/* ------------------------------- */
+/* HEADER */
 
 .header {
     grid-area: header;
     border: 1px dashed black;
 }
 
+/* ------------------------------- */
+/* MAIN */
 .main {
     grid-area: main;
     border: 1px dashed black;
 }
 
+/* ------------------------------- */
+/* FOOTER */
 .footer {
     grid-area: footer;
     border: 1px dashed black;
