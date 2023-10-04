@@ -1,0 +1,132 @@
+/* LEFT MENU */
+.left-menu {
+    grid-template-rows: 140px 1fr 40px 50px;
+    background-color: black;
+}
+
+/* ALL GRAY COLOURED TEXT */
+.general-nav-link, .create-playlist, .playlists-list a, .install-app {
+    color: gray;
+}
+
+/* GENERAL NAV */
+.general-nav-link {
+    grid-template-columns: 40px 1fr;
+    grid-auto-rows: 40px;
+    align-items: center;
+}
+
+.general-nav-link:hover img {
+    filter: var(--spotify-green-hover-color)
+}
+
+.home p {
+    font-weight: bold;
+    color: #ebe5e5;
+}
+
+.home {
+    position: relative;
+}
+
+.select-highlight {
+    height: 40px;
+    border: solid 2px lime;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.general-navigation-list a {
+    padding-left: 20px;
+}
+
+/* PLAYLISTS */
+.playlist-navigation {
+    grid-template-rows: 20px 50px 1fr;
+    gap: 3px;
+}
+
+.playlist-header {
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.create-playlist {
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.new-playlist-icon {
+    filter: invert(99%) sepia(1%) saturate(4498%) hue-rotate(190deg) brightness(113%) contrast(65%);
+}
+
+.create-playlist:hover img {
+    filter: var(--white-hover-color);
+}
+
+.playlists-list {
+    grid-template-rows: repeat(auto-fit, 35px);
+}
+
+.playlists-list a {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+}
+
+/* INSTALL APP */
+.install-app {
+    grid-template-columns: 30px 1fr;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.523);
+    margin: 0 20px;
+}
+
+.install-app:hover {
+    font-weight: bold;
+}
+
+.install-app:hover img {
+    filter: var(--spotify-green-hover-color);
+}
+
+/* PROFILE */
+.profile {
+    grid-template-columns: 40px 1fr;
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.profile:hover {
+    text-decoration: underline;
+}
+
+/* INSTALL APP & PROFILE SHARED STYLES */
+.install-app, .profile {
+    gap: 10px;
+    align-items: center;
+}
+
+.install-app img, .profile img {
+    justify-self: center;
+}
+
+/* REMOVE LINK TEXT DECORATION */
+.general-nav-link, .create-playlist, .playlists-list a, .install-app, .profile {
+    text-decoration: none;
+}
+
+/* GRAY BACKGROUND HOVER COLOUR */
+.general-nav-link:hover, .create-playlist:hover, .playlists-list a:hover {
+    background-color: var(--background-hover-gray);
+}
+
+/* WHITE FONT HOVER COLOUR */
+.general-nav-link:hover, .create-playlist:hover, .playlists-list a:hover, .install-app:hover {
+    color: white;
+}

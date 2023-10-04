@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    grid-template-rows: 100px 1fr 100px;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+/* MAIN */
+.main {
+    grid-template-columns: 250px 1fr;
+}
+
+.general-navigation-list, .playlists-list, .main-navigation-list {
+    list-style: none;
+}

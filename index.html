@@ -4,45 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global-variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/left.menu.css">
     <title>Spotify</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
+    <div class="container grid">
+        <!-- HEADER -->
+        <header class="header grid">
+            <div class="logo grid">
                 <img class="spotify-logo" src="./svgs/spotify-logo.svg" alt="spotify logo" width="50">
                 <h1 class="spotify-header">Spotify</h1>
             </div>
-            <div class="header-bar">
+            <div class="header-bar grid">
                 <a class="premium-upgrade" href="#">Upgrade to Premium</a>
             </div>
         </header>
-        <main class="main">
-            <div class="left-menu">
-                <nav class="left-menu-navigation">
-                    <div class="general-navigation">
-                        <ul class="general-navigation-list">
-                            <li>Home</li>
-                            <li>Search</li>
-                            <li>Your Library</li>
-                        </ul>
-                    </div>
-                    <div class="playlists">
-                        <h2 class="playlist-header">Playlists</h2>
-                        <div class="create-playlist">Create Playlist</div>
-                        <ul class="playlists-list">
-                            <li>Playlist 1</li>
-                            <li>Playlist 2</li>
-                            <li>Playlist 3</li>
-                            <li>Playlist 4</li>
-                            <li>Playlist 5</li>
-                        </ul>
-                    </div>
+        <!-- MAIN -->
+        <main class="main grid">
+            <!-- LEFT MENU -->
+            <div class="left-menu grid">
+                <nav class="general-navigation">
+                    <ul class="general-navigation-list">
+                        <li class="home">
+                            <div class="select-highlight"></div>
+                            <a class="general-nav-link grid" href="#">
+                                <img src="./svgs/home-icon.svg" alt="home icon" width="25">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="search">
+                            <a class="general-nav-link grid" href="#">
+                                <img src="./svgs/search-icon.svg" alt="search icon" width="25">
+                                <p>Search</p>
+                            </a>
+                        </li>
+                        <li class="library">
+                            <a class="general-nav-link grid" href="#">
+                                <img src="./svgs/library-icon.svg" alt="library icon" width="25">
+                                <p>Your Library</p>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-                <div class="install-app">Install App</div>
-                <div class="profile">John Doe</div>
+                <nav class="playlist-navigation grid">
+                    <h2 class="playlist-header">Playlists</h2>
+                    <a class="create-playlist grid" href="#">
+                        <img class="new-playlist-icon" src="./svgs/new-playlist-icon.svg" alt="new playlist icon" width="40px">
+                        <p>Create Playlist</p>
+                    </a>
+                    <ul class="playlists-list grid">
+                        <li><a class="grid" href="#">Playlist 1</a></li>
+                        <li><a class="grid" href="#">Playlist 2</a></li>
+                        <li><a class="grid" href="#">Playlist 3</a></li>
+                        <li><a class="grid" href="#">Playlist 4</a></li>
+                        <li><a class="grid" href="#">Playlist 5</a></li>
+                    </ul>
+                </nav>
+                <a class="install-app grid" href="#">
+                    <img src="./svgs/download-icon.svg" alt="download icon" width="20px">
+                    <p>Install App</p>
+                </a>
+                <a class="profile grid" href="#">
+                    <img src="./svgs/profile-icon.svg" alt="profile icon" width="30px">
+                    <p>Satoki Ito</p>
+                </a>
             </div>
+            <!-- MAIN CONTENT -->
             <div class="main-content">
                 <nav class="main-navigation">
                     <ul class="main-navigation-list">
@@ -59,6 +89,7 @@
                 <div class="popular-artists">Popular Artists</div>
             </div>
         </main>
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="currently-playing">Currently Playing</div>
             <div class="playback-controls">Playback Controls</div>
