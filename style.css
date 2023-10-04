@@ -89,6 +89,23 @@ li {
     bottom: 60px;
 }
 
+/*HEADER*/
+
+button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid white;
+    padding: 0 40px;
+    height: 40px;
+    border-radius: 40px;
+    color: white;
+    background: none;
+}
+
+button > h3 {
+    color: white;
+}
 /*MAIN CONTENT NAVIGATION*/
 
 #main-content .categories-menu {
@@ -107,6 +124,7 @@ li {
 
 #main-content li {
     display: inline-block;
+    margin: 0 10px;
 }
 
 /*MAIN CONTENT DISPLAY*/
