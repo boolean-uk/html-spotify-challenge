@@ -137,14 +137,12 @@ header button.rounded-right {
   background-color: var(--menu-bar-bg);
 }
 
-.menu-bar img {
-  height: 24px;
+.menu-bar * {
+  column-gap: 8px;
 }
 
-nav.side *,
-.playlist-container *,
-.menu-footer * {
-  column-gap: 8px;
+.menu-bar img {
+  height: 24px;
 }
 
 .selector {
