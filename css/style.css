@@ -9,7 +9,8 @@
 
 a {
     text-decoration: none;
-    color: rgb(109, 109, 109);
+    color: rgb(120, 120, 120);
+    gap: 10px;
 }
 
 a:hover{
@@ -19,9 +20,7 @@ a:hover{
 main {
     grid-area: main;
     background-color: rgb(20,25,34);
-
-    display: grid;
-    grid-template-rows: 50px 1fr;
+    overflow-y: scroll;
 }
 
 footer {
@@ -40,6 +39,10 @@ header {
     background-color: rgb(8,11,18);
     align-items: center;
     justify-items: end;
+}
+
+p {
+    color: rgb(120, 120, 120)
 }
 
 
@@ -104,7 +107,6 @@ header {
     display: grid;
     grid-template-columns: 30px 1fr;
     align-items: center;
-    gap: 10px;
 }
 
 
@@ -131,19 +133,18 @@ header {
     display: grid;
     grid-template-columns: 30px 1fr;
     align-items: center;
-    gap: 10px;
 }
 
 
 
 .profile {
     color: white;
-    border-top: solid rgba(109, 109, 109, 0.333) 1px;
+    border-top: solid rgb(120, 120, 120) 1px;
     margin-top: 10px;
 }
 
 .profile img {
-    border: solid rgba(109, 109, 109, 0) 2px;
+    border: solid rgba(120, 120, 120, 0) 2px;
     border-radius: 25px;
     margin: 10px 0px;
     width: 30px;
@@ -151,7 +152,7 @@ header {
 }
 
 .profile img:hover {
-    border: solid rgba(109, 109, 109, 0.874);
+    border: solid rgba(120, 120, 120);
 }
 
 
@@ -166,12 +167,37 @@ header {
     display: inline;
     padding-left: 20px;
     text-align: center;
-    color: rgb(123, 126, 130);
+    color: rgb(120, 120, 120);
 }
 
 .selected-hoz {
-    text-align: left;
     position: relative;
-    left: 340px;
-    bottom: 14px;
+    left: 60px;
+    top: 10px;
+}
+
+.main-content {
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.music-card {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0px;
+    width: 170px;
+}
+
+.music-card p {
+    color: rgb(120, 120, 120);
+    font-size: 13px;
+}
+
+.music-card img {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
