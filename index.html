@@ -4,9 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Spotify Clone</title>
 </head>
 <body>
-    
+    <main class="gridmain">
+<!------------------------------------------------------------- Leftbar --------------------------------------------------->
+        <section id="leftbar">
+            <div class="logo">
+                <button class="logobutton"><img class="logoactual" src="assets\img\logo.svg" alt="spotify logo" height="75px"><a href="spotify.html" target="_top"></a></button>                
+            </div>
+            <div class="menubuttons">
+                <ul class="leftbuttons">
+                    <li>
+                        <button class="menu"><img
+                        class="menuimg" 
+                        src="assets\img\home.svg" alt="home"><p>Home</p></button>
+                    </li>
+                        
+                    <li>
+                        <button class="menu"><img 
+                        class="menuimg"
+                        src="assets\img\search.svg" alt="search"><p>Search</p></button>
+                    </li>
+
+                    <li>
+                        <button class="menu" style="display: inline"><img
+                        class="menuimg"
+                        src="assets\img\libreria.svg" alt="library"><p>Your Library</p></button>
+                    </li>
+                </ul>
+            </div>
+
+                <br>
+                <br>
+            <div class="allplaylist">
+                <h2 class="playlistheader">PLAYLIST</h2>
+
+                <br>
+                <ul>
+                    <li>
+                        <button class="create">
+                            <img class="add" src="assets\img\svg\add.svg" alt="add new playlist"><p>Create Playlist</p>
+                        </button>
+                    </li>
+
+                    <br>
+
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                    <li><button class="playlist"><p>Playlist Name</p></button></li>
+                
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <li><button class="playlist"><img class="downloadbutton" src="assets\img\download.svg" alt="download song"><p>Download</p></button></li>
+                </ul>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div class="onlyprofile">
+                <img class="profile" src="assets\img\profile.svg" alt="profile"><p>Jay Vithani</p>
+            </div>
+        </section>
+<!--------------------------------------------------------------- Main ------------------------------------------------->
+        <section id="main">
+            <div class="upgrade">
+                <button class="install">INSTALL UPGRADE</button>
+            </div>
+            <div class="navbar">
+                <button class="nav">OVERVIEW</button>
+                <button class="nav">PODCAST</button>
+                <button class="nav">CHARTS</button>
+                <button class="nav">GENRES AND MOOD</button>
+                <button class="nav">NEW RELEASES</button>
+                <button class="nav">DISCOVER</button>
+            </div>
+
+            <br> 
+
+            <div class="music">
+                <div class="recent">
+                    <h2>Recently Played</h2>
+                    <br>
+                        <ul class="recents">
+                            <div class="metal">
+                                <img class="album" src="assets\img\metal_lifting.jpg" alt="heavy metal">
+                                <h4>Heavy Metal</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                            <div class="stranger">
+                                <img class="album"   src="assets\img\stranger.jpeg" alt="stranger things">
+                                <h4>Stranger Things Vol. 1 (a Netfilx Original Series Soundtrack)</h4>
+                                <h6>Kyle Dixon & Michael Stein</h6>
+                            </div>
+                            <div class="quiet">
+                                <img class="album"  src="assets\img\aquietplace.jpeg" alt="a quiet place">
+                                <h4>A quiet place</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                            <div class="split">
+                                <img class="album"  src="assets\img\split.jpeg" alt="split">
+                                <h4>Split</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                            <div class="cure">
+                                <img class="album"  src="assets\img\cure.jpeg" alt="cure for wellness">
+                                <h4>A cure for wellness</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                            <div class="sinister">
+                                <img class="album" src="assets\img\sinister.jpeg" alt="sinister">
+                                <h4>Sinister</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="foryou">
+                        <h2>Created for Jay Vithani</h2>
+                        <h6>The more you listen the more accurate your suggestions will be.</h6>
+                        <br>
+                        <ul class="createdfor">
+                            <div class="radar">
+                                <img class="album" src="assets\img\radar.jpeg" alt="release radar">
+                                <h4>Release Radar</h4>
+                            </div>
+                            <div class="daily1">
+                                <img class="album" src="assets\img\mixdaily.jpeg" alt="daily mix 1">
+                                <h4>Daily Mix 1</h4>
+                            </div>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="popular">
+                        <h2>Popular Artists</h2>
+                        <h6>The more you listen the more accurate your suggestions will be.</h6>
+                        <br>
+                        <ul class="mostpopular">
+                            <div class="young">
+                                    <img class="albumround" src="assets\img\youg.jpeg" alt="number 1">
+                                    <h4>Young & Beautiful</h4>
+                                    <h6>Lana Del Ray</h6>
+                            </div>
+                            <div class="einaudi">
+                                <img class="albumround" src="assets\img\einaudi.jpeg" alt="number 2">
+                                    <h4>Portrait</h4>
+                                    <h6>Einaudi</h6>              
+                            </div>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>   
+<!------------------------------------------------------ Playback ---------------------------------------------------------->
+            <footer id="nowplaying">
+                <div class="song">
+                    <img class= "albumsmall" src="assets\img\sinister.jpeg" alt="now playing">
+                    <p class="track">Sinister</p>
+                    <p class="artist">Artist Name</p>
+                </div>
+                <div class="controls">
+                    <nav>
+                        <button class="controller"><img src="assets\img\svg\shuffle.svg" alt="shuffle"></button>
+                        <button class="controller"><img src="assets\img\svg\previous.svg" alt="previous"></button>
+                        <button class="controller"><img src="assets\img\svg\play.svg" alt="play/pause"></button>
+                        <button class="controller"><img src="assets\img\svg\next.svg" alt="next"></button>
+                        <button class="controller"><img src="assets\img\svg\repeat.svg" alt="repeat"></button>
+                    </nav> 
+                    <div class="slider">
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>                 
+                </div>
+                <div class="volume">
+                    <nav>
+                        <button class="volumebuttons"><img src="assets\img\svg\list.svg" alt="shuffle"></button>
+                        <button class="volumebuttons"><img src="assets\img\svg\display.svg" alt="previous"></button>
+                        <button class="volumebuttons"><img src="assets\img\svg\volume.svg" alt="play/pause"></button>
+                    </nav> 
+                    <div class="volumeslider">
+                        <input type="range" min="1" max="10" value="3" step="0.5" class="slider">
+                    </div>
+                </div>
+            </footer>
+        </main>   
 </body>
 </html>
