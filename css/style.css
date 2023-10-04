@@ -84,6 +84,11 @@ svg {
     color: var(--icongrey);
 }
 
+.active > h2, .active > svg {
+    fill: #fff;
+    color: #fff;
+}
+
 /* Navigation Library */
 
 .left-side__library {
@@ -194,8 +199,12 @@ svg {
 }
 
 .left-side__library--albums-sel__info > h3 {
-    color: #1db954;
+    color: #fff;
     font-size: 1.1rem;
+}
+
+.active-song > h3 {
+    color: var(--green);
 }
 
 .left-side__library--albums-sel__info {
