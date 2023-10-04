@@ -19,6 +19,7 @@ body {
 .navbar {
     background-color: #040404;
     padding: 20px;
+    height: 90vh;
 }
 
 a {
@@ -89,11 +90,8 @@ a:hover {
     grid-template-columns: 30px 150px;
     gap: 20px;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 20px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 160px;
     font-size: 20px;
     font-weight: bold;
     border-top: solid 1px #9b9b9b;
@@ -114,7 +112,7 @@ a:hover {
     top: 0;
 }
 
-.header > button {
+.header > a {
     position: absolute;
     top: 40px;
     right: 40px;
