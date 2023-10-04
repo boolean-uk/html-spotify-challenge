@@ -18,6 +18,9 @@
   --selector-bg: #adff2f;
   --hover-bg: #ffffff50;
 
+  --main-text-color: #fff;
+  --faded-text-color: #aaa;
+
   font-size: 12px;
 }
 
@@ -25,7 +28,7 @@ body {
   background-color: #222;
 
   font-family: sans-serif;
-  color: var(--logo-bg);
+  color: var(--main-text-color);
 }
 
 body,
@@ -91,9 +94,10 @@ li {
   position: relative;
 }
 
+/* || hover ting || */
+
 .hover {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px;
 }
 
 .hover:hover {
@@ -101,10 +105,22 @@ li {
   background-color: var(--hover-bg);
 }
 
+/* || overflow || */
+
+.overflow-elip {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* || slider stuff || */
+
 input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
+
+  cursor: pointer;
 }
 
 ::-moz-range-track {
@@ -151,7 +167,7 @@ header {
 
 header button.rounded-right {
   background-color: var(--header-bg);
-  color: var(--logo-bg);
+  color: var(--main-text-color);
   border: 1px solid var(--logo-bg);
 
   width: auto;
@@ -166,8 +182,10 @@ header button.rounded-right {
 
 .menu-bar {
   grid-area: menu-bar;
+  grid-template-rows: auto auto 1fr auto;
 
   align-content: start;
+  align-items: start;
   justify-items: start;
 
   padding: 16px;
@@ -260,8 +278,14 @@ footer {
   height: 16px;
 }
 
-.footer-left {
+.footer-left, .footer-right {
+  grid-template-columns: auto 20ch auto auto;
   justify-content: start;
+  gap: 12px;
+}
+
+.album-name {
+  font-weight: bold;
 }
 
 .footer-center {
@@ -278,7 +302,7 @@ footer {
 .progress-container {
   grid-template-columns: auto 1fr auto;
 
-  gap: 48px;
+  gap: 18px;
 }
 
 .footer-center img {
@@ -286,5 +310,7 @@ footer {
 }
 
 .footer-right {
+  grid-template-columns: repeat(4, auto);
+  justify-self: end;
   justify-content: end;
 }
