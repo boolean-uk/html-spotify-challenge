@@ -141,9 +141,56 @@ a:hover {
 .nav-elements > a {
     font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav-elements > a:hover {
     color: #ffffff;
     border-bottom: springgreen solid 5px;
+}
+
+.recently-played {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+    height: max-content;
+}
+
+.recently-played > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.album-carousel {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 20px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.album > img {
+    width: 250px;
+    height: 250px;
+}
+
+.album > a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.album > p {
+    color: #747474;
+    font-size: 15px;
+    font-weight: bold;
 }
