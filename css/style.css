@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.main-grid {
+    display: grid;
+    grid-template: 
+    "left-menu header" 100px
+    "left-menu main" 750px /*Change after filled in */
+    "footer    footer" 100px/
+    240px     1fr;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    background-color: rgb(8,11,18);
+    align-items: center;
+    justify-items: end;
+}
+
+.Upgrade {
+    background: none;
+    color: white;
+    border: solid white 1px;
+    border-radius: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: 5px;
+}
+
+.left-menu {
+    grid-area: left-menu;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 3fr;
+    background-color: black;
+    color: white;
+    padding:  0px 20px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.home-nav p {
+    display: inline;
+    position: relative;
+    bottom: 7px;
+    left: 5px;
+}
+
+.home-nav {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.playlist-nav {
+    display: grid;
+    gap: 10px;
+}
+
+.playlist-nav p {
+    display: inline;
+    position: relative;
+}
+
+.profile-area {
+    display: grid;
+    align-items: end;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(20,25,34);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(40, 40, 40);
+}
