@@ -27,6 +27,11 @@
 
 .sidebar {
   grid-area: sidebar;
+  padding: 0px 20px;
+}
+
+.sidebar div {
+  padding: 10px 0;
 }
 
 .main {
@@ -34,11 +39,28 @@
   background: linear-gradient(45deg, #333333 0%, #202020 100%);
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
-  overflow-y: scroll;
   padding: 0px 20px;
+  overflow-y: scroll;
 }
 
-section {
+.playlists .item {
+  display: grid;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0;
+  overflow: hidden;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.playlists .icon {
+  overflow: hidden;
+}
+
+.playlists .createPlaylist {
+  background-color: #8b8b8b;
+  height: 100%;
 }
 
 .itemContainer {
@@ -47,24 +69,27 @@ section {
   margin: 20px 0;
   grid-template-columns: repeat(auto-fit, 200px);
   grid-template-rows: repeat(auto-fill, min-content);
-  align-self:center;
+  align-self: center;
 }
 
 .item {
   overflow: hidden;
 }
 
-.cover, .artist {
-  height: 200px;
+.cover, .artist, .icon {
   overflow: hidden;
   object-fit: cover;
+}
+
+.icon {
+  width: 100%;
 }
 
 .artist {
   border-radius: 100%;
 }
 
-.cover:hover {
+.cover:hover, .icon:hover {
   opacity: 0.5;
 }
 
