@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 80px;
+  --footer-height: 100px;
+
+  --menu-bar-width: 200px;
+
+  --header-bg: #080b12;
+  --menu-bar-bg: #000;
+  --main-bg: #141922;
+  --footer-bg: #282828
+}
+
+body {
+  background-color: #222;
+
+  font-family: sans-serif;
+}
+
+body, .container {
+  height: 100vh;
+}
+
+/* ======== bob the builder ======== */
+
+.grid {
+  display: grid;
+}
+
+.container {
+  grid-template-areas:
+    "menu-bar header"
+    "menu-bar main"
+    "footer footer";
+  grid-template-columns: var(--menu-bar-width) 1fr;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+}
+
+/* ======== header ======== */
+
+header {
+  grid-area: header;
+
+  background-color: var(--header-bg);
+}
+
+/* ======== menu-bar ======== */
+
+.menu-bar {
+  grid-area: menu-bar;
+
+  background-color: var(--menu-bar-bg);
+}
+
+/* ======== main ======== */
+
+main {
+  grid-area: main;
+
+  background-color: var(--main-bg);
+}
+
+footer {
+  grid-area: footer;
+
+  background-color: var(--footer-bg);
+}
