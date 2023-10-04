@@ -103,7 +103,7 @@ a:hover {
 
 .main-box {
     display: grid;
-    grid-template-rows: 150px 1fr 100px;
+    grid-template-rows: 150px 70px 1fr 100px;
 }
 
 .header {
@@ -123,4 +123,27 @@ a:hover {
     border: solid 1px #fff;
     border-radius: 30px;
     padding: 10px;
+}
+
+.sub-header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-elements {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-elements > a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-elements > a:hover {
+    color: #ffffff;
+    border-bottom: springgreen solid 5px;
 }
