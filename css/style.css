@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: grey;
+    /* background-color: grey; */
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 .container {
     display: grid;
     grid-template: 
-    "left-side-bar      header"  100px
+    "left-side-bar      header"  90px
     "left-side-bar      main"    100vh
     "footer             footer" 100px/
    250px;
@@ -42,7 +42,7 @@ body {
 
     padding: 3px;
     gap:2px;
-    background-color: rgba(0, 0, 0, 0.91)
+    background-color:black;
 }
 
 .logo-container {
@@ -127,6 +127,9 @@ body {
     margin-top: 13px;
 }
 
+
+
+
 /* Search */
 
 .search-con {
@@ -203,6 +206,11 @@ padding: 2px;
     margin-top: 13px;
 }
 
+.home-text > p:hover, .search-text>p:hover, .library-text>p:hover{
+    cursor: pointer;
+    color: white;
+}
+
 /* Playlist */
 
 .playlist-container {
@@ -234,6 +242,8 @@ padding: 2px;
     margin-top: 13px;
     
 }
+
+
 
 .create-playlist-con {
     grid-area: create-playlist-con;
@@ -302,6 +312,12 @@ padding: 2px;
     margin-left: 19px;
     margin-top: 15px;
 }
+
+.playlist-con > p:hover {
+    color: white;
+    cursor: pointer;
+}
+
 
 /* Install App */
 
@@ -377,19 +393,65 @@ border: 1px dashed white;
     margin-top: 26px;
 }
 
+.install-app-icon-text > p, .name-text > p:hover {
+    cursor: pointer;
+    /* color: white; */
+}
+
 /* ------------------------------- */
 /* HEADER */
 
 .header {
     grid-area: header;
-    border: 1px dashed black;
+    border: 1px dashed white;
+    background-color: rgba(1, 4, 8, 0.854);
+
+    display: grid;
+    grid-template: "header-filler upgrade-button";
+    grid-template-columns: 1fr 230px;
+    gap: 2px;
+    padding: 2px;
+
 }
+
+.header-filler {
+    grid-area: header-filler;
+    border: 1px dashed white;
+ 
+}
+
+.upgrade-button {
+    grid-area: upgrade-button;
+    border: 1px dashed white;
+}
+
+.upgrade-button > button {
+  width: 100%;
+  height: 45%;
+  border-radius: 20px;
+  margin-top: 23px;
+  border: white 1px solid;
+ background-color: transparent;
+}
+
+.upgrade-button > button > p{
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    color: white;
+}
+
+.upgrade-button > button > p:hover {
+    cursor: pointer;
+    
+}
+
+
 
 /* ------------------------------- */
 /* MAIN */
 .main {
     grid-area: main;
     border: 1px dashed black;
+    background-color: rgb(29, 27, 27);
 }
 
 /* ------------------------------- */
@@ -397,5 +459,6 @@ border: 1px dashed white;
 .footer {
     grid-area: footer;
     border: 1px dashed black;
+    background-color: grey;
 
 }
