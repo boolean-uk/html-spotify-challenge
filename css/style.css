@@ -30,6 +30,7 @@
 }
 
 .sidebar div, .playlists {
+  color: #8b8b8b;
   padding: 10px 20px ;
 }
 
@@ -57,23 +58,23 @@
 }
 
 .playlists .item {
-  display: grid;
-  height: 50px;
   margin: 10px 0;
   padding: 0;
   overflow: hidden;
-  grid-template-columns: 50px 1fr;
-  align-items: center;
-  grid-gap: 20px;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.playlists .createPlaylist {
+  margin: 10px 0 20px 0;
+}
+
+.playlists .createPlaylist:hover {
+  color: white;
 }
 
 .playlists .icon {
   overflow: hidden;
-}
-
-.playlists .createPlaylist {
-  background-color: #8b8b8b;
-  height: 100%;
 }
 
 .tabNav {
@@ -153,8 +154,4 @@ img {
 h2 {
   margin: 10px 0;
   font-size: 20px;
-}
-
-p {
-
 }
