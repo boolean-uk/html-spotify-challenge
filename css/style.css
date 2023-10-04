@@ -493,7 +493,7 @@ border: 1px dashed white;
 
     display: grid;
     grid-template:"main-playlist-con main-podcast-con main-artist-con main-albums-con main-downloaded-con" ;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5,150px);
     
     gap: 3px;
     padding: 10px;
@@ -509,7 +509,7 @@ border: 1px dashed white;
 .main-playlist-con > p {
     color: grey;
     margin-top: 5px;
-    margin-left: 27px;
+    margin-left: 40px;
 }
 
 .main-podcast-con {
@@ -520,7 +520,7 @@ border: 1px dashed white;
 .main-podcast-con > p {
     color: grey;
     margin-top: 5px;
-    margin-left: 27px;
+    margin-left: 40px;
 }
 
 .main-artist-con  {
@@ -531,7 +531,7 @@ border: 1px dashed white;
 .main-artist-con > p {
     color: grey;
     margin-top: 5px;
-    margin-left: 27px;
+    margin-left: 45px;
 }
 
 .main-albums-con {
@@ -542,7 +542,7 @@ border: 1px dashed white;
 .main-albums-con > p {
     color: grey;
     margin-top: 5px;
-    margin-left: 27px;
+    margin-left: 40px;
 }
 
 .main-downloaded-con {
@@ -553,7 +553,12 @@ border: 1px dashed white;
 .main-downloaded-con > p {
     color: grey;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 25px;
+}
+
+.main-playlist-con > p:hover,.main-podcast-con > p:hover, .main-artist-con > p:hover , .main-albums-con > p:hover, .main-downloaded-con > p:hover {
+    cursor: pointer;
+    color: white;
 }
 /* Empty2 */
 
@@ -567,6 +572,24 @@ border: 1px dashed white;
 .recently-played-con {
     grid-area: recently-played-con;
     border: 1px dashed white;
+
+    display: grid;
+    grid-template: "recently-played-text";
+    grid-template-columns: auto;
+    gap: 3px;
+    padding: 5px;
+}
+
+.recently-played-text {
+    grid-area:recently-played-text ;
+    border: 1px dashed white;
+}
+
+.recently-played-text > p {
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 20px;
+    color: white;
 }
 
 .albumsOne-con {
