@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-areas: 
+    "left-menu header"
+    "left-meny main"
+    "footer footer";
+}
+
+.
