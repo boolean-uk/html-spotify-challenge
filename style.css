@@ -79,6 +79,7 @@ li {
     position: fixed;
     left: 0;
     top: 80px;
+    height: 100vh;
     z-index: 1;
 }
 #side-menu, 
@@ -147,7 +148,7 @@ h1 {
     width: fit-content;
 }
 
-
+/* upgrade-button */
 button {
     position: absolute;
     right: 10px;
@@ -247,11 +248,53 @@ button > h3 {
 
 
 
-/* SIDE-MENU */
+/* FOOTER */
 
-#side-menu #general-menu {
-    height: 200px;
+#main-footer {
+    padding: 0 0 10px 180px;
+    width: calc(100vw - 180px);
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
 }
+
+#display-track {
+    display: grid;
+    grid-template-columns: 50px 1fr repeat(2, 20px);
+}
+#player {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+#settings-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(3, 20px) 1fr;
+
+}
+
+
+#main-footer > div {
+    border: 1px solid yellow;
+}
+#display-track > div {
+    border: 1px solid rgb(0, 229, 255);
+}
+#player > div {
+    border: 1px solid rgb(0, 229, 255);
+}
+#settings-shortcuts > div {
+    border: 1px solid rgb(0, 229, 255);
+}
+
+#player-controls{
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+}
+
+#player-display {
+    display:grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
 
 
 
