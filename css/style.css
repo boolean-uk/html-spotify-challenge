@@ -15,7 +15,7 @@
   --footer-bg: #282828;
 
   --logo-bg: #fff;
-  --selector-bg: #adff2f;
+  --selector-bg: #fa99a9;
   --hover-bg: #ffffff50;
 
   --main-text-color: #fff;
@@ -226,7 +226,7 @@ header button.rounded-right {
   display: unset;
 }
 
-.playlist-container h2 {
+.playlist-container h1 {
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -256,10 +256,35 @@ header button.rounded-right {
 
 /* ======== main ======== */
 
-main {
+main.grid {
   grid-area: main;
+  align-content: start;
+
+  padding: 16px;
+  gap: 16px;
 
   background-color: var(--main-bg);
+}
+
+.nav-items {
+  text-align: center;
+
+  padding-bottom: 5px;
+  border: 2px solid transparent;
+}
+
+.nav-items:hover {
+  border-image: linear-gradient(to right, transparent 40%, var(--selector-bg), transparent 60%);
+  border-image-slice: 0 0 1 0;
+}
+
+#selected-main {
+  border-image: linear-gradient(to right,#00000000 40% , var(--selector-bg)  40%, var(--selector-bg) 60%, #00000000 60%);
+  border-image-slice: 0 0 1 0;
+}
+
+.gallery-container {
+  gap: 18px;
 }
 
 .gallery {
@@ -267,7 +292,15 @@ main {
   justify-content: start;
   justify-items: center;
 
-  gap: 12px;
+  gap: 18px;
+}
+
+.gallery h2 {
+  font-size: 1.3rem;
+}
+
+.gallery p {
+  margin: 0 1ch;
 }
 
 .gallery img {
@@ -275,8 +308,20 @@ main {
 }
 
 .gallery-item {
-  text-align: center;
+  align-content: start;
 }
+
+.item-container {
+  text-align: center;
+  align-content: start;
+
+  border-radius: 0 0 4ch 4ch;
+
+  gap: 8px;
+}
+
+
+
 
 .gallery-item:hover .play-hover {
   display: grid;
@@ -338,6 +383,7 @@ footer {
 
 .media-container {
   justify-items: center;
+  justify-content: center;
   padding: 0 20%;
 }
 

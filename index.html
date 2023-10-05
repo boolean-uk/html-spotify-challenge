@@ -16,7 +16,7 @@
         <div class="logo-container grid col">
           <div class="logo round grid">
             <img
-              src="https://img.icons8.com/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+              src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
               alt="flowers icon"
             />
           </div>
@@ -26,7 +26,7 @@
           <ul class="grid">
             <li class="flex rel">
               <div class="hover grid col rounded-right">
-                <div id="selected" class="selector"></div>
+                <div id="selected-side" class="selector"></div>
                 <div class="icon grid">
                   <img src="https://img.icons8.com/ffffff/home" alt="home" />
                 </div>
@@ -60,7 +60,7 @@
           </ul>
         </nav>
         <div class="playlist-container grid">
-          <h2>Afspeellijst</h2>
+          <h1>Afspeellijst</h1>
           <nav class="grid">
             <ul class="grid">
               <li class="flex">
@@ -107,43 +107,125 @@
         </div>
       </div>
       <main class="grid">
-        <div class="header grid"></div>
-        <div class="recently-played gallery-container">
-          <h2>Recent gespeeld</h2>
+        <nav class="header grid">
+          <ul class="grid col">
+            <li id="selected-main" class="nav-items hover rounded-right">
+              Voornaamst
+            </li>
+            <li class="nav-items hover rounded-right">Podcast</li>
+            <li class="nav-items hover rounded-right">Populair</li>
+            <li class="nav-items hover rounded-right">Genre en stemming</li>
+            <li class="nav-items hover rounded-right">Nieuwe uitgaven</li>
+            <li class="nav-items hover rounded-right">Ontdekken</li>
+          </ul>
+        </nav>
+        <div class="recently-played gallery-container grid">
+          <hgroup>
+            <h1>Recent gespeeld</h1>
+          </hgroup>
           <div class="gallery grid">
-            <div class="gallery-item grid hover">
-              <div class="gallery-cover grid rel">
-                <img
-                  src="assets/img/metal_lifting.jpg"
-                  alt="heavy metal playlist"
-                />
-                <div class="play-hover round grid">
-                  <img src="https://img.icons8.com/play" alt="play" />
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/djent-is-not-a-djenre-scaled.jpg"
+                    alt="album: Periphery V: Djent Is Not a Genre"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
                 </div>
+                <h2>Periphery V: Djent Is Not a Genre</h2>
+                <p class="fade-text">Periphery</p>
               </div>
-              <h3>Zwaar metaal</h3>
-              <p class="fade-text">Ondertitel</p>
             </div>
-            <div class="gallery-item grid hover">
-              <div class="gallery-cover grid rel">
-                <img
-                  src="assets/img/metal_lifting.jpg"
-                  alt="heavy metal playlist"
-                />
-                <div class="play-hover round grid">
-                  <img src="https://img.icons8.com/play" alt="play" />
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img src="assets/img/albums/turbo.jpg" alt="album: Turbo" />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
                 </div>
+                <h2>Turbo</h2>
+                <p class="fade-text">Cory Wong, Dirty Loops</p>
               </div>
-              <h3>Zwaar metaal</h3>
-              <p class="fade-text">Ondertitel</p>
             </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img src="assets/img/albums/wasted.jpg" alt="album: Wasted" />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Wasted</h2>
+                <p class="fade-text">Darren Styles, Toneshifterz</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/hushed-and-grim.jpg"
+                    alt="album: Hushed and Grim"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Hushed and Grim</h2>
+                <p class="fade-text">Mastodon</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/spectrum.jpg"
+                    alt="album: Spectrum"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Spectrum</h2>
+                <p class="fade-text">上原 ひろみ</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/falling-satellites.jpg"
+                    alt="album: Falling Satellites"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Falling Satellites</h2>
+                <p class="fade-text">Frost*</p>
+              </div>
+            </div>
+
+
+
+
+
+
           </div>
         </div>
         <div class="created-for-you gallery-container">
-          <h2>Gemaakt voor jou</h2>
+          <h1>Gemaakt voor jou</h1>
         </div>
         <div class="popular-artists gallery-container">
-          <h2>Populaire artiesten</h2>
+          <h1>Populaire artiesten</h1>
         </div>
       </main>
       <footer class="grid col">
