@@ -1,0 +1,329 @@
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1.5fr 15fr 2fr;
+  grid-template-areas:
+    "left header"
+    "left main"
+    "footer footer";
+  border: 1px black solid;
+}
+.header {
+  grid-area: header;
+
+  background-color: rgb(13, 13, 27);
+}
+.header p:hover {
+  text-decoration: underline 2px white solid;
+}
+.header p {
+  background-color: rgb(59, 44, 44);
+  width: 200px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px white solid;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+}
+.left {
+  grid-area: left;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 70px 0.1fr 0.35fr 5fr 0.1fr;
+}
+.left p {
+  font-weight: bold;
+}
+
+.spotifylogo {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.spotifylogo img:hover {
+  border: 2px white solid;
+}
+.spotifylogo img {
+  width: 200px;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+.home {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 25px;
+}
+.home:hover {
+  text-decoration: underline 2px white solid;
+}
+.home p {
+  margin: 10px;
+  margin-top: 25px;
+}
+.search {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding-left: 25px;
+}
+.search:hover {
+  text-decoration: underline 2px white solid;
+}
+.search p {
+  margin: 10px;
+  margin-top: 25px;
+}
+img {
+  width: 35px;
+  margin-top: 15px;
+}
+.libraries {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding-left: 25px;
+}
+.libraries:hover {
+  text-decoration: underline 2px white solid;
+}
+.libraries p {
+  margin: 10px;
+  margin-top: 15px;
+}
+.libraries img {
+  margin: 0%;
+}
+.left h3 {
+  padding-left: 25px;
+}
+.createplaylist {
+  display: grid;
+  margin-bottom: 15px;
+  grid-template-columns: 1fr 5fr;
+}
+.createplaylist:hover {
+  text-decoration: underline 2px white solid;
+}
+.createplaylist p {
+  margin: 10px;
+  margin-top: 25px;
+}
+.createplaylist img {
+  padding-left: 25px;
+}
+.NP {
+  padding-left: 25px;
+}
+.NP1:hover {
+  text-decoration: underline 2px white solid;
+}
+.NP2:hover {
+  text-decoration: underline 2px white solid;
+}
+.NP3:hover {
+  text-decoration: underline 2px white solid;
+}
+.NP4:hover {
+  text-decoration: underline 2px white solid;
+}
+.NP5:hover {
+  text-decoration: underline 2px white solid;
+}
+.NP6:hover {
+  text-decoration: underline 2px white solid;
+}
+.installapp {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.installapp img {
+  margin-left: 20px;
+  width: 20px;
+  margin-top: ;
+}
+.installapp:hover {
+  text-decoration: underline 1px grey solid;
+}
+.installapp p {
+  margin: 10px;
+  margin-top: 25px;
+  font-size: small;
+  font-weight: lighter;
+  color: grey;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.profile:hover {
+  text-decoration: underline 2px solid white;
+}
+.profile img {
+  padding-left: 25px;
+  width: 30px;
+  padding: 10px;
+}
+.profile p {
+  margin: 10px;
+  margin-top: 25px;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(24, 24, 49);
+}
+.categories ul {
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
+  list-style: none;
+}
+.categories li {
+  color: grey;
+}
+.categories li:hover {
+  text-decoration: underline 5px green solid;
+}
+.recentlyplayed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.recentlyplayed img {
+  width: 200px;
+}
+.recentlyplayed p {
+  font-size: small;
+  margin: 15px;
+  color: grey;
+}
+.recentlyplayed h4 {
+  margin: 15px;
+}
+.rp1 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.rp2 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.rp3 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.rp4 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.rp5 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.rp6 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.main h1 {
+  margin-left: 30px;
+}
+.jd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10fr;
+  margin: 30px;
+  gap: 20px;
+}
+.jd1 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.jd2 h4:hover {
+  text-decoration: underline 2px white solid;
+}
+.johndoe img {
+  width: 200px;
+}
+.jd h4 {
+  text-align: center;
+  margin: 15px;
+}
+.main .johndoe p {
+  margin-left: 30px;
+  margin-top: 10px;
+  color: grey;
+  font-size: small;
+}
+.popular.artist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 100fr;
+  margin: 30px;
+  gap: 20px;
+}
+
+.popular.artist img {
+  width: 200px;
+  border-radius: 50%;
+}
+.popular.artist p {
+  margin-left: 30px;
+  margin-top: 10px;
+  color: grey;
+  font-size: small;
+}
+.main p {
+  margin-left: 30px;
+  color: gray;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(65, 65, 65);
+  position: sticky;
+  bottom: 0;
+}
+.f1 {
+  text-align: center;
+}
+.f1 img {
+  width: 30px;
+  margin: 15px;
+}
+.f1 .play {
+  width: 40px;
+}
+.f2 {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 30fr 300fr 0.5fr;
+}
+.f2 img:first-child {
+  width: 50px;
+  gap: 5px;
+  margin: 0%;
+  margin-bottom: 15px;
+}
+.f2 h4 {
+  padding-left: 10px;
+}
+.f2 p {
+  padding-left: 10px;
+}
+.f2 .small img {
+  width: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.f11 {
+  justify-content: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 10px 500px 10px;
+}
+.f11 p {
+  display: inline;
+}
+.barline {
+  border-radius: 100px;
+  background-color: white;
+  height: 7.5px;
+}
