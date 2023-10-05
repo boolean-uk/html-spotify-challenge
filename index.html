@@ -1,12 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  LEFT BAR      -->
+      <div class="left-bar">
+        <header class="left-bar-header">
+          <img src="./assets/img/logo.svg" alt="" />
+          <img src="./assets/img/spotify-svgrepo-com.svg" alt="" width="30px" />
+        </header>
+
+        <div class="left-bar-grid">
+          <section class="first">
+            <div class="quick-access">
+              <img src="./assets/img/home.svg" alt="" />
+              <p class="opacity">Home</p>
+            </div>
+            <div class="quick-access">
+              <img src="./assets/img/search.svg" alt="" />
+              <p class="opacity">Search</p>
+            </div>
+            <div class="quick-access">
+              <img src="./assets/img/libreria.svg" alt="" />
+              <p class="opacity">Library</p>
+            </div>
+            <h2>Playlist</h2>
+            <div class="playlist">
+              <img src="./assets/img/plus.svg" alt="" />
+              <p class="opacity">Create Playlist</p>
+            </div>
+            <div class="playlist-collapsible">
+              <p class="playlist-content opacity">Name Playlist</p>
+              <p class="playlist-content opacity">Name Playlist</p>
+              <p class="playlist-content opacity">Name Playlist</p>
+              <p class="playlist-content opacity">Name Playlist</p>
+              <p class="playlist-content opacity">Name Playlist</p>
+            </div>
+          </section>
+          <section class="second">
+            <div class="quick-access download opacity">
+              <img src="./assets/img/download.svg" alt="" width="25px" />
+              <p>Install app</p>
+            </div>
+
+            <hr class="opacity hr" />
+            <div class="quick-access">
+              <div class="user">
+                <img src="./assets/img/profile.svg" alt="" />
+              </div>
+              <h3>John Doe</h3>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!--   MAIN   -->
+      <main>
+        <header class="main-header">
+          <div class="main-header-content">
+            <h3>Upgrade to the highest</h3>
+          </div>
+        </header>
+
+        <nav class="navbar opacity">
+          <ul>
+            <li>IN EVIDENZA</li>
+            <li>PODCAST</li>
+            <li>CLASSIC</li>
+            <li>GENERI E MOOD</li>
+            <li>NUOVE USCITE</li>
+            <li>SCOPRI</li>
+          </ul>
+        </nav>
+
+        <!--   Recently Played    -->
+        <section>
+          <div class="title">
+            <h1>Recently Played</h1>
+          </div>
+
+          <div class="songs-list">
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/metal_lifting.jpg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Heavy Metal</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/stranger.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>
+                    Stranger Things, Vol. 1 (A Netflix Original Series
+                    Soundtrack)
+                  </h3>
+                  <p class="opacity">Kyle dixon & Michael Stain</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/aquietplace.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>A quite place</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/split.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Split</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/cure.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>A cure for wellness</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/sinister.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Sinister</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/split.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Splitl</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/metal_lifting.jpg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Heavy Metal</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--       Created for John Doe       -->
+        <section>
+          <div class="title">
+            <h1>Creato per John Doe</h1>
+            <p class="opacity">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, aliquid.
+            </p>
+          </div>
+
+          <div class="songs-list">
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/radar.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Release radar</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img src="./assets/img/mixdaily.jpeg" alt="" />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Daily Mix 1</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--         Popular Artists          -->
+        <section>
+          <div class="title">
+            <h1>Popular Artists</h1>
+            <p class="opacity">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, aliquid.
+            </p>
+          </div>
+
+          <div class="songs-list">
+            <div class="song-container">
+              <div class="song">
+                <img
+                  style="border-radius: 50%"
+                  src="./assets/img/youg.jpeg"
+                  alt=""
+                />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Heavy Metal</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="song-container">
+              <div class="song">
+                <img
+                  style="border-radius: 50%"
+                  src="./assets/img/einaudi.jpeg"
+                  alt=""
+                />
+                <img class="play-button" src="./assets/img/play.png" alt="" />
+                <div class="song-title">
+                  <h3>Heavy Metal</h3>
+                  <p class="opacity">Subtitle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!--   FOOTER  -->
+      <footer>
+        <div class="left-footer">
+          <div class="current-play">
+            <img src="./assets/img/sinister.jpeg" alt="" />
+            <div class="current-play-content">
+              <h3>Sinister</h3>
+              <p class="opacity">Brano Noma</p>
+            </div>
+          </div>
+
+          <div class="left-footer-icons">
+            <img src="./assets/img/heart2.svg" alt="" />
+            <img src="./assets/img/folder.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="middle-footer">
+          <div class="middle-footer-top">
+            <div class="middle-footer-icons">
+              <img src="./assets/img/shuffle.svg" alt="" />
+              <img src="./assets/img/play-left.svg" alt="" />
+              <img src="./assets/img/playButton.svg" alt="" />
+              <img src="./assets/img/play-right.svg" alt="" />
+              <img src="./assets/img/repeat.svg" alt="" />
+            </div>
+          </div>
+          <div class="middle-footer-bottom">
+            <p>0:25</p>
+            <div></div>
+            <div></div>
+            <p>4:35</p>
+          </div>
+        </div>
+
+        <div class="right-footer">
+          <div class="right-footer-icons">
+            <img src="./assets/img/list.svg" alt="" />
+            <img src="./assets/img/desktop.svg" alt="" />
+            <img src="./assets/img/volume.svg" alt="" />
+          </div>
+
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="footer-menu">
+          <img src="./assets/img/more2.svg" alt="" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
