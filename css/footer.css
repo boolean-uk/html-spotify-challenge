@@ -16,12 +16,16 @@
     align-items: center;
 }
 
-.currently-playing span {
+.current-song-artist {
     font-size: 12px;
     color: rgb(178, 175, 175);
 }
 
-.current-song-text:hover, .current-song-text:hover span {
+.current-song-name:hover {
+    text-decoration: underline;
+}
+
+.current-song-artist:hover {
     text-decoration: underline;
     color: white;
 }
