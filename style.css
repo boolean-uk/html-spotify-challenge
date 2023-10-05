@@ -1,0 +1,9 @@
+* {
+    margin:0;
+}
+body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color:black;
+    color:white;
+}
