@@ -48,7 +48,7 @@ svg {
 }
 
 
-.core__main--section__title span:hover, .right-side__queue span:hover, .right-side__song-cover span:hover, .player__song--name p:hover, .player__song--name span:hover {
+.core__main--section__title span:hover, .right-side__queue span:hover, .right-side__queue p:hover, .right-side__song-cover span:hover, .right-side__song-cover p:hover, .player__song--name p:hover, .player__song--name span:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -320,6 +320,7 @@ svg {
     border-radius: 8px;
     background-color: #2b2a2a;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .right-side__band-info--cover {
@@ -370,6 +371,12 @@ svg {
     cursor: pointer;
 }
 
+.right-side__band-info--box__follow > button:hover {
+    transition: all ease-in 100ms;
+    transform: scale(1.1);
+    border: 1px solid #fff;
+}
+
 .right-side__band-info--box__info> p {
     color: var(--icongrey);
     font-size: 0.82rem;
@@ -413,6 +420,7 @@ svg {
 
 .right-side__queue--current > img {
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .right-side__queue--song {
