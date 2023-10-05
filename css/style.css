@@ -263,4 +263,76 @@ p {
 .control-bar {
     display: grid;
     grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: 8vh;
+}
+
+/* LEFT-CONTROL BAR */
+
+.control-bar-left {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 10px;
+    align-items: center;
+}
+
+.icons{
+    width: 20px;
+}
+
+.playing-now{
+    width: 50px;
+}
+
+/* MIDDLE CONTROL BAR */
+.middle-icons {
+    width: 20px;
+}
+
+.control-bar-middle {
+    display: grid;
+    grid-template: 
+    ".        shuffle  previous play     forward  repeat   .       " 1fr
+    "time-one progress progress progress progress progress time-two"1fr/
+    2fr       30px      30px    50px      30px       30px     2fr         ;
+
+    margin: 10px;
+    gap: 0px 30px;
+    place-items: center;
+}
+
+.shuffle {
+    grid-area: shuffle;
+}
+.previous {
+    grid-area: previous;
+}
+.play {
+    grid-area: play;
+    width: 40px;
+}
+.forward {
+    grid-area: forward;
+}
+.repeat {
+    grid-area: repeat;
+}
+.time-one {
+    grid-area: time-one;
+}
+.progress {
+    grid-area: progress;
+}
+.time-two {
+    grid-area: time-two;
+}
+
+
+/* RIGHT CONTROL BAR */
+
+.control-bar-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
+    gap: 20px;
+    margin: 10px;
+    align-items: center;
 }
