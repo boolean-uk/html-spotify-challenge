@@ -52,10 +52,11 @@
 
 .upgrade a {
     color: white;
+    cursor: pointer;
 }
 
-a:hover > .upgrade {
-    color: rgb(7, 218, 7);
+.upgrade:hover {
+    color: pink;
 }
 
 
@@ -87,7 +88,7 @@ a:hover > .upgrade {
    padding: 20px 0 50px 50px;
 }
 
-.home {
+.home a{
     color: white;
 }
 
@@ -108,7 +109,7 @@ input:valid {
     background-color: black;
     border: none;
     outline: none;
-    color:
+    color: grey;
 }
 
 .search-icon {
@@ -133,12 +134,21 @@ input:valid {
     padding: 0 0 20px 15px;
 }
 
-.create-playlist {
+.button {
     color: grey;
     font-size: 13px;
     padding: 0 0 20px 60px;
-
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    border: none;
 }
+
+.button:hover {
+    color: pink;
+}
+
 
 .plus-icon {
     position: absolute;
@@ -229,7 +239,7 @@ a:hover {
     grid-area: main;
     padding-left: 20px;
     padding-right: 180px;
-    grid-template-columns: repeat( auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
 }
 
 .sub-title {
@@ -259,14 +269,6 @@ a:hover {
     padding-top: 10px;
 }
 
-
-.play-button {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 770px;
-    top: 280px;
-}
 
 
 .created-by {
@@ -298,6 +300,51 @@ a:hover {
     padding-top: 15px;
 }
 
+
+.popular-artist{
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+}
+
+.popular-subheading {
+    color: grey;
+    padding-left: 15px;
+}
+
+.main-content3{
+    display: grid;
+    grid-area: main;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    grid-template-columns: 250px 250px;
+}
+
+
+.album-cards3 {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    color: white;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+.title-cover3 {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.you-cover {
+    border-radius: 100px;
+}
+
+.player-cover {
+    border-radius: 100px;
+}
 
 
 .footer {
