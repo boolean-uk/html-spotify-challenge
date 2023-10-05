@@ -17,7 +17,7 @@
         <!-- HEADER -->
         <header class="header grid">
             <div class="logo grid">
-                <img class="spotify-logo" src="./svgs/spotify-logo.svg" alt="spotify logo" width="50">
+                <img class="spotify-logo" src="./svgs/spotify-logo.svg" alt="spotify logo" width="45">
                 <h1 class="spotify-header">Spotify</h1>
             </div>
             <div class="header-bar grid">
@@ -75,7 +75,7 @@
                 </a>
             </div>
             <!-- MAIN CONTENT -->
-            <div class="main-content grid">
+            <section class="main-content grid">
                 <nav class="main-navigation grid">
                     <ul class="main-navigation-list grid">
                         <a href="#">
@@ -101,18 +101,72 @@
                         </a>
                     </ul>
                 </nav>
-                <div class="music-selection">
-                    <div class="recently-played">Recently Played</div>
-                    <div class="created-for-you">Created for You</div>
-                    <div class="popular-artists">Popular Artists</div>
+                <div class="music-selection grid">
+                    <div class="recently-played grid">
+                        <h2 class="white-text">Recently played</h2>
+                        <div class="music-cards grid">
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/metal_lifting.jpg" alt="metal lifting" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Heavy Metal</h3>
+                                <p class="gray-text">Various Artists</p>
+                            </a>
+                            <div class="music-card-details grid">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/stranger.jpeg" alt="stranger things" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <p class="gray-text">Kylie Dixon & Michael Stein</p>
+                            </div>
+                            <div class="music-card-details grid">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/aquietplace.jpeg" alt="a quiet place" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">A Quiet Place</h3>
+                                <p class="gray-text">Marco Beltrami</p>
+                            </div>
+                            <div class="music-card-details grid">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/split.jpeg" alt="split" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Split</h3>
+                                <p class="gray-text">West Dylan Thordson</p>
+                            </div>
+                            <div class="music-card-details grid">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/cure.jpeg" alt="cure" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">A Cure for Wellness</h3>
+                                <p class="gray-text">Benjamin Wallfisch</p>
+                            </div>
+                            <div class="music-card-details grid">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/sinister.jpeg" alt="sinister" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Sinister</h3>
+                                <p class="gray-text">By KIT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="made-for-you grid">Made for Satoki
+
+                    </div>
+                    <!-- <div class="popular-artists grid">Popular Artists</div> -->
                 </div>
-            </div>
+            </section>
         </main>
         <!-- FOOTER -->
         <footer class="footer grid">
             <div class="currently-playing grid">
                 <img src="./assets/img/sinister.jpeg" alt="sinister cover" width="50">
-                <a class="current-song-text" href="#">
+                <a class="current-song-text white-text" href="#">
                     <p><strong>Sinister</strong><br><span>Brano Nome</span></p>
                 </a>
                 <a class="hover-green" href="#">

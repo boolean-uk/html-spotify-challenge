@@ -2,6 +2,11 @@
 .left-menu {
     grid-template-rows: 140px 1fr 40px 50px;
     background-color: black;
+    width: 250px;
+    height: calc(100% - 165px);
+    position: fixed;
+    left: 0;
+    top: 90px;
 }
 
 /* GENERAL NAV */
@@ -103,9 +108,4 @@
 
 .install-app img, .profile img {
     justify-self: center;
-}
-
-/* REMOVE LINK TEXT DECORATION */
-.general-nav-link, .create-playlist, .playlists-list a, .install-app, .profile {
-    text-decoration: none;
 }

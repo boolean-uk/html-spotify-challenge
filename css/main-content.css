@@ -1,8 +1,13 @@
 .main-content {
     grid-template-rows: 50px 1fr;
     background-color: rgb(17, 20, 29);
+    width: calc(100% - 250px);
+    position: fixed;
+    right: 0;
+    top: 90px;
 }
 
+/* MAIN NAVIGATION BAR */
 .main-navigation {
     justify-content: center;
 }
@@ -31,4 +36,61 @@
 
 .main-navigation a {
     text-decoration: none;
+}
+
+/* MUSIC SELECTION SECTION */
+.music-selection {
+    grid-template-rows: repeat(auto-fit, 315px);
+    gap: 30px;
+    padding: 0 20px;
+    overflow-y: scroll;
+}
+
+.recently-played, .made-for-you {
+    grid-template-rows: 40px 260px;
+    /* margin-bottom: 10px; */
+}
+
+.music-cards {
+    grid-template-columns: repeat(auto-fit, 180px);
+    gap: 20px;
+    justify-items: start;
+    overflow-y: hidden;
+}
+
+.music-card-details {
+    grid-template-rows: 150px auto auto;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: start;
+    background-color: rgb(28, 26, 26);
+}
+
+.music-card-details h3 {
+    font-size: 14px;
+}
+
+.music-card-details p {
+    font-size: 12px;
+}
+
+.music-cover-image {
+    position: relative;
+}
+
+.music-hover-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #35e335;
+    opacity: 0;
+}
+
+.music-card-details:hover {
+    background-color: var(--background-hover-gray);
+}
+.music-card-details:hover .music-hover-icon {
+    opacity: 100%;
 }
