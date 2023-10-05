@@ -40,6 +40,10 @@ footer {
     height: 60px;
 }
 
+img {
+    width: 140px;
+}
+
 /*RECCURENT STYLES*/
 
 a {
@@ -54,6 +58,7 @@ h2 {
 h3 {
     font-weight:300;
     font-variant: small-caps;
+    font-size: 16px;
 }
 h4 {
 
@@ -160,16 +165,28 @@ button > h3 {
 
 #display-content {
     width: calc(100vw - 180px);
+    padding-top: 140px;
 }
 
 .playlists-container {
+    padding-top: 20px;
     display: grid;
-    grid-template-columns:repeat(auto-fit, 150px);
+    grid-template-columns:repeat(auto-fit, 140px);
+    gap: 30px 10px;
 }
 
 .album {
     height: 200px;
-    width: 100px;
+    width: 150px;
+    text-align: center;
+}
+
+.album-title {
+    padding: 5px;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
 }
 
 .category {
