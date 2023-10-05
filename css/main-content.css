@@ -2,9 +2,14 @@
     grid-template-rows: 50px 1fr;
     background-color: rgb(17, 20, 29);
     width: calc(100% - 250px);
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 90px;
+    bottom: 75px;
+}
+
+.main-content h2 {
+    line-height: 1.7;
 }
 
 /* MAIN NAVIGATION BAR */
@@ -40,15 +45,16 @@
 
 /* MUSIC SELECTION SECTION */
 .music-selection {
-    grid-template-rows: repeat(auto-fit, 315px);
+    grid-template-rows: repeat(auto-fit, 320px);
     gap: 30px;
-    padding: 0 20px;
+    padding: 20px;
     overflow-y: scroll;
 }
 
 .recently-played, .made-for-you {
-    grid-template-rows: 40px 260px;
-    /* margin-bottom: 10px; */
+    grid-template-rows: 60px 260px;
+    gap: 5px;
+    padding-bottom: 10px;
 }
 
 .music-cards {
@@ -59,7 +65,7 @@
 }
 
 .music-card-details {
-    grid-template-rows: 150px auto auto;
+    grid-template-rows: 150px repeat(auto-fit, auto);
     gap: 5px;
     padding: 15px;
     border-radius: 10px;
@@ -93,4 +99,12 @@
 }
 .music-card-details:hover .music-hover-icon {
     opacity: 100%;
+}
+
+.made-for-you-heading p, .popular-artists-heading p {
+    font-size: 12px;
+}
+
+.popular-artists img {
+    border-radius: 3000px;
 }
