@@ -50,6 +50,7 @@ h3 {
     font-size: 16px;
 }
 h4 {
+    display: inline-block;
 
 }
 p {
@@ -73,6 +74,12 @@ li {
     width: 170px;
 }
 
+.big-icon {
+    width: 30px;
+}
+.small-icon {
+    width: 15px;
+}
 
 /*SIDE MENU*/
 #side-menu {
@@ -90,14 +97,35 @@ li {
 #general-menu {
     height:140px;
 }
-
+#search-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(121, 120, 120);
+}
 #playlist-menu {
     height: 500px;
 }
 
 #playlist-menu li{
-    margin: 10px 0;
+    margin: 17px 0;
 }
+
+#playlist-menu li:first-child > a {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+}
+
+#create-playlist {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
 
 #side-menu footer {
     bottom: 60px;
@@ -251,19 +279,39 @@ button > h3 {
 /* FOOTER */
 
 #main-footer {
-    padding: 0 0 10px 180px;
-    width: calc(100vw - 180px);
+    padding: 0 0 10px 10px;
+    width: 100vw;
     display: grid;
     grid-template-columns: 200px 1fr 200px;
+    z-index: 1;
 }
 
 #display-track {
     display: grid;
-    grid-template-columns: 50px 1fr repeat(2, 20px);
+    grid-template-columns: 60px 1fr repeat(2, 20px);
+    gap: 5px;
+    align-self: center;
+    color: white;
+}
+
+#display-track div {
+    display: grid;
+    align-self: center; 
+}
+
+#display-track div h4 {
+color: white;
+}
+
+#current-track-img {
+    width: 100%;
+    margin: 5px 0;
 }
 #player {
     display: grid;
     grid-template-rows: 2fr 1fr;
+    max-width: 200px;
+    place-self: center;
 }
 #settings-shortcuts {
     display: grid;
@@ -271,19 +319,6 @@ button > h3 {
 
 }
 
-
-#main-footer > div {
-    border: 1px solid yellow;
-}
-#display-track > div {
-    border: 1px solid rgb(0, 229, 255);
-}
-#player > div {
-    border: 1px solid rgb(0, 229, 255);
-}
-#settings-shortcuts > div {
-    border: 1px solid rgb(0, 229, 255);
-}
 
 #player-controls{
     display: grid;
