@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="spotify.css"/>
+    <form method="post" action="page2.html">
+    <form method="post" action="playlist.html">
+    <form method="post" action="profile.html"></form>
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +15,11 @@
     <div class="grid">
         <div class="header">
             <div class="upgrade">
+                <form>
+                    <nav>
                 <a href="page2.html">Upgrade to Premium</a>
+                    </nav>
+                </form>
             </div>
         </div>
 
@@ -25,46 +32,52 @@
             <h2 class="title">Spotify</h2>
 
             <div class="left1">
+                <form>
                 <section>
                  <nav>
                    <img class="home-icon" src="https://raw.githubusercontent.com/Callumhayden99/html-spotify-challenge/ed5c71ad6576f1840b43fa1da2726d0aa6dd68c3/assets/img/home.svg" width="50" alt="home icon">
-                   <div class="home">Home</div>
+                   <div class="home"><a href="./page2.html">Home</a></div>
                    <br>
                    <img class="search-icon" src="https://raw.githubusercontent.com/Callumhayden99/html-spotify-challenge/ed5c71ad6576f1840b43fa1da2726d0aa6dd68c3/assets/img/search.svg" width="50" alt="search icon">
-                   <div>Search</div>
+                   <label class="search">
+                     <input type="text" placeholder="Search">
+                   </label>
+                   <br>
                    <br>
                    <img class="libary-icon" src="https://raw.githubusercontent.com/Callumhayden99/html-spotify-challenge/ed5c71ad6576f1840b43fa1da2726d0aa6dd68c3/assets/img/libreria.svg" width="50" alt="libary icon">
-                   <div>Your libary</div>
+                   <div><a href="./page2.html">Your libary</a></div>
                  </nav>
                 </section>
+               </form>
             </div>
 
             <div class="left2">
-
+               <form>
                <section>
                     <div class="playlist">PLAYLIST</diV>
                         <img class="plus-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeejb1bBfzxvu5IAxgVJMUwDb_HGFj4Gv9vQ&usqp=CAU" width="50" alt="plus icon">
                     <div class="create-playlist"> Create playlist</div>
                     <div class="list">
-                    <div class="rock">Rock Playlist</div>
-                    <div class="chill">Chill Playlist</div>
-                    <div class="gym">Gym Playlist</div>
-                    <div class="friday">Friday Playlist</div>
-                    <div class="sad">Sad Playlist</div>
-                    <div class="country">Country Playlist</div>
-                    <div class="pop">Pop Playlist</div>
+                    <div class="rock"><a href="./playlist.html">Rock Playlist</a></div>
+                    <div class="chill"><a href="./playlist.html">Chill Playlist</a></div>
+                    <div class="gym"><a href="./playlist.html">Playlist</a></div>
+                    <div class="friday"><a href="./playlist.html">Friday Playlist</a></div>
+                    <div class="sad"><a href="./playlist.html">Sad Playlist</a></div>
+                    <div class="country"><a href="./playlist.html">Country Playlist</a></div>
+                    <div class="pop"><a href="./playlist.html">Pop Playlist</a></div>
                     </div>
                </section>
+              </form>
             </div>        
 
 
             <div class="left3">
                 <section>
                     <img class="small-icon" src="https://raw.githubusercontent.com/Callumhayden99/html-spotify-challenge/ed5c71ad6576f1840b43fa1da2726d0aa6dd68c3/assets/img/logo-small.svg" width="50" alt="small icon">
-                <div class="install">Install app</div>
+                <div class="install"><a href="./page2.html">Install app</a></div>
                 <hr>
                 <img class="profile-icon" src="https://raw.githubusercontent.com/Callumhayden99/html-spotify-challenge/ed5c71ad6576f1840b43fa1da2726d0aa6dd68c3/assets/img/profile.svg" width="50" alt="profile icon">
-                <div class="profile"><strong>Callum Hayden</strong></div>
+                <div class="profile"><a href="./profile.html"><strong>Callum Hayden</strong></a></div>
                 </section>
             </div>
 
@@ -74,7 +87,7 @@
 
 
           <div class="main">
-
+            <form>
             <nav>
             <div class="main-nav">
                 <div><a href="page2.html">OVERVIEW</a></div>
@@ -85,13 +98,14 @@
                 <div><a href="page2.html">DISCOVER</a></div>
             </div>
             </nav>
+            </form>
 
             <h2 class="sub-title">Recently played</h2>
 
 
 
           <div class="main-content">
-
+            
             <div class="album-cards">
 
                 <img class="heavy-cover" src="https://github.com/Callumhayden99/html-spotify-challenge/blob/main/assets/img/metal_lifting.jpg?raw=true" width="180" alt="heavy metal album cover">
