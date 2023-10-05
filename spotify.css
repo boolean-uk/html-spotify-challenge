@@ -120,7 +120,7 @@ a:hover {
 }
 
 .header {
-    background-color: #1c1d2c;
+    background-color: #0b0c13;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -143,6 +143,7 @@ a:hover {
     display: grid;
     align-items: center;
     justify-content: center;
+    background-color: #141922;
 }
 
 .nav-elements {
@@ -161,6 +162,10 @@ a:hover {
 .nav-elements > a:hover {
     color: #ffffff;
     border-bottom: springgreen solid 5px;
+}
+
+.main-display {
+    background-color: #141922;
 }
 
 .recently-played {
