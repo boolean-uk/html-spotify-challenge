@@ -216,16 +216,25 @@ hr {
 
 /* start of main section */
 .main {
-grid-area: main;
-overflow-y: scroll;
-background-color: rgb(27, 25, 38);
+    display: grid;
+    grid-area: main;
+    overflow-y: scroll;
+    background-color: rgb(27, 25, 38);
+    grid-template:
+
+    "main-nav"50px
+    "main-content" 2fr 
+    "main-content2" 1fr
+    "main-content3" 1fr /
+       1fr;
 }
 
 /* main section top nav bar */
 .main-nav {
     display: grid;
-    grid-area: main;
+    grid-area: main-nav;
     font-size: 13px;
+    gap: 50px;
     font-weight: bold;
     margin-top: 20px;
     grid-template-columns: repeat(6, 1fr);
@@ -245,19 +254,23 @@ a:hover {
 }
 
 
+
+
 /* main spotify album content section */
 .main-content {
     display: grid;
-    grid-area: main;
+    grid-area: main-content;
+    margin-top: 90px;
     padding-left: 20px;
-    padding-right: 180px;
+    padding-right: 10px;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
 }
 
 .sub-title {
+    grid-area: main-content;
     color: white;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
+    padding-top: 40px;
     padding-left: 15px;
 }
 
@@ -283,17 +296,29 @@ a:hover {
 /* end of first main content section */
 
 /* second section in main content */
+
+.main-conten2 {
+    display: grid;
+    grid-area: main-content2;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    place-content: start;
+
+}
+
 .created-by {
+    display: grid;
+    grid-area: main-content2;
     color: white;
-    padding-top: 50px;
-    padding-left: 15px;
+    margin: 40px 0 0px 15px;
+    padding-bottom: 50px;
+
 }
 
 .main-content2{
     display: grid;
-    grid-area: main;
+    grid-area: main-content2;
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 70px;
     grid-template-columns: 250px 250px;
 }
 
@@ -313,27 +338,47 @@ a:hover {
 }
 
 
-.popular-artist{
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 15px;
 
-}
 
-.popular-subheading {
-    color: grey;
-    padding-left: 15px;
-}
 /* end of section 2 main content */
 
 
 /* start of section 3 main content */
+
+
 .main-content3{
     display: grid;
-    grid-area: main;
+    grid-area: main-content3;
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 80px;
+    grid-template:
+
+    "album-cards3" 1fr /
+       1fr;
+}
+
+.popular-artist{
+    display: grid;
+    grid-area: main-content3;
+    color: white;
+    padding-left: 15px;
+    padding-top: 40px;
+
+}
+
+.popular-subheading {
+    display: grid;
+    grid-area: main-content3;
+    color: grey;
+    padding-left: 15px;
+    padding-top: 80px;
+}
+
+.main-content3{
+    display: grid;
+    grid-area: main-content3;
+    padding-left: 20px;
+    margin-top: 80px;
     grid-template-columns: 250px 250px;
 }
 
@@ -366,19 +411,29 @@ a:hover {
 
 /* start of the footer section */
 .footer {
+    display: grid;
     grid-area: footer;
     background-color: rgb(42, 41, 41);
+    grid-template:
+
+    "footer-left  main-footer  right-footer" 70px /
+      1fr            1fr          1fr;
+
+
 }
 
 .album {
+    grid-area: footer-left;
     color: white;
     font-size: 11px;
-    margin: -5px 0 0 65px;
+    margin-top:40px;
+    margin-left:65px
 
 }
 
 .album-cover {
     position: relative;
+    grid-area: footer-left;
     height: 35px;
     width: 35px;
     top: 30px;
@@ -387,91 +442,159 @@ a:hover {
 }
 
 .singer {
+    grid-area: footer-left;
     color: grey;
     font-size: 10px;
     margin-left: 65px;
+    margin-top: 50px;
 }
 /* image */
 .heart-icon {
     position: relative;
+    grid-area: footer-left;
     height: 25px;
     width: 25px;
     left: 190px;
-    top: -30px;
+    top: 40px;
 }
 
 /* image */
 .save-icon {
     position: relative;
+    grid-area: footer-left;
     height: 20px;
     width: 20px;
-    left: 210px;
-    top: -30px;
+    left: 230px;
+    top: 42px;
 }
 
 /* image */
 .shuffle-icon {
     position: relative;
+    grid-area: main-footer;
     height: 20px;
     width: 20px;
-    left: 820px;
-    top: -50px;
+    top: 23px;
+    left: 180px;
+
+
 }
 /* image */
 .rewind-icon {
     position: relative;
+    grid-area: main-footer;
     height: 25px;
     width: 25px;
-    left: 825px;
-    top: -48px;
+    left: 220px;
+    top: 20px;
 }
 
 /* image */
 .play-icon{
     position: relative;
+    grid-area: main-footer;
     height: 30px;
     width: 30px;
-    left: 930px;
-    top: -47px;
+    left: 280px;
+    top: 17px;
 }
 
 /* image */
 .forward-icon {
     position: relative;
+    grid-area: main-footer;
     height: 25px;
     width: 25px;
-    left: 940px;
-    top: -50px;
+    left: 345px;
+    top: 20px;
 }
 /* image */
 .replay-icon {
     position: relative;
+    grid-area: main-footer;
     height: 25px;
     width: 25px;
-    left: 980px;
-    top: -50px;
+    left: 395px;
+    top: 20px;
 }
 /* image */
 .options-icon {
     position: relative;
+    grid-area: right-footer;
     height: 20px;
     width: 20px;
-    left: 1430px;
-    top: -30px;
+    left: 400px;
+    top: 40px;
 }
 /* image */
 .share-icon {
     position: relative;
+    grid-area: right-footer;
     height: 20px;
     width: 20px;
-    left: 1470px;
-    top: -30px;
+    left: 450px;
+    top: 40px;
 }
 /* image */
 .volume-icon {
     position: relative;
+    grid-area: right-footer;
     height: 20px;
     width: 20px;
-    left: 1500px;
-    top: -30px;
+    left: 500px;
+    top: 40px;
+}
+
+
+.song-time {
+    display: grid;
+    grid-area: main-footer;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 55px;
+    margin-left: 10px;
+
+}
+
+.song-time input {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 560px
+    
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #a5a5a5;
+    border-radius: 20px;
+}
+
+
+input[type="range"]::-moz-range-track {
+    height: 5px;
+    background-color: #a5a5a5;
+    border-radius: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10px;
 }
