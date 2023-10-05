@@ -413,7 +413,7 @@ grid-area: name-icon;
 
 .header {
     grid-area: header;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     background-color: rgba(7, 7, 16, 0.947);
 
     display: grid;
@@ -426,13 +426,13 @@ grid-area: name-icon;
 
 .header-filler {
     grid-area: header-filler;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
  
 }
 
 .upgrade-button {
     grid-area: upgrade-button;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .upgrade-button > button {
@@ -460,7 +460,7 @@ grid-area: name-icon;
 /* MAIN */
 .main {
     grid-area: main;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     background-color: rgb(9, 9, 21);
 
     display: grid;
@@ -482,7 +482,7 @@ grid-area: name-icon;
 
 .main-nav-bar-con {
     grid-area: main-nav-bar-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "main-nav-empty1 nav-list  main-nav-empty2";
@@ -495,11 +495,11 @@ grid-area: name-icon;
 
 .main-nav-empty1 {
     grid-area: main-nav-empty1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 .nav-list {
     grid-area: nav-list;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:"main-playlist-con main-podcast-con main-artist-con main-albums-con main-downloaded-con" ;
@@ -512,7 +512,7 @@ grid-area: name-icon;
 
 .main-playlist-con {
     grid-area: main-playlist-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
 }
 
@@ -524,7 +524,7 @@ grid-area: name-icon;
 
 .main-podcast-con {
     grid-area: main-podcast-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .main-podcast-con > p {
@@ -535,7 +535,7 @@ grid-area: name-icon;
 
 .main-artist-con  {
     grid-area: main-artist-con ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .main-artist-con > p {
@@ -546,7 +546,7 @@ grid-area: name-icon;
 
 .main-albums-con {
     grid-area: main-albums-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .main-albums-con > p {
@@ -557,7 +557,7 @@ grid-area: name-icon;
 
 .main-downloaded-con {
     grid-area: main-downloaded-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .main-downloaded-con > p {
@@ -574,14 +574,14 @@ grid-area: name-icon;
 
 .main-nav-empty2 {
     grid-area: main-nav-empty2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 /* Recently Played */
 
 .recently-played-con {
     grid-area: recently-played-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "recently-played-text";
@@ -592,7 +592,7 @@ grid-area: name-icon;
 
 .recently-played-text {
     grid-area:recently-played-text ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .recently-played-text > p {
@@ -606,7 +606,7 @@ grid-area: name-icon;
 
 .albumsOne-con {
     grid-area: albumsOne-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     display: grid;
     grid-template: "albumOne-1 albumOne-2 albumOne-3 albumOne-4 albumOne-5 albumOne-6";
     grid-template-columns: repeat(6,1fr);
@@ -620,7 +620,7 @@ grid-area: name-icon;
 
 .albumOne-1 {
     grid-area: albumOne-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     margin-left: 20px;
 
     display: grid;
@@ -628,7 +628,7 @@ grid-area: name-icon;
     "album-coverOne-1" 
     "album-name-coverOne-1"
     "album-subtitleOne-1";
-    grid-template-rows: 180px 40px 40px ;
+    grid-template-rows: 180px 30px 40px ;
     
     gap: 5px;
     padding: 5px;
@@ -636,7 +636,7 @@ grid-area: name-icon;
 
 .album-coverOne-1 {
     grid-area:album-coverOne-1 ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     overflow: hidden;
 }
 
@@ -651,32 +651,32 @@ grid-area: name-icon;
 
 .album-name-coverOne-1 {
     grid-area: album-name-coverOne-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-coverOne-1 >p {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 39px;
 }
 
 .album-subtitleOne-1 {
     grid-area: album-subtitleOne-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-subtitleOne-1 > p {
     color: grey;
     font-size: 13px;
    
-    margin-left: 65px;
+    margin-left: 60px;
 }
 
 /* ALBUM-ROW-ONE 2 */
 
 .albumOne-2 {
     grid-area: albumOne-2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
@@ -693,7 +693,7 @@ grid-area: name-icon;
 
 .album-coverOne-2 {
     grid-area:album-coverOne-2 ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-coverOne-2 > img {
@@ -707,7 +707,7 @@ grid-area: name-icon;
 
 .album-name-coverOne-2 {
     grid-area: album-name-coverOne-2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
@@ -719,7 +719,7 @@ grid-area: name-icon;
 
 .album-subtitleOne-2 {
     grid-area:album-subtitleOne-2 ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-subtitleOne-2 > p {
@@ -732,14 +732,14 @@ grid-area: name-icon;
 /* ALBUM-ROW-ONE 3 */
 .albumOne-3 {
     grid-area: albumOne-3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
     "album-coverOne-3" 
     "album-name-coverOne-3"
     "album-subtitleOne-3";
-    grid-template-rows: 180px 40px 40px ;
+    grid-template-rows: 180px 30px 40px ;
     
     gap: 5px;
     padding: 5px;
@@ -748,7 +748,7 @@ grid-area: name-icon;
 
 .album-coverOne-3 {
     grid-area: album-coverOne-3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-coverOne-3 > img {
@@ -761,18 +761,19 @@ grid-area: name-icon;
 
 .album-name-coverOne-3 {
     grid-area: album-name-coverOne-3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-coverOne-3 >p {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 39px;
+    /* margin-top: 5px; */
 }
 
 .album-subtitleOne-3 {
     grid-area: album-subtitleOne-3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-subtitleOne-3 > p {
@@ -786,14 +787,14 @@ grid-area: name-icon;
 
 .albumOne-4 {
     grid-area: albumOne-4;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
     "album-coverOne-4" 
     "album-name-coverOne-4"
     "album-subtitleOne-4";
-    grid-template-rows: 180px 40px 40px ;
+    grid-template-rows: 180px 30px 40px ;
     
     gap: 5px;
     padding: 5px;
@@ -803,13 +804,13 @@ grid-area: name-icon;
 
 .album-coverOne-4 {
     grid-area: album-coverOne-4;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
 }
 
 .album-name-coverOne-4 {
     grid-area: album-name-coverOne-4;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
 }
 
@@ -823,13 +824,13 @@ grid-area: name-icon;
 
 .album-subtitleOne-4 {
     grid-area: album-subtitleOne-4;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
 .album-name-coverOne-4 >p {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 70px;
 }
 
@@ -844,14 +845,14 @@ grid-area: name-icon;
 /* ALBUM-ROW-ONE 5 */
 .albumOne-5 {
     grid-area: albumOne-5;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
     "album-coverOne-5" 
     "album-name-coverOne-5"
     "album-subtitleOne-5";
-    grid-template-rows: 180px 40px 40px ;
+    grid-template-rows: 180px 30px 40px ;
     
     gap: 5px;
     padding: 5px;
@@ -860,7 +861,7 @@ grid-area: name-icon;
 
 .album-coverOne-5 {
     grid-area: album-coverOne-5;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-coverOne-5 > img {
@@ -873,18 +874,18 @@ grid-area: name-icon;
 
 .album-name-coverOne-5 {
     grid-area: album-name-coverOne-5;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-coverOne-5 >p {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 15px;
 }
 
 .album-subtitleOne-5 {
     grid-area: album-subtitleOne-5;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-subtitleOne-5 > p {
@@ -897,7 +898,7 @@ grid-area: name-icon;
 /* ALBUM-ROW-ONE 6 */
 .albumOne-6 {
     grid-area: albumOne-6;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     margin-right: 20px;
 
     display: grid;
@@ -905,7 +906,7 @@ grid-area: name-icon;
     "album-coverOne-6" 
     "album-name-coverOne-6"
     "album-subtitleOne-6";
-    grid-template-rows: 180px 40px 40px ;
+    grid-template-rows: 180px 30px 40px ;
     
     gap: 5px;
     padding: 5px;
@@ -914,7 +915,7 @@ grid-area: name-icon;
 
 .album-coverOne-6 {
     grid-area: album-coverOne-6;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-coverOne-6 > img {
@@ -927,18 +928,18 @@ grid-area: name-icon;
 
 .album-name-coverOne-6 {
     grid-area: album-name-coverOne-6;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-coverOne-6 >p {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 55px;
 }
 
 .album-subtitleOne-6 {
     grid-area: album-subtitleOne-6;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
@@ -952,7 +953,7 @@ grid-area: name-icon;
 
 .created-by-con {
     grid-area: created-by-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     
 }
 .created-by-con > p {
@@ -973,7 +974,7 @@ font-size: 25px;
 /* ALBUM-ROW-TWO  */
 .albumsTwo-con {
     grid-area: albumsTwo-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "albumTwo-1 albumTwo-2 ";
@@ -985,7 +986,7 @@ font-size: 25px;
 /* ALBUM-ROW-TWO-1 */
 .albumTwo-1  {
     grid-area: albumTwo-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     margin-left: 20px;
 
     display: grid;
@@ -1002,7 +1003,7 @@ font-size: 25px;
 
 .album-coverTwo-1  {
     grid-area: album-coverTwo-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-coverTwo-1 > img {
@@ -1015,7 +1016,7 @@ font-size: 25px;
 
 .album-name-coverTwo-1 {
     grid-area: album-name-coverTwo-1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-coverTwo-1 >p {
@@ -1029,7 +1030,7 @@ font-size: 25px;
 /* ALBUM-ROW-TWO-2 */
 .albumTwo-2  {
     grid-area: albumTwo-2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
@@ -1046,7 +1047,7 @@ font-size: 25px;
 
 .album-coverTwo-2 {
     grid-area: album-coverTwo-2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     
 }
 
@@ -1061,7 +1062,7 @@ font-size: 25px;
 
 .album-name-coverTwo-2 {
     grid-area: album-name-coverTwo-2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
@@ -1078,7 +1079,7 @@ font-size: 25px;
 
 .popular-artists-con {
     grid-area: popular-artists-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
    
 }
 
@@ -1102,7 +1103,7 @@ font-size: 25px;
 
 .albumsThree-con {
     grid-area: albumsThree-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     display: grid;
     grid-template: "album-Three1 album-Three2";
     grid-template-columns: repeat(6,1fr);
@@ -1112,7 +1113,7 @@ font-size: 25px;
 
 .album-Three1  {
     grid-area: album-Three1 ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     margin-left: 20px;
 
     display: grid;
@@ -1129,7 +1130,7 @@ font-size: 25px;
 
 .album-coverThree1 {
     grid-area: album-coverThree1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     /* margin-left: 20px; */
 }
 
@@ -1143,7 +1144,7 @@ font-size: 25px;
 
 .album-name-cover-Three1 {
     grid-area: album-name-cover-Three1;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-cover-Three1 > p{
@@ -1154,7 +1155,7 @@ color: white;
 
 .album-Three2  {
     grid-area: album-Three2 ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:
@@ -1170,7 +1171,7 @@ color: white;
 
 .album-coverThree2 {
     grid-area: album-coverThree2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
@@ -1184,7 +1185,7 @@ color: white;
 
 .album-name-cover-Three2 {
     grid-area: album-name-cover-Three2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-name-cover-Three2 > p{
