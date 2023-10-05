@@ -14,7 +14,7 @@
   "sidebar main"
   "playBar playBar";
   grid-template-rows: 60px 1fr 80px;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 300px 1fr;
   background: #202020;
   overflow: hidden;
   
@@ -95,7 +95,6 @@
 .tabNav {
   display: grid;
   grid-gap: 20px;
-  /* grid-template-columns: repeat(auto-fit, 100px); */
   grid-auto-flow: column;
   justify-content: center;
 }
@@ -110,7 +109,7 @@
 
 .itemContainer {
   display: grid;
-  grid-gap: 15px;
+  gap: 15px;
   margin: 20px 0;
   grid-template-columns: repeat(auto-fit, 200px);
   grid-template-rows: repeat(auto-fill, min-content);
@@ -131,7 +130,7 @@
   width: 100%;
 }
 
-.artist {
+.main .artist {
   border-radius: 100%;
 }
 
@@ -166,29 +165,92 @@ img {
   grid-area: playBar;
   background: #333333;
   display: grid;
-  grid-template-columns: 250px 1fr 250px;
+  grid-template-columns: 300px 1fr 250px;
   padding: 10px;
+  align-content: center;
 }
 
 .playingNow {
-  height: 30px;
-  width: 250px;
+  display: grid;
+  grid-template-areas:
+  "picture songtitle favourite"
+  "picture artist favourite";
+  grid-template-columns: 40px 70% 20px;
+  font-size: 14px;
+  place-self: center;
+}
+
+.playingNow {
+  align-items: center;
+  height: 40px;
+  width: 300px;
 }
 
 .playingNow img {
+  grid-area: picture;
+}
 
+.playingNow .title {
+  grid-area: songtitle;
+  padding-left: 10px;
+}
+
+.playingNow .artist {
+  grid-area: artist;
+  font-size: 12px;
+  padding-left: 10px;
+  height: unset;
+}
+
+.playingNow .favourite {
+  grid-area: favourite;
 }
 
 .trackControl {
   display: grid;
-  justify-content: center;
+  grid-gap: 10px;
+  place-self: center;
+  align-items: center;
+  grid-template-areas: 
+  "shuffle back playpause forward repeatall"
+  "playedDuration . progressBar . totalDuration";
+  grid-template-columns: 20px 15px 40px 15px 20px;
+  grid-template-rows: 40px 40px;
 }
 
 .trackControl .progressBar {
   height: 4px;
   background-color: #8b8b8b;
+  grid-column-start: 3;
   border-radius: 2px;
-  width: 400px;
+}
+
+.trackControl .shuffle {
+  grid-area: shuffle;
+}
+
+.trackControl .back {
+  grid-area: back;
+}
+
+.trackControl .playpause {
+  grid-area: playpause;
+}
+
+.trackControl .forward {
+  grid-area: forward;
+}
+
+.trackControl .repeatall {
+  grid-area: repeatall;
+}
+
+.trackControl .playedDuration {
+  grid-area: playedDuration;
+}
+
+.trackControl .totalDuration {
+  grid-area: totalDuration;
 }
 
 .options {
