@@ -77,9 +77,9 @@ p {
     background-color: rgba(109, 109, 109, 0.466);
 }
 
+
+
 /* LEFT-MENU */
-
-
 
 .left-menu {
     grid-area: left-menu;
@@ -198,11 +198,11 @@ p {
 }
 
 .music-card {
+    position: relative;
     color: white;
     text-align: center;
     display: inline-block;
     margin: 20px 0px;
-    width: 170px;
 }
 
 .music-card-grid {
@@ -215,14 +215,26 @@ p {
     font-size: 13px;
 }
 
-.music-card img {
+.album-img {
     height: 170px;
     width: 170px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
-.artist {
+.overlay {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 65px;
+    width: 60px;
+}
+
+.music-card:hover + .overlay{
+    display: block;
+}
+
+.artist-img {
     height: 170px;
     width: 170px;
     margin-bottom: 10px;
