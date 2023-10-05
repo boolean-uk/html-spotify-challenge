@@ -252,35 +252,43 @@ a:hover {
 }
 
 
+.play-button {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 770px;
+    top: 280px;
+}
+
+
 .created-by {
     color: white;
     padding-top: 50px;
     padding-left: 15px;
 }
 
-.main-content2 {
+.main-content2{
     display: grid;
     grid-area: main;
     padding-left: 20px;
-
+    margin-bottom: 10px;
+    grid-template-columns: 250px 250px;
 }
 
 
 .album-cards2 {
     display: grid;
-    grid-area: main-content2;
+    grid-template-columns: auto;
+    justify-content: start;
     color: white;
     padding-top: 30px;
-    padding-right: 1000px;
 }
 
 .title-cover2 {
     font-size: 18px;
+    padding-left: 40px;
+    padding-top: 15px;
 }
-
-
-
-
 
 
 
