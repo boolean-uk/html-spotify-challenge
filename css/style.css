@@ -51,12 +51,14 @@ p {
 
 .hover:hover{
     color: white;
+    cursor: pointer;
 }
 .white {
     color: white;
 }
 .underline:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -300,6 +302,10 @@ p {
     width: 20px;
 }
 
+.middle-icons:hover{
+    cursor: pointer;
+}
+
 .control-bar-middle {
     display: grid;
     grid-template: 
@@ -338,10 +344,10 @@ p {
     grid-area: time-two;
 }
 
-.control-bar-middle input {
-    background: transparent;
+.control-bar-middle input[type="range"] {
+    width:300px;
     cursor: pointer;
-}
+  }
 
 
 /* RIGHT CONTROL BAR */
@@ -372,6 +378,10 @@ p {
         gap: 0px 10px;
         place-items: center;
     }
+    .control-bar-middle input[type="range"] {
+        width: auto;
+        cursor: pointer;
+      }
 }
 
 @media screen and (max-width: 665px) {
@@ -414,4 +424,11 @@ p {
         border-top: none;
     }
 
+}
+
+@media screen and (max-width: 710px) {
+    .control-bar {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+    }
 }
