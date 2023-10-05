@@ -464,7 +464,7 @@ border: 1px dashed white;
    "popular-artists-con"
    "albumsThree-con"
    ;
-   grid-template-rows: 70px 55px 360px 75px 360px 75px 360px  ;
+   grid-template-rows: 70px 55px 300px 75px 360px 75px 360px  ;
    gap: 2px;
    padding: 2px;
 }
@@ -600,9 +600,12 @@ border: 1px dashed white;
     border: 1px dashed white;
     display: grid;
     grid-template: "albumOne-1 albumOne-2 albumOne-3 albumOne-4 albumOne-5 albumOne-6";
-    grid-template-columns: repeat(6, minmax (0, 1fr));
+    grid-template-columns: repeat(6, (auto-fit, 250px));
+    grid-template-columns: max-content;
    
-    gap: 20px;
+    
+   
+    gap: 15px;
     padding: 5px;
 }
 
@@ -611,8 +614,54 @@ border: 1px dashed white;
     border: 1px dashed white;
     margin-left: 20px;
 
+    display: grid;
+    grid-template:
+    "album-coverOne-1" 
+    "album-name-coverOne-1"
+    "album-subtitleOne-1";
+    grid-template-rows: 180px 40px 40px ;
+    /* grid-template-columns: max-content; */
+    gap: 5px;
+    padding: 5px;
 }
 
+.album-coverOne-1 {
+    grid-area:album-coverOne-1 ;
+    border: 1px dashed white;
+}
+
+.album-coverOne-1 > img {
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 100%;
+  
+}
+
+.album-name-coverOne-1 {
+    grid-area: album-name-coverOne-1;
+    border: 1px dashed white;
+}
+
+.album-name-coverOne-1 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+
+.album-subtitleOne-1 {
+    grid-area: album-subtitleOne-1;
+    border: 1px dashed white;
+}
+
+.album-subtitleOne-1 > p {
+    color: grey;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+/* ALBUM 2 */
 
 .albumOne-2 {
     grid-area: albumOne-2;
@@ -620,11 +669,14 @@ border: 1px dashed white;
 
 }
 
+/* ALBUM 3 */
 .albumOne-3 {
     grid-area: albumOne-3;
     border: 1px dashed white;
 
 }
+
+/* ALBUM 4 */
 
 .albumOne-4 {
     grid-area: albumOne-4;
@@ -632,15 +684,18 @@ border: 1px dashed white;
 
 }
 
+/* ALBUM 5 */
 .albumOne-5 {
     grid-area: albumOne-5;
     border: 1px dashed white;
 
 }
 
+/* ALBUM 6 */
 .albumOne-6 {
     grid-area: albumOne-6;
     border: 1px dashed white;
+    margin-right: 20px;
 
 }
 .created-by-con {
