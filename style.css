@@ -22,7 +22,7 @@ body {
     grid-template-areas:
     "left main"
     "footer footer" ;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 225px 1fr;
     grid-template-rows: 1fr 100px;
     margin: 0px;
     height: 100vh;
@@ -49,13 +49,18 @@ li {
     padding-bottom: 10px;
 }
 
+li > span {
+    position: relative;
+    left: 8px;
+    bottom: 8px;
+}
 
 #user {
     height: 100px;
     /* background-color: purple; */
     position: fixed;
     bottom: 90px;
-    width: 200px;
+    width: 205px;
 }
 
 #create {
@@ -127,13 +132,43 @@ footer {
     grid-area: footer;
     background-color: rgb(70, 70, 70);
     display: grid;
-    grid-template-columns: 250px 1fr 250px;
+    grid-template-columns: 225px 1fr 250px;
     /* padding: 10px; */
 }
 
 #b-left {
     /* background-color: grey; */
+    padding-left: 10px;
 }
+
+#sinister {
+    width: 50px;
+    padding-top: 22px;
+}
+
+#b-left > div {
+    /* padding: 0px 5px 150px 0px; */
+    padding-bottom: 20px;
+    padding-left: 5px;
+    /* margin-bottom: 150px; */
+}
+
+#b-left > div > p {
+    margin: 0px;
+}
+
+.ur {
+    position: relative;
+    bottom: 10px
+}
+
+#heart, #folder {
+    width: 25px;
+    padding: 5px;
+    bottom: 6px;
+
+}
+
 
 #b-mid {
     /* background-color: yellowgreen; */
@@ -142,13 +177,69 @@ footer {
 }
 
 #playlist-controls {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 10px;
+    align-items: center;
 }
 
-#time-tracker {
-    background-color: blue;
+.small-icon {
+    height: 20px;
 }
+
+
+#time-tracker {
+    /* background-color: blue; */
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#time-tracker > div {
+    height: 6px;
+    width: 400px;
+    background-color: grey;
+    /* margin-top: 6px; */
+    border-radius: 3px;
+
+}
+
+#time-tracker > div > div {
+    width: 120px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
 
 #b-right {
     /* background-color: azure; */
+    display: grid;
+    grid-template-columns: repeat(3, 40px) 1fr;
+    align-content: center;
+}
+
+#b-right > img {
+    width: 20px;
+}
+
+#b-right > div {
+    height: 6px;
+    width: 120px;
+    background-color: grey;
+    margin-top: 6px;
+    border-radius: 3px;
+    /* margin-right: 10px; */
+}
+
+#b-right > div > div {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
 }
