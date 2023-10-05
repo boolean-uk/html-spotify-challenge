@@ -29,6 +29,8 @@ body {
 
   font-family: sans-serif;
   color: var(--main-text-color);
+
+  overflow: hidden;
 }
 
 body,
