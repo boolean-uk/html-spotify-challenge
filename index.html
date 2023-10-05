@@ -4,9 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/0ad0745a87.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <section class="sidebar">
+
+        <img src="assets/img/spotify-logo.png">
+
+        <div class="pages">
+            <div class="page-selector">
+                <img src="assets/img/home.svg">
+                <p>Home</p>
+            </div>
+            <div class="page-selector">
+                <img src="assets/img/search.svg">
+                <p>Search</p>
+            </div>
+            <div class="page-selector">
+                <img src="assets/img/libreria.svg">
+                <p>Library</p>
+            </div>
+        </div>
+
+        <div class="playlists">
+
+            <h3>PLAYLIST</h3>
+            <div class="add-playlist">
+                <img src="assets/img/add.png">
+                <p>Create playlist</p>
+            </div>
+            <p>Best songs ever</p>
+            <p>In the mood for coffee</p>
+            <p>Trying to sleep</p>
+            <p>Music I hate</p>
+            <p>Coolest songs ever</p>
+            <p>Death metal</p>
+            <p>K-pop</p>
+        </div>
+        <div class="sidebar-footer">
+            <div class="install-app">
+                <i class="fa-solid fa-circle-down" style="color: #ffffff; background-color: black; font-size: 10px; padding: 7px; padding-left: 14px;"></i>
+                <p>Install app</p>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="assets/img/profile.svg">
+                <h3>John Doe</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="core">
+
+        <header>
+            <h3>Upgrade now</h3>
+        </header>
+
+        <div class="categories">
+            <p>IN LIBRARY</p>
+            <p>PODCASTS</p>
+            <p>CATEGORIES</p>
+            <p>MOODS</p>
+            <p>INSIGHTS</p>
+        </div>
+
+        <h1>Recently Played</h1>
+
+        <div class="albums">
+            <div class="individual-album">
+                <img src="assets/img/metal_lifting.jpg">
+                <h4>Heavy Metal</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+            <div class="individual-album">
+                <img src="assets/img/sinister.jpeg">
+                <h4>Sinister</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+            <div class="individual-album">
+                <img src="assets/img/aquietplace.jpeg">
+                <h4>A Quiet Place</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+            <div class="individual-album">
+                <img src="assets/img/cure.jpeg">
+                <h4>A Cure For Wellness</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+            <div class="individual-album">
+                <img src="assets/img/stranger.jpeg">
+                <h4>Stranger Things</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+        </div>
+
+        <h1>Created for John Doe</h1>
+        <h6>We thought you'd like some cool stuff, my friend.</h6>
+
+        <div class="albums">
+            <div class="individual-album">
+                <img src="assets/img/mixdaily.jpeg">
+                <h4>Daily Mix 1</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+            <div class="individual-album">
+                <img src="assets/img/radar.jpeg">
+                <h4>Release Radar</h4>
+                <p>Artist (or playlist author)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="playing-now">
+            <img src="assets/img/sinister.jpeg">
+            <div class="song-artist">
+                <h5>Sinister</h5>
+                <p>Brano Nome</p>
+            </div>
+            <i class="fa-regular fa-heart" style="color: rgb(177, 177, 177);"></i>
+            <i class="fa-regular fa-folder" style="color: rgb(177, 177, 177);"></i>
+        </div>
+
+        <div class="player">
+            <div class="controls">
+                <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-play" style="color: #ffffff; font-size: 23px"></i>
+                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+                <div class="seek">
+                    <p>0:00</p>
+                    <div class="seek-bar"></div>
+                    <p>4:35</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="playing-now">
+            <i class="fa-solid fa-list" style="color: rgb(177, 177, 177);"></i>
+            <i class="fa-solid fa-display" style="color: rgb(177, 177, 177);"></i>
+            <i class="fa-solid fa-volume-high" style="color: rgb(177, 177, 177);"></i>
+            <div class="volume"></div>
+        </div>
+    </footer>
 </body>
+
 </html>
