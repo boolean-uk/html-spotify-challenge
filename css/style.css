@@ -497,6 +497,7 @@ svg {
 } 
 
 .core__main--section__albums--card {
+    position: relative;
     display: grid;
     grid-template: 175px 65px / 1fr;
     place-items: center;
@@ -689,6 +690,38 @@ svg {
 .full-screen {
     padding-left: 1rem;
 }
+
+
+/* Play Hover effect */
+
+.core__main--section__albums--card:hover {
+    transition: all ease-in 200ms;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.play__hover:hover {
+    transition: all ease-in 300ms;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.play__hover {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    opacity: 0;
+    fill: #1db954;
+    width: 170px;
+    height: 240px;
+}
+
+.play__hover > svg {
+    position: relative;
+    left: 45px;
+    bottom: -10px;
+}
+
 
 /* Responsive */
 
