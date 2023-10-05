@@ -317,6 +317,7 @@ padding: 2px;
 .playlist-con > p:hover {
     color: white;
     cursor: pointer;
+ 
 }
 
 
@@ -1189,6 +1190,8 @@ color: white;
 .footer {
     grid-area: footer;
     border: 1px dashed black;
-    background-color: grey;
+    background-color: rgb(45, 44, 44);
+    position: sticky;
+    bottom: 0;
 
 }
