@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  header {
+    height: 100px;
+    width: 80vw;
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+  
+    background-color: rgb(27, 27, 27);
+  }
+  
+  header > button {
+    width: 300px;
+    height: 50px;
+  
+    position: fixed;
+    right: 0;
+    margin: 25px;
+  
+    border: 2px solid white;
+    border-radius: 25px;
+  
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(27, 27, 27);
+  }
+  
+  .side-bar {
+    height: 100vh;
+    width: 20vw;
+  
+    grid-template: 
+    'logo' 100px 
+    'nav' 200px
+    'playlists' 1fr;
+    position: fixed;
+    left: 0;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .side-bar > svg {
+    grid-area: logo;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .side-bar > nav {
+    grid-area: nav;
+    padding: 10px;
+  }
+  
+  .side-bar > nav > .button {
+    display: grid;
+    grid-template-areas: '. .';
+    grid-template-columns: 50px;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .side-bar > nav > .button > p {
+    display: inline;
+    color: rgb(108, 108, 108);
+    font-size:1.5rem; 
+    transition: 0.2s ease-in-out;
+  }
+  
+  .side-bar > nav > .button > svg {
+    width: 40px;
+    display: inline;
+    filter: invert(43%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(95%) contrast(84%);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .side-bar > nav > .button:hover > p {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .side-bar > nav > .button:hover > svg {
+    cursor: pointer;
+    filter: none
+  }
+  
+  .side-bar > .playlists {
+    grid-area: playlists;
+  }
+  
+  .side-bar > .playlists > h2 {
+    color: white;
+    font-size: 2rem;
+  }
+  footer {
+    height: 100px;
+    width: 100vw;
+  
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(33, 33, 33);
+  }
