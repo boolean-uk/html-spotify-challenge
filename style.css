@@ -40,9 +40,7 @@ footer {
     height: 60px;
 }
 
-img {
-    width: 140px;
-}
+
 
 /*RECCURENT STYLES*/
 
@@ -168,6 +166,10 @@ button > h3 {
     padding-top: 140px;
 }
 
+.category {
+    width: 100%;
+}
+
 .playlists-container {
     padding-top: 20px;
     display: grid;
@@ -176,9 +178,27 @@ button > h3 {
 }
 
 .album {
-    height: 200px;
-    width: 150px;
+    height: 240px;
+    width: 140px;
+    padding: 5px;
     text-align: center;
+}
+.img-container {
+    width: 140px;
+    height: 140px;
+}
+.round-container{
+    border-radius: 140px;
+}
+
+#display-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.artist img {
+    border-radius: 140px;
 }
 
 .album-title {
@@ -189,9 +209,9 @@ button > h3 {
     color: white;
 }
 
-.category {
-    width: 100%;
-}
+
+
+
 /* SIDE-MENU */
 
 #side-menu #general-menu {
