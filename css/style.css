@@ -405,7 +405,7 @@ border: 1px dashed white;
 .header {
     grid-area: header;
     border: 1px dashed white;
-    background-color: rgba(0, 0, 0, 0.896);
+    background-color: rgba(7, 7, 16, 0.947);
 
     display: grid;
     grid-template: "header-filler upgrade-button";
@@ -452,7 +452,7 @@ border: 1px dashed white;
 .main {
     grid-area: main;
     border: 1px dashed white;
-    background-color: rgb(29, 27, 27);
+    background-color: rgb(9, 9, 21);
 
     display: grid;
     grid-template: 
@@ -464,7 +464,7 @@ border: 1px dashed white;
    "popular-artists-con"
    "albumsThree-con"
    ;
-   grid-template-rows: 70px 55px 330px 75px 360px 75px 360px  ;
+   grid-template-rows: 70px 55px 330px 65px 360px 75px 360px  ;
    gap: 2px;
    padding: 2px;
 }
@@ -944,7 +944,20 @@ border: 1px dashed white;
     border: 1px dashed white;
     
 }
+.created-by-con > p {
+font-size: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+}
 
+.created-by-con > p + p {
+   font-size: 13px;
+        margin-top: 5px;
+        margin-left: 20px;
+        color: grey
+    }
+    
 
 /* ALBUM-ROW-TWO  */
 .albumsTwo-con {
