@@ -1,7 +1,7 @@
 .footer {
     grid-template-columns: 250px 1fr 300px;
     align-items: center;
-    background-color: rgb(49, 56, 56);
+    background-color: rgb(39, 44, 44);
     color: white;
 }
 
@@ -28,14 +28,9 @@
     color: white;
 }
 
-.hover-green:hover {
-    filter: var(--spotify-green-hover-color);
-}
-
 /* PLAYBACK CONTROLS */
 .playback-controls {
     grid-template-rows: 45px 30px;
-    /* gap: 5px; */
     justify-items: center;
 }
 
@@ -47,10 +42,6 @@
 
 .play-icon:hover {
     width: 32px;
-}
-
-.hover-white:hover {
-    filter: var(--white-hover-color)
 }
 
 .playback-time-bar {
@@ -99,7 +90,7 @@
 
 /* LISTENING CONTROLS */
 .listening-controls {
-    grid-template-columns: repeat(3, 20px) 130px;
+    grid-template-columns: repeat(3, 20px) 100px;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -119,7 +110,7 @@
 }
 
 .remaining-volume {
-    width: 100px;
+    width: 70px;
     border: solid 2px gray;
     border-radius: 3px;
 }

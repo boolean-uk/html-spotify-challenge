@@ -4,16 +4,12 @@
     background-color: black;
 }
 
-/* ALL GRAY COLOURED TEXT */
-.general-nav-link, .create-playlist, .playlists-list a, .install-app {
-    color: gray;
-}
-
 /* GENERAL NAV */
 .general-nav-link {
     grid-template-columns: 40px 1fr;
     grid-auto-rows: 40px;
     align-items: center;
+    padding-left: 20px;
 }
 
 .general-nav-link:hover img {
@@ -22,7 +18,6 @@
 
 .home p {
     font-weight: bold;
-    color: #ebe5e5;
 }
 
 .home {
@@ -36,10 +31,6 @@
     position: absolute;
 }
 
-.general-navigation-list a {
-    padding-left: 20px;
-}
-
 /* PLAYLISTS */
 .playlist-navigation {
     grid-template-rows: 20px 50px 1fr;
@@ -47,7 +38,6 @@
 }
 
 .playlist-header {
-    color: white;
     font-size: 16px;
     padding-left: 20px;
 }
@@ -97,7 +87,6 @@
 .profile {
     grid-template-columns: 40px 1fr;
     padding-left: 20px;
-    color: white;
     font-weight: bold;
     font-size: 15px;
 }
@@ -119,14 +108,4 @@
 /* REMOVE LINK TEXT DECORATION */
 .general-nav-link, .create-playlist, .playlists-list a, .install-app, .profile {
     text-decoration: none;
-}
-
-/* GRAY BACKGROUND HOVER COLOUR */
-.general-nav-link:hover, .create-playlist:hover, .playlists-list a:hover {
-    background-color: var(--background-hover-gray);
-}
-
-/* WHITE FONT HOVER COLOUR */
-.general-nav-link:hover, .create-playlist:hover, .playlists-list a:hover, .install-app:hover {
-    color: white;
 }

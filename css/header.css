@@ -21,9 +21,9 @@
 .header-bar {
     justify-items: end;
     align-items: center;
-    background-color: rgb(16, 17, 26);
+    background-color: rgb(6, 7, 15);
     height: 100%;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .premium-upgrade {

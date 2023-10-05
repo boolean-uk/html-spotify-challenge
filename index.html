@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/global-variables.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/left.menu.css">
+    <link rel="stylesheet" href="./css/main-content.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Spotify</title>
 </head>
@@ -31,19 +32,19 @@
                     <ul class="general-navigation-list">
                         <li class="home">
                             <div class="select-highlight"></div>
-                            <a class="general-nav-link grid" href="#">
+                            <a class="general-nav-link bg-hover-gray grid" href="#">
                                 <img src="./svgs/home-icon.svg" alt="home icon" width="25">
-                                <p>Home</p>
+                                <p class="white-text">Home</p>
                             </a>
                         </li>
                         <li class="search">
-                            <a class="general-nav-link grid" href="#">
+                            <a class="general-nav-link bg-hover-gray gray-text text-hover-white grid" href="#">
                                 <img src="./svgs/search-icon.svg" alt="search icon" width="25">
                                 <p>Search</p>
                             </a>
                         </li>
                         <li class="library">
-                            <a class="general-nav-link grid" href="#">
+                            <a class="general-nav-link bg-hover-gray gray-text text-hover-white grid" href="#">
                                 <img src="./svgs/library-icon.svg" alt="library icon" width="25">
                                 <p>Your Library</p>
                             </a>
@@ -51,43 +52,60 @@
                     </ul>
                 </nav>
                 <nav class="playlist-navigation grid">
-                    <h2 class="playlist-header">Playlists</h2>
-                    <a class="create-playlist grid" href="#">
+                    <h2 class="playlist-header white-text">Playlists</h2>
+                    <a class="create-playlist gray-text text-hover-white bg-hover-gray grid" href="#">
                         <img class="new-playlist-icon" src="./svgs/new-playlist-icon.svg" alt="new playlist icon" width="40px">
                         <p>Create Playlist</p>
                     </a>
                     <ul class="playlists-list grid">
-                        <li><a class="grid" href="#">Happy Songs</a></li>
-                        <li><a class="grid" href="#">Sad Songs</a></li>
-                        <li><a class="grid" href="#">Chill</a></li>
-                        <li><a class="grid" href="#">Gym</a></li>
-                        <li><a class="grid" href="#">Drive Tunes</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Happy Songs</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Sad Songs</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Chill</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Gym</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Drive Tunes</a></li>
                     </ul>
                 </nav>
-                <a class="install-app grid" href="#">
+                <a class="install-app gray-text text-hover-white grid" href="#">
                     <img src="./svgs/download-icon.svg" alt="download icon" width="20px">
                     <p>Install App</p>
                 </a>
-                <a class="profile grid" href="#">
+                <a class="profile text-hover-white grid" href="#">
                     <img src="./svgs/profile-icon.svg" alt="profile icon" width="30px">
-                    <p>Satoki Ito</p>
+                    <p class="white-text">Satoki Ito</p>
                 </a>
             </div>
             <!-- MAIN CONTENT -->
-            <div class="main-content">
-                <nav class="main-navigation">
-                    <ul class="main-navigation-list">
-                        <li>Highlights</li>
-                        <li>Podcasts</li>
-                        <li>Charts</li>
-                        <li>Genres and Moods</li>
-                        <li>New Releases</li>
-                        <li>Discover</li>
+            <div class="main-content grid">
+                <nav class="main-navigation grid">
+                    <ul class="main-navigation-list grid">
+                        <a href="#">
+                            <li class="text-hover-white highlights gray-text">
+                                <p>Highlights</p>
+                                <div class="green-pill"></div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="text-hover-white gray-text">Podcasts</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-hover-white gray-text">Charts</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-hover-white gray-text">Genres and Moods</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-hover-white gray-text">New Releases</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-hover-white gray-text">Discover</li>
+                        </a>
                     </ul>
                 </nav>
-                <div class="recently-played">Recently Played</div>
-                <div class="created-for-you">Created for You</div>
-                <div class="popular-artists">Popular Artists</div>
+                <div class="music-selection">
+                    <div class="recently-played">Recently Played</div>
+                    <div class="created-for-you">Created for You</div>
+                    <div class="popular-artists">Popular Artists</div>
+                </div>
             </div>
         </main>
         <!-- FOOTER -->
