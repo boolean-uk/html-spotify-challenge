@@ -58,6 +58,15 @@ a:hover > .upgrade {
     color: rgb(7, 218, 7);
 }
 
+
+
+
+
+
+
+
+
+
 .left-menu {
     color: white;
     grid-area: left-menu;
@@ -174,8 +183,15 @@ hr {
 }
 
 
+
+
+
+
+
+
 .main {
 grid-area: main;
+overflow-y: scroll;
 background-color: rgb(27, 25, 38);
 }
 
@@ -199,6 +215,73 @@ a:hover {
     border-bottom: 2px solid rgb(7, 200, 7);
     
 }
+
+.main-content {
+    display: grid;
+    grid-area: main;
+    padding-left: 20px;
+    padding-right: 180px;
+    grid-template-columns: repeat( auto-fit, minmax(240px, 1fr));
+}
+
+.sub-title {
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+
+.title-cover {
+    display: grid;
+    grid-area: main-content;
+    color: white;
+    place-content: center;
+    margin-right: 70px;
+    padding-top: 10px;
+    
+}
+
+.subtitle {
+    display: grid;
+    grid-area: main-content;
+    color: grey;
+    justify-content: center;
+    margin-right: 60px;
+    padding-top: 10px;
+}
+
+
+.created-by {
+    color: white;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.main-content2 {
+    display: grid;
+    grid-area: main;
+    padding-left: 20px;
+
+}
+
+
+.album-cards2 {
+    display: grid;
+    grid-area: main-content2;
+    color: white;
+    padding-top: 30px;
+    padding-right: 1000px;
+}
+
+.title-cover2 {
+    font-size: 18px;
+}
+
+
+
+
+
 
 
 .footer {
