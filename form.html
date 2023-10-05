@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Stylish Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form method="GET" action="index.html" class="grid">
+        <h1>Log In</h1>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <!-- <span></span> -->
+        </div>
+
+        <div class="form-gtoup">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <!-- <span></span> -->
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
