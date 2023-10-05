@@ -11,10 +11,12 @@ body {
     "aside header" 
     "aside main"   
     "footer footer";
-    grid-template-columns:200px 1fr ;
-    grid-template-rows:80px 1fr;
+    grid-template-columns:250px 1fr ;
+    grid-template-rows:60px 1fr;
     background-color:black;
     color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
     
 }
 main {
@@ -23,13 +25,90 @@ main {
     
 }
 header {
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: pink;
     grid-area: header;
 }
 footer {
     grid-area: footer;
-    background-color: blue;
+    background-color:rgba(169, 169, 169, 0.165);
+    height: 50px;
+    
 }
 aside {
     grid-area: aside;
+    display:grid;
+    
+    
+}
+#side-bar {
+    position: fixed;
+    margin: 20px 20px;
+}
+#Home-icon {
+    margin-top: 20px;
+
+}
+.icons {
+    display: grid;
+    grid-auto-flow:column;
+}
+.icons > svg{
+    width: 20px;
+}
+.search {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+}
+.search > svg {
+    width: 20px;
+}
+.library {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+
+}
+.library > svg {
+    width:20px;
+}
+#playlist {
+    margin-top: 20px;
+    height:320px;
+    
+}
+#playlist > p {
+    margin: 10px;
+    color: grey;
+}
+.create {
+    margin-left: 5px;
+}
+#profile {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+}
+#profile > img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+#installation {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+    
+}
+#installation > svg {
+    width:10px;
+
+}
+#horizontal-line {
+    width:100%;
+    height:2px;
+    background-color: silver;
+    margin-top: 5px;
+    border: 0 none;
 }
