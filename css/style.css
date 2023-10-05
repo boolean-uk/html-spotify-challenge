@@ -270,11 +270,19 @@ main.grid {
   overflow-y: scroll;
 }
 
+.nav-list {
+  grid-template-columns: repeat(auto-fit, 200px);
+
+  gap: 18px;
+}
+
 .nav-items {
   text-align: center;
 
   padding-bottom: 5px;
   border: 2px solid transparent;
+
+  /* width: 200px; */
 }
 
 .nav-items:hover {
