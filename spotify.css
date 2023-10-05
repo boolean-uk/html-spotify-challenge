@@ -31,7 +31,7 @@
     width: 100vw;
   }
   
-
+/* start of header section */
 .header {
     grid-area: header;
     background-color: rgb(6, 6, 6);
@@ -59,11 +59,11 @@
     color: pink;
 }
 
+/* end of header section */
 
 
 
-
-
+/* start of left menu */
 .left-menu {
     color: white;
     grid-area: left-menu;
@@ -74,6 +74,7 @@
     margin: 20px 0 20px 60px;
 }
 
+/* image */
 .logo-icon {
     position: absolute;
     height: 35px;
@@ -92,6 +93,7 @@
     color: white;
 }
 
+/* image */
 .home-icon {
     position: absolute;
     height: 20px;
@@ -112,6 +114,7 @@ input:valid {
     color: grey;
 }
 
+ /* image */
 .search-icon {
     position: absolute;
     height: 20px;
@@ -120,6 +123,7 @@ input:valid {
     top: 115px;
 }
 
+/* image */
 .libary-icon {
     position: absolute;
     height: 20px;
@@ -134,6 +138,7 @@ input:valid {
     padding: 0 0 20px 15px;
 }
 
+/* create playlist button */
 .button {
     color: grey;
     font-size: 13px;
@@ -149,7 +154,7 @@ input:valid {
     color: pink;
 }
 
-
+/* image */
 .plus-icon {
     position: absolute;
     height: 30px;
@@ -173,6 +178,7 @@ input:valid {
     padding-bottom: 10px;
 }
 
+/* image */
 .small-icon {
     position: relative;
     height: 10px;
@@ -192,6 +198,7 @@ hr {
 
 }
 
+/* image */
 .profile-icon {
     position: relative;
     height: 25px;
@@ -200,23 +207,26 @@ hr {
     top: 15px;
 }
 
+/* end of left menu section */
 
 
 
 
 
 
-
+/* start of main section */
 .main {
 grid-area: main;
 overflow-y: scroll;
 background-color: rgb(27, 25, 38);
 }
 
+/* main section top nav bar */
 .main-nav {
     display: grid;
     grid-area: main;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: bold;
     margin-top: 20px;
     grid-template-columns: repeat(6, 1fr);
     padding-left: 500px;
@@ -234,6 +244,8 @@ a:hover {
     
 }
 
+
+/* main spotify album content section */
 .main-content {
     display: grid;
     grid-area: main;
@@ -268,9 +280,9 @@ a:hover {
     margin-right: 60px;
     padding-top: 10px;
 }
+/* end of first main content section */
 
-
-
+/* second section in main content */
 .created-by {
     color: white;
     padding-top: 50px;
@@ -313,7 +325,10 @@ a:hover {
     color: grey;
     padding-left: 15px;
 }
+/* end of section 2 main content */
 
+
+/* start of section 3 main content */
 .main-content3{
     display: grid;
     grid-area: main;
@@ -345,8 +360,11 @@ a:hover {
 .player-cover {
     border-radius: 100px;
 }
+/* end of section 3 main content */
+/* end of main content section */
 
 
+/* start of the footer section */
 .footer {
     grid-area: footer;
     background-color: rgb(42, 41, 41);
@@ -373,7 +391,7 @@ a:hover {
     font-size: 10px;
     margin-left: 65px;
 }
-
+/* image */
 .heart-icon {
     position: relative;
     height: 25px;
@@ -382,7 +400,7 @@ a:hover {
     top: -30px;
 }
 
-
+/* image */
 .save-icon {
     position: relative;
     height: 20px;
@@ -391,7 +409,7 @@ a:hover {
     top: -30px;
 }
 
-
+/* image */
 .shuffle-icon {
     position: relative;
     height: 20px;
@@ -399,7 +417,7 @@ a:hover {
     left: 820px;
     top: -50px;
 }
-
+/* image */
 .rewind-icon {
     position: relative;
     height: 25px;
@@ -408,7 +426,7 @@ a:hover {
     top: -48px;
 }
 
-
+/* image */
 .play-icon{
     position: relative;
     height: 30px;
@@ -417,7 +435,7 @@ a:hover {
     top: -47px;
 }
 
-
+/* image */
 .forward-icon {
     position: relative;
     height: 25px;
@@ -425,7 +443,7 @@ a:hover {
     left: 940px;
     top: -50px;
 }
-
+/* image */
 .replay-icon {
     position: relative;
     height: 25px;
@@ -433,7 +451,7 @@ a:hover {
     left: 980px;
     top: -50px;
 }
-
+/* image */
 .options-icon {
     position: relative;
     height: 20px;
@@ -441,7 +459,7 @@ a:hover {
     left: 1430px;
     top: -30px;
 }
-
+/* image */
 .share-icon {
     position: relative;
     height: 20px;
@@ -449,7 +467,7 @@ a:hover {
     left: 1470px;
     top: -30px;
 }
-
+/* image */
 .volume-icon {
     position: relative;
     height: 20px;
