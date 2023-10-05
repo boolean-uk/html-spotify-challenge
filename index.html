@@ -1,12 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <nav class="left-sidebar">
+      <ol>
+        <li>
+          <h1>
+            <a href="https://www.spotify.com/uk/" target="_blank">
+              <img
+                id="spotify-logo"
+                src="./assets/img/logo.svg"
+                alt="Spotify logo"
+            /></a>
+          </h1>
+        </li>
+        <li>
+          <a class="item-nav" href="index.html"
+            ><img src="./assets/img/home.svg" alt="Home" />
+            <h3>home</h3>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item-nav"
+            href="https://open.spotify.com/search"
+            target="_blank"
+            ><img src="./assets/img/search.svg" alt="Search Icon" />
+            <h3>search</h3>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item-nav item-nav-space-last"
+            href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fopen.spotify.com%2Fsearch"
+            target="_blank"
+            ><img src="./assets/img/libreria.svg" alt="Your Library" />
+            <h3>your library</h3>
+          </a>
+        </li>
+        <li>
+          <h2>playlist</h2>
+        </li>
+        <li>
+          <a
+            class="item-nav item-nav-space-last"
+            href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fopen.spotify.com%2F"
+            target="_blank"
+          >
+            <img src="assets/img/plus-sign.svg" />
+            <h3>create playlist</h3>
+          </a>
+        </li>
+        <li>
+          <h3>Relax</h3>
+        </li>
+        <li>
+          <h3>Gym</h3>
+        </li>
+        <li>
+          <h3>Sport</h3>
+        </li>
+        <li class="item-nav-space-last">
+          <h3>Metal</h3>
+        </li>
+      </ol>
+      <ol class="bottom-nav-list">
+        <li>
+          <a
+            class="item-nav"
+            href="https://www.spotify.com/us/download/android/"
+            target="_blank"
+            ><img src="./assets/img/download.svg" alt="Download Icon" />Install
+            app</a
+          >
+        </li>
+        <hr />
+        <li id="profile" >
+          <a
+            class="item-nav"
+            href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Fprofile%2F target_blank"
+            ><img
+              src="./assets/img/profile.svg"
+              alt="Profile Icon"
+            />PCapid3v</a
+          >
+        </li>
+      </ol>
+    </nav>
+    <header>
+      <ul>
+        <li>
+          <a href="https://www.spotify.com/uk/premium/" target="_blank"
+            >Upgrade</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <nav class="top-menu">
+        <ol>
+          <li><a href="#">trending</a></li>
+          <li><a href="#">podcast</a></li>
+          <li><a href="#">charts</a></li>
+          <li><a href="#">genres and moods</a></li>
+          <li><a href="#">brand new</a></li>
+          <li><a href="#">discover</a></li>
+        </ol>
+      </nav>
+      <div class="content-menu">
+        <section class="recently-played-section">
+          <h2>Recently Played</h2>
+          <div class="recently-played">
+            <div class="song">
+              <img
+                src="./assets/img/metal_lifting.jpg"
+                alt="Heavy Metal - Subtitle"
+              />
+              <h3 class="h3">heavy metal</h3>
+              <h4 class="h4">subtitle</h4>
+            </div>
+            <div class="song">
+              <img
+                src="./assets/img/stranger.jpeg"
+                alt="Strange Things - Kyle Dixon & Micheal Stein"
+              />
+              <h3 class="h3">
+                stranger things, vol. 1 (a netflix orginal series soundtrack)
+              </h3>
+              <h4 class="h4">kyle dixon & micheal stein</h4>
+            </div>
+            <div class="song">
+              <img
+                src="./assets/img/aquietplace.jpeg"
+                alt="A Quiet Place - Marco Beltrame"
+              />
+              <h3 class="h3">a quiet place music</h3>
+              <h4 class="h4">marco beltrame</h4>
+            </div>
+            <div class="song">
+              <img src="./assets/img/split.jpeg" alt="Split - West Thordson" />
+              <h3 class="h3">split</h3>
+              <h4 class="h4">west thordson</h4>
+            </div>
+            <div class="song">
+              <img
+                src="./assets/img/cure.jpeg"
+                alt="A Cure For Wellness - Benjamin Wallfisch"
+              />
+              <h3 class="h3">a cure for wellness</h3>
+              <h4 class="h4">benjamin wallfisch</h4>
+            </div>
+            <div class="song">
+              <img
+                src="./assets/img/sinister.jpeg"
+                alt="Sinister - Christopher Young"
+              />
+              <h3 class="h3">sinister</h3>
+              <h4 class="h4">christopher young</h4>
+            </div>
+          </div>
+        </section>
+        <section class="created-for-user-section">
+          <h2>created for Pierluigi Capirci</h2>
+          <h4 class="normal-text">
+            The more you listen, the more accurate the suggestions.
+          </h4>
+          <div class="recently-played">
+            <div class="created-for-user-song">
+              <img src="./assets/img/radar.jpeg" alt="Heavy Metal - Subtitle" />
+              <h3 class="h3">release radar</h3>
+            </div>
+            <div class="created-for-user-song">
+              <img
+                src="./assets/img/mixdaily.jpeg"
+                alt="Heavy Metal - Subtitle"
+              />
+              <h3 class="h3">daily mix 1</h3>
+            </div>
+          </div>
+        </section>
+        <section class="created-for-user-section">
+          <h2>most popular artists</h2>
+          <h4 class="normal-text">
+            The more you listen, the more accurate your suggestions will be.
+          </h4>
+          <div class="recently-played">
+            <div class="artists">
+              <img src="./assets/img/youg.jpeg" alt="Artist #1" />
+              <h3 class="h3">artist #1</h3>
+            </div>
+            <div class="artists">
+              <img src="./assets/img/einaudi.jpeg" alt="Artist #2" />
+              <h3 class="h3">artist #2</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="song-playing">
+        <img
+          src="./assets/img/sinister.jpeg"
+          alt="Sinister - Christopher Young"
+        />
+        <div class="left-footer-details">
+          <div>
+            <p>Sinister</p>
+            <p>Christopher Young</p>
+          </div>
+          <div class="left-footer-icons">
+            <img class="icon" src="./assets/img/heart.svg" alt="heart"/>
+            <img class="icon" src="./assets/img/folder.svg" alt="folder" />            
+          </div>
+        </div>
+      </div>
+      <div class="playing-items">
+        <div class="footer-top-icons">
+          <img class="icon" src="./assets/img/play/shuffle.svg" alt="shuffle" />
+          <img
+            class="icon"
+            src="./assets/img/play/previous.svg"
+            alt="previous"
+          />
+          <img class="icon" src="./assets/img/play/play.svg" alt="play" />
+          <img class="icon" src="./assets/img/play/next.svg" alt="next" />
+          <img class="icon" src="./assets/img/play/repeat.svg" alt="repeat" />
+        </div>
+        <div class="footer-song-progress">
+          <!-- <audio src="" controls></audio> -->
+        </div>
+      </div>
+      <div class="right-items">
+        <div class="right-footer-icons">
+          <img
+            class="icon"
+            src="./assets/img/screen-desktop-svgrepo-com.svg"
+            alt="devices"
+          />
+          <img class="icon" src="./assets/img/play/volume.svg" alt="volume" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            class="volume-slider"
+          />
+          <div class="volume-adjust">
+            <div class="volume-level"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
