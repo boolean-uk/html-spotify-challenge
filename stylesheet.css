@@ -1,104 +1,196 @@
 * {
     margin: 0;
-    border: none;
-    padding: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* background: black; */
+  }
 
-/* GRID SECTION BEGINS */
+  /* Whole page styling is above. */
 
-.left-menu {
+  .whole-page-grid {
     display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 60px 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 90px;
+    grid-template-areas: "left-menu main-view"
+                         "footer footer";
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
-/* GRID SECTION ENDS */
-
-.left-menu .logo img {
-    width: 130px;
+.main-section {
+    grid-area: main-view;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px repeat(2, 30px) 185px 30px 185px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+
+
+/* End of Grid section. */
+
+/* Left-Menu begins */
 
 .left-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 196px;
-    background-color: black;
-    padding-left: 5px;
-}
-
-.left-menu .navigation ul {
-    list-style: none;
-    margin: 20px;
-}
-
-.create-playlist {
+    background-color: #000000;
+    grid-area: left-menu;
     display: grid;
-    grid-template: 1fr/ 32px 1fr;
+    grid-template-rows:repeat(14,1fr);
 }
 
-.create-playlist h3 {
-    padding-top: 3px;
-}
-
-
-.left-menu ul li {
-    color: silver;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 15px;
+.logo img {
+    height: 60px;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: black;
 }
 
 .home-button {
-    color: silver;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 10px;
+    color: white;
+    font-size: 15px;
     display: grid;
     grid-template: 1fr/ 32px 1fr;
     align-items: center;
     cursor: pointer;
-}
-
-.home-button h2 {
-    padding-top: 4px;
+    padding-top: 5px;
+    padding-left: 20px;
 }
 
 .search-button {
-    color: silver;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 10px;
+    color: white;
+    font-size: 15px;
     display: grid;
     grid-template: 1fr/ 32px 1fr;
     align-items: center;
     cursor: pointer;
-}
-
-.search-button h2 {
-    padding-top: 4px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .your-library {
-    color: silver;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 10px;
+    color: white;
+    font-size: 15px;
     display: grid;
     grid-template: 1fr/ 32px 1fr;
     align-items: center;
     cursor: pointer;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
-.your-library h2 {
-    padding-top: 4px;
+.create-playlist {
+    list-style: none;
+    color: white;
+    padding-left: 20px;
+    padding-top: 9px;
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}   
+
+.new-playlist {
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+
 }
 
+.install-username {
+    color: white;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+/* Left-Menu ends. */
+
+/* Main section begins. */
+
+.upgrade-container {
+    background-color: black;
+    padding-left: 980px;
+    padding-top: 16px;
+}
+
+.upgrade-container a {
+    color: black;
+    border: 2px silver solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: silver;
+}
+
+.options-menu {
+    background: rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: repeat(8, 120px);
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+}
+
+.options-menu h4 {
+    display: grid;
+    justify-content: center;
+    color: silver;
+}
+
+.recently-played .title {
+    color: white;
+    background-color: rgb(41, 41, 46);
+    font-size: 15px;
+    padding-bottom: 5px;
+    display: grid;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    background-color: rgb(41, 41, 46);
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.albums img {
+    width: 150px;
+    height: 150px;
+}
+
+.albums p {
+    font-size: 12px;
+    display: grid;
+    justify-content: center;
+    color: white;
+    padding-right: 32px;
+}
+
+.created-by-Jack-section .title-blurb {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25px;
+    grid-gap: 20px;
+    justify-content: left;
+    background-color: rgb(41, 41, 46);
+}
+
+.created-by-Jack-section .title-blurb h2 {
+    color: white;
+    font: 15px;
+    padding-top: 5px;
+}
+
+.created-by-Jack-section .title-blurb p {
+    color: silver;
+    padding-top: 8px;
+}
+
+
+.footer-bar {
+    background-color: silver;
+}
