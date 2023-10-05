@@ -464,7 +464,7 @@ border: 1px dashed white;
    "popular-artists-con"
    "albumsThree-con"
    ;
-   grid-template-rows: 70px 55px 330px 65px 360px 75px 360px  ;
+   grid-template-rows: 70px 55px 330px 65px 260px 65px 260px  ;
    gap: 2px;
    padding: 2px;
 }
@@ -600,7 +600,7 @@ border: 1px dashed white;
     border: 1px dashed white;
     display: grid;
     grid-template: "albumOne-1 albumOne-2 albumOne-3 albumOne-4 albumOne-5 albumOne-6";
-    grid-template-columns: repeat(6, minmax(0, max-content));
+    grid-template-columns: repeat(6,1fr);
     
     /* grid-template-columns: max-content; */
     
@@ -628,6 +628,7 @@ border: 1px dashed white;
 .album-coverOne-1 {
     grid-area:album-coverOne-1 ;
     border: 1px dashed white;
+    overflow: hidden;
 }
 
 .album-coverOne-1 > img {
@@ -635,6 +636,7 @@ border: 1px dashed white;
    height: auto;
    max-width: 100%;
    max-height: 100%;
+   object-fit: cover;
   
 }
 
@@ -825,7 +827,7 @@ border: 1px dashed white;
 .album-subtitleOne-4 > p {
     color: grey;
     font-size: 13px;
-    margin-left: 65px;
+    margin-left: 70px;
 }
 
 
@@ -879,7 +881,7 @@ border: 1px dashed white;
 .album-subtitleOne-5 > p {
     color: grey;
     font-size: 13px;
-    margin-left: 65px;
+    margin-left: 70px;
 }
 
 
@@ -963,7 +965,105 @@ font-size: 25px;
 .albumsTwo-con {
     grid-area: albumsTwo-con;
     border: 1px dashed white;
+
+    display: grid;
+    grid-template: "albumTwo-1 albumTwo-2 ";
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    padding: 5px;
 }
+
+/* ALBUM-ROW-TWO-1 */
+.albumTwo-1  {
+    grid-area: albumTwo-1;
+    border: 1px dashed white;
+    margin-left: 20px;
+
+    display: grid;
+    grid-template:
+    "album-coverTwo-1" 
+    "album-name-coverTwo-1"
+   ;
+    grid-template-rows: 180px 40px  ;
+   height: 230px;
+  
+    gap: 5px;
+    padding: 5px;
+}
+
+.album-coverTwo-1  {
+    grid-area: album-coverTwo-1;
+    border: 1px dashed white;
+}
+
+.album-coverTwo-1 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+.album-name-coverTwo-1 {
+    grid-area: album-name-coverTwo-1;
+    border: 1px dashed white;
+}
+
+.album-name-coverTwo-1 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+
+/* ALBUM-ROW-TWO-2 */
+.albumTwo-2  {
+    grid-area: albumTwo-2;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template:
+    "album-coverTwo-2" 
+    "album-name-coverTwo-2"
+    ;
+    grid-template-rows: 180px 40px ;
+    height: 230px;
+    
+    gap: 5px;
+    padding: 5px;
+    
+}
+
+.album-coverTwo-2 {
+    grid-area: album-coverTwo-2;
+    border: 1px dashed white;
+    
+}
+
+.album-coverTwo-2 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+   
+ }
+
+.album-name-coverTwo-2 {
+    grid-area: album-name-coverTwo-2;
+    border: 1px dashed white;
+}
+
+
+.album-name-coverTwo-2 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+
 
 /* Popular Artists Section */
 
@@ -973,12 +1073,116 @@ font-size: 25px;
    
 }
 
+.popular-artists-con > p {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+}
+
+.popular-artists-con > p + p {
+    font-size: 13px;
+         margin-top: 5px;
+         margin-left: 20px;
+         color: grey
+     }
+     
+
+
 /* ALBUM-ROW-THREE  */
 
 .albumsThree-con {
     grid-area: albumsThree-con;
     border: 1px dashed white;
+    display: grid;
+    grid-template: "album-Three1 album-Three2";
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    padding: 5px;
 }
+
+.album-Three1  {
+    grid-area: album-Three1 ;
+    border: 1px dashed white;
+    margin-left: 20px;
+
+    display: grid;
+    grid-template:
+    "album-coverThree1" 
+    "album-name-cover-Three1"
+    ;
+    grid-template-rows: 180px 40px ;
+    height: 230px;
+    
+    gap: 5px;
+    padding: 5px;
+}
+
+.album-coverThree1 {
+    grid-area: album-coverThree1;
+    border: 1px dashed white;
+    /* margin-left: 20px; */
+}
+
+.album-coverThree1 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.album-name-cover-Three1 {
+    grid-area: album-name-cover-Three1;
+    border: 1px dashed white;
+}
+
+.album-name-cover-Three1 > p{
+color: white;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.album-Three2  {
+    grid-area: album-Three2 ;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template:
+    "album-coverThree2" 
+    "album-name-cover-Three2"
+    ;
+    grid-template-rows: 180px 40px ;
+    height: 230px;
+    
+    gap: 5px;
+    padding: 5px;
+}
+
+.album-coverThree2 {
+    grid-area: album-coverThree2;
+    border: 1px dashed white;
+}
+
+
+.album-coverThree2 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.album-name-cover-Three2 {
+    grid-area: album-name-cover-Three2;
+    border: 1px dashed white;
+}
+
+.album-name-cover-Three2 > p{
+    color: white;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
 
 /* ------------------------------- */
 /* FOOTER */
