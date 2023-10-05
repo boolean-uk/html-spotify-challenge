@@ -262,7 +262,7 @@ a:hover {
     grid-area: main-content;
     margin-top: 90px;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right:  180px;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
 }
 
@@ -598,3 +598,7 @@ input[type="range"]::-moz-range-thumb{
     width: 1rem;
     border-radius: 10px;
 }
+
+
+
+
