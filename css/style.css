@@ -264,6 +264,8 @@ main.grid {
   gap: 16px;
 
   background-color: var(--main-bg);
+
+  overflow-y: scroll;
 }
 
 .nav-items {
@@ -320,9 +322,6 @@ main.grid {
   gap: 8px;
 }
 
-
-
-
 .gallery-item:hover .play-hover {
   display: grid;
 }
@@ -343,6 +342,53 @@ main.grid {
 
 .play-hover img {
   height: 16px;
+}
+
+.created-for-you p {
+  text-align: left;
+}
+
+.for-you-overlay {
+  position: absolute;
+}
+
+.for-you-icon {
+  position: absolute;
+
+  top: 6px;
+  left: 6px;
+
+  height: 12px;
+  width: 12px;
+
+  background-color: black;
+
+  justify-content: center;
+
+
+}
+
+.for-you-icon img {
+  height: 10px;
+}
+
+.for-you-text {
+  position: absolute;
+
+  bottom: 12px;
+  left: 12px;
+
+  color: black;
+
+  font-weight: bold;
+
+  margin: 0;
+}
+
+.for-you-cover {
+  width: 144px;
+
+  object-fit: cover;
 }
 
 /* ======== footer ======== */
