@@ -15,7 +15,7 @@
 
   .whole-page-grid {
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8fr;
     grid-template-rows: 88vh 20vh;
     grid-template-areas: "left-menu main-view"
                          "footer footer";
@@ -27,7 +27,7 @@
     grid-area: main-view;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px repeat(2, 30px) 185px 30px 185px 30px 100px;
+    grid-template-rows: 0.25fr repeat(2, fr) 185px 30px 185px 30px 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     overflow: hidden;
