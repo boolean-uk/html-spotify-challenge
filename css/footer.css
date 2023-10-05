@@ -34,14 +34,19 @@
 
 /* PLAYBACK CONTROLS */
 .playback-controls {
-    grid-template-rows: repeat(2, 30px);
-    gap: 10px;
+    grid-template-rows: 45px 30px;
+    /* gap: 5px; */
     justify-items: center;
 }
 
 .playback-control-buttons {
     grid-template-columns: repeat(5, 40px);
+    gap: 10px;
     place-items: center;
+}
+
+.play-icon:hover {
+    width: 32px;
 }
 
 .hover-white:hover {
@@ -60,7 +65,7 @@
 
 .time-slider {
     grid-template-columns: repeat(2, auto);
-    height: 2px;
+    height: 10px;
     align-items: center;
     position: relative;
 }
@@ -83,11 +88,11 @@
     opacity: 0;
 }
 
-.playback-time-bar:hover .time-played {
+.time-slider:hover .time-played {
     filter: var(--spotify-green-hover-color);
 }
 
-.playback-time-bar:hover .white-circle-time {
+.time-slider:hover .white-circle-time {
     opacity: 100%;
     color: #f8f9e9;
 }
@@ -102,7 +107,7 @@
 
 .volume-slider {
     grid-template-columns: repeat(2, auto);
-    height: 2px;
+    height: 10px;
     align-items: center;
     position: relative;
 }
