@@ -274,10 +274,12 @@ button > h3 {
     width: 140px;
     padding: 5px 0;
     text-align: center;
+    position: relative;
 }
 .img-container {
     width: 140px;
     height: 140px;
+    position: relative;
 }
 .round-container{
     border-radius: 140px;
@@ -401,6 +403,21 @@ color: white;
 }
 
 
+.album .hover-img-container {
+    position: absolute;
+    top: 50px;
+    left: 48px;
+    width: 50px;
+    visibility: hidden;
+}
+
+.album:hover .hover-img-container {
+    visibility: visible;
+}
+
+.album:hover .img-container img {
+    opacity: 0.4;
+}
 
 /* 878px img shows that the top nav bar (anchor links) and the albums themselves need automatic allocation  */
 
