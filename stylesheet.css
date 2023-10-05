@@ -107,6 +107,9 @@
 
 /* Main section begins. */
 
+
+   /* Upgrade button and top bar */
+
 .upgrade-container {
     background-color: black;
     padding-left: 980px;
@@ -125,6 +128,8 @@
     background: silver;
 }
 
+    /* Options menu */
+
 .options-menu {
     background: rgb(41, 41, 46);
     display: grid;
@@ -139,6 +144,7 @@
     justify-content: center;
     color: silver;
 }
+    /* Recently played & Albums */
 
 .recently-played .title {
     color: white;
@@ -146,6 +152,7 @@
     font-size: 15px;
     padding-bottom: 5px;
     display: grid;
+    padding-left: 5px;
 }
 
 .albums {
@@ -169,12 +176,13 @@
     color: white;
     padding-right: 32px;
 }
+    /* Created by section */
 
 .created-by-Jack-section .title-blurb {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 25px;
-    grid-gap: 20px;
+    grid-gap: 10px;
     justify-content: left;
     background-color: rgb(41, 41, 46);
 }
@@ -182,15 +190,32 @@
 .created-by-Jack-section .title-blurb h2 {
     color: white;
     font: 15px;
-    padding-top: 5px;
+    padding-top: 2px;
+    padding-left: 5px;
 }
 
 .created-by-Jack-section .title-blurb p {
     color: silver;
-    padding-top: 8px;
+    padding-top: 7px;
+}
+.created-albums {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    background-color: rgb(41, 41, 46);
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
+.created-albums img {
+    width: 150px;
+    height: 150px;
+}
 
-.footer-bar {
-    background-color: silver;
+.created-albums p {
+    font-size: 12px;
+    display: grid;
+    justify-content: center;
+    color: white;
+    padding-right: 32px;
 }
