@@ -25,22 +25,22 @@
                 <nav id="general-nav">
                     <ul>
                         <li>
-                            <a href="#home">
-                                <img class="big-icon" src="./assets/svg/home-svgrepo-com.svg">
-                                <h4>Home</h4>
+                            <a href="#home" class="icon-next-to-text">
+                                <img class="big-icon placed" src="./assets/svg/home-svgrepo-com.svg">
+                                <h4 class="aligned">Home</h4>
                             </a>
                         </li>
                         <img class="icon">
                         <li>
-                            <a href="#search">
+                            <a href="#search" class="icon-next-to-text">
                                 <img class="big-icon" src="./assets/svg/search-svgrepo-com.svg">
-                                <h4>Cerca</h4>
+                                <h4 class="aligned">Cerca</h4>
                             </a>
                         </li>
                         <li>
-                            <a href="#library">
-                                <img class="big-icon" src="./assets/svg/search-svgrepo-com.svg">
-                                <h4>La tua libreria</h4>
+                            <a href="#library" class="icon-next-to-text">
+                                <img class="big-icon" src="./assets/svg/music-library-multimedia-svgrepo-com.svg">
+                                <h4 class="aligned">La tua libreria</h4>
                             </a>
                         </li>
                     </ul>
@@ -82,13 +82,15 @@
               </nav>
             </section>
             <footer class="black-background left-menu">
-              <div id="download-app">
-              <img>
-              <a>Installa app</a>
+              <div id="download-app" class="icon-next-to-text">
+                <img class="small-icon placed" src="./assets/svg/arrow-button-down-2-svgrepo-com.svg">
+                <a><p>Installa app</p></a>
               </div>
-              <div id="profile">
-                 <div class="round-container" id=""><img src=""></div>
-                 <h4  class="color-white">Nome Cognome</h4>
+              <div id="profile" class="icon-next-to-text">
+                 <div class="round-container" id="">
+                    <img src="">
+                 </div>
+                 <h4  class="color-white aligned">Nome Cognome</h4>
               </div>
             </footer>
         </section>
@@ -275,33 +277,55 @@
     </main>
     <footer id="main-footer">
         <div id="display-track">
-            <div><img id="current-track-img" src="https://www.musewiki.org/images/thumb/Deadstarcdcover.jpg/450px-Deadstarcdcover.jpg"></div>
             <div>
+                <img id="current-track-img" src="https://www.musewiki.org/images/thumb/Deadstarcdcover.jpg/450px-Deadstarcdcover.jpg">
+            </div>
+            <div class="aligned">
                 <h4>Futurism</h4>
                 <p>Muse</p>
             </div>
-            <div><img class="small-icon" src="./assets/svg/heart-svgrepo-com.svg"></div>
-            <div><img class="small-icon" src="./assets/svg/folder-svgrepo-com.svg"></div>
+            <div class="aligned">
+                <img class="small-icon" src="./assets/svg/heart-svgrepo-com.svg">
+            </div>
+            <div class="aligned">
+                <img class="small-icon" src="./assets/svg/folder-svgrepo-com.svg">
+            </div>
         </div>
         <div id="player">
             <div id="player-controls">
-                <div><img class="small-icon" src="assets/svg/shuffle-1-svgrepo-com.svg"></div>
-                <div><img class="small-icon" src="assets/svg/control-button-inv-svgrepo-com.svg"></div>
-                <div><img class="small-icon" src="assets/svg/video-playback-mark-svgrepo-com.svg"></div>
-                <div><img class="small-icon" src="assets/svg/control-button-svgrepo-com.svg"></div>
-                <div><img class="small-icon" src="assets/svg/reload-svgrepo-com.svg"></div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/shuffle-1-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/control-button-inv-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/video-playback-mark-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/control-button-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/reload-svgrepo-com.svg">
+                </div>
             </div>
             <div id="player-display">
-                <p></p>
-                <div id="time"></div>
-                <p></p>
+                <p class="placed">00:01</p>
+                <progress class="placed"></progress>
+                <p class="placed">03:27</p>
             </div>
         </div>
         <div id="settings-shortcuts">
-            <div><img class="small-icon" src="assets/svg/burger-menu-svgrepo-com.svg"></div>
-            <div><img class="small-icon" src="assets/svg/desktop-svgrepo-com.svg"></div>
-            <div><img class="small-icon" src="assets/svg/volume-up-svgrepo-com.svg"></div>
-            <div id="volume"></div>
+            <div class="aligned">
+                <img class="small-icon" src="assets/svg/burger-menu-svgrepo-com.svg">
+            </div>
+            <div class="aligned">
+                <img class="small-icon" src="assets/svg/desktop-svgrepo-com.svg">
+            </div>
+            <div class="aligned">
+                <img class="small-icon" src="assets/svg/volume-up-svgrepo-com.svg">
+            </div>
+            <progress class="placed" id="volume"></progress>
         </div>
     </footer>
 </body>

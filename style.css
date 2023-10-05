@@ -6,7 +6,6 @@
     color:rgb(121, 120, 120);
 }
 
-
 main {
     background-color: rgb(28, 28, 34);
     display: grid;
@@ -16,7 +15,7 @@ main {
 #main-header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(18, 18, 23);
     height: 80px;
     z-index: 1;
@@ -28,7 +27,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 60px;
+    height: 70px;
 }
 
 
@@ -39,10 +38,8 @@ a {
     text-decoration: none;
 }
 
-/* TODO: format h2, h3, h4, and p*/
-
 h2 {
-
+    color: white;
 }
 h3 {
     font-weight:300;
@@ -51,6 +48,8 @@ h3 {
 }
 h4 {
     display: inline-block;
+    font-size: 12px;
+
 
 }
 p {
@@ -81,12 +80,33 @@ li {
     width: 15px;
 }
 
+.aligned {
+    display: grid;
+    align-self: center; 
+}
+
+.placed {
+    display: grid;
+    place-self: center;
+}
+
+.icon-next-to-text {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+progress {
+    height: 4px;
+    width: 100%;
+}
+
+
 /*SIDE MENU*/
 #side-menu {
     position: fixed;
     left: 0;
     top: 80px;
-    height: 100vh;
+    height: calc(100vh - 170px);
     z-index: 1;
 }
 #side-menu, 
@@ -101,9 +121,6 @@ li {
     width: 30px;
     height: 30px;
     background-color: rgb(121, 120, 120);
-}
-#playlist-menu {
-    height: 500px;
 }
 
 #playlist-menu li{
@@ -125,10 +142,39 @@ li {
     font-weight: 600;
 }
 
-
-
 #side-menu footer {
-    bottom: 60px;
+    bottom: 80px;
+    height: fit-content;
+    padding: 5px 0;
+}
+
+#download-app img {
+    width: 10px;
+}
+
+#profile, 
+#download-app {
+    padding: 5px 0;
+    width: 160px;
+}
+
+#download-app {
+    border-bottom: 
+    1px solid grey;
+    display: grid;
+    grid-template-columns: 12px 1fr;
+}
+
+#profile h4,
+#download-app p {
+    padding-left: 5px;
+}
+
+
+#profile .round-container {
+    height: 25px;
+    width: 25px;
+    border: 1px solid greenyellow;
 }
 
 /*HEADER*/
@@ -179,7 +225,7 @@ h1 {
 /* upgrade-button */
 button {
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
     border: 1px solid white;
     padding: 0 40px;
@@ -195,13 +241,12 @@ button > h3 {
 /*MAIN CONTENT NAVIGATION*/
 
 #main-content {
-    margin-left: 180px;
+    margin-left: 200px;
     position: relative;
 }
 
-#main-content #categories-menu {
-    height: 60px;
-    width: 1000px;
+#categories-menu {
+    height: auto;
     position: fixed;
     background-color: rgb(28, 28, 34);   
     top: 80px;
@@ -214,19 +259,20 @@ button > h3 {
 
 #main-content> header > nav > ul{
     height: 100%;
-    width: 1fr;
+    width: calc(100vw - 200px);
+    display: inline-block;
 }
 
 
 #main-content li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 12px 0 0;
 }
 
 /*MAIN CONTENT DISPLAY*/
 
 #display-content {
-    width: calc(100vw - 180px);
+    width: calc(100vw - 200px);
     padding-top: 140px;
 }
 
@@ -244,7 +290,7 @@ button > h3 {
 .album {
     height: 240px;
     width: 140px;
-    padding: 5px;
+    padding: 5px 0;
     text-align: center;
 }
 .img-container {
@@ -279,8 +325,8 @@ button > h3 {
 /* FOOTER */
 
 #main-footer {
-    padding: 0 0 10px 10px;
-    width: 100vw;
+    padding: 5px;
+    width: calc(100vw - 20px);
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     z-index: 1;
@@ -294,10 +340,6 @@ button > h3 {
     color: white;
 }
 
-#display-track div {
-    display: grid;
-    align-self: center; 
-}
 
 #display-track div h4 {
 color: white;
@@ -330,7 +372,9 @@ color: white;
     grid-template-columns: 50px 1fr 50px;
 }
 
-
+#volume {
+    width: 80px;
+}
 
 
 
