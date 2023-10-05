@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Music&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: grid;
+    grid-template-areas: 'side header'
+                        'side main';
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr;
+    
+}
+
+header{
+    position: relative;
+    background-color:rgba(16, 29, 30, 0.785);
+    grid-area: header;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+
+}
+
+header .slogan{
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    background-color: #58906ce8;
+    padding: 5px;
+    left: 0%; 
+    animation: moving 8s 0.5s ease-in-out infinite; 
+    box-shadow: 1px 1px 10px 2px #1DB954;
+    opacity: 1;
+   overflow: hidden;
+}
+
+@keyframes moving{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+   
+    }
+
+    100%{
+        transform: translateX(600px);
+        opacity: 0;
+    
+        
+    }
+
+}
+
+header .slogan> svg{
+    width: 25px;
+
+} 
+
+header .slogan> p{
+font-size: 0.7rem;
+font-weight: bold;
+font-family:'Noto Music' ;
+color: #ffff;
+} 
+
+
+
+
+header > p{
+    font-size: 1.3rem;
+    font-family: 'Noto Music';
+    text-align: center;
+    color: white;
+    background-color:rgba(22, 35, 36, 0.727);
+    border: 1px solid #1DB954;
+    padding: 5px 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 6px 0.5px #1DB954;
+    transition: transform 0.3s ease-in;
+    margin-left:5px ;
+
+}
+
+header > p:hover{
+    background-color:rgba(22, 35, 36, 0.727);
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+
+aside{
+    background-color: #000000;
+    grid-area: side;
+
+}
+
+
+aside nav{
+    display: grid;
+    row-gap: 20px;
+    padding: 12px;
+}
+.logo{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo >svg{
+    color: #ffffff;
+    width: 100px;
+}
+.logo > i{
+    font-size: 1.2rem;
+    color:#1db954ca;
+    cursor: pointer;
+}
+.nav-icons > .icon {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    
+    column-gap: 10px;
+    margin-bottom: 10px;
+    padding: 5px  0;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-icons > .icon::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #1DB954;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: 0% 100%;
+}
+
+.nav-icons > .icon:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-icons .icon > svg {
+    width: 20px;
+    justify-self: start;
+    
+}
+
+.nav-icons .icon > img{
+    width: 20px;
+    background-color: white;
+}
+
+ .nav-icons .icon > p{
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.689);
+}
+
+.icon > input{
+    width: 100px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: #f6f5f55a;
+}
+
+.icon > input:focus{
+    background-color: #f6f5f5bc;
+}
+
+.icon > input::placeholder{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.764);
+   
+}
+h2,h3{
+    color: #1db954ca;
+    font-family: sans-serif;
+}
+
+h2,h3:hover{
+    color: #1db9548a;
+}
+
+
+.playlist-icon{
+    display: grid;
+   grid-auto-flow: column;
+   align-items: center;
+   justify-content: start;
+   column-gap: 10px;
+   margin-top: 5px;
+ 
+}
+.playlist-icon > img{
+    width: 30px;
+    background-color: white;
+   
+
+}
+
+.playlist-icon > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:  #1db954ca;;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.playlist-icon > p:hover{
+    color: #1db9548a;
+
+}
+
+
+.playlist-name > p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.764);
+    line-height: 2;
+    font-family: sans-serif;
+    
+}
+
+.playlist-name > p:hover{
+    color: rgba(255, 255, 255, 0.393);
+    cursor: pointer;
+}
+main{
+    grid-area: main;
+    background-color:rgb(14, 27, 28);
+    ;
+}
+
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width:600px){
+    body{
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: 80px 1fr;
+        transition: body 0.3s ease;
+    }
+
+    aside nav{
+        display: grid;
+        row-gap: 20px;
+        padding: 12px;
+        justify-items: center;
+
+    }
+
+    .logo > svg{
+    display: none;
+    }
+
+
+    .icon > p, .icon >input , .icon >h3{
+        display: none;
+    }
+
+
+    .nav-icons .icon > svg, .logo > i  {
+        width: 40px;
+        font-size: 40px;
+        
+    }
+
+    .playlist > h3{
+        display: none;
+    }
+
+    .playlist-icon > p,  .playlist-name >P{ 
+        display: none;
+
+    }
+    
+    .playlist-icon > img{
+        width: 40px;
+    }
+
+
+
+    .header .slogan {
+        animation: moving 4s 0.5s linear infinite; 
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(40%); 
+            opacity: 0;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width:1200px){
+    @keyframes moving {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(1000px); 
+            opacity: 0;
+        }
+    }
+}
