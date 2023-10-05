@@ -15,14 +15,15 @@ html, body {
 .container {
     height: 100%;
     grid-template-rows: 90px 1fr 75px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    scroll-behavior: smooth;
 }
 
 .grid {
     display: grid;
-}
-
-.main {
-    grid-template-columns: 250px 1fr;
 }
 
 .general-navigation-list, .playlists-list, .main-navigation-list {

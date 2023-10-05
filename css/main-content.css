@@ -1,9 +1,11 @@
 .main-content {
+    grid-area: main-content;
     grid-template-rows: 50px 1fr;
     background-color: rgb(17, 20, 29);
     width: calc(100% - 250px);
+    /* width: 100%; */
     position: absolute;
-    right: 0;
+    left: 250px;
     top: 90px;
     bottom: 75px;
 }
