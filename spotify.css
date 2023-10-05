@@ -55,6 +55,8 @@ a:hover {
 
 .component:hover {
     border-left: springgreen solid 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
 .playlist {
@@ -433,4 +435,46 @@ input[type="range"]::-moz-range-thumb{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1600px) {
+    .album-carousel {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .nav-elements {
+        grid-template-columns: repeat(3, 200px);
+        grid-auto-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .playback-left {
+        display: none;
+    }
+    .playback-mid {
+        padding-left: 40px;
+    }
+    .playback-time > input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .album-carousel {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .nav-elements {
+        display: none;
+    }
+    .playback-left {
+        display: none;
+    }
+    .playback-right {
+        display: none;
+    }
+    .playback-mid {
+        padding: 0 300px;
+    }
+    .playback-time > input {
+        width: 400px;
+    }
+}
 
