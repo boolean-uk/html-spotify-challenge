@@ -464,7 +464,7 @@ border: 1px dashed white;
    "popular-artists-con"
    "albumsThree-con"
    ;
-   grid-template-rows: 70px 55px 300px 75px 360px 75px 360px  ;
+   grid-template-rows: 70px 55px 330px 75px 360px 75px 360px  ;
    gap: 2px;
    padding: 2px;
 }
@@ -587,22 +587,22 @@ border: 1px dashed white;
 }
 
 .recently-played-text > p {
-    font-size: 30px;
-    margin-top: 3px;
+    font-size: 25px;
+    margin-top: 5px;
     margin-left: 20px;
     color: white;
 }
 
-/* ALBUM ONE */
+/* ALBUM-ROW-ONE ONE */
 
 .albumsOne-con {
     grid-area: albumsOne-con;
     border: 1px dashed white;
     display: grid;
     grid-template: "albumOne-1 albumOne-2 albumOne-3 albumOne-4 albumOne-5 albumOne-6";
-    grid-template-columns: repeat(6, (auto-fit, 250px));
-    grid-template-columns: max-content;
-   
+    grid-template-columns: repeat(6, minmax(0, max-content));
+    
+    /* grid-template-columns: max-content; */
     
    
     gap: 15px;
@@ -620,7 +620,7 @@ border: 1px dashed white;
     "album-name-coverOne-1"
     "album-subtitleOne-1";
     grid-template-rows: 180px 40px 40px ;
-    /* grid-template-columns: max-content; */
+    
     gap: 5px;
     padding: 5px;
 }
@@ -657,62 +657,310 @@ border: 1px dashed white;
 .album-subtitleOne-1 > p {
     color: grey;
     font-size: 13px;
-    margin-top: 10px;
+   
     margin-left: 65px;
 }
 
-/* ALBUM 2 */
+/* ALBUM-ROW-ONE 2 */
 
 .albumOne-2 {
     grid-area: albumOne-2;
     border: 1px dashed white;
 
+    display: grid;
+    grid-template:
+    "album-coverOne-2" 
+    "album-name-coverOne-2"
+    "album-subtitleOne-2";
+    grid-template-rows: 180px 60px 40px ;
+    
+    gap: 5px;
+    padding: 5px;
+    
+   
 }
 
-/* ALBUM 3 */
+.album-coverOne-2 {
+    grid-area:album-coverOne-2 ;
+    border: 1px dashed white;
+}
+
+.album-coverOne-2 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+
+.album-name-coverOne-2 {
+    grid-area: album-name-coverOne-2;
+    border: 1px dashed white;
+}
+
+
+.album-name-coverOne-2 > p {
+    color: white;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.album-subtitleOne-2 {
+    grid-area:album-subtitleOne-2 ;
+    border: 1px dashed white;
+}
+
+.album-subtitleOne-2 > p {
+    color: grey;
+    font-size: 13px;
+  margin-left: 10px;
+}
+
+
+/* ALBUM-ROW-ONE 3 */
 .albumOne-3 {
     grid-area: albumOne-3;
     border: 1px dashed white;
 
+    display: grid;
+    grid-template:
+    "album-coverOne-3" 
+    "album-name-coverOne-3"
+    "album-subtitleOne-3";
+    grid-template-rows: 180px 40px 40px ;
+    
+    gap: 5px;
+    padding: 5px;
+
 }
 
-/* ALBUM 4 */
+.album-coverOne-3 {
+    grid-area: album-coverOne-3;
+    border: 1px dashed white;
+}
+
+.album-coverOne-3 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+.album-name-coverOne-3 {
+    grid-area: album-name-coverOne-3;
+    border: 1px dashed white;
+}
+
+.album-name-coverOne-3 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+
+.album-subtitleOne-3 {
+    grid-area: album-subtitleOne-3;
+    border: 1px dashed white;
+}
+
+.album-subtitleOne-3 > p {
+    color: grey;
+    font-size: 13px;
+    margin-left: 65px;
+}
+
+
+/* ALBUM-ROW-ONE 4 */
 
 .albumOne-4 {
     grid-area: albumOne-4;
     border: 1px dashed white;
 
+    display: grid;
+    grid-template:
+    "album-coverOne-4" 
+    "album-name-coverOne-4"
+    "album-subtitleOne-4";
+    grid-template-rows: 180px 40px 40px ;
+    
+    gap: 5px;
+    padding: 5px;
+
 }
 
-/* ALBUM 5 */
-.albumOne-5 {
-    grid-area: albumOne-5;
+
+.album-coverOne-4 {
+    grid-area: album-coverOne-4;
     border: 1px dashed white;
 
 }
 
-/* ALBUM 6 */
+.album-name-coverOne-4 {
+    grid-area: album-name-coverOne-4;
+    border: 1px dashed white;
+
+}
+
+.album-coverOne-4 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+.album-subtitleOne-4 {
+    grid-area: album-subtitleOne-4;
+    border: 1px dashed white;
+}
+
+
+.album-name-coverOne-4 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.album-subtitleOne-4 > p {
+    color: grey;
+    font-size: 13px;
+    margin-left: 65px;
+}
+
+
+
+/* ALBUM-ROW-ONE 5 */
+.albumOne-5 {
+    grid-area: albumOne-5;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template:
+    "album-coverOne-5" 
+    "album-name-coverOne-5"
+    "album-subtitleOne-5";
+    grid-template-rows: 180px 40px 40px ;
+    
+    gap: 5px;
+    padding: 5px;
+
+}
+
+.album-coverOne-5 {
+    grid-area: album-coverOne-5;
+    border: 1px dashed white;
+}
+
+.album-coverOne-5 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+.album-name-coverOne-5 {
+    grid-area: album-name-coverOne-5;
+    border: 1px dashed white;
+}
+
+.album-name-coverOne-5 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.album-subtitleOne-5 {
+    grid-area: album-subtitleOne-5;
+    border: 1px dashed white;
+}
+
+.album-subtitleOne-5 > p {
+    color: grey;
+    font-size: 13px;
+    margin-left: 65px;
+}
+
+
+/* ALBUM-ROW-ONE 6 */
 .albumOne-6 {
     grid-area: albumOne-6;
     border: 1px dashed white;
     margin-right: 20px;
 
+    display: grid;
+    grid-template:
+    "album-coverOne-6" 
+    "album-name-coverOne-6"
+    "album-subtitleOne-6";
+    grid-template-rows: 180px 40px 40px ;
+    
+    gap: 5px;
+    padding: 5px;
+
 }
-.created-by-con {
-    grid-area: created-by-con;
+
+.album-coverOne-6 {
+    grid-area: album-coverOne-6;
     border: 1px dashed white;
 }
 
+.album-coverOne-6 > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+   
+ }
+
+.album-name-coverOne-6 {
+    grid-area: album-name-coverOne-6;
+    border: 1px dashed white;
+}
+
+.album-name-coverOne-6 >p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.album-subtitleOne-6 {
+    grid-area: album-subtitleOne-6;
+    border: 1px dashed white;
+}
+
+
+.album-subtitleOne-6 > p {
+    color: grey;
+    font-size: 13px;
+    margin-left: 65px;
+}
+
+/* Created by Section Text */
+
+.created-by-con {
+    grid-area: created-by-con;
+    border: 1px dashed white;
+    
+}
+
+
+/* ALBUM-ROW-TWO  */
 .albumsTwo-con {
     grid-area: albumsTwo-con;
     border: 1px dashed white;
 }
+
+/* Popular Artists Section */
 
 .popular-artists-con {
     grid-area: popular-artists-con;
     border: 1px dashed white;
    
 }
+
+/* ALBUM-ROW-THREE  */
 
 .albumsThree-con {
     grid-area: albumsThree-con;
