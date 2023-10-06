@@ -192,9 +192,16 @@ audio {
     align-items: center;
 }
 
-img.icon{
-    width: 20px;
-    height: 20px;
+.right-footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    justify-content: end;
+}
+
+.left-footer-icons{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 .song-playing {
@@ -217,6 +224,12 @@ img.icon{
     place-self: center;
 }
 
+.footer-top-icons{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20px, max-content));
+    gap: 12px;
+    justify-content: end;
+    }
 
 footer {
     grid-area: footer;
@@ -224,7 +237,7 @@ footer {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 220px 1fr 250px;
-    padding: 0 20px;
+    padding: 5x 20px;
     align-content: center;
     position: fixed;
     bottom: 0;
