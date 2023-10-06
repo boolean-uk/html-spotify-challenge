@@ -397,6 +397,12 @@ color: white;
 
 /* :hover AND :active  */
 
+.hover-color:hover p,
+.hover-color:hover h4 {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(169, 169, 169);
+}
+
 .hover-underlined,
 .hover-side-border {
     position: relative;
@@ -409,8 +415,8 @@ color: white;
     background: rgb(103, 247, 255);
     position: absolute;
     width: 60%;
-    height: 2px;
-    bottom: -5px;
+    height: 1.5px;
+    bottom: -2px;
     left: 20%;
 }
 
@@ -428,7 +434,6 @@ color: white;
     left: -8px;
     width: 2px;
 }
-
 
 .album .hover-img-container {
     position: absolute;
