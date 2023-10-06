@@ -291,15 +291,14 @@ button > h3 {
 
 /*applies to each item within each category: */
 .album {
-    height: 240px;
+    height: 200px;
     width: 140px;
     padding: 5px 0;
     text-align: center;
     position: relative;
+    display: grid;
 }
 .img-container {
-    width: 140px;
-    height: 140px;
     position: relative;
 }
 .round-container{
@@ -365,6 +364,9 @@ button > h3 {
 #settings-shortcuts {
     display: grid;
     grid-template-columns: repeat(3, minmax(15px, 40px)) minmax(0, 1fr);
+    position: absolute;
+    right: 60px;
+    top: 35px;
 }
 #player-controls{
     display: grid;
@@ -377,7 +379,7 @@ button > h3 {
 }
 /*footer: right: displays quick settins, incl. volume and its progress bar*/
 #volume {
-    width: 80%;
+    width: 90%;
 }
  
 progress {
@@ -464,6 +466,16 @@ button:hover {
     transition-duration: 0.5s;
 }
 
+@media screen and (max-width: 650px) {
+    #main-header {
+        height: 60px;
+    }
+    #categories-menu, 
+    #side-menu {
+        top: 60px;
+    }
+}
+
 /*SMALL DISPLAYS: smaller than 650px */
 
 @media screen and (max-width: 650px) {
@@ -520,6 +532,9 @@ button:hover {
         height: 50px;
     }
 
+    #settings-shortcuts {
+        position: static;
+    }
 
     /*smaller, more specific changes, including animations*/
 
@@ -543,5 +558,30 @@ button:hover {
 }
 
 
+@media screen and (max-width: 550px) {
+    #display-content {
+        width: 100%;
+    }
 
+    .playlists-container {
+        grid-template-columns: 100%;
+        gap: 0;
+        margin-bottom: 80px;
+    }
+
+    .album {
+        height: 40vh;
+        width: 50vw;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    
+    .album-title {
+        overflow-x: scroll;
+        height: 40px;
+        padding: 0;
+        margin-top: 5px;
+    }
+
+}
 
