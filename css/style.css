@@ -1,0 +1,318 @@
+body {
+    color: white;
+}
+
+
+
+/* the main container */
+.container{
+    display: grid; 
+    background-color: black;
+    border: solid 1px black;
+
+
+    grid-template: 
+    "spotifylogo              header                     header" 80px
+    "leftside                 main                        main " minmax(630px, 1fr)
+    " footer                 footer                      footer" 80px / 
+     250px                    1fr;
+}
+
+
+
+
+                              /* HEADER CONTAINERAND STYLING  */
+header {
+    align-items: center;
+    justify-items: end;
+
+    display: grid;
+    grid-area: header;
+    background-color: darkgray;
+}
+
+header > div {
+    margin-right: 20px;
+    background-color: black;
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+
+.logo {
+    grid-area: spotifylogo;
+    text-align: center;
+    margin: 7px 40px 5px 40px;
+}
+
+
+
+
+
+                      /*EVERTHING ABOUT LEFT CONTAINER  AND STYLING  */
+
+.get {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.left-container {
+    grid-area: leftside;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    color: darkgray;
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+.item img {
+    width: 30px;
+    height: 30px;
+}
+
+.item span {
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.left-container > div {
+    margin: 10px 50px 0px 30px;
+}
+
+.left-container > p {
+    color: darkgray;
+    margin: 10px 0 0 30px;
+}
+
+.home {
+    color: white;
+}
+
+
+.createlist {
+    color: white;
+    padding-left: 10px;
+}
+
+.playlist {
+    margin-top: 15px;
+}
+
+.hr {
+    margin-right: 20px;
+}
+
+.installer-app {
+    color: gray;
+    margin-top: 150px;
+}
+
+
+.profile {
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.profile-name {
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+
+                       /* MAIN CONTAINER STYLING  */
+.main-container {
+    display: grid;
+    grid-area: main;
+    background-color: grey;
+
+    grid-template: 
+    "sub-header" 30px
+    "recently-played" auto        
+    "create-played" auto
+    "popular-played" auto /
+    1fr;
+}
+
+
+.main-container > div > ul > li {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    color: darkgray;
+}
+
+.main-container > div:nth-child(1) {
+    text-align: center;
+
+}
+
+
+         /* SYBHEADER AT THE STARTING OF THE MAIN GRID  */
+.sub-header {
+    background-color: white;
+    grid-area: sub-header;
+
+}
+
+
+
+/* RECENTLY PLAYED GRID INSIDE THE MIAN GRID  */
+.recently-played {
+    grid-area: recently-played;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+
+}
+
+
+
+
+.grid-container > div {
+    background-color: white;
+    color: black;
+    height: fit-content;
+}
+
+
+
+.testing {
+    text-align: center;
+}
+
+
+                       /* CREATE PLAYLIST GRIF INSIDE THE MAIN GRID */
+.create-play {
+    grid-area: create-played;
+}
+
+
+
+
+.grid-container > div {
+    border-radius: 15pz;
+}
+
+
+                    /* FOOTER CONATINER AND STYLING */
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: darkgrey;
+    justify-content: space-between;
+}
+
+.nowplaying {
+    color: white;
+    margin-left: 20px;
+}
+
+.nowplaying img {
+    width: 60px;
+    height: 60px;
+}
+
+.senister {
+    margin-left: 10px;
+}
+
+
+.brono {
+    color: grey;
+}
+
+.semester {
+    padding: 0px 50px;
+}
+
+
+.item:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.testing:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.spotify-upgrade:hover {
+    transform: scale(1.2, 1.2);
+    color: red;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .container{
+        display: grid; 
+        background-color: black;
+        border: solid 1px black;
+    
+    
+        grid-template: 
+        "spotifylogo              header                     header" 80px
+        "leftside                 main                        main " minmax(630px, 1fr)
+        " footer                 footer                      footer" 80px / 
+         200px                    1fr;
+    }
+    
+    .installer-app {
+        color: red;
+        margin-top: 2100px;
+    }
+
+    
+}
+
+
+@media screen and (max-width:500px) {
+
+    .container{
+        display: grid; 
+        background-color: black;
+        border: solid 1px black;
+    
+    
+        grid-template: 
+        "spotifylogo              header                     header" 80px
+        "leftside                 main                        main " minmax(630px, 1fr)
+        " footer                 footer                      footer" 80px / 
+         50px                    1fr;
+    }
+
+    .left-container > p {
+        display: none;
+    }
+
+    .item span {
+        display: none;
+    }
+
+    .left-container > div {
+        margin: 0;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .installer-app {
+        color: green;
+        margin-top: 2100px;
+    }
+}
+
+
+
+
+
