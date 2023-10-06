@@ -600,3 +600,228 @@ input[type="range"]::-moz-range-thumb{
 
 
 
+@media screen and (max-width: 600px) {
+
+    .main-grid {
+        display: grid;
+        grid-area: main-grid;
+        grid-template:
+    
+          "left-menu    header"  100px
+          "left-menu    main" 1fr 
+          "footer       footer" 100px /
+           50px       550px;
+    
+        width: 100%;
+
+    }
+
+/* start of header section */
+.header {
+    width: 100%;
+}
+
+#upgrade{
+    color: white;
+    border: solid 1px white;
+    margin: 15px 20px 10px 460px;
+    padding: 15px 30px 15px 70px;
+}
+/* end of header section */
+
+/* start of left menu */
+.left-menu {
+   width: 100%;
+}
+
+div a, .title, .home a, .search, .playlist, .button, .plus-icon, .list, .install, hr {
+    display: none;
+}
+
+/* image */
+.logo-icon {
+    left:  8px;
+    top: 15px;
+}
+
+/* image */
+.home-icon {
+    left: 13px;
+}
+
+input:valid {
+   display: none;;
+}
+
+ /* image */
+.search-icon {
+    left: 13px;
+}
+
+/* image */
+.libary-icon {
+    left: 13px;
+}
+
+/* create playlist button */
+
+/* image */
+.small-icon {
+    height: 15px;
+    width: 15px;
+    left: 14px;
+    top: 500px;
+}
+
+/* image */
+.profile-icon {
+    top: 535px;
+    left: -10px;
+}
+/* end of left menu section */
+
+
+.main {
+    
+    width: calc (100% -20px);
+    grid-template:
+
+    "main-nav" 70px
+    "main-content" 1fr 
+    "main-content2" 1fr
+    "main-content3" 1fr /
+       600px;
+}
+
+
+/* main section top nav bar */
+.main-nav {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+
+/* main spotify album content section */
+.main-content {
+    padding-left: 20px;
+    padding-right:  80px;
+}
+
+.subtitle {
+ margin-bottom: 20px;
+}
+/* end of first main content section */
+/* end of main content section */
+
+
+/* start of the footer section */
+.footer {
+    width: 100%;
+}
+
+.album {
+    font-size: 9px;
+    margin-top:30px;
+    margin-left:60px;
+    max-width: 60px;
+}
+
+.singer {
+    font-size: 9px;
+    margin-left: 60px;
+    margin-top: 53px;
+    max-width: 50px;
+}
+/* image */
+.heart-icon {
+    height: 15px;
+    width: 15px;
+    left: 130px;
+    top: 30px;
+}
+
+/* image */
+.save-icon {
+    height: 15px;
+    width: 15px;
+    left: 130px;
+    top: 50px;
+}
+
+/* image */
+.shuffle-icon {
+    height: 20px;
+    width: 20px;
+    top: 23px;
+    left: 40px;
+}
+
+/* image */
+.rewind-icon {
+    left: 65px;
+}
+
+/* image */
+.play-icon{
+    left: 100px;
+}
+
+/* image */
+.forward-icon {
+    left: 140px;
+
+}
+/* image */
+.replay-icon {
+    left: 165px;
+}
+/* image */
+.options-icon {
+    height: 20px;
+    width: 20px;
+    left: 20px;
+    top: 45px;
+}
+/* image */
+.share-icon {
+    left: 50px;
+    top: 45px;
+
+}
+/* image */
+.volume-icon {
+    left: 80px;
+    top: 45px;
+}
+
+
+.song-time {
+    display: none;
+}
+
+.song-time input {
+  display: none;
+    
+}
+
+
+/* attempted to add in, but came up with a few issues */
+input[type="range"]::-webkit-slider-runnable-track {
+   display: none;
+}
+
+
+input[type="range"]::-moz-range-track {
+    display: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   display: none;
+}
+
+input[type="range"]::-moz-range-thumb{
+ display: none;
+}
+
+    
+}
