@@ -2,7 +2,6 @@
     grid-area: main;
     grid-template-columns: 250px 1fr;
     grid-template-areas: "left-menu main-content";
-    width: 100%;
 }
 
 /* LEFT MENU */
@@ -10,11 +9,7 @@
     grid-area: left-menu;
     grid-template-rows: 140px 1fr 40px 50px;
     background-color: black;
-    width: 250px;
-    height: calc(100% - 165px);
-    position: absolute;
-    left: 0;
-    top: 90px;
+    height: calc(100vh - 165px);
 }
 
 /* GENERAL NAV */
@@ -84,18 +79,16 @@
 }
 
 .playlists-list {
-    grid-auto-rows: 35px;
+    grid-template-rows: repeat(auto-fit, 35px);
     overflow-y: scroll;
-    overflow-x: hidden;
-    margin-right: -100px;
-    padding-right: -100px;
+    margin-right: -50px;
+    padding-right: -50px;
 }
 
 
 .playlists-list a {
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 35px;
     padding-left: 20px;
 }
 

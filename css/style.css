@@ -12,6 +12,10 @@ html, body {
     width: 100vw;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
     height: 100%;
     grid-template-rows: 90px 1fr 75px;

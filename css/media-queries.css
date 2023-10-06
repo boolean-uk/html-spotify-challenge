@@ -53,7 +53,7 @@
         display: none;
     }
 
-    .main-content {
-        left: 80px;
+    .main {
+        grid-template-columns: 80px 1fr;
     }
 }
