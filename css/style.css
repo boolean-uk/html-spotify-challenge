@@ -84,7 +84,7 @@
   margin: 10px 0 20px 0;
 }
 
-.playlists .createPlaylist:hover {
+.playlists .createPlaylist:hover, .item:hover {
   color: white;
 }
 
@@ -124,6 +124,18 @@
   overflow: hidden;
   height: 200px;
   object-fit: cover;
+  position: relative;
+}
+
+.cover, .overlay {
+  place-items: center;
+}
+
+.play {
+  position: absolute;
+  opacity: 0;
+  width: 40%;
+  padding: 30%;
 }
 
 .icon {
@@ -133,9 +145,13 @@
 .main .artist {
   border-radius: 100%;
 }
-
+/* 
 .cover:hover, .icon:hover {
-  opacity: 0.5;
+  opacity: 0.2;
+} */
+
+.play:hover {
+  opacity: 1;
 }
 
 img {
@@ -150,6 +166,10 @@ img {
 .item .title {
   font-weight: bold;
   font-size: 14px;
+}
+
+.title:hover {
+  text-decoration: underline;
 }
 
 .item .subtitle {
@@ -202,59 +222,40 @@ img {
   height: unset;
 }
 
-.playingNow .favourite {
-  grid-area: favourite;
+.trackControl {
+  justify-self: center;
 }
 
-.trackControl {
-  display: grid;
-  grid-gap: 10px;
-  place-self: center;
-  align-items: center;
-  grid-template-areas: 
-  "shuffle back playpause forward repeatall"
-  "playedDuration . progressBar . totalDuration";
-  grid-template-columns: 20px 15px 40px 15px 20px;
-  grid-template-rows: 40px 40px;
+.trackControl img {
+  height: 20px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.pink {
+  fill: pink;
+}
+
+.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration {
+  display: inline-block;
+}
+
+.trackControl img.playpause {
+  height: 4%;
+}
+
+.playedDuration, .totalDuration, .progressBar {
+  display: inline-block;
 }
 
 .trackControl .progressBar {
   height: 4px;
+  width: 300px;
   background-color: #8b8b8b;
   grid-column-start: 3;
   border-radius: 2px;
-}
-
-.trackControl .shuffle {
-  grid-area: shuffle;
-}
-
-.trackControl .back {
-  grid-area: back;
-}
-
-.trackControl .playpause {
-  grid-area: playpause;
-}
-
-.trackControl .forward {
-  grid-area: forward;
-}
-
-.trackControl .repeatall {
-  grid-area: repeatall;
-}
-
-.trackControl .playedDuration {
-  grid-area: playedDuration;
-}
-
-.trackControl .totalDuration {
-  grid-area: totalDuration;
-}
-
-.options {
-
 }
 
 h2 {
