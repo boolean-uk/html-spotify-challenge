@@ -503,6 +503,9 @@ body{
  }
 .artist1 a h6{
     color: #808080;
+   position: relative;
+   bottom: 5px;
+   right: 10px;
 }
 .artist1 a h6:hover{
     text-decoration: underline;
@@ -526,6 +529,9 @@ body{
  }
 .artist2 a h6{
     color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
 }
 .artist2 a h6:hover{
     text-decoration: underline;
@@ -549,6 +555,9 @@ body{
  }
 .artist3 a h6{
     color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
 }
 .artist3 a h6:hover{
     text-decoration: underline;
@@ -574,6 +583,9 @@ body{
  }
 .artist6 a h6{
     color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
 }
 .artist6 a h6:hover{
     text-decoration: underline;
@@ -597,6 +609,9 @@ body{
  }
 .artist0 a h6{
     color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
 }
 .artist0 a h6:hover{
     text-decoration: underline;
