@@ -1,12 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dutchify</title>
+  </head>
+  <body>
+    <div class="container grid">
+      <header class="grid">
+        <button class="rounded-right hover">waardeer nu op</button>
+      </header>
+      <div class="menu-bar grid">
+        <div class="logo-container grid col">
+          <div class="logo round grid">
+            <img
+              src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+              alt="flowers icon"
+            />
+          </div>
+          <h1 class="dashify grid collapse-left">Dutchify</h1>
+        </div>
+        <nav class="side grid">
+          <ul class="grid">
+            <li class="flex rel">
+              <div class="hover grid col rounded-right">
+                <div id="selected-side" class="selector"></div>
+                <div class="icon grid">
+                  <img src="https://img.icons8.com/ffffff/home" alt="home" />
+                </div>
+                <div class="nav-text grid collapse-left">Thuis</div>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="hover grid col rounded-right">
+                <div class="selector"></div>
+                <div class="icon grid">
+                  <img
+                    src="https://img.icons8.com/ffffff/search"
+                    alt="search"
+                  />
+                </div>
+                <div class="nav-text grid collapse-left">Zoeken</div>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="hover grid col rounded-right">
+                <div class="selector"></div>
+                <div class="icon grid">
+                  <img
+                    src="https://img.icons8.com/ffffff/book-shelf"
+                    alt="library"
+                  />
+                </div>
+                <div class="nav-text grid collapse-left">Uw bibliotheek</div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="playlist-container grid collapse-left">
+          <h1>Afspeellijst</h1>
+          <nav class="grid">
+            <ul class="grid">
+              <li class="flex">
+                <div class="hover grid col rounded-right">
+                  <div class="icon grid">
+                    <img
+                      src="https://img.icons8.com/ffffff/plus"
+                      alt="add playlist"
+                    />
+                  </div>
+                  <div class="grid make-playlist">Maak afspeellijst</div>
+                </div>
+              </li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+              <li class="hover rounded-right">Naam van de afspeellijst</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-footer grid">
+          <div class="install flex">
+            <div class="hover grid col rounded-right">
+              <div class="icon grid">
+                <img
+                  src="https://img.icons8.com/ffffff/download"
+                  alt="download app"
+                />
+              </div>
+              <div class="grid collapse-left">Installeer app</div>
+            </div>
+          </div>
+          <div class="profile flex">
+            <div class="hover grid col rounded-right">
+              <div class="icon grid round">
+                <img src="https://img.icons8.com/ffffff/user" alt="user icon" />
+              </div>
+              <div class="grid collapse-left">Jan Jansen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="grid">
+        <nav class="header grid">
+          <ul class="grid nav-list grid">
+            <li id="selected-main" class="nav-items hover rounded-right grid">
+              <p>Voornaamst</p>
+            </li>
+            <li class="nav-items hover rounded-right grid">
+              <p>Podcast</p>
+            </li>
+            <li class="nav-items hover rounded-right grid">
+              <p>Populair</p>
+            </li>
+            <li class="nav-items hover rounded-right grid">
+              <p>Genre en stemming</p>
+            </li>
+            <li class="nav-items hover rounded-right grid">
+              <p>Nieuwe uitgaven</p>
+            </li>
+            <li class="nav-items hover rounded-right grid">
+              <p>Ontdekken</p>
+            </li>
+          </ul>
+        </nav>
+        <section class="recently-played gallery-container grid">
+          <hgroup>
+            <h1>Recent gespeeld</h1>
+          </hgroup>
+          <div class="gallery grid">
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/djent-is-not-a-djenre-scaled.jpg"
+                    alt="album: Periphery V: Djent Is Not a Genre"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Periphery V: Djent Is Not a Genre</h2>
+                <p class="fade-text">Periphery</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img src="assets/img/albums/turbo.jpg" alt="album: Turbo" />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Turbo</h2>
+                <p class="fade-text">Cory Wong, Dirty Loops</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img src="assets/img/albums/wasted.jpg" alt="album: Wasted" />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Wasted</h2>
+                <p class="fade-text">Darren Styles, Toneshifterz</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/hushed-and-grim.jpg"
+                    alt="album: Hushed and Grim"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Hushed and Grim</h2>
+                <p class="fade-text">Mastodon</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/spectrum.jpg"
+                    alt="album: Spectrum"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Spectrum</h2>
+                <p class="fade-text">上原 ひろみ</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/falling-satellites.jpg"
+                    alt="album: Falling Satellites"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Falling Satellites</h2>
+                <p class="fade-text">Frost*</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/paper-wolf.jpg"
+                    alt="album: Paper Wolf"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Paper Wolf</h2>
+                <p class="fade-text">VOLA</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    src="assets/img/albums/echoes-of-the-eye-the-lost-reels.jpg"
+                    alt="album: Outer Wilds: Echoes of the Eye (The Lost Reels)"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Outer Wilds: Echoes of the Eye (The Lost Reels)</h2>
+                <p class="fade-text">Andrew Prahlow</p>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+        <section class="created-for-you gallery-container grid">
+          <hgroup>
+            <h1>Gemaakt voor jou</h1>
+          </hgroup>
+          <div class="gallery grid">
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-orange.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 1</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/snarky-puppy.jpg"
+                    alt="artist: Snarky Puppy"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 1</h2>
+                <p class="fade-text overflow-elip">
+                  Snarky Puppy, Vulfpeck,<br />Jacob Collier and more artists
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-slate.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 2</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/swedish-house-mafia.jpg"
+                    alt="artist: Swedish House Mafia"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 2</h2>
+                <p class="fade-text overflow-elip">
+                  Swedish House Mafia,<br />Deadmau5, Tiësto and more
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-pink.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 3</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/sergei-rachmaninoff.jpg"
+                    alt="artist: Sergei Rachmaninoff"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 3</h2>
+                <p class="fade-text overflow-elip">
+                  Sergei Rachmaninoff, <br />Franz Liszt, Maurice Ravel and more
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-white.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 4</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/lena-raine.jpg"
+                    alt="artist: Lena Raine"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 4</h2>
+                <p class="fade-text overflow-elip">
+                  Lena Raine, Toby Fox, <br />Andrew Prahlow and more artists
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-red.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 5</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/beyonce.jpg"
+                    alt="artist: Beyoncé"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 5</h2>
+                <p class="fade-text overflow-elip">
+                  Beyoncé, Rihanna, <br />Lady Gaga and more artists
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="for-you-overlay"
+                    src="assets/img/svg/for-you-teal.svg"
+                    alt=""
+                  />
+                  <div class="for-you-icon grid round">
+                    <img
+                      src="https://img.icons8.com/fa99a9/external-basicons-solid-edtgraphics/external-Flowers-plants-basicons-solid-edtgraphics.png"
+                      alt="flowers icon"
+                    />
+                  </div>
+                  <span class="for-you-text">Daily Mix 6</span>
+                  <img
+                    class="for-you-cover"
+                    src="assets/img/artists/sleep-token.jpg"
+                    alt="artist: Sleep Token"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Daily Mix 6</h2>
+                <p class="fade-text overflow-elip">
+                  Sleep Token, Haken, <br />
+                  Meshuggah, and more artists
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular-artists gallery-container grid">
+          <hgroup>
+            <h1>Populaire artiesten</h1>
+          </hgroup>
+          <div class="gallery grid">
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/arctic-monkeys.jpg"
+                    alt="artist: Arctic Monkeys"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Arctic Monkeys</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/taylor-swift.jpg"
+                    alt="artist: Taylor Swift"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Taylor Swift</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/drake.jpg"
+                    alt="artist: Drake"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Drake</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/olivia-rodrigo.jpg"
+                    alt="artist: Olivia Rodrigo.jpg"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Olivia Rodrigo</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/the-weeknd.jpg"
+                    alt="artist: The Weeknd"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>The Weeknd</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/dave.jpg"
+                    alt="artist: Dave"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Dave</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/kanye-west.jpg"
+                    alt="artist: Kanye West"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Kanye West</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/ed-sheeran.jpg"
+                    alt="artist: Ed Sheeran"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Ed Sheeran</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/travis-scott.jpg"
+                    alt="artist: Travis Scott"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Travis Scott</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+            <div class="gallery-item grid">
+              <div class="item-container grid hover">
+                <div class="gallery-cover grid rel">
+                  <img
+                    class="round"
+                    src="assets/img/artists/rihanna.jpg"
+                    alt="artist: Rihanna"
+                  />
+                  <div class="play-hover round grid">
+                    <img src="https://img.icons8.com/play" alt="play" />
+                  </div>
+                </div>
+                <h2>Rihanna</h2>
+                <p class="fade-text">Artist</p>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+      <footer class="grid col">
+        <div class="footer-left grid col">
+          <div class="album grid">
+            <img src="/assets/img/sinister.jpeg" alt="sinister" />
+          </div>
+          <div class="album-details grid">
+            <div class="album-name overflow-elip">Sinister</div>
+            <div class="album-artist fade-text">Brano Nome</div>
+          </div>
+          <div class="like grid">
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/like" alt="like" />
+            </div>
+          </div>
+          <div class="folder grid">
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/file" alt="folder" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-center grid">
+          <div class="media-container grid col">
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/shuffle" alt="shuffle" />
+            </div>
+            <div class="icon grid hover round">
+              <img
+                src="https://img.icons8.com/ffffff/previous"
+                alt="previous"
+              />
+            </div>
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/play" alt="play" />
+            </div>
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/next" alt="next" />
+            </div>
+            <div class="icon grid hover round">
+              <img src="https://img.icons8.com/ffffff/repeat" alt="repeat" />
+            </div>
+          </div>
+          <div class="progress-container grid col">
+            <div class="current-time">0:25</div>
+            <input class="range-time" type="range" value="16" readonly />
+            <div class="total-time">4:35</div>
+          </div>
+        </div>
+        <div class="footer-right grid col">
+          <div class="icon grid hover round playlist">
+            <img src="https://img.icons8.com/ffffff/list" alt="playlist" />
+          </div>
+          <div class="icon grid hover round cast">
+            <img src="https://img.icons8.com/ffffff/monitor" alt="fullscreen" />
+          </div>
+          <div class="icon grid hover round volume col">
+            <img src="https://img.icons8.com/ffffff/speaker" alt="volume" />
+          </div>
+          <input class="volume-slider" type="range" value="65" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
