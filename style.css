@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+  max-height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template:
+    "left__menu  top__nav" 100px
+    "left__menu main " 1fr
+    "foot__part foot__part" 110px /
+    minmax(180px, 300px) minmax(758px, 1fr);
+  border: solid 1px black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER*/
+.top__nav {
+  grid-area: top__nav;
+  display: grid;
+  background-color: black;
+  align-items: center;
+  position: relative;
+}
+
+.top__nav button {
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 35px;
+  background-color: rgb(19, 1, 1);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px 14px 25px;
+}
+
+/* LEFT MENU */
+.left__menu {
+  grid-area: left__menu;
+  display: grid;
+  border: solid 1px black;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 5fr 1fr;
+  background-color: black;
+  gap: 10px;
+}
+
+/* LEFT MENU - LOGO*/
+.spotify__logo {
+  display: grid;
+  padding: 30px 0px 0px 20px;
+}
+
+.spotify__logo svg {
+  width: 140px;
+}
+
+/* LEFT MENU  - */
+.aside__menu {
+  display: grid;
+  grid-template:
+    "icons__img icons__name" 1fr/
+    40px 1fr;
+  margin-left: 15px;
+}
+
+.aside__menu .icons__img {
+  display: grid;
+  padding: 5px;
+}
+
+.aside__menu .icons__name a {
+  display: grid;
+  color: rgb(98, 91, 90);
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 42px;
+  padding-top: 7px;
+}
+
+.aside__menu .icons__name a.white__color {
+  color: white;
+}
+
+/* LEFT MENU - PLAYLIST*/
+
+.playlist__menu {
+  grid-template-columns: auto;
+  margin-left: 20px;
+  padding: 5px;
+  color: white;
+}
+
+.playlist__menu a {
+  text-decoration: none;
+  color: rgb(97, 94, 94);
+}
+
+.playlist__menu h3 {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.playlist__menu p {
+  margin: 0px;
+  font-size: 20px;
+  color: rgb(159, 158, 158);
+}
+.playlist__menu ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 30px;
+}
+
+.left__menu .playlist__menu a.span {
+  padding-top: 5px;
+}
+
+/* LEFT MENU - PROFILE*/
+.profile {
+  align-items: center;
+}
+
+.profile__menu {
+  align-items: center;
+}
+
+.profile__menu svg {
+  width: 20px;
+  margin-left: 20px;
+  padding-top: 3px;
+  color: rgb(97, 94, 94);
+}
+
+.profile__menu a {
+  text-decoration: none;
+  color: rgb(97, 94, 94);
+}
+
+.profile__menu .profile__name {
+  color: white;
+  font-weight: bold;
+}
+
+.profile__menu hr {
+  border-radius: 10px;
+  width: 260px;
+  border: 1px rgb(97, 94, 94) solid;
+}
+
+/* MAIN */
+main {
+  grid-area: main;
+  display: grid;
+  background-color: rgb(35, 34, 34);
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-areas:
+    "lists__genre"
+    "section__one"
+    "section__two"
+    "section__three";
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
