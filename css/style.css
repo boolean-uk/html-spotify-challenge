@@ -14,7 +14,7 @@
     background-color: #000;
     display: grid;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 1fr 70px;
+    grid-template-rows: 1fr 105px;
     overflow: hidden;
 }
 
@@ -450,16 +450,198 @@
 }
 
 /* tools */
-.tools {
+.playbar {
     position: fixed;
     width: 100%;
-    height: 70px;
     bottom: 0;
     grid-column: 1 / -1;
     color: #fff;
     background-color: #282828;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.playbar__info {
+    display: flex;
+    align-content: center;
+}
+
+.plabar__info-photo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/img/sinister.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.playbar__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.playbar__name-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.playbar__name-subtitle {
+    font-size: 13px;
+    color: #878787;
+    font-weight: 600;
+}
+
+.playbar__info-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.playbar__info-button {
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.playbar__info-button:not(:last-child) {
+    margin-right: 15px;
+}
+
+.playbar__info-button svg path {
+    stroke: #828282;
+    transition: all .1s ease-in;
+}
+
+.playbar__info-button:hover svg path {
+    stroke: #fff;
+}
+
+.playbar__tools {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.playbar__tools-buttons {
+    width: fit-content;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.playbar__tools-button {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    margin: 0 10px;
+}
+
+.playbar__tools-button--play {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+}
+
+.playbar__tools-button img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+.playbar__tools-range {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playbar__tools-range input {
+    width: 100%;
+    margin: 0 25px;
+    accent-color: #c1c1c1;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.playbar__tools-range input::-webkit-slider-thumb,
+.playbar__audio-range::-webkit-slider-thumb {
+    box-shadow: -400px 0 0 400px #c1c1c1;
+    border-radius: 100px;
+}
+
+.playbar__tools-range input::-webkit-slider-runnable-track,
+.playbar__audio-range::-webkit-slider-runnable-track {
+    background-color: #5a5a5a;
+}
+
+.playbar__tools-info {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.playbar__audio {
+    display: flex;
+    align-items: center;
+}
+
+.playbar__audio-buttons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.playbar__audio-button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.playbar__audio-button:nth-child(2),
+.playbar__audio-button:nth-child(3) {
+    width: 30px;
+    height: 30px;
+}
+
+.playbar__audio-button img {
+    height: 100%;
+    filter: invert(1);
+}
+
+.playbar__audio-range {
+    accent-color: #c1c1c1;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 100px;
+    cursor: pointer;
+}
 
 
 /* media */
@@ -486,11 +668,34 @@
     .songs__block:nth-child(2) .songs__content {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    .playbar__name {
+        margin-right: 20px;
+    }
+
+    .playbar__info-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .playbar__info-button:not(:last-child) {
+        margin: 0;
+    }
+
+    .playbar__audio-range {
+        width: 100px;
+    }
+
+    .playbar__audio-button {
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .container {
         grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 80px;
         height: 100vh;
     }
 
@@ -553,5 +758,68 @@
     .profile__content-photo {
         width: 30px;
         height: 30px;
+    }
+
+    .playbar__audio-range {
+        width: 75px;
+    }
+
+    .playbar__audio-button {
+        margin-right: 0;
+    }
+
+    .playbar__audio-button:nth-child(2),
+    .playbar__audio-button:nth-child(3) {
+        width: 25px;
+    }
+
+    .playbar {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .playbar__audio-button:nth-child(1),
+    .playbar__audio-button:nth-child(2) {
+        display: none;
+    }
+
+    .playbar__tools-button {
+        margin: 0 5px;
+    }
+
+    .playbar__tools-range input {
+        margin: 0 5px;
+    }
+
+    .playbar__name {
+        margin-right: 0;
+    }
+
+    .plabar__info-photo {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .playbar__info-buttons {
+        display: none;
+    }
+
+    .playbar__tools {
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .playbar__info,
+    .playbar__audio {
+        display: none;
+    }
+
+    .playbar__tools {
+        width: 100%;
     }
 }
