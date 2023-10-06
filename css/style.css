@@ -75,6 +75,11 @@ body {
     padding-top: 20px;
 }
 
+.spotify-name:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
 .nav-container {
     grid-area: nav-container;
     /* border: 1px dashed white; */
@@ -282,6 +287,11 @@ padding: 2px;
     font-size: 18px;
 }
 
+.create-playlist-text-con > p:hover, .playlist-text-con > p {
+    cursor: pointer;
+    color: white;
+}
+
 /* List of playlists */
 
 .list-of-playlist-con {
@@ -442,6 +452,7 @@ grid-area: name-icon;
   margin-top: 23px;
   border: white 1px solid;
  background-color: transparent;
+
 }
 
 .upgrade-button > button > p{
@@ -451,6 +462,7 @@ grid-area: name-icon;
 
 .upgrade-button > button > p:hover {
     cursor: pointer;
+    color: lightgreen;
     
 }
 
@@ -762,6 +774,15 @@ grid-area: name-icon;
 .album-name-coverOne-3 {
     grid-area: album-name-coverOne-3;
     /* border: 1px dashed white; */
+}
+
+.play-button-quiet> img {
+width: 60px;
+position: relative;
+bottom:120px;
+left:60px;
+filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+brightness(40%) contrast(10%);
 }
 
 .album-name-coverOne-3 >p {
@@ -1206,6 +1227,10 @@ color: white;
     display: grid;
     grid-template: "footer-left-con footer-main-con footer-right-con ";
     grid-template-columns: 250px 1fr 250px;
+
+  
+    ;
+  /* width: 100%; */
    
    
     gap: 5px;
@@ -1215,7 +1240,7 @@ color: white;
 
 .footer-left-con  {
     grid-area: footer-left-con ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "album-cover album-name footer-icons-left" ;
@@ -1228,7 +1253,7 @@ color: white;
 
 .album-cover {
     grid-area: album-cover;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .album-cover >img {
@@ -1240,7 +1265,7 @@ color: white;
 
 .album-name {
     grid-area: album-name;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     margin-top: 15px;
     margin-left: 4px;
 
@@ -1260,7 +1285,7 @@ color: white;
 
 .footer-icons-left {
     grid-area: footer-icons-left;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "heart-icon folder-icon";
@@ -1272,7 +1297,7 @@ color: white;
 
 .heart-icon {
     grid-area: heart-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
 }
 
@@ -1287,7 +1312,7 @@ color: white;
 
 .folder-icon {
     grid-area: folder-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .folder-icon > img {
@@ -1302,7 +1327,7 @@ color: white;
 /* FOOTER MAIN */
 .footer-main-con {
     grid-area: footer-main-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: 
@@ -1315,7 +1340,7 @@ color: white;
 
 .container-icons {
     grid-area: container-icons ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template:"container-empty-icon-left actual-icons container-empty-icon-right " ;
@@ -1326,12 +1351,12 @@ color: white;
 
 .container-empty-icon-left {
     grid-area: container-empty-icon-left;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .actual-icons  {
     grid-area: actual-icons ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "shuffle-icon backward-icon play-icon foward-icon repeat-icon ";
@@ -1342,7 +1367,7 @@ color: white;
 
 .shuffle-icon  {
     grid-area: shuffle-icon ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
 }
 
@@ -1358,7 +1383,7 @@ color: white;
 
 .backward-icon {
     grid-area: backward-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .backward-icon > img {
@@ -1373,7 +1398,7 @@ color: white;
 
 .play-icon {
     grid-area: play-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 
@@ -1389,7 +1414,7 @@ color: white;
 
 .foward-icon {
     grid-area: foward-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .foward-icon > img {
@@ -1404,7 +1429,7 @@ color: white;
 
 .repeat-icon {
     grid-area: repeat-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .repeat-icon > img {
@@ -1419,13 +1444,13 @@ color: white;
 
 .container-empty-icon-right {
     grid-area: container-empty-icon-right;
-    border
-    : 1px dashed white;
+    /* border */
+    /* : 1px dashed white; */
 }
 
 .container-play-bar {
     grid-area: container-play-bar;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "container-empty-play-left container-play-mid container-empty-play-right ";
@@ -1436,12 +1461,12 @@ color: white;
 
 .container-empty-play-left  {
     grid-area: container-empty-play-left ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .container-play-mid  {
     grid-area: container-play-mid ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "time-before progress time-after " ;
@@ -1453,7 +1478,7 @@ color: white;
 
 .time-before {
     grid-area: time-before;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .time-before > p {
@@ -1465,7 +1490,7 @@ color: white;
 
 .progress {
     grid-area: progress;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "progress-bar progress-fill";
@@ -1490,7 +1515,7 @@ color: white;
 
 .time-after {
     grid-area: time-after;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .time-after >p {
@@ -1502,12 +1527,12 @@ color: white;
 
 .container-empty-play-right {
     grid-area: container-empty-play-right;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .footer-right-con {
     grid-area: footer-right-con;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "footer-menu-icon footer-tv-icon footer-volume-icon  footer-volume-bar-icon";
@@ -1521,7 +1546,7 @@ color: white;
 
 .footer-menu-icon {
     grid-area: footer-menu-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     
  
 }
@@ -1537,7 +1562,7 @@ color: white;
 
 .footer-tv-icon {
     grid-area: footer-tv-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .footer-tv-icon > img {
@@ -1550,7 +1575,7 @@ color: white;
 
 .footer-volume-icon   {
     grid-area: footer-volume-icon  ;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .footer-volume-icon > img {
@@ -1564,7 +1589,7 @@ color: white;
 
 .footer-volume-bar-icon {
     grid-area: footer-volume-bar-icon;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     display: grid;
     grid-template: "progress-bar-right progress-fill-right";
@@ -1585,4 +1610,16 @@ color: white;
     grid-area: progress-fill-right;
     border: 2px solid grey;
     margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+    .albumsOne-con {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .albumsOne-con {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
