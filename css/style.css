@@ -121,7 +121,7 @@ li {
 
 /* || slider stuff || */
 
-input[type=range] {
+input[type="range"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
@@ -138,7 +138,7 @@ input[type=range] {
 ::-moz-range-thumb {
   -webkit-appearance: none;
   border-radius: 5000000000ch;
-  
+
   background-color: #aaa;
   height: 2px;
   width: 4px;
@@ -153,7 +153,7 @@ input[type=range] {
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   border-radius: 5000000000ch;
-  
+
   background-color: #aaa;
   height: 4px;
   width: 8px;
@@ -271,7 +271,7 @@ main.grid {
 }
 
 .nav-list {
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
 
   gap: 18px;
 }
@@ -284,12 +284,23 @@ main.grid {
 }
 
 .nav-items:hover {
-  border-image: linear-gradient(to right, transparent 40%, var(--selector-bg), transparent 60%);
+  border-image: linear-gradient(
+    to right,
+    transparent 40%,
+    var(--selector-bg),
+    transparent 60%
+  );
   border-image-slice: 0 0 1 0;
 }
 
 #selected-main {
-  border-image: linear-gradient(to right,#00000000 40% , var(--selector-bg)  40%, var(--selector-bg) 60%, #00000000 60%);
+  border-image: linear-gradient(
+    to right,
+    #00000000 40%,
+    var(--selector-bg) 40%,
+    var(--selector-bg) 60%,
+    #00000000 60%
+  );
   border-image-slice: 0 0 1 0;
 }
 
@@ -340,7 +351,7 @@ main.grid {
   background-color: var(--selector-bg);
 
   place-content: center;
-  
+
   bottom: -6px;
   right: 4px;
 
@@ -416,7 +427,7 @@ footer {
 
   padding: 8px;
 
-  grid-template-rows: 1fr;
+  grid-template: 1fr / 1fr 1fr 1fr;
 }
 
 .album img {
@@ -427,7 +438,8 @@ footer {
   height: 16px;
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
   grid-template-columns: auto 20ch auto auto;
   justify-content: start;
   gap: 12px;
@@ -463,4 +475,80 @@ footer {
   grid-template-columns: repeat(4, auto);
   justify-self: end;
   justify-content: end;
+}
+
+/* ======== media queries ======== */
+
+@media screen and (width < 800px) {
+  .footer-left {
+    grid-template: repeat(2, 36px) / repeat(2, auto);
+    row-gap: 0;
+  }
+
+  .footer-left .icon img {
+    height: 24px;
+  }
+
+  .footer-center img {
+    height: 16px;
+  }
+
+  .footer-center {
+    position: relative;
+    bottom: 6px;
+
+    grid-template-rows: auto auto;
+
+    gap: 12px;
+  }
+
+  .progress-container {
+    grid-template-areas:
+      "range-time range-time range-time"
+      "current-time . total-time";
+
+
+    gap: 14px;
+  }
+
+  .range-time {
+    grid-area: range-time;
+  }
+
+  .current-time {
+    grid-area: current-time;
+  }
+
+  .total-time {
+    grid-area: total-time;
+  }
+
+  .footer-right {
+    grid-template-areas:
+      "playlist ."
+      "volume volume-slider"
+      "cast .";
+
+    gap: 0;
+  }
+
+  .playlist {
+    grid-area: playlist;
+  }
+
+  .volume {
+    grid-area: volume;
+  }
+
+  .volume-slider {
+    grid-area: volume-slider;
+    width: 84px;
+  }
+
+  .cast {
+    grid-area: cast;
+  }
+}
+
+@media screen and (width < 550px) {
 }
