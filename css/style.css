@@ -271,7 +271,7 @@ main.grid {
 }
 
 .nav-list {
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr) );
 
   gap: 18px;
 }
@@ -461,4 +461,3 @@ footer {
   justify-self: end;
   justify-content: end;
 }
-
