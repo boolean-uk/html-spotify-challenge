@@ -10,7 +10,7 @@
   letter-spacing: 0.03em;
   height: 100vh;
   min-height: 300px;
-  min-width: 375px;
+  min-width: 380px;
   display: grid;
   grid-template-areas:
   "header header"
@@ -190,7 +190,7 @@ img {
   grid-area: playBar;
   background: #333333;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: minmax(100px, 300px) minmax(150px, 1fr);
   padding: 10px;
   align-content: center;
 }
@@ -200,30 +200,35 @@ img {
   grid-template-areas:
   "picture songtitle favourite"
   "picture artist favourite";
-  grid-template-columns: 40px 70% 20px;
+  grid-template-columns: 40px minmax(20px, 1fr) 20px;
   font-size: 14px;
   place-self: center;
 }
 
 .playingNow {
-  align-items: center;
+  justify-self: start;
   height: 40px;
-  width: 300px;
 }
 
 .playingNow img {
   grid-area: picture;
 }
 
+.playingNow .title, .artist {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
 .playingNow .title {
   grid-area: songtitle;
-  padding-left: 10px;
+  padding:  0 10px;
 }
 
 .playingNow .artist {
   grid-area: artist;
   font-size: 12px;
-  padding-left: 10px;
+  padding: 0 10px;
   height: unset;
 }
 
