@@ -9,7 +9,8 @@ const playlistH3 = playlist.querySelector('h3')
 const bar = document.querySelector('#bar')
 const logoSvg = logo.querySelector('svg')
 const createPlaylist = document.querySelector('.create-playlist');
-
+const mainHeaderLi = document.querySelectorAll('.main-header-nav li');
+console.log(mainHeaderLi)
 
 
 
@@ -38,17 +39,31 @@ bar.addEventListener('click', function() {
         playlistH3.style.display =''
         playListName.style.display =''
         createPlaylist.style.display =''
-
    
         icons.forEach((icon) =>{
             const iconPH3 = icon.querySelector(':nth-child(2n)')
             iconPH3.style.display =''
          
         })  
-        
-   
+
         closeBar = true;
       
     }
     
 });
+
+
+/* border bottom */
+mainHeaderLi.forEach((li) => {
+    li.addEventListener('click', function () {
+     mainHeaderLi.forEach((li) => {
+        li.classList.remove('active')
+    })
+
+    li.classList.add('active');
+    
+    });
+
+
+})
+
