@@ -1468,9 +1468,25 @@ color: white;
     border: 1px dashed white;
 
     display: grid;
+    grid-template: "progress-bar progress-fill";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 5px;
+    padding: 3px;
+   
+
 }
 
+.progress-bar  {
+    grid-area: progress-bar ;
+    border: 2px solid white;
+    margin-top: 6px;
+}
 
+.progress-fill {
+    grid-area: progress-fill;
+    border: 2px solid grey;
+    margin-top: 6px;
+}
 
 .time-after {
     grid-area: time-after;
@@ -1549,4 +1565,24 @@ color: white;
 .footer-volume-bar-icon {
     grid-area: footer-volume-bar-icon;
     border: 1px dashed white;
+
+    display: grid;
+    grid-template: "progress-bar-right progress-fill-right";
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 5px;
+    padding: 3px;
+}
+
+
+
+.progress-bar-right  {
+    grid-area: progress-bar-right ;
+    border: 2px solid white;
+    margin-top: 15px;
+}
+
+.progress-fill-right {
+    grid-area: progress-fill-right;
+    border: 2px solid grey;
+    margin-top: 15px;
 }
