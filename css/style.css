@@ -1426,6 +1426,67 @@ color: white;
 .container-play-bar {
     grid-area: container-play-bar;
     border: 1px dashed white;
+
+    display: grid;
+    grid-template: "container-empty-play-left container-play-mid container-empty-play-right ";
+    grid-template-columns: 200px 1fr 200px;
+    padding: 3px;
+    gap: 5px;
+}
+
+.container-empty-play-left  {
+    grid-area: container-empty-play-left ;
+    border: 1px dashed white;
+}
+
+.container-play-mid  {
+    grid-area: container-play-mid ;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template: "time-before progress time-after " ;
+    grid-template-columns: 40px 1fr 40px;
+    padding: 3px;
+    gap: 20px;
+
+}
+
+.time-before {
+    grid-area: time-before;
+    border: 1px dashed white;
+}
+
+.time-before > p {
+    font-size: 12px;
+    color: grey;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.progress {
+    grid-area: progress;
+    border: 1px dashed white;
+
+    display: grid;
+}
+
+
+
+.time-after {
+    grid-area: time-after;
+    border: 1px dashed white;
+}
+
+.time-after >p {
+    font-size: 12px;
+    color: grey;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.container-empty-play-right {
+    grid-area: container-empty-play-right;
+    border: 1px dashed white;
 }
 
 .footer-right-con {
