@@ -1299,8 +1299,132 @@ color: white;
     margin-left: 4px;
 }
 
+/* FOOTER MAIN */
 .footer-main-con {
     grid-area: footer-main-con;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template: 
+    "container-icons"
+    "container-play-bar" ;
+    grid-template-rows: 40px 40px;
+    padding: 3px;
+    gap: 3px;
+}
+
+.container-icons {
+    grid-area: container-icons ;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template:"container-empty-icon-left actual-icons container-empty-icon-right " ;
+    grid-template-columns: 380px 1fr 380px;
+    padding: 3px;
+    gap: 3px;
+}
+
+.container-empty-icon-left {
+    grid-area: container-empty-icon-left;
+    border: 1px dashed white;
+}
+
+.actual-icons  {
+    grid-area: actual-icons ;
+    border: 1px dashed white;
+
+    display: grid;
+    grid-template: "shuffle-icon backward-icon play-icon foward-icon repeat-icon ";
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3px;
+    gap: 5px;
+}
+
+.shuffle-icon  {
+    grid-area: shuffle-icon ;
+    border: 1px dashed white;
+
+}
+
+.shuffle-icon > img {
+    width: 20px;
+    /* height: 100%; */
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    margin-left: 18px;
+    margin-top: 1px;
+  
+}
+
+.backward-icon {
+    grid-area: backward-icon;
+    border: 1px dashed white;
+}
+
+.backward-icon > img {
+    width: 20px;
+    /* height: 100%; */
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    margin-left: 18px;
+    margin-top: 1px;
+  
+}
+
+.play-icon {
+    grid-area: play-icon;
+    border: 1px dashed white;
+}
+
+
+.play-icon > img {
+    width: 20px;
+    /* height: 100%; */
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    margin-left: 18px;
+    margin-top: 1px;
+  
+}
+
+.foward-icon {
+    grid-area: foward-icon;
+    border: 1px dashed white;
+}
+
+.foward-icon > img {
+    width: 20px;
+    /* height: 100%; */
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    margin-left: 18px;
+    margin-top: 1px;
+  
+}
+
+.repeat-icon {
+    grid-area: repeat-icon;
+    border: 1px dashed white;
+}
+
+.repeat-icon > img {
+    width: 20px;
+    /* height: 100%; */
+    filter: invert(56%) sepia(97%) saturate(3605%) hue-rotate(181deg)
+    brightness(40%) contrast(10%);
+    margin-left: 18px;
+    margin-top: 1px;
+  
+}
+
+.container-empty-icon-right {
+    grid-area: container-empty-icon-right;
+    border
+    : 1px dashed white;
+}
+
+.container-play-bar {
+    grid-area: container-play-bar;
     border: 1px dashed white;
 }
 
