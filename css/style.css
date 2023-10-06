@@ -9,6 +9,8 @@
 
   --menu-bar-width: 200px;
 
+  --gallery-item-width: 156px;
+
   --header-bg: #080b12;
   --menu-bar-bg: #000;
   --main-bg: #141922;
@@ -218,7 +220,7 @@ header button.rounded-right {
   left: -16px;
   top: 0;
 
-  width: 2px;
+  width: 4px;
   height: 28px;
 
   background-color: var(--selector-bg);
@@ -271,7 +273,9 @@ main.grid {
 }
 
 .nav-list {
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8ch, 1fr));
+
+  justify-items: center;
 
   gap: 18px;
 }
@@ -309,7 +313,7 @@ main.grid {
 }
 
 .gallery {
-  grid-template-columns: repeat(auto-fit, 144px);
+  grid-template-columns: repeat(auto-fit, var(--gallery-item-width));
   justify-content: start;
   justify-items: center;
 
@@ -320,8 +324,9 @@ main.grid {
   font-size: 1.3rem;
 }
 
-.gallery p {
-  margin: 0 1ch;
+.gallery h2, .gallery p, .gallery-cover {
+  width: 144px;
+  justify-self: center;
 }
 
 .gallery img {
@@ -333,6 +338,7 @@ main.grid {
 
 .gallery-item {
   align-content: start;
+  justify-items: center;
 }
 
 .item-container {
@@ -549,7 +555,14 @@ footer {
   }
 }
 
-@media screen and (width < 550px) {
+@media screen and (width < 752px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(var(--gallery-item-width), 1fr));
+    justify-content: center;
+  }
+}
+
+@media screen and (width < 560px) {
   .container {
     grid-template-columns: auto 1fr;
   }
@@ -579,5 +592,13 @@ footer {
 
   .collapse-left {
     display: none;
+  }
+
+  .selector {
+    left: -11px;
+    top: 0;
+    height: 36px;
+  
+    background-color: var(--selector-bg);
   }
 }
