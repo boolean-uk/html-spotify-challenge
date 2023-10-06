@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+div, header, main {
+    border: solid 1px rgb(255, 0, 0);
+    background-color: beige;
+}
+
+.content-container {
+    height: 100%;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas: 
+    "header discovery"
+    "library discovery"
+    "player player";
+}
+
+.header {
+    grid-area: header;
+}
+
+.library {
+    grid-area: library;
+}
+
+.discovery {
+    grid-area: discovery;
+}
+
+.player {
+    grid-area: player;
+}
