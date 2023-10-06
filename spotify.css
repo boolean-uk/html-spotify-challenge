@@ -194,9 +194,11 @@ hr {
     margin: 0 20px 0px 20px;
 }
 
-.profile {
-    font-size: 13px;
+.profile a{
+    color: white;
+    font-size: 14px;
     padding-left: 50px;
+    font-weight: bold;
 
 }
 
@@ -210,10 +212,6 @@ hr {
 }
 
 /* end of left menu section */
-
-
-
-
 
 
 /* start of main section */
@@ -254,8 +252,6 @@ a:hover {
     border-bottom: 2px solid rgb(7, 200, 7);
     
 }
-
-
 
 
 /* main spotify album content section */
@@ -338,16 +334,10 @@ a:hover {
     padding-left: 40px;
     padding-top: 15px;
 }
-
-
-
-
 /* end of section 2 main content */
 
 
 /* start of section 3 main content */
-
-
 .main-content3{
     display: grid;
     grid-area: main-content3;
@@ -410,7 +400,6 @@ a:hover {
 /* end of section 3 main content */
 /* end of main content section */
 
-
 /* start of the footer section */
 .footer {
     display: grid;
@@ -420,8 +409,6 @@ a:hover {
 
     "footer-left  main-footer  right-footer" 70px /
       1fr            1fr          1fr;
-
-
 }
 
 .album {
@@ -576,6 +563,8 @@ a:hover {
     
 }
 
+
+/* attempted to add in, but came up with a few issues */
 input[type="range"]::-webkit-slider-runnable-track {
     height: 5px;
     background-color: #a5a5a5;
