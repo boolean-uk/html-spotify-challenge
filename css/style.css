@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;   
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Animations  */
+
+.hoverWhiteHL:hover span {
+  color: white;
+}
+
+.smallCard:hover, .lagerCard:hover {
+  background-color: #5f5d5d79;
+}
+
+.showAll:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* container  */
+
+.mainContainer {
+  height: 1500px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr 65px;
+  grid-template-areas: "leftmenu mainview" "footer footer";
+}
+
+/* Top bar */
+
+.header {
+  grid-area: mainview;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #0d2626;
+  display: grid;
+  grid-template-columns: 130px 1fr 200px;
+}
+
+/* Main */
+
+.mainPage {
+  grid-area: mainview;
+  background: linear-gradient(#0c292b, #121212) no-repeat;
+  background-size: auto 400px;
+  background-position: top;
+  background-color: #121212;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+}
+
+.mainAreaTitles {
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* Welcome  */
+
+
+.Welcome {
+  padding: 75px 0 50px 30px;
+}
+
+.mainTitle {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+
+/* small cards, welcome, span and img  */
+
+.welcomeCardArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fill, 66px);
+  gap: 20px;
+  padding-right: 25px;
+}
+
+.smallCard {
+  height: 66px;
+  max-width: 420px;
+  min-width: 240px;
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  background-color: #2b2a2a79;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.smallCardPFP > img {
+  height: 66px;
+  width: 66px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.smallCardTitle {
+  height: 50px;
+  display: grid;
+  align-items: center;
+
+  padding: 0px 20px 0px 0;
+}
+
+.smallCardTitle > span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+/* The main card area  */
+.recentlyPlayed, 
+.topMixes,
+.popularWith {
+  padding-bottom: 50px;
+}
+
+.titleRecentlyPlayed, 
+.titleTopMix,
+.titlePopWith {
+  padding: 0 0 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+}
+
+.titleRecentlyPlayed > a > span, 
+.titleTopMix > a > span, 
+.titlePopWith > a > span {
+  color: #b3b3b3;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.recentlyPlayedArea, 
+.topMixArea, 
+.popWithArea {
+  padding: 25px 0 0 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  grid-template-rows: 290px;
+  grid-auto-rows: 0;
+  overflow-y: hidden;
+}
+
+/* Larger cards  */
+
+.largerCard {
+  height: 290px;
+  width: 200px;
+  background-color: #171717;
+  display: grid;
+  grid-template-rows: 200px 1fr 1fr;
+  border-radius: 10px;
+}
+
+.largerCardPFP {
+  display: grid;
+  place-items: center;
+}
+
+.largerCardPFP > img {
+  height: 165px;
+  width: 165px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.largerCardTitle {
+  display: grid;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.largerCardTitle > span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.largerCardArtist {
+  display: grid;
+  padding: 0 10px 0 10px;
+}
+
+.largerCardArtist > span {
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Left menu */
+
+.leftMenu {
+  background-color: #000000;
+}
+
+.leftMenuSetUp {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 65px 120px 650px 40px;
+  gap: 40px;
+  position: fixed ;
+}
+
+.leftMenuLogo {
+  display: grid;
+  margin: 0 0 0 25px;
+  align-items: end;
+}
+
+.leftMenuLogo > img {
+  width: 130px;
+}
+
+/* nav menue */
+
+.navMenu {
+  padding: 0 0 0 25px;
+  align-items: center;
+}
+
+.lmwrap {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  height: 40px;
+}
+
+li img {
+  width: 26px;
+}
+
+a span {
+  color: #b3b3b3;
+  padding-left: 10px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* spellista  */
+
+.yourPlaylists {
+  display: grid;
+  grid-template-rows: 45px 45px 15px 1fr;
+  grid-template-areas: 
+  "create"
+  "liked"
+  "hr"
+  "playlists";
+  padding-left: 25px;
+  align-items: center;
+}
+
+.createPlaylist {
+  grid-area: create;
+}
+
+.createPlaylistSetUp {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+.plusIcon {
+  background-color: #b2b2b2;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+}
+
+div.plusIcon > span {
+  color: black;
+  padding-left: 0;
+  font-size: 1.4rem;
+}
+
+.likedSongs {
+  grid-area: liked;
+}
+
+.likedSongsSetUp {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+div.heart {
+  background: linear-gradient(135deg, #340eaa, #829b9a);
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+}
+
+div.heart > span {
+  padding-left: 0;
+  font-size: 1.3rem;
+}
+
+hr.pl {
+  grid-area: hr;
+  border:0;
+  width:95%;
+  background: #282828;
+  height: 1px;
+
+}
+
+.allPlaylistSetUp {
+  padding-top: 10px;
+  grid-area: playlists;
+  height: 100%;
+}
+
+.allPlaylists {
+  display: grid;
+  grid-template-rows: repeat(autofill, 40px);
+  gap: 15px;
+}
+
+.allPlaylists > div > span {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.playlist3 {
+  display: grid;
+  grid-template-columns: 1fr 35px;
+}
+
+.playlist3 > img {
+  width: 15px;
+}
+
+
+.install {
+  height: 40px;
+  width: 385px;
+  position: fixed;
+  bottom: 90px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.install > img {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.installApp > span {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #b3b3b3;
+  margin-left: 5px;
+
+}
+
+
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+  background-color: #181818;
+  grid-area: footer;
+}
+
+
+
+.profileHeader {
+  grid-area: profile;
+  display: grid;
+  align-items: center;
+}
+
+.profilePicture {
+  background-color: #535353;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.profile {
+  display: grid;
+  width: 140px;
+  height: 50px;
+  background-color: black;
+  grid-template-columns: 50px 1fr 50px;
+  border-radius: 35px;
+  align-items: center;
+  padding-right: 150px;
+  padding-left: 0.7px;
+  gap: 10px;
+}
+
+.profile img {
+  height: 45px;
+  padding-bottom: 8px;
+}
