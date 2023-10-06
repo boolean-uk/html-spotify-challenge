@@ -13,9 +13,11 @@
 
   /* Whole page styling is above. */
 
+  /* Grid section */
+
   .whole-page-grid {
     display: grid;
-    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-columns: 15vw 85vw;
     grid-template-rows: 100vh 100vh;
     grid-template-areas: "left-menu main-view"
                          "footer footer";
@@ -26,7 +28,7 @@
 .main-section {
     grid-area: main-view;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 85vw;
     grid-template-rows: 7vh repeat(2, 3vh) 26vh 5vh 26vh 5vh 20vh;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -42,71 +44,91 @@
     background-color: #000000;
     grid-area: left-menu;
     display: grid;
-    grid-template-rows:repeat(14,1fr);
+    grid-template-rows:repeat(14,0.7vh);
 }
 
 .logo img {
-    height: 60px;
-    width: 200px;
-    padding-left: 10px;
-    padding-top: 5px;
+    height: 8vh;
+    width: 13vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
     color: black;
 }
 
 .home-button {
     color: white;
-    font-size: 15px;
+    font-size: 0.8rem;
     display: grid;
-    grid-template: 1fr/ 32px 1fr;
+    grid-template: .6vw/ 2vw 15vh;
     align-items: center;
     cursor: pointer;
-    padding-top: 5px;
-    padding-left: 20px;
+    padding-top: 2vh;
+    padding-left: 2vw;
 }
 
 .search-button {
     color: white;
-    font-size: 15px;
+    font-size: 0.8rem;
     display: grid;
-    grid-template: 1fr/ 32px 1fr;
+    grid-template: .6vw/ 2vw 15vh;
     align-items: center;
     cursor: pointer;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 3vh;
+    padding-left: 2vw;
 }
 
 .your-library {
     color: white;
-    font-size: 15px;
+    font-size: 0.8rem;
     display: grid;
-    grid-template: 1fr/ 32px 1fr;
+    grid-template: .6vw/ 2vw 15vh;
     align-items: center;
     cursor: pointer;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 3vh;
+    padding-left: 2vw;
 }
 
 .create-playlist {
-    list-style: none;
     color: white;
-    padding-left: 20px;
-    padding-top: 9px;
+    font-size: 0.8rem;
     display: grid;
-    grid-template: 1fr/ 32px 1fr;
+    grid-template: .6vw/ 2vw 15vh;
     align-items: center;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-left: 2vw;
 }   
 
 .new-playlist {
     color: white;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    font-size: 0.8rem;
 
 }
 
 .install-username {
     color: white;
-    padding-left: 20px;
-    padding-top: 100px;
+    padding-left: 3vw;
+    padding-top: 25vh;
+    font: 1.5rem;
+}
+
+.install-username a {
+    color: silver;
+    border: 2px green solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: green;
+}
+
+.install-username h3 {
+    color: green;
+    padding-left: 0.7vw;
 }
 
 /* Left-Menu ends. */
@@ -114,12 +136,12 @@
 /* Main section begins. */
 
 
-   /* Upgrade button and top bar */
+/* Upgrade button and top bar */
 
 .upgrade-container {
     background-color: black;
-    padding-left: 78vw;
-    padding-top: 2vh;
+    padding-left: 73vw;
+    padding-top: 2.3vh;
 }
 
 .upgrade-container a {
@@ -127,22 +149,24 @@
     border: 2px silver solid;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 10px;
     border-radius: 30px;
     text-decoration: none;
-    background: silver;
+    background: green;
+    cursor: pointer;
 }
 
-    /* Options menu */
+/* Options menu */
 
 .options-menu {
     background: rgb(41, 41, 46);
     display: grid;
-    grid-template-columns: repeat(8, 120px);
+    grid-template-columns: repeat(8, 10vw);
     justify-content: center;
-    font-size: 15px;
+    font-size: 1rem;
     align-items: center;
+    padding-left: 6vw;
 }
 
 .options-menu h4 {
@@ -150,16 +174,19 @@
     justify-content: center;
     color: silver;
     padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-shadow: 0 0 33px rgba(255, 255, 255, 0.8);
 }
-    /* Recently played & Albums */
+/* Recently played & Albums */
 
 .recently-played .title {
     color: white;
     background-color: rgb(41, 41, 46);
-    font-size: 15px;
+    font-size: 1rem;
     padding-bottom: 5px;
     display: grid;
-    padding-left: 5px;
+    padding-left: 1vw;
+    padding-top: 1vh;
 }
 
 .albums {
@@ -168,7 +195,7 @@
     justify-content: center;
     background-color: rgb(41, 41, 46);
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 3vw;
 }
 
 .albums img {
@@ -185,7 +212,7 @@
     padding-right: 4.3vw;
     padding-top: 4px;
 }
-    /* Musical Genius section */
+/* Musical Genius section */
 
 .created-by-Jack-section .title-blurb {
     display: grid;
@@ -198,9 +225,9 @@
 
 .created-by-Jack-section .title-blurb h2 {
     color: white;
-    font: 15px;
-    padding-top: 10px;
-    padding-left: 5px;
+    font: 1rem;
+    padding-top: 1vh;
+    padding-left: 1vw;
 }
 
 .created-by-Jack-section .title-blurb p {
@@ -214,7 +241,7 @@
     justify-content: center;
     background-color: rgb(41, 41, 46);
     padding-top: 4vh;
-    padding-left: 10px;
+    padding-left: 3vw;
 }
 
 .created-albums img {
@@ -257,7 +284,7 @@
     color: white;
     font: 15px;
     padding-top: 2vh;
-    padding-left: 5px;
+    padding-left: 1vw;
 }
 
 .PA-title-blurb p {
@@ -277,13 +304,39 @@
 .footer-bar {
     grid-area: footer footer;
     display: grid;
-    grid-template-columns: 200px 1100px 200px;
+    grid-template-columns: 20vw 60vw 20vw;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: sticky;
-    background-color: silver;
+    background-color: rgb(62, 56, 56);
     bottom: 0;
-    border: 0;
+    height: 10vh;
+}
+
+.left-footer {
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 10vh 10vh 10vh 10vh;
+    grid-template-rows;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+}
+
+.footer-bar img {
+    height: vh;
+    width: 4.2vw;
+}
+
+.left-footer h4 {
+    font-size: 0.6rem;
+    padding-top: 1.2vh;
+    color: rgb(190, 178, 178);
+}
+
+.emojis {
+    padding-top: 1.7vh;
+    padding-left: 1vh;
+    color: silver;
 }
 
 .middle-footer {
@@ -293,7 +346,15 @@
     
 }
 
-.footer-bar img {
-    height: 40px;
-    width: 40px;
+.middle-emojis {
+    color: silver;
+    font-size: 3rem;
 }
+
+.right-emojis {
+    color: silver;
+    padding-top: 3vh;
+    padding-left: 10vw;
+}
+
+/* Footer section ends */
