@@ -183,7 +183,7 @@ progress {
 /*HEADER*/
 
 /*header: spotify logo (atop side-menu)*/
-#spotify-logo-container {
+.spotify-logo-container {
     display: grid;
     grid-template-columns: 50px 1fr;
     place-content: center;
@@ -327,38 +327,34 @@ button > h3 {
 
 /* FOOTER */
 
+
+
 #main-footer {
     background-color: rgb(45, 45, 45);
-
     position: fixed;
     bottom: 0;
-
     padding: 5px;
     width: calc(100vw - 10px);
-
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: minmax(80px, 200px) 1fr minmax(80px, 200px);
     z-index: 1;
 }
-
 /*footer: left: displays current track*/
 #display-track {
     display: grid;
-    grid-template-columns: 60px 1fr repeat(2, 20px);
+    grid-template-columns: minmax(40px, 60px) 1fr repeat(2, minmax(0, 20px));
     gap: 5px;
     align-self: center;
     color: white;
 }
-
 #display-track div h4 {
-color: white;
+    color: white;
 }
 
 #current-track-img {
     width: 100%;
     margin: 5px 0;
 }
-
 /*footer: middle: displays player: controls and progress bar*/
 #player {
     display: grid;
@@ -368,28 +364,25 @@ color: white;
 }
 #settings-shortcuts {
     display: grid;
-    grid-template-columns: repeat(3, 20px) 1fr;
-
+    grid-template-columns: repeat(3, minmax(15px, 40px)) minmax(0, 1fr);
 }
-
 #player-controls{
     display: grid;
-    grid-template-columns: repeat(5, 40px);
+    grid-template-columns:  minmax(0, 40px) repeat(3, minmax(15px, 40px)) minmax(0, 40px);
 }
-
 #player-display {
     display:grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
 }
-
 /*footer: right: displays quick settins, incl. volume and its progress bar*/
-
 #volume {
-    width: 80px;
+    width: 80%;
 }
-
-
-
+ 
+progress {
+    min-width: 50px;
+}
 
 
 
@@ -475,36 +468,76 @@ button:hover {
 
 @media screen and (max-width: 650px) {
     
-    #playlist-menu, 
-    #general-menu h4,
-    #download-app p, 
-    #profile h4, 
-    #h1-container {
+    /*gets rid of unecessary elements*/
+    .desktop-only {
         width: 0;
         height: 0;
         visibility: collapse;
     }
 
-    #side-menu, 
-    #general-menu, 
-    #general-menu a,
-    #side-menu footer,
+
+    
+    /*overal layout changes*/
+
+    #side-menu {
+        height: 100vh;
+    }
+
+
+    .phone-specific-format,
+    #side-menu,
     #download-app, 
-    #profile, 
-    #spotify-logo-container {
-        display: block;
-        place-self: center;
+    #profile {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        place-items: center;
         width: 50px;
+        margin: 0;
+        padding: 5px 0 0 0;
         border: none;
     }   
-    
+
+    #categories-menu {
+        left: 70px;
+    }
+
+
+    #side-menu,
+    .spotify-logo-container {
+        padding: 0 5px;
+    }
+
     #main-content {
         width: calc(100vw - 70px);
         position: relative;
         margin-left: 50px;
     }
-    #categories-menu {
-        left: 70px;
+
+    /*footer - audio controls and display*/
+
+    #main-footer {
+        height: 50px;
+    }
+
+
+    /*smaller, more specific changes, including animations*/
+
+    .big-icon, 
+    #profile {
+        margin-top: 10px;
+    }
+    .big-icon:hover, 
+    #profile:hover .round-container,
+    .small-icon:hover {
+        background-color: white;
+        border: 6px solid white;
+        transition-duration: 0.2s;
+        border-radius: 5px;
+    }
+    
+    #download-app .small-icon {
+        width: 22px;
     }
 
 }

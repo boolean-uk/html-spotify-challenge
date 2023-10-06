@@ -9,44 +9,45 @@
 </head>
 <body>
     <header id="main-header">
-        <div id="spotify-logo-container" class="black-background left-menu">     
+        <div class="spotify-logo-container black-background left-menu phone-specific-format">     
             <div id="logo-container"> 
                 <img id="logo" src="./assets/svg/spotify-logo-svgrepo-com.svg">     
             </div>
             <div id="h1-container">
-            <h1 class="black-background">Spotify<span id="r">®</span></h1>
+            <h1 class="black-background desktop-only">Spotify<span class="desktop-only" id="r">®</span>
+            </h1>
             </div>
         </div>      
         <button id="upgrade"><h3>effetua l'upgrade</h3></button>
     </header>
     <main>
 <!--left-hand side of the interface - menu-->
-        <section id="side-menu" class="black-background left-menu">
-            <header id="general-menu" class="black-background left-menu">
+        <section id="side-menu" class="black-background left-menu phone-specific-format">
+            <header id="general-menu" class="black-background left-menu phone-specific-format">
                 <nav id="general-nav">
                     <ul>
                         <li>
                             <a href="#home" class="icon-next-to-text hover-side-border">
                                 <img class="big-icon placed" src="./assets/svg/home-svgrepo-com.svg">
-                                <h4 class="aligned">Home</h4>
+                                <h4 class="aligned desktop-only">Home</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#search" class="icon-next-to-text hover-side-border">
                                 <img class="big-icon" src="./assets/svg/search-svgrepo-com.svg">
-                                <h4 class="aligned">Cerca</h4>
+                                <h4 class="aligned desktop-only">Cerca</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#library" class="icon-next-to-text hover-side-border">
                                 <img class="big-icon" src="./assets/svg/music-library-multimedia-svgrepo-com.svg">
-                                <h4 class="aligned">La tua libreria</h4>
+                                <h4 class="aligned desktop-only">La tua libreria</h4>
                             </a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <section id="playlist-menu" class="left-menu black-background">
+            <section id="playlist-menu" class="left-menu black-background desktop-only">
               <h3 class="color-white">playlist</h3>
               <nav id="playlist-nav">
                 <ul>
@@ -81,16 +82,16 @@
                 </ul>
               </nav>
             </section>
-            <footer class="black-background left-menu">
-              <div id="download-app" class="icon-next-to-text hover-color">
+            <footer class="black-background left-menu phone-specific-format">
+              <div id="download-app" class="icon-next-to-text hover-color phone-specific-format">
                 <img class="small-icon placed" src="./assets/svg/arrow-button-down-2-svgrepo-com.svg">
-                <a><p>Installa app</p></a>
+                <a><p class="desktop-only">Installa app</p></a>
               </div>
-              <div id="profile" class="icon-next-to-text hover-underline">
+              <div id="profile" class="icon-next-to-text hover-underline phone-specific-format">
                  <div class="round-container" id="">
                     <img src="">
                  </div>
-                 <h4  class="color-white aligned">Nome Cognome</h4>
+                 <h4 class="color-white aligned desktop-only">Nome Cognome</h4>
               </div>
             </footer>
         </section>
@@ -276,16 +277,16 @@
                 <p>Muse</p>
             </div>
             <div class="aligned">
-                <img class="small-icon" src="./assets/svg/heart-svgrepo-com.svg">
+                <img class="small-icon desktop-only" src="./assets/svg/heart-svgrepo-com.svg">
             </div>
             <div class="aligned">
-                <img class="small-icon" src="./assets/svg/folder-svgrepo-com.svg">
+                <img class="small-icon desktop-only" src="./assets/svg/folder-svgrepo-com.svg">
             </div>
         </div>
         <div id="player">
             <div id="player-controls">
                 <div class="placed">
-                    <img class="small-icon" src="assets/svg/shuffle-1-svgrepo-com.svg">
+                    <img class="small-icon desktop-only" src="assets/svg/shuffle-1-svgrepo-com.svg">
                 </div>
                 <div class="placed">
                     <img class="small-icon" src="assets/svg/control-button-inv-svgrepo-com.svg">
@@ -297,7 +298,7 @@
                     <img class="small-icon" src="assets/svg/control-button-svgrepo-com.svg">
                 </div>
                 <div class="placed">
-                    <img class="small-icon" src="assets/svg/reload-svgrepo-com.svg">
+                    <img class="small-icon desktop-only" src="assets/svg/reload-svgrepo-com.svg">
                 </div>
             </div>
             <div id="player-display">
@@ -307,16 +308,16 @@
             </div>
         </div>
         <div id="settings-shortcuts">
-            <div class="aligned">
+            <div class="placed">
                 <img class="small-icon" src="assets/svg/burger-menu-svgrepo-com.svg">
             </div>
-            <div class="aligned">
+            <div class="placed">
                 <img class="small-icon" src="assets/svg/desktop-svgrepo-com.svg">
             </div>
-            <div class="aligned">
+            <div class="placed">
                 <img class="small-icon" src="assets/svg/volume-up-svgrepo-com.svg">
             </div>
-            <progress class="placed" id="volume"></progress>
+            <progress class="placed desktop-only" id="volume"></progress>
         </div>
     </footer>
 </body>
