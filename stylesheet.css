@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* background: black; */
+  }
+
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Whole page styling is above. */
+
+  /* Grid section */
+
+  .whole-page-grid {
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 100vh 100vh;
+    grid-template-areas: "left-menu main-view"
+                         "footer footer";
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.main-section {
+    grid-area: main-view;
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 7vh repeat(2, 3vh) 26vh 5vh 26vh 5vh 20vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow: hidden;
+}
+
+
+/* End of Grid section. */
+
+/* Left-Menu begins */
+
+.left-menu {
+    background-color: #000000;
+    grid-area: left-menu;
+    display: grid;
+    grid-template-rows:repeat(14,0.7vh);
+}
+
+.logo img {
+    height: 8vh;
+    width: 13vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    color: black;
+}
+
+.home-button {
+    color: white;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template: .6vw/ 2vw 15vh;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 2vh;
+    padding-left: 2vw;
+}
+
+.search-button {
+    color: white;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template: .6vw/ 2vw 15vh;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-left: 2vw;
+}
+
+.your-library {
+    color: white;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template: .6vw/ 2vw 15vh;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-left: 2vw;
+}
+
+.create-playlist {
+    color: white;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template: .6vw/ 2vw 15vh;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-left: 2vw;
+}   
+
+.new-playlist {
+    color: white;
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    font-size: 0.8rem;
+
+}
+
+.install-username {
+    color: white;
+    padding-left: 3vw;
+    padding-top: 25vh;
+    font: 1.5rem;
+}
+
+.install-username a {
+    color: silver;
+    border: 2px green solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: green;
+}
+
+.install-username h3 {
+    color: green;
+    padding-left: 0.7vw;
+}
+
+/* Left-Menu ends. */
+
+/* Main section begins. */
+
+
+/* Upgrade button and top bar */
+
+.upgrade-container {
+    background-color: black;
+    padding-left: 73vw;
+    padding-top: 2.3vh;
+}
+
+.upgrade-container a {
+    color: black;
+    border: 2px silver solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: green;
+    cursor: pointer;
+}
+
+/* Options menu */
+
+.options-menu {
+    background: rgb(41, 41, 46);
+    display: grid;
+    grid-template-columns: repeat(8, 10vw);
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 6vw;
+}
+
+.options-menu h4 {
+    display: grid;
+    justify-content: center;
+    color: silver;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-shadow: 0 0 33px rgba(255, 255, 255, 0.8);
+}
+/* Recently played & Albums */
+
+.recently-played .title {
+    color: white;
+    background-color: rgb(41, 41, 46);
+    font-size: 1rem;
+    padding-bottom: 5px;
+    display: grid;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(6, 14.5vw);
+    justify-content: center;
+    background-color: rgb(41, 41, 46);
+    padding-top: 5px;
+    padding-left: 3vw;
+}
+
+.albums img {
+    width: 10vw;
+    height: 20vh;
+}
+
+.albums p {
+    font-size: 0.9rem;
+    display: grid;
+    justify-content:center;
+    color: white;
+    padding-left: 0vw;
+    padding-right: 4.3vw;
+    padding-top: 4px;
+}
+/* Musical Genius section */
+
+.created-by-Jack-section .title-blurb {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25px;
+    grid-gap: 10px;
+    justify-content: left;
+    background-color: rgb(41, 41, 46);
+}
+
+.created-by-Jack-section .title-blurb h2 {
+    color: white;
+    font: 1rem;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.created-by-Jack-section .title-blurb p {
+    color: silver;
+    padding-top: 16px;
+}
+
+.created-albums {
+    display: grid;
+    grid-template-columns: repeat(6, 14.5vw);
+    justify-content: center;
+    background-color: rgb(41, 41, 46);
+    padding-top: 4vh;
+    padding-left: 3vw;
+}
+
+.created-albums img {
+    width: 10vw;
+    height: 20vh;
+}
+
+.created-albums p {
+    font-size: 0.9rem;
+    display: grid;
+    justify-content:center;
+    color: white;
+    padding-left: 0vw;
+    padding-right: 4.3vw;
+    padding-top: 4px;
+}
+
+/* Popular Artists section */
+
+.popular-artists {
+    display: grid;
+    grid-template-columns: repeat(2, 14.5vw);
+    justify-content: left;
+    background-color: rgb(41, 41, 46);
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.PA-title-blurb {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25px;
+    grid-gap: 10px;
+    justify-content: left;
+    background-color: rgb(41, 41, 46);
+}
+
+.PA-title-blurb h2 {
+    color: white;
+    font: 15px;
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+.PA-title-blurb p {
+    color: silver;
+    padding-top: 2.8vh;
+}
+
+.popular-artists img {
+    width: 10vw;
+    height: 20vh;
+    padding-top: 4vh;
+
+}
+
+/* Footer section */
+
+.footer-bar {
+    grid-area: footer footer;
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: sticky;
+    background-color: rgb(62, 56, 56);
+    bottom: 0;
+    height: 10vh;
+}
+
+.left-footer {
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 10vh 10vh 10vh 10vh;
+    grid-template-rows;
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+}
+
+.footer-bar img {
+    height: vh;
+    width: 4.2vw;
+}
+
+.left-footer h4 {
+    font-size: 0.6rem;
+    padding-top: 1.2vh;
+    color: rgb(190, 178, 178);
+}
+
+.emojis {
+    padding-top: 1.7vh;
+    padding-left: 1vh;
+    color: silver;
+}
+
+.middle-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
+}
+
+.middle-emojis {
+    color: silver;
+    font-size: 3rem;
+}
+
+.right-emojis {
+    color: silver;
+    padding-top: 3vh;
+    padding-left: 10vw;
+}
+
+/* Footer section ends */
