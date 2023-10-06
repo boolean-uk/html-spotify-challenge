@@ -1,28 +1,18 @@
-
-/* TODO: adjust the footer so it adapts to small screens (phones) */
-/* TODO: go through the html/css - make sure all classes names make sense */
-/* TODO:  go through the css - delete every line that is not useful*/
-/* TODO:  go through the css and html - see whether new classes can be created to avoid repetition - refactor what needs to be */
-/* TODO:  add hover styles to the links that do not yet have one. Also add :focus styles where appropriate. Could also see whether transitions can be considered*/
-
-
 /*OVERALL LAYOUT*/
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: sans-serif; 
     scroll-behavior: smooth;
-    color:rgb(121, 120, 120);
+    color:rgb(121, 120, 120); 
 }
 
 main {
     background-color: rgb(28, 28, 34);
-    display: grid;
-    grid-template-columns: auto 1fr;
 }
 
 #main-header {
-    position: fixed;
+    position: fixed; 
     top: 0;
     width: 100vw;
     background-color: rgb(18, 18, 23);
@@ -49,16 +39,15 @@ h3 {
 h4 {
     display: inline-block;
     font-size: 12px;
-
-
 }
+
 p {
     font-size: 10px;
     font-stretch: expanded;
 }
 
-li {
-    display: block;
+ul {
+    list-style-type: none;
 }
 
 .color-white {
@@ -102,9 +91,6 @@ progress {
 }
 
 
-
-
-
 /*SIDE MENU*/
 #side-menu {
     position: fixed;
@@ -113,6 +99,7 @@ progress {
     height: calc(100vh - 170px);
     z-index: 1;
 }
+
 #side-menu, 
 #logo-container {
     padding: 10px 0 0 10px;
@@ -130,23 +117,15 @@ progress {
     margin: 17px 0;
 }
 
-#playlist-menu li:first-child > a {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    gap: 10px;
+#new-playlist h3{
+    font-variant: normal;
+    font-size: 13px;
 }
-
 #new-playlist {
     background-color: rgb(121, 120, 120);
     height: 30px;
 }
 
-#create-playlist {
-    display: inline-block;
-    align-self: center;
-    font-size: 13px;
-    font-weight: 600;
-}
 
 /*side-menu: footer: personal profile*/
 #side-menu footer {
@@ -167,17 +146,20 @@ progress {
 }
 
 #download-app {
-    border-bottom: 
+    border-bottom:
     1px solid grey;
     display: grid;
     grid-template-columns: 12px 1fr;
 }
-
+#profile h4 {
+    padding-left: 10px;
+}
 
 #profile .round-container {
-    height: 25px;
-    width: 25px;
-    border: 1px solid greenyellow;
+    height: 40px;
+    width: 40px;
+    background-image: url(https://www.muse.mu/sites/g/files/g2000014236/files/styles/album-cover-new/public/2022-04/Muse%20-%20Absolution%20Packshot_0.png?itok=FVrpcag6);
+    background-size: contain;
 }
 
 /*HEADER*/
@@ -250,22 +232,23 @@ button > h3 {
 #categories-menu {
     height: auto;
     position: fixed;
+    margin: 0 10px;
     background-color: rgb(28, 28, 34);   
     top: 80px;
-    left: 190px;
+    left: 180px;
+    width: calc(100vw - 180px);
     z-index: 1;
 }
 
 #categories-menu li {
     display: inline-block; 
-    margin: 0 12px 0 0;
+    margin: 0 3vw 0 0;
 }
 
 /*main-content: categories display (albums, artists, ...)*/
 
 #main-content {
     width: calc(100vw - 200px);
-    position: relative;
     margin-left: 170px;
 }
 
@@ -275,17 +258,16 @@ button > h3 {
 }
 
 
-/*applies to each category: */
+/*applies to each music category: */
 .playlists-container {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px 0 0 20px;
     display: grid;
     grid-template-columns:repeat(auto-fit, 140px);
     gap: 30px 10px;
 }
 
 .category-header {
-    padding-left: 20px;
+    margin: 10px 0 0 20px;
 }
 
 
@@ -325,8 +307,6 @@ button > h3 {
 
 
 /* FOOTER */
-
-
 
 #main-footer {
     background-color: rgb(45, 45, 45);
@@ -453,10 +433,16 @@ progress {
 }
 
 
-.small-icon:hover {
+.small-icon:hover{
     background-color: white;
     border: 3px solid white;
     transition-duration: 0.2s;
+}
+
+#new-playlist-container:hover #new-playlist {
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 
 button:hover {
@@ -577,10 +563,15 @@ button:hover {
     }
     
     .album-title {
-        overflow-x: scroll;
+        overflow-x: hidden;
         height: 40px;
         padding: 0;
         margin-top: 5px;
+    }
+
+    button {
+        transform: scale(0.7, 0.7);
+        right: 0;
     }
 
 }
