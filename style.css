@@ -1,0 +1,38 @@
+
+body{
+    margin: 0;
+    padding: 0;
+   grid-template-columns: 300px 1fr;
+   width: auto;
+   height: auto;
+   background-color: black
+}
+
+.header{
+    background-color: green;
+    display: grid;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.spotify-icon{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    height: 20px;
+    justify-content: start;
+
+}
+
+
+.box{
+    display: grid;
+    width: 200px;
+    height: 20px;
+    padding:10px ;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    margin-left: auto;
+}
