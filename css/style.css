@@ -1,0 +1,892 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.a{
+    border: 1px solid rgb(255, 255, 255);
+}
+body{
+    height: 100vh;
+}
+
+/* header  */
+.header{
+    display: grid;
+    grid-template-columns: minmax(60px,250px) minmax(500px,1fr);
+    line-height:30px;
+    
+    
+}
+/* header-left */
+.header-left{
+    background-color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-left: 5px;
+    overflow:hidden;
+}
+.header-left a img{
+    width: 130px;
+}
+
+/* header-right */
+.header-right{
+    padding: 10px;
+    text-align: end;
+    background-color: #0e0c14;
+    position: sticky;
+
+}
+.header-right input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    border: 1.5px solid white;
+}
+.header-right input:hover{
+    /* background-color: #202020; */
+    color:#1ed760;
+    border: #1ed760 2px solid;
+}
+/* container  */
+.container{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px,250px) minmax(500px,1fr);
+}
+/* container-left */
+.main-left{
+    background-color: black;
+    display: grid;
+    grid-template-rows: 115px 1fr 90px;
+}
+/* menu  */
+.line{
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    padding:5px;
+    overflow: hidden;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #808080;
+}
+.line h5{
+    padding-top: 8px;
+}
+.menu ul li:hover{
+    border-left: 2px solid #1ed760;
+}
+.menu ul li a:hover{
+    color: white;
+}
+/* playlist */
+.playlist{
+    color:#808080 ;
+    padding: 8px;
+    display: grid;
+    grid-template-rows: 22px 40px 1fr;
+    gap: 4px;
+    
+}
+.playlist ul{
+    display: grid;
+    grid-auto-flow: row;
+    
+}
+
+.button-playlist{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    max-height: 30px;
+}
+.button-playlist button{
+    background-color: #bcbcbc;
+    border: none;
+    line-height: 28px;
+    font-size: 23px;
+    transition: 0.5s;
+}
+.button-playlist button:hover{
+    background-color:white;
+    border-radius: 50%;
+    outline: none;
+}
+.button-playlist h5{
+    padding-left: 8px;
+    padding-top: 5px;
+}
+.button-playlist h5:hover{
+    color: white;
+}
+.playlist h5:nth-child(1){
+    color:white;
+}
+.playlist ul {
+    display: grid;
+    grid-template-rows: repeat(5,30px);
+    gap: 5px;
+}
+/* profile  */
+.profile{
+    padding:  0 10px;
+        
+}
+.install a{
+    color: #808080;
+    text-decoration: none;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+.install a:hover{
+    color: #ffffff;
+}
+
+.name{
+    padding-top:5px ;
+}
+.name a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    /* position: relative;
+    bottom: 2px; */
+}
+.name a span{
+    position: relative;
+    bottom: 5px;
+}
+.name a span:hover{
+   text-decoration: underline;
+}
+/* container-right */
+.main-right{
+    background-color: #191924;
+    display: grid;
+    grid-template-rows: minmax(60px,70px) 1fr;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    padding: 15px 10px;
+    padding-left: 20%;
+
+}
+.nav ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(90px,120px));
+    min-width: 450px;
+
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav ul li a:hover{
+    border-bottom: #1ed760 solid 2px ;
+    color: white;
+    
+}
+/* row1 */
+.main-albums{
+    display: grid;
+    grid-auto-flow: row;
+}
+.row1{
+    display: grid;
+    grid-template-rows: 40px 1fr; 
+}
+.row1 h2{
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+
+}
+.song{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,200px));
+    gap: 10px;
+    padding: 20px;
+}
+.b{
+    min-height: 230px;
+    max-height: 250px;
+    padding: 15px;
+    text-align: center;
+    
+}
+/* song1 */
+.song1 a{
+    text-decoration: none;
+}
+.song1 a h4{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    bottom: 170px;
+}
+.song1 a h4:hover{
+   text-decoration: underline;
+}
+.song1 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+
+}
+.song1 a h6:hover{
+   text-decoration: underline;
+   color: rgb(185, 185, 185);
+}
+.song1:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* overlay  */
+.overlay {
+    position:relative; 
+    bottom: 175px;
+    opacity:0;
+    height: 172px;
+    background: rgb(255, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    padding-top: 70px;
+    transition: .5s ease;
+    color: #b7b7b7;
+    font-size: 30px;
+  }
+  .b:hover .overlay {
+    opacity: 1;
+  }
+  
+/* song2 */
+.song2 a{
+    text-decoration: none;
+}
+.song2 a h4{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    bottom: 170px;
+}
+.song2 a h4:hover{
+    text-decoration: underline;
+ }
+.song2 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+}
+.song2 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+ }
+.song2:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* song3 */
+.song3 a{
+    text-decoration: none;
+}
+.song3 a h4{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    bottom: 170px;
+}
+.song3 a h4:hover{
+    text-decoration: underline;
+ }
+.song3 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+}
+.song3 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+ }
+.song3:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* song4 */
+.song4 a{
+    text-decoration: none;
+}
+.song4 a h4{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    bottom: 170px;
+}
+.song4 a h4:hover{
+    text-decoration: underline;
+ }
+.song4 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+}
+.song4 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+ }
+.song4:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* song5 */
+
+.song5 a{
+    text-decoration: none;
+}
+.song5 a h4{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    bottom: 170px;
+}
+.song5 a h4:hover{
+    text-decoration: underline;
+ }
+.song5 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+}
+.song5 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+ }
+.song5:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* song6 */
+.song6 a{
+    text-decoration: none;
+}
+.song6 a h4{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    bottom: 170px;
+}
+.song6 a h4:hover{
+    text-decoration: underline;
+ }
+.song6 a h6{
+    color: #808080;
+    position: relative;
+    bottom: 170px;
+}
+.song6 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+ }
+.song6:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* row2 */
+
+.row2{
+    display: grid;
+    grid-template-rows: 30px  20px 1fr; 
+}
+.row2 h2{
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+}
+.row2 h6{
+    color: #808080;
+    padding: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.create{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,200px));
+    
+    gap: 10px;
+    padding: 20px;
+}
+/* album1 */
+.album1 a{
+    text-decoration: none;
+}
+.album1 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 170px;
+}
+.album1 a h4:hover{
+    text-decoration: underline;
+ }
+
+.album1:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* album2 */
+.album2 a{
+    text-decoration: none;
+}
+.album2 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 170px;
+}
+.album2 a h4:hover{
+    text-decoration: underline;
+ }
+
+.album2:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* row3 */
+.row3{
+    display: grid;
+    grid-template-rows: 30px 20px 1fr; 
+}
+.row3 h2{
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+}
+.row3 h6{
+    color: #808080;
+    padding: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.round{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,200px));
+    gap: 10px;
+    padding: 20px;
+}
+.c{
+    border-radius: 50%;
+}
+/* artist1 */
+.artist1 a{
+    text-decoration: none;
+}
+.artist1 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.artist1 a h4:hover{
+    text-decoration: underline;
+ }
+.artist1 a h6{
+    color: #808080;
+   position: relative;
+   bottom: 5px;
+   right: 10px;
+}
+.artist1 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+}
+.artist1:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* artist2 */
+.artist2 a{
+    text-decoration: none;
+}
+.artist2 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.artist2 a h4:hover{
+    text-decoration: underline;
+ }
+.artist2 a h6{
+    color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
+}
+.artist2 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+}
+.artist2:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* artist3 */
+.artist3 a{
+    text-decoration: none;
+}
+.artist3 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.artist3 a h4:hover{
+    text-decoration: underline;
+ }
+.artist3 a h6{
+    color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
+}
+.artist3 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+}
+.artist3:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+
+/* artist6 */
+.artist6 a{
+    text-decoration: none;
+}
+.artist6 a h4{
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+    
+}
+.artist6 a h4:hover{
+    text-decoration: underline;
+ }
+.artist6 a h6{
+    color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
+}
+.artist6 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+}
+.artist6:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+/* for all artist */
+.artist0 a{
+    text-decoration: none;
+}
+.artist0 a h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.artist0 a h4:hover{
+    text-decoration: underline;
+ }
+.artist0 a h6{
+    color: #808080;
+    position: relative;
+   bottom: 5px;
+   right: 10px;
+}
+.artist0 a h6:hover{
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+}
+.artist0:hover{
+   background-color: #292836;
+   border-radius: 20px;
+}
+
+/* empty row for spacing */
+.empty-row{
+    min-height: 100px;
+}
+/* footer  */
+.footer{
+    background-color: #393939;
+    display: grid;
+    min-height: 70px;
+    grid-template-columns: minmax(130px,300px) minmax(35px,100px) 1fr minmax(230px,260px);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* album */
+.album{
+    display: grid;
+    grid-template-columns: 40px  1fr;
+    padding: 10px;
+}
+.album aside{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.album aside a:nth-child(1){
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    top: 3px;
+}
+.album aside a:nth-child(1):hover{
+    text-decoration: underline;
+}
+.album aside a:nth-child(2){
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 10px;
+}
+.album aside a:nth-child(2):hover{
+    text-decoration: underline;
+    color: white;
+}
+/* icons */
+.icons a{
+    color: rgb(152, 152, 152);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.icons a:hover{
+    color: rgb(255, 255, 255);
+}
+.icons {
+    padding-top: 20px;
+}
+/* control */
+.control{
+    display: grid;
+    place-content: center;
+    overflow: visible;
+}
+/* audio  */
+.control{
+    display: grid;
+    grid-template-rows: 20px 30px;
+}
+/* buttons  */
+.buttons{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 3px 30%;
+    padding-left: 35%;
+}
+.buttons a{
+   color: #8d8d8d;
+   font-size: 13px;
+}
+.buttons a:hover{
+    color: white;
+    font-size: 16px;
+ }
+.buttons a:nth-child(3){
+    font-size: 23px;
+    position: relative;
+    bottom: 5px;
+ }
+ .buttons a:nth-child(3):hover{
+    font-size: 26px;
+    
+ }
+/* time  */
+
+.time{
+    display: grid;
+    grid-template-columns: 40px minmax(180px,330px) 40px;
+}
+#music{
+    position: relative;
+    top: 15px;
+    -webkit-appearance: none;
+    height: 4px;
+    background-color: #999797;
+    cursor:pointer;
+    outline: none;
+    -webkit-transition: .3s;
+}
+
+#music::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: .2s;
+    border: none;
+    outline: none;
+}
+#music::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+}
+.time a{
+    color: #808080;
+    text-decoration: none;
+    padding-left: 8px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.time a:hover{
+    color: white;
+    font-size: 13px;
+}
+
+
+
+/* volume */
+.volume {
+    padding: 25px 10px;
+    font-size: 15px;
+    display: grid;
+    grid-auto-flow: column;
+}
+.volume a{
+    color:rgb(152, 152, 152);
+}
+.volume a:hover{
+    color:white;
+    font-size: 16px;
+}
+
+.range{
+    position: relative;
+    top: 5px;
+    -webkit-appearance: none;
+    height: 3px;
+    background-color: #999797;
+    cursor:pointer;
+    outline: none;
+    -webkit-transition: .3ss;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: .2s;
+    border: none;
+    outline: none;
+}
+.range::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+  }
+
+
+
+@media only screen and (max-height:700px){
+    .main-left{
+        display: grid;
+        grid-template-rows: 115px 1fr 115px;
+    }
+    
+}
+@media (max-width:700px) and (max-height:700px){
+    
+    .profile{
+        position: relative;
+        bottom: 40px;
+    }
+    
+}
+
+
+
+@media only screen  and (max-width:700px) {
+    .header-left{
+        max-width: 50px;
+        }
+        .header{
+            display: grid;
+            grid-template-columns: 43px 1fr;
+        }
+        .header-left a img{
+            width: 110px;
+        }
+        .menu h5{
+            visibility: hidden;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 44px 1fr;
+        }
+        .line img{
+            width: 35px;
+        }
+        .line h5{
+           padding-left: 20px;
+        }
+        .playlist{
+            display: none;
+        }
+        .install p {
+            display: none;
+        }
+        .name span{
+            display: none;
+        }
+        .main-left{
+            display: grid;
+            grid-template-rows: 1fr 80px;
+            
+        }
+        .profile{
+            min-height: 100px;
+        }
+        .profile a img{
+            width:20px;
+        }
+        .profile hr{
+            width:23px;
+        }
+        .name a img{
+            width: 23px;
+        }
+        
+    }
+
+    ::-webkit-scrollbar {
+        width: 7px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #191924; 
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background: #808080; 
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }

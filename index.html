@@ -4,9 +4,277 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo-small.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ecdbe10a83.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-left ">
+            <a href="#">
+                <img src="./assets/img/logo.svg" alt="spotify-logo" >
+            </a>
+        </div>
+        <div class="header-right ">
+            <input type="button" value="EFFETTUA  L'UPGRADE" name="EFFETTUA L'UPGRADE">
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-left">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"  class="line">
+                                <img src="./assets/img/home.svg" alt="home" width="27px">
+                                <h5>Home</h5>
+                            </a>
+                        </li>
+                        <li><a href="#"  class="line">
+                                <img src="./assets/img/search.svg" alt="search" width="27px"><h5>Cerca</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"  class="line">
+                                <img src="./assets/img/libreria.svg" alt="library" width="27px"><h5>La tua libreria</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="playlist">
+                <h5>PLAYLIST</h5>
+                <div class="button-playlist">
+                    <button name="add">+</button>
+                    <h5>Crea Playlist</h5>
+                </div>
+                <ul>
+                    <li><h6>Nome Playlist</h6></li>
+                    <li><h6>Nome Playlist</h6></li>
+                    <li><h6>Nome Playlist</h6></li>
+                    <li><h6>Nome Playlist</h6></li>
+                    <li><h6>Nome Playlist</h6></li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="profile ">
+                <div class="install">
+                    <a href="#">
+                        <img src="./assets/img/download.svg" alt="download" width="13px" >
+                        <p>Installa app</p>
+                    </a>
+                </div>
+                <hr>
+                <div class="name">
+                    <a href="#">
+                        <img src="./assets/img/profile.svg" alt="profile-picture" width="20px">&nbsp
+                        <span>Aayush lama</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="nav ">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                IN EVIDENZA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                PODCAST
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CLASSIFICHE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                GENERI E MOOD
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                NUOVO USCITE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SCOPRI
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-albums">
+                <div class="row1 ">
+                    <h2>Recently played</h2>
+                    <div class="song">
+                        <div class="song1 b ">
+                            <img src="./assets/img/metal_lifting.jpg" alt="metal" width="170px">
+                            <div class="overlay">
+                                <i class="fa-solid fa-gun" style="color: rgb(189, 189, 189);"></i>
+                            </div>
+                            <a href="#"><h4>Heavy Metal</h4></a>
+                            <a href="#"><h6>Subtitle</h6></a>
+                        </div>
+                        <div class="song2 b ">
+                            <img src="./assets/img/stranger.jpeg" alt="stranger" width="170px">
+                            <div class="overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <a href="#"><h4>Stranger Things,Vol.1(a NetflixOriginal Series soundtrack)</h4></a>
+                            <a href="#"><h6>Kyle Dixon & Michael Stein</h6></a>
+                        </div>
+                        <div class="song3 b ">
+                            <img src="./assets/img/aquietplace.jpeg" alt="aquietplace" width="170px">
+                            <div class="overlay">
+                                <i class="fa-solid fa-jet-fighter" style="color: rgb(77, 77, 251);"></i>
+                            </div>
+                            <a href="#"><h4>A quiet place</h4></a>
+                            <a href="#"><h6>Subtitle</h6></a>
+                        </div>
+                        <div class="song4 b ">
+                            <img src="./assets/img/split.jpeg" alt="split" width="170px">
+                            <div class="overlay">
+                                <i class="fa-solid fa-heart-crack" style="color: rgb(250, 82, 82);"></i>
+                            </div>
+                            <a href="#"><h4>Split</h4></a>
+                            <a href="#"><h6>Subtitle</h6></a>
+                        </div>
+                        <div class="song5 b ">
+                            <img src="./assets/img/cure.jpeg" alt="cure" width="170px">
+                            <div class="overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <a href="#"><h4>A cure for wellness</h4></a>
+                            <a href="#"><h6>Subtitle</h6></a>
+                        </div>
+                        <div class="song6 b ">
+                            <img src="./assets/img/tribal.jpg" alt="tribal" width="170px">
+                            <div class="overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <a href="#"><h4>Roka yo samaya</h4></a>
+                            <a href="#"><h6>Tribal Rain</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <h2>Creato per Aayush Lama</h2>
+                    <h6>Più ascolti,più accurati saranno i suggerimenti</h6>
+                    <div class="create">
+                        <div class="album1 b">
+                            <img src="./assets/img/radar.jpeg" alt="radar" width="170px">
+                            <div class="overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <a href="#"><h4>Release Radar</h4></a>
+                        </div>
+                        <div class="album2 b">
+                            <img src="./assets/img/mixdaily.jpeg" alt="radar" width="170px">
+                            <div class="overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <a href="#"><h4>Daily Mix 1</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row3 ">
+                    <h2>Artisti più popolari</h2>
+                    <h6>Più ascolti,più accurati saranno i suggerimenti</h6>
+                    <div class="round ">
+                        <div class="artist1 b ">
+                            <img src="./assets/img/youg.jpeg" alt="radar" width="170px" class="c">
+                            <a href="#"><h4>Youg</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                        <div class="artist2 b">
+                            <img src="./assets/img/einaudi.jpeg" alt="radar" width="170px" class="c">
+                            <a href="#"><h4>Einaudi</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                        <div class="artist3 b">
+                            <img src="./assets/img/tribal.jpg" alt="radar" width="170px" class="c">
+                            <a href="#" class="c"><h4>Tribal Rain</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                        <div class="artist4 artist0 b">
+                            <img src="./assets/img/pinkfloyd.jpg" alt="radar" width="170px" class="c">
+                            <a href="#"><h4>Pink Floyd</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                        <div class="artist5 artist0 b">
+                            <img src="./assets/img/albatross.jpg" alt="radar" width="170px" class="c">
+                            <a href="#"><h4>Albatross</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                        <div class="artist6  b">
+                            <img src="./assets/img/asian.jpg" alt="radar" width="170px" class="c">
+                            <a href="#"><h4>Asian Kung-fu Generation</h4></a>
+                            <a href="#"><h6>Artist</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-row">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="album">
+            <img src="./assets/img/tribal.jpg" alt="sinister" width="45px">
+            <aside>
+                <a href="#"><p>Traditional swag</p>
+                </a>
+                <a href="#">Tribal rain</a>
+            </aside>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-regular fa-folder"></i></a>
+        </div>
+        <div class="control">
+            <div class="buttons">
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                <a href="#" onclick="aud_play_pause()"><i class="fa-regular fa-circle-play" ></i></a>
+                <a href="#" ><i class="fa-solid fa-forward-step"></i></a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+            </div>
+            <div class="time">
+                <a href="#">0.00</a>
+                <input type="range" name="music" id="music">
+                <a href="#">3.69</a>
+            </div>
+        </div>
+        <div class="volume">
+            <a href="#"><i class="fa-solid fa-list"></i></a>
+            <a href="#"><i class="fa-solid fa-display"></i></a>
+            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+            <input type="range" name="volume" id="volume" class="range">
+        </div>
+    </footer>
+    <script>
+        function aud_play_pause() {
+         let myAudio = document.getElementById("myAudio");
+         if (myAudio.paused) {
+           myAudio.play();
+         } else {
+           myAudio.pause();
+         }
+        }
+    </script>
+    <audio id="myAudio" autoplay loop >
+        <source src="./assets/music/ASIAN KUNG-FU GENERATION - Haruka Kanata_nJ6A6GC_ki4.mp3" type="audio/mpeg">
+        <source src="./assets/music/Traditional Swang_bOJ0C7WNzPA.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
