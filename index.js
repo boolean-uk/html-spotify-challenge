@@ -10,7 +10,7 @@ const bar = document.querySelector('#bar')
 const logoSvg = logo.querySelector('svg')
 const createPlaylist = document.querySelector('.create-playlist');
 const mainHeaderLi = document.querySelectorAll('.main-header-nav li');
-console.log(mainHeaderLi)
+
 
 
 

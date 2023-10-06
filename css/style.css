@@ -15,7 +15,7 @@ body{
                         'side main'
                         'footer footer';
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px 1fr 50px;
+    grid-template-rows: 80px 1fr 60px;
     
 }
 
@@ -299,6 +299,7 @@ section > .image-container{
 section > .image-container figure > img{
     width: 100%;
     object-fit: contain;
+
 }
 .main-content-one h2{
     color: #fff;
@@ -310,9 +311,17 @@ section > .image-container-two{
     display:  grid;
     grid-template-columns: repeat(auto-fit, 200px);
     column-gap: 10px;
+  place-items: center;
+    
 }
 section > .image-container-two figure > img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+section > .image-container-two figure > video {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -361,16 +370,71 @@ section > .image-container-three figure > img{
 }
 
 
+
 footer{
     grid-area: footer;
-    background-color:rgb(128, 128, 128);
+    background-color:rgb(70, 66, 66);
+    display: grid;
+    grid-auto-flow: column;
     position: sticky;
     bottom: 0;
-    left: 0;
-  
+ 
+    
+
+
 }
 
+footer section:first-of-type{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+   
+}
 
+footer figure:first-of-type{
+   display: grid;
+   grid-auto-flow: column;
+   justify-content: start;
+   align-items: center;
+
+}
+footer figure > img{
+    height: 50px;
+    padding-left: 7px;
+    object-fit: cover;
+}
+footer figure  .caption{
+    margin-left: 10px;
+}
+    
+footer figure  .caption> p:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+footer figure  .caption> p:last-of-type{
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    color: rgba(189, 185, 185, 0.985);
+}
+
+footer section .footer-iconbox{
+    color: rgba(189, 185, 185, 0.985);
+
+}
+
+footer section:nth-of-type(2){
+    display: grid;
+   place-items: center;
+}
+
+footer section  > audio{
+   background-color: transparent;
+   height: 40px;
+   color:red;
+}
 /* Media Query */
 
 @media only screen and (max-width:600px){
@@ -443,6 +507,13 @@ footer{
       .main-header ul li {
         margin: 4px;
       }
+
+      footer section  > audio{
+        background-color: transparent;
+        height: 40px;
+        width: 120px;
+        background-color: lightblue;
+     }
 }
 
 
