@@ -224,7 +224,7 @@ header button.rounded-right {
   background-color: var(--selector-bg);
 }
 
-#selected {
+#selected-side {
   display: unset;
 }
 
@@ -507,7 +507,6 @@ footer {
       "range-time range-time range-time"
       "current-time . total-time";
 
-
     gap: 14px;
   }
 
@@ -551,4 +550,34 @@ footer {
 }
 
 @media screen and (width < 550px) {
+  .container {
+    grid-template-columns: auto 1fr;
+  }
+
+  .menu-bar {
+    justify-items: center;
+    padding: 16px 8px 8px 8px;
+
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .menu-bar img {
+    height: 24px;
+  }
+
+  .menu-bar .hover {
+    border-radius: 50%;
+  }
+
+  .menu-bar .flex {
+    justify-content: center;
+  }
+
+  nav.side ul {
+    gap: 8px;
+  }
+
+  .collapse-left {
+    display: none;
+  }
 }
