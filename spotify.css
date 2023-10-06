@@ -234,12 +234,12 @@ hr {
     display: grid;
     grid-area: main-nav;
     font-size: 13px;
-    gap: 50px;
+    gap: 20px;
     font-weight: bold;
     margin-top: 20px;
+    max-width: 300px;
+    margin-left: 600px;
     grid-template-columns: repeat(6, 1fr);
-    padding-left: 500px;
-    padding-right: 500px;
     
 }
 
@@ -599,7 +599,6 @@ input[type="range"]::-moz-range-thumb{
 }
 
 
-
 @media screen and (max-width: 600px) {
 
     .main-grid {
@@ -610,7 +609,7 @@ input[type="range"]::-moz-range-thumb{
           "left-menu    header"  100px
           "left-menu    main" 1fr 
           "footer       footer" 100px /
-           50px       550px;
+           50px       1fr;
     
         width: 100%;
 
@@ -624,8 +623,8 @@ input[type="range"]::-moz-range-thumb{
 #upgrade{
     color: white;
     border: solid 1px white;
-    margin: 15px 20px 10px 460px;
-    padding: 15px 30px 15px 70px;
+    margin: 25px 20px 10px 340px;
+    padding: 10px 30px 10px 30px;
 }
 /* end of header section */
 
@@ -634,7 +633,7 @@ input[type="range"]::-moz-range-thumb{
    width: 100%;
 }
 
-div a, .title, .home a, .search, .playlist, .button, .plus-icon, .list, .install, hr {
+ .title, .libary, .home a, .search, .playlist, .button, .plus-icon, .list, .install, hr, .profile {
     display: none;
 }
 
@@ -686,20 +685,48 @@ input:valid {
     width: calc (100% -20px);
     grid-template:
 
-    "main-nav" 70px
+    "main-nav" 50px
     "main-content" 1fr 
     "main-content2" 1fr
     "main-content3" 1fr /
        600px;
 }
 
-
-/* main section top nav bar */
 .main-nav {
-    margin-top: 20px;
-    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 100px;
+    margin-left: 200px;
+    grid-template: 
+
+    "a  b  c  d"
+    ".  e  f  ." 
 }
 
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
 
 /* main spotify album content section */
 .main-content {
@@ -742,10 +769,10 @@ input:valid {
 
 /* image */
 .save-icon {
-    height: 15px;
-    width: 15px;
-    left: 130px;
-    top: 50px;
+    height: 13px;
+    width: 13px;
+    left: 132px;
+    top: 55px;
 }
 
 /* image */
@@ -803,7 +830,6 @@ input:valid {
   display: none;
     
 }
-
 
 /* attempted to add in, but came up with a few issues */
 input[type="range"]::-webkit-slider-runnable-track {
