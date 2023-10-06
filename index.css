@@ -220,6 +220,8 @@ a{
 .topbox{
     width: 60px;
     height: 80px;
+    border-color: aqua;
+    position: relative;
 }
 /*        Footer                   */
 footer {
