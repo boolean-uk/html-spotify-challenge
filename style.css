@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+  background-color: rgb(46, 46, 48);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-bar {
+  padding-left: 10px;
+  color: white;
+  background-color: black;
+  grid-column: 1; 
+  height: 100vh;
+}
+
+.left-nav-top{
+  display: grid;
+  grid-template-rows: 70px 50px 50px;
+}
+
+.playlist{
+  padding-bottom: 15px;
+}
+
+.left-nav-bttm{
+  display: grid;
+  grid-template-rows: repeat(4, 25px);
+  padding-top: 10px;
+}
+
+.plus{
+  background-color: gray;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.home{
+  padding-top: 20px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-rows: 90px 25px 150px 150px;
+  grid-column: 2;
+  gap: 10px;
+  
+  text-align: right;
+}
+
+
+header{
+  background-color: rgb(27, 25, 25);
+  color: white;
+  padding: 30px;
+}
+
+.upgrade{
+  border: 1px white solid;
+  display: inline;
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.nav-bar
+{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  color: white;
+  background-color: rgb(46, 46, 48);
+}
+
+.genre{
+  padding-right: 15px;
+}
+
+.recently-played,
+.created-for-you{
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+ 
+}
+
+.album-title,
+.mix-title{
+  font-size: 20px;
+}
+
+
+.album-box{
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+}
+
+.album-title{
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+}
+
+
+.created-for-you{
+  padding-top: 200px;
+}
