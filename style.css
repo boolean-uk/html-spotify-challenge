@@ -25,8 +25,19 @@ main {
     
 }
 header {
-    background-color: pink;
+    background-color: darkblue;
     grid-area: header;
+    display: grid;
+    place-content: end;
+    padding-right: 5px;
+}
+header > p {
+    outline:2px solid silver;
+    margin-bottom:15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
 }
 footer {
     grid-area: footer;
