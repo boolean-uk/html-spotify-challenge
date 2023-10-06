@@ -8,14 +8,14 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #000000;
     display: grid;
     grid-template-areas: 'side header'
                         'side main'
                         'footer footer';
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-rows: 80px 1fr 50px;
     
 }
 
@@ -101,6 +101,9 @@ aside{
     background-color: #000000;
     grid-area: side;
     overflow-y: scroll;
+    position: fixed;
+    left: 0;
+  
 }
 
 
@@ -332,7 +335,7 @@ figure >  p:first-of-type{
     font-family: 'roboto';
     margin-top: 10px;
     font-weight:700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -346,10 +349,24 @@ figure >  p:last-of-type{
 }
 
 
+section > .image-container-three{
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, 170px);
+    column-gap: 10px;
+}
+section > .image-container-three figure > img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 
 footer{
     grid-area: footer;
-    background-color:rgba(128, 128, 128, 0.399);
+    background-color:rgb(128, 128, 128);
+    position: sticky;
+    bottom: 0;
+    left: 0;
   
 }
 
