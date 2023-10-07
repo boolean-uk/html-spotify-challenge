@@ -262,9 +262,7 @@ img {
 
 .trackControl .progressBar {
   height: 4px;
-  min-width: 120px;
-  width: 80%;
-  max-width: 300px;
+  width: calc(100% - 120px);
   background-color: #8b8b8b;
   grid-column-start: 3;
   border-radius: 2px;
