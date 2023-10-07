@@ -96,17 +96,18 @@
 }
 
 .tabNav {
-  display: grid;
-  grid-gap: 20px;
-  grid-auto-flow: column;
-  justify-content: center;
-}
+  display: inline;
+  line-height: 40px;
+  text-align: center;
+  }
 
-.tabNav div {
+.tabNav span {
   padding: 10px 0 5px 0;
+  margin: 10px 10px;
+  text-wrap: nowrap;
 }
 
-.tabNav #active, .tabNav div:hover {
+.tabNav #active, .tabNav :hover {
   border-bottom: greenyellow 3px solid;
 }
 
@@ -114,7 +115,7 @@
   display: grid;
   grid-gap: 15px;
   margin: 20px 0;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fill, min-content);
   align-self: center;
   justify-items: center;
@@ -190,7 +191,7 @@ img {
   grid-area: playBar;
   background: #333333;
   display: grid;
-  grid-template-columns: minmax(100px, 300px) minmax(150px, 1fr);
+  grid-template-columns: minmax(100px, 300px) minmax(150px, 450px) 1fr;
   padding: 10px;
   align-content: center;
 }
@@ -248,6 +249,7 @@ img {
 
 .shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration {
   display: inline-block;
+  padding: 0 10px;
 }
 
 .trackControl img.playpause {
@@ -260,7 +262,8 @@ img {
 
 .trackControl .progressBar {
   height: 4px;
-  min-width: 25%;
+  min-width: 120px;
+  width: 80%;
   max-width: 300px;
   background-color: #8b8b8b;
   grid-column-start: 3;
