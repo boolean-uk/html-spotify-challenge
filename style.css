@@ -4,48 +4,276 @@
     box-sizing: border-box;
 }
 
-/*.container {
-    display: grid;
-    grid-template: 
-    "left-side   header" 
-    "left-side    main " 
-    "left-side    main "
-    "footer     footer";
-}*/
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    
-}
-    
-
-    
-.left-side {
-    /* grid-area: 1 / 1 / 5 / 2; */
-    grid-column-start: 1, span5;
-    background-color: blue;
-    grid-row: 1;
+    grid-template: 
+    "left header "
+    "left  main "
+    "footer  footer";
+    grid-template-columns: 15% 85%;
 }
 
-    
-.footer {
-    /* grid-area: 5 / 1 / 5 / 5;*/
-    background-color: brown;
-    grid-column: 1;
-    grid-row-start: 5, span5;
+.header > a {
+    display: grid;
+    justify-content: end;
+    text-decoration: none;
 }
 
+button:hover {
+    background-color: rgb(76, 74, 74);
+}
+
+ul {
+    display: flex;
+    background-color: rgb(33, 33, 57);
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    padding: 10px;
+}
+
+.home {
+    padding: 15px;
+}
+
+.home > a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+.playlist {
+    padding-left: 15px;
+    color: white;
+    font-size: larger;
+}
+
+.playlists {
+    padding: 15px;
+    line-height: 2;
+    color: grey;
+}
+
+.playlists > i {
+    background-color: white;
+    padding: 10px;
+}
+
+.app-and-user {
+    display: grid;
+    padding-top: 550px;
+}
+
+
+.user > img {
+    width: 40px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.user {
+    display: flex;
+    
+}
+
+.username {
+   padding-top: 13px;
+   color: grey;
+   padding-left: 8px;
+}
+
+.app {
+    font-size: small;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: gray;
+}
+
+li > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.spotify-logo {
+    padding: 15px;
+    font-size: x-large;
+    font-weight: 400;
+    color: white;
+}
+
+button {
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid white;
+    background-color: rgb(10, 2, 34);
+    color: white;
+    border-radius: 30px;
+    width: 250px;
+}
+
+
+.left {
+    grid-area: left;
+    background-color: rgb(17, 15, 15);
+
+}
+    
 
 .header {
-     grid-area: 1 / 2 / 2 / 5; 
+    background-color: rgb(10, 2, 34);
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(33, 33, 57);
+}
+
+h1 {
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.creations-section > p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.artists > p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: grey;
+}
+
+.mix {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+#bruno {
+    color: black;
+    opacity: 80%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr 1fr;
+    gap: 5em;
+    position: sticky;
+    bottom: 0;
+}
+
+.recently-played-section {
+    display: flex;
+    overflow-x: auto;
+}
+
+.recently-played-section::-webkit-scrollbar {
+    display: none;
+}
+
+.creations {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.songs > h4 {
+    text-align: center;
+}
+
+.songs > p {
+    text-align: center;
+}
+
+.songs > img {
+    width: 200px;
+    margin: 10px;
+}
+
+.tracks {
+    display: flex;
+}
+
+.lana {
+    width: 200px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.popular-artists {
+    display: flex;
+}
+
+.footer-image {
+    width: 70px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+}
+
+.playing-now {
+    padding-top: 15px;
+}
+
+#bruno {
+    display: flex;
+    font-size: small;
+}
+
+.footer-main {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main-icons > i {
+   padding: 5px;
+}
+
+.footer-main > input {
+    margin: 5px;
+    width: 250px;
+}
+
+.footer-right {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.footer-right > i {
+    padding-left: 5px;
+}
+
+.footer-right > input {
+    padding-left: 5px;
+    background-color: black;
+}
+
+.sinister {
+   color: white;
 }
    
-.main { 
-    grid-area: 2 / 2 / 5 / 5; 
+
+.left-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 30px;
+
 }
-
-
