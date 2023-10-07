@@ -26,6 +26,7 @@ body {
     grid-template-rows: 1fr 100px;
     margin: 0px;
     height: 100vh;
+    /* overflow: hidden; */
 }
 
 /* Styling focused on the left side bar*/
@@ -119,11 +120,20 @@ li > span {
 main {
     grid-area: main;
     background-color: rgb(27, 27, 66);
+    overflow-y: scroll;
 }
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
 
 header {
     height: 75px;
     background-color: rgb(13, 13, 44);
+    position: sticky;
+    top: 0px;
+    z-index: 5;
     /* display: grid; */
     /* align-items: center; */
     /* place-content: right; */
@@ -169,13 +179,16 @@ header > button {
 
 .container {
     display: grid;
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
     gap: 10px;
-
+    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    /* grid-auto-flow: column; */
+    /* place-items: left; */
+    place-content: start;
 }
 
 .card {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     /* height: 300px; */
     width: 180px;
     text-align: center;
@@ -191,6 +204,10 @@ header > button {
     object-fit: cover;
     height: 180px;
     width: 180px;
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 .card > h3 {
