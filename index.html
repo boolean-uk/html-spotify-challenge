@@ -4,9 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <aside>
+        <img id="logo" src="./assets/img/logo.svg" alt="Spotify logo">
+
+        <nav>
+            <ul>
+                <li><img src="./assets/img/home.svg" alt="Home icon"><span>Home</span></li>
+                <li><img src="./assets/img/search.svg" alt="Search icon"><span>Search</span></li>
+                <li><img src="./assets/img/libreria.svg" alt="Library icon"><span>Library</span></li>
+            </ul>
+        </nav>
+
+        <h3>Playlist</h3>
+        <div class="inline-block">
+            <div id="create">
+                <p>+</p>
+            </div>
+        </div>
+        <span id="playlist-text">Create Playlist</span>
+        <ul>
+            <li>Bilbo and the bangers</li>
+            <li>Zen</li>
+            <li>The legend of wub</li>
+            <li>Pots and pans</li>
+            <li>Screaming</li>
+            <li>Fast talking</li>
+            <li>Playlist 1</li>
+            <li>Playlist 2</li>
+        </ul>
+
+        <div id="user">
+            <img id="download" src="./assets/img/download.svg" alt="Download icon">
+            <span id="install">Install app</span>
+            <hr>
+            <img id="user-pic" src="./assets/img/profile.svg" alt="Profile icon">
+            <span id="name" class="white">John Doe</span>
+
+        </div>
+
+    </aside>
+
+    <main>
+        <header>
+            <button>
+                Upgrade to premium
+            </button>
+        </header>
+        <section id="main">
+            <nav>
+                <ul id="genres">
+                    <li>Recommended</li>
+                    <li>Podcast</li>
+                    <li>Classical</li>
+                    <li>Genres</li>
+                    <li>Popular</li>
+                    <li>Explore</li>
+                </ul>
+            </nav>
+            <section id="catagories">
+                <section id="recent">
+                    <h2>Recently played</h2>
+                    <div class="container">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/metal_lifting.jpg" alt="Heavy metal cover">
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/stranger.jpeg" alt="Stranger things cover">
+                            </div>
+                            <h3>Stranger Things, Vol. 1 (a Netflix Origian Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/aquietplace.jpeg" alt="A quiet place cover">
+                            </div>
+                            <h3>A quiet place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/split.jpeg" alt="Split cover">
+                            </div>
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/cure.jpeg" alt="Cure cover">
+                            </div>
+                            <h3>A cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/sinister.jpeg" alt="Sinister cover">
+                            </div>
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        
+
+                    </div>
+
+                </section>
+
+                <section id="personal">
+                    <h2>Playlists for you</h2>
+                    <div class="container">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/radar.jpeg" alt="Release Radar cover">
+                            </div>
+                            <h3>Release Radar</h3>
+                        </div>
+
+                        <div class="card">
+                            <div class="cover">
+                                <img src="./assets/img/mixdaily.jpeg" alt="Daily mix cover">
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="popular">
+                    <h2>Popular artists</h2>
+                    <div class="container">
+                        <div class="card">
+                            <div class="cover">
+                                <img class="circle" src="./assets/img/youg.jpeg" alt="Youg cover">
+                            </div>
+                            <h3>Youg</h3>
+                        </div>
+
+                        <div class="card">
+                            <div class="cover">
+                                <img class="circle" src="./assets/img/einaudi.jpeg" alt="A picture of a man looking in the distance">
+                            </div>
+                            <h3>John</h3>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="b-left">
+            <img id="sinister" src="./assets/img/sinister.jpeg" alt="Sinister cover">
+            <div class="inline-block ur">
+                <p class="white">Sinister</p>
+                <p>Band name</p>
+            </div>
+            <img class="ur" id="heart" src="./svg/heart.svg" alt="Heart icon">
+            <img class="ur" id="folder" src="./svg/folder.svg" alt="Folder icon">
+
+
+        </section>
+        <section id="b-mid">
+            <div id="playlist-controls">
+                <img class="small-icon" src="./svg/shuffle.svg" alt="Shuffle icon">
+                <img class="small-icon" src="./svg/backwards.svg" alt="Backwards icon">
+                <img src="./svg/play-button.svg" alt="Play button icon">
+                <img class="small-icon" src="./svg/fast-forward.svg" alt="Fast forward icon">
+                <img class="small-icon" src="./svg/refresh.svg" alt="Refresh icon">
+
+            </div>
+            <div id="time-tracker">
+                <p>1:23</p>
+                <div>
+                    <div></div>
+                </div>
+                <p>4:35</p>
+
+            </div>
+
+        </section>
+        <section id="b-right">
+            <img src="./svg/list.svg" alt="List icon">
+            <img src="./svg/display.svg" alt="Display icon">
+            <img src="./svg/volume.svg" alt="Volume icon">
+            <div>
+                <div></div>
+            </div>
+
+        </section>
+
+    </footer>
 </body>
 </html>

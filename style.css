@@ -1,0 +1,344 @@
+* {
+    color: rgb(145, 145, 145);
+    font-weight: 700;
+}
+
+h2, h3, h4, h5, .white {
+    color: white;
+}
+
+img {
+    width: 30px;
+}
+
+
+.inline-block {
+    display: inline-block;
+}
+
+body {
+    background-color: aqua;
+    display: grid;
+    grid-template-areas:
+    "left main"
+    "footer footer" ;
+    grid-template-columns: 225px 1fr;
+    grid-template-rows: 1fr 100px;
+    margin: 0px;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+/* Styling focused on the left side bar*/
+aside {
+    grid-area: left;
+    background-color: black;
+    padding: 10px;
+}
+
+#logo {
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    /* position: relative; */
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+li > span {
+    position: relative;
+    left: 8px;
+    bottom: 8px;
+}
+
+#user {
+    height: 100px;
+    /* background-color: purple; */
+    position: fixed;
+    bottom: 90px;
+    width: 205px;
+}
+
+#create {
+    background-color: rgb(145, 145, 145);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+}
+
+#create > p {
+    color: black;
+    font-size: 40px;
+    font-weight: 1000;
+    /* display: inline-block; */
+}
+
+#playlist-text {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+
+}
+
+#download {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+#install {
+    padding-left: 10px;
+}
+
+#user > hr {
+    background-color: grey;
+    border: none;
+    height: 1px;
+}
+
+#user-pic {
+    background-color: grey;
+    border-radius: 50%;
+    width: 27px;
+    margin-left: 5px;
+}
+
+#name {
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+}
+
+/* Styling focused on the main content*/
+main {
+    grid-area: main;
+    background-color: rgb(27, 27, 66);
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+
+header {
+    height: 75px;
+    background-color: rgb(13, 13, 44);
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    /* display: grid; */
+    /* align-items: center; */
+    /* place-content: right; */
+
+}
+
+header > button {
+    position:absolute;
+    right: 10px;
+    top:10px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 2px solid white;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    
+}
+
+#main {
+    overflow-y: scroll;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
+}
+
+#genres {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    place-content: center;
+}
+
+#catagories > section {
+    padding: 0px 20px 10px ;
+}
+
+/* #personal, #popular {
+    padding-top: 10px;
+} */
+
+.container {
+    display: grid;
+    /* grid-auto-flow: column; */
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    /* grid-auto-flow: column; */
+    /* place-items: left; */
+    place-content: start;
+}
+
+.card {
+    /* background-color: antiquewhite; */
+    /* height: 300px; */
+    width: 180px;
+    text-align: center;
+}
+
+.cover {
+    /* height: 200px; */
+    /* background-color: aqua; */
+    /* object-fit: cover; */
+}
+
+.cover > img {
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.card > h3 {
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+    bottom: 5px;
+}
+
+.card > p {
+    padding: 0px 5px;
+    margin: 0px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* Styling focused on the footer section*/
+
+footer {
+    grid-area: footer;
+    background-color: rgb(70, 70, 70);
+    display: grid;
+    grid-template-columns: 225px 1fr 250px;
+    /* padding: 10px; */
+}
+
+#b-left {
+    /* background-color: grey; */
+    padding-left: 10px;
+}
+
+#sinister {
+    width: 50px;
+    padding-top: 22px;
+}
+
+#b-left > div {
+    /* padding: 0px 5px 150px 0px; */
+    padding-bottom: 20px;
+    padding-left: 5px;
+    /* margin-bottom: 150px; */
+}
+
+#b-left > div > p {
+    margin: 0px;
+}
+
+.ur {
+    position: relative;
+    bottom: 10px
+}
+
+#heart, #folder {
+    width: 25px;
+    padding: 5px;
+    bottom: 6px;
+
+}
+
+
+#b-mid {
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+}
+
+#playlist-controls {
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.small-icon {
+    height: 20px;
+}
+
+
+#time-tracker {
+    /* background-color: blue; */
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#time-tracker > div {
+    height: 6px;
+    width: 400px;
+    background-color: grey;
+    /* margin-top: 6px; */
+    border-radius: 3px;
+
+}
+
+#time-tracker > div > div {
+    width: 120px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+
+#b-right {
+    /* background-color: azure; */
+    display: grid;
+    grid-template-columns: repeat(3, 40px) 1fr;
+    align-content: center;
+}
+
+#b-right > img {
+    width: 20px;
+}
+
+#b-right > div {
+    height: 6px;
+    width: 120px;
+    background-color: grey;
+    margin-top: 6px;
+    border-radius: 3px;
+    /* margin-right: 10px; */
+}
+
+#b-right > div > div {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    border-radius: 3px;
+}
