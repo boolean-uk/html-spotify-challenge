@@ -26,7 +26,7 @@ button:hover {
 
 ul {
     display: flex;
-    background-color: rgb(33, 33, 57);
+    background-color: rgb(34, 34, 37);
     justify-content: center;
     list-style: none;
     gap: 15px;
@@ -58,6 +58,12 @@ a:hover {
     color: grey;
 }
 
+.left-side {
+    position: sticky;
+    top: 0;
+    display:grid ;
+}
+
 .playlists > i {
     background-color: white;
     padding: 10px;
@@ -65,7 +71,6 @@ a:hover {
 
 .app-and-user {
     display: grid;
-    padding-top: 550px;
 }
 
 
@@ -75,9 +80,16 @@ a:hover {
     padding: 6px;
 }
 
+.nav a:hover, .nav div#active {
+    border-bottom: greenyellow 3px solid;
+}
+
+.house #active, .house:hover {
+    border-left: greenyellow 3px solid ;
+ }
+
 .user {
     display: flex;
-    
 }
 
 .username {
@@ -100,7 +112,7 @@ li > a {
 
 .spotify-logo {
     padding: 15px;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 400;
     color: white;
 }
@@ -109,7 +121,7 @@ button {
     margin: 15px;
     padding: 15px;
     border: 3px solid white;
-    background-color: rgb(10, 2, 34);
+    background-color: rgb(10, 8, 17);
     color: white;
     border-radius: 30px;
     width: 250px;
@@ -124,13 +136,20 @@ button {
     
 
 .header {
-    background-color: rgb(10, 2, 34);
+    background-color: rgb(10, 8, 17);
     grid-area: header;
+    position:sticky;
+    top: 0;
 }
 
 .main {
     grid-area: main;
-    background-color: rgb(33, 33, 57);
+    background-color: rgb(34, 34, 37);
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
@@ -165,9 +184,10 @@ p {
     opacity: 80%;
 }
 
+
 .footer {
     grid-area: footer;
-    background-color: gray;
+    background-color: rgb(71, 70, 70);
     display: grid;
     grid-template-columns: 0.5fr 2.5fr 1fr;
     gap: 5em;
