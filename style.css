@@ -146,34 +146,38 @@ a {
     display: grid;
     grid-auto-flow:column;
     margin-top: 20px; 
-    column-gap: 10px;
+    margin-left: 10px;
+    column-gap: normal;
+    
 }
 
 .recent {
     margin-top: 20px;
     font-size: 15px;
+    margin-left: 10px;
 }
 .one > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
+    
 }
 .two > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 .three > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 .four > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 .five > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 .six > img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
