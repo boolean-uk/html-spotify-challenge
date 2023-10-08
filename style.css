@@ -623,3 +623,47 @@ main .section__three .grids__play .pic__img:hover .play__button svg {
 .wrapper__part:hover .bar__part {
   width: 100%;
 }
+
+@media screen and (max-width: 940px) {
+  body {
+    grid-template-columns: 75px minmax(0, 1fr);
+  }
+
+  .left__menu .Spotify__logo .spotify__logo__text {
+    display: none;
+  }
+
+  .left__menu .aside__menu .icons__name {
+    display: none;
+  }
+
+  .left__menu .playlist__menu {
+    display: none;
+  }
+  .left__menu .profile__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  main .lists__genre ul {
+    display: none;
+  }
+  .foot__part .display__part {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .top__nav button {
+    display: none;
+  }
+  .foot__part .playing__music {
+    display: none;
+  }
+
+  .foot__part .control__bar {
+    align-items: center;
+    justify-content: center;
+  }
+}
