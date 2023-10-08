@@ -288,7 +288,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .container {
     grid-template-rows: 50px 1fr 80px;;
     grid-template-columns: 60px 1fr;
