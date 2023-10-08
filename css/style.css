@@ -22,6 +22,7 @@
   overflow: hidden;
 }
 
+
 .header {
   grid-area: header;
   background: #333333;
@@ -37,6 +38,10 @@
 
 .sidebar {
   grid-area: sidebar;
+}
+
+#logo-small {
+  display: none;
 }
 
 .sidebar div, .playlists {
@@ -247,7 +252,7 @@ img {
   text-align: center;
 }
 
-.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration, .queue, .desktop, .volume {
+.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration, .queue, .desktop, .volume, .volumeBar {
   display: inline-block;
   padding: 0 5px;
 }
@@ -256,7 +261,7 @@ img {
   height: 4%;
 }
 
-.playedDuration, .totalDuration, .progressBar, .volumeBar {
+.playedDuration, .totalDuration, .progressBar {
   display: inline-block;
 }
 
@@ -273,8 +278,7 @@ img {
 }
 
 .volumeBar {
-  place-items: start;
-  width: calc(100% - 200px);
+  width: 20%;
 }
 
 h2 {
@@ -297,14 +301,11 @@ h2 {
     "playBar playBar";
   }
 
-  .header {
-    display: none;
+  #logo-small {
+    display: block;
   }
 
-  .sideNav span {
-    display: none;
-  }
-  .playlists {
+  .header, .volumeBar, .sideNav span, .playlists {
     display: none;
   }
 }
