@@ -1,0 +1,67 @@
+/* GLOBAL RESET */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: none;
+}
+
+/* GENERAL PAGE STYLING */
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    grid-template-rows: 90px 1fr 75px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    scroll-behavior: smooth;
+}
+
+.grid {
+    display: grid;
+}
+
+.general-navigation-list, .playlists-list, .main-navigation-list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ALL COLOURED TEXT */
+.gray-text {
+    color: gray;
+}
+
+.white-text {
+    color: white;
+}
+
+/* GENERAL IMAGE HOVER COLOURS */
+.hover-white:hover {
+    filter: var(--white-hover-color)
+}
+
+.hover-green:hover {
+    filter: var(--spotify-green-hover-color);
+}
+
+/* GENERAL TEXT HOVER COLOURS */
+.text-hover-white:hover {
+    color: white;
+}
+
+/* GRAY BACKGROUND HOVER COLOUR */
+.bg-hover-gray:hover {
+    background-color: var(--background-hover-gray);
+}

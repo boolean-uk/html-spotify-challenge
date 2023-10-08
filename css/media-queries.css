@@ -1,0 +1,70 @@
+/* AT 1000PX WIDTH */
+@media screen and (max-width: 1000px) {
+    .footer {
+        grid-template-columns: 250px 1fr 170px;
+    }
+
+    .playback-control-buttons {
+        grid-template-columns: repeat(5, 30px);
+    }
+
+    .playback-time-bar {
+        grid-template-columns: 20px 200px 20px;
+        gap: 10px;
+    }
+
+    .time-played {
+        width: 40px;
+    }
+    
+    .time-remaining {
+        width: 160px;
+    }
+
+    .listening-controls {
+        grid-template-columns: repeat(3, 20px) 50px;
+        gap: 10px;
+    }
+    
+    .current-volume {
+        width: 15px;
+    }
+    
+    .remaining-volume {
+        width: 35px;
+    }
+}
+
+/* AT 700PX WIDTH */
+@media screen and (max-width: 700px) {
+    .header {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .spotify-logo {
+        width: 35px;
+    }
+
+    .left-menu {
+        width: 80px;
+    }
+
+    .left-menu p, .playlist-navigation, .install-app, .profile, h1 {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 180px 1fr 170px;
+    }
+
+    .currently-playing {
+        grid-template-columns: 50px 1fr repeat(2, 20px);
+        padding: 0;
+        padding-left: 5px;
+        gap: 3px;
+    }
+}

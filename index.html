@@ -4,9 +4,285 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global-variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/left.menu.css">
+    <link rel="stylesheet" href="./css/main-content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>Spotify</title>
 </head>
 <body>
-    
+    <div class="container grid">
+        <!-- HEADER -->
+        <header class="header grid">
+            <div class="logo grid">
+                <img class="spotify-logo" src="./svgs/spotify-logo.svg" alt="spotify logo" width="45">
+                <h1 class="spotify-header white-text">Spotify</h1>
+            </div>
+            <div class="header-bar grid">
+                <a class="premium-upgrade white-text" href="#">Upgrade to Premium</a>
+            </div>
+        </header>
+        <!-- MAIN -->
+        <main class="main grid">
+            <!-- LEFT MENU -->
+            <div class="left-menu grid">
+                <nav class="general-navigation">
+                    <ul class="general-navigation-list">
+                        <li class="home">
+                            <div class="select-highlight"></div>
+                            <a class="general-nav-link bg-hover-gray grid" href="#">
+                                <img src="./svgs/home-icon.svg" alt="home icon" width="25">
+                                <p class="white-text">Home</p>
+                            </a>
+                        </li>
+                        <li class="search">
+                            <a class="general-nav-link bg-hover-gray gray-text text-hover-white grid" href="#">
+                                <img src="./svgs/search-icon.svg" alt="search icon" width="25">
+                                <p>Search</p>
+                            </a>
+                        </li>
+                        <li class="library">
+                            <a class="general-nav-link bg-hover-gray gray-text text-hover-white grid" href="#">
+                                <img src="./svgs/library-icon.svg" alt="library icon" width="25">
+                                <p>Your Library</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="playlist-navigation grid">
+                    <h2 class="playlist-header white-text">Playlists</h2>
+                    <a class="create-playlist gray-text text-hover-white bg-hover-gray grid" href="#">
+                        <img class="new-playlist-icon" src="./svgs/new-playlist-icon.svg" alt="new playlist icon" width="40px">
+                        <p>Create Playlist</p>
+                    </a>
+                    <ul class="playlists-list grid">
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Happy Songs</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Sad Songs</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Chill</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Gym</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Drive Tunes</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Scroll for more playlists</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Playlist 1</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Playlist 2</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Playlist 3</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Playlist 4</a></li>
+                        <li><a class="gray-text text-hover-white bg-hover-gray grid" href="#">Playlist 5</a></li>
+                    </ul>
+                </nav>
+                <a class="install-app gray-text text-hover-white grid" href="#">
+                    <img src="./svgs/download-icon.svg" alt="download icon" width="20px">
+                    <p>Install App</p>
+                </a>
+                <a class="profile text-hover-white grid" href="#">
+                    <img src="./svgs/profile-icon.svg" alt="profile icon" width="30px">
+                    <p class="white-text">Satoki Ito</p>
+                </a>
+            </div>
+            <!-- MAIN CONTENT -->
+            <section class="main-content grid">
+                <nav class="main-navigation grid">
+                    <ul class="main-navigation-list grid">
+                        <li>
+                            <a class="text-hover-white highlights gray-text" href="#">
+                                <p>Highlights</p>
+                                <div class="green-pill"></div>
+                            </a>
+                        </li>
+                        <li class="text-hover-white gray-text">
+                            <a class="text-hover-white gray-text" href="#">
+                                <p>Podcasts</p>
+                            </a>
+                        </li>
+                        <li class="text-hover-white gray-text">
+                            <a class="text-hover-white gray-text" href="#">
+                                <p>Charts</p>
+                            </a>
+                        </li>
+                        <li class="text-hover-white gray-text">
+                            <a class="text-hover-white gray-text" href="#">
+                                <p>Genres and Moods</p>
+                            </a>
+                        </li>
+                        <li class="text-hover-white gray-text">
+                            <a class="text-hover-white gray-text" href="#">
+                                <p>New Releases</p>
+                            </a>
+                        </li>
+                        <li class="text-hover-white gray-text">
+                            <a class="text-hover-white gray-text" href="#">
+                                <p>Discover</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="music-selection grid">
+                    <div class="recently-played grid">
+                        <h2 class="white-text">Recently played</h2>
+                        <div class="music-cards grid">
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/metal_lifting.jpg" alt="metal lifting" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Heavy Metal</h3>
+                                <p class="gray-text">Various Artists</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/stranger.jpeg" alt="stranger things" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <p class="gray-text">Kylie Dixon & Michael Stein</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/aquietplace.jpeg" alt="a quiet place" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">A Quiet Place</h3>
+                                <p class="gray-text">Marco Beltrami</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/split.jpeg" alt="split" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Split</h3>
+                                <p class="gray-text">West Dylan Thordson</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/cure.jpeg" alt="cure" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">A Cure for Wellness</h3>
+                                <p class="gray-text">Benjamin Wallfisch</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/sinister.jpeg" alt="sinister" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Sinister</h3>
+                                <p class="gray-text">By KIT</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="made-for-you grid">
+                        <div class="made-for-you-heading">
+                            <h2 class="white-text">Made for Satoki</h2>
+                            <p class="gray-text">Playlists made especially for you!</p>
+                        </div>
+                        <div class="music-cards grid">
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/radar.jpeg" alt="release rader" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Release Radar</h3>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/mixdaily.jpeg" alt="daily mix 1" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Daily Mix 1</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popular-artists grid">
+                        <div class="popular-artists-heading">
+                            <h2 class="white-text">Popular Artists</h2>
+                            <p class="gray-text">Popular artists based on your recent listening.</p>
+                        </div>
+                        <div class="music-cards grid">
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/youg.jpeg" alt="young & beautiful" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Lana Del Rey</h3>
+                                <p class="gray-text">Young & Beautiful</p>
+                            </a>
+                            <a class="music-card-details grid" href="#">
+                                <div class="music-cover-image">
+                                    <img src="./assets/img/einaudi.jpeg" alt="ludovico einaudi" width="150">
+                                    <img class="music-hover-icon" src="./svgs/green-play.svg" alt="play icon" width="50">
+                                </div>
+                                <h3 class="white-text">Ludovico Einaudi</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer grid">
+            <div class="currently-playing grid">
+                <img src="./assets/img/sinister.jpeg" alt="sinister cover" width="50">
+                <div>
+                    <a class="current-song-name white-text" href="#"><strong>Sinister</strong></a>
+                    <a class="current-song-artist gray-text hover-white" href="#">Brano Nome</a>
+                </div>
+                
+                <a class="hover-green" href="#">
+                    <img src="./svgs/like-icon.svg" alt="like icon" width="20">
+                </a>
+                <a class="hover-green" href="#">
+                    <img src="./svgs/folder-icon.svg" alt="folder icon" width="20">
+                </a>
+            </div>
+            <div class="playback-controls grid">
+                <div class="playback-control-buttons grid">
+                    <a class="hover-green" href="#">
+                        <img src="./svgs/shuffle-icon.svg" alt="shuffle icon" width="25">
+                    </a>
+                    <a class="hover-white" href="#">
+                        <img src="./svgs/skip-back.svg" alt="skip back" width="25">
+                    </a>
+                    <a href="#">
+                        <img class="play-icon" src="./svgs/play-icon.svg" alt="play icon" width="30">
+                    </a>
+                    <a class="hover-white" href="#">
+                        <img src="./svgs/skip-forward.svg" alt="skip forward" width="25">
+                    </a>
+                    <a class="hover-green" href="#">
+                        <img src="./svgs/repeat-icon.svg" alt="repeat icon" width="25">
+                    </a>
+                </div>
+                <div class="playback-time-bar grid">
+                    <p class="white-text">0:25</p>
+                    <a class="time-slider grid" href="#">
+                        <div class="time-played">
+                        </div>
+                        <img class="white-circle-time" src="./svgs/white-circle.svg" alt="white circle" width="10px">
+                        <div class="time-remaining"></div>
+                    </a>
+                    <p class="white-text">4:35</p>
+                </div>
+            </div>
+            <div class="listening-controls grid">
+                <a class="hover-white" href="#">
+                    <img src="./svgs/queue-icon.svg" alt="queue icon" width="18">
+                </a>
+                <a class="hover-white" href="#">
+                    <img src="./svgs/screen-icon.svg" alt="screen icon" width="15">
+                </a>
+                <a class="hover-white" href="#">
+                    <img src="./svgs/volume-icon.svg" alt="volume icon" width="20">
+                </a>
+                <a class="volume-slider grid" href="#">
+                    <div class="current-volume">
+                    </div>
+                    <img class="white-circle-volume" src="./svgs/white-circle.svg" alt="white circle" width="10px">
+                    <div class="remaining-volume"></div>
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

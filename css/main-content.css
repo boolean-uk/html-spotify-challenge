@@ -1,0 +1,104 @@
+.main-content {
+    grid-area: main-content;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(17, 20, 29);
+    height: calc(100vh - 165px);
+}
+
+.main-content h2 {
+    line-height: 1.7;
+}
+
+/* MAIN NAVIGATION BAR */
+.main-navigation {
+    padding-top: 10px;
+}
+
+.main-navigation-list {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: 30px;
+    gap: 10px;
+    place-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.highlights {
+    position: relative;
+}
+
+.green-pill {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    border: solid 2px limegreen;
+    border-radius: 30px;
+    width: 30px;
+}
+
+/* MUSIC SELECTION SECTION */
+.music-selection {
+    grid-template-rows: repeat(auto-fit, 320px);
+    gap: 30px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.music-selection > div {
+    grid-template-rows: 60px 260px;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.music-cards {
+    grid-template-columns: repeat(auto-fit, 180px);
+    gap: 20px;
+    justify-items: start;
+    overflow-y: hidden;
+}
+
+.music-card-details {
+    grid-template-rows: 150px repeat(auto-fit, auto);
+    gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: start;
+    background-color: rgb(28, 26, 26);
+}
+
+.music-card-details h3 {
+    font-size: 14px;
+}
+
+.music-card-details p {
+    font-size: 12px;
+}
+
+.music-cover-image {
+    position: relative;
+}
+
+.music-hover-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #35e335;
+    opacity: 0;
+}
+
+.music-card-details:hover {
+    background-color: var(--background-hover-gray);
+}
+.music-card-details:hover .music-hover-icon {
+    opacity: 100%;
+}
+
+.made-for-you-heading p, .popular-artists-heading p {
+    font-size: 12px;
+}
+
+.popular-artists img {
+    border-radius: 3000px;
+}
