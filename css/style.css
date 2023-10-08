@@ -1,0 +1,311 @@
+* {
+  color: rgb(219, 219, 219);
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  font-family: 'Gill Sans';
+  letter-spacing: 0.03em;
+  height: 100vh;
+  min-height: 300px;
+  min-width: 380px;
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "sidebar main"
+  "playBar playBar";
+  grid-template-rows: 60px 1fr 80px;
+  grid-template-columns: 300px 1fr;
+  background: #202020;
+  overflow: hidden;
+}
+
+
+.header {
+  grid-area: header;
+  background: #333333;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  padding: 20px;
+}
+
+.header img {
+  height: 30px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+#logo-small {
+  display: none;
+}
+
+.sidebar div, .playlists {
+  color: #8b8b8b;
+  padding: 10px 20px ;
+}
+
+.sideNav div {
+  border-left: rgba(0, 0, 0, 0) 3px solid;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-content: end;
+}
+
+.sideNav img {
+  width: 20px;
+}
+
+.sideNav div:hover, .sideNav div#active {
+  border-left: greenyellow 3px solid;
+}
+
+.sidebar h2, .tabNav {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main {
+  grid-area: main;
+  background: linear-gradient(45deg, #333333 0%, #202020 100%);
+  display: grid;
+  /* grid-template-rows: repeat(auto-fit, 1fr); */
+  padding: 0px 20px;
+  overflow-y: scroll;
+}
+
+.playlists .item {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.playlists .createPlaylist {
+  margin: 10px 0 20px 0;
+}
+
+.playlists .createPlaylist:hover, .item:hover {
+  color: white;
+}
+
+.playlists .icon {
+  overflow: hidden;
+}
+
+.tabNav {
+  display: inline;
+  line-height: 40px;
+  text-align: center;
+  }
+
+.tabNav span {
+  padding: 10px 0 5px 0;
+  margin: 10px 10px;
+  text-wrap: nowrap;
+}
+
+.tabNav #active, .tabNav :hover {
+  border-bottom: greenyellow 3px solid;
+}
+
+.itemContainer {
+  display: grid;
+  grid-gap: 15px;
+  margin: 20px 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, min-content);
+  align-self: center;
+  justify-items: center;
+}
+
+.item {
+  width: 200px;
+  overflow: hidden;
+}
+
+.cover, .artist, .icon {
+  overflow: hidden;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+}
+
+.cover, .overlay {
+  place-items: center;
+}
+
+.play {
+  position: absolute;
+  opacity: 0;
+  width: 40%;
+  padding: 30%;
+}
+
+.icon {
+  width: 100%;
+}
+
+.main .artist {
+  border-radius: 100%;
+}
+/* 
+.cover:hover, .icon:hover {
+  opacity: 0.2;
+} */
+
+.play:hover {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.item .text {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.item .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.item .subtitle {
+  padding: 10px;
+  font-size: 12px;
+  color: #6b6b6b;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.playBar {
+  grid-area: playBar;
+  background: #333333;
+  display: grid;
+  grid-template-columns: minmax(140px, 300px) minmax(180px, 1fr) minmax(100px, 200px) ;
+  padding: 10px;
+  align-content: center;
+}
+
+.playingNow {
+  display: grid;
+  grid-template-areas:
+  "picture songtitle favourite"
+  "picture artist favourite";
+  grid-template-columns: 40px minmax(20px, 1fr) 20px;
+  font-size: 14px;
+  place-self: center;
+}
+
+.playingNow {
+  justify-self: start;
+  height: 40px;
+}
+
+.playingNow img {
+  grid-area: picture;
+}
+
+.playingNow .title, .artist {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.playingNow .title {
+  grid-area: songtitle;
+  padding:  0 10px;
+}
+
+.playingNow .artist {
+  grid-area: artist;
+  font-size: 12px;
+  padding: 0 10px;
+  height: unset;
+}
+
+.trackControl {
+  place-self: center;
+  width: 100%;
+  text-align: center;
+}
+
+.trackControl img, .playControl img {
+  height: 20px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration, .queue, .desktop, .volume, .volumeBar {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.trackControl img.playpause {
+  height: 4%;
+}
+
+.playedDuration, .totalDuration, .progressBar {
+  display: inline-block;
+}
+
+.trackControl .progressBar, .volumeBar {
+  height: 4px;
+  background-color: #8b8b8b;
+  grid-column-start: 3;
+  border-radius: 2px;
+}
+
+.progressBar {
+  width: calc(100% - 120px);
+  max-width: 300px;
+}
+
+.volumeBar {
+  width: 20%;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: minmax(100px, 1fr) 3fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    grid-template-rows: 1fr 80px;;
+    grid-template-columns: 60px 1fr;
+    grid-template-areas: 
+    "sidebar main"
+    "playBar playBar";
+  }
+
+  #logo-small {
+    display: block;
+  }
+
+  .header, .volumeBar, .sideNav span, .playlists {
+    display: none;
+  }
+}
