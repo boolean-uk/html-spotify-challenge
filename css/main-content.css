@@ -1,6 +1,6 @@
 .main-content {
     grid-area: main-content;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: auto 1fr;
     background-color: rgb(17, 20, 29);
     height: calc(100vh - 165px);
 }
@@ -11,12 +11,13 @@
 
 /* MAIN NAVIGATION BAR */
 .main-navigation {
-    justify-content: center;
+    padding-top: 10px;
 }
 
 .main-navigation-list {
-    grid-template-columns: repeat(6, auto);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: 30px;
+    gap: 10px;
     place-items: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -36,10 +37,6 @@
     width: 30px;
 }
 
-.main-navigation a {
-    text-decoration: none;
-}
-
 /* MUSIC SELECTION SECTION */
 .music-selection {
     grid-template-rows: repeat(auto-fit, 320px);
@@ -48,7 +45,7 @@
     overflow-y: scroll;
 }
 
-.recently-played, .made-for-you {
+.music-selection > div {
     grid-template-rows: 60px 260px;
     gap: 5px;
     padding-bottom: 10px;
