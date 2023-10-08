@@ -17,7 +17,7 @@ body {
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     font-size:10px;
-    
+
 }
 main {
     grid-area: main;
@@ -86,6 +86,7 @@ aside {
 #playlist {
     margin-top: 20px;
     height:320px;
+    cursor:pointer;
     
 }
 #playlist > p {
@@ -99,6 +100,7 @@ aside {
     margin-top: 10px;
     display: grid;
     grid-auto-flow:column;
+    
 }
 #profile > img {
     height:30px;
@@ -124,5 +126,54 @@ aside {
     border: 0 none;
 }
 nav {
-    
+    color: white;
+    display: grid;
+    place-content: center;
+    padding-right: 5px;  
+}
+li {
+    list-style: none;
+    display:inline-block;
+    margin-inline: 10px;
+    margin-top: 10px;
+    block-size: none;
+    cursor: pointer;
+}
+a {
+    color: white;
+}
+.Songs {
+    display: grid;
+    grid-auto-flow:column;
+    margin-top: 20px; 
+    column-gap: 10px;
+}
+
+.recent {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.one > img {
+    width: 150px;
+    height: 150px;
+}
+.two > img {
+    width: 150px;
+    height: 150px;
+}
+.three > img {
+    width: 150px;
+    height: 150px;
+}
+.four > img {
+    width: 150px;
+    height: 150px;
+}
+.five > img {
+    width: 150px;
+    height: 150px;
+}
+.six > img {
+    width: 150px;
+    height: 150px;
 }
