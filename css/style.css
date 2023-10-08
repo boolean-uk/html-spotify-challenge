@@ -1,38 +1,110 @@
 * {
     margin: 0;
-}
-
-div, header, main {
-    border: solid 1px rgb(255, 0, 0);
-    background-color: beige;
+    font-family: sans-serif;
 }
 
 .content-container {
-    height: 100%;
-}
-
-.content-container {
+    background-color: black;
+    color: white;
+    overflow: hidden;   
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 12fr 1fr;
+    gap: 10px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100px 1fr 100px;
     grid-template-areas: 
     "header discovery"
     "library discovery"
     "player player";
 }
 
+.content-container div, main {
+    border-radius: 10px;
+    background-color: rgb(18, 18, 18);
+}
+
 .header {
     grid-area: header;
 }
 
+.header ul {
+    list-style: none;
+    padding: 20px;
+    font-size: 16px;
+}
+.header img {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 .library {
     grid-area: library;
+    overflow-y: scroll;
+    padding: 20px;
 }
+
+.library .collection-container .collection {
+    padding-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60px 1fr;
+
+}
+
+
+.library .collection-container ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 .discovery {
     grid-area: discovery;
 }
 
+.discovery .content .card-container .card {
+    display: inline-block;
+}
+
 .player {
     grid-area: player;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.player .status {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.player .song-controls .controls {
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player .song-controls .player-status {
+    margin: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: aqua;
+}
+
+.player .playlist-controls {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player .playlist-controls .volume {
+    background-color: solid 1px red;
+    margin: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: aqua;
 }
