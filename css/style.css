@@ -191,7 +191,7 @@ img {
   grid-area: playBar;
   background: #333333;
   display: grid;
-  grid-template-columns: minmax(100px, 300px) minmax(150px, 450px) 1fr;
+  grid-template-columns: minmax(140px, 300px) minmax(180px, 1fr) minmax(100px, 200px) ;
   padding: 10px;
   align-content: center;
 }
@@ -239,7 +239,7 @@ img {
   text-align: center;
 }
 
-.trackControl img {
+.trackControl img, .playControl img {
   height: 20px;
 }
 
@@ -247,25 +247,34 @@ img {
   text-align: center;
 }
 
-.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration {
+.shuffle, .previous, .playpause, .forward, .repeatall, .playedDuration, .totalDuration, .queue, .desktop, .volume {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .trackControl img.playpause {
   height: 4%;
 }
 
-.playedDuration, .totalDuration, .progressBar {
+.playedDuration, .totalDuration, .progressBar, .volumeBar {
   display: inline-block;
 }
 
-.trackControl .progressBar {
+.trackControl .progressBar, .volumeBar {
   height: 4px;
-  width: calc(100% - 120px);
   background-color: #8b8b8b;
   grid-column-start: 3;
   border-radius: 2px;
+}
+
+.progressBar {
+  width: calc(100% - 120px);
+  max-width: 300px;
+}
+
+.volumeBar {
+  place-items: start;
+  width: calc(100% - 200px);
 }
 
 h2 {
@@ -279,8 +288,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .container {
+    grid-template-rows: 50px 1fr 80px;;
     grid-template-columns: 60px 1fr;
   }
   .sideNav span {
