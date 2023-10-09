@@ -1,0 +1,213 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width:100%;
+    height:100vh;
+    display: grid;
+    grid-template-areas:
+    "aside header" 
+    "aside main"   
+    "footer footer";
+    grid-template-columns:200px 1fr ;
+    grid-template-rows:60px 1fr;
+    background-color:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+
+}
+main {
+    grid-area: main;
+    background-color:rgb(14, 27, 28);
+    
+}
+header {
+    background-color: darkblue;
+    grid-area: header;
+    display: grid;
+    place-content: end;
+    padding-right: 5px;
+}
+header > p {
+    outline:2px solid silver;
+    margin-bottom:15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
+}
+footer {
+    grid-area: footer;
+    background-color:rgba(169, 169, 169, 0.165);
+    height: 50px;
+    
+}
+aside {
+    grid-area: aside;
+    display:grid;
+    
+    
+}
+#side-bar {
+    position: fixed;
+    margin: 20px 20px;
+}
+#Home-icon {
+    margin-top: 20px;
+
+}
+.icons {
+    display: grid;
+    grid-auto-flow:column;
+}
+.icons > svg{
+    width: 20px;
+}
+.search {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+}
+.search > svg {
+    width: 20px;
+}
+.library {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+
+}
+.library > svg {
+    width:20px;
+}
+#playlist {
+    margin-top: 20px;
+    height:320px;
+    cursor:pointer;
+    
+}
+#playlist > p {
+    margin: 10px;
+    color: grey;
+}
+.create {
+    margin-left: 5px;
+}
+#profile {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+    
+}
+#profile > img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+#installation {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow:column;
+    
+}
+#installation > svg {
+    width:10px;
+
+}
+#horizontal-line {
+    width:100%;
+    height:2px;
+    background-color: silver;
+    margin-top: 5px;
+    border: 0 none;
+}
+nav {
+    color: white;
+    display: grid;
+    place-content: center;
+    padding-right: 5px;  
+}
+li {
+    list-style: none;
+    display:inline-block;
+    margin-inline: 10px;
+    margin-top: 10px;
+    block-size: none;
+    cursor: pointer;
+}
+a {
+    color: white;
+}
+.Songs {
+    display: grid;
+    grid-auto-flow:column;
+    margin-top: 20px; 
+    margin-left: 10px;
+    column-gap: 10px;
+    width:600px;
+    height: 200px;
+
+    
+}
+
+.recent {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.one > img {
+    width: 170px;
+    height: 170px;
+    
+}
+.two > img {
+    width: 170px;
+    height: 170px;
+}
+.three > img {
+    width: 170px;
+    height: 170px;
+}
+.four > img {
+    width: 170px;
+    height: 170px;
+}
+.five > img {
+    width: 170px;
+    height: 170px;
+}
+.six > img {
+    width: 170px;
+    height: 170px;
+}
+.johndoe {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 10px;  
+}
+.johndoe > p {
+    margin-top: 10px;
+    font-size:10px;
+    color: grey;
+}
+.Songs2 {
+    display: grid;
+    grid-auto-flow:column;
+    margin-top: 20px; 
+    margin-left: 10px;
+    column-gap: 10px;  
+    width:200px;
+    height: 150px;
+}
+.one1 > img {
+    width: 170px;
+    height: 170px;
+}
+.two2 > img {
+    width: 170px;
+    height: 170px;
+}
