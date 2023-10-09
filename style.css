@@ -1,29 +1,15 @@
-
-body{
+*{
     margin: 0;
     padding: 0;
-   grid-template-columns: 300px 1fr;
-   width: auto;
-   height: auto;
-   background-color: black
+    color: white;
+    background-color: black;
 }
 
-.header{
-    background-color: green;
+.container {
     display: grid;
-    padding: 20px;
-    width: auto;
-    height: auto;
+    grid-template-columns: left-bar 300px  main 1fr;
+    grid-template-rows: left-bar 300px main 1fr; 
 }
-.spotify-icon{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    height: 20px;
-    justify-content: start;
-
-}
-
 
 .box{
     display: grid;
@@ -32,7 +18,24 @@ body{
     padding:10px ;
     margin: 10px;
     border-radius: 50px;
-    background-color: white;
+    background-color: black;
     justify-content: center;
     margin-left: auto;
+}
+
+.left-bar{
+    display: grid;
+    border-left: 20px;
+
+}
+.icon{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.main{
+    display: grid;
+    padding: 20px;
 }
