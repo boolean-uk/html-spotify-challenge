@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    grid-template: 
+    "left header "
+    "left  main "
+    "footer  footer";
+    grid-template-columns: 15% 85%;
+}
+
+.header > a {
+    display: grid;
+    justify-content: end;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(76, 74, 74);
+}
+
+ul {
+    display: flex;
+    background-color: rgb(34, 34, 37);
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    padding: 10px;
+}
+
+.home {
+    padding: 15px;
+}
+
+.home > a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+.playlist {
+    padding-left: 15px;
+    color: white;
+    font-size: larger;
+}
+
+.playlists {
+    padding: 15px;
+    line-height: 2;
+    color: grey;
+}
+
+.left-side {
+    position: sticky;
+    top: 0;
+    display:grid ;
+}
+
+.playlists > i {
+    background-color: white;
+    padding: 10px;
+}
+
+.app-and-user {
+    display: grid;
+}
+
+
+.user > img {
+    width: 40px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.nav a:hover, .nav div#active {
+    border-bottom: greenyellow 3px solid;
+}
+
+.house #active, .house:hover {
+    border-left: greenyellow 3px solid ;
+ }
+
+.user {
+    display: flex;
+}
+
+.username {
+   padding-top: 13px;
+   color: grey;
+   padding-left: 8px;
+}
+
+.app {
+    font-size: small;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: gray;
+}
+
+li > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.spotify-logo {
+    padding: 15px;
+    font-size: xx-large;
+    font-weight: 400;
+    color: white;
+}
+
+button {
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid white;
+    background-color: rgb(10, 8, 17);
+    color: white;
+    border-radius: 30px;
+    width: 250px;
+}
+
+
+.left {
+    grid-area: left;
+    background-color: rgb(17, 15, 15);
+
+}
+    
+
+.header {
+    background-color: rgb(10, 8, 17);
+    grid-area: header;
+    position:sticky;
+    top: 0;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(34, 34, 37);
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.creations-section > p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.artists > p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: grey;
+}
+
+.mix {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+#bruno {
+    color: black;
+    opacity: 80%;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(71, 70, 70);
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr 1fr;
+    gap: 5em;
+    position: sticky;
+    bottom: 0;
+}
+
+.recently-played-section {
+    display: flex;
+    overflow-x: auto;
+}
+
+.recently-played-section::-webkit-scrollbar {
+    display: none;
+}
+
+.creations {
+    width: 200px;
+    padding-left: 10px;
+}
+
+.songs > h4 {
+    text-align: center;
+}
+
+.songs > p {
+    text-align: center;
+}
+
+.songs > img {
+    width: 200px;
+    margin: 10px;
+}
+
+.tracks {
+    display: flex;
+}
+
+.lana {
+    width: 200px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.popular-artists {
+    display: flex;
+}
+
+.footer-image {
+    width: 70px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+}
+
+.playing-now {
+    padding-top: 15px;
+}
+
+#bruno {
+    display: flex;
+    font-size: small;
+}
+
+.footer-main {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main-icons > i {
+   padding: 5px;
+}
+
+.footer-main > input {
+    margin: 5px;
+    width: 250px;
+}
+
+.footer-right {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.footer-right > i {
+    padding-left: 5px;
+}
+
+.footer-right > input {
+    padding-left: 5px;
+    background-color: black;
+}
+
+.sinister {
+   color: white;
+}
+   
+
+.left-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 30px;
+
+}

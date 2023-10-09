@@ -2,11 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b194280fb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+        <a href="#upgrade"> <button>UPGRADE TO PREMIUM </button></a>
+        
+        <div class="nav">
+        <ul>
+            <li><a href="#highlights">HIGHLIGHTS</a></li>
+            <li><a href="#podcast">PODCAST</a></li>
+            <li><a href="#rankings">RANKINGS</a></li>
+            <li><a href="genre">GENRE AND MOOD</a></li>
+            <li><a href="#newreleases">NEW RELEASES</a></li>
+        </ul>
+        </div>
+    </div>
+
+     <div class="left">
+        <div class="left-side">
+            <div class="spotify-logo">
+              <i class="fa-brands fa-spotify"></i> <span>Spotify</span>
+            </div>
     
+            <div class="home">
+               <a href="#home"><i class="fa-solid fa-house house"></i> <span>Home</span></a>
+            </div>
+            <div class="home">
+               <a href="#search"><i class="fa-solid fa-magnifying-glass house"></i> <span>Search</span></a>
+            </div>
+            <div class="home">
+               <a href="#library"><i class="fa-solid fa-lines-leaning house"></i> <span>Library</span></a>
+            </div>
+            <h3 class="playlist">PLAYLIST</h3>
+            <div class="playlists">
+                <i class="fa-solid fa-plus"></i> <span>Create Playlist</span>
+                <p>Playlist Name</p>
+                <p>Playlist Name</p>
+                <p>Playlist Name</p>
+                <p>Playlist Name</p>
+                <p>Playlist Name</p>
+            </div>
+    
+            <div class="app-and-user">
+            <div class="app">
+                <i class="fa-solid fa-circle-down"></i> <span>Install App</span>
+            </div>
+    
+            <hr>
+    
+            <div class="user">
+                <img src="./assets/img/einaudi.jpeg" alt="user profile" >
+                <div class="username">John Doe</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Recently Played</h1>
+        <div class="recently-played-section">
+          <div class="songs">
+            <img src="./assets/img/metal_lifting.jpg" alt="Heavy Metal, Subtitle">
+            <h4 class="mix">Heavy Metal</h4>
+            <p>Subtitle</p>
+          </div>
+
+           <div class="songs">
+            <img src="./assets/img/youg.jpeg" alt="stranger things soundtrack" >
+            <h4 class="mix">Young</h4>
+            <p>Lana Del Rey</p>
+          </div>
+
+          <div class="songs">
+            <img src="./assets/img/aquietplace.jpeg" alt="">
+            <h4 class="mix">A Quiet Place</h4>
+            <p>Subtitle</p>
+          </div>
+
+          <div class="songs">
+            <img src="./assets/img/split.jpeg" alt="">
+            <h4 class="mix">Split</h4>
+            <p>Subtitle</p>
+          </div>
+
+          <div class="songs">
+            <img src="./assets/img/cure.jpeg" alt="">
+            <h4 class="mix">A Cure For Wellness</h4>
+            <p>Subtitle</p>
+          </div>
+
+          <div class="songs">
+            <img src="./assets/img/sinister.jpeg" alt="">
+            <h4 class="mix">Sinister</h4>
+            <p>SUbtitle</p>
+        </div>
+        </div>
+       
+        <div class="creations-section">
+            <h1>Creations by John Joe</h1>
+            <p>the more you listen, the better the suggestions</p>
+
+            <div class="tracks">
+                <div class="release-radar">
+                <img src="./assets/img/radar.jpeg" alt="" class="creations">
+                <h4 class="mix">Release Radar</h4>
+                </div>
+             
+                <div class="daily-mix">
+                <img src="./assets/img/mixdaily.jpeg" alt="" class="creations">
+                <h4 class="mix">Daily Mix 1</h4>
+                </div>
+            </div>
+        </div>
+
+            <div class="artists">
+                <h1>Popular Artists</h1>
+                <p>the more you listen, the better the suggestions</p>
+
+                <div class="popular-artists">
+                   <div class="artist-lana">
+                   <img src="./assets/img/youg.jpeg" alt="" class="lana">
+                   <h4 class="mix">Lana Del Rey</h4>
+                   </div>
+ 
+                   <div class="artist-einaudi">
+                   <img src="./assets/img/einaudi.jpeg" alt="" class="lana">
+                   <h4 class="mix">Einaudi</h4>
+                   </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            <img src="./assets/img/sinister.jpeg" alt="" class="footer-image" >
+            <div class="playing-now">
+            <h5 class="sinister"><strong>Sinister</strong></h5>
+            <p id="bruno">Bruno</p>
+           </div>
+            <div class="left-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+       
+        </div>
+
+            <div class="footer-main">
+                <div class="main-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                1:20 <input type="range"> 4:28
+            </div>
+
+            <div class="footer-right">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range">
+            </div>
+    </div>
+
+  
+</div>
+
 </body>
 </html>
