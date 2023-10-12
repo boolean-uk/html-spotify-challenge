@@ -1,0 +1,433 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    gap: 10px;
+}
+
+a:hover{
+    color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(20,25,34);
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(40, 40, 40);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    background-color: rgb(8,11,18);
+    align-items: center;
+    justify-items: end;
+}
+
+p {
+    color: rgb(120, 120, 120)
+}
+
+.hover:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.white {
+    color: white;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-grid {
+    display: grid;
+    grid-template: 
+    "left-menu header" 8vh
+    "left-menu main" 84vh
+    "footer    footer" 8vh/
+    250px     1fr;
+}
+
+
+/* HEADER */
+
+
+.Upgrade {
+    background: none;
+    color: white;
+    border: solid white 1px;
+    border-radius: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: 5px;
+}
+
+.Upgrade:hover {
+    background-color: rgba(109, 109, 109, 0.466);
+}
+
+
+
+/* LEFT-MENU */
+
+.left-menu {
+    grid-area: left-menu;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 3fr;
+    background-color: black;
+    color: white;
+    padding:  0px 20px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo-small {
+    margin-top: 20px;
+    display: none;
+}
+
+
+.home-nav {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.selected-vert{
+    position: relative;
+    top: 4px;
+    right: 59px;
+}
+
+.home-nav a {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+}
+
+.playlist-nav {
+    display: grid;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.create {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    right: 5px;
+}
+
+.profile-area {
+    display: grid;
+    align-items: end;
+}
+
+.profile-area a {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+}
+
+
+
+.profile {
+    color: white;
+    border-top: solid rgb(120, 120, 120) 1px;
+    margin-top: 10px;
+}
+
+.profile img {
+    border: solid rgba(120, 120, 120, 0) 2px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.profile img:hover {
+    border: solid rgba(120, 120, 120);
+}
+
+
+/* MAIN */
+
+
+.main-nav {
+    text-align: center;
+    margin-top: 20px; 
+
+}
+
+.main-nav li{
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(120, 120, 120);
+}
+
+.selected-hoz {
+    position: relative;
+    left: 60px;
+    top: 7px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    color: white;
+    margin: 20px 20px;
+}
+
+.music-card {
+    position: relative;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+.music-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+}
+
+.music-card p {
+    color: rgb(120, 120, 120);
+    font-size: 13px;
+}
+
+.album-img {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.artist-img {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.overlay-circle {
+    display: none;
+    position: absolute;
+    border-radius: 100px;
+    top: 0px;
+    right: 10px;
+}
+
+.album-img:hover .overlay{
+    display: block;
+    transition: 5s ease;
+    cursor: pointer;
+}
+
+.artist-img:hover .overlay-circle{
+    display: block;
+    transition: 5s ease;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.control-bar {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: 8vh;
+    justify-items: center;
+}
+
+/* LEFT-CONTROL BAR */
+
+.control-bar-left {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons{
+    width: 20px;
+}
+
+.playing-now{
+    width: 50px;
+}
+
+/* MIDDLE CONTROL BAR */
+.middle-icons {
+    width: 20px;
+}
+
+.middle-icons:hover{
+    cursor: pointer;
+}
+
+.control-bar-middle {
+    display: grid;
+    grid-template: 
+    ".        shuffle  previous play     forward  repeat   .       " 1fr
+    "time-one progress progress progress progress progress time-two"1fr/
+    2fr       30px      30px    30px      30px       30px     2fr         ;
+
+    margin: 10px;
+    gap: 0px 30px;
+    place-items: center;
+}
+
+.shuffle {
+    grid-area: shuffle;
+}
+.previous {
+    grid-area: previous;
+}
+.play {
+    grid-area: play;
+    width: 40px;
+}
+.forward {
+    grid-area: forward;
+}
+.repeat {
+    grid-area: repeat;
+}
+.time-one {
+    grid-area: time-one;
+}
+.progress {
+    grid-area: progress;
+}
+.time-two {
+    grid-area: time-two;
+}
+
+.control-bar-middle input[type="range"] {
+    width:300px;
+    cursor: pointer;
+  }
+
+
+/* RIGHT CONTROL BAR */
+
+.control-bar-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto) auto;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.control-bar-right input {
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 930px) {
+    .control-bar-middle {
+        display: grid;
+        grid-template: 
+        "shuffle  previous play     forward  repeat" 1fr
+        "time-one  progress progress progress  time-two"1fr/
+        30px      30px    50px      30px       30px       ;
+
+        gap: 0px 10px;
+        place-items: center;
+    }
+    .control-bar-middle input[type="range"] {
+        width: auto;
+        cursor: pointer;
+      }
+}
+
+@media screen and (max-width: 665px) {
+
+    .shrink  {
+        display: none;
+    }
+
+    .logo-small {
+        margin-top: 20px;
+        display: inline;
+    }
+
+    .left-menu {
+        padding: 0px 5px;
+    }
+
+    .home-nav a {
+        display: grid;
+        grid-template-columns: 30px;
+        place-content: center;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template: 
+        "left-menu header" 8vh
+        "left-menu main" 84vh
+        "footer    footer" 8vh/
+        auto     1fr;
+    }
+
+    .profile-area a {
+        display: grid;
+        grid-template-columns: 30px;
+        place-items: center;
+    }
+
+    .profile {
+        border-top: none;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+    .control-bar {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+    }
+}
