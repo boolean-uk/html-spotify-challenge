@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: whitesmoke;
+
+    font-family: Gotham Circular, sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 65px  1fr 90px;
+
+    grid-template-areas:
+        "left top-bar"
+        "left main"
+        "footer footer";
+}
+
+li,
+.install>p {
+    color: #7B7E82ff;
+    text-transform: capitalize;
+}
+
+p {
+    color: #FEFEFEff;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover,
+button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    color: #FEFEFEff;
+    font-style: bold;
+    font-size: smaller;
+}
+
+li>p {
+    font-size: smaller;
+    color: #7B7E82ff;
+}

@@ -1,0 +1,205 @@
+/* Top Bar */
+.top-bar {
+    grid-area: top-bar;
+    background-color: #02030Aff;
+
+    display: grid;
+    justify-content: right;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    background-color: #1e1e1e;
+
+    border-radius: 20px;
+    border: whitesmoke 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(245, 245, 245, 0.158)
+}
+
+button:hover {
+    background: rgb(83, 85, 87);
+}
+
+.created-for,
+.popular-artists,
+.recently-played,
+main>.spotify-play>h2 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+/* Main Area */
+.main {
+    grid-area: main;
+    background-color: #0C121Cff;
+    /* height: 1fr; */
+    display: grid;
+    padding-left: 10px;
+
+    grid-template-rows: 40px repeat(3, 370px);
+    border: none;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+
+
+.top-nav {
+    display: grid;
+    grid-template-columns: minmax(800px,1fr);
+    grid-template-areas:
+        "ul";
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.top-nav>ul {
+    grid-area: ul;
+
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    place-items: center;
+
+    font-weight: 550;
+}
+
+.top-nav>ul>li:hover {
+    border-bottom: 2px #AEFF2Bff solid;
+}
+
+/* Recently Played*/
+
+.spotify-play {
+    display: grid;
+    grid-template-rows: 50px 230px;
+}
+
+.created-for,
+.popular-artists,
+.recently-played {
+    display: grid;
+    height: 284px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
+    gap: 15px;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.created-for>li,
+.popular-artists>li,
+.recently-played>li {
+    display: grid;
+    align-content: center;
+}
+
+.created-for>li>img,
+.popular-artists>li>img,
+.recently-played>li>img {
+    padding-top: 10px;
+    width: 194.5px;
+    height: 194.5px;
+    border-radius: 4px;
+}
+
+.popular-artists>li>img {
+    border-radius: 50%;
+}
+
+.overlay-play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    box-shadow: 5px 5px 5px #333;
+    border: none;
+    line-height: 52px;
+    transform: translate(62px, -130px);
+    opacity: 0;
+}
+
+.created-for .overlay-play {
+    transform: translate(65px, -82px);
+}
+
+.overlay-play-svg {
+    margin-top: 12px
+}
+
+.recently-played li:hover .overlay-play,
+.created-for li:hover .overlay-play,
+.popular-ppl li:hover .overlay-play {
+    opacity: 1;
+}
+
+.overlay-play:hover {
+    background-color: #1fdf64;
+    cursor: pointer;
+    transform: scale(1.05) translate(56px, -125px);
+}
+
+.created-for .overlay-play:hover {
+    transform: translate(65px, -84px);
+}
+
+.popular-ppl {
+    line-height: 1.4rem;
+}
+
+.popular-ppl>p {
+    color: #7B7E82ff;
+}
+
+h2 {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    align-content: center;
+}
+
+h3 {
+    margin-top: 5px;
+}
+
+.recently-played>li,
+.created-for>li {
+    display: grid;
+    background-color: #2a2a2a50;
+    place-items: center;
+    border-radius: 6px;
+    grid-template-rows: 195px 30px 44px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.recently-played>li:hover,
+.created-for>li:hover,
+.popular-ppl>li:hover {
+    background-color: #2a2a2a7a;
+}
+
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #151920;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7B7E82ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

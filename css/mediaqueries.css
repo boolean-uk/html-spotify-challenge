@@ -1,0 +1,132 @@
+@media screen and (max-width: 1000px) {
+.top-nav {
+    grid-template-columns: minmax(600px,1fr);
+}
+
+.top-nav >ul {
+    grid-template-columns: repeat(3, 200px);
+}
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        display: grid;
+        height: 100vh;
+
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: 65px 1fr 90px;
+
+        grid-template-areas:
+            "left top-bar"
+            "left main"
+            "footer footer";
+    }
+
+    .left-menu {
+        grid-area: left;
+        background-color: #000000ff;
+        display: grid;
+        grid-template-rows: 60px 100px auto 80px;
+
+        grid-template-areas:
+            "logo"
+            "home-list"
+            "."
+            "bottom-menu";
+        place-items: center;
+    }
+
+    .PL1 {
+        height: 30px;
+        margin: 10px 0px;
+    }
+
+    #large-logo {
+        display: none
+    }
+
+    .create-list,
+    .bottom-menu>div>p,
+    .homelist>.hover>li {
+        display: none;
+    }
+
+
+    /* .footer */
+    .playback {
+        max-height: 90px;
+        grid-template-columns: 130px minmax(150px, 350px) 130px;
+        gap: 5px;
+        padding-right: 0px;
+    }
+
+    .middle-playcenter {
+        min-width: 275px;
+        max-width: 350px;
+        padding-right: 0px;
+    }
+
+    .playing-details {
+        grid-template-columns: 70px 20px;
+        place-items: center;
+    }
+
+    #playingcover {
+        width: 40px;
+        margin-right: 15px;
+
+    }
+
+    .song-details>p {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .progressbar-ctrl {
+        display: grid;
+        grid-template-columns: 40px 180px 45px;
+        justify-content: center;
+    }
+
+    .svg-playing>button {
+        width: 10px;
+        padding-right: 0px;
+    }
+
+    .time-played>p,
+    .time-left>p {
+        color: #bababa;
+        font-size: 0.6rem;
+    }
+
+    .play-controls {
+        grid-template-columns: repeat(5, 34px);
+        justify-content: center;
+    }
+
+    .play-controls>p {
+        display: none;
+    }
+
+    .time-left {
+        width: 40px;
+    }
+
+    /* Sound */
+    .sound {
+        grid-template-columns: 30px 100px;
+        margin-right: 12px;
+        margin-top: 0px;
+    }
+
+    .sound-buttons {
+        display: inline;
+    }
+
+    .volumebar {
+        margin-top: 40px;
+    }
+
+}
