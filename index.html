@@ -4,9 +4,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ian Grantham Spotify</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="grid">
+<!--TOP html  -->
+        <section class="top">
+
+            <section class="sidebar">
+                <div class="logo">
+                    <img src="./assets/img/logo.svg" alt="spotify logo">
+                </div> 
+                <div class="logo_alt">
+                    <img src="./assets/img/logo-small.svg" alt="small spotify logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li id="menu_home">
+                            <a href="#">
+                                <img src="./assets/img/home.svg" alt="menu home icon">
+                                <h2>Home</h2>
+                            </a>
+                        </li>
+                        <li id="menu_search">
+                            <a href="#">
+                                <img src="./assets/img/search.svg" alt="menu search icon">
+                                <h2>Search</h2>
+                            </a>
+                        </li>
+                        <li id="menu_library">
+                            <a href="#">
+                                <img src="./assets/img/libreria.svg" alt="menu library icon">
+                                <h2>Library</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="playlists">
+                    <ul>
+                        <h2>Playlists</h2>
+                        <li id="new_playlist">
+                            <a href="#">
+                                <img class="svg" src="./assets/img/mathematics-sign-plus-outline-icon.svg" alt="plus icon">
+                                <h2>Create Playlist</h2>
+                            </a>
+                        </li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                        <li class="named_playlist"><a href="#"><p>Playlist Name</p></a></li>
+                     
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <div id="install">
+                        <a href="#">
+                            <img src="./assets/img/download.svg" alt="download icon">
+                            <p>Install app</p>
+                        </a>
+                    </div>
+                    <hr/>
+                    <div id="user_profile">
+                        <a href="#">
+                            <img src="./assets/img/profile.svg" alt="user profile icon">
+                            <h3>John Doe</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <div class="upgrade">
+                    <a href="#">UPGRADE NOW</a>
+                </div>
+                
+                <div class="catagories">
+                    <ul>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Podcasts</a></li>
+                        <li><a href="#">Chart</a></li>
+                        <li><a href="#">Genre</a></li>
+                        <li><a href="#">What's New</a></li>
+                        <li><a href="#">Discover</a></li>
+                    </ul>
+                </div>
+
+                <div class="music">
+                    <article class="card">
+                        
+                        <h2 class="card_title">Recently played</h2>
+                        <div class="suggestions">
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/metal_lifting.jpg" alt="card item 1 cover">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/stranger.jpeg" alt="card item 2 cover">
+                                <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/aquietplace.jpeg" alt="card item 3 cover">
+                                <h3>A Quite Place</h3>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/split.jpeg" alt="card item 4 cover">
+                                <h3>Split</h3>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/cure.jpeg" alt="card item 5 cover">
+                                <h3>A cure for wellness</h3>
+                                <p>Subtitle</p>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/sinister.jpeg" alt="card item 6 cover">
+                                <h3>Sinister</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <h2 class="card_title">Created for John Doe</h2>
+                        <p class="tagline">Suggestions based on music you've listened to.</p>
+                        <div class="suggestions">
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/radar.jpeg" alt="card item 6 cover">
+                                <h3>Release Radar</h3>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/mixdaily.jpeg" alt="card item 6 cover">
+                                <h3>Daily Mix 1</h3>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="card pop_artist">
+                        <h2 class="card_title">Popular Artists!</h2>
+                        <p class="tagline">Suggested artists based on music you've listened to.</p>
+                        <div class="suggestions">
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/youg.jpeg" alt="card item 6 cover">
+                                <h3>Lana Del Rey</h3>
+                            </div>
+                            <div class="card_item">
+                                <a href="#"><img class="overlay svg" src="./assets/img/play-button-icon.svg" alt="play button overlay"></a>
+                                <img src="./assets/img/einaudi.jpeg" alt="card item 6 cover">
+                                <h3>Einaudi</h3>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+
+        </section>
+<!-- BOTTOM html -->
+        <section class="bottom">
+
+            <section class="playing">
+                <img id="current_art" src="./assets/img/stranger.jpeg" alt="current playing album art">
+                <div id="current_song">
+                    <h3>Song Name</h3>
+                    <p>Band Name</p>
+                </div>
+                <a id="like" href="#">
+                    <img class="svg" src="./assets/img/heart-thin-icon.svg" alt="like icon">
+                </a>
+                <a id="folder" href="#">
+                    <img class="svg" src="./assets/img/folder-line-icon.svg" alt="folder icon">
+                </a>
+            </section>
+
+            <section class="controls">
+                <div class="playback">
+                    <a href="#"><img class="svg" src="./assets/img/shuffle-icon.svg" alt="controls shuffle icon"></a>
+                    <a href="#"><img class="svg" src="./assets/img/back-track-icon.svg" alt="controls back track icon"></a>
+                    <a href="#"><img class="svg" src="./assets/img/play-button-icon.svg" alt="controls play icon"></a>
+                    <a href="#"><img class="svg" src="./assets/img/forward-track-icon.svg" alt="controls forward track icon"></a>
+                    <a href="#"><img class="svg" src="./assets/img/repeat-icon.svg" alt="controls repeat icon"></a>
+                </div>
+                <div class="progress">
+                    <h3 id="time_played">0:25</h3>
+                    <div id="progress_bar"></div>
+                    <div id="progress_value"></div>
+                    <h3 id="time_remaining">4:35</h3>   
+                </div>
+            </section>
+
+            <section class="volume">
+                <a id="list">
+                    <img class="svg" src="./assets/img/list-view-icon.svg" alt="volume controls">
+                </a>
+                <a id="computer">
+                    <img class="svg" src="./assets/img/monitor-icon.svg" alt="volume controls">
+                </a>
+                <a id="speaker">
+                    <img class="svg" src="./assets/img/volume-icon.svg" alt="volume controls">
+                </a>
+                <div id="vol_max"></div>
+                <div id="vol_current"></div>
+            </section>
+
+        </section>
+
+    </div>
 </body>
 </html>
