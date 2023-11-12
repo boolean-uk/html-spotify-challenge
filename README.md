@@ -5,5 +5,5 @@ I deployed this project using vercel, here you'll be able to see the hover effec
 
 [live demo](https://html-spotify-challenge-gw0nn9vny-carolarruda.vercel.app/)
 
-![LandingPage](https://github.com/carolarruda/html-spotify-challenge/blob/main/MusifyVisuals.png?raw=true)
+![LandingPage](https://github.com/carolarruda/html-spotify-challenge/blob/main/assets/MusifyVisuals.png?raw=true)
 
