@@ -860,7 +860,9 @@ div {
          grid-template:
              "nav top" 100px "nav header" 100px "nav main" 1fr "player player" 1%/ 20px 4fr;
      }
-
+#progress-bar {
+    display: none;
+}
      .nav {
          position: fixed;
          width: 60px;
