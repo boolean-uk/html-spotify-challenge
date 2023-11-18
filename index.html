@@ -1,12 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button class="headerButton">Upgrade Now</button>
+    </div>
+    <div class="leftMenu">
+      <!--Left Side Start-->
+      <div class="spotifyLogo">
+        <a href="./assets/img/logo.svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1134 340"
+            class="spotify-logo--text"
+          >
+            <title>Spotify</title>
+
+            <path
+              fill="#ffffff"
+              d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="leftMenuBar">
+        <div class="iconLeft">
+          <a href="./assets/img/home.svg">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                fill="#ffffff"
+              />
+            </svg>
+          </a>
+          <a href="./assets/img/search.svg">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                fill="#ffffff"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a href="./assets/img/libreria.svg">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                fill="#ffffff"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="iconsLabel">
+          <a class="color" href="#">Home</a>
+          <a href="#">Search</a>
+          <a href="#">Your Library</a>
+        </div>
+      </div>
+      <div class="playlist">
+        <h3>Playlist</h3>
+        <a class="PLspam" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            fill="rgb(159, 158, 158)"
+            class="bi bi-plus-square-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
+            />
+          </svg>
+          <span class="CP">Create Playlist</span>
+        </a>
+        <div class="CPList">
+          <ul>
+            <li>🧘🏻‍♀️ Music Relax</li>
+            <li>📚 Study</li>
+            <li>🎶 Favorites</li>
+            <li>🎸 Alternative Rock</li>
+            <li>🤌🏻 Italian</li>
+            <li>🏋🏻 GymBro</li>
+          </ul>
+        </div>
+      </div>
+      <div class="profileButton">
+        <a href="./assets/img/download.svg">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Download icon</title>
+            <path
+              d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+              fill="#ffffff"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <a class="installApp" href="#">Install App</a>
+        <hr id="lineApp" />
+        <a href="./assets/img/profile.svg">
+          <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+            <title>User Icon</title>
+            <path
+              d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+              fill="#ffffff"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span class="profileName">Loki_Smelc</span>
+        </a>
+      </div>
+    </div>
+    <!--Left Side Ends-->
+
+    <main>
+      <nav class="mainButtons">
+        <ul>
+          <li>IN EVIDENZA</li>
+          <li>PODCAST</li>
+          <li>CLASSIFICHE</li>
+          <li>GENERI E MOOD</li>
+          <li>NUOVE USCITE</li>
+          <li>SCOPRI</li>
+        </ul>
+      </nav>
+      <section class="first">
+        <div class="recent">
+          <a href="#">Recently Played</a>
+        </div>
+
+        <div class="grids">
+          <div class="recentOne">
+            <div class="imgSong">
+              <img src="./assets/img/metal_lifting.jpg" alt="metal_lifting" />
+            </div>
+            <div class="nameSong">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+
+          <div class="recentTwo">
+            <div class="imgSong">
+              <img src="./assets/img/stranger.jpeg" alt="strangerthings" />
+            </div>
+            <div class="nameSong">
+              <h3>
+                Stranger Things, Vol. 1(a Netfliks Original Series Soundtrack)
+              </h3>
+              <p>Kylie Dixon \& Micheal Stein</p>
+            </div>
+          </div>
+
+          <div class="recentThree">
+            <div class="imgSong">
+              <img src="./assets/img/aquietplace.jpeg" alt="aquietplace" />
+            </div>
+            <div class="nameSong">
+              <h3>A Quiet Place</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+
+          <div class="recentFour">
+            <div class="imgSong">
+              <img src="./assets/img/split.jpeg" alt="split" />
+            </div>
+            <div class="nameSong">
+              <h3>Split</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+
+          <div class="recentFive">
+            <div class="imgSong">
+              <img src="./assets/img/cure.jpeg" alt="cure" />
+            </div>
+            <div class="nameSong">
+              <h3>A cure for wellness</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+
+          <div class="recentSix">
+            <div class="imgSong">
+              <img src="./assets/img/sinister.jpeg" alt="sinister" />
+            </div>
+            <div class="nameSong">
+              <h3>Sinister</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section one end-->
+
+      <!--Section 2 starts-->
+
+      <section class="second">
+        <div class="recent">
+          <a class="recent" href="#">Creato per John Doe</a>
+          <p>Più ascolti, più accurati saranno i suggerimenti</p>
+        </div>
+
+        <div class="grids">
+          <div class="recentOne">
+            <div class="imgOne">
+              <img src="./assets/img/radar.jpeg" alt="radar" />
+            </div>
+            <div class="nameSong">
+              <h3>Release Radar</h3>
+            </div>
+          </div>
+
+          <div class="recentTwo">
+            <div class="imgOne">
+              <img src="./assets/img/mixdaily.jpeg" alt="mix" />
+            </div>
+            <div class="nameSong">
+              <h3>Daily Mix 1</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third">
+        <div class="recent">
+          <a href="#">Artisti più popolari</a>
+          <p id="listen">più ascolti, pù accurati saranno i suggerimenti</p>
+        </div>
+        <div class="grids">
+          <div class="recentOne">
+            <div class="imageOne">
+              <img src="./assets/img/youg.jpeg" alt="" />
+            </div>
+            <div class="nameSong">
+              <h3>Lana Del Rey</h3>
+            </div>
+          </div>
+
+          <div class="recentTwo">
+            <div class="imgTwo">
+              <img src="./assets/img/einaudi.jpeg" alt="" />
+            </div>
+            <div class="nameSong">
+              <h3>Ludovico Einaudi</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer Starts-->
+
+    <div class="footer">
+      <div class="musicPlay">
+        <div class="imgPlay">
+          <img src="./assets/img/sinister.jpeg" alt="imgPlayMusic" />
+        </div>
+        <div class="playName">
+          <a href="#"><h3>Sinister</h3></a>
+          <a href="#">Brano Nome</a>
+        </div>
+        <div class="iconsBottomLeft">
+          <a id="heartLeft" href="#">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"
+              />
+            </svg>
+          </a>
+          <a id="folderLeft" href="#">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M0 2h8l3 3h10v4h3l-4 13h-20v-20zm22.646 8h-17.907l-3.385 11h17.907l3.385-11zm-2.646-1v-3h-9.414l-3-3h-6.586v15.75l3-9.75h16z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="playBar">
+        <div class="playButtons">
+          <a href="#" id="random">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21.67 3.955l-2.825-2.202.665-.753 4.478 3.497-4.474 3.503-.665-.753 2.942-2.292h-4.162c-3.547.043-5.202 3.405-6.913 7.023 1.711 3.617 3.366 6.979 6.913 7.022h4.099l-2.883-2.247.665-.753 4.478 3.497-4.474 3.503-.665-.753 2.884-2.247h-4.11c-3.896-.048-5.784-3.369-7.461-6.858-1.687 3.51-3.592 6.842-7.539 6.858h-2.623v-1h2.621c3.6-.014 5.268-3.387 6.988-7.022-1.72-3.636-3.388-7.009-6.988-7.023h-2.621v-1h2.623c3.947.016 5.852 3.348 7.539 6.858 1.677-3.489 3.565-6.81 7.461-6.858h4.047z"
+              />
+            </svg>
+          </a>
+          <a href="#" id="songBack">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z"
+              />
+            </svg>
+          </a>
+
+          <a href="#" id="play">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"
+              />
+            </svg>
+          </a>
+
+          <a href="#" id="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Footer Finish-->
+  </body>
 </html>

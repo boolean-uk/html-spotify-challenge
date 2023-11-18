@@ -1,0 +1,533 @@
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    max-height: 100vh;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template: 
+      "leftMenu header" 100px
+      "leftMenu main" 1fr
+      "footer footer" 110px / minmax(180px, 300px) minmax(758px, 1fr);
+      border: solid 1px red;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  
+  .header {
+    grid-area: header;
+    display: grid;
+    background-color: black;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header Button {
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 35px;
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px 14px 25px;
+  }
+  
+  .leftMenu {
+  grid-area: leftMenu;
+  display: grid;
+  border: solid 0.5px black;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 5fr 1fr;
+  background-color: black;
+  gap: 12px;
+  }
+  
+  /* Logo Left */
+  
+  .spotifyLogo {
+    display: grid;
+    padding: 30px 0px 0px 20px;
+  }
+  
+  .spotifyLogo svg {
+    width: 140px;
+  }
+  
+  /* left menu */
+  
+  .leftMenuBar {
+    display: grid;
+    grid-template:
+    "iconLeft iconsLabel" 1fr /
+    40px 1fr;
+    margin-left: 15px;
+  }
+  
+  .leftMenuBar .iconLeft {
+    display: grid;
+    padding: 5px;
+  }
+  
+  .leftMenuBar .iconsLabel a {
+    display: grid;
+    color: rgba(255, 0, 255, 0.324);
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 67px;
+    padding-top: 5px;
+    padding-left: 15px;
+    align-items: center;
+  }
+  
+  
+  /* Left Playlist */
+  
+  .playlist {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    padding: 5px;
+    color: white;
+  }
+  
+  .playlist a {
+    text-decoration: none;
+    color: rgba(255, 0, 255, 0.689);
+    font-size: 25px;
+  }
+  
+ .playlist h3 {
+    margin:  0px;
+    padding-bottom: 10px;
+  }
+  
+  .playlist p {   /* what */
+    margin: 0px;
+    font-size: 20px;
+    color: rgb(159, 158, 158);
+  }
+  
+  .playlist ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 35px;
+  }
+  
+  .leftMenu .playlist a.PL {
+    padding-top: 5px;
+  }
+  
+  .CPList {
+    color: rgba(0, 255, 255, 0.329);
+  }
+  
+  
+  .profileButton {
+    align-items: center;
+  }
+  
+  .profileButton svg {
+    width: 20px;
+    margin-left: 20px;
+    padding-top: 3px;
+    color: rgb(97, 94, 94);
+  }
+  
+  .profileButton a {
+    text-decoration: none;
+    color: rgba(99, 99, 99, 0.701)
+  }
+  
+  .profileButton hr {
+  width: 90%;
+  margin-left: 0;
+  }
+  
+
+/* Main Body */
+
+main {
+    grid-area: main;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.759);
+    grid-template-rows: 55px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mainButtons"
+    "first"
+    "second" 
+    "third";
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.mainButtons {
+    display: grid;
+    place-items: center;
+    grid-area: mainButtons;
+}
+
+.mainButtons ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 9px;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.mainButtons ul li {
+    text-decoration: none;
+    color: rgba(128, 255, 0, 0.145);
+    font-weight: bold;
+}
+
+.mainButtons li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 255, 128, 0.155);
+}
+
+.mainButtons li:hover::after {
+    width: 5%;
+}
+
+
+
+/* Section 1 */
+
+.first {
+    display: grid;
+    grid-template-rows: 55px 1fr;
+    grid-area: first;
+}
+
+.first .recent a {
+    color: rgb(4, 255, 0);
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    }
+
+.first .recent a:hover {
+    text-decoration: underline;
+}
+
+.first .grids {
+    display: grid;
+    color: tomato;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 300px));
+    gap: 70px;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.first .recentOne,
+.first .recentTwo,
+.first .recentThree,
+.first .recentFour,
+.first .recentFive,
+.first .recentSix {
+    display: grid;
+    grid-template-rows: 250px 80px;
+    margin-bottom: 50px;
+}
+
+.first .imgSong {
+    display: grid;
+    place-items: center;
+}
+
+.first .nameSong {
+    display: grid;
+    text-align: center;
+}
+
+.first img {
+    width: 230px;
+    border-radius: 5px;
+}
+
+.first h3 {
+    margin:  5px;
+    font-size: 20px;
+}
+
+.first p {
+    margin: 0px;
+    color: skyblue;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.first .grids .recentOne:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+.first .grids .recentTwo:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+.first .grids .recentThree:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+.first .grids .recentFour:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+.first .grids .recentFive:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+.first .grids .recentSix:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px;
+}
+
+.grids .recentOne .imgSong {
+    position: relative;
+}
+
+.grids .recentTwo .imgSong {
+    position: relative;
+}
+
+.grids .recentThree .imgSong {
+    position: relative;
+}
+
+.grids .recentFour .imgSong {
+    position: relative;
+}
+
+.grids .recentFive .imgSong {
+    position: relative;
+}
+
+.grids .recentSix .imgSong {
+    position: relative;
+}
+
+
+/* Section 2 */
+
+.second {
+    grid-area: second;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas:
+        "recent"
+        "grids"
+}
+
+.second .recent {
+    display: grid;
+}
+
+.second a.recent {
+    color: rgb(4, 255, 0);
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.recent p {
+    color: grey;
+    margin-left: 15px;
+}
+
+.second .grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 50px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.second .imgOne {
+    display: grid;
+    place-items: center;
+}
+
+.second .grids .recentOne
+.second .grids .recentTwo {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    margin-bottom: 50px;
+}
+
+.second .grids .imgOne img {
+    width: 230px;
+    border-radius: 5px;
+}
+
+.second .grids .nameSong {
+    color: tomato;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.second h3 {
+    margin: 5px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.second .grids .recentOne:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px
+}
+
+.second .grids .recentTwo:hover {
+    background-color: rgb(0, 248, 21);
+    border-radius: 1px
+}
+
+.second .recent p {
+    margin: 10px;
+    color: skyblue;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+/* Section 3 */
+
+.third {
+    grid-area: third;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: 
+        "recent"
+        "grids";
+}
+
+.third .recent {
+    display: grid;
+}
+
+
+.third .recent a {
+    color: rgb(4, 255, 0);
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none
+}
+
+.third .recent a:hover {
+    text-decoration: underline;
+}
+
+.third .grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 15px;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.third .grids .recentOne,
+.third .grids .recentTwo {
+    display: grid;
+    grid-template-rows: 250px 80px;
+}
+
+.third .imgOne {
+    display: grid;
+    place-items: center;
+}
+
+.third .grids img {
+    width: 230px;
+    border-radius: 50%;
+}
+
+.third .grids .nameSong {
+    color: tomato;
+    text-align: center;
+} 
+
+#listen {
+    margin: 10px;
+    color: skyblue;
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Playing bar - Footer */
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    background-color: rgb(72, 72, 72);
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 5px;
+}
+
+.footer .musicPlay {
+    display: grid;
+    padding-left: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer .musicPlay .imgPlay img {
+    width: 80px;
+    padding: 20px 20px 10px 10px;
+}
+
+.playName h3 {
+    color: aqua;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.playName a {
+    text-decoration: none;
+    color:blanchedalmond
+}
+
+.iconsBottomLeft {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    margin: 50px 50px;
+}
+
+
+
+.playName a {
+    text-decoration: none;
+    margin: 0px;
+}
+.playName a:hover {
+    text-decoration: underline;
+}
+
+.footer .playBar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.playButtons {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    place-items: center;
+    margin: auto;
+    padding: 50px;
+}
