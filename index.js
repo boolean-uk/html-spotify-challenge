@@ -13,7 +13,6 @@ const mainHeaderLi = document.querySelectorAll('.main-header-nav li');
 
 
 
-
 /* Nav Bar */
 let closeBar = true;
 bar.addEventListener('click', function() {
