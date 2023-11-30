@@ -17,6 +17,7 @@ A Frontend HTML & CSS project built to practise UI building to specific customer
 
 - CSS Grid Use
 - Interactive CSS Tiles with :hover
+- Compatible with many different resolutions
 
 ## Screenshots
 
