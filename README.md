@@ -17,4 +17,4 @@ A Frontend HTML & CSS project built to practise UI building to specific customer
 
 ## Screenshots
 
-Coming Soon
+[Spotify](https://media.discordapp.net/attachments/1100550397699051651/1101326274053541888/image.png?ex=65727805&is=65600305&hm=e3e08f9d6bd795daca75dd4c94b3eb42829ce014ac925b358343d84c673ce4b7&=&format=webp&quality=lossless&width=1814&height=905)
