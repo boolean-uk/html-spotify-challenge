@@ -15,6 +15,9 @@ A Frontend HTML & CSS project built to practise UI building to specific customer
 
 ## Features
 
+- CSS Grid Use
+- Interactive CSS Tiles with :hover
+
 ## Screenshots
 
 <p float="left">
