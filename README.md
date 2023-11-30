@@ -4,7 +4,7 @@
 
 # Spotify UI Clone
 
-A Frontend HTML & CSS project built to practise UI building to customer requirements.
+A Frontend HTML & CSS project built to practise UI building to specific customer requirements.
 
 ## Tech Stack
 
