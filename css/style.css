@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content-container {
+    background-color: black;
+    color: white;
+    overflow: hidden;   
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header discovery"
+    "library discovery"
+    "player player";
+}
+
+.content-container div, main {
+    border-radius: 10px;
+    background-color: rgb(18, 18, 18);
+}
+
+.header {
+    grid-area: header;
+
+}
+
+.header ul {
+    list-style: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.header li {
+    padding-bottom: 20px;
+}
+
+.header img {
+    padding-right: 20px;
+}
+
+.library {
+    grid-area: library;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.library .collection-container .collection {
+    padding-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60px 1fr;
+
+}
+
+.library .collection-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.discovery {
+    grid-area: discovery;
+    display: inline;
+}
+
+.discovery .content .card-container .card {
+    border: solid 1px red;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.player {
+    grid-area: player;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.player .status {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.player .song-controls .controls {
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player .song-controls .player-status {
+    margin: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.player .playlist-controls {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player .playlist-controls .volume {
+    background-color: solid 1px red;
+    margin: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: aqua;
+}
