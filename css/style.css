@@ -67,9 +67,13 @@
 }
 
 .discovery .content .card-container .card {
-    border: solid 1px red;
     display: inline-block;
     padding-right: 50px;
+    padding-bottom: 25px;
+}
+
+.discovery .content .card-container .card img {
+    border-radius: 10px;
 }
 
 .player {
