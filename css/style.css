@@ -56,7 +56,6 @@
 
 }
 
-
 .library .collection-container ul {
     list-style: none;
     padding: 0;
@@ -64,10 +63,13 @@
 
 .discovery {
     grid-area: discovery;
+    display: inline;
 }
 
 .discovery .content .card-container .card {
     border: solid 1px red;
+    display: inline-block;
+    padding-right: 50px;
 }
 
 .player {
