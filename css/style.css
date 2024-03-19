@@ -7,11 +7,11 @@
     display: grid;
     height: 100vh;
     grid-template:
-        'side top top top' 70px
-        'side main main main' 1fr
-        'side main main main'
+        'side top top' 70px
+        'side main main' 1fr
+        'side main main'
         /* 'side main main main' */
-        'foot foot foot foot' 70px /
+        'foot foot foot' 70px /
         200px 1fr
     ;
 }
@@ -158,27 +158,52 @@
 /* ============= Top-Bar ============= */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .top {
     grid-area: top;
+    display: grid;
     background-color: #080b12;
     position: sticky;
+    grid-template-columns: 80% 1fr;
 }
+
+.placeholder{
+border: 0;
+}
+
+.upgrade {
+    border: 1px solid white;
+    margin: 10px;
+    padding-top: 13px;    
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main {
     grid-area: main;
-    background-color: rgb(62, 12, 12);
+    background-color: #141922;
     display: grid;
     grid-auto-rows: 80px;
     overflow-y: scroll;
