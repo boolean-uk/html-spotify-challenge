@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+        'side top top top' 70px
+        'side main main main' 1fr
+        'side main main main'
+        /* 'side main main main' */
+        'foot foot foot foot' 70px /
+        200px 1fr
+    ;
+}
+
+/* ============= Side-Bar ============= */
+
+.side {
+    grid-area: side;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    /* grid-template-rows: 40px 1fr 40px;  */
+    grid-template:
+        'logo' 70px
+        'nav' 100px
+        'lists' 1fr
+        'user' 70px
+    ;
+    gap: 10px;
+}
+
+.logo {
+    grid-area: logo;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 100%;
+}
+
+
+.nav-container {
+    grid-area: nav;
+    display: grid;
+    height: 100%;
+    /* margin-left: 10px; */
+    color: gray;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.nav-container div {
+    display: grid;
+    height: 60%;
+    grid-template-columns: 25% 1fr;
+    gap: 0;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.nav-container div img {
+    padding-left: 15px;
+}
+
+.nav-container div:hover {
+    border-left: 3px solid yellow;
+}
+
+.nav-container div p {
+    padding-top: 5px;
+}
+
+
+/* ============= Playlists ============= */
+
+
+.playlist {
+    grid-area: lists;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 20px 35px 1fr;
+    gap: 10px;
+}
+
+.playlist h4 {
+    color: white;
+    font-weight: bold;
+}
+
+.create-playlist {
+    display: grid;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    grid-template-columns: 30% 1fr;
+}
+
+
+.create {
+    color: gray;
+    padding-top: 7px;
+}
+
+.lists {
+    display: grid;
+    grid-auto-rows: 30px;
+}
+
+.lists p {
+    color: gray;
+    font-size: small;
+    line-height: 2.5rem;
+}
+
+
+/* ============= Profile ============= */
+
+.user {
+    grid-area: user;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 35% 1fr;
+    margin: 0 15px;
+}
+
+
+.app-install {
+    display: grid;
+    border-bottom: 1px solid gray;
+    color: gray;
+    font-size: x-small;
+    grid-template-columns: 20% 1fr;
+}
+
+.profile {
+    display: grid;
+    padding-top: 10px;
+    color: white;
+    font-size: medium;
+    grid-template-columns: 20% 1fr;
+}
+
+.profile img {
+    border: 1px solid gray;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+.profile p {
+    padding-top: 3px;
+}
+
+
+/* ============= Top-Bar ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top {
+    grid-area: top;
+    background-color: #080b12;
+    position: sticky;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(62, 12, 12);
+    display: grid;
+    grid-auto-rows: 80px;
+    overflow-y: scroll;
+}
+
+.main div {
+    color: yellow;
+}
+
+.play {
+    grid-area: foot;
+    background-color: blue;
+    position: sticky;
+}
