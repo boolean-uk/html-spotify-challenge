@@ -80,7 +80,6 @@ left {
 .sidebar-nav {
     grid-area: nav;
     grid-template-rows: 1fr;
-    width: fit-content;
     margin: 5%;
 }
 
@@ -89,12 +88,26 @@ left {
     list-style: none;
 }
 
+.sidebar-nav-button {
+    display: flex;
+    width: 100%;
+    font-size: large;
+}
+
+.sidebar-nav-button h2 {
+    place-content: center;
+}
+
 .playlists {
     grid-area: playlists;
 }
 
 .create-playlist {
     display: flex;
+}
+
+.create-playlist h2 {
+    place-content: center;
 }
 
 .playlist-icon {
@@ -157,12 +170,13 @@ footer {
 
 .now-playing-box {
     display: grid;
-    grid-template-columns: 1fr 5rem;
+    grid-template-columns: 14rem 5rem;
+    height: fit-content;
 }
 
 .now-playing-image {
     width: 50px;
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
 }
 
 .track-details {
@@ -173,28 +187,89 @@ footer {
     margin: 22px 10px 10px 10px;
 }
 
+.track-name-button {
+    border: none;
+    outline: none;
+    background-color: rgb(164, 96, 164);
+}
+
+.track-name-button:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button {
+    cursor: pointer;
+}
+
+.sort-track {
+    place-content: center;
+}
+
 .sort-track-icon {
     width: 20px;
 }
 
-.song-controls-box {
+.track-controls-box {
     display: grid;
     grid-template-rows: 1fr;
-    place-content: center;
+    place-items: center;
     padding: 2%;
+    gap: 1rem;
+    height: fit-content;
 }
 
-.song-controls {
+.track-controls {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+    gap: 5rem;
 }
 
-.song-progress-bar {
+.track-control-button, .sort-track-button, .sidebar-nav-button {
+    background-color: rgb(164, 96, 164);
+    border: none;
+    outline: none;
+}
+
+.track-controls-icon:hover, .sort-track-icon:hover, .sidebar-nav-button:hover {
+    filter: invert(90%) sepia(99%) saturate(32%) hue-rotate(195deg) brightness(109%) contrast(99%);
+}
+
+#shuffle:focus, #repeat:focus, #volume:focus, #device:focus, #queue:focus, #now_playing:focus {
+    filter: invert(64%) sepia(72%) saturate(531%) hue-rotate(86deg) brightness(94%) contrast(89%);
+}
+
+.track-controls-icon {
+    width: 20px;
+}
+
+.track-progress-bar {
     width: 550px;
+    accent-color: white;
+}
+
+.track-progress-bar:hover, .volume-control-bar:hover {
+    accent-color: #1ed760;
 }
 
 .volume-device-controls-box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     padding: 2%;
+    place-content: center;
+}
+
+.device-control-box {
+    display: flex;
+    gap: 15px;
+    height: fit-content;
+    place-content: end;
+    margin-right: 3%;
+}
+
+
+.volume-control-bar {
+    accent-color: white;
 }

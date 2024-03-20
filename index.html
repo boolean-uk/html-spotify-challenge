@@ -51,16 +51,22 @@
             <nav class="sidebar-nav">
                 <ul>
                     <li>
-                        <img class="nav-icon" alt="home icon" src="assets/img/home.svg">
-                        <h2>Home</h2>
+                        <button class="sidebar-nav-button" type="button">
+                            <img class="nav-icon" alt="home icon" src="assets/img/home.svg">
+                            <h2>Home</h2>
+                        </button>
                     </li>
                     <li>
-                        <img class="nav-icon" alt="search icon" src="assets/img/search.svg">
-                        <h2>Search</h2>
+                        <button class="sidebar-nav-button" type="button">
+                            <img class="nav-icon" alt="search icon" src="assets/img/search.svg">
+                            <h2>Search</h2>
+                        </button>
                     </li>
                     <li>
-                        <img class="nav-icon" alt="libray icon" src="assets/img/libreria.svg">
-                        <h2>Your Library</h2>
+                        <button class="sidebar-nav-button" type="button">
+                            <img class="nav-icon" alt="libray icon" src="assets/img/libreria.svg">
+                            <h2>Your Library</h2>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -97,32 +103,56 @@
                 <div class="track-details">
                     <img class="now-playing-image" alt="track image" src="assets/img/sinister.jpeg">
                     <div class="track-name">
-                        <h5>Sinister</h5>
-                        <h6>Christopher Young</h6>
+                        <button class="track-name-button" type="button" ><h3>Sinister</h3></button>
+                        <button class="track-name-button" type="button"><p>Christopher Young</p></button>
+                        
                     </div>
                 </div>
                 <div class="sort-track">
-                    <img class="sort-track-icon" alt="like track icon" src="assets/img/like.svg">
+                    <button class="sort-track-button" type="button">
+                        <img class="sort-track-icon" alt="like track icon" src="assets/img/like.svg">
+                    </button>
                     <!-- <img class="sort-track-icon" alt="add to library icon"> -->
                 </div>
             </section>
-            <section class="song-controls-box">
-                <div class="song-controls">
-                    <img>
-                    <img>
-                    <img>
-                    <img>
-                    <img>
+            <section class="track-controls-box">
+                <div class="track-controls">
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" id="shuffle" alt="shuffle track button" src="assets/img/shuffle.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" alt="skip track back button" src="assets/img/skip_back.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" alt="pause track button" src="assets/img/pause.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" alt="skip track forward button" src="assets/img/skip_forward.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" id="repeat" alt="enable repeat" src="assets/img/repeat.svg">
+                    </button>
                 </div>
-                <div class="song-progress">
-                    <input type="range" min="0" max="500" class="song-progress-bar">
+                <div class="track-progress">
+                    <input type="range" min="0" max="500" class="track-progress-bar">
                 </div>
             </section>
             <section class="volume-device-controls-box">
-                <img>
-                <img>
-                <img>
-                <input type="range" min="0" max="11" class="volume-control-bar">
+                <div class="device-control-box">
+                    <button class="track-control-button" type="button">
+                        <img id="now_playing" class="track-controls-icon" alt="Now playing" src="assets/img/now_playing.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img id="queue" class="track-controls-icon" alt="Track queue" src="assets/img/queue.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img id="device" class="track-controls-icon" alt="Connect to a device" src="assets/img/device.svg">
+                    </button>
+                    <button class="track-control-button" type="button">
+                        <img class="track-controls-icon" id="volume" alt="Volume control" src="assets/img/volume.svg">
+                    </button>
+                </div>
+                <input for="volume" type="range" min="0" max="11" class="volume-control-bar">
             </section>
         </footer>
     </div>
