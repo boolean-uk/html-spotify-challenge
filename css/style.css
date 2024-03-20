@@ -84,7 +84,7 @@ body {
     color: #717171;
     padding: 15px;
     display: grid;
-    gap: 10px;
+    gap: 0.8rem;
     grid-template-rows: 20px 50px 1fr;
     overflow: auto;
 }
@@ -121,7 +121,7 @@ body {
 .create-playlist-container {
     display: grid;
     grid-template-columns: 45px 1fr;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 button {
@@ -342,7 +342,7 @@ footer {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     padding: 20px 10px;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 .now-playing-album img {
