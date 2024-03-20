@@ -425,6 +425,7 @@
 
 .right {
     display: flex;
+    width: 100%;
     align-items: center;
     color: white;
     padding-right: 10px;
@@ -559,7 +560,19 @@ i:hover {
 
 
 
-@media screen and (min-width: 400px) and (max-width: 719px) {
+@media screen and (min-width: 320px) and (max-width: 719px) {
+
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template:
+            'side top top' 70px
+            'side main main' 1fr
+            'side main main'
+            'foot foot foot' 80px /
+            80px 1fr
+        ;
+    }
 
     .placeholder {
         display: none;
@@ -590,22 +603,26 @@ i:hover {
     }
 
     .center,
-    
+    .right {
+        width: 50%;
+    }
+
 
     .player {
-        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        grid-template-columns: repeat(3, minmax(70px, 1fr));
         gap: 5px;
     }
 
     .player i {
 
-        width: 32px;
+        width: 28px;
     }
 
 
     .right {
         padding-right: 2px;
-        ;
+        margin-left: 5px;
+        padding-left: 5px;
     }
 
     .right i {
@@ -617,8 +634,34 @@ i:hover {
         grid-template-columns: 1fr;
         place-items: center;
         margin-top: 10px;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
+    .playlist {
+        display: none;
+    }
 
+    .nav-container p {
+        display: none;
+    }
+
+    .nav-container div img {
+        padding-left: 0;
+    }
+
+    .nav-container {
+        place-items: center;
+    }
+
+    .user {
+        display: grid;
+        place-items: center;
+    }
+
+    .user p {
+        display: none;
+    }
 
 }
