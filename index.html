@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <section class="logo">
+                <img class="spotify-logo" alt="spotify-logo" src="assets/img/logo.svg">
+            </section>
+            <section class="upgrade">
+                <button class="upgrade-button" type="button">Upgrade to Premium</button>
+            </section>
+        </header>
+        <main>
+            <nav class="main-nav">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <div class="main-box">
+                <section class="recent-box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <section class="playlists-box">
+                    <div></div>
+                    <div></div>
+                </section>
+                <section class="popular-box">
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+        </main>
+        <left>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <img class="nav-icon" alt="home icon" src="assets/img/home.svg">
+                        <h2>Home</h2>
+                    </li>
+                    <li>
+                        <img class="nav-icon" alt="search icon" src="assets/img/search.svg">
+                        <h2>Search</h2>
+                    </li>
+                    <li>
+                        <img class="nav-icon" alt="libray icon" src="assets/img/libreria.svg">
+                        <h2>Your Library</h2>
+                    </li>
+                </ul>
+            </nav>
+            <section class="playlists">
+                <section class="create-playlist">
+                    <img class="playlist-icon" alt="add new playlist icon" src="assets/img/add.svg">
+                    <h2>Create Playlist</h2>
+                </section>
+                <nav class="playlist-nav">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="left-footer">
+                <div class="install-app">
+                    <img class="download" alt="download icon" src="assets/img/download.svg">
+                    <p>Install app</p>
+                </div>
+                <div class="user-details">
+                    <img  class="user-photo" alt="profile icon" src="assets/img/Profile pic.jpg">
+                    <h3 class="user-name">Tim Zoltie</h3>
+                </div>
+            </section>
+        </left>
+        <footer>
+            <section class="now-playing-box">
+                <div class="track-details">
+                    <img class="now-playing-image" alt="track image" src="assets/img/sinister.jpeg">
+                    <div class="track-name">
+                        <h5>Sinister</h5>
+                        <h6>Christopher Young</h6>
+                    </div>
+                </div>
+                <div class="sort-track">
+                    <img class="sort-track-icon" alt="like track icon" src="assets/img/like.svg">
+                    <!-- <img class="sort-track-icon" alt="add to library icon"> -->
+                </div>
+            </section>
+            <section class="song-controls-box">
+                <div class="song-controls">
+                    <img>
+                    <img>
+                    <img>
+                    <img>
+                    <img>
+                </div>
+                <div class="song-progress">
+                    <input type="range" min="0" max="500" class="song-progress-bar">
+                </div>
+            </section>
+            <section class="volume-device-controls-box">
+                <img>
+                <img>
+                <img>
+                <input type="range" min="0" max="11" class="volume-control-bar">
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    'header header' 75px
+    'left main' 4fr
+    'footer footer' 75px/
+    1fr 4fr;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(232, 128, 128);
+    padding: 10px;
+}
+
+.spotify-logo {
+    width: 27%;
+}
+
+.upgrade {
+    place-content: end;
+}
+
+.upgrade-button {
+    padding: 2%;
+    border-radius: 40px;
+    border: none;
+    margin: 5px;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template: 
+    'nav'75px
+    'recommends'1fr/
+    1fr;
+    background-color: rgb(73, 161, 73);
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.main-box {
+    display: grid;
+    grid-area: recommends;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+}
+
+.recent-box, .playlists-box, .popular-box {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+
+
+left {
+    display: grid;
+    grid-area: left;
+    grid-template: 
+    'nav'1fr
+    'playlists'2fr
+    'side-footer' 96px/
+    1fr;
+    background-color: rgb(39, 187, 39);
+}
+
+.sidebar-nav {
+    grid-area: nav;
+    grid-template-rows: 1fr;
+    width: fit-content;
+    margin: 5%;
+}
+
+.sidebar-nav li {
+    display: flex;
+    list-style: none;
+}
+
+.playlists {
+    grid-area: playlists;
+}
+
+.create-playlist {
+    display: flex;
+}
+
+.playlist-icon {
+    width: 3rem;
+    fill: white;
+}
+
+.playlist-nav {
+    list-style: none;
+}
+
+.left-footer {
+    display: grid;
+    grid-template-rows: 1rem;
+    grid-area: side-footer;
+    gap: 10px;
+}
+.install-app {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    margin: 2%;
+    height: fit-content;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    color: white;
+}
+
+.install-app p {
+    place-content: center;
+}
+
+.download {
+    width: 30px;
+}
+
+.user-details {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.user-name {
+    place-content: center;
+}
+
+.user-photo {
+    width: 3rem;
+    border-radius: 50px;
+}
+
+.nav-icon {
+    width: 3rem;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(164, 96, 164);
+}
+
+.now-playing-box {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+}
+
+.now-playing-image {
+    width: 50px;
+    margin: 10px;
+}
+
+.track-details {
+    display: flex;
+}
+
+.track-name {
+    margin: 22px 10px 10px 10px;
+}
+
+.sort-track-icon {
+    width: 20px;
+}
+
+.song-controls-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    place-content: center;
+    padding: 2%;
+}
+
+.song-controls {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.song-progress-bar {
+    width: 550px;
+}
+
+.volume-device-controls-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2%;
+}
