@@ -10,7 +10,6 @@
         'side top top' 70px
         'side main main' 1fr
         'side main main'
-        /* 'side main main main' */
         'foot foot foot' 80px /
         200px 1fr
     ;
@@ -164,11 +163,11 @@
     padding-top: 3px;
 }
 
-.profile img:hover{
+.profile img:hover {
     cursor: pointer;
 }
 
-.app-install img{
+.app-install img {
     cursor: pointer;
 }
 
@@ -178,6 +177,7 @@
 .top {
     grid-area: top;
     display: grid;
+    height: 100%;
     background-color: #080b12;
     position: sticky;
     grid-template-columns: 85% 1fr;
@@ -188,7 +188,10 @@
 }
 
 .upgrade {
+    display: grid;
+    /* place-items: center; */
     border: 1px solid white;
+    height: 50%;
     margin: 15px;
     padding-top: 10px;
     border-radius: 25px;
@@ -241,6 +244,7 @@
 .content {
     display: grid;
     overflow-y: scroll;
+
 }
 
 .recent,
@@ -437,35 +441,184 @@
     color: #878787;
     accent-color: #878787;
 }
-.volume i{
+
+.volume i {
     color: white;
 }
 
- input:hover {
+input:hover {
     cursor: pointer;
 }
 
- i:hover {
+i:hover {
     cursor: pointer;
 }
 
 /* ============= Responsiveness ============= */
 
+@media screen and (min-width: 1021px) and (max-width: 1200px) {
+
+    .menu-item {
+        margin-right: 15px;
+    }
+
+    .cover img {
+        width: 200px;
+    }
+
+    .albums {
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .actions i {
+        margin-right: 5px;
+
+    }
+
+}
+
+
 @media screen and (min-width: 900px) and (max-width: 1020px) {
 
     .menu {
-        display: grid;
-        height: 80px;
-        padding: 0 10%;
-        /* grid-template-columns: auto; */
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
     }
 
     .menu-item {
-        word-wrap: none;
-        margin-right: 15px;
+        margin-right: 10px;
     }
+
+    .albums {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .actions i {
+        margin-right: 5px;
+
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 720px) and (max-width: 899px) {
+
+
+    .top {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    .menu-item {
+        margin-right: 10px;
+    }
+
+    .content {
+        max-width: 600px;
+    }
+
+    .cover img {
+        width: 150px;
+    }
+
+    .albums {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .player {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        gap: 5px;
+    }
+
+
+    .actions {
+        grid-template-rows: repeat(2, 20px);
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 719px) {
+
+    .placeholder {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding-top: 10px;
+    }
+
+    .menu-item {
+        margin-right: 10px;
+    }
+
+    .cover img {
+        width: 120px;
+    }
+
+    .albums {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .center,
+    
+
+    .player {
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        gap: 5px;
+    }
+
+    .player i {
+
+        width: 32px;
+    }
+
+
+    .right {
+        padding-right: 2px;
+        ;
+    }
+
+    .right i {
+        margin-right: 2px;
+    }
+
+    .actions {
+        grid-template-rows: repeat(2, 20px);
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-top: 10px;
+    }
+
+
 
 }
