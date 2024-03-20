@@ -4,9 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Spotify</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <img id="small-logo" src="/assets/img/logo-small.svg" alt="">
+            <img id="big-logo" src="/assets/img/logo.svg" alt="Spotify logo">
+            <button>Upgrade</button>
+        </header>
+
+        <aside>
+            <nav>
+                <div class="home">
+                    <img src="/assets/img/home.svg" alt="">
+                    <p>Home</p>
+                </div>
+                <div class="search">
+                    <img src="/assets/img/search.svg" alt="">
+                    <p>Search</p>
+                </div>
+                <div class="library">
+                    <img src="/assets/img/libreria.svg" alt="">
+                    <p>Library</p>
+                </div>
+            </nav>
+        
+            <section class="playlist">
+                <h3>PLAYLIST</h3>
+                <div class="playlist-config">
+                    <div class="create-playlist">
+                    <img src="/assets/img/plus-square.svg" alt="">
+                    <span>Create Playlist</span>
+                </div>
+                <ul id="playlist-list">
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                </ul>
+                </div>
+            </section>
+
+            <div class="install-user">
+                <div class="install">
+                    <img src="/assets/img/download.svg" alt="">
+                    <p>Install App</p>
+                </div>
+                <hr>
+                <div class="user">
+                    <img src="/assets/img/profile.svg" alt="">
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <nav>
+                <h3>Something</h3>
+                <h3>Something</h3>
+                <h3>Something</h3>
+                <h3>Something</h3>
+                <h3>Something</h3>
+                <h3>Something</h3>
+            </nav>
+
+            <h2>Recently Played</h2>
+            <div class="recently-played">
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+                <div class="album">
+                    <img src="/assets/img/metal_lifting.jpg" alt="">
+                    <h3>Name</h3>
+                    <p>Band name</p>
+                </div>
+            </div>
+
+            <h2>Created for John Doe</h2>
+            <p class="subtitle">Subtitle for created for John Doe</p>
+            <div class="created-for">
+                <div class="playlist">
+                    <img src="/assets/img/radar.jpeg" alt="">
+                    <h3>playlist name</h3>
+                </div>
+                <div class="playlist">
+                    <img src="/assets/img/stranger.jpeg" alt="">
+                    <h3>playlist name</h3>
+                </div>
+            </div>
+
+            <h2>Popular artists</h2>
+            <p class="subtitle">Subtitle for popular artists</p>
+            <div class="popular-artists">
+                <div class="popular-artist">
+                    <img src="/assets/img/einaudi.jpeg" alt="">
+                    <h3>artist name</h3>
+                </div>
+                <div class="popular-artist">
+                    <img src="/assets/img/cure.jpeg" alt="">
+                    <h3>artist name</h3>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="now-playing">
+                <img src="/assets/img/sinister.jpeg" alt="">
+                <div class="song-info">
+                    <h3>Artist</h3>
+                    <p>Song Name</p>
+                </div>
+                <img id="heart-icon" class="footer-icon" src="/assets/img/heart.svg" alt="">
+                <img id ="folder-icon" class="footer-icon"  src="/assets/img/folder.svg" alt="">
+            </div>
+
+            <div class="player-controls">
+                <div class="player-buttons">
+                    <img class="footer-icon" src="/assets/img/shuffle.svg" alt="">
+                    <img class="footer-icon"  src="/assets/img/skip-back.svg" alt="">
+                    <img class="footer-icon"  src="/assets/img/play.svg" alt="">
+                    <img class="footer-icon"  src="/assets/img/skip-forward.svg" alt="">
+                    <img class="footer-icon"  src="/assets/img/repeat.svg" alt="">
+                </div>
+                <div class="scrobbler">
+                    <p>0:25</p>
+                    <input type="range">
+                    <p>3:30</p>
+                </div>
+            </div>
+
+            <div class="broadcast-controls">
+                <img class="footer-icon"  src="/assets/img/burger-menu.svg" alt="">
+                <img class="footer-icon"  src="/assets/img/monitor.svg" alt="">
+                <img class="footer-icon"  src="/assets/img/volume.svg" alt="">
+                <input type="range">
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

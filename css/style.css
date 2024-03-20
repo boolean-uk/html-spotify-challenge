@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template:
+    'header header' 60px
+    'aside main' 1fr
+    'footer footer' 100px/
+    200px 1fr;
+}
+
+header {
+    grid-area: header;
+    grid-template-columns: 200px 1fr;
+    display: grid;
+    top: 0;
+    background-color: black;
+    padding: 10px;
+}
+
+header .logo {
+    margin: 0;
+    padding: 0;
+    border: 1px dotted;
+    background-color: black;
+}
+
+
+header button {
+    width: 100px;
+    place-self: center end;
+}
+
+header #small-logo {
+    display: none;
+}
+
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-rows: auto minmax(200px, 30%) 1fr;    
+    background-color: black;
+    color: white;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+aside img {
+    height: 30px;
+}
+
+
+aside nav {
+    display: grid;
+    grid-template:
+    'home' 30px
+    'search' 30px 
+    'library' 30px;
+    gap: 5px;
+}
+
+aside .home, aside .search, aside .library {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+aside .playlist {
+    display: grid;
+    grid-template-rows: 20px 30px 1fr;
+
+}
+
+aside li {
+    text-indent: -30px;
+    list-style: none;
+}
+
+aside .install-user {
+    position: sticky;
+    place-self: end center;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.install-user .install, .install-user .user {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    place-items: center;
+}
+
+
+aside .install-user img {
+    height: 20px;
+    text-align: center;
+}
+
+.install-user .install,
+.install-user .user {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    background-color: #141922;
+    color: white;
+}
+
+main nav {
+    margin-top: 20px;
+    place-self: center;
+    display: flex;
+    width: 90%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav h3 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+main .recently-played, main .created-for, main .popular-artists{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 100px);
+    margin-left: 20px;
+    gap: 70px;
+}
+
+main h2 { 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+main .subtitle {
+    margin-left: 20px;
+}
+
+main img {
+    height: 150px;
+}
+
+main .popular-artists img {
+    border-radius: 50%;
+}
+
+footer {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) minmax(200px, 3fr) 1fr;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-size: 10px;
+    gap: 5px;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer .footer-icon {
+    height: 20px;
+}
+
+footer .now-playing {
+    display: grid;
+    grid-template-columns: 40px 1fr repeat(2,20px);
+    padding: 10px;
+    gap: 10px;
+    place-items: center;
+}
+
+.now-playing .footer-icon {
+    place-self: center;
+    height: 15px;
+}
+
+
+footer .player-controls {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr)
+}
+
+.player-controls .player-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    place-self: center;
+    gap: 25px;
+}
+
+.player-controls .scrobbler {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .broadcast-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 20px) minmax(85px, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    footer .now-playing {
+        display: grid;
+        grid-template-areas: 
+        'img song-info like' 
+        'img song-info folder';
+        grid-template-columns: 20px 1fr 10px;
+        margin-left: 5px;
+        min-width: 100px;
+        place-self: center;
+    }
+
+    #heart-icon {
+        grid-area: like;
+    }
+
+    #folder-icon {
+        grid-area: folder;
+    }
+
+    .song-info {
+        grid-area: song-info;
+        margin-left: 5px;
+    }
+
+    .now-playing img {
+        grid-area: img;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        grid-template:
+        'header header' 60px
+        'aside main' 1fr
+        'footer footer' 100px/
+        60px 1fr;
+    }
+
+    aside {
+        display: grid;
+        grid-template-rows: auto 1fr;    
+    }
+
+    aside nav {
+        place-items: center;
+    }
+
+    aside nav p, aside .playlist {
+        display: none;
+    }
+
+    aside .install-user p, aside .install-user h3 {
+        display: none;
+    }
+
+    aside .install-user {
+        place-self: end;
+    }
+
+    header #big-logo {
+        display: none;
+    }
+
+    header #small-logo {
+        display:block;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
