@@ -240,8 +240,8 @@ main {
     grid-template: 
         'header' 110px
         'playlists' 110px
-        'all-albums' minmax(275px, 1700px)
-        'footer' 366px;
+        'all-albums' minmax(275px, 2050px)
+        'footer' 400px;
     background: linear-gradient(#222222, #121212);
     padding: 16px 18px;
     border-radius: 8px;
@@ -253,6 +253,7 @@ main .main-content {
     grid-template: 
         'top-header' 32px
         'bottom-header' 56px;
+    gap: 0.8rem;
 }
 
 main .top-header-main-content {
@@ -351,6 +352,285 @@ main .top-header-main-content .right-controls .install {
 
 main .top-header-main-content .right-controls .install img {
     margin-left: 12px;
+}
+
+main .bottom-header-main-content {
+    display: grid;
+    grid-template: 
+        'button button button' / 40px 62.5px 81px;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main .bottom-header-main-content .all {
+    background-color: white;
+    color: black;
+    font-weight: lighter;
+}
+
+main .bottom-header-main-content button {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #2F2F2F;
+    font-weight: bold;
+    height: 32px;
+}
+
+main .playlists {
+    display: grid;
+    grid-template-rows: repeat(2, 48px);
+    grid-template-columns: repeat(4, 254.8px);
+    grid-template-areas: 
+        'album album album album'
+        'album album album album';
+    gap: 0.5rem;
+}
+
+main .playlists .album {
+    display: grid;
+    grid-template: 
+        'img strong' / 48px 206px;
+    gap: 0.5rem;
+    background-color: #2B2B2B;
+    border-radius: 3px;
+    align-items: center;
+}
+
+main .playlists .album strong {
+    display: grid;
+    align-items: center;
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+}
+
+main .playlists .album img {
+    object-fit: cover;
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+}
+
+main .all-type-of-albums {
+    display: grid;
+    grid-template: 
+        'recommended' 298.26px
+        'popular-albums' 298.26px
+        'recently' 298.26px
+        'jump-back-in' 298.26px
+        'favorite' 298.26px
+        'poular-artists' 298.26px;
+    padding-top: 1.5rem;
+    gap: 2rem;
+}
+
+main .all-type-of-albums .albums-recommended-section,
+main .all-type-of-albums .popular-albums-section,
+main .all-type-of-albums .recently-played-section,
+main .all-type-of-albums .jump-back-in-section,
+main .all-type-of-albums .favorite-artists-section,
+main .all-type-of-albums .popular-artists-section {
+    display: grid;
+    grid-template: 
+        'title' 31px
+        'playlist' 267px;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-title,
+main .all-type-of-albums .popular-albums-section .popular-title,
+main .all-type-of-albums .recently-played-section .recently-played-title,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-title,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-title,
+main .all-type-of-albums .popular-artists-section .popular-artists-title {
+    display: grid;
+    grid-template: 
+        'h1 span' / 980px 1fr;
+    align-items: center;
+}
+
+main .all-type-of-albums div span {
+    height: 19.2px;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist,
+main .all-type-of-albums .recently-played-section .recently-played-playlist,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist {
+    display: grid;
+    grid-template: 
+        'album album album album album' / 213.45px 213.45px 213.45px 213.45px 213.45px;
+    align-items: center;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist .albums-recommended,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist .popular-albums,
+main .all-type-of-albums .recently-played-section .recently-played-playlist .recently-albums,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist .jump-back-in-albums,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist .favorite-artists,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist .popular-artists {
+    display: grid;
+    grid-template: 
+        'img' 189.2px
+        'name' 40px;
+    gap: 0.8rem;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist .albums-recommended p,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist .popular-albums p,
+main .all-type-of-albums .recently-played-section .recently-played-playlist .recently-albums p,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist .jump-back-in-albums p,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist .favorite-artists p,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist .popular-artists p {
+    height: 18px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist .albums-recommended img,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist .popular-albums img,
+main .all-type-of-albums .recently-played-section .recently-played-playlist .recently-albums img,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist .jump-back-in-albums img,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist .favorite-artists img,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist .popular-artists img {
+    object-fit: cover;
+    height: 189.45px;
+    width: 189.45px;
+    border-radius: 6px;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist .albums-recommended .name,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist .popular-albums .name,
+main .all-type-of-albums .recently-played-section .recently-played-playlist .recently-albums .name,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist .jump-back-in-albums .name,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist .favorite-artists .name,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist .popular-artists .name {
+    display: grid;
+    gap: 0.5rem;
+}
+
+main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist .albums-recommended .picture,
+main .all-type-of-albums .popular-albums-section .popular-albums-playlist .popular-albums .picture,
+main .all-type-of-albums .recently-played-section .recently-played-playlist .recently-albums .picture,
+main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist .jump-back-in-albums .picture,
+main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist .favorite-artists .picture,
+main .all-type-of-albums .popular-artists-section .popular-artists-playlist .popular-artists .picture {
+    border-radius: 50%;
+}
+
+main footer {
+    display: grid;
+    grid-template: 
+        'top-footer' 182.4px
+        'bottom-footer' 47px;
+    padding: 8px 10px;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+main footer .top-footer {
+    display: grid;
+    grid-template: 
+        'company communities useful-links social-medias' / 172.48px 172.48px minmax(172.48px, 490px) 152px;
+    font-size: 16px;
+    gap: 0.8rem;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-block-start: 0px;
+    width: 1020px
+}
+
+main footer .top-footer .company-list {
+    display: grid;
+    grid-template: 
+        'topic' 22px
+        'subject' 90px;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+main footer .top-footer .company-list .subject {
+    display: grid;
+    grid-template-rows: repeat(3, 28px);
+    font-weight: lighter;
+}
+
+main footer .top-footer .communities-list {
+    display: grid;
+    grid-template: 
+        'topic' 22px
+        'subject' 150px;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+main footer .top-footer .communities-list .subject {
+    display: grid;
+    grid-template-rows: repeat(5, 28px);
+    font-weight: lighter;
+}
+
+main footer .top-footer .useful-links {
+    display: grid;
+    grid-template: 
+        'topic' 22px
+        'subject' 60px;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+main footer .top-footer .useful-links .subject {
+    display: grid;
+    grid-template-rows: repeat(2, 28px);
+    font-weight: lighter;
+}
+
+main footer .top-footer div p {
+    color: #a7a7a7;
+}
+
+main footer .bottom-footer {
+    display: grid;
+    grid-template: 
+        'aps name' / 613px 1fr;
+    gap: 18rem;
+}
+
+main footer .bottom-footer .apps {
+    display: grid;
+    grid-template: 
+        'p p p p p p' / 40px 160px 95px 108px 75px 80px;
+    gap: 0.8rem;
+}
+
+main footer .top-footer .social-medias {
+    display: grid;
+    grid-template: 
+        'button button button';
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+main footer .top-footer .social-medias button {
+    border: none;
+    background-color: #292929;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+main footer .bottom-footer .apps p, 
+main footer .bottom-footer .spotify-registered-name {
+    font-size: 14px;
+    color: #a7a7a7;
+    font-weight: lighter;
 }
 
 footer {
