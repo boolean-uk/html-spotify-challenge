@@ -578,6 +578,9 @@ i:hover {
         display: none;
     }
 
+.spacer  {display: none;}
+
+
     .menu {
         display: flex;
         flex-wrap: wrap;
@@ -598,9 +601,6 @@ i:hover {
         grid-template-columns: repeat(2, 1fr)
     }
 
-    .spacer {
-        display: none;
-    }
 
     .center,
     .right {
@@ -634,11 +634,20 @@ i:hover {
         grid-template-columns: 1fr;
         place-items: center;
         margin-top: 10px;
-        margin-left: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
+        width: 15%;
+
     }
 
+    .controls,
+    .progres-bar {
+        margin-right: 5px;
+    }
+
+    .right,
+    .volume {
+        padding-left: 5px;
+        margin-left: 5px;
+    }
     .playlist {
         display: none;
     }
