@@ -23,7 +23,6 @@
     height: 100%;
     background-color: black;
     display: grid;
-    /* grid-template-rows: 40px 1fr 40px;  */
     grid-template:
         'logo' 70px
         'nav' 100px
@@ -163,7 +162,7 @@
     display: grid;
     background-color: #080b12;
     position: sticky;
-    grid-template-columns: 80% 1fr;
+    grid-template-columns: 85% 1fr;
 }
 
 .placeholder{
@@ -172,8 +171,8 @@ border: 0;
 
 .upgrade {
     border: 1px solid white;
-    margin: 10px;
-    padding-top: 13px;    
+    margin: 15px;
+    padding-top: 10px;    
     border-radius: 25px;
     color: white;
     text-align: center;
@@ -182,22 +181,7 @@ border: 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ================ Main ================ */
 
 
 
@@ -205,13 +189,98 @@ border: 0;
     grid-area: main;
     background-color: #141922;
     display: grid;
-    grid-auto-rows: 80px;
+    padding: 0 20px;
+    grid-template-rows: auto;
+    /* overflow-y: scroll; */
+}
+
+/* ================ Top-Menu ================ */
+
+.menu {
+    display: grid;
+    height: 40px;
+    grid-template-columns: repeat(10, 1fr);
+    place-items: center;
+    justify-content: center;
+    /* position: sticky; */
+}
+
+.menu-item{
+    color: #828388;
+    margin-top: 5px;
+    font-size: small;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid yellow;
+}
+
+/* ================ Recent ================ */
+
+.content {
+    display: grid;
     overflow-y: scroll;
 }
 
-.main div {
-    color: yellow;
+.recent, .for-you, .popular {
+    display: grid;
+    height: 100%;
+    margin-top: 10px;
+    grid-template: 60px 1fr 60px minmax(10px, auto) ;
 }
+
+.title {
+    color: white;
+    font-size: large;
+    margin-top: 30px;
+}
+
+.title p {
+    color: #7a7d81;
+    font-size: small;
+}
+
+.albums {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cover {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    align-content: start;
+    place-items: center;
+    text-align: center;
+    
+}
+
+.cover p {
+    padding-top: 5px;
+    color: white;
+    font-size: small;
+}
+
+.cover p:nth-of-type(2){
+    color: #7a7d81;
+}
+
+.round img {
+
+        border-radius: 100%;
+
+}
+
+
+
+
+
+
+
+
+
 
 .play {
     grid-area: foot;
