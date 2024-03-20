@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 80px;
+    grid-template-columns: 420px minmax(420px, 1fr);
+    grid-template-areas: 
+        'aside main'
+        'footer footer';
+    padding: 8px;
+    gap: 8px;
+}
+
+aside {
+    display: grid;
+    grid-template: 
+        'top-aside' 112px
+        'bottom-aside' minmax(112px, 790px);
+    gap: 8px;
+}
+
+.top-aside {
+    display: grid;
+    grid-template: 
+        'home' 40px
+        'search' 40px;
+    background-color: #121212;
+    padding: 8px 12px;
+    border-radius: 8px;
+    gap: 0.5rem;
+}
+
+.top-aside div {
+    display: grid;
+    grid-template: 
+        'img strong' / 24px minmax(24px, 1fr);
+    color: #B3B3B3;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.top-aside strong {
+    color: white;
+}
+
+.top-aside div img {
+    width: 24px;
+    height: 24px;
+}
+
+.bottom-aside {
+    display: grid;
+    grid-template: 
+        'header' 104px
+        'playlists' minmax(104px, 750px);
+    background-color: #121212;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+header .header-title {
+    display: grid;
+    grid-template: 
+        'library features' / minmax(64px, 160px) 64px;
+}
+
+header .header-title div {
+    display: grid;
+    grid-template: 
+        'img p' / 24px 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+header .header-title p {
+    color: #a7a7a7;
+}
+
+.header-title .library {
+    gap: 0.8rem;
+}
+
+header div img {
+    width: 24px;
+    height: 24px;
+}
+
+header .header-title-features .add img, header .header-title-features .expand img {
+    width: 16px;
+    height: 16px;
+}
+
+header .header-title-features div {
+    display: grid;
+    gap: 0.5rem;
+    padding-left: 24rem;
+}
+
+header .header-options {
+    display: grid;
+    grid-template: 
+        'playlist artists albums' / 75px 65px 72px;
+    align-items: center;
+    padding: 8px 16px 0px 10px;
+    gap: 0.5rem;
+}
+
+header .header-options button {
+    border: none;
+    border-radius: 25px;
+    padding: 9px 12px;
+    color: white;
+    background-color: #232323;
+    font-weight: 600;
+}
+
+aside .playlists {
+    display: grid;
+    grid-template: 
+        'features' 34px
+        'albums' minmax(34px, 800px);
+    padding-left: 8px;
+}
+
+aside .playlists-features {
+    display: grid;
+    grid-template: 
+        'search recents' / 34px minmax(34px, 100px);
+    color: #a7a7a7;
+    padding: 2px 4px 0px 8px;
+    font-size: 14px;
+}
+
+aside .recents {
+    display: grid;
+    grid-template: 
+        'p img' / 50px 16px;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-left: 19rem;
+}
+
+aside .playlists-features img {
+    width: 17px;
+    height: 17px;
+}
+
+aside .playlists-albums {
+    display: grid;
+    grid-template: 
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px
+    'album' 64px;
+}
+
+.playlists-albums .album {
+    display: grid;
+    grid-template: 
+        'img name' / 48px 325px;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.playlists-albums .album .name, .playlists-albums .artist .name {
+    display: grid;
+    gap: 0.3rem;
+}
+
+.playlists-albums .album .name p {
+    font-size: 0.8rem;
+    color: #a7a7a7;
+}
+
+.playlists-albums .album .cover {
+    object-fit: cover;
+    height: 48px;
+    width: 48px;
+    border-radius: 2px;
+}
+
+.playlists-albums .artist {
+    display: grid;
+    display: grid;
+    grid-template: 
+        'img name' / 48px 325px;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.playlists-albums .artist .name p {
+    font-size: 0.8rem;
+    color: #a7a7a7;
+}
+
+.playlists-albums .artist-pic {
+    object-fit: cover;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.playlists-albums .album .name img, .playlists-albums .artist .name img {
+    width: 12px;
+    height: 12px;
+}
+
+.playlists-albums .album .name .bottom-name, .playlists-albums .artist .name .bottom-name {
+    display: grid;
+    grid-template: 
+        'img p' / 12px 10rem;
+    gap: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template: 
+        'header' 110px
+        'playlists' 110px
+        'all-albums' minmax(275px, 1700px)
+        'footer' 366px;
+    background: linear-gradient(#222222, #121212);
+    padding: 16px 18px;
+    border-radius: 8px;
+    gap: 0.5rem;
+}
+
+main .main-content {
+    display: grid;
+    grid-template: 
+        'top-header' 32px
+        'bottom-header' 56px;
+}
+
+main .top-header-main-content {
+    display: grid;
+    grid-template: 
+        'controls right-controls' / 64px minmax(64px, 1fr);
+    gap: 1rem;
+}
+
+main .top-header-main-content .controls {
+    display: grid;
+    grid-template: 
+        'go-back go-foward' / 32px;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main .top-header-main-content .right-controls {
+    display: grid;
+    grid-template: 
+        'premium install-app notifications profile' / 142px 112px 32px 32px;
+    align-items: center;
+    gap: 0.8rem;
+    padding-left: 37.8rem;
+}
+
+main .top-header-main-content .controls button {
+    border: none;
+    background-color: #0A0A0A;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+main .top-header-main-content .controls button img {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+}
+
+main .top-header-main-content .notifications img, top-header-main-content .profile img {
+    width: 16px;
+    height: 16px;
+}
+
+main .main-content .right-controls .profile img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+main .top-header-main-content .profile button {
+    border: none;
+    background-color: #0A0A0A;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+main .top-header-main-content .notifications button {
+    border: none;
+    background-color: #0A0A0A;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+main .top-header-main-content .right-controls .premium {
+    border: none;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    width: 142px;
+    height: 32px;
+    font-weight: bold;
+}
+
+main .top-header-main-content .right-controls button img {
+    width: 16px;
+    height: 16px;
+}
+
+main .top-header-main-content .right-controls .install {
+    display: grid;
+    grid-template: 
+        'img p' / 16px 1fr;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #0F0F0F;
+    width: 120px;
+    height: 32px;
+    font-weight: bold;
+    align-content: center;
+}
+
+main .top-header-main-content .right-controls .install img {
+    margin-left: 12px;
+}
+
+footer {
+    grid-area: footer;
+}
