@@ -15,7 +15,7 @@ body {
 .container {
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 1fr 72px;
     grid-template-columns: 420px minmax(420px, 1fr);
     grid-template-areas: 
         'aside main'
@@ -633,6 +633,123 @@ main footer .bottom-footer .spotify-registered-name {
     font-weight: lighter;
 }
 
-footer {
+.fixed {
     grid-area: footer;
+    display: grid;
+    grid-template: 
+        'song-playing play-song buttons-control' / 443px 602px 1fr;
+    padding: 0px 0px 0px 8px;
+    background-color: black;
+}
+
+.fixed .song-playing {
+    display: grid;
+    grid-template: 
+        'img name song-added' / 56px 90px 32px;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.fixed .song-playing .name-of-the-song {
+    display: grid;
+    grid-template: 
+        'strong' 19px
+        'p' 16.8px;
+    gap: 0.2rem;
+}
+
+.fixed .song-playing .name-of-the-song strong {
+    font-size: 14px;
+    align-self: center;
+}
+
+.fixed .song-playing .name-of-the-song p {
+    font-size: 12px;
+    color: #a7a7a7;
+}
+
+.fixed .song-playing img {
+    object-fit: cover;
+    border-radius: 2px;
+    height: 56px;
+}
+
+.fixed .song-added img {
+    width: 16px;
+    height: 16px;
+}
+
+.fixed .play-song-features {
+    display: grid;
+    grid-template: 
+        'top' 32px
+        'bottom' 16.8px;
+    gap: 0.5rem;
+}
+
+.fixed .play-song-features .play-song-features-top {
+    display: grid;
+    grid-template: 
+        'alternate go-back play go-foward repeat' / 32px 32px 32px 32px 32px;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.fixed .play-song-features .play-song-features-top .play {
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.fixed .play-song-features .play-song-features-top .play img {
+    margin-top: 5px;
+}
+
+.fixed .play-song-features .play-song-features-top img {
+    width: 16px;
+    height: 16px;
+    justify-self: center;
+    align-self: center;
+}
+
+.fixed .play-song-features .play-song-features-bottom {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #a7a7a7;
+    font-weight: lighter;
+}
+
+input[type="range"] {
+    accent-color: #a7a7a7;
+}
+
+
+.fixed .buttons-control {
+    display: grid;
+    grid-template: 
+        'now lyrics queue device volume mix full-screen' / 32px 32px 32px 32px 160px 32px 32px;
+    justify-content: right;
+    align-items: center;
+}
+
+.fixed .buttons-control div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed .buttons-control .volume-control {
+    display: grid;
+    grid-template: 
+        'img input';
+    height: 32px;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fixed .buttons-control img {
+    width: 16px;
+    height: 16px;
 }
