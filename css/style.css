@@ -49,6 +49,24 @@ main {
 
 .main-nav {
     grid-area: nav;
+    
+}
+
+.main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 5rem);
+    list-style: none;
+    place-content: center;
+    padding: 2%;
+}
+
+
+.main-nav-button {
+    padding: 5%;
+    border: none;
+    outline: none;
+    color: rgb(162, 162, 162);
+    background-color: rgb(63, 63, 63);
 }
 
 .main-box {
@@ -125,6 +143,7 @@ left {
     grid-area: side-footer;
     gap: 10px;
 }
+
 .install-app {
     display: grid;
     grid-template-columns: 2rem 1fr;
@@ -199,7 +218,7 @@ footer {
     text-decoration-color: white;
 }
 
-.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button {
+.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button, .main-nav-button {
     cursor: pointer;
 }
 
@@ -237,8 +256,16 @@ footer {
     filter: invert(90%) sepia(99%) saturate(32%) hue-rotate(195deg) brightness(109%) contrast(99%);
 }
 
+.main-nav-button-heading:hover {
+    color: white;
+}
+
 #shuffle:focus, #repeat:focus, #volume:focus, #device:focus, #queue:focus, #now_playing:focus {
     filter: invert(64%) sepia(72%) saturate(531%) hue-rotate(86deg) brightness(94%) contrast(89%);
+}
+
+.main-nav-button:focus {
+    text-decoration: underline solid #1ed760;
 }
 
 .track-controls-icon {
