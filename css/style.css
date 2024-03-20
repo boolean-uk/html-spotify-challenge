@@ -544,7 +544,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 558px) and (max-width: 694px) {
+@media screen and (min-width: 513px) and (max-width: 694px) {
     body {
         display: grid;
         grid-template: 
@@ -635,7 +635,7 @@ footer {
         grid-template-areas: 'album name icons';
         padding: 4px;
         gap: 0.3rem;
-        align-items: center;
+        place-content: center;
         font-size: small;
     }
 
@@ -666,20 +666,16 @@ footer {
     }
 
     .controls-container div {
-        display: grid;
-        color: white;
-        align-items: center;
         padding: 0px;
     }
 
     .settings-container {
         display: grid;
-        grid-template-columns: 150px;
+        grid-template-columns: 100px;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
         'range'
         'setting-icons' ;
-        place-content: center;
         gap: 0.5rem;
         padding: 30px 0px;
     }
@@ -691,15 +687,14 @@ footer {
         gap: 0.5rem;
         place-content: center;
     }
-
     
     #volume-slider {
         grid-area: range;
-        width: 150px;
+        width: 100px;
     }
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 513px) {
     body {
         display: grid;
         grid-template: 
@@ -727,8 +722,6 @@ footer {
     .logo-container {
         grid-area: logo;
         padding: 4px;
-        display: grid;
-        justify-items: center;
     }
 
     .logo-container img {
@@ -742,7 +735,6 @@ footer {
     .browse-container div {
         display: grid;
         grid-template-columns: 50px;
-        align-content: center;
         padding: 0px;
     }
 
@@ -753,7 +745,6 @@ footer {
     .browse-container a {
         display: grid;
         grid-template-columns: 30px;
-        place-content: center;
     }
 
     .install-container {
@@ -780,7 +771,7 @@ footer {
     
     footer {
         display: grid;
-        grid-template-columns: 100px minmax(100px, 1fr) 100px;
+        grid-template-columns: 100px minmax(100px, 1fr) 80px;
         gap: 0.5rem;
     }
 
@@ -822,7 +813,7 @@ footer {
 
     .song-progress-container {
         display: grid;
-        grid-template-columns: minmax(25px, 1fr) minmax(50px, 1fr) minmax(25px, 1fr);
+        grid-template-columns: minmax(25px, 50px) minmax(50px, 1fr) minmax(25px, 50px);
     }
 
     .control-button img {
@@ -834,22 +825,18 @@ footer {
     }
     
     .controls-container div {
-    padding: 0px;
+        padding: 0px;
     }
 
     .play-buttons-container button {
-        background-color: transparent;
-        border: none;
         width: 20px;
         padding: 0px;
         display: grid;
-        place-content: center;
     }
     
     .play-buttons-container {
         display: grid;
         grid-template-columns: repeat(5, 20px);
-        place-content: center;
         gap: 0.3rem;
     }
     
@@ -864,12 +851,11 @@ footer {
 
     .settings-container {
         display: grid;
-        grid-template-columns: 100px;
+        grid-template-columns: 80px;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
         'range'
         'setting-icons';
-        place-content: center;
         gap: 0.5rem;
         padding: 30px 0px;
     }
@@ -879,14 +865,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 20px);
         gap: 0.5rem;
-        place-content: center;
     }
     
     #volume-slider {
         grid-area: range;
-        width: 100px;
+        width: 80px;
     }
 }
+
 
 
     
