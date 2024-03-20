@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon-spotify.png" type="image/x-icon">
     <title>Spotify</title>
 </head>
 
 <body>
     <main>
         <div class="left-bar">
-            <header class="top-left">
-                <button>
+            <header class="top-left" id="top-left">
+
+                <button class="active btn">
                     <span><svg viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z">
@@ -22,7 +28,7 @@
                     <span>Home</span>
                 </button>
 
-                <button id="search">
+                <button class="btn">
                     <span><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path fill="currentColor"
                                 d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
@@ -30,36 +36,53 @@
                         </svg></span>
                     <span>Search</span>
                 </button>
+
             </header>
+
             <aside class="library">
                 <header>
+
                     <button id="your-library">
-                        <svg>
-                            <path fill="#a7a7a7"
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
                                 d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
                             </path>
                         </svg>
                         Your Library
                     </button>
+
                     <div class="right-buttons">
-                        <button></button>
-                        <button></button>
+                        <button><svg viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                    d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z">
+                                </path>
+                            </svg></button>
+                        <button><svg viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                    d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z">
+                                </path>
+                            </svg></button>
                     </div>
+
                 </header>
-                <nav class="catagories">
-                    <button>Playlists</button>
-                    <button>Artists</button>
-                    <button>Albums</button>
+
+                <nav class="catagories" id="library-catagories">
+                    <button class="btn">Playlists</button>
+                    <button class="btn">Artists</button>
+                    <button class="btn">Albums</button>
                 </nav>
+
                 <section class="library">
                     <div class="options">
+
                         <div class="search-container">
-                            <label for="library-search"><svg width="24" height="24" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor"
-                                        d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
-                                    </path>
-                                </svg></label>
+                            <label for="library-search"><button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                                        </path>
+                                    </svg>
+                                </button></label>
                             <input type="search" name="library" id="library-search"
                                 placeholder="Search in your library" />
                         </div>
@@ -75,20 +98,31 @@
                             </span>
                         </button>
                     </div>
+
                     <div class="library-explore">
                         <button class="item">
-                            <img src="assets/img/cure.jpeg" alt="" />
-                            <span>Title</span>
-                            <span>Artist</span>
+                            <div class="container"><img src="assets/img/j2g_bandf.jpg" alt="" />
+                                <div class="play-button-wrapper">
+                                    <img src="assets/img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">Burgers and Fries</span>
+                            <span class="artist">Just 2 Guys</span>
+
                         </button>
                     </div>
+
                 </section>
             </aside>
         </div>
+
         <div class="main-view">
+
             <header class="top-bar">
+
                 <div class="user-bar">
                     <nav class="back-forward">
+
                         <button>
                             <svg viewBox="0 0 16 16">
                                 <path fill="currentColor"
@@ -96,6 +130,7 @@
                                 </path>
                             </svg>
                         </button>
+
                         <button>
                             <svg viewBox="0 0 16 16">
                                 <path fill="currentColor"
@@ -103,8 +138,11 @@
                                 </path>
                             </svg>
                         </button>
+
                     </nav>
+
                     <aside class="extras">
+
                         <button class="install">
                             <span><svg viewBox="0 0 16 16">
                                     <path fill="currentColor"
@@ -115,6 +153,7 @@
                                     </path>
                                 </svg><span> Install App</span></span>
                         </button>
+
                         <button class="notification">
                             <svg>
                                 <path fill="currentColor"
@@ -122,53 +161,77 @@
                                 </path>
                             </svg>
                         </button>
+
                         <button class="user-profile">
-                            <img src="assets/img/einaudi.jpeg" alt="" />
+                            <img src="assets/img/user.jpg" alt="" />
                         </button>
+
                     </aside>
                 </div>
-                <nav class="catagories">
-                    <button>All</button>
-                    <button>Music</button>
-                    <button>Podcasts</button>
-                    <button>Audiobooks</button>
+                <nav class="catagories" id="main-catagories">
+                    <button class="btn active">All</button>
+                    <button class="btn">Music</button>
+                    <button class="btn">Podcasts</button>
+                    <button class="btn">Audiobooks</button>
                 </nav>
             </header>
+
             <section class="main-container">
                 <section class="recent">
+
                     <button class="recent-track">
-                        <img src="assets/img/stranger.jpeg" alt="" />
-                        <span>Stanger Things</span>
+                        <img class="album-art" src="assets/img/stranger.jpeg" alt="" />
+                        <span class="album-title">Stanger Things</span>
+                        <div class="play-button-wrapper">
+                            <img src="assets/img/play.svg" alt="">
+                        </div>
                     </button>
+
                 </section>
                 <section class="playlists listening-catagory">
                     <h2>Your Playlists</h2>
+
                     <a href="#">Show All</a>
+
                     <div class="item-container">
-                        <button class="item">
-                            <img src="assets/img/cure.jpeg" alt="" />
-                            <span>Title</span>
-                            <span>Artist</span>
+                        <button class="item artist">
+                            <div class="container"><img src="assets/img/j2g_artist.jpg" alt="" />
+                                <div class="play-button-wrapper">
+                                    <img src="assets/img/play.svg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">Just 2 Guys</span>
+                            <span class="artist">Artist</span>
+
                         </button>
                     </div>
+
                 </section>
+
                 <section class="made-for listening-catagory">
                     <h2>Made for You</h2>
+
                     <a href="#">Show All</a>
+
+                    <div class="item-container"></div>
                 </section>
+
                 <section class="recently-played listening-catagory">
-                    <h2>Rcently played</h2>
+                    <h2>Recently played</h2>
+
                     <a href="#">Show All</a>
+
+                    <div class="item-container"></div>
                 </section>
             </section>
         </div>
         <footer class="now-playing-bar">
             <div class="now-playing-bar-container">
                 <section class="track-view">
-                    <img src="assets/img/aquietplace.jpeg" alt="" />
+                    <img src="assets/img/j2g_bandf.jpg" alt="" />
                     <div class="track-info">
-                        <span>Title</span>
-                        <span>Artist</span>
+                        <span class="title">Burrito Kombat</span>
+                        <span class="artist">Just 2 Guys</span>
                     </div>
                     <span>
                         <svg viewBox="0 0 16 16">
@@ -197,12 +260,8 @@
                                 </path>
                             </svg>
                         </button>
-                        <button class="play">
-                            <svg viewBox="0 0 16 16">
-                                <path fill="currentColor"
-                                    d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z">
-                                </path>
-                            </svg>
+                        <button class="play" onClick="togglePlay()" id="play-pause">
+                            <img src="assets/img/play.svg" alt="">
                         </button>
                         <button>
                             <svg viewBox="0 0 16 16">
@@ -221,7 +280,7 @@
                     </div>
                     <div class="scrub-bar">
                         <span id="current-time-elapsed">0:00</span><input type="range" name="" id="" min="0" max="5999"
-                            value="0" onchange="sliderValueChange(this)" /><span id="track-length">99:59</span>
+                            value="0" /><span id="track-length">99:59</span>
                     </div>
                 </div>
 
@@ -286,31 +345,36 @@
                 </div>
             </div>
         </footer>
-    </main>
 
+        <audio src="assets/audio/burrito_kombat.wav" id="track"></audio>
+    </main>
     <script>
-        function clonePosts() {
-            for (let i = 0; i < 7; i++) {
-                const clone = document.querySelector(".recent-track").cloneNode(true)
-                document.querySelector(".recent").appendChild(clone)
+        function addingBtnListeners(id) {
+            const btnContainer = document.getElementById(id)
+            const btns = btnContainer.getElementsByClassName("btn")
+
+
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    const current = btnContainer.getElementsByClassName("active")
+                    current[0].className = current[0].className.replace("active", "")
+                    this.className += " active"
+                })
             }
             return true
         }
+        addingBtnListeners("top-left")
 
-        function cloneItems() {
-            for (let i = 0; i < 3; i++) {
-                const clone = document.querySelector(".item").cloneNode(true)
-                document.querySelector(".item-container").appendChild(clone)
-            }
+        const myAudio = document.getElementById("track")
 
-            const clone = document.querySelector(".item-container").cloneNode(true)
-            const clone2 = document.querySelector(".item-container").cloneNode(true)
-            document.querySelector(".made-for").appendChild(clone)
-            document.querySelector(".recently-played").appendChild(clone2)
-        }
-        cloneItems()
-        clonePosts()
+    function togglePlay() {
+        const playPause = document.getElementById("play-pause")
+        myAudio.paused ? playPause.firstElementChild.src = "assets/img/pause.svg" : playPause.firstElementChild.src = "assets/img/play.svg"
+        return myAudio.paused ? myAudio.play() : myAudio.pause()
+    }
     </script>
+
+    <script src="src/tracks.js"></script>
 </body>
 
 </html>
