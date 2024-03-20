@@ -244,6 +244,7 @@ border: 0;
     display: grid;
     height: 100%;
     grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
 }
 
 .cover {
