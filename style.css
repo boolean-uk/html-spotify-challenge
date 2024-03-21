@@ -10,6 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .container {
@@ -28,7 +29,7 @@ aside {
     display: grid;
     grid-template: 
         'top-aside' 112px
-        'bottom-aside' minmax(112px, 790px);
+        'bottom-aside' minmax(112px, 525px);
     gap: 8px;
 }
 
@@ -70,8 +71,9 @@ aside {
         'header' 104px
         'playlists' minmax(104px, 750px);
     background-color: #121212;
-    padding: 4px 8px;
     border-radius: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
 }
 
 header .header-title {
@@ -137,6 +139,24 @@ aside .playlists {
         'features' 34px
         'albums' minmax(34px, 800px);
     padding-left: 8px;
+    overflow: auto;
+    height: 415px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }
 
 aside .playlists-features {
@@ -240,12 +260,14 @@ main {
     grid-template: 
         'header' 110px
         'playlists' 110px
-        'all-albums' minmax(275px, 2050px)
-        'footer' 400px;
+        'all-albums' minmax(275px, 2050px);
     background: linear-gradient(#222222, #121212);
     padding: 16px 18px;
     border-radius: 8px;
     gap: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 645px;
 }
 
 main .main-content {
@@ -523,116 +545,6 @@ main .all-type-of-albums .popular-artists-section .popular-artists-playlist .pop
     border-radius: 50%;
 }
 
-main footer {
-    display: grid;
-    grid-template: 
-        'top-footer' 182.4px
-        'bottom-footer' 47px;
-    padding: 8px 10px;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-main footer .top-footer {
-    display: grid;
-    grid-template: 
-        'company communities useful-links social-medias' / 172.48px 172.48px minmax(172.48px, 490px) 152px;
-    font-size: 16px;
-    gap: 0.8rem;
-}
-
-hr {
-    border-color: rgba(255, 255, 255, 0.1);
-    margin-block-start: 0px;
-    width: 1020px
-}
-
-main footer .top-footer .company-list {
-    display: grid;
-    grid-template: 
-        'topic' 22px
-        'subject' 90px;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-main footer .top-footer .company-list .subject {
-    display: grid;
-    grid-template-rows: repeat(3, 28px);
-    font-weight: lighter;
-}
-
-main footer .top-footer .communities-list {
-    display: grid;
-    grid-template: 
-        'topic' 22px
-        'subject' 150px;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-main footer .top-footer .communities-list .subject {
-    display: grid;
-    grid-template-rows: repeat(5, 28px);
-    font-weight: lighter;
-}
-
-main footer .top-footer .useful-links {
-    display: grid;
-    grid-template: 
-        'topic' 22px
-        'subject' 60px;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-main footer .top-footer .useful-links .subject {
-    display: grid;
-    grid-template-rows: repeat(2, 28px);
-    font-weight: lighter;
-}
-
-main footer .top-footer div p {
-    color: #a7a7a7;
-}
-
-main footer .bottom-footer {
-    display: grid;
-    grid-template: 
-        'aps name' / 613px 1fr;
-    gap: 18rem;
-}
-
-main footer .bottom-footer .apps {
-    display: grid;
-    grid-template: 
-        'p p p p p p' / 40px 160px 95px 108px 75px 80px;
-    gap: 0.8rem;
-}
-
-main footer .top-footer .social-medias {
-    display: grid;
-    grid-template: 
-        'button button button';
-    justify-content: center;
-    gap: 0.8rem;
-}
-
-main footer .top-footer .social-medias button {
-    border: none;
-    background-color: #292929;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-}
-
-main footer .bottom-footer .apps p, 
-main footer .bottom-footer .spotify-registered-name {
-    font-size: 14px;
-    color: #a7a7a7;
-    font-weight: lighter;
-}
-
 .fixed {
     grid-area: footer;
     display: grid;
@@ -640,6 +552,12 @@ main footer .bottom-footer .spotify-registered-name {
         'song-playing play-song buttons-control' / 443px 602px 1fr;
     padding: 0px 0px 0px 8px;
     background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    align-items: center;
 }
 
 .fixed .song-playing {
@@ -719,12 +637,13 @@ main footer .bottom-footer .spotify-registered-name {
     font-size: 12px;
     color: #a7a7a7;
     font-weight: lighter;
+    align-items: center;
 }
 
-input[type="range"] {
-    accent-color: #a7a7a7;
+input[type=range] {
+    accent-color: white;
+    height: 5px;
 }
-
 
 .fixed .buttons-control {
     display: grid;
