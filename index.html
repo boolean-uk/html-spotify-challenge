@@ -76,7 +76,7 @@
                     <div class="options">
 
                         <div class="search-container">
-                            <label for="library-search"><button>
+                            <label for="library-search" onClick="showSearch()"><button class="btn" id="search-display" onClick="showSearch()">
                                     <svg width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
@@ -349,7 +349,7 @@
         <audio src="assets/audio/burrito_kombat.wav" id="track"></audio>
     </main>
     <script>
-        function addingBtnListeners(id) {
+        function addingActiveBtnListeners(id) {
             const btnContainer = document.getElementById(id)
             const btns = btnContainer.getElementsByClassName("btn")
 
@@ -363,15 +363,27 @@
             }
             return true
         }
-        addingBtnListeners("top-left")
+        addingActiveBtnListeners("top-left")
+
+        
+
+        function showSearch() {
+            const searchBar = document.getElementById("library-search")
+            if (searchBar.style.display === "inline") {
+                searchBar.style.display = "none"
+            }
+            searchBar.style.display = "inline"
+            return true
+        }
+
 
         const myAudio = document.getElementById("track")
 
-    function togglePlay() {
-        const playPause = document.getElementById("play-pause")
-        myAudio.paused ? playPause.firstElementChild.src = "assets/img/pause.svg" : playPause.firstElementChild.src = "assets/img/play.svg"
-        return myAudio.paused ? myAudio.play() : myAudio.pause()
-    }
+        function togglePlay() {
+            const playPause = document.getElementById("play-pause")
+            myAudio.paused ? playPause.firstElementChild.src = "assets/img/pause.svg" : playPause.firstElementChild.src = "assets/img/play.svg"
+            return myAudio.paused ? myAudio.play() : myAudio.pause()
+        }
     </script>
 
     <script src="src/tracks.js"></script>
