@@ -182,7 +182,6 @@ footer > section {
 }
 
 .volume-section {
-    /* background-color: rgb(69, 69, 151); */
     display: grid;
     grid-template-columns: repeat(3, 30px) 1fr;
     align-content: center;
@@ -209,13 +208,11 @@ footer > section {
 }
 
 .footer-mid-section {
-    /* background-color: aquamarine; */
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
 
 .time-section {
-    /* background-color: plum; */
     display: grid;
     grid-template-columns: 50px minmax(100px, 350px) 50px;
     place-content: center;
@@ -256,4 +253,30 @@ footer > section {
 
 #play-icon {
     height: 40px;
+}
+
+/* main section */
+main > nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 100px));
+    /* background-color: rgb(16, 16, 37); */
+    place-content: center;
+    /* place-items: center; */
+    padding-top: 10px;
+}
+
+main nav > button {
+    background-color: rgb(16, 16, 37);
+    border: none;
+    color: grey;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main > p {
+    color: grey;
+}
+
+main > h2 {
+    color: white;
 }
