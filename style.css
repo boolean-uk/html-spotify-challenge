@@ -976,4 +976,9 @@ input[type=range] {
     main {
         overflow-x: auto;
     }
+
+    .fixed {
+        grid-template: 
+            'play-song buttons-control' / 330px 160px;
+    }
 }
