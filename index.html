@@ -168,7 +168,7 @@
 
             <div class="all-playlists">
                 <div class="playlist">
-                    <audio src="./assets/sounds/ethereal-vistas-191254.mp3" id="ethereal-audio"></audio>
+                    <audio src="./assets/sounds/ethereal-vistas-191254.mp3" id="ethereal-audio" ontimeupdate="updateTimes(this)"></audio>
                     <img src="./assets/img/metal_lifting.jpg" alt="Heavy Metal playlist cover">
                     <a href="#" class="hide" id="play-ethereal" onclick="playEthereal()">
                         <img src="./assets/img/play.svg" alt="Play button icon">
@@ -329,11 +329,11 @@
 
             <div class="song-progress-container">
                 <div class="time-played">
-                    <p>0:25</p>
+                    <p id="current-time">0:25</p>
                 </div>
                 <input type="range" name="song-slider" id="song-slider" min="0">
                 <div class="time-to-go">
-                    <p>4:35</p>
+                    <p id="duration">4:35</p>
                 </div>
             </div>
         </section>

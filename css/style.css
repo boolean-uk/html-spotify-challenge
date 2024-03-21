@@ -782,7 +782,7 @@ footer {
         padding: 4px;
         gap: 0.3rem;
         align-items: center;
-        font-size: x-small;
+        font-size: 10px;
     }
 
     .now-playing-icons {

@@ -14,6 +14,23 @@ function playlistName() {
     return name
 }
 
+// Convert seconds to time format
+function formatSecondsAsTime(secs) {
+    let hr  = Math.floor(secs / 3600);
+    let min = Math.floor((secs - (hr * 3600))/60);
+    let sec = Math.floor(secs - (hr * 3600) -  (min * 60));
+  
+    if (min < 10){ 
+      min = "0" + min; 
+    }
+    if (sec < 10){ 
+      sec  = "0" + sec;
+    }
+  
+    return min + ':' + sec;
+  }
+
+
 // Play audios
 let isPlaying = false
 
@@ -29,6 +46,18 @@ function playEthereal() {
     }
     
     isPlaying = !isPlaying
+}
+
+function updateTimes() {
+    const audio = document.getElementById('ethereal-audio')
+    const time = document.getElementById('current-time')
+    const songDuration = document.getElementById('duration')
+    const currentTime = Math.floor(audio.currentTime).toString()
+    const currentDuration = Math.floor(audio.duration).toString()
+
+    time.innerHTML = formatSecondsAsTime(currentTime)
+    songDuration.innerHTML = formatSecondsAsTime(currentDuration)
+
 }
 
 // Play Fun life audio
@@ -104,7 +133,7 @@ function playSunshine() {
 // Random audio
 myAudios = ['ethereal-audio', 'fun-audio', 'happy-audio', 'dance-audio', 'trap-audio', 'sunshine-audio']
 function randomAudio() {
-    let index = Math.floor(Math.random() * 1000) % myAudios.length
+    let index = Math.floor(Math.random() * 100) % myAudios.length
     let id = myAudios[index]
     const audioElement = document.getElementById(id)
     audioElement.volume = 0.5
