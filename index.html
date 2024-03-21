@@ -1,12 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img id="small-logo" src="/assets/img/logo-small.svg" alt="" />
+        <img id="big-logo" src="/assets/img/logo.svg" alt="Spotify logo" />
+        <button>Upgrade</button>
+      </header>
+
+      <aside>
+        <nav>
+          <div class="home">
+            <img src="/assets/img/home.svg" alt="" />
+            <p>Home</p>
+          </div>
+          <div class="search">
+            <img src="/assets/img/search.svg" alt="" />
+            <p>Search</p>
+          </div>
+          <div class="library">
+            <img src="/assets/img/libreria.svg" alt="" />
+            <p>Library</p>
+          </div>
+        </nav>
+
+        <section class="playlist">
+          <h3>PLAYLIST</h3>
+          <div class="playlist-config">
+            <div class="create-playlist">
+              <img src="/assets/img/plus-square.svg" alt="" />
+              <span>Create Playlist</span>
+            </div>
+            <ul id="playlist-list">
+              <li>Skatepunk</li>
+              <li>Pop punk</li>
+              <li>Hardcore punk</li>
+              <li>Street punk</li>
+              <li>Ska punk</li>
+              <li>Post punk</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="install-user">
+          <div class="install">
+            <img src="/assets/img/download.svg" alt="" />
+            <p>Install App</p>
+          </div>
+          <hr />
+          <div class="user">
+            <img src="/assets/img/profile.svg" alt="" />
+            <h3>Will Baxter</h3>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <nav>
+          <h3>HORROR PUNK</h3>
+          <h3>FOLK PUNK</h3>
+          <h3>ANARCHO-PUNK</h3>
+          <h3>CRUST PUNK</h3>
+          <h3>ACOUSTIC PUNK</h3>
+          <h3>GARAGE PUNK</h3>
+        </nav>
+
+        <h2 id="recently-played-heading">Recently played</h2>
+        <div class="recently-played">
+          <div class="album">
+            <img
+              src="/assets/img/death-by-television.jpg"
+              alt="Death by Television album cover"
+            />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Death by Television</h3>
+            <p>The Lillingtons</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/sideburner.jpg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Sideburner</h3>
+            <p>Adhesive</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/lifeonaplate.jpeg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Life on a Plate</h3>
+            <p>Millencolin</p>
+          </div>
+          <div class="album">
+            <img
+              src="/assets/img/So_Long_and_Thanks_for_All_the_Shoes_cover.jpeg"
+              alt=""
+            />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>So Long and Thanks for All The Shoes</h3>
+            <p>NOFX</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/supporting-caste.jpeg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Supporting Caste</h3>
+            <p>Propagandhi</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/BadReligionNoControl.jpg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>No Control</h3>
+            <p>Bad Religion</p>
+          </div>
+        </div>
+
+        <h2>Created for Will Baxter</h2>
+        <p class="subtitle">Get your lug holes round these ditties</p>
+        <div class="created-for">
+          <div class="playlist">
+            <img src="/assets/img/discoverweekly.jpeg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Discover Weekly</h3>
+          </div>
+          <div class="playlist">
+            <img src="/assets/img/punkneverdies.jpeg" alt="" />
+            <div class="overlay">
+              <img src="/assets/img/play-overlay.svg" alt="" />
+            </div>
+            <h3>Your Neighbours Said It's Fine</h3>
+          </div>
+        </div>
+
+        <h2>Popular artists</h2>
+        <p class="subtitle">More noise....</p>
+        <div class="popular-artists">
+          <div class="popular-artist">
+            <img src="/assets/img/Ksteaks.jpeg" alt="" />
+            <h3>Kimberly Steaks</h3>
+          </div>
+          <div class="popular-artist">
+            <img src="/assets/img/ragingnathans.jpeg" alt="" />
+            <h3>The Raging Nathans</h3>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="now-playing">
+          <img src="/assets/img/sinister.jpeg" alt="" />
+          <div class="song-info">
+            <h3>Artist</h3>
+            <p>Song Name</p>
+          </div>
+          <img
+            id="heart-icon"
+            class="footer-icon"
+            src="/assets/img/heart.svg"
+            alt=""
+          />
+          <img
+            id="folder-icon"
+            class="footer-icon"
+            src="/assets/img/folder.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="player-controls">
+          <div class="player-buttons">
+            <img class="footer-icon" src="/assets/img/shuffle.svg" alt="" />
+            <img class="footer-icon" src="/assets/img/skip-back.svg" alt="" />
+            <img
+              id="play-button"
+              class="footer-icon"
+              src="/assets/img/play.svg"
+              alt=""
+            />
+            <img
+              class="footer-icon"
+              src="/assets/img/skip-forward.svg"
+              alt=""
+            />
+            <img class="footer-icon" src="/assets/img/repeat.svg" alt="" />
+          </div>
+          <div class="scrobbler">
+            <p>0:25</p>
+            <input type="range" />
+            <p>3:30</p>
+          </div>
+        </div>
+
+        <div class="broadcast-controls">
+          <img class="footer-icon" src="/assets/img/burger-menu.svg" alt="" />
+          <img class="footer-icon" src="/assets/img/monitor.svg" alt="" />
+          <img class="footer-icon" src="/assets/img/volume.svg" alt="" />
+          <input type="range" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
