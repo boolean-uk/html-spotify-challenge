@@ -213,9 +213,14 @@ main {
 }
 
 
-.playlist-icon, .nav-icon, .spotify-logo-small {
+.playlist-icon, .nav-icon {
     width: 3rem;
     filter: invert(74%) sepia(44%) saturate(0%) hue-rotate(213deg) brightness(87%) contrast(85%);
+}
+
+.spotify-logo-small {
+    width: 3rem;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(5deg) brightness(103%) contrast(101%);
 }
 
 
@@ -313,9 +318,26 @@ main {
 
 .mobile-sidebar-nav {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template: 
+    'logo'60px
+    'nav' 33rem
+    'footer' 60px;
     background-color: black;
+    padding: 8%;
 }
+
+.movile-nav-logo {
+    grid-area: logo;
+}
+
+.mobile-sidebar-nav-list {
+    grid-area: nav;
+}
+
+.user-details-mobile {
+    grid-area: footer;
+}
+
 
 footer {
     grid-area: footer;
@@ -445,7 +467,7 @@ footer {
     accent-color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 643px) {
     .container {
         grid-template:
         'left header' 60px
@@ -473,7 +495,7 @@ footer {
 }
 
 
-@media screen and (min-width: 900px) and (max-width:500px) {
+@media screen and (min-width: 643px) and (max-width:900px) {
     .container {
         grid-template-columns: 1fr 4fr;
     }   
