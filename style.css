@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvatica Neue";
+}
+
+/* LEFT MENU OF SPOTIFY */
+.logo {
+  height: 35px;
+  padding-bottom: 10px;
+}
+
+.left {
+  background-color: black;
+  position: fixed;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.menu ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li img {
+  width: 24px;
+}
+
+.menu ul li {
+  padding: 5 px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.menu ul li a span {
+  position: relative;
+  top: -5px;
+  left: 8px;
+}
+
+.username img {
+  height: 20px;
+  padding-bottom: 6px;
+}
+
+.username span {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+}
+.username ul li a span {
+  position: relative;
+  left: 8px;
+  bottom: 10px;
+}
+
+.left-music img {
+  width: 30px;
+}
+
+.left-music ul {
+  padding: 0;
+  list-style-type: style type 1px;
+  margin: 0;
+}
+
+.left-music ul li a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.left-music ul li a span {
+  position: relative;
+  left: 8px;
+  bottom: 10px;
+}
+
+.playlist-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gray {
+  filter: invert(0.5) sepia(70) saturate(0) hue-rotate(0);
+}
+
+/* END of left */
+
+/* Main spotify page */
+
+.main-container {
+  margin-left: 220px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 10px 30px;
+}
+
+.main-header .prev-next-buttons button {
+  color: gray;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.main-header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .navbar ul {
+  list-style: none;
+}
+
+.main-header .navbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+
+.main-header .navbar ul li a {
+  color: gray;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-header
+  .navbar
+  ul
+  li
+  a
+  :hover
+  .main-header
+  .navbar
+  ul
+  li
+  a
+  :active
+  .main-header
+  .navbar
+  ul
+  li
+  a
+  :focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.main-header .navbar ul li.divide {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+
+.main-header .navbar button {
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.main-header
+  .navbar
+  button:hover
+  .main-header
+  .navbar
+  button:active
+  .main-header
+  .navbar
+  button:focus {
+  background-color: #f2f2f2;
+}
+/* END of main header */
+
+/* PLAYLISTS */
+
+.spotify-playlists {
+  padding: 20px 40px;
+  background-color: rgb(23, 25, 30);
+  padding-left: 250px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 236.85px;
+}
+
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: rgb(23, 25, 30);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: green;
+  border-radius: 100%;
+  opacity: 0;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+}
+
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: gray;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* FOOTER */
+.white {
+  filter: invert(1) sepia(0) saturate(0) hue-rotate(0);
+}
+
+.footer-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #181818;
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+
+.footer-player-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-player-middle-buttons img {
+  width: 15px;
+  padding: 15px;
+}
+
+.footer-player-middle-buttons,
+.footer-player-middle-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.pause-button {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 8px;
+  top: 4px;
+}
+
+.pause-button img {
+  position: relative;
+  max-width: 24px;
+  max-height: 24px;
+  filter: none;
+  left: -4px;
+  top: -4px;
+}
+
+.player-slider {
+  width: 50%;
+}
+
+
+.player-slider input {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  align-content: center;
+  accent-color: white;
+}
+
+.footer-player-middle-slider {
+  display: flex;
+  align-items: center;
+}
+
+.player-time {
+  padding: 0 10px;
+  color: white;
+}
+
+.footer-player-right-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.footer-player-right-buttons img {
+  margin-right: 20px;
+  width: 16px;
+}
