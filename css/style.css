@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template: 
-    'header header' 60px
+    'left header' 60px
     'left main' 4fr
     'footer footer' 60px/
     1fr 4fr;
@@ -15,27 +15,23 @@
 }
 
 header {
-    display: grid;
     grid-area: header;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(232, 128, 128);
+    display: grid;
+    background-color: black;
     padding: 10px;
-    position: fixed;
-}
-
-.spotify-logo {
-    width: 27%;
-}
-
-.upgrade {
     place-content: end;
 }
 
+
 .upgrade-button {
-    padding: 2%;
+    padding: 1%;
     border-radius: 40px;
-    border: none;
-    margin: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 main {
@@ -45,30 +41,37 @@ main {
     'nav'60px
     'recommends'1fr/
     1fr;
-    background-color: rgb(73, 161, 73);
+    background-color: rgb(38, 38, 38);
 }
 
-.main-nav {
+.main-nav-container {
     grid-area: nav;
-    
+    position: fixed;
+    top: 8%; 
+    left: 10%;
+    width: 100%;
+    background-color: rgba(38, 38, 38, 0.687) ;
 }
+
 
 .main-nav ul {
     display: grid;
     grid-template-columns: repeat(6, 5rem);
     list-style: none;
     place-content: center;
-    padding: 2%;
+    padding: 1%;
+    color: #b3b3b3;
 }
 
 
 .main-nav-button {
-    padding: 5%;
+    padding: 15%;
     border: none;
     outline: none;
-    color: rgb(162, 162, 162);
-    background-color: rgb(63, 63, 63);
+    color: #b3b3b3;
+    background-color: rgb(38, 38, 38);
 }
+
 
 .main-box {
     display: grid;
@@ -83,13 +86,14 @@ main {
     width: fit-content;
     border: none;
     outline: none;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(38, 38, 38);
     color: white;
 }
 
-.recent-box, .playlists-box, .popular-box {
+.recent-box, .playlists-box, .popular-box, .made-for {
     display: grid;
     grid-template-rows: 1rem 1fr;
+    gap: 5%;
 }
 
 .recently-played-container, .user-playlists-container, .top-artists-container {
@@ -97,51 +101,72 @@ main {
     grid-auto-columns: max-content;
     grid-auto-flow: column;
     padding: 1%;
-    gap: 1%;
+    gap: 7%;
 }
 
 .playlist-album-button, .users-playlists-button, .top-artists-button {
+    display: grid;
     width: 18ch;
     padding: 1%;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(38, 38, 38);
     color: white;
     border: none;
     outline: none;
+    place-content: center;
 }
 
 .button-text {
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 10%;
+}
+
+.button-text p {
+    color: #b3b3b3;
 }
 
 .album-image, .artists-image {
-    width: 120px;
+    width: 180px;
 }
 
 .artists-image {
-    border-radius: 60px;
+    border-radius: 90px;
 }
 
 left {
     display: grid;
     grid-area: left;
-    grid-template: 
+    grid-template:
+    'side-header' 60px
     'nav'1fr
-    'playlists'2fr
+    'playlists'1fr
     'side-footer' 96px/
     1fr;
-    background-color: rgb(39, 187, 39);
+    background-color: black;
     position: fixed;
-    top: 9.9%;
+    top: 0%;
     left: 0;
     bottom: 0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    padding-bottom: 6%;
     width: 20%;
+}
+
+.logo {
+    grid-area: side-header;
+    padding: 5%;
+}
+
+.spotify-logo {
+    width: 60%;
 }
 
 .sidebar-nav {
     grid-area: nav;
     grid-template-rows: 1fr;
     margin: 5%;
+    padding-top: 10%;
 }
 
 .sidebar-nav li {
@@ -152,11 +177,13 @@ left {
 .sidebar-nav-button {
     display: flex;
     width: 100%;
-    font-size: large;
+    background-color: black;
+    border: none;
+    outline: none;
 }
 
-.sidebar-nav-button h2 {
-    place-content: center;
+.sidebar-nav-button h2, .create-playlist-button h2 {
+    color: #b3b3b3;
 }
 
 .playlists {
@@ -165,20 +192,50 @@ left {
 
 .create-playlist {
     display: flex;
+    padding-top: 15%;
 }
 
-.create-playlist h2 {
-    place-content: center;
-}
-
-.playlist-icon {
+.playlist-icon, .nav-icon {
     width: 3rem;
-    fill: white;
+    filter: invert(74%) sepia(44%) saturate(0%) hue-rotate(213deg) brightness(87%) contrast(85%);
 }
+
 
 .playlist-nav {
+    display: grid;
     list-style: none;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    padding-bottom: 8%;
 }
+
+.playlist-image {
+    width: 50px;
+}
+
+.users-playlists-button-sidebar, .create-playlist-button {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding-left: 4%;
+}
+
+.users-playlists-button-sidebar:hover {
+    background-color: rgb(38, 38, 38);
+}
+
+.nav-icon:hover, .playlist-icon:hover {
+    filter: invert(97%) sepia(1%) saturate(2%) hue-rotate(305deg) brightness(111%) contrast(100%);
+}
+
+.nav-icon:focus, .playlist-icon:focus, .track-controls-icon:focus {
+    filter: invert(97%) sepia(1%) saturate(2%) hue-rotate(305deg) brightness(111%) contrast(100%);
+}
+
 
 .left-footer {
     display: grid;
@@ -212,6 +269,7 @@ left {
 
 .user-name {
     place-content: center;
+    color: white;
 }
 
 .user-photo {
@@ -219,15 +277,11 @@ left {
     border-radius: 50px;
 }
 
-.nav-icon {
-    width: 3rem;
-}
-
 footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: rgb(164, 96, 164);
+    background-color: rgb(61, 61, 61);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -256,7 +310,8 @@ footer {
 .track-name-button {
     border: none;
     outline: none;
-    background-color: rgb(164, 96, 164);
+    background-color: rgb(61, 61, 61);
+    color: white;
 }
 
 .track-name-button:hover, .main-heading-button:hover {
@@ -265,7 +320,7 @@ footer {
     text-decoration-color: white;
 }
 
-.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button, .main-nav-button, .main-heading-button, .playlist-album-button, .users-playlists-button, .top-artists-button {
+.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button, .main-nav-button, .main-heading-button, .playlist-album-button, .users-playlists-button, .top-artists-button, .users-playlists-button-sidebar, .create-playlist-button, .upgrade-button {
     cursor: pointer;
 }
 
@@ -275,6 +330,7 @@ footer {
 
 .sort-track-icon {
     width: 20px;
+    filter: invert(74%) sepia(44%) saturate(0%) hue-rotate(213deg) brightness(87%) contrast(85%);
 }
 
 .track-controls-box {
@@ -293,13 +349,13 @@ footer {
     gap: 5rem;
 }
 
-.track-control-button, .sort-track-button, .sidebar-nav-button {
-    background-color: rgb(164, 96, 164);
+.track-control-button, .sort-track-button {
+    background-color: rgb(61, 61, 61);
     border: none;
     outline: none;
 }
 
-.track-controls-icon:hover, .sort-track-icon:hover, .sidebar-nav-button:hover {
+.track-controls-icon:hover, .sort-track-icon:hover {
     filter: invert(90%) sepia(99%) saturate(32%) hue-rotate(195deg) brightness(109%) contrast(99%);
 }
 
@@ -312,12 +368,12 @@ footer {
 }
 
 .main-nav-button:focus {
-    text-decoration: underline;
-    text-decoration-color: #1ed760;
+    border-bottom: thick solid #1ed760;
 }
 
 .track-controls-icon {
     width: 20px;
+    filter: invert(74%) sepia(44%) saturate(0%) hue-rotate(213deg) brightness(87%) contrast(85%);
 }
 
 .track-progress-bar {
@@ -347,4 +403,10 @@ footer {
 
 .volume-control-bar {
     accent-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+
+    }
 }

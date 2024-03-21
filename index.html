@@ -10,48 +10,48 @@
 <body>
     <div class="container">
         <header>
-            <section class="logo">
-                <img class="spotify-logo" alt="spotify-logo" src="assets/img/logo.svg">
-            </section>
             <section class="upgrade">
                 <button class="upgrade-button" type="button">Upgrade to Premium</button>
             </section>
         </header>
         <main>
-            <nav class="main-nav">
-                <ul>
-                    <li>
-                        <button id="all" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">All</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button id="playlists" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">Playlists</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button id="artiists" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">Artists</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button id="albums" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">Albums</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button id="podcasts" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">Podcasts</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button id="Audiobooks" class="main-nav-button" type="button">
-                            <h3 class="main-nav-button-heading">Audiobooks</h3>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+            <section class="main-nav-container">
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <button id="all" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">All</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="playlists" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">Playlists</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="artiists" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">Artists</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="albums" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">Albums</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="podcasts" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">Podcasts</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="Audiobooks" class="main-nav-button" type="button">
+                                <h3 class="main-nav-button-heading">Audiobooks</h3>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            
             <div class="main-box">
                 <section class="recent-box">
                     <button class="main-heading-button" type="button">
@@ -63,7 +63,7 @@
                                 <img class="album-image" alt="Album cover image" src="assets/img/metal_lifting.jpg">
                                 <section class="button-text">
                                     <h3>Heavy Metal</h3>
-                                    <h4>By tzoltie</h4>
+                                    <p>By tzoltie</p>
                                 </section>
                             </button>
                         </section>
@@ -73,36 +73,46 @@
                                 <section class="button-text">
                                     <h3>Stranger Things, Vol. 1 (a Netflix Original
                                         Series Soundtrack)</h3>
-                                        <h4>By tzoltie</h4>
+                                        <p>By tzoltie</p>
                                 </section>
                             </button>
                         </section>
                         <section>
                             <button class="playlist-album-button" type="button">
                                 <img class="album-image" alt="Album cover image" src="assets/img/aquietplace.jpeg">
-                                <h3>A quiet place</h3>
-                                <h4>By tzoltie</h4>
+                                <section class="button-text">
+                                    <h3>A quiet place</h3>
+                                    <p>By tzoltie</p>
+                                </section>
                             </button>
                         </section>
                         <section>
                             <button class="playlist-album-button" type="button">
                                 <img class="album-image" alt="Album cover image" src="assets/img/split.jpeg">
-                            <h3>Split</h3>
-                            <h4>By tzoltie</h4>
+                                <section class="button-text">
+                                    <h3>Split</h3>
+                                    <p>By tzoltie</p>
+                                </section>
                             </button>
                         </section>
                         <section>
                             <button class="playlist-album-button" type="button">
                                 <img class="album-image" alt="Album cover image" src="assets/img/cure.jpeg">
-                            <h3>A cure for wellness</h3>
-                            <h4>By tzoltie</h4>
+                                <section class="button-text">
+                                    <h3>A cure for wellness</h3>
+                                    <p>By tzoltie</p>
+                                </section>
                             </button>
                         </section>
-                        <section><button class="playlist-album-button" type="button">
+                        <section>
+                            <button class="playlist-album-button" type="button">
                             <img class="album-image" alt="Album cover image" src="assets/img/sinister.jpeg">
-                        <h3>Sinister</h3>
-                        <h4>By tzoltie</h4>
-                        </button></section>
+                            <section class="button-text">
+                                <h3>Sinister</h3>
+                                <p>By tzoltie</p>
+                            </section>
+                            </button>
+                        </section>
                     </div>
                 </section>
                 <section class="playlists-box">
@@ -112,14 +122,35 @@
                     <div class="user-playlists-container">
                         <section>
                             <button class="users-playlists-button" type="button">
-                                <img class="album-image" alt="Album cover image" src="assets/img/radar.jpeg">
-                                <h3>Release Radar</h3>
+                                <img class="album-image" alt="Album cover image" src="assets/img/sinister.jpeg">
+                                <section class="button-text">
+                                    <h3>Film</h3>
+                                </section>
                             </button>
                         </section>
                         <section>
                             <button class="users-playlists-button" type="button">
-                                <img class="album-image" alt="Album cover image" src="assets/img/mixdaily.jpeg">
-                                <h3>Daily Mix 1</h3>
+                                <img class="album-image" alt="Album cover image" src="assets/img/aquietplace.jpeg">
+                                <section class="button-text">
+                                    <h3>Film 2</h3>
+                                </section>
+                            </button>
+                        </section>
+                        <section>
+                            <button class="users-playlists-button" type="button">
+                                <img class="album-image" alt="Album cover image" src="assets/img/cure.jpeg">
+                                <section class="button-text">
+                                    <h3>Film 3</h3>
+                                </section>
+                                
+                            </button>
+                        </section>
+                        <section>
+                            <button class="playlist-album-button" type="button">
+                                <img class="album-image" alt="Album cover image" src="assets/img/stranger.jpeg">
+                                <section class="button-text">
+                                    <h3>TV</h3>
+                                </section>
                             </button>
                         </section>
                     </div>
@@ -132,13 +163,41 @@
                         <section>
                             <button class="top-artists-button" type="button">
                                 <img class="artists-image" alt="Artist's image" src="assets/img/youg.jpeg">
-                                <h3>Lana Del Rey</h3>
+                                <section class="button-text">
+                                    <h3>Lana Del Rey</h3>
+                                </section>
+                                
                             </button>
                         </section>
                         <section>
                             <button class="top-artists-button" type="button">
                                 <img class="artists-image" alt="Artist's image" src="assets/img/einaudi.jpeg">
-                                <h3>Jimmy</h3>
+                                <section class="button-text">
+                                    <h3>Jimmy</h3>
+                                </section>
+                            </button>
+                        </section>
+                    </div>
+                </section>
+                <section class="made-for-box">
+                    <button class="main-heading-button" type="button">
+                        <h2>Made for tzoltie</h2>
+                    </button>
+                    <div class="user-playlists-container">
+                        <section>
+                            <button class="users-playlists-button" type="button">
+                                <img class="album-image" alt="Album cover image" src="assets/img/radar.jpeg">
+                                <section class="button-text">
+                                    <h3>Release Radar</h3>
+                                </section>
+                            </button>
+                        </section>
+                        <section>
+                            <button class="users-playlists-button" type="button">
+                                <img class="album-image" alt="Album cover image" src="assets/img/mixdaily.jpeg">
+                                <section class="button-text">
+                                    <h3>Daily Mix 1</h3>
+                                </section>
                             </button>
                         </section>
                     </div>
@@ -146,12 +205,15 @@
             </div>
         </main>
         <left>
+            <section class="logo">
+                <img class="spotify-logo" alt="spotify-logo" src="assets/img/logo.svg">
+            </section>
             <nav class="sidebar-nav">
                 <ul>
                     <li>
                         <button class="sidebar-nav-button" type="button">
                             <img class="nav-icon" alt="home icon" src="assets/img/home.svg">
-                            <h2>Home</h2>
+                            <h2 class="sidebar-nav-heading">Home</h2>
                         </button>
                     </li>
                     <li>
@@ -170,18 +232,55 @@
             </nav>
             <section class="playlists">
                 <section class="create-playlist">
-                    <img class="playlist-icon" alt="add new playlist icon" src="assets/img/add.svg">
-                    <h2>Create Playlist</h2>
+                    <button class="create-playlist-button" type="button">
+                        <img class="playlist-icon" alt="add new playlist icon" src="assets/img/add.svg">
+                        <h2>Create Playlist</h2>
+                    </button>
                 </section>
                 <nav class="playlist-nav">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="users-playlists-button-sidebar" type="button">
+                                <img class="playlist-image" alt="Playlist image" src="assets/img/metal_lifting.jpg">
+                                <h3>Heavy Metal</h3>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </section>
