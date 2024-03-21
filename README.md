@@ -19,3 +19,4 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; The top navigation list wraps as the page size is reduced.
 * &#9745; On hovering over cover images, a play icon appears overlaid.
 * &#9745; Only the main content area scrolls - it moves behind the upgrade bar and the player controls. The side menu also stays fixed as the main content scrolls.
+
