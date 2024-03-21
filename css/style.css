@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -50,7 +51,7 @@
 
 .nav-container div {
     display: grid;
-    height: 60%;
+    height: 100%;
     grid-template-columns: 25% 1fr;
     gap: 0;
     margin-bottom: 10px;
@@ -428,11 +429,17 @@
 .right {
     display: grid;
     width: 100%;
-    grid-template-columns: 20px 20px 1fr;
+    grid-template-columns: 40px 1fr;
     place-items: center;
     gap: 10px;
     color: white;
     /* padding-right: 10px; */
+}
+
+.list-deskt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 
@@ -447,16 +454,17 @@
     accent-color: #878787;
 }
 
-#vol-bar>* {
-    min-width: 0;
-}
 
 .volume i {
     color: white;
     margin-left: 10px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
+.volume>* {
+    width: calc(100% - 70px);
+    min-width: 100px;
+}
 input:hover {
     cursor: pointer;
 }
@@ -604,6 +612,14 @@ i:hover {
         display: none;
     }
 
+    .nav-container img {
+        width: 28px;
+    }
+        .nav-container div:hover {
+            border: none;
+            border-bottom: 3px solid yellow;
+        }
+
 
     .menu {
         display: flex;
@@ -638,7 +654,7 @@ i:hover {
 
 
     .right {
-        padding-right: 2px;
+        /* padding-right: 2px; */
         margin-left: 5px;
         padding-left: 5px;
     }
