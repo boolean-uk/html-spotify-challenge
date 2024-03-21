@@ -400,8 +400,7 @@ input[type="range"]::-webkit-slider-thumb {
   aside .install-user p,
   aside .install-user h3,
   header #big-logo,
-  hr
-   {
+  hr {
     display: none;
   }
 
