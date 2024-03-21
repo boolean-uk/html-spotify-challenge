@@ -672,3 +672,308 @@ input[type=range] {
     width: 16px;
     height: 16px;
 }
+
+@media screen and (max-width: 1520px) {
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist {
+    grid-template: 
+        'album album album album' / 213.45px 213.45px 213.45px 213.45px;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist #last,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist #last-2,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist #last-3,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist #last-4,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist #last-5,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist #last-6 {
+        display: none;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-title,
+    main .all-type-of-albums .popular-albums-section .popular-title,
+    main .all-type-of-albums .recently-played-section .recently-played-title,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-title,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-title,
+    main .all-type-of-albums .popular-artists-section .popular-artists-title {
+    grid-template: 
+        'h1 span' / 770px 60px;
+    }
+
+    main .top-header-main-content .right-controls {
+        padding-left: 24.6rem;
+    }
+
+    main .playlists {
+        display: grid;
+        grid-template-rows: repeat(4, 48px);
+        grid-template-columns: repeat(2, 410px);
+        grid-template-areas: 
+            'album album'
+            'album album'
+            'album album'
+            'album album';
+    }
+
+    main {
+        grid-template: 
+            'header' 110px
+            'playlists' 216px
+            'all-albums' minmax(275px, 2050px);
+    }
+}
+
+@media screen and (max-width: 1415px) {
+    .fixed {
+        grid-template: 
+            'song-playing play-song buttons-control' / 250px 640px 400px;
+        gap: 0.3rem;
+    }
+
+    .fixed .buttons-control {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1305px) {
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist {
+    grid-template: 
+        'album album album' / 213.45px 213.45px 213.45px;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist #fourth,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist #fourth-2,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist #fourth-3,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist #fourth-4,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist #fourth-5,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist #fourth-6 {
+        display: none;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-title,
+    main .all-type-of-albums .popular-albums-section .popular-title,
+    main .all-type-of-albums .recently-played-section .recently-played-title,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-title,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-title,
+    main .all-type-of-albums .popular-artists-section .popular-artists-title {
+    grid-template: 
+        'h1 span' / 560px 60px;
+    }
+
+    main .top-header-main-content .right-controls {
+        padding-left: 11.5rem;
+    }
+
+    main .playlists {
+        display: grid;
+        grid-template-rows: repeat(4, 48px);
+        grid-template-columns: repeat(2, 305px);
+        grid-template-areas: 
+            'album album'
+            'album album'
+            'album album'
+            'album album';
+    }
+
+    main {
+        grid-template: 
+            'header' 110px
+            'playlists' 216px
+            'all-albums' minmax(275px, 2050px);
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .fixed {
+        grid-template: 
+            'song-playing play-song buttons-control' / 220px 470px 380px;
+        gap: 0.3rem;
+    }
+
+    .fixed .buttons-control {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    aside .top-aside .home strong,
+    aside .top-aside .search p {
+        display: none;
+    }
+    
+    aside .top-aside {
+        width: 80px;
+    }
+
+    .container {
+        grid-template-columns: 80px 1fr;
+    }
+
+    aside .bottom-aside header .header-title .library p {
+        display: none;
+    }
+
+    aside .bottom-aside header .header-title .header-title-features {
+        display: none;
+    }
+
+    aside .bottom-aside header .header-options {
+        display: none;
+    }
+
+    aside .bottom-aside .playlists .playlists-features {
+        display: none;
+    }
+
+    aside .bottom-aside .playlists .playlists-albums .album .name {
+        display: none;
+    }
+
+    aside .bottom-aside .playlists .playlists-albums .artist .name {
+        display: none;
+    }
+
+    aside .bottom-aside {
+        grid-template: 
+            'header' 60px
+            'playlists' 1fr;
+        width: 80px;
+    }
+
+    aside .playlists {
+        overflow-x: hidden;
+        height: 450px;
+    }
+
+    aside header {
+        width: 80px;
+        height: 40px;
+    }
+
+    .fixed {
+        grid-template: 
+            'song-playing play-song buttons-control' / 200px 330px 400px;
+    }
+
+    .fixed .buttons-control {
+        justify-content: left;
+        grid-template: 
+        'now lyrics queue device volume mix full-screen' / 24px 24px 24px 24px 160px 24px 24px;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    
+    .fixed .buttons-control {
+        justify-content: left;
+        grid-template: 
+        'volume mix full-screen' / 160px 24px 24px;
+    }
+    
+    .fixed .buttons-control .now-playing,
+    .fixed .buttons-control .lyrics,
+    .fixed .buttons-control .queue,
+    .fixed .buttons-control .device {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 756px) {
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist {
+    grid-template: 
+        'album album' / 213.45px 213.45px;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-playlist #third,
+    main .all-type-of-albums .popular-albums-section .popular-albums-playlist #third-2,
+    main .all-type-of-albums .recently-played-section .recently-played-playlist #third-3,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-playlist #third-4,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-playlist #third-5,
+    main .all-type-of-albums .popular-artists-section .popular-artists-playlist #third-6 {
+        display: none;
+    }
+
+    main .all-type-of-albums .albums-recommended-section .albums-recommended-title,
+    main .all-type-of-albums .popular-albums-section .popular-title,
+    main .all-type-of-albums .recently-played-section .recently-played-title,
+    main .all-type-of-albums .jump-back-in-section .jump-back-in-title,
+    main .all-type-of-albums .favorite-artists-section .favorite-artists-title,
+    main .all-type-of-albums .popular-artists-section .popular-artists-title {
+    grid-template: 
+        'h1 span' / 345px 60px;
+    }
+
+    main .main-content .top-header-main-content .right-controls .premium {
+        display: none;
+    }
+
+    main .top-header-main-content .right-controls {
+        grid-template: 
+            'install-app notifications profile' / 112px 32px 32px;
+        padding-left: 8rem;
+    }
+
+    main .playlists {
+        display: grid;
+        grid-template-rows: repeat(4, 48px);
+        grid-template-columns: repeat(2, 200px);
+        grid-template-areas: 
+            'album album'
+            'album album'
+            'album album'
+            'album album';
+    }
+
+    .fixed .buttons-control {
+        justify-content: left;
+        grid-template: 
+        'volume mix full-screen' / 160px;
+    }
+    
+    .fixed .buttons-control .now-playing,
+    .fixed .buttons-control .lyrics,
+    .fixed .buttons-control .queue,
+    .fixed .buttons-control .device,
+    .fixed .buttons-control .mix-player,
+    .fixed .buttons-control .full-screen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    
+    .fixed .song-playing {
+        display: none;
+    }
+
+    .fixed {
+        grid-template: 
+            'play-song buttons-control' / 350px 160px;
+        gap: 1.25rem;
+    }
+
+    .fixed .buttons-control {
+        justify-content: left;
+        grid-template: 
+        'volume' / 120px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main {
+        overflow-x: auto;
+    }
+}
