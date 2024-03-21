@@ -465,6 +465,7 @@
     width: calc(100% - 70px);
     min-width: 100px;
 }
+
 input:hover {
     cursor: pointer;
 }
@@ -494,10 +495,6 @@ i:hover {
 
     }
 
-    #vol-bar>* {
-        min-width: 0;
-    }
-
 }
 
 
@@ -520,12 +517,8 @@ i:hover {
 
     .actions i {
         margin-right: 5px;
-
     }
 
-    #vol-bar>* {
-        min-width: 0;
-    }
 
 }
 
@@ -574,16 +567,15 @@ i:hover {
         gap: 5px;
     }
 
+    .left img {
+        width: 42px;
+    }
 
     .actions {
         grid-template-rows: repeat(2, 20px);
         grid-template-columns: 1fr;
         place-items: center;
         margin-top: 10px;
-    }
-
-    #vol-bar>* {
-        min-width: 0;
     }
 
 }
@@ -615,10 +607,11 @@ i:hover {
     .nav-container img {
         width: 28px;
     }
-        .nav-container div:hover {
-            border: none;
-            border-bottom: 3px solid yellow;
-        }
+
+    .nav-container div:hover {
+        border: none;
+        border-bottom: 3px solid yellow;
+    }
 
 
     .menu {
@@ -640,6 +633,10 @@ i:hover {
     .albums {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+
+    .left img {
+        width: 38px;
     }
 
 
@@ -708,8 +705,8 @@ i:hover {
         display: none;
     }
 
-    #vol-bar>* {
-        min-width: 0;
+    .left img{
+        width: 38px;
     }
 
 }
