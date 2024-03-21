@@ -41,7 +41,8 @@ footer {
     grid-area: controls;
     background-color: rgb(43, 43, 43);
     display: grid;
-    grid-template-columns: 150px minmax(200px, 1fr) 150px;
+    grid-template-columns: 220px minmax(200px, 1fr) 200px;
+    gap: 20px;
 }
 
 header button {
@@ -150,12 +151,109 @@ ul p {
 
 /* Footer section */
 footer > section {
-    background-color: blue;
+    /* background-color: blue; */
     height: 100%;
 }
 
 .current-song {
-    background-color: aliceblue;
+    /* background-color: purple; */
     display: grid;
-    grid-template-columns: 30px 1fr repeat(2, 20px);
+    grid-template-columns: 60px 1fr repeat(2, 30px);
+    align-content: center;
+    padding-left: 10px;
+    align-items: center;
+}
+
+#sin {
+    height: 50px;
+}
+
+.current-song img {
+    height: 25px;
+}
+
+.current-song > div > p + p {
+    color: grey;
+}
+
+.song {
+    color: white;
+    font-weight: 500;
+}
+
+.volume-section {
+    /* background-color: rgb(69, 69, 151); */
+    display: grid;
+    grid-template-columns: repeat(3, 30px) 1fr;
+    align-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+}
+
+.volume-section img {
+    height: 20px;
+}
+
+.volume-container {
+    background-color: grey;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.volume-container div {
+    height: 100%;
+    background-color: white;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.footer-mid-section {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.time-section {
+    /* background-color: plum; */
+    display: grid;
+    grid-template-columns: 50px minmax(100px, 350px) 50px;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.time-tracker {
+    background-color: grey;
+    height: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.time-section p {
+    color: white;
+}
+
+.time-tracker div {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.song-options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(40px, 50px));
+    place-content: center;
+    place-items: center;
+
+}
+
+.song-options img {
+    height: 20px;
+}
+
+#play-icon {
+    height: 40px;
 }
