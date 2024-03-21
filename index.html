@@ -4,9 +4,357 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+
+        <button class="upgrade-button">
+            <strong>EFFETTUA L'UPGRADE</strong>
+        </button>
+
+    </header>
+
+    <aside class="main-aside">
+
+        <section class="logo-container">
+            <a href="./index.html">
+                <img src="./assets/img/logo.svg" alt="Spotify logo">
+            </a>
+        </section>
+
+        <section class="browse-container">
+            <div class="home-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/home.svg" alt="Home icon">
+                </a>
+                <a href="#" class="browse-text">Home</a>
+            </div>
+
+            <div class="search-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/search.svg" alt="Search icon">
+                </a>
+                <a href="#" class="browse-text">Cerca</a>
+            </div>
+
+            <div class="library-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/libreria.svg" alt="Library icon">
+                </a>
+                <a href="#" class="browse-text">La tua libreria</a>
+            </div>
+        </section>
+
+        <section class="playlists-container">
+            <p>PLAYLIST</p>
+            <div class="create-playlist-container">
+                <button class="plus-icon" onclick="addPlaylist()"><span>&#43;</span></button>
+                <button class="create-playlist" onclick="addPlaylist()"><strong>Crea Playlist</strong></button>
+            </div>
+
+            <ul id="all-playlists">
+                <li id="playlist">
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Nome Playlist</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="install-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/download.svg" alt="Download icon">
+            </a>
+            <a href="#"><small>Installa app</small></a>
+        </section>
+
+        <section class="profile-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/profile.svg" alt="Profile picture">
+            </a>
+            <a href="#"><strong>John Doe</strong></a>
+        </section>
+
+    </aside>
+
+    <aside class="aside-small">
+
+        <section class="logo-container">
+            <a href="./index.html">
+                <img src="./assets/img/logo-small.svg" alt="Spotify logo">
+            </a>
+        </section>
+
+        <section class="browse-container">
+            <div class="home-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/home.svg" alt="Home icon">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/search.svg" alt="Search icon">
+                </a>
+            </div>
+
+            <div class="library-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/libreria.svg" alt="Library icon">
+                </a>
+            </div>
+        </section>
+
+        <section class="install-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/download.svg" alt="Download icon">
+            </a>
+        </section>
+
+        <section class="profile-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/profile.svg" alt="Profile picture">
+            </a>
+        </section>
+
+    </aside>
+
+    <main>
+
+        <nav>
+            <a href="#">
+                <p>IN EVIDENZA</p>
+            </a>
+            <a href="#">
+                <p>PODCAST</p>
+            </a>
+            <a href="#">
+                <p>CLASSIFICHE</p>
+            </a>
+            <a href="#">
+                <p>GENERI E MOOD</p>
+            </a>
+            <a href="#">
+                <p>NUOVE USCITE</p>
+            </a>
+            <a href="#">
+                <p>SCOPRI</p>
+            </a>
+        </nav>
+
+        <section class="recently-played-container">
+            <div class="heading">
+                <p>Recently played</p>
+            </div>
+
+            <div class="all-playlists">
+                <div class="playlist">
+                    <audio src="./assets/sounds/ethereal-vistas-191254.mp3" id="ethereal-audio" ontimeupdate="updateEtherealTimes(this)"></audio>
+                    <img src="./assets/img/metal_lifting.jpg" alt="Heavy Metal playlist cover">
+                    <a href="#" class="hide" id="play-ethereal" onclick="playEthereal()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Heavy Metal</strong></p>
+                    <p><small>Subtitle</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/fun-life-112188.mp3" id="fun-audio" ontimeupdate="updateFunTimes(this)"></audio>
+                    <img src="./assets/img/stranger.jpeg" alt="Stranger Things volume 1 playlist cover ">
+                    <a href="#" class="hide" id="play-fun" onclick="playFun()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Stranger Things, Vol. 1 &#40;a Netflix Original Series Soundtrack&#41;</strong></p>
+                    <p><small>Kyle Dixon &#38; Michael Stein</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/happy-rock-165132.mp3" id="happy-audio" ontimeupdate="updateHappyTimes(this)"></audio>
+                    <img src="./assets/img/aquietplace.jpeg" alt="A quiet place playlist cover">
+                    <a href="#" class="hide" id="play-happy" onclick="playHappy()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>A quiet place</strong></p>
+                    <p><small>Subtitle</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/dance-mood-132148.mp3" id="dance-audio" ontimeupdate="updateDanceTimes(this)"></audio>
+                    <img src="./assets/img/split.jpeg" alt="Split playlist cover">
+                    <a href="#" class="hide" id="play-dance" onclick="playDance()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Split</strong></p>
+                    <p><small>Subtitle</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/trap-future-bass-royalty-free-music-167020.mp3" id="trap-audio"></audio>
+                    <img src="./assets/img/cure.jpeg" alt="A cure for welness playlist cover">
+                    <a href="#" class="hide" id="play-trap" onclick="playTrap()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>A cure for wellness</strong></p>
+                    <p><small>Subtitle</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/sunshine-jaunt-163686.mp3" id="sunshine-audio"></audio>
+                    <img src="./assets/img/sinister.jpeg" alt="Sinister playlist cover">
+                    <a href="#" class="hide" id="play-sunshine" onclick="playSunshine()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Sinister</strong></p>
+                    <p><small>Subtitle</small></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="created-container">
+            <div class="heading">
+                <p>Creato per John Doe</p>
+                <p>
+                    <small>
+                        Piu ascolti, piu accurati saranno i suggerimenti.
+                    </small>
+                </p>
+            </div>
+
+            <div class="all-mixes">
+                <div class="playlist">
+                    <img src="./assets/img/radar.jpeg" alt="Release radar playlist cover">
+                    <div class="hide">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </div>
+                    <p><strong>Release Radar</strong></p>
+                </div>
+
+                <div class="playlist">
+                    <img src="./assets/img/mixdaily.jpeg" alt="Daily mix 1 playlist cover">
+                    <div class="hide">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </div>
+                    <p><strong>Daily Mix 1</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-container">
+            <div class="heading">
+                <p>Artisti piu popolari</p>
+                <p>
+                    <small>
+                        Piu ascolti, piu accurati saranno i suggerimenti.
+                    </small>
+                </p>
+            </div>
+
+            <div class="all-artists">
+                <div class="playlist">
+                    <img src="./assets/img/youg.jpeg" alt="Lana Del Rey artist cover" class="artist">
+                    <p><strong>Lana Del Rey</strong></p>
+                </div>
+
+                <div class="playlist">
+                    <img src="./assets/img/einaudi.jpeg" alt="Einaudi artist cover" class="artist">
+                    <p><strong>Einaudi</strong></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="now-playing-container">
+            <a href="#" class="now-playing-album">
+                <img src="./assets/img/sinister.jpeg" alt="Sinister album cover image">
+            </a>
+
+            <a href="#" class="song-name">
+                <p>
+                    Sinister
+                    <br>
+                    <small>Brano Nome</small> 
+                </p>
+            </a>
+
+            <div class="now-playing-icons">
+                <a href="#" class="favorite-icon">
+                    <img src="./assets/img/favorite.svg" alt="Favorite icon">
+                </a>
+                <a href="#" class="folders-icon">
+                    <img src="./assets/img/folder.svg" alt="Folder icon">
+                </a>
+            </div>
+        </section>
+
+        <section class="controls-container">
+            <div class="play-buttons-container">
+                <button class="shuffle-button" onclick="randomAudio()">
+                    <img src="./assets/img/shuffle.svg" alt="shuffle button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/previous.svg" alt="previous button icon">
+                </button>
+                <button class="play-button" onclick="playEthereal()">
+                    <img src="./assets/img/play.svg" alt="Play button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/next.svg" alt="Next button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/repeat.svg" alt="Repeat button icon">
+                </button>
+            </div>
+
+            <div class="song-progress-container">
+                <div class="time-played">
+                    <p id="current-time">0:25</p>
+                </div>
+                <input type="range" name="song-slider" id="song-slider" min="0">
+                <div class="time-to-go">
+                    <p id="duration">4:35</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="settings-container">
+            <div class="setting-icons">
+                 <a href="#">
+                <img src="./assets/img/menu.svg" alt="Menu icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/screen.svg" alt="Screen icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/sound.svg" alt="Sound icon">
+                </a>
+            </div>
+            <input type="range" name="volume-slider" id="volume-slider" min="0" max="100">
+        </section>
+
+    </footer>
     
+    <script src="./main.js"></script>
 </body>
 </html>
