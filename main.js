@@ -48,7 +48,7 @@ function playEthereal() {
     isPlaying = !isPlaying
 }
 
-function updateTimes() {
+function updateEtherealTimes() {
     const audio = document.getElementById('ethereal-audio')
     const time = document.getElementById('current-time')
     const songDuration = document.getElementById('duration')
@@ -74,6 +74,18 @@ function playFun() {
     isPlaying = !isPlaying
 }
 
+function updateFunTimes() {
+    const audio = document.getElementById('fun-audio')
+    const time = document.getElementById('current-time')
+    const songDuration = document.getElementById('duration')
+    const currentTime = Math.floor(audio.currentTime).toString()
+    const currentDuration = Math.floor(audio.duration).toString()
+
+    time.innerHTML = formatSecondsAsTime(currentTime)
+    songDuration.innerHTML = formatSecondsAsTime(currentDuration)
+
+}
+
 // Play Happy rock audio
 function playHappy() {
     const audio = document.getElementById('happy-audio')
@@ -88,6 +100,18 @@ function playHappy() {
     isPlaying = !isPlaying
 }
 
+function updateHappyTimes() {
+    const audio = document.getElementById('happy-audio')
+    const time = document.getElementById('current-time')
+    const songDuration = document.getElementById('duration')
+    const currentTime = Math.floor(audio.currentTime).toString()
+    const currentDuration = Math.floor(audio.duration).toString()
+
+    time.innerHTML = formatSecondsAsTime(currentTime)
+    songDuration.innerHTML = formatSecondsAsTime(currentDuration)
+
+}
+
 // Play Dance audio
 function playDance() {
     const audio = document.getElementById('dance-audio')
@@ -100,6 +124,18 @@ function playDance() {
     }
     
     isPlaying = !isPlaying
+}
+
+function updateDanceTimes() {
+    const audio = document.getElementById('dance-audio')
+    const time = document.getElementById('current-time')
+    const songDuration = document.getElementById('duration')
+    const currentTime = Math.floor(audio.currentTime).toString()
+    const currentDuration = Math.floor(audio.duration).toString()
+
+    time.innerHTML = formatSecondsAsTime(currentTime)
+    songDuration.innerHTML = formatSecondsAsTime(currentDuration)
+
 }
 
 // Play Trap audio
