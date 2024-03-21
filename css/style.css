@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: minmax(100px,250px) 8fr;
+  grid-template-rows: 90px 1fr 90px;
+  grid-template-areas:
+  'left-side-bar header'
+  'left-side-bar main'
+  'footer footer'
+  ;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #080B12;
+}
+
+.left-side-bar {
+  grid-area: left-side-bar;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 90px 120px 1fr 80px;
+}
+
+.big-logo {
+  background-color: black;
+  height: 60px;
+  width: 150px;
+  margin: 20px 20px 20px 20px;
+}
+
+.big-home-side {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 35px);
+}
+
+.big-home-items {
+  display: inline-grid;
+  grid-template-columns: 15px 50px 1fr;
+  align-items: center;
+}
+
+.hidden-side-color {
+  width: 2px ;
+  background-color: green;
+  height: 100%;
+}
+
+.item-side-logo {
+  display: inline-grid;
+  height: 30px;
+  width: 30px;
+  fill: white;
+  margin-left: 5px;
+}
+.big-home-items h4 {
+  display: inline-block;
+  color: white;
+}
+
+.big-playlist-side {
+  padding-top: 20px;
+  display: grid;
+  grid-template-rows: 50px 60px 1fr;
+  h2 {
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+.new-playlist {
+  display: flex;
+  margin-left: 20px;
+  grid-template-columns: 40px 1fr;
+}
+.new-playlist div {
+  display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: #A3A3A3;
+    img {
+      padding: 10px;
+      width: 30px;
+      height: 30px;
+    }
+}
+
+.new-playlist h3 {
+  display: inline-flex;
+  text-align: center;
+  padding: 12px 5px 10px 10px ;
+  color: #6F6F6F;
+}
+
+.playlist-item h4{
+  color: #6F6F6F;
+  margin: 20px 0px 10px 20px;
+}
+
+
+
+
+
+.big-profile-side {
+  margin: 5px 20px 0px 20px;
+  color: #6F6F6F;
+  br {
+    background-color: #6F6F6F;
+  }
+}
+.install-app {
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 15px 1fr;
+}
+
+.install-app svg {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px ;
+}
+
+.install-app p {
+  padding: 0px 0px 0px 5px ;
+}
+
+.profile-name {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  padding-top: 10px;
+}
+
+.profile-name svg {
+  height: 25px;
+  width: 25px;
+  fill: gray;
+  background-color: gray;
+  border-radius: 12.5px;
+}
+
+.profile-name h4 {
+  color: white;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+
+main {
+  grid-area: main;
+  background-color: bisque;
+}
+
+footer {
+  grid-area: footer;
+  background-color: brown;
+}
+.small-left-sidebar {
+  grid-area: left-side-bar;
+  background-color: blueviolet;
+  width: 1fr;
+}
+
+@media screen and (max-width:530px) {
+  .left-side-bar {
+    display: none;
+  }
+  .body-container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas:
+  'left-side-bar header'
+  'left-side-bar main'
+  'footer footer'
+  ;
+  height: 100vh;
+  }
+}
+
+@media screen and (min-width:530px ) {
+  .small-left-sidebar {
+    display: none;
+  }
+}
