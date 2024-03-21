@@ -1,0 +1,18 @@
+:root {
+  /****** Font color ******/
+  --primary-font-color: #fff;
+  --secondary-font-color: #6e7176;
+
+  /****** Background-color ******/
+  /* 1- Left menu: */
+  --left-menu-bg-color: #000;
+
+  /* 2- Main content area: */
+  --content-area-primary-bg-color: #080b12;
+
+  /* 3- Albums list: */
+  --albums-area-bg-color: #141922;
+
+  /****** Border ******/
+  --border-color: #adff2f;
+}
