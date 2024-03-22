@@ -1,0 +1,123 @@
+.control-bar {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 10px;
+  background-color: var(--control-bar-bg-color);
+}
+
+.control-bar .icon {
+  width: 20px;
+  filter: var(--icon-main-color);
+  transition: color 300ms;
+}
+
+.control-bar .icon:hover {
+  cursor: pointer;
+  scale: 1.2;
+  filter: var(--icon-main-color);
+}
+
+.ctrl-poster {
+  width: 50px;
+}
+
+.media,
+.album,
+.folders,
+.ctrl-icons,
+.ctrl,
+.play-bar,
+.volume,
+.volume-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.album,
+.ctrl,
+.folders,
+.volume,
+.volume-icon {
+  gap: 15px;
+}
+
+.album p:first-child {
+  color: var(--primary-font-color);
+  font-size: 16px;
+}
+
+.album p:last-child {
+  color: var(--secondary-font-color);
+  font-size: 13px;
+}
+
+.folders {
+  flex-wrap: wrap;
+}
+
+.folders .icon {
+  filter: var(--folders-icon-color);
+  transition: color 300ms;
+}
+
+.play-bar {
+  width: 100%;
+}
+.play-bar p {
+  color: var(--primary-font-color);
+  font-size: 12px;
+}
+
+.ctrl {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.icon.play-icon {
+  width: 40px;
+}
+
+.ctrl .icon:hover {
+  filter: var(--ctrl-icon-hover-color);
+}
+
+/****** play bar ******/
+input {
+  appearance: none;
+  background-color: var(--bar-color);
+  cursor: pointer;
+  width: 100%;
+  height: 3px;
+  position: relative;
+}
+
+input::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: 0px;
+  background-color: var(--paly-bar-color);
+  height: 3px;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/******* Volume *******/
+.volume-bar {
+  width: 50%;
+}

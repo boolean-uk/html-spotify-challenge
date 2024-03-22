@@ -1,0 +1,41 @@
+:root {
+  /****** Font color ******/
+  --primary-font-color: #fff;
+  --secondary-font-color: #6e7176;
+
+  /****** Background-color ******/
+  /* 1- Left menu: */
+  --left-menu-bg-color: #000;
+
+  /* 2- Main content area: */
+  --content-area-primary-bg-color: #080b12;
+
+  /* 3- Albums list: */
+  --albums-area-bg-color: #141922;
+
+  /****** Border ******/
+  --border-color: #adff2f;
+
+  /****** Left side filter icons colors ******/
+  --icon-color: invert(40%) sepia(70%) saturate(24%) hue-rotate(178deg)
+    brightness(95%) contrast(88%);
+  --icon-hover-color: invert(99%) sepia(37%) saturate(2%) hue-rotate(243deg)
+    brightness(113%) contrast(100%);
+  --icon-focus-color: invert(99%) sepia(37%) saturate(2%) hue-rotate(243deg)
+    brightness(113%) contrast(100%);
+
+  /****** Control bar ******/
+  --control-bar-bg-color: #282828;
+  --paly-bar-color: #c1c1c1;
+  --bar-color: #5a5a5a;
+
+  /****** Control bar filter icons colors ******/
+  --icon-main-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+    brightness(103%) contrast(103%);
+
+  --folders-icon-color: invert(56%) sepia(3%) saturate(16%) hue-rotate(333deg)
+    brightness(91%) contrast(86%);
+
+  --ctrl-icon-hover-color: invert(100%) sepia(60%) saturate(2536%)
+    hue-rotate(26deg) brightness(108%) contrast(100%);
+}

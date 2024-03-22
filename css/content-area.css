@@ -54,6 +54,7 @@
 
 .nav-menu li {
   display: inline-block;
+  position: relative;
 }
 
 .nav-menu {
@@ -78,13 +79,24 @@
   transition: color 300ms;
 }
 
-.nav-bar a:hover {
-  color: var(--primary-font-color);
+.nav-menu a:focus::before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  bottom: -4px;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(
+    to right,
+    var(--border-color) 50%,
+    var(--border-color) 50%
+  );
 }
 
+.nav-bar a:hover,
 .nav-bar a:focus {
   color: var(--primary-font-color);
-  border-bottom: 3px solid var(--border-color);
 }
 
 /****** Albums area ******/

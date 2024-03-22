@@ -17,7 +17,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
   top: 0;
-  bottom: 0;
+  bottom: 82px;
 }
 
 .left-side > * {
