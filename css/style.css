@@ -413,3 +413,25 @@ footer {
     flex-direction: row;
     gap: 1em;
 }
+
+.volume-bar {
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.volume-bar .progress-bar {
+    width: 6em;
+}
+
+.volume-bar .progress:hover .progress::after {
+    --size: .8em;
+} 
+
+i {
+    color: var(--secondary-color);
+}
+
+i:hover {
+    color: var(--primary-color);
+}
