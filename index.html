@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
 initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Spotify Challenge</title>
 </head>
 <body>
     <!-- Building the side bar area -->
-    <div class="sidebar">
+    <aside class="sidebar">
         <div class="logo">
         <a href="#">
          <img src="assets/img/logo.svg" alt="Logo"> 
@@ -50,7 +50,7 @@ initial-scale=1.0">
             <!-- Navigation lists end here   -->
 
             <div class="profile">
-                <h3>Playlist</h3>
+                <h3>Profile</h3>
                 <ul>
                     <li>
                         <a href="#"><img src="assets/img/profile.svg" alt="Home"> Profile </a>
@@ -65,11 +65,11 @@ initial-scale=1.0">
             </div>
 
         </div>
-    </div>
+    </aside>
     <!-- Sidebar ends here -->
 
 <!-- Main container starts here. Inside, I have buttons and navbar -->
-
+   
     <div class="container">
         <div class="topbar"> 
             <div class="prev-next-buttons">   <!-- buttons, left and right as it is on spotify -->
@@ -106,7 +106,7 @@ initial-scale=1.0">
                 <button type="button">Log in</button>
             </div>
 
-            
+        
 
             <!-- Nav Div ends here -->
 
@@ -252,13 +252,59 @@ initial-scale=1.0">
                     </div>
             
                 </div>
-        
     </div>
-            <div class="footer">
-                <!-- I will fix this later -->
-           
 
+    <!-- Footer starts here -->
+    <footer>
+        <div class="music-player">
+            <div class="song-bar">
+                <div class="song-infos">
+                    <div class="image-container">
+                        <img src="assets/img/Davido.jfif" alt="Davido's image">
+                        <div class="song-description">
+                            <p class="title">I am Unavailable</p>
+                            <p class="artist">Davido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-buttons"> 
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-folder"></i>
+                 
+                </div>
+            </div>
+            <div class="progress-controller"> 
+                <div class="control-buttons">
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-play"></i>
+                    <i class="play-pause fas fa-play"></i>
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="progress-container">
+                    <span>0:49</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span>3:15</span>
+                </div>
+            </div>
+            <!-- I stiil have to find this icons and change them -->
+            <div class="other-features">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-play"></i>
+                <div class="volume-bar">
+                    <i class="fas fa-play"></i>
+                    <div class="progress-bar"></div>
+                    <div class="progress"></div>
+                </div>
+            </div>
         </div>
+    </footer>
+    <!-- Footer ends here -->
+
+
+       
 
         <script src="https://kit.fontawesome.com/44c137f998.js" crossorigin="anonymous"></script>
     
