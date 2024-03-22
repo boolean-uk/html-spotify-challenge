@@ -167,7 +167,7 @@ main {
 
 .header-con {
   display: grid;
-  grid-auto-columns: .001fr 1fr .001fr;
+  grid-auto-columns: .01fr 1fr .01fr;
   text-align: center;
   grid-template-areas: '. main-header .';
 }
@@ -181,34 +181,42 @@ main {
 
 .main-header h3 {
   color: #7A7D81;
-  padding: 15px 3px 10px 3px;
+  padding: 1rem .15rem .8rem .15rem;
   font-size: 1rem;
 }
 
 .main-main {
-  padding: 10px;
+  padding: 10px 0px 10px 10px;
   color: white;
 }
 
 .main-main h2 {
   font-size: 30px;
-  padding-left: 10px;
 }
 
-.recentlyPlayed-items {
-  padding: 10px ;
+.main-main h4 {
+  color: #7A7D81;
+}
+.items {
   display: grid;
-  grid-template-columns: repeat(auto-fill,240px);
+  grid-template-columns: repeat(auto-fill,190px);
 }
 
 .article-item {
-  margin-right: 5px;
+  margin-right: .5rem;
+  text-align: center;
+  padding: .3rem 0px .0 0px ;
 }
-
 
 .article-item img {
   max-width: 100%;
   height: auto;
+  padding: 1rem 0 1rem 0;
+
+}
+
+.made-for-user {
+  margin: 2rem 0 1rem 0rem;
 }
 
 footer {
@@ -221,7 +229,7 @@ footer {
   width: .5fr;
 }
 
-@media screen and (max-width:635px) {
+@media screen and (max-width:668px) {
   .left-side-bar {
     display: none;
   }
@@ -236,9 +244,19 @@ footer {
   ;
   height: 100vh;
   }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,270px);
+  }
+  .header-con {
+    display: grid;
+    grid-auto-columns: .1fr 1fr .1fr;
+    text-align: center;
+    grid-template-areas: '. main-header .';
+  }
 }
 
-@media screen and (min-width:635px ) {
+@media screen and (min-width:668px ) {
   .small-left-sidebar {
     display: none;
   }
