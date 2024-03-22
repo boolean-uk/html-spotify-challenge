@@ -9,7 +9,7 @@
     grid-template: 
     'left header' 60px
     'left main' 4fr
-    'footer footer' 60px/
+    'footer footer' 72px/
     1fr 4fr;
     height: 100vh;
 }
@@ -43,7 +43,7 @@ main {
     'nav'60px
     'recommends'1fr/
     1fr;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     background-color: rgb(38, 38, 38);
 }
 
@@ -105,7 +105,7 @@ main {
     scrollbar-width: none;
 }
 
-.recent-box::-webkit-scrollbar, .playlists-box::-webkit-scrollbar, .popular-box::-webkit-scrollbar, .made-for-box::-webkit-scrollbar, left::-webkit-scrollbar {
+.recent-box::-webkit-scrollbar, .playlists-box::-webkit-scrollbar, .popular-box::-webkit-scrollbar, .made-for-box::-webkit-scrollbar, .left::-webkit-scrollbar {
     display: none;
 }
 
@@ -309,7 +309,7 @@ main {
     gap: 20px;
 }
 
-.install-app-button {
+.install-app-button, .profile-button {
     display: flex;
     margin: 2%;
     height: fit-content;
@@ -322,6 +322,8 @@ main {
     border: none;
     outline: none;
 }
+
+
 
 .install-app {
     border-bottom: 1px solid rgb(195, 195, 195);
@@ -336,6 +338,10 @@ main {
     display: flex;
     gap: 1rem;
     margin: 1rem;
+}
+
+.user-details a {
+    width: 100%;
 }
 
 .user-name {
@@ -380,7 +386,7 @@ main {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(61, 61, 61);
     position: fixed;
     left: 0;
@@ -420,7 +426,7 @@ footer {
     text-decoration-color: white;
 }
 
-.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button, .main-nav-button, .main-heading-button, .playlist-album-button, .users-playlists-button, .top-artists-button, .users-playlists-button-sidebar, .create-playlist-button, .upgrade-button, .install-app-button {
+.track-name-button, .sort-track-button, .track-control-button, .sidebar-nav-button, .main-nav-button, .main-heading-button, .playlist-album-button, .users-playlists-button, .top-artists-button, .users-playlists-button-sidebar, .create-playlist-button, .upgrade-button, .install-app-button, .profile-button {
     cursor: pointer;
 }
 
@@ -466,7 +472,6 @@ footer {
 #shuffle:focus, #repeat:focus, #volume:focus, #device:focus, #queue:focus, #now_playing:focus {
     filter: invert(64%) sepia(72%) saturate(531%) hue-rotate(86deg) brightness(94%) contrast(89%);
 }
-
 
 
 .track-controls-icon {
@@ -528,19 +533,76 @@ footer {
     .left {
         display: none;
     }
+    .track-progress-bar {
+        width: 20em;
+    }
+    .track-controls {
+        gap: 1rem;
+    }
+    .volume-control-bar {
+        width: 5rem;
+    }
+    .now-playing-box {
+        grid-template-columns: 9rem 2em;
+    }
+    .device-control-box {
+        gap: 5%;
+    }
 }
 
 
-@media screen and (min-width: 643px) and (max-width:900px) {
+@media screen and (min-width: 643px) and (max-width: 922px) {
     .container {
         grid-template-columns: 1fr 4fr;
-    }   
+    }
+
+    .left {
+        padding-bottom: 14%;
+    }
+
+    .mobile-sidebar-nav {
+        display: none;
+    }
+    .track-progress-bar {
+        width: 25em;
+    }
+    .track-controls {
+        gap: 2rem;
+    }
+    .volume-control-bar {
+        width: 5rem;
+    }
+    .now-playing-box {
+        grid-template-columns: 11rem 1rem;
+    }
+}
+
+
+@media screen and (min-width: 915px) and (max-width: 1140px) {
+    .track-progress-bar {
+        width: 30em;
+    }
+    .track-controls {
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 922px) and (max-width: 1342px) {
+    .container {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .left {
+        padding-bottom: 10%;
+    }
+
     .mobile-sidebar-nav {
         display: none;
     }
 }
 
-@media screen and (min-width:900px) and (max-width: 1470px) {
+
+@media screen and (min-width:1342px) and (max-width: 1470px) {
     .container {
         grid-template-columns: 1fr 4fr;
     }
