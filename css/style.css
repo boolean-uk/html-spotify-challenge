@@ -71,6 +71,10 @@ main {
     background-color: rgb(38, 38, 38);
 }
 
+.main-nav-button:focus h3 {
+    text-decoration: underline;
+    text-decoration-color: #1ed760;
+}
 
 .main-box {
     display: grid;
@@ -124,6 +128,34 @@ main {
     outline: none;
     place-content: center;
 }
+
+
+.album-image-box {
+    display: grid;
+    position: relative;
+    place-items: center;
+}
+
+.svg-hover-box {
+    display: grid;
+    width: 10%;
+    padding: 5%;
+    position: absolute;
+    place-content: center;
+}
+
+.svg-hover {
+    width: 3rem;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(5deg) brightness(103%) contrast(101%);
+    opacity: 0;
+}
+
+@media (hover) {
+    .playlist-album-button:hover img, .users-playlists-button:hover img, .top-artists-button:hover img {
+        opacity: 0.6;
+    }
+}
+
 
 .button-text {
     overflow: hidden;
@@ -323,7 +355,13 @@ main {
     'nav' 33rem
     'footer' 60px;
     background-color: black;
-    padding: 8%;
+    padding: 2%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .movile-nav-logo {
@@ -429,9 +467,7 @@ footer {
     filter: invert(64%) sepia(72%) saturate(531%) hue-rotate(86deg) brightness(94%) contrast(89%);
 }
 
-.main-nav-button:focus {
-    border-bottom: thick solid #1ed760;
-}
+
 
 .track-controls-icon {
     width: 20px;
@@ -439,7 +475,7 @@ footer {
 }
 
 .track-progress-bar {
-    width: 550px;
+    width: 50em;
     accent-color: white;
 }
 
