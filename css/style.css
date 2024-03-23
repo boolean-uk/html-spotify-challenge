@@ -13,6 +13,9 @@
   'footer footer'
   ;
   height: 100vh;
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 header {
@@ -222,6 +225,9 @@ main {
 footer {
   grid-area: footer;
   background-color: brown;
+  position:sticky;
+  left: 0;
+  bottom: 0;
 }
 .small-left-sidebar {
   grid-area: left-side-bar;
@@ -246,7 +252,7 @@ footer {
   }
   .items {
     display: grid;
-    grid-template-columns: repeat(auto-fill,270px);
+    grid-template-columns: repeat(auto-fill,240px);
   }
   .header-con {
     display: grid;
