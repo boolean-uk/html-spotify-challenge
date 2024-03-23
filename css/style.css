@@ -224,10 +224,41 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: brown;
   position:sticky;
   left: 0;
   bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #282828;
+}
+
+.singer-name {
+  margin: 20px 5px 20px 10px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2.8fr 1fr ;
+  gap: 5px;
+}
+.singer-name h5 {
+  color: #6F6F6F;
+}
+.singer-name img {
+  height: 50px;
+  width: 50px;
+}
+
+.singer-name svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+
+.play-tools {
+  background-color: antiquewhite;
+}
+
+.sound-volume {
+  background-color: blueviolet;
 }
 .small-left-sidebar {
   grid-area: left-side-bar;
