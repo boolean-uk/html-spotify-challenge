@@ -228,7 +228,7 @@ footer {
   left: 0;
   bottom: 0;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: .6fr 2fr .6fr;
   background-color: #282828;
 }
 
@@ -254,23 +254,10 @@ footer {
   fill: white;
 }
 
-.play-tools {
-  background-color: antiquewhite;
-}
-
-.sound-volume {
-  background-color: blueviolet;
-}
-.small-left-sidebar {
-  grid-area: left-side-bar;
-  background-color: blueviolet;
-  width: .5fr;
-}
-
 .control-panel {
-  padding: 10px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   display: grid;
-  grid-template-rows: 50px 50px;
+  grid-template-rows: 30px 30px;
   border: 5px solid red;
 }
 .contorl-buttons {
@@ -287,20 +274,40 @@ footer {
   transform: rotate(180deg);
 }
 #play-icon {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   padding: 0 10px 0 10px;
 }
 
 .range-form {
+  display: grid;
+  grid-template-columns: .6fr 3fr .6fr;
+  grid-template-areas: '. range-area .';
+}
+
+.range-area {
+  grid-area: range-area;
+  display: grid;
+  grid-template-columns: .1fr 1fr .1fr;
+}
+
+.range-area time {
+  padding: 10px;
+  color: white;
   margin: auto;
-  width: 70%;
 }
 #music-range {
-  max-width: 500px;
   width: 100%;
 }
 
+.sound-volume {
+  background-color: blueviolet;
+}
+.small-left-sidebar {
+  grid-area: left-side-bar;
+  background-color: blueviolet;
+  width: .5fr;
+}
 
 @media screen and (max-width:668px) {
   .left-side-bar {
@@ -326,6 +333,11 @@ footer {
     grid-auto-columns: .1fr 1fr .1fr;
     text-align: center;
     grid-template-areas: '. main-header .';
+  }
+  .range-form {
+    display: grid;
+    grid-template-columns: .1fr 3fr .1fr;
+    grid-template-areas: '. range-area .';
   }
 }
 
