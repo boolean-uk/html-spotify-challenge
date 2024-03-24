@@ -42,7 +42,7 @@
   border: 0;
   background-color: var(--border-color);
   color: var(--content-area-primary-bg-color);
-  scale: 1.1;
+  scale: 1.04;
 }
 
 /****** Horizontal nav bar ******/
@@ -83,10 +83,12 @@
   content: "";
   width: 50%;
   height: 2px;
+
+  position: absolute;
   left: 25%;
   bottom: -4px;
-  position: absolute;
   z-index: 3;
+
   background: linear-gradient(
     to right,
     var(--border-color) 50%,

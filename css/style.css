@@ -48,6 +48,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
     position: fixed;
     top: 0;
@@ -82,6 +83,7 @@ main {
   .control-bar {
     justify-content: center;
   }
+
   .media,
   .volume {
     display: none;
@@ -90,6 +92,7 @@ main {
   .ctrl {
     width: 80%;
   }
+
   .ctrl-icons {
     gap: 20%;
   }
