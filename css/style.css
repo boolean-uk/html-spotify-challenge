@@ -233,6 +233,7 @@ footer {
 }
 
 .singer-name {
+  max-width: 250px;
   margin: 20px 5px 20px 10px;
   color: white;
   display: grid;
@@ -268,11 +269,12 @@ footer {
 
 .control-panel {
   padding: 10px 5px 20px 5px;
-  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 50px;
+  border: 5px solid red;
 }
 .contorl-buttons {
   margin: auto;
-  width: 50%;
 }
 .contorl-buttons svg {
   height: 25px;
@@ -291,12 +293,12 @@ footer {
 }
 
 .range-form {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: '. music-range .';
+  margin: auto;
+  width: 70%;
 }
 #music-range {
-  grid-area: music-range;
+  max-width: 500px;
+  width: 100%;
 }
 
 
