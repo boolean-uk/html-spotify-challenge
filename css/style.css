@@ -60,11 +60,17 @@ header button {
   align-items: center;
 }
 
-.hidden-side-color {
+.hidden-side-color{
   width: 2px ;
-  background-color: green;
   height: 100%;
 }
+
+.big-home-side :hover {
+  .hidden-side-color {
+    background-color: green;
+  }
+}
+
 
 .item-side-logo {
   display: inline-grid;
