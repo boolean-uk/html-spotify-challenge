@@ -1,12 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    
+    <div class="app">
+        <div class="app-top-bar">
+            <div class="app-header">
+                <div class="app-song-navigation">
+                    <div class="app-song-navigation-prev hidden">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24">
+                            <polyline points="16 4 7 12 16 20" fill="none" stroke="#fff"></polyline>
+                        </svg>
+                    </div>
+                    <div class="app-song-navigation-next hidden">
+                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24">
+                            <polyline points="8 4 17 12 8 20" fill="none" stroke="#fff"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <button class="app-user">
+                    <div class="app-figure">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 18 20"
+                            xmlns="http://www.w3.org/2000/svg" data-testid="user-icon">
+                            <path
+                                d="M15.216 13.717L12 11.869C11.823 11.768 11.772 11.607 11.757 11.521C11.742 11.435 11.737 11.267 11.869 11.111L13.18 9.57401C14.031 8.58001 14.5 7.31101 14.5 6.00001V5.50001C14.5 3.98501 13.866 2.52301 12.761 1.48601C11.64 0.435011 10.173 -0.0879888 8.636 0.0110112C5.756 0.198011 3.501 2.68401 3.501 5.67101V6.00001C3.501 7.31101 3.97 8.58001 4.82 9.57401L6.131 11.111C6.264 11.266 6.258 11.434 6.243 11.521C6.228 11.607 6.177 11.768 5.999 11.869L2.786 13.716C1.067 14.692 0 16.526 0 18.501V20H1V18.501C1 16.885 1.874 15.385 3.283 14.584L6.498 12.736C6.886 12.513 7.152 12.132 7.228 11.691C7.304 11.251 7.182 10.802 6.891 10.462L5.579 8.92501C4.883 8.11101 4.499 7.07201 4.499 6.00001V5.67101C4.499 3.21001 6.344 1.16201 8.699 1.00901C9.961 0.928011 11.159 1.35601 12.076 2.21501C12.994 3.07601 13.5 4.24301 13.5 5.50001V6.00001C13.5 7.07201 13.117 8.11101 12.42 8.92501L11.109 10.462C10.819 10.803 10.696 11.251 10.772 11.691C10.849 12.132 11.115 12.513 11.503 12.736L14.721 14.585C16.127 15.384 17.001 16.884 17.001 18.501V20H18.001V18.501C18 16.526 16.932 14.692 15.216 13.717Z"
+                                fill="#fff"></path>
+                        </svg>
+                    </div>
+                    <span class="app-username">Yourname</span>
+                    <div class="app-expand-arrow">
+                        <svg role="img" height="16" width="16" viewBox="0 0 16 16">
+                            <path d="M13 10L8 4.206 3 10z" fill="#fff"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="app-nav-bar">
+            <div class="app-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 340" class="spotify-logo--text">
+                    <title>Spotify</title>
+                    <path fill="#ffffff"
+                        d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.5 167.5" class="spotify-logo">
+                    <title>Spotify</title>
+                    <path fill="#ffffff"
+                        d="M83.7 0C37.5 0 0 37.5 0 83.7c0 46.3 37.5 83.7 83.7 83.7 46.3 0 83.7-37.5 83.7-83.7S130 0 83.7 0zM122 120.8c-1.4 2.5-4.6 3.2-7 1.7-19.8-12-44.5-14.7-73.7-8-2.8.5-5.6-1.2-6.2-4-.2-2.8 1.5-5.6 4-6.2 32-7.3 59.6-4.2 81.6 9.3 2.6 1.5 3.4 4.7 1.8 7.2zM132.5 98c-2 3-6 4-9 2.2-22.5-14-56.8-18-83.4-9.8-3.2 1-7-1-8-4.3s1-7 4.6-8c30.4-9 68.2-4.5 94 11 3 2 4 6 2 9zm1-23.8c-27-16-71.6-17.5-97.4-9.7-4 1.3-8.2-1-9.5-5.2-1.3-4 1-8.5 5.2-9.8 29.6-9 78.8-7.2 109.8 11.2 3.7 2.2 5 7 2.7 10.7-2 3.8-7 5-10.6 2.8z" />
+                </svg>
+            </div>
+            <div class="app-categories-nav">
+                <div class="app-category-item app-category-item--selected">
+                    <div class="icon">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                                fill="#ffffff" />
+                        </svg>
+                    </div>
+                    <span>Home</span>
+                </div>
+                <div class="app-category-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                fill="#ffffff" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span>Search</span>
+                </div>
+                <div class="app-category-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                fill="#ffffff" />
+                        </svg>
+                    </div>
+                    <span>Your Library</span>
+                </div>
+            </div>
+            <div class="app-playlists-nav">
+                <div class="app-category-item">
+                    <span style="color: white; font-weight:bold">Playlist</span>
+                </div>
+                <div class="app-category-item">
+                    <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 24 24"
+                            fill="white">
+                            <path
+                                d="M11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44771 13 8V11H16C16.5523 11 17 11.4477 17 12C17 12.5523 16.5523 13 16 13H13V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V13H8C7.44772 13 7 12.5523 7 12C7 11.4477 7.44771 11 8 11H11V8Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23 4C23 2.34315 21.6569 1 20 1H4C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4ZM21 4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <span>Create Playlist</span>
+                </div>
+                <div class="app-category-item hidden">
+                    <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16">
+                            <path fill="none" d="M0 0h16v16H0z"></path>
+                            <path
+                                d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"
+                                fill="#c4c4c4"></path>
+                        </svg>
+                    </div>
+                    <span>Liked Songs</span>
+                </div>
+                <div class="app-category-item">
+                    <span>Nome Playlist</span>
+                </div>
+                <div class="app-category-item">
+                    <span>Nome Playlist</span>
+                </div>
+                <div class="app-category-item">
+                    <span>Nome Playlist</span>
+                </div>
+            </div>
+            <div class="app-user-box">
+                <div class="app-category-item">
+                    <div class="icon">
+                        <svg width="12" height="12" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+                                fill="#ffffff" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span style="color: grey; font-weight:small"> Install App</span>
+                </div>
+                <div class="app-divider-container ">
+                    <hr>
+                </div>
+                <div class="app-category-item">
+                    <div class="icon">
+                        <svg width="48" height="48" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+                            <title>User Icon</title>
+                            <path
+                                d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                                fill="#ffffff" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span style="color: white;"> John Doe</span>
+                </div>
+            </div>
+        </div>
+        <div class="app-now-playing-bar">
+            <div class="now-playing-bar">
+                <div class="track">
+                    <img src="./assets/img/sinister.jpeg" alt="" />
+                    <div class="details">
+                        <div class="title">Sinister</div>
+                        <div class="artist">Brano Nome</div>
+                    </div>
+                    <div class="tools">
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                    stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H9.67452C10.1637 5 10.4083 5 10.6385 5.05526C10.8425 5.10425 11.0376 5.18506 11.2166 5.29472C11.4184 5.4184 11.5914 5.59135 11.9373 5.93726L12.0627 6.06274C12.4086 6.40865 12.5816 6.5816 12.7834 6.70528C12.9624 6.81494 13.1575 6.89575 13.3615 6.94474C13.5917 7 13.8363 7 14.3255 7H17.8C18.9201 7 19.4802 7 19.908 7.21799C20.2843 7.40973 20.5903 7.71569 20.782 8.09202C21 8.51984 21 9.0799 21 10.2V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.07989 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2Z"
+                                    stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="playback">
+                    <div class="upper">
+                        <div class="icon">
+                            <svg fill="white" width="20px" height="20px" viewBox="-4 0 32 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 20.688v2c0 0.281 0.219 0.5 0.5 0.5h2.875c1.688 0 3.094-0.781 4.25-1.969 1.188-1.188 2.156-2.781 3.125-4.313 0.781-1.25 1.563-2.438 2.375-3.344 0.781-0.938 1.563-1.5 2.5-1.5h2.656v2.281c0 0.719 0.5 0.844 1.094 0.375l4.344-3.625c0.375-0.313 0.375-0.906 0-1.219l-4.344-3.594c-0.594-0.5-1.094-0.375-1.094 0.375v2.406h-2.656c-1.719 0-3.063 0.75-4.25 1.969-1.156 1.188-2.219 2.781-3.156 4.281-0.813 1.281-1.563 2.5-2.375 3.406-0.781 0.906-1.563 1.469-2.469 1.469h-2.875c-0.281 0-0.5 0.219-0.5 0.5zM0 9.531v2c0 0.281 0.219 0.5 0.5 0.5h2.875c1.406 0 2.531 1.375 3.75 3.156 0.031-0.094 0.063-0.156 0.094-0.219 0.031-0.031 0.125-0.094 0.156-0.156 0.469-0.781 1-1.531 1.5-2.344-0.75-0.969-1.469-1.844-2.406-2.438-0.906-0.625-1.906-0.969-3.094-0.969h-2.875c-0.344 0-0.5 0.156-0.5 0.469zM18.281 20.125h-2.656c-1.375 0-2.563-1.344-3.75-3.094-0.063 0.094-0.094 0.156-0.125 0.219-0.063 0.063-0.094 0.125-0.156 0.219-0.219 0.375-0.5 0.781-0.719 1.156-0.25 0.344-0.5 0.75-0.719 1.094 0.719 0.969 1.469 1.813 2.375 2.406 0.875 0.625 1.906 1.031 3.094 1.031h2.656v2.188c0 0.719 0.5 0.875 1.094 0.375l4.344-3.656c0.375-0.313 0.375-0.875 0-1.188l-4.344-3.594c-0.594-0.469-1.094-0.375-1.094 0.375v2.469z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg fill="white" width="20px" height="20px" viewBox="0 0 256 256" id="Flat"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M56,32a8.00008,8.00008,0,0,1,8,8v73.73535l119.65723-73.124A16.0002,16.0002,0,0,1,208,54.26465v147.4707a16.004,16.004,0,0,1-24.34375,13.65283L64,142.26416V216a8,8,0,0,1-16,0V40A8.00008,8.00008,0,0,1,56,32Z" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M15.4137 10.941C16.1954 11.4026 16.1954 12.5974 15.4137 13.059L10.6935 15.8458C9.93371 16.2944 9 15.7105 9 14.7868L9 9.21316C9 8.28947 9.93371 7.70561 10.6935 8.15419L15.4137 10.941Z"
+                                    stroke="white" stroke-width="1.5" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg fill="white" width="20px" height="20px" viewBox="0 0 256 256" id-unique ="Flat"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M208,40V216a8,8,0,0,1-16,0V142.26416l-119.65625,73.124A16.00029,16.00029,0,0,1,48,201.73535V54.26465A16.0002,16.0002,0,0,1,72.34277,40.61133L192,113.73535V40a8,8,0,0,1,16,0Z" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="white"
+                                    d="M5.23331,0.493645 C6.8801,-0.113331 8.6808,-0.161915 10.3579,0.355379 C11.5179,0.713177 12.5743,1.32796 13.4526,2.14597 L14.2929,1.30564 C14.9229,0.675676 16,1.12184 16,2.01275 L16,6.00002 L12.0127,6.00002 C11.1218,6.00002 10.6757,4.92288 11.3056,4.29291 L12.0372,3.56137 C11.389,2.97184 10.6156,2.52782 9.76845,2.26653 C8.5106,1.87856 7.16008,1.915 5.92498,2.37023 C4.68989,2.82547 3.63877,3.67423 2.93361,4.78573 C2.22844,5.89723 1.90836,7.20978 2.02268,8.52112 C2.13701,9.83246 2.6794,11.0698 3.56627,12.0425 C4.45315,13.0152 5.63528,13.6693 6.93052,13.9039 C8.22576,14.1385 9.56221,13.9407 10.7339,13.3409 C11.9057,12.7412 12.8476,11.7727 13.4147,10.5848 C13.6526,10.0864 14.2495,9.8752 14.748,10.1131 C15.2464,10.351 15.4575,10.948 15.2196,11.4464 C14.4635,13.0302 13.2076,14.3215 11.6453,15.1213 C10.0829,15.921 8.30101,16.1847 6.57402,15.8719 C4.84704,15.559 3.27086,14.687 2.08836,13.39 C0.905861,12.0931 0.182675,10.4433 0.0302394,8.69483 C-0.122195,6.94637 0.304581,5.1963 1.2448,3.7143 C2.18503,2.2323 3.58652,1.10062 5.23331,0.493645 Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <div class="text">0:00</div>
+                        <div class="line"></div>
+                        <div class="text">3:46</div>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tools">
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 6L21 6.00078M8 12L21 12.0008M8 18L21 18.0007M3 6.5H4V5.5H3V6.5ZM3 12.5H4V11.5H3V12.5ZM3 18.5H4V17.5H3V18.5Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="-2 -3 24 24" fill="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3zm0-2h14a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm4 16h6a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z" />
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0004 9.00009C16.6281 9.83575 17 10.8745 17 12.0001C17 13.1257 16.6281 14.1644 16.0004 15.0001M18 5.29177C19.8412 6.93973 21 9.33459 21 12.0001C21 14.6656 19.8412 17.0604 18 18.7084M4.6 9.00009H5.5012C6.05213 9.00009 6.32759 9.00009 6.58285 8.93141C6.80903 8.87056 7.02275 8.77046 7.21429 8.63566C7.43047 8.48353 7.60681 8.27191 7.95951 7.84868L10.5854 4.69758C11.0211 4.17476 11.2389 3.91335 11.4292 3.88614C11.594 3.86258 11.7597 3.92258 11.8712 4.04617C12 4.18889 12 4.52917 12 5.20973V18.7904C12 19.471 12 19.8113 11.8712 19.954C11.7597 20.0776 11.594 20.1376 11.4292 20.114C11.239 20.0868 11.0211 19.8254 10.5854 19.3026L7.95951 16.1515C7.60681 15.7283 7.43047 15.5166 7.21429 15.3645C7.02275 15.2297 6.80903 15.1296 6.58285 15.0688C6.32759 15.0001 6.05213 15.0001 5.5012 15.0001H4.6C4.03995 15.0001 3.75992 15.0001 3.54601 14.8911C3.35785 14.7952 3.20487 14.6422 3.10899 14.4541C3 14.2402 3 13.9601 3 13.4001V10.6001C3 10.04 3 9.76001 3.10899 9.54609C3.20487 9.35793 3.35785 9.20495 3.54601 9.10908C3.75992 9.00009 4.03995 9.00009 4.6 9.00009Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-main-view">
+            <div class="app-top-gradient"></div>
+            <div class="app-header-placeholder">
+                <div>
+                    <div>IN EVIDENZA</div>
+                </div>
+            </div>
+            <section class="app-section app-quick-links hidden">
+                <h1>Good afternoon</h1>
+                <div class="app-quick-links-container">
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img">&#x02665;</div>
+                        <span>Liked Songs</span>
+                    </div>
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img"></div>
+                        <span>Daily Mix 1</span>
+                    </div>
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img"></div>
+                        <span>Discover Weekly</span>
+                    </div>
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img"></div>
+                        <span>Daily Mix 2</span>
+                    </div>
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img"></div>
+                        <span>Daily Mix 3</span>
+                    </div>
+                    <div class="app-quick-link">
+                        <div class="app-quick-link-featured-img"></div>
+                        <span>Daily Mix 4</span>
+                    </div>
+                </div>
+            </section>
+            <section class="app-section">
+                <div class="app-section-header">
+                    <h3>Recently Played</h3>
+                    <span class="hidden">SEE ALL</span>
+                </div>
+                <div class="app-section-grid-container">
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/metal_lifting.jpg" />
+                        </div>
+                        <h3>Heavy Metal</h3>
+                        <span>Subtitle</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/stranger.jpeg" />
+                        </div>
+                        <h3>Stranger Things Vol. 1(a Netflix Original Series Soundtrack)</h3>
+                        <span>Kyle Dixon [&] Micheal Stein</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/aquietplace.jpeg" />
+                        </div>
+                        <h3>A quiet place</h3>
+                        <span>Subtitle</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/split.jpeg" />
+                        </div>
+                        <h3>Split</h3>
+                        <span>Subtitle</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="assets/img/cure.jpeg" />
+                        </div>
+                        <h3>A cure for wellness</h3>
+                        <span>Subtitle</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/sinister.jpeg" />
+                        </div>
+                        <h3>Sinister</h3>
+                        <span>Subtitle</span>
+                    </div>
+                </div>
+            </section>
+            <section class="app-section">
+                <div class="app-section-header">
+                    <div>
+                        <h3>Creato per John Doe</h3>
+                        <span>Piu ascoiti, piu accurati saranno i suggerimenti</span>
+                    </div>
+                    <span></span>
+                </div>
+                <div class="app-section-grid-container">
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/radar.jpeg" />
+                        </div>
+                        <h3>Release Radar</h3>
+                        <span></span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img src="./assets/img/mixdaily.jpeg" />
+                        </div>
+                        <h3>Daily Mix 1</h3>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+            <section class="app-section">
+                <div class="app-section-header">
+                    <h3>Artisiti piu popolari</h3>
+                    <span></span>
+                </div>
+                <div class="app-section-grid-container">
+                    <div class="app-section-grid-item">
+                        <div class="featured-image ">
+                            <img class="circular" src="./assets/img/youg.jpeg" />
+                        </div>
+                        <h3>Young [&] Beautiful</h3>
+                        <span>Lana Del Ray</span>
+                    </div>
+                    <div class="app-section-grid-item">
+                        <div class="featured-image">
+                            <img class="circular" src="./assets/img/einaudi.jpeg" />
+                        </div>
+                        <h3>Einaudi</h3>
+                        <span>Einaudi</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
