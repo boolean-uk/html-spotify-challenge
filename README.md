@@ -11,7 +11,7 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; Fonts, colors and spacings used are similar (they don't need to be identical) to the reference images
 * &#9745; CSS avoids repetition.
 * &#9745; CSS class names are descriptive.
-* &#9745; CSS makes use of grid the main structure.
+* &#9745; CSS makes use of grid for the page main structure.
 * &#9745; HTML is semantic and well structured.
 
 ### Extension Criteria
