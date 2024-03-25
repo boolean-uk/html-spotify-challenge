@@ -1,0 +1,168 @@
+.left-side {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+  color: var(--secondary-font-color);
+  background-color: var(--left-menu-bg-color);
+
+  display: grid;
+  grid-template-rows:
+    70px
+    auto
+    1fr
+    auto;
+
+  position: fixed;
+  width: 220px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  top: 0;
+  bottom: 82px;
+}
+
+.left-side > * {
+  margin-bottom: 30px;
+}
+
+.left-side > *:last-child {
+  margin-bottom: 0px;
+}
+
+.left-side header {
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--left-menu-bg-color);
+}
+
+.logo-lg {
+  width: 140px;
+  padding-left: 15px;
+}
+
+.link svg {
+  fill: var(--secondary-font-color);
+}
+
+.link,
+.create-playlist {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+
+  margin-bottom: 10px;
+  padding-left: 15px;
+
+  color: var(--secondary-font-color);
+  transition: color 300ms;
+}
+
+.link:hover,
+.link:hover svg {
+  color: var(--primary-font-color);
+  fill: var(--primary-font-color);
+}
+
+.link:focus,
+.link:focus svg {
+  color: var(--primary-font-color);
+  fill: var(--primary-font-color);
+}
+
+.link:focus {
+  border-left: 3px solid var(--border-color);
+  padding-left: 12px;
+}
+
+.playlist h3 {
+  padding-left: 15px;
+  margin-bottom: 10px;
+
+  color: var(--primary-font-color);
+  font-weight: 600;
+  font-size: 20px;
+
+  text-transform: uppercase;
+}
+
+.create-playlist button {
+  border: 0;
+  background-color: transparent;
+}
+
+.create-playlist button svg {
+  fill: var(--secondary-font-color);
+  transition: fill 300ms;
+}
+
+.create-playlist p {
+  transition: color 300ms;
+}
+
+.create-playlist:hover button svg,
+.create-playlist:hover p {
+  cursor: pointer;
+  fill: var(--border-color);
+  color: var(--primary-font-color);
+}
+
+.list-names {
+  width: 120px;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.list-names li {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.list-names a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  transition: color 300ms;
+}
+
+.list-names a:hover {
+  color: var(--primary-font-color);
+}
+
+.list-names a:focus {
+  color: var(--primary-font-color);
+}
+
+.install {
+  padding: 15px;
+}
+
+.install a {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  gap: 10px;
+
+  font-size: 14px;
+  color: var(--secondary-font-color);
+  text-decoration: none;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--secondary-font-color);
+  transition: color 300ms;
+}
+
+.install-icon {
+  width: 25px;
+  fill: var(--secondary-font-color);
+  transition: fill 300ms;
+}
+
+.install a:hover,
+.install a:hover .install-icon {
+  color: var(--primary-font-color);
+  fill: var(--primary-font-color);
+}
