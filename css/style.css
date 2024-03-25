@@ -9,6 +9,10 @@ body {
     color: #ffffff;
 }
 
+.container {
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
 /* Sidebar starts here */
 
 aside.sidebar {
@@ -16,7 +20,7 @@ aside.sidebar {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 60px;
+    width: 90px;
     background-color: #000000; 
     padding: 24px;
 
@@ -32,7 +36,9 @@ aside.sidebar {
 }
 
 .sidebar .navigation ul li {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
 }
 
 .sidebar .navigation ul li a {
@@ -40,6 +46,11 @@ aside.sidebar {
     text-decoration: none;
     font-weight: bold;
     font-size: 13px ;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    
+
 }
 
 .sidebar .navigation ul li a:hover,
@@ -99,11 +110,6 @@ text-decoration: underline;
 
 .profile h3{
     color: white;
-}
-
-.container {
-    margin-left: 100px;
-    margin-bottom: 100px;
 }
 
 .topbar {
@@ -188,7 +194,6 @@ text-decoration: underline;
 .spotify-playlists {
     padding: 20px 40px;
 }
-
 .spotify-playlists h2{
     color: #ffffff;
     gap: 20px;
