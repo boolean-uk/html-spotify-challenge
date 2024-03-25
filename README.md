@@ -12,6 +12,7 @@ For the player icons, you can use your own images or Font Awesome icons (https:/
 * &#9745; CSS avoids repetition.
 * &#9745; CSS class names are descriptive.
 * &#9745; HTML is semantic and well structured.
+* &#9745; You **must** use CSS grid for the layout. You can use flex in combination with grid, but grid is a hard requirement.
 
 ### Extension Criteria
 * &#9745; The left menu collapses as shown in `spotify-xs.png`.
