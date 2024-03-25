@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(15, 15, 56)
+}
+
+.container{
+display: grid;
+height: 100vh;
+
+grid-template-areas: 
+'left header header' 
+'left main main' 
+'left main main' 
+'footer footer footer';
+grid-template-columns: 250px minmax(700px,900px) 600px;
+grid-template-rows: 100px 700px 400px 100px;
+
+
+
+}
+
+header{display: grid;
+grid-area: header;
+background-color: black}
+
+
+.left{display: grid;
+    grid-area: left;
+    background-color: black;
+}
+    
+main{
+    display: grid;
+        grid-area: main;
+  
+        background-color: rgb(15, 15, 56)}   
+
+footer{
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(73, 62, 62);
+    padding: 5px;
+    grid-template-columns: 230px 290px 310px;
+    grid-template-rows: 80px;
+    gap: 320px;
+    
+}  
+
+footer div{
+    background-color: rgb(73, 62, 62);
+}
+.mainicons{
+display: grid;
+background-color: black;
+grid-area: left;
+padding: 10px;
+gap: 10px;
+grid-template-rows: repeat(3,50px);
+grid-template-columns: 230px;
+margin-bottom: 460px;
+margin-top: 70px;
+margin-right: 20px;
+}
+
+.mainicons div{
+    
+    background-color: black;
+
+
+}
+/* .Home{
+    margin-right: 10px !important;
+    display: inline-block
+} */
+
+
+
+  .hometext{
+    color: grey;
+    font-size: 20px;
+    margin-top: 10px;
+vertical-align: 5px;
+
+
+  }
+
+  .installword{
+    color: grey;
+    font-size: 15px;
+    margin-top: 3px;
+vertical-align: 12px;
+
+
+
+  }
+  .install{
+    display: grid;
+    grid-area: left;
+    background-color: black;
+    grid-template-columns: 230px;
+    grid-template-rows: repeat(2,50px);
+   
+gap: 10px;
+/* /* margin-bottom: 460px; */
+margin-top: 1000px; 
+/* margin-right: 20px; */
+  }
+  .install div{
+   
+    background-color: black;
+    
+  }
+  
+ .installicon{
+margin-left: 1px;
+    margin-top: 10px;
+    margin-right:  20px;
+ }
+
+ .johndoeword{
+    color: grey;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 10px;
+vertical-align: 10px;
+font-weight: bold;
+  }
+ 
+.profileicon{
+    
+    margin-left: 1px;
+    margin-top: 2px;
+  
+   
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    list-style: none;
+    text-align: center;
+    margin-left: 00px;
+}
+
+ul li a{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+
+    
+}
+ul li a:hover{
+    /* display: inline; */
+    text-align: center;
+    /* text-decoration: underline; */
+    color: white;
+    border-bottom: 5px solid green;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+
+
+}
+.recent{
+display: grid;
+/* grid-area: main; */
+grid-template-columns: repeat(6,180px);
+grid-template-rows: 250px;
+padding: 9px;
+gap: 10px;
+background-color: rgb(15, 15, 56);
+margin-bottom: 10px;
+margin-right: 200px;
+margin-left: 10px;
+}
+.recent div{
+    margin-left: 0px;
+    background-color: rgb(15, 15, 56);
+}
+.played{
+    display: block;
+    position: relative;
+    height: 150px;
+    width: 180px;
+}
+h1{
+    color: white;
+    grid-auto-rows: auto
+}
+h2{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    color: rgb(191, 173, 173);
+    text-align: center;
+
+}
+.johndoe{
+    display: grid;
+    grid-template-columns: repeat(2,180px);
+    grid-template-rows: 200px;
+    padding: 9px;
+    gap: 10px;
+    background-color: rgb(15, 15, 56);;
+   
+/* margin-right: 700px;
+margin-bottom: 800px; */
+}
+
+.johndoe div{
+/* margin-bottom: 60px; */
+
+background-color: rgb(15, 15, 56);
+}
+
+p{
+
+    vertical-align: 200px;
+}
+.artist{
+    display: grid;
+    
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: 200px;
+    padding: 9px;
+    padding-left: 15px;
+    gap: 10px;
+    background-color: rgb(15, 15, 56);
+    
+}
+
+.artist div{
+    background-color: rgb(15, 15, 56);
+    /* border-radius: 100px; */
+    
+}
+
+.artistlogo{
+    border-radius: 160px;
+    height: 150px;
+    width: 150px;
+
+}
+
+.playlist{
+    display: grid;
+   grid-area: left;
+    grid-template-columns: 200px ;
+    grid-template-rows: 100px;
+    background-color: black;
+    gap: 40px;
+    padding: 10px;
+    grid-template-rows: 100px;
+    margin-bottom: 390px;
+    margin-top: 280px;
+}
+.playist div{
+    background-color: rgb(15, 15, 56);
+}
+.playlist :nth-last-of-type(8){
+margin-top: 50px;
+
+}
+h5{
+    text-align: right;
+}
+
+.playing{
+display: grid;
+grid-area: footer;
+grid-template-columns: 30px 30px 30px 30px 30px ;
+grid-template-rows: 40px  40px;
+justify-content: center;
+gap: 9px;
+background-color: rgb(73, 62, 62);
+}
+/* .playing :nth-last-of-type(1){
+    grid-template-columns: 500px;
+    /* grid-template-rows: 100px; */
+    /* background-color: burlywood;
+    padding-right: 200px;
+    margin-left: 10px;
+} */ 
+.playing .range{
+    display: grid;
+    grid-template-rows: 40px;
+
+
+grid-template-columns: 200px;
+    background-color: rgb(73, 62, 62);
+    
+}
+.playing .range div{
+    
+
+    
+padding-right: 10px;
+    background-color: rgb(73, 62, 62);
+}
+
+.playing div{
+    /* padding-right: 10px; */
+    background-color: rgb(73, 62, 62);
+
+}
+
+
+.playingicons{
+
+margin-left: 5px;
+    border-radius: 10px;
+    height: 30px;
+   background-color: rgb(73, 62, 62);
+}
+
+
+input {
+    width: 100%;
+    height:10px;
+    margin: 1rem;
+
+    /* margin-: 100px; */
+    color: (73, 62, 62);
+
+  }
+
+  .timefirst{
+   font-weight: bold;
+    position: absolute; left: 580px; top: 1260px;
+    font-size: 20px;
+    color: white;
+    
+  }
+  .rightside{
+display: grid;
+grid-template-columns: 40px 18ch 100px;
+grid-template-rows: 70px;
+padding-left: 0px;
+gap: 10px;
+background-color: rgb(73, 62, 62);
+  }
+
+  .rightside div{
+
+    background-color:rgb(73, 62, 62);
+  }
+   .rightside :nth-last-of-type(1){
+    background-color: rgb(73, 62, 62);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+   }
+
+   .rightside :nth-last-of-type(3){
+    margin-right: 10px;
+   }
+
+   h6{
+    margin-top: 20px;
+   }
+   .last{
+    display: grid;
+    grid-template-columns: 30px 30px 30px 1fr;
+    grid-template-rows: 60px;
+    gap: 10px;
+    background-color: rgb(73, 62, 62);
+    padding: 10px;
+   }
+
+   .righticons{
+border:  1px solid grey; 
+    border-radius: 30px;
+   }
+
+   .last .rightvol{
+    margin-top: 1px;
+  
+   }
+   .righttop{
+  
+    line-height: 2.5;
+   
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin-right: 100px;
+   margin-left: 800px;
+    border-radius: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid white;
+    background-color: rgb(15, 15, 56);
+
+   
+   }
+
+   /* .played:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    opacity: 1;
+    background: url(https://cdn4.vectorstock.com/i/1000x1000/42/18/play-button-green-3d-icon-on-dark-vector-21654218.jpg);
+   } */
+
+   .recent .playedhover{
+    display: block;
+   position: absolute; top: 210px;
+  height: 10px;
+  width: 10px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 500px;
+    
+  }
+  .recent .playedhover:hover {
+   opacity: 1;
+   height: 10px;
+    transition: .3s ease; 
+  }
+
+   .johndoe .john {
+    display: block;
+    position: absolute; top: 610px;
+   height: 10px;
+   width: 10px;
+   opacity: 0;
+   transition: .5s ease;
+   border-radius: 500px;
+
+
+  }
+  .johndoe .john:hover {
+    opacity: 1;
+    height: 10px;
+    border-radius: 20px;
+     transition: .3s ease; 
+  }
+
+  .othertext{
+    font-size: 25px;
+    color: grey;
+  }
+  .librarytext{
+    float: right;
+font-size: 20px;
+color: grey; }
+
+.playtext{
+    font-size: 18px;
+    color: grey;
+    text-shadow: 10px grey;
+    
+    
+}
+
+/* .left .home{
+color: white;
+   transition: .5s ease;
+    opacity: 0;
+} */
+
+.left .home:hover{
+    border-left: 2px solid green;
+    opacity: 1;
+    color: white
+}
+
+.hometext,.librarytext,.othertext:hover{
+    opacity: 1;
+    color: white
+}
+
+h4{
+    display: grid;
+    grid-template-columns: 45ch;
+    grid-template-rows: auto;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(215, 205, 205);
+}
+
+.time{
+    font-weight: bold;
+    position: absolute; left: 810px; top: 1260px;
+    font-size: 20px;
+    color: white;
+}
+h6{
+
+    color: white;
+}
+.greylike{border-radius: 60px;
+margin-bottom: 900px;}
