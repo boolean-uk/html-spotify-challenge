@@ -1,0 +1,23 @@
+.home {
+	padding: 1rem;
+	height: 90svh;
+	max-width: 85vw;
+	overflow-y: auto;
+
+	&__row {
+		margin-bottom: 3rem;
+		color: #eee;
+
+		&__title {
+			margin-bottom: 1rem;
+		}
+
+		&__data {
+			display: flex;
+			gap: 2rem;
+			overflow-x: auto;
+			max-width: 100%;
+			padding: 1em 0em;
+		}
+	}
+}

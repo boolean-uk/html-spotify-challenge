@@ -1,0 +1,27 @@
+.tab-nav {
+	padding: 0 10% 2rem 10%;
+	display: flex;
+	flex-wrap: wrap;
+	place-content: center;
+	place-items: center;
+	gap: 3em;
+
+	&__link {
+		color: #eee;
+		min-width: 2vw;
+		text-align: center;
+		position: relative;
+
+		&--selected::before {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: yellowgreen;
+			width: 50%;
+			height: 2px;
+		}
+	}
+}
