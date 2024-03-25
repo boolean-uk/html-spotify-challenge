@@ -4,9 +4,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Spotify</title>
 </head>
 <body>
+
+     <!--Header-->
+    <header>
+        <button class="upgrade-button">
+            <strong>UPGRADE</strong>
+        </button>
+    </header>
+
+     <!--Left Bar-->
+    <aside class="main-aside">
+        <section class="logo-container">
+            <a href="./index.html">
+                <img src="./assets/img/logo.svg" alt="Spotify logo">
+            </a>
+        </section>
+        <section class="browse-container">
+            <div class="home-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/home.svg" alt="Home icon">
+                </a>
+                <a href="#" class="browse-text">Home</a>
+            </div>
+            <div class="search-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/search.svg" alt="Search icon">
+                </a>
+                <a href="#" class="browse-text">Search</a>
+            </div>
+            <div class="library-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/libreria.svg" alt="Library icon">
+                </a>
+                <a href="#" class="browse-text">Your Library</a>
+            </div>
+        </section>
+        <section class="playlists-container">
+            <p>PLAYLIST</p>
+            <div class="create-playlist-container">
+                <button class="plus-icon" onclick="addPlaylist()"><span>&#43;</span></button>
+                <button class="create-playlist" onclick="addPlaylist()"><strong>Create Playlist</strong></button>
+            </div>
+            <ul id="all-playlists">
+                <li id="playlist">
+                    <a href="#">Work Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Relax Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Dinner Party Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Classical Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Lo-Fi Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Shower Playlist</a>
+                </li>
+                <li>
+                    <a href="#">Car Playlist</a>
+                </li>
+            </ul>
+        </section>
+        <section class="install-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/download.svg" alt="Download icon">
+            </a>
+            <a href="#"><small>Install app</small></a>
+        </section>
+        <section class="profile-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/profile.svg" alt="Profile picture">
+            </a>
+            <a href="#"><strong>Shaun Harris</strong></a>
+        </section>
+    </aside>
     
+    <aside class="aside-small">
+        <section class="logo-container">
+            <a href="./index.html">
+                <img src="./assets/img/logo-small.svg" alt="Spotify logo">
+            </a>
+        </section>
+        <section class="browse-container">
+            <div class="home-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/home.svg" alt="Home icon">
+                </a>
+            </div>
+            <div class="search-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/search.svg" alt="Search icon">
+                </a>
+            </div>
+            <div class="library-container">
+                <a href="#" class="browse-icon">
+                    <img src="./assets/img/libreria.svg" alt="Library icon">
+                </a>
+            </div>
+        </section>
+        <section class="install-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/download.svg" alt="Download icon">
+            </a>
+        </section>
+        <section class="profile-container">
+            <a href="#" class="profile-icon">
+                <img src="./assets/img/profile.svg" alt="Profile picture">
+            </a>
+        </section>
+    </aside>
+
+     <!--Main-->
+    <main>
+        <nav>
+            <a href="#">
+                <p>IN EVIDENCE</p>
+            </a>
+            <a href="#">
+                <p>PODCAST</p>
+            </a>
+            <a href="#">
+                <p>RANKINGS</p>
+            </a>
+            <a href="#">
+                <p>GENRES AND MOOD</p>
+            </a>
+            <a href="#">
+                <p>NEW RELEASES</p>
+            </a>
+            <a href="#">
+                <p>YOU DISCOVER</p>
+            </a>
+        </nav>
+        <section class="recently-played-container">
+            <div class="heading">
+                <p>Recently played</p>
+            </div>
+
+            <div class="all-playlists">
+                <div class="playlist">
+                    <audio src="./assets/sounds/david gray.mp3" id="david-audio" ontimeupdate="updateDavidTimes(this)"></audio>
+                    <img src="./assets/img/David Gray- White Ladder.jpg" alt="David Gray cover">
+                    <a href="#" class="hide" id="play-ethereal" onclick="playDavid()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a> 
+                    <p><strong>White Ladder</strong></p>
+                    <p><small>David Gray</small></p>
+                </div>
+
+                <div class="playlist">
+                    <audio src="./assets/sounds/vivaldi .mp3" id="vivaldi-audio"></audio>
+                    <img src="./assets/img/vivaldi-four seasons.jpg" alt="Vivaldi-cover">
+                    <a href="#" class="hide" id="play-fun" onclick="playVivaldi()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>The Four Seasons &amp; String Concerti</strong></p>
+                    <p><small>Antonio Vivaldi</small></p>
+                </div>
+                <div class="playlist">
+                    <audio src="./assets/sounds/bo-rad.mp3" id="queen-audio"></audio>
+                    <img src="./assets/img/Queen_A_Night_At_The_Opera.jpg" alt="Queen-cover">
+                    <a href="#" class="hide" id="play-happy" onclick="playQueen()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>A Night At The Opera</strong></p>
+                    <p><small>Queen</small></p>
+                </div>
+                <div class="playlist">
+                    <audio src="./assets/sounds/tchaikovsky.mp3" id="tchaikovsky-audio"></audio>
+                    <img src="./assets/img/tchaikovsky.jpg" alt="Tchaikovsky-cover">
+                    <a href="#" class="hide" id="play-dance" onclick="playTchaikovsky()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Tchaikovsky</strong></p>
+                    <p><small>The Great Composers</small></p>
+                </div>
+                <div class="playlist">
+                <audio src="./assets/sounds/aretha.mp3" id="aretha-audio"></audio>
+                 <img src="./assets/img/aretha-now.jpg" alt="Aretha-cover">
+                    <a href="#" class="hide" id="play-trap" onclick="playAretha()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Aretha Now</strong></p>
+                    <p><small>Aretha Franklin</small></p>
+                </div>
+                <div class="playlist">
+                    <audio src="./assets/sounds/tracy.mp3" id="tracy-audio"></audio>
+                    <img src="./assets/img/tracy chapman.jpg" alt="Tracy-cover">
+                    <a href="#" class="hide" id="play-sunshine" onclick="playTracy()">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </a>
+                    <p><strong>Tracy Chapman (album)</strong></p>
+                    <p><small>Tracy Chapman</small></p>
+                </div>
+            </div>
+        </section>
+        <section class="created-container">
+            <div class="heading">
+                <p>Created for Shaun Harris</p>
+                <p>
+                    <small>
+                        The more you listen, the more accurate the suggestions will be.
+                    </small>
+                </p>
+            </div>
+            <div class="all-records">
+                <div class="playlist">
+                    <img src="./assets/img/N.Y.P.C.jpg" alt="not-your-parents-classical-cover">
+                    <div class="hide">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </div>
+                    <p><strong>Not Your Parents' Classical</strong></p>
+                </div>
+                <div class="playlist">
+                    <img src="./assets/img/motownchill.jpg" alt="motown-cover">
+                    <div class="hide">
+                        <img src="./assets/img/play.svg" alt="Play button icon">
+                    </div>
+                    <p><strong>Motown Chill</strong></p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-container">
+            <div class="heading">
+                <p>Most Popular Artists</p>
+                <p>
+                    <small>
+                        The more you listen, the more accurate the suggestions will be.
+                    </small>
+                </p>
+            </div>
+            <div class="all-artists">
+                <div class="playlist">
+                    <img src="./assets/img/duffy.jpg" alt="duffy-cover" class="artist">
+                    <p><strong>Duffy</strong></p>
+                </div>
+                <div class="playlist">
+                    <img src="./assets/img/the-las.jpg" alt="the-las-cover" class="artist">
+                    <p><strong>The La's</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!--Footer-->
+
+    <footer>
+        <section class="now-playing-container">
+            <a href="#" class="now-playing-album">
+                <img src="./assets/img/David Gray- White Ladder.jpg" alt="babylon-cover">
+            </a>
+            <a href="#" class="song-name">
+                <p>
+                    Babylon 
+                    <br>
+                    <small>David Gray</small> 
+                </p>
+            </a>
+            <div class="now-playing-icons">
+                <a href="#" class="favorite-icon">
+                    <img src="./assets/img/heart.svg" alt="Favorite icon">
+                </a>
+                <a href="#" class="folders-icon">
+                    <img src="./assets/img/folder.svg" alt="Folder icon">
+                </a>
+            </div>
+        </section>
+        <section class="controls-container">
+            <div class="play-buttons-container">
+                <button class="shuffle-button" onclick="randomAudio()">
+                    <img src="./assets/img/shuffle.svg" alt="shuffle button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/previous.svg" alt="previous button icon">
+                </button>
+                <button class="play-button" onclick="playDavid()">
+                    <img src="./assets/img/footer-play.svg" alt="Play button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/next.svg" alt="Next button icon">
+                </button>
+                <button class="control-button">
+                    <img src="./assets/img/repeat.svg" alt="Repeat button icon">
+                </button>
+            </div>
+
+            <div class="song-progress-container">
+                <div class="time-played">
+                    <p id="current-time">0:25</p>
+                    </div>
+                    <input type="range" name="song-slider" id="song-slider" min="0">
+                    <div class="time-remaining">
+                        <p id="duration">4:35</p>
+                    </div>
+                </div>
+            </section>
+            <section class="settings-container">
+                <div class="setting-icons">
+                    <a href="#">
+                    <img src="./assets/img/menu.svg" alt="Menu icon">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/screen.svg" alt="Screen icon">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/sound.svg" alt="Sound icon">
+                    </a>
+                </div>
+                <input type="range" name="volume-slider" id="volume-slider" min="0" max="100">
+            </section>
+    </footer>
+
+    <script src="./audio.js"></script>
 </body>
 </html>
