@@ -606,7 +606,7 @@ footer {
 }
 
 
-@media screen and (min-width:1342px) and (max-width: 1470px) {
+@media screen and (min-width:1342px) and (max-width: 1920px) {
     .container {
         grid-template-columns: 1fr 4fr;
     }
@@ -614,3 +614,4 @@ footer {
         display: none;
     }
 }
+
