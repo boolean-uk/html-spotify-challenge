@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    padding-top: 0.5rem;
+    background-color: #010001;
+    display: grid;
+    grid-template-areas: 
+        'header main'
+        'sidebar main'
+        'footer footer';
+    grid-auto-rows: 120px 1fr 90px;
+    grid-auto-columns: 430px 1fr;
+}
+.radius {
+    border-radius: 10px;
+}
+
+header {
+    margin: 0px 0.5rem 0.5rem 0.5rem;
+    grid-area: header;
+    background-color: #131312;
+    display: grid;
+    align-items: center;
+    .home, .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 25px;
+        width: 28%;
+        height: auto;
+    }
+    .search{
+        width: 30%;
+        margin-top: -15px;
+        opacity: 80%;
+    }
+}
+
+main {
+    margin: 0px 0.5rem 0 0;
+    grid-area: main;
+    background: linear-gradient(rgba(31,31,30,255), rgba(19,19,18,255));
+    overflow: auto;
+}
+
+aside {
+    height: auto;
+    margin: 0px 0.5rem 0 0.5rem;
+    grid-area: sidebar;
+    background-color: #131312;
+    overflow: auto;
+    display: grid;
+    grid-template-areas: 
+        'nav'
+        'recents-list'
+        'sidebar-content';
+    grid-auto-rows: 200px 100px 1fr;
+    .top-sidebar {
+        margin: 5px 20px 0;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        opacity: 80%;
+        div span{
+            padding-left: 10px;
+        }
+    }
+    svg{
+        width: 22px;
+    }
+    button{
+        height: 30px;
+        width: 110%;
+        border-radius: 20px;
+        background: none;
+        border: none;
+        background-color: rgb(37, 37, 37);
+    }
+    .sidebar-buttons{
+        display: grid;
+        gap: 15px;
+        grid-auto-flow: column;
+        justify-content: left;
+        padding: 20px 0px 0px 15px;
+    }
+    nav{
+        grid-area: nav;
+        height: fit-content;
+    }
+    .recents-list{
+        grid-area: recents-list;
+        display: flex;
+        justify-content: space-between;
+        height: fit-content;
+        margin: -90px 20px 0;
+        opacity: 80%;
+    }
+    .recents-list div, span{
+        position: relative;
+        top: 24%;
+    }
+    .search-icon{
+        padding-top: 8px;
+        width: 20%;
+    }
+    .sidebar-content {
+        grid-area: sidebar-content;
+    }
+
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    grid-area: footer;
+    background-color: #010001;
+}
