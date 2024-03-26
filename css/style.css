@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #282828;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+.footer_left {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 3fr 1fr;
+}
+
+.currently_playing > img {
+    height: 55px;
+    margin: auto;
+    padding-top: 3px;
+  }
+.currently_playing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.footer_left > div > div > h6 {
+  color: white;
+    margin-top: 5px;
+    display: grid;
+    align-items: end;  
+} 
+
+.footer_left > div > div > span {
+    color: #6d6d6d;
+    padding-left: 0;
+    font-size: 10px;
+    padding-top: 7px;
+}
+
+.sidebar_box {
+    display: grid;
+    grid-template-rows: 60px auto
+}
+
+.sidebar_box > nav, .libraries_container {
+    background-color: #141922;
+}
+
+.sinister {
+    display: grid;
+
+}
+
+.like_button {
+    filter: invert(70%);
+    margin: auto;
+  }
+
+  .like_button > img {
+    margin: 5px;
+  }
+
+  .footer_middle {
+    margin: auto;
+    filter: invert(100%);
+    display: grid;
+  }
+
+  .play_options {
+   margin: auto; 
+  }
+
+  .play_options > img {
+    margin: 0 5px;
+  }
+
+  .volume_control {
+    filter: invert(70%);
+    display: flex;
+    padding: 20px;
+  }
+
+  .volume_control > img {
+     height: 15px;
+    margin: 0 5px;
+  }
+
+  .footer_right {
+    display: flex;
+  }
+
+  .song-progress {
+    margin: 5px;
+  }
+
+  .main_container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 60px;
+  }
+
+  .main_sidebar {
+    display: grid;
+    grid-template-columns: 190px 5fr;
+    grid-template-rows: 93vh;
+  }
+
+  p,
+  span {
+    font-size: 12px;
+  }
+
+  span {
+    padding-left: 15px;
+  }
+
+  .libraries_container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-left:  20px;
+  }
+
+  .already_played, 
+  .for_Ras_Nono, 
+  .favourites {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  aside.sidebar_box > div {
+    display: grid;
+    grid-template-columns: 20px auto;
+    padding-left: 15px; 
+  }
+
+  .header_right_box {
+    color: white;
+    background-color: #080b12;
+    text-align: end;
+    padding: 20px;
+  }
+
+  .header_right_box > p {
+    border: 1px solid white;
+    display: inline;
+    padding: 5px 35px;
+    border-radius: 50px;
+  }
+
+   aside.sidebar_box {
+    background-color: black;
+    color:#6d6d6d;
+   }
+
+   .favourites > div > img {
+    border-radius: 20rem;
+
+   }
+
+   section > div > img {
+    height: 170px;
+  }
+
+  .already_played > div,
+  .for_Ras_Nono > div,
+  .favourites > div {
+
+    text-align: center;
+    display: grid;
+    height: auto;
+    width: min-content;
+
+  }
+
+  .libraries_container strong,  h3 {
+    color: white;
+  }
+
+  .libraries_container p, li {
+    color:#6d6d6d;
+  }
+
+  ul {
+    list-style: none;
+    margin: auto;
+  }
+
+.plus {
+    background-color: white;
+    padding: 5px;
+    height: 30px;
+    font-size: large;
+  }
+
+  .create_playlist > p {
+    padding: 10px;
+  }
+  .create_playlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+    padding: 10px 0 0 0;
+  }
+  .first_logo p {
+    padding: 3px;
+    margin-left: 10px;
+  }
+  .second_logo > p {
+    color: white;
+  }
+
+  [alt|="id"] {
+    border-radius: 50px;
+    background-color: grey;
+  }
+
+  .app_install {
+    margin-bottom: 5px;
+    margin-top: 180px;
+  }
+
+  .h3 {
+    margin-bottom: 20px;
+  }
+  .h3 > p {
+    margin-top: 10px;
+  }
+  .h3 > h3 {
+    margin-top: 30px;
+  }
+
+  div.main_sidebar > nav {
+    display: flex;
+    height: 60px;
+    width: 100%;
+  }
+  li {
+    margin: 0 5px;
+    float: left;
+  }
+
+  div.first_logo:nth-child(2) {
+    border-left: 2px solid #ce23f0;
+    transition: 1s;
+
+  }
+
+  div.app_install:after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 550%;
+    padding-top: 5px;
+    border-bottom: 2px solid grey;
+  }
+  li:nth-child(1):after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 5px;
+    border-bottom: 2px solid #ce23f0;
+  }
+
+  @media screen and (min-width: 500px) {
+    [alt|="small-logo"] {
+      display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    aside.sidebar_box p,
+    span {
+      display: none;
+    }
+    .create_playlist > strong {
+      display: none;
+    }
+    [alt|="library"] {
+      display: grid;
+      margin-bottom: auto;
+    }
+    .app_install {
+      margin-top: 400px;
+    }
+    [alt|="logo"] {
+      display: none;
+    }
+    .main_sidebar {
+      display: grid;
+      grid-template-columns: 60px 5fr;
+    }
+
+  }
+
+  
