@@ -9,12 +9,14 @@
     font-weight: bold;
 }
 body {
+    --opache: 80%;
     margin: 0;
     height: 100vh;
     padding-top: 0.5rem;
     background-color: #010001;
     display: grid;
-    grid-template-areas: 
+    grid: wrap;
+    grid-template-areas:
         'header main'
         'sidebar main'
         'footer footer';
@@ -42,16 +44,179 @@ header {
     .search{
         width: 30%;
         margin-top: -15px;
-        opacity: 80%;
+        opacity: var(--opache);
     }
 }
 
 main {
+    padding: 0px 25px 20px;
     margin: 0px 0.5rem 0 0;
     grid-area: main;
-    background: linear-gradient(rgba(31,31,30,255), rgba(19,19,18,255));
+    background: linear-gradient(rgba(56,56,56,255), rgba(15,15,15,255), rgba(13,13,12,255));
     overflow: auto;
+    nav {
+        padding: 20px 25px;
+        display: grid;
+        height: 20dvh;
+        grid-template-areas:
+            'top-nav'
+            'bottom-nav';
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(36,36,36,255);
+        margin: 0 -25px;
+    }
+
+    .top-nav{
+        grid-area: top-nav;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-nav{
+        grid-area: bottom-nav;
+        margin-top: 25px;
+    }
+    .nav-arrows button{
+        border-radius: 50%;
+        border: none;
+        background: none;
+        background-color: rgb(17, 17, 17);
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+        padding-left: 10px;
+    }
+    .nav-arrows{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 8px;
+    }
+    .top-nav-right button{
+        border-radius: 20px;
+        background: none;
+        border: none;
+        background-color: rgb(49, 49, 49);
+        height: 30px;
+        width: 110%;
+        font-size: 14px;
+        place-self: center;
+        font-weight: bolder;
+    }
+    .top-nav-right{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+    }
+    .top-nav-right span{
+        position: relative;
+        top: 10%;
+        align-self: center;
+    }
+    .top-nav-right .round{
+        border-radius: 50%;
+    }
+    .material-symbols-outlined{
+        font-size: 20px;
+    }
+    .bottom-nav button{
+        border-radius: 20px;
+        background: none;
+        border: none;
+        background-color: rgb(49, 49, 49);
+        height: 30px;
+        width: 100%;
+    }
+    .bottom-nav{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        width: 50dvh;
+    }
+    .bottom-nav .white-but, .top-nav-right .white-but{
+        background-color: aliceblue;
+        color: #010001;
+    }
+    .top-nav-right .black-back{
+        background-color: black;
+    }
+    .top-nav-right .justified{
+        position: relative;
+        top: 15%;
+        padding-bottom: 20px;
+    }
+    .top-nav-right .unique{
+        background-color: rgb(117, 61, 41);
+        border: 5px solid rgb(26, 25, 25);
+        color: #010001;
+        font-weight: bolder;
+        height: 35px;
+    }
 }
+
+.end-main{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    height: fit-content;
+}
+
+.lists {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 60px;
+    ul {
+        margin-top: 20px;
+    }
+}
+.lists li {
+    list-style: none;
+    justify-content: left;
+    font-weight: 400;
+    margin: 10px 0 0 -38px;
+    opacity: var(--opache);
+}
+.socials {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+.socials svg {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color: rgb(49, 49, 49);
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+hr {
+    margin: 30px 0;
+    opacity: 15%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    opacity: var(--opache);
+}
+.next-row {
+    margin-top: 15px;
+    display: flex;
+    font-size: small;
+    gap: 15px;
+    opacity: var(--opache);
+}
+
 
 aside {
     height: auto;
@@ -70,7 +235,7 @@ aside {
         display: flex;
         align-content: center;
         justify-content: space-between;
-        opacity: 80%;
+        opacity: var(--opache);
         div span{
             padding-left: 10px;
         }
@@ -103,7 +268,7 @@ aside {
         justify-content: space-between;
         height: fit-content;
         margin: -90px 20px 0;
-        opacity: 80%;
+        opacity: var(--opache);
     }
     .recents-list div, span{
         position: relative;
@@ -126,3 +291,24 @@ footer {
     grid-area: footer;
     background-color: #010001;
 }
+
+.stretcher {
+    display: flex;
+    justify-content: space-between;
+}
+h2 {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.grid-layout {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    overflow: hidden;
+    margin: 20px 0 40px;
+}
+section p {
+    font-size: small;
+}
+
