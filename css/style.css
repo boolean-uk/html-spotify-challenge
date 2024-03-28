@@ -81,7 +81,8 @@ aside.sidebar {
 
 .sidebar .profile {
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .sidebar .profile ul {
@@ -90,7 +91,8 @@ aside.sidebar {
 
 .sidebar .profile ul li {
     padding-bottom: 5px;
-}
+    margin-bottom: 10px; 
+    }
 
 .sidebar .profile ul li a {
     color: #b3b3b3;
@@ -279,22 +281,17 @@ footer {
     --primary-color: #ddd;
     --secondary-color: #999;
     --green-color: 2d5;
-    --padding: 1em;
+    --padding:0;
     background-color: #111;
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
     height: 7rem;
-    padding: var(--padding);
     color: var(--primary-color);
 }
 
 .song-bar {
     position: absolute;
-    left: var(--padding);
-
+    left: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
