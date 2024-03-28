@@ -1,4 +1,5 @@
 
+/* @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book); */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -240,9 +241,16 @@ aside {
         div span{
             padding-left: 10px;
         }
+        .button-hover {
+            border-radius: 50%;
+            height: 25px;
+            padding-left: 5px;
+        }
     }
     svg{
-        width: 22px;
+        width: 30px;
+        border-radius: 50%;
+        padding: .3em;
     }
     button{
         height: 30px;
@@ -277,7 +285,7 @@ aside {
     }
     .recents-list div, span{
         position: relative;
-        top: 24%;
+        top: 16%;
     }
     .search-icon{
         padding-top: 8px;
@@ -294,10 +302,12 @@ aside {
 
 
 footer {
-    position: fixed;
     width: 100%;
     grid-area: footer;
     background-color: #010001;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
 }
 
 .stretcher {
@@ -317,13 +327,22 @@ h2 {
 .grid-layout {
     display: grid;
     grid-auto-flow: column;
-    gap: 20px;
+    /* gap: 5px; */
     overflow: hidden;
     margin: 20px 0 40px;
     h5 {
         margin-top: 5px;
         font-weight: 900;
         font-family: sans-serif;
+    }
+    div {
+        width: 175px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    img {
+        width: 155px;
+        border-radius: 6px;
     }
 }
 .main-body p {
@@ -352,3 +371,125 @@ h2 {
     }
 }
 
+.button-hover:hover {
+    background-color: rgb(64, 64, 64);
+}
+.sidebar-content article:hover, .grid-layout div:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.stretcher h2:hover, .stretcher h5:hover, .lists li:hover {
+    text-decoration: underline;
+}
+
+.scale-hover:hover {
+    scale: 1.05;
+}
+
+.opacity-hover:hover, .lists li:hover {
+    opacity: 100%;
+}
+
+.footer article {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.music-player {
+    --primary-color: #ddd;
+    --secondary-color: #999;
+    --green-color: #2d5;
+    --padding: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+i{
+    color: var(--secondary-color);
+}
+i:hover{
+    color: var(--primary-color);
+}
+
+.progress-controller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .8em;
+    color: var(--secondary-color);
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.play-pause{
+    display: inline-block;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #ccc4;
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.progress-bar:hover .progress{
+    background-color: var(--green-color);
+}
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    --size: 1em;
+    width: var(--size);
+    height: var(--size);
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%, calc(2px - 50%));
+}
+.other-features{
+    position: absolute;
+    right: var(--padding);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.volume-bar .progress-bar{
+    width: 6em;
+}
+.volume-bar .progress-bar:hover .progress::after{
+    --size: .8em;
+}
