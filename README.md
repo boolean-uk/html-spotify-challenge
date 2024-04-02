@@ -1,21 +1,21 @@
-# Spotify
-Today we are building the UI for Spotify. This exercise will put into practice everything we have learned about HTML & CSS. Layouts for apps are different to websites so this will put your CSS Grid skills to the test!
+# Spotify Clone
 
-## Instructions
-In the `screens` folder you will see images of spotify at different resolutions. Your goal is replicate this layout structure as closely as possible. The image assets needed to complete the exercise are in the `assets/img` folder.
+## Description
 
-For the player icons, you can use your own images or Font Awesome icons (https://fontawesome.com/v4.7/icons/).
+A responsive static replica of the Spotify Premium homepage, created using HTML and CSS. The project aimed to recreate visual layout and design elements of the Spotify Premium homepage
 
-## Assesment Criteria
-* &#9745; The overall structure of the layout reflects the `spotify-lg.png` reference image. 
-* &#9745; Fonts, colors and spacings used are similar (they don't need to be identical) to the reference images
-* &#9745; CSS avoids repetition.
-* &#9745; CSS class names are descriptive.
-* &#9745; HTML is semantic and well structured.
+## Preview
 
-### Extension Criteria
-* &#9745; The left menu collapses as shown in `spotify-xs.png`.
-* &#9745; The list of albums expands and collapses to fill the available page space (see `spotify-md.png` and `spotify-s.png`)
-* &#9745; The top navigation list wraps as the page size is reduced.
-* &#9745; On hovering over cover images, a play icon appears overlaid.
-* &#9745; Only the main content area scrolls - it moves behind the upgrade bar and the player controls. The side menu also stays fixed as the main content scrolls.
+To explore a preview of this project online, simply click [here](https://htmlpreview.github.io/?https://github.com/yee0802/html-spotify-challenge/blob/main/index.html)
+
+## Screenshot
+
+![Project Preview](/preview.png)
+
+## Note
+
+This project is for educational and demonstration purposes only, aimed at showcasing HTML and CSS skills in replicating web layouts. It is not affiliated with or endorsed by Spotify
+
+## Credits
+
+Created by Kye Yee as part of a module challenge provided by [Boolean UK](https://boolean.co.uk/)
