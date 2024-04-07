@@ -4,9 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Heebo?stroke=Sans+Serif">
+    <title>spotify</title>
 </head>
 <body>
-    
+    <div class="main-grid">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="nav-components">
+                <div class="component">
+                    <img src="./assets/img/home.svg" alt="home">
+                    <a href="#">Home</a>
+                </div>
+                <div class="component">
+                    <img src="./assets/img/search.svg" alt="search">
+                    <a href="#">Search</a>
+                </div>
+                <div class="component">
+                    <img src="./assets/img/libreria.svg" alt="library">
+                    <a href="#">Your Library</a>
+                </div>
+            </div>
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <div class="create-playlist">
+                    <img src="./assets/img/add.svg" alt="plus">
+                    <a href="#">Create Playlist</a>
+                </div>
+                <div class="playlist-list">
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                    <div class="playlist-item">
+                        <a href="#">Playlist Name</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./assets/img/profile.svg" alt="profile">
+                <a href="#">John Doe</a>
+            </div>
+        </nav>
+        <div class="main-box">
+            <header class="header">
+                <a href="#">Upgrade</a>
+            </header>
+            <header class="sub-header">
+                <div class="nav-elements">
+                    <a href="#">Overview</a>
+                    <a href="#">Charts</a>
+                    <a href="#">Genres & Moods</a>
+                    <a href="#">New Releases</a>
+                    <a href="#">News</a>
+                    <a href="#">Discover</a>
+                </div>
+            </header>
+            <article class="main-display">
+                <section class="recently-played">
+                    <h2>Recently Played</h2>
+                    <section class="album-carousel">
+                        <div class="album">
+                            <img src="./assets/img/Nightwish_Wishmaster.jpg" alt="wishmaster">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">Wishmaster</a>
+                            <p>Nightwish</p>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/Kraftwerk_-_The_Man-Machine.png" alt="the-man-machine">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">The Man Machine</a>
+                            <p>Kraftwerk</p>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/Nik-Kershaw-Human-Racing.jpg" alt="human-racing">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">Human Racing</a>
+                            <p>Nik Kershaw</p>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/Nightwish_imaginaerum_cover.jpg" alt="imaginaerum">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">Imaginaerum</a>
+                            <p>Nightwish</p>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/Queen_A_Kind_Of_Magic.png" alt="akom">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">A Kind of Magic</a>
+                            <p>Queen</p>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/Metallica_-_...And_Justice_for_All_cover.jpg" alt="ajfa">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">...And Justice For All</a>
+                            <p>Metallica</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="created-for-you">
+                    <h2>Created for you</h2>
+                    <section class="album-carousel">
+                        <div class="album">
+                            <img src="./assets/img/this-is-metallica.jpg" alt="metallica">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">This Is Metallica</a>
+                        </div>
+                        <div class="album">
+                            <img src="./assets/img/this-is-nightwish.jpg" alt="nightwish">
+                            <div class="overlay">
+                                <img src="./assets/img/play.svg" alt="play">
+                            </div>
+                            <a href="#">This Is Nightwish</a>
+                        </div>
+                    </section>
+                </section>
+                <section class="artists">
+                    <h2>Artists you may like</h2>
+                    <section class="album-carousel">
+                        <div class="artist">
+                            <img src="./assets/img/megadeth.jpg" alt="megadeth">
+                            <a href="#">Megadeth</a>
+                        </div>
+                        <div class="artist">
+                            <img src="./assets/img/slayer.jpg" alt="slayer">
+                            <a href="#">Slayer</a>
+                        </div>
+                        <div class="artist">
+                            <img src="./assets/img/Epicaband.jpg" alt="epica">
+                            <a href="#">Epica</a>
+                        </div>
+                    </section>
+                </section>
+            </article>
+        </div>
+        <footer class="play-tools">
+            <div class="playback-left">
+                <img src="./assets/img/Nightwish_imaginaerum_cover.jpg" alt="imaginaerum">
+                <div class="playback-info">
+                    <p>Storytime</p>
+                    <p>Nightwish</p>
+                </div>
+                <div class="song-icons">
+                    <img src="./assets/img/heart.svg" alt="heart">
+                    <img src="./assets/img/folder.svg" alt="folder">
+                </div>
+            </div>
+            <div class="playback-mid">
+                <div class="controls">
+                    <img src="./assets/img/shuffle.svg" alt="shuffle">
+                    <img src="./assets/img/previous.svg" alt="previous">
+                    <img src="./assets/img/play.svg" alt="play">
+                    <img src="./assets/img/next.svg" alt="next">
+                    <img src="./assets/img/repeat.svg" alt="repeat">
+                </div>
+                <div class="playback-time">
+                    <p>0:00</p>
+                    <input type="range" min="0" max="100" value="50">
+                    <p>3:00</p>
+                </div>
+            </div>
+            <div class="playback-right">
+                <img src="./assets/img/devices.svg" alt="devices">
+                <img src="./assets/img/queue.svg" alt="queue">
+                <img src="./assets/img/volume.svg" alt="volume">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </footer>
+    </div>  
 </body>
 </html>
