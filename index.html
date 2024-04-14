@@ -4,9 +4,334 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header id="main-header">
+        <div class="spotify-logo-container black-background left-menu phone-specific-format">     
+            <div id="logo-container"> 
+                <img id="logo" src="./assets/svg/spotify-logo-svgrepo-com.svg">     
+            </div>
+            <div id="h1-container">
+            <h1 class="black-background desktop-only">Spotify<span class="desktop-only" id="r">®</span>
+            </h1>
+            </div>
+        </div>      
+        <button id="upgrade"><h3>effetua l'upgrade</h3></button>
+    </header>
+    <main>
+<!--left-hand side of the interface - menu-->
+        <section id="side-menu" class="black-background left-menu phone-specific-format">
+            <header id="general-menu" class="black-background left-menu phone-specific-format">
+                <nav id="general-nav">
+                    <ul>
+                        <li>
+                            <a href="#home" class="icon-next-to-text hover-side-border">
+                                <img class="big-icon placed" src="./assets/svg/home-svgrepo-com.svg">
+                                <h4 class="aligned desktop-only">Home</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#search" class="icon-next-to-text hover-side-border">
+                                <img class="big-icon" src="./assets/svg/search-svgrepo-com.svg">
+                                <h4 class="aligned desktop-only">Cerca</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#library" class="icon-next-to-text hover-side-border">
+                                <img class="big-icon" src="./assets/svg/music-library-multimedia-svgrepo-com.svg">
+                                <h4 class="aligned desktop-only">La tua libreria</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="playlist-menu" class="left-menu black-background desktop-only">
+              <h3 class="color-white">playlist</h3>
+              <nav id="playlist-nav">
+                <ul>
+                    <li class="hover-color">
+                        <a href="#new" id="new-playlist-container" class="icon-next-to-text">
+                            <div id="new-playlist"><img class="big-icon" src="./assets/svg/plus-svgrepo-com.svg">
+                            </div>
+                            <h4 id="create-playlist" class="aligned">Crea Playlist</h4>
+                        </a>
+                    </li>
+                    <li class="hover-color">
+                        <a href="#playlist1"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist2"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist3"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist4"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist5"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist6"><p>Nome Playlist</p></a>
+                    </li>
+                    <li  class="hover-color">
+                        <a href="#playlist7"><p>Nome Playlist</p></a>
+                    </li>
+                </ul>
+              </nav>
+            </section>
+            <footer class="black-background left-menu phone-specific-format">
+              <div id="download-app" class="icon-next-to-text hover-color phone-specific-format">
+                <img class="small-icon placed" src="./assets/svg/arrow-button-down-2-svgrepo-com.svg">
+                <a><p class="desktop-only">Installa app</p></a>
+              </div>
+              <div id="profile" class="icon-next-to-text hover-underline phone-specific-format">
+                 <div class="round-container" id="">
+                    <img src="">
+                 </div>
+                 <h4 class="color-white aligned desktop-only">Nome Cognome</h4>
+              </div>
+            </footer>
+        </section>
+<!--main interface area - displays albums sorted by category-->
+        <section id="main-content">
+          <header id="categories-menu">
+            <nav id="categories-nav">
+                <ul>
+                    <li>
+                        <a href="#highlights" class="hover-line-below">
+                            <h3>in evidenza</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#podcast"
+                        class="hover-line-below">
+                            <h3>podcast</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#classifications"
+                        class="hover-line-below">
+                            <h3>classifiche</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#genre"
+                        class="hover-line-below">
+                            <h3>generi e modo</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#new-releases"
+                        class="hover-line-below">
+                            <h3>nuove uscite</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#discover"
+                        class="hover-line-below">
+                            <h3>scorpi</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+          </header>
+          <section id="display-content">
+            <section class="category" id="recent">
+                <header class="category-header">
+                    <h2>Recently played</h2>
+                    <p></p>
+                </header>
+                <section class="playlists-container">
+                    <a class="album">
+                        <div class="img-container">
+                            <img src="./assets/img/metal_lifting.jpg">
+                        </div>
+                        <div class="hover-img-container">
+                            <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                        </div>
+                        <h3 class="album-title">Heavy Metal</h3>
+                        <p class="desktop-only">Subtitle</p> 
+                    </a>
+                    <a class="album">
+                            <div class="img-container">
+                                <img src="./assets/img/stranger.jpeg">
+                            </div>
+                            <div class="hover-img-container">
+                                <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                            </div>
+                            <h3 class="album-title">Stranger Things, Vol. 1 (a Netflix Original Series Strack)</h3>
+                            <p class="desktop-only">Kylae Dixon [&] Michael Stein</p>
+                    </a>   
+                    <a class="album">
+                            <div class="img-container">
+                                <img src="./assets/img/aquietplace.jpeg">
+                            </div>
+                            <div class="hover-img-container">
+                                <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                            </div>
+                            <h3 class="album-title">A quiet place</h3>
+                            <p class="desktop-only">Subtitle</p>
+                    </a>
+                    <a class="album">
+                            <div class="img-container">
+                                <img src="./assets/img/split.jpeg">
+                            </div>
+                            <div class="hover-img-container">
+                                <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                            </div>
+                            <h3 class="album-title">Split</h3>
+                            <p class="desktop-only">Subtitle</p>
+                    </a>
+                    <a class="album">
+                            <div class="img-container">
+                                <img src="./assets/img/cure.jpeg">
+                            </div>
+                            <div class="hover-img-container">
+                                <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                            </div>
+                            <h3 class="album-title">A cure for wellness</h3>
+                            <p class="desktop-only">Subtitle</p>
+                    </a>
+                    <a class="album">
+                            <div class="img-container">
+                                <img src="./assets/img/sinister.jpeg">
+                            </div>
+                            <div class="hover-img-container">
+                                <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                            </div>
+                            <h3 class="album-title">Sinister</h3>
+                            <p class="desktop-only">Subtitle</p>
+                    </a>
+                </section>
+            </section>
+            <section class="category" id="created-for">
+                <header class="category-header">
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                </header>
+                <section class="playlists-container">
+                    <a class="album"> 
+                        <div class="img-container">
+                            <img src="./assets/img/radar.jpeg">
+                        </div>
+                        <div class="hover-img-container">
+                            <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                        </div>
+                        <h3 class="album-title">Release Radar</h3>
+                        <p class="desktop-only"></p>
+                    </a>   
+                    <a class="album">
+                        <div class="img-container">
+                            <img src="./assets/img/mixdaily.jpeg">
+                        </div>
+                        <div class="hover-img-container">
+                            <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                        </div>
+                        <h3 class="album-title">Daily Mix 1</h3>
+                        <p class="desktop-only"></p>
+                    </a>   
+                </section>
+            </section>
+            <section class="category" id="popular-artists">
+                <header class="category-header">
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                </header>
+                <section class="playlists-container">
+                    <a class="artist album">
+                        <div class="img-container round-container">
+                            <img src="./assets/img/youg.jpeg">
+                        </div>
+                        <div class="hover-img-container">
+                            <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                        </div>
+                        <h3 class="album-title">Lana Del Rey</h3>
+                        <p class="desktop-only"></p>       
+                    </a>
+                    <a class="artist album">
+                        <div class="img-container round-container">
+                            <img src="./assets/img/einaudi.jpeg">
+                        </div>
+                        <div class="hover-img-container">
+                            <img class="hover-play" src="./assets/svg/video-playback-mark-white-svgrepo-com.svg">
+                        </div>
+                        <h3 class="album-title">Ludovico Einaudi</h3>
+                        <p class="desktop-only"></p>       
+                    </a>
+                </section>
+            </section>
+          </section>
+         </section>
+    </main>
+<!--bottom area of the interface - displays mostly audio-related info and controls-->
+    <footer id="main-footer">
+        <div id="display-track">
+            <div>
+                <img id="current-track-img" src="https://www.musewiki.org/images/thumb/Deadstarcdcover.jpg/450px-Deadstarcdcover.jpg">
+            </div>          
+            <div class="aligned hover-underline">
+                <h4>Futurism</h4>
+                <p>Muse</p>
+            </div>
+            <div class="aligned">
+                <img class="small-icon desktop-only" src="./assets/svg/heart-svgrepo-com.svg">
+            </div>
+            <div class="aligned">
+                <img class="small-icon desktop-only" src="./assets/svg/folder-svgrepo-com.svg">
+            </div>
+        </div>
+        <div id="player">
+            <div id="player-controls">
+                <div class="placed">
+                    <img class="small-icon desktop-only" src="assets/svg/shuffle-1-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/control-button-inv-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/video-playback-mark-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon" src="assets/svg/control-button-svgrepo-com.svg">
+                </div>
+                <div class="placed">
+                    <img class="small-icon desktop-only" src="assets/svg/reload-svgrepo-com.svg">
+                </div>
+            </div>
+            <div id="player-display">
+                <p class="placed">00:01</p>
+                <progress class="placed"></progress>
+                <p class="placed">03:27</p>
+            </div>
+        </div>
+        <div id="settings-shortcuts">
+            <div class="placed">
+                <img class="small-icon" src="assets/svg/burger-menu-svgrepo-com.svg">
+            </div>
+            <div class="placed">
+                <img class="small-icon" src="assets/svg/desktop-svgrepo-com.svg">
+            </div>
+            <div class="placed">
+                <img class="small-icon" src="assets/svg/volume-up-svgrepo-com.svg">
+            </div>
+            <progress class="placed desktop-only" id="volume"></progress>
+        </div>
+    </footer>
 </body>
 </html>
+
+<!-- Assesment Criteria
+☑ The overall structure of the layout reflects the spotify-lg.png reference image.
+☑ Fonts, colors and spacings used are similar (they don't need to be identical) to the reference images
+☑ CSS avoids repetition.
+☑ CSS class names are descriptive.
+☑ HTML is semantic and well structured.
+Extension Criteria
+☑ The left menu collapses as shown in spotify-xs.png.
+☑ The list of albums expands and collapses to fill the available page space (see spotify-md.png and spotify-s.png)
+☑ The top navigation list wraps as the page size is reduced.
+☑ On hovering over cover images, a play icon appears overlaid.
+☑ Only the main content area scrolls - it moves behind the upgrade bar and the player controls. The side menu also stays fixed as the main content scrolls. -->
