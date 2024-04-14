@@ -1,12 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="app-download-button">
+        <button class="download-button"> <a href="https://www.spotify.com/us/download/android/">Asenna sovellus</a></button>
+    </div> 
+    <h1>Päivitä Premiumiin</h1>
+  </header>
+
+  <nav>
+    <img src="assets/img/logo.svg" alt="Spotify-logo nimellä" class="filter-green-to-white">
+    <div class="grid-rows-auto">
+      <div class="focus left-nav-button">
+        <img src="assets/img/home.svg"  alt="Koti-kuvake" class="filter-white-home svg">
+        <h2>Koti</h2>
+      </div>
+      
+     <div class=" left-nav-button">
+        <img src="assets/img/search.svg" alt="Haku-kuvake" class="filter-white-home svg">
+        <h2>Haku</h2>
+      </div>
+
+      <div class=" left-nav-button">
+        <img src="assets/img/libreria.svg" alt="Kirjasto-kuvake" class="filter-white-home  svg">
+        <h2>Kirjasto</h2>
+      </div>
+    </div>
+
+    <h1>Soittolistat</h1>
+
+    <div class="create-playlist">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" d="M256 176v160M336 256H176"/></svg>
+      <h3>Luo soittolista</h3>
+    </div>
     
+    <div class="playlists">
+      <h4>Tykkätyt kappaleet</h4>
+      <h4>Podcastit ja ohjelmat</h4>
+      <h4>Duffy</h4>
+      <h4>Estate</h4>
+      <h4>Relax</h4>
+      <h4>Peter</h4>
+      <h4>Karaoke</h4>
+      <h4>Adele</h4>
+      <h4>PSY</h4>
+    </div>
+
+    <hr>
+
+    <div class="profile">
+      <button>
+        <img src="assets/profilepic/images.jpg" alt="Käyttäjän profiilikuva">
+        <h5>Vi</h5>
+      </button>
+    </div>
+
+  </nav>
+        
+
+  <main>
+    
+    <section class="sub-header">
+      <h1>Koti</h1>
+      <h1>Podcastit</h1>
+      <h1>Top-listat</h1>
+      <h1>Genret ja tunnelmat</h1>
+      <h1>Uudet julkaisut</h1>
+      <h1>Löydöt</h1>
+    </section>
+
+    <section class="recent category">
+      <h1>Äskettäin soitettu</h1>
+      <div class="grid-columns-auto">
+        <div class="card">
+          <img src="playlistimg/bush.jpg" alt="Bush" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Bush</h2>
+        </div>
+        
+        <div class="card">
+          <img src="playlistimg/chachacha.jpg" alt="Käärija" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Käärija</h2>
+        </div>
+        
+        <div class="card">
+          <img src="playlistimg/Duffy.jpg" alt="Duffy" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Duffy</h2>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/Estate.jpg" alt="Estate" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Estate</h2>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/familyman.jpg" height="100%" alt="Peter" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Peter</h2>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/gentle man.png" alt="PSY" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>PSY</h2>
+        </div>
+        <div class="card">
+          <img src="playlistimg/gentle man.png" alt="PSY" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>PSY</h2>
+        </div>
+        <div class="card">
+          <img src="playlistimg/gentle man.png" alt="PSY" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>PSY</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="made-for-user category">
+      <h1>Sinulle tehtyjä</h1>
+      <div class="grid-columns-auto">
+        <div class="card">
+
+          <img src="./playlistimg/dance songs.jpg" height="100%" alt="Tanssi vauva tanssi" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Tanssi vauva tanssi</h2>
+          <h3>Kyllä vain</h3>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/karaoke.jpg" alt="Karaoke" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Karaoke</h2>
+          <h3>Tarvitsetko jotakin juotavaa</h3>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/lovesongs.jpg" alt="Rakkauslaulut" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Rakkauslaulut</h2>
+          <h3>Todellako?</h3>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/sad songs.jpg" height="100%" alt="Surulliset laulut" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Surulliset laulut</h2>
+          <h3>tai Elämä</h3>
+        </div>
+        <div class="card">
+          <img src="playlistimg/sad songs.jpg" height="100%" alt="Surulliset laulut" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Surulliset laulut</h2>
+          <h3>tai Elämä</h3>
+        </div>        
+        <div class="card">
+          <img src="playlistimg/sad songs.jpg" height="100%" alt="Surulliset laulut" class="cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Surulliset laulut</h2>
+          <h3>tai Elämä</h3>
+        </div>
+
+        <div class="card">
+          <img src="playlistimg/vittunvittu.jpg" height="100%" alt="Vittun" class="cover">
+           <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+            </div>
+          <h2>Vittun</h2>
+          <h3>vittunvittu</h3>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="fav-artists category">
+      <h1>Suosikkitaiteilijat</h1>
+      <div class="grid-columns-auto">
+        <div class="card">
+          <img src="madeforyou/adele.jpg" alt="Adele" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Adele</h2>
+          <h3>Country</h3>
+        </div>
+
+        <div class="card">
+          <img src="madeforyou/akon.jpg" alt="Akon" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Akon</h2>
+          <h3>Rap</h3>
+        </div>
+
+        <div class="card">
+          <img src="madeforyou/arty.jpg" alt="Arty" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Arty</h2>
+          <h3>Jotain</h3>
+        </div>
+
+        <div class="card">
+          <img src="madeforyou/Lawn.jpg" height="100%" alt="Lawn" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Lawn</h2>
+          <h3>Mahdollisesti</h3>
+        </div>
+
+        <div class="card">
+          <img src="madeforyou/Louise.jpg" alt="Louise" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Louise</h2>
+          <h3>Taiteilija</h3>
+        </div>
+
+        <div class="card">
+          <img src="madeforyou/Ophelia.jpg" alt="Ophelia" class="artist-pfp cover">
+          <div class="floating-play-button">
+            <img src="assets/buttons/greenbutton.png" alt="Toista-painike" class="filter-green">
+          </div>
+          <h2>Ophelia</h2>
+          <h3>Jotenkin</h3>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+
+    <div class="curr-song">
+      <img src="playlistimg/psy.jpg" alt="Tällä hetkellä soiva kansi" class="curr-song-cover">
+      <div class="display-inline">
+        <h1>Psy</h1>
+        <h2>Gangnum tyyli</h2>
+      </div>
+      <div class="media-query-display">
+        <img src="assets/buttons/like-o-svgrepo-com.svg" alt="Tykkää" class="filter-off-white like">
+        <img src="assets/buttons/add-to-queue-svgrepo-com.svg" alt="Lisää kirjastoon" class="filter-off-white add-to-library">
+      </div>
+    </div>
+
+    <div class="media-keys">
+      <img src="assets/buttons/shuffle-1-svgrepo-com.svg" alt="Sekoita" class="filter-off-white">
+
+      <img src="assets/buttons/previous-svgrepo-com.svg" alt="Edellinen" class="filter-off-white">
+
+      <img src="assets/buttons/play-circle-svgrepo-com.svg" alt="Toista" class="filter-white play">
+
+      <img src="assets/buttons/next-svgrepo-com.svg" alt="Seuraava" class="filter-off-white">
+
+      <img src="assets/buttons/repeat-02-svgrepo-com.svg" alt="Toista uudelleen" class="filter-off-white">
+
+    </div>
+
+    <div class="progress-bar">
+      <input type="range" min="-1" max="100" value="0" class="bar">
+    </div>
+
+    <div class="volume">
+      <img src="assets/buttons/play-990-svgrepo-com.svg" alt="Soittolista" class="filter-white">
+      <img src="assets/buttons/desktop-231-svgrepo-com.svg" alt="Työpöytä" class="filter-white">
+      <img src="assets/buttons/volume-max-svgrepo-com.svg" alt="Äänenvoimakkuus" class="filter-white">
+      <div class="volume2">
+        <input type="range" min="-1" max="100" value="0" class="volume-bar">
+      </div>
+      
+    </div>
+
+  </footer>
 </body>
 </html>
