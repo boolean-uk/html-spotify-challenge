@@ -4,9 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Spotify-Challenge</title>
 </head>
 <body>
-    
+   <header class="radius">
+    <div class="home"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>Home</div>
+    <div class="search"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>Search</div>
+   </header>
+   <aside class="sidebar radius">
+    <nav>
+        <div class="top-sidebar">
+            <div class="Library"><span><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg></span> Your Library</div>
+            <div><span class="material-symbols-outlined button-hover">Add</span><span class="material-symbols-outlined button-hover">arrow_forward</span></div>
+        </div>
+        <div class="sidebar-buttons">
+            <button class="button-hover">Playlists</button>
+            <button class="button-hover">Artists</button>
+            <button class="button-hover">Albums</button>
+        </div>
+    </nav>
+    <section class="recents-list">
+        <div class="search-icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="button-hover"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg></div>
+        <div class="scale-hover opacity-hover">Recents <span class="material-symbols-outlined">list</span></div>
+    </section>
+    <section class="sidebar-content">
+        <article>
+            <img src="assets/library/library-img (5).png" alt="">
+            <p><b>Liked Songs</b><br><span>Playlist &#8226 130 songs</span></p>
+        </article>
+        <article>
+            <img src="assets/library/library-img (9).png" alt="">
+            <p><b>Hot Hits Italia</b><br><span>Playlist &#8226 Spotify</span></p>
+        </article>
+        <article>
+            <img src="assets/library/library-img (19).png" alt="">
+            <p><b>FATHER OF 4</b><br><span>Album &#8226 Offset</span></p>
+        </article>
+        <article><img src="assets/library/library-img (4).png" alt=""><p><b>This Is Anne-Marie</b><br><span>Playlist &#8226 Spotify</span></p></article>
+        <article><img src="assets/library/library-img (12).png" alt=""><p><b>Beerbongs & bentleys</b><br><span>Album &#8226 Post Malone</span></p></article>
+        <article><img src="assets/library/library-img (15).png" alt=""><p><b>Playlist</b><br><span>Album &#8226 Salmo</span></p></article>
+        <article><img src="assets/library/library-img (18).png" alt=""><p><b>Back To Back (Deluxe Edition)</b><br><span>Album &#8226 Amy Winehouse</span></p></article>
+        <article><img src="assets/library/library-img (17).png" alt=""><p><b>Billie Eillish: Complete Collection</b><br><span>Playlist &#8226 Billie Eillish</span></p></article>
+        <article><img src="assets/library/library-img (1).png" alt=""><p><b>Lioness: Hidden Treasure</b><br><span>Album &#8226 Amy Winehouse</span></p></article>
+        <article><img src="assets/library/library-img (11).png" alt=""><p><b>Dance Party</b><br><span>Playlist &#8226 Spotify</span></p></article>
+        <article><img src="assets/library/library-img (13).png" alt=""><p><b>Labrinth Miracle Sia Diplo present ... LSD...</b><br><span>Playlist &#8226 Pinkpumelo</span></p></article>
+        <article><img src="assets/library/library-img (14).png" alt=""><p><b>Street Culto</b><br><span>Playlist &#8226 Spotify</span></p></article>
+        <article><img src="assets/library/library-img (10).png" alt=""><p><b>EDM Hits 2024: Viral TikTok EDM Mu...</b><br><span>Playlist &#8226 Future Generation</span></p></article>
+        <article><img src="assets/library/library-img (7).png" alt=""><p><b>Time Is Now</b><br><span>Album &#8226 J. Martins</span></p></article>
+        <article><img src="assets/library/library-img (2).png" alt=""><p><b>Techno Coco 1.0</b><br><span>Album &#8226 Salmo</span></p></article>
+        <article><img src="assets/library/library-img (16).png" alt=""><p><b>Pop Remix</b><br><span>Playlist &#8226 Spotify</span></p></article>
+        <article><img src="assets/library/library-img (4).png" alt=""><p><b>This Is Anne-Marie</b><br><span>Playlist &#8226 Spotify</span></p></article>
+        <article><img src="assets/library/library-img (12).png" alt=""><p><b>Beerbongs & bentleys</b><br><span>Album &#8226 Post Malone</span></p></article>
+    </section>
+   </aside>
+   <main class="main radius">
+    <nav>
+        <div class="top-nav">
+            <div class="nav-arrows">
+                <button class="material-symbols-outlined">arrow_back_ios</button><button class="material-symbols-outlined">arrow_forward_ios</button>
+            </div>
+            <div class="top-nav-right">
+                <button class="white-but scale-hover">Explore Premium</button>
+                <button class="black-back scale-hover"><span class="material-symbols-outlined justified">download_for_offline </span> Install App</button>
+                <button class="round black-back scale-hover"><span class="material-symbols-outlined">notifications</span></button>
+                <button class="round unique scale-hover">M</button>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <button class="white-but">All</button>
+            <button class="button-hover">Music</button>
+            <button class="button-hover">Podcasts</button>
+            <button class="button-hover">Audiobooks</button>
+        </div>
+    </nav>
+    <article class="main-body">
+        <div class="for-me stretcher"><h2>Made For mama.leye</h2><h5>Show all</h5></div>
+        <section class="grid-layout">
+            <div><img src="assets/for-me/for-me (11).png" alt=""><h5>Daily Mix 1</h5><br><p>Adiouza, Titi, Youssou<br>N'Dour and more</p></div>
+            <div><img src="assets/for-me/for-me (2).png" alt=""><h5>Daily Mix 2</h5><br><p>Post Malone, Offset, Drake<br>and more</p></div>
+            <div><img src="assets/for-me/for-me (1).png" alt=""><h5>Daily Mix 3</h5><br><p>Lizzy McAlpine, Mimi<br>Webb, Lewis Capaldi an...</p></div>
+            <div><img src="assets/for-me/for-me (14).png" alt=""><h5>Daily Mix 4</h5><br><p>Matt Sassari, Jax Jones,<br>John Summit and more</p></div>
+            <div><img src="assets/for-me/for-me (13).png" alt=""><h5>Daily Mix 5</h5><br><p>Nines, Diggo D, Strandz<br>and more</p></div>
+            <div><img src="assets/for-me/for-me (12).png" alt=""><h5>Daily Mix 6</h5><br><p>J. Martins, Libianca, Krazy<br>Vibez and more</p></div>
+        </section>
+        <div class="radio stretcher"><h2>Popular radio</h2><h5>Show all</h5></div>
+        <section class="grid-layout">
+            <div><img src="assets/radio/radio (1).png" alt=""><h5>Noah Kahan Radio</h5><br><p>With Zach Bruan, Lizzy<br>McAlpine, Mt. Joy and...</p></div>
+            <div><img src="assets/radio/radio (2).png" alt=""><h5>Taylor Swift RAdio</h5><br><p>With Selena Gomez, Olivia<br>Rodrigo, Katy Perry and...</p></div>
+            <div><img src="assets/radio/radio (8).png" alt=""><h5>Fred again Radio</h5><br><p>With Barry Can't Swim,<br>Dom Dolla, BICEP and...</p></div>
+            <div><img src="assets/radio/radio (7).png" alt=""><h5>Drake Radio</h5><br><p>With 21 Savage, Future, J.<br>Cole and more</p></div>
+            <div><img src="assets/radio/radio (6).png" alt=""><h5>Arctic Monkeys Radio</h5><br><p>With The Neighbourhood,<br>The Strokes, Cigarettes...</p></div>
+            <div><img src="assets/radio/radio (5).png" alt=""><h5>Fleetwood Mac Radio</h5><br><p>With Stevie Nicks, Tom<br>Petty and the...</p></div>
+            <div><img src="assets/radio/radio (4).png" alt=""><h5>Eminem Radio</h5><br><p>With Dr. Dre, 50 Cent,<br>Snoop Dogg and more</p></div>
+            <!-- <div><img src="" alt=""></div> -->
+        </section>
+        <div class="audiobooks stretcher"><h2>Great first audiobooks</h2><h5>Show all</h5></div>
+        <section class="grid-layout">
+            <div><img src="assets/audiobooks/audiobook (1).png" alt=""><h5>The Satsuma Complex</h5><br><p>Bob Mortimer</p></div>
+            <div><img src="assets/audiobooks/audiobook (5).png" alt=""><h5>It Starts with Us: the...</h5><br><p>Colleen Hoover</p></div>
+            <div><img src="assets/audiobooks/audiobook (4).png" alt=""><h5>Fairy Tale</h5><br><p>Stephen King</p></div>
+            <div><img src="assets/audiobooks/audiobook (3).png" alt=""><h5>Love on the Brain: Fro...</h5><br><p>Ali Hazelwood</p></div>
+            <div><img src="assets/audiobooks/audiobook (2).png" alt=""><h5>People Person: From th...</h5><br><p>Candice Carty-Williams</p></div>
+        </section>
+        <div class="unique stretcher"><h2>Uniquely yours</h2><h5>Show all</h5></div>
+        <section class="grid-layout">
+            <div><img src="assets/unique/unique (1).png" alt=""><h5>Repeat Rewind</h5><br><p>Your past favourites</p></div>
+            <div><img src="assets/unique/unique (4).png" alt=""><h5>On Repeat</h5><br><p>Songs you love right now</p></div>
+            <div><img src="assets/unique/unique (2).png" alt=""><h5>daylist</h5><br><p>Your day in a playlist</p></div>
+            <div><img src="assets/unique/unique (3).png" alt=""><h5>Daily Drive</h5><br><p>A mix of news and music<br>made for you</p></div>
+            <div><img src="assets/unique/unique (4).png" alt=""><h5>On Repeat</h5><br><p>Songs you love right now</p></div>
+        </section>
+        <div class="albums stretcher"><h2>Popular albums</h2><h5>Show all</h5></div>
+        <section class="grid-layout">
+            <div><img src="assets/albums/popular (1).png" alt=""><h5>Stick Season</h5><br><p>Noah Kahan</p></div>
+            <div><img src="assets/albums/popular (2).png" alt=""><h5>Lover</h5><br><p>Taylor Swift</p></div>
+            <div><img src="assets/albums/popular (3).png" alt=""><h5>10 Hours of Continuous...</h5><br><p>White Noise Radiance, Rain<br>Sounds</p></div>
+            <div><img src="assets/albums/popular (4).png" alt=""><h5>Hazbin Hotel: Original...</h5><br><p>Various Artists</p></div>
+            <div><img src="assets/albums/popular (5).png" alt=""><h5>UTOPIA</h5><br><p>Travis Scott</p></div>
+            <div><img src="assets/albums/popular (6).png" alt=""><h5>GUTS</h5><br><p>Olivia Rodrigo</p></div>
+            <div><img src="assets/albums/popular(-1).png" alt=""><h5>AM</h5><br><p>Arctic Monkeys</p></div>
+            <div><img src="assets/albums/popular(0).png" alt=""><h5>VULTURES 1</h5><br><p>&#165<span>$, </span>Kanye West, Ty Dolla<br>$ign</p></div>
+        </section>
+        <div class="artists stretcher"><h2>Popular artists</h2><h5>Show all</h5></div>
+        <section class="grid-layout round-img">
+            <div><img src="assets/artists/artists (8).png" alt=""><h5>Taylor Swift</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (1).png" alt=""><h5>Drake</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (7).png" alt=""><h5>Kanye West</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (5).png" alt=""><h5>Ariana Grande</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (6).png" alt=""><h5>The Weeknd</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (2).png" alt=""><h5>Eminem</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (3).png" alt=""><h5>Noah Kahan</h5><br><p>Artist</p></div>
+            <div><img src="assets/artists/artists (4).png" alt=""><h5>Rihanna</h5><br><p>Artist</p></div>
+        </section>
+    </article>
+    <section class="end-main">
+        <div class="lists">
+            <div class="list-one">
+                <h3>Company
+                <ul>
+                    <li>About</li>
+                    <li>Jobs</li>
+                    <li>For the Record</li>
+                </ul>
+            </h3>
+            </div>
+            <div class="list-two">
+                <h3>Communities
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="list-three">
+                <h3>Useful links
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+        <div class="socials">
+            <svg class="button-hover" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M31.82031,12c-18.381,0 -19.82031,1.43931 -19.82031,19.82031v0.35938c0,18.381 1.43931,19.82031 19.82031,19.82031h0.35938c18.381,0 19.82031,-1.43931 19.82031,-19.82031v-0.17969c0,-18.548 -1.452,-20 -20,-20zM28,16h8c11.129,0 12,0.871 12,12v8c0,11.129 -0.871,12 -12,12h-8c-11.129,0 -12,-0.871 -12,-12v-8c0,-11.129 0.871,-12 12,-12zM41.99414,20c-1.105,0.003 -1.99714,0.90086 -1.99414,2.00586c0.003,1.105 0.90086,1.99714 2.00586,1.99414c1.105,-0.003 1.99714,-0.90086 1.99414,-2.00586c-0.003,-1.105 -0.90086,-1.99714 -2.00586,-1.99414zM31.97656,22c-5.522,0.013 -9.98956,4.50144 -9.97656,10.02344c0.013,5.522 4.50144,9.98956 10.02344,9.97656c5.522,-0.013 9.98956,-4.50144 9.97656,-10.02344c-0.013,-5.522 -4.50144,-9.98956 -10.02344,-9.97656zM31.98633,26c3.313,-0.008 6.00567,2.67333 6.01367,5.98633c0.007,3.313 -2.67333,6.00567 -5.98633,6.01367c-3.313,0.008 -6.00567,-2.67233 -6.01367,-5.98633c-0.008,-3.313 2.67333,-6.00567 5.98633,-6.01367z"></path></g></g>
+            </svg>
+            <svg class="button-hover" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M42,12.429c-1.323,0.586 -2.746,0.977 -4.247,1.162c1.526,-0.906 2.7,-2.351 3.251,-4.058c-1.428,0.837 -3.01,1.452 -4.693,1.776c-1.344,-1.425 -3.261,-2.309 -5.385,-2.309c-4.08,0 -7.387,3.278 -7.387,7.32c0,0.572 0.067,1.129 0.193,1.67c-6.138,-0.308 -11.582,-3.226 -15.224,-7.654c-0.64,1.082 -1,2.349 -1,3.686c0,2.541 1.301,4.778 3.285,6.096c-1.211,-0.037 -2.351,-0.374 -3.349,-0.914c0,0.022 0,0.055 0,0.086c0,3.551 2.547,6.508 5.923,7.181c-0.617,0.169 -1.269,0.263 -1.941,0.263c-0.477,0 -0.942,-0.054 -1.392,-0.135c0.94,2.902 3.667,5.023 6.898,5.086c-2.528,1.96 -5.712,3.134 -9.174,3.134c-0.598,0 -1.183,-0.034 -1.761,-0.104c3.271,2.071 7.155,3.285 11.324,3.285c13.585,0 21.017,-11.156 21.017,-20.834c0,-0.317 -0.01,-0.633 -0.025,-0.945c1.45,-1.024 2.7,-2.316 3.687,-3.792"></path></g></g>
+            </svg>
+            <svg class="button-hover" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M11.666,2.005c-5.046,0.165 -9.292,4.246 -9.641,9.283c-0.369,5.329 3.442,9.832 8.481,10.589v-7.227h-1.614c-0.726,0 -1.314,-0.588 -1.314,-1.314v0c0,-0.726 0.588,-1.314 1.314,-1.314h1.613v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c0.357,0 0.662,0.008 0.921,0.021c0.636,0.031 1.129,0.561 1.129,1.198v0c0,0.663 -0.537,1.2 -1.2,1.2h-0.442c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h1.87c0.591,0 1.043,0.527 0.953,1.111l-0.108,0.701c-0.073,0.47 -0.477,0.817 -0.953,0.817h-1.762v7.247c4.883,-0.663 8.648,-4.837 8.648,-9.899c0,-5.634 -4.659,-10.179 -10.334,-9.995z"></path></g></g>
+            </svg>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="main-footer">
+        <div class="contacts">
+            <p>Legal</p>
+            <p>Safety & Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Settings</p>
+            <p>About Ads</p>
+            <p>Accessibility</p>
+            <p>Modern Slavery Act</p>
+        </div>
+        <div>
+            <p>&#169 2024 Spotify AB</p>
+        </div>
+    </section>
+    <span class="next-row">
+        <p>UK Tax Policy</p>
+        <p>Uk Gender Pay Report</p>
+    </span>
+   </main>
+   <footer class="footer">
+    <article>
+        <div class="music-player">
+            <div class="progress-controller">
+                <div class="control-buttons">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="play-pause fas fa-play"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <div class="progress-container">
+                    <span>0:49</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span>3:15</span>
+                </div>
+            </div>
+            <div class="other-features">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <div class="volume-bar">
+                    <i class="fas fa-volume-down"></i>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+   </footer>
 </body>
 </html>
