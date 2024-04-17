@@ -1,0 +1,328 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 220px minmax(200px, 1fr);
+    grid-template-rows: 80px minmax(150px, 1fr) 100px;
+    grid-template-areas: 
+    "nav upgrade"
+    "nav main"
+    "controls controls";
+    background-color: lightgrey;
+    /* overflow: hidden; */
+}
+
+aside {
+    grid-area: nav;
+    background-color: black;
+    padding: 20px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+}
+
+header {
+    grid-area: upgrade;
+    background-color: rgb(0, 0, 20);
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(16, 16, 37);
+    padding: 0px 15px;
+    overflow: scroll;
+}
+
+footer {
+    grid-area: controls;
+    background-color: rgb(43, 43, 43);
+    display: grid;
+    grid-template-columns: 220px minmax(200px, 1fr) 200px;
+    gap: 20px;
+}
+
+header button {
+    background-color: rgb(0, 0, 20);
+    color: white;
+    border: white solid 1px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+/* Aside section */
+
+.logo {
+    width: 140px;
+    padding-bottom: 10px;
+}
+
+aside nav {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    color: grey;
+    align-items: center;
+    gap: 5px 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: white;
+}
+
+li {
+    color: grey;
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.create {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    color: black;
+    padding-left: 7px;
+    padding-top: 2px;
+    font-size: 25px;
+    font-weight: 800;
+    display: inline-block
+}
+
+ul p {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    bottom: 4px;
+}
+
+.profile-container {
+    color: grey;
+}
+
+.profile-container hr {
+    border: none;
+    background-color: grey;
+    height: 1px;
+}
+
+.profile-container div {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.profile-container img {
+    height: 25px
+}
+
+.profile-icon-container {
+    background-color: grey;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.profile-icon-container > img {
+    object-fit: contain;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+.name {
+    color: white;
+}
+
+.profile-container > div ~ div {
+    padding-left: 1px;
+}
+
+/* Footer section */
+footer > section {
+    /* background-color: blue; */
+    height: 100%;
+}
+
+.current-song {
+    /* background-color: purple; */
+    display: grid;
+    grid-template-columns: 60px 1fr repeat(2, 30px);
+    align-content: center;
+    padding-left: 10px;
+    align-items: center;
+}
+
+#sin {
+    height: 50px;
+}
+
+.current-song img {
+    height: 25px;
+}
+
+.current-song > div > p + p {
+    color: grey;
+}
+
+.song {
+    color: white;
+    font-weight: 500;
+}
+
+.volume-section {
+    display: grid;
+    grid-template-columns: repeat(3, 30px) 1fr;
+    align-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+}
+
+.volume-section img {
+    height: 20px;
+}
+
+.volume-container {
+    background-color: grey;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.volume-container div {
+    height: 100%;
+    background-color: white;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.footer-mid-section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.time-section {
+    display: grid;
+    grid-template-columns: 50px minmax(100px, 350px) 50px;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.time-tracker {
+    background-color: grey;
+    height: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.time-section p {
+    color: white;
+}
+
+.time-tracker div {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.song-options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(40px, 50px));
+    place-content: center;
+    place-items: center;
+
+}
+
+.song-options img {
+    height: 20px;
+}
+
+#play-icon {
+    height: 40px;
+}
+
+/* main section */
+main > nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 100px));
+    /* background-color: rgb(16, 16, 37); */
+    place-content: center;
+    /* place-items: center; */
+    padding-top: 10px;
+    margin-bottom: 20px ;
+}
+
+main nav > button {
+    background-color: rgb(16, 16, 37);
+    border: none;
+    color: grey;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main > p {
+    color: grey;
+}
+
+main > h2 {
+    color: white;
+}
+
+main > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
+    margin: 10px 0px 25px;
+    gap: 10px
+}
+
+.card {
+    /* height: 300px; */
+    /* background-color: lightblue; */
+}
+
+.card > img {
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+main h3, .card > p {
+    text-align: center;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main h3 {
+    font-size: 16px;
+}
+
+.card > p {
+    font-size: 14px;
+    color: grey;
+}
+
+.artist {
+    border-radius: 50%;
+    
+}
