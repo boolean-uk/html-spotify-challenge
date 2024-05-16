@@ -1,12 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <section id="logo">
+                <a href="https://www.spotify.com/">
+                    <img class="logo-main" src="/assets/img/logo.svg" alt="spotify logo" height="40px">
+                    <img class="logo-responsive" src="/assets/img/spotify-512.png" alt="spotify logo" height="40px">
+                </a>
+            </section>
+            <div id="upgrade-button">
+                <a href="https://www.spotify.com/premium/">
+                    <button>UPGRADE</button>
+                </a>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <section id="aside-menu-items">
+                    <div class="menu-item">
+                        <img src="/assets/img/home.svg" alt="home icon" height="30px">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/assets/img/search.svg" alt="search icon" height="30px">
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/assets/img/libreria.svg" alt="library icon" height="30px">
+                        <a href="#">Your library</a>
+                    </div>
+                </section>
+                <div id="playlist">
+                    <h2>PLAYLIST</h2>
+                    <div id="create-playlist">
+                        <img src="/assets/img/plus.svg" alt="add to playlist button" height="20px">
+                        <a href="#">Create Playlist</a>
+                    </div>
+                    <div id="user-playlists">
+                        <ul>
+                            <li><a href="#">Playlist Name</a></li>
+                            <li><a href="#">Playlist Name</a></li>
+                            <li><a href="#">Playlist Name</a></li>
+                            <li><a href="#">Playlist Name</a></li>
+                            <li><a href="#">Playlist Name</a></li>
+                            <li><a href="#">Playlist Name</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    &nbsp;
+                </div>
+                <div id="aside-bottom">
+                    <div id="download">
+                        <a class="download-link" href="https://download.scdn.co/SpotifySetup.exe">
+                            <img src="/assets/img/download.svg" alt="download icon" height="17px">
+                            <p id="test">Install app</p>
+                        </a>
+                    </div>
+
+                    <div id="profile">
+                        <a href="https://accounts.spotify.com/en/login">
+                            <img src="/assets/img/profile.svg" alt="profile icon" height="25px">
+                            <h2 class="profile-user-name">John Doe</h2>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <div id="main-page">
+                <section id="genres">
+                    <div id="dropdown">
+                        <select name="">
+                            <option value="trending">TRENDING</option>
+                            <option value="podcast">PODCAST</option>
+                            <option value="charts">CHARTS</option>
+                            <option value="genres-and-moods">GENRES & MOODS</option>
+                            <option value="brand-new">BRAND NEW</option>
+                            <option value="discover">DISCOVER</option>
+                        </select>
+                    </div>
+                    <div id="genres-menu">
+                        <ul>
+                            <a href="#"><li>TRENDING</li></a>
+                            <a href="#"><li>PODCAST</li></a>
+                            <a href="#"><li>CHARTS</li></a>
+                            <a href="#"><li>GENRES AND MOODS</li></a>
+                            <a href="#"><li>BRAND NEW</li></a>
+                            <a href="#"><li>DISCOVER</li></a>
+                        </ul>
+                    </div>
+                </section>
+                <section id="recent">
+                    <h2>Recently played</h2>
+                    <div id="recent-albums">
+                        <div class="album-boxes">
+                            <img src="/assets/img/metal_lifting.jpg" alt="metal album cover" height="160px">
+                            <h3 class="album-titles">Heavy Metal</h3>
+                            <p class="subtitles">Subtitle</p>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/stranger.png" alt="stranger things album cover" height="160px">
+                            <h3 class="album-titles">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                            <p class="subtitles">Kyle Dixon & Michael Stein</p>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/aquietplace.jpeg" alt="a quiet place album cover" height="160px">
+                            <h3 class="album-titles">A queit place</h3>
+                            <p class="subtitles">Subtitle</p>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/split.jpeg" alt="split album cover" height="160px">
+                            <h3 class="album-titles">Split</h3>
+                            <p class="subtitles">Subtitle</p>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/cure.jpeg" alt="cure wellness album cover" height="160px">
+                            <h3 class="album-titles">A cure for wellness</h3>
+                            <p class="subtitles">Subtitle</p>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/sinister.jpeg" alt="sinister album cover" height="160px">
+                            <h3 class="album-titles">Sinister</h3>
+                            <p class="subtitles">Subtitle</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="suggestions">
+                    <h2>Created for John Doe</h2>
+                    <p>The more you listen, the more accurate the suggestions.</p>
+                    <div id="suggested-albums">
+                        <div class="album-boxes">
+                            <img src="/assets/img/radar.jpeg" alt="release radar album" height="160px">
+                            <h3 class="album-titles">Release Radar</h3>
+                        </div>
+                        <div class="album-boxes">
+                            <img src="/assets/img/mixdaily.jpeg" alt="daily mix album cover" height="160px">
+                            <h3 class="album-titles">Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="popular-artists">
+                    <h2>Most popular artists</h2>
+                    <p>The more you listen, the more accurate the suggestions.</p>
+                    <div id="suggested-artists">
+                        <div class="artists-circles">
+                            <img src="/assets/img/youg.jpeg" alt="lana del rey album cover" width="160px">
+                            <h3 class="album-titles">Lana Del Rey</h3>
+                            <p class="subtitles">Young and beautiful</p>
+                        </div>
+                        <div class="artists-circles">
+                            <img src="/assets/img/einaudi.jpeg" alt="einaudi album cover" width="160px">
+                            <h3 class="album-titles">Ludovico Einaudi</h3>
+                            <p class="subtitles">Una mattina</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-left">
+                <div id="song-image">
+                    <img src="/assets/img/sinister.jpeg" alt="current song" width="40px">
+                </div>
+                <div id="current-song">
+                    <a href="#"><h3>Sinister</h3></a>
+                    <a href="#"><p>Song Name</p></a>
+                </div>
+                <div id="left-icons">
+                    <a href="#"><img src="/assets/img/heart.svg" alt="favourites icon" height="15px"></a>
+                    <a href="#"><img src="/assets/img/folder.svg" alt="playlist icon" height="15px"></a>
+                </div>
+            </div>
+            <div id="footer-middle">
+                <img src="/assets/img/shuffle.svg" alt="shuffle button" height="18px">
+                <img src="/assets/img/rewind.svg" alt="rewind button" height="18px">
+                <img src="/assets/img/play.svg" alt="play button" height="18px">
+                <img src="/assets/img/forward.svg" alt="forward button" height="18px">
+                <img src="/assets/img/reload.svg" alt="forward button" height="18px">
+            </div>
+            <div id="footer-right">
+                <img src="/assets/img/list.svg" alt="list icon" height="18px">
+                <img src="/assets/img/screen.svg" alt="screen icon" height="18px">
+                <img src="/assets/img/volume.svg" alt="volume control icon" height="18px">
+            </div>
+        </footer>
+    </body>
 </html>
