@@ -1,12 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <title>Spotify</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img id="big-logo" src="/assets/img/logo.svg" alt="" />
+        <button>Upgrade</button>
+      </header>
+
+      <aside>
+        <nav>
+          <div class="home">
+            <img src="/assets/img/home.svg" alt="Home" />
+            <p>Home</p>
+          </div>
+          <div class="search">
+            <img src="/assets/img/search.svg" alt="Search" />
+            <p>Search</p>
+          </div>
+          <div class="library">
+            <img src="/assets/img/libreria.svg" alt="Library" />
+            <p>Library</p>
+          </div>
+        </nav>
+
+        <section class="playlist">
+          <h3>PLAYLIST</h3>
+          <div class="playlist-config">
+            <div class="create-playlist">
+              <img src="/assets/img/grey-plus.svg" alt="" />
+              <span>Create Playlist</span>
+            </div>
+            <ul id="playlist-list">
+              <li>70's</li>
+              <li>80's</li>
+              <li>90's</li>
+              <li>00's</li>
+              <li>10's</li>
+              <li>20's</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="install-user">
+          <div class="install">
+            <img src="/assets/img/download.svg" alt="" />
+            <p>Install App</p>
+          </div>
+          <hr />
+          <div class="user">
+            <img src="/assets/img/profile.svg" alt="" />
+            <h3>Shaun Harris</h3>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <nav>
+          <h3>70's</h3>
+          <h3>80's</h3>
+          <h3>90's</h3>
+          <h3>00's</h3>
+          <h3>10's</h3>
+          <h3>20's</h3>
+        </nav>
+
+        <h2 id="recently-played-heading">Recently played</h2>
+        <div class="recently-played">
+          <div class="album">
+            <img
+              src="/assets/img/Album_Artwork/aretha-now.jpg"
+              alt="Death by Television album cover"
+            />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Aretha Franklin</h3>
+            <p>Aretha Now</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/Album_Artwork/David Gray- White Ladder.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>David Gray</h3>
+            <p>White Ladder</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/Album_Artwork/duffy.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Duffy</h3>
+            <p>Rockferry</p>
+          </div>
+          <div class="album">
+            <img
+              src="/assets/img/Album_Artwork/ludwig-minkus.jpg"
+              alt=""
+            />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Ludwig Minkus</h3>
+            <p>Entrance of the Shades</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/Album_Artwork/tchaikovsky.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Tachaikovsky</h3>
+            <p>Swan Lake</p>
+          </div>
+          <div class="album">
+            <img src="/assets/img/Album_Artwork/the-las.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>The La's</h3>
+            <p>The La's</p>
+          </div>
+        </div>
+
+        <h2>Created for Shaun Harris</h2>
+        <p class="subtitle">The more you listen, the more accurate the suggestions will be!</p>
+        <div class="created-for">
+          <div class="playlist">
+            <img src="/assets/img/Album_Artwork/motownchill.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Motown Chill</h3>
+          </div>
+          <div class="playlist">
+            <img src="/assets/img/Album_Artwork/N.Y.P.C.jpg" alt="" />
+            <div class="play-hover">
+              <img src="/assets/img/play-green.svg" alt="" />
+            </div>
+            <h3>Not Your Parents Classical</h3>
+          </div>
+        </div>
+
+        <h2>Popular artists</h2>
+        <p class="subtitle">The more you listen, the more accurate the suggestions will be!</p>
+        <div class="popular-artists">
+          <div class="popular-artist">
+            <img src="/assets/img/Album_Artwork/vivaldi-four seasons.jpg" alt="" />
+            <div class="play-hover">
+                <img src="/assets/img/play-green.svg" alt="" />
+              </div>
+            <h3>Vivaldi</h3>
+          </div>
+          <div class="popular-artist">
+            <img src="/assets/img/Album_Artwork/tracy chapman.jpg" alt="" />
+            <div class="play-hover">
+                <img src="/assets/img/play-green.svg" alt="" />
+              </div>
+            <h3>Tracy Chapman</h3>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="now-playing">
+          <img src="/assets/img/Album_Artwork/David Gray- White Ladder.jpg" alt="" />
+          <div class="song-info">
+            <h3>David Gray</h3>
+            <p>Babylon</p>
+          </div>
+          <img
+            id="heart-icon"
+            class="footer-icon"
+            src="/assets/img/heart.svg"
+            alt=""
+          />
+          <img
+            id="folder-icon"
+            class="footer-icon"
+            src="/assets/img/folder.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="player-controls">
+          <div class="player-buttons">
+            <img class="footer-icon" src="/assets/img/shuffle.svg" alt="" />
+            <img class="footer-icon" src="/assets/img/forwards.svg" alt="" />
+            <img
+              id="play-button"
+              class="footer-icon"
+              src="/assets/img/play-media-control.svg"
+              alt=""
+            />
+            <img
+              class="footer-icon"
+              src="/assets/img/forwards.svg"
+              alt=""
+            />
+            <img class="footer-icon" src="/assets/img/repeat.svg" alt="" />
+          </div>
+          <div class="scroller">
+            <p>1:36</p>
+            <input type="range" />
+            <p>3:30</p>
+          </div>
+        </div>
+
+        <div class="broadcast-controls">
+          <img class="footer-icon" src="/assets/img/menu.svg" alt="" />
+          <img class="footer-icon" src="/assets/img/screen.svg" alt="" />
+          <img class="footer-icon" src="/assets/img/sound.svg" alt="" />
+          <input type="range" />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
