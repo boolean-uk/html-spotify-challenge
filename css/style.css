@@ -1,6 +1,8 @@
 * {
   color: white;
   font-family: "Roboto", sans-serif;
+  user-select: none;
+  cursor: default;
 }
 
 body {
@@ -47,7 +49,6 @@ nav {
   fill: gray;
   justify-content: left;
   align-items: center;
-  cursor: default;
 }
 
 .nav-item p {
@@ -60,6 +61,11 @@ nav {
   fill: lightgray;
 }
 
+.nav-item:active {
+  color: gray;
+  fill: gray;
+}
+
 .selected {
   margin: 0;
   padding-left: 17px;
@@ -69,6 +75,50 @@ nav {
   border-style: solid;
   color: lightgray;
   fill: lightgray;
+}
+
+#playlists {
+  padding-left: 20px;
+  color: gray;
+}
+
+#playlists li:hover {
+  color: lightgray;
+}
+
+#playlists li:active {
+  color: gray;
+}
+
+#playlists h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#playlists h5 {
+  margin: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+#playlists ul {
+  color: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#playlists li {
+  color: inherit;
+  margin-top: 10px;
+}
+
+.fa-square-plus {
+  color: inherit;
+  font-size: 37px;
+  margin-right: 10px;
 }
 
 #side-bottom {
@@ -124,4 +174,6 @@ footer {
   grid-column: 1 / span 2;
   grid-row: 3;
   background-color: #282828;
+  align-items: center;
+  grid-template-columns: 230px auto 230px;
 }
