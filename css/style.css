@@ -1,5 +1,6 @@
 * {
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -9,15 +10,72 @@ body {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-  grid-template-columns: 180px auto;
-  grid-template-rows: 80px auto 80px;
+  grid-template-columns: 230px auto;
+  grid-template-rows: 90px auto 90px;
 }
 
-nav {
-  display: block;
+aside {
+  display: grid;
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
   background-color: black;
+  grid-template-rows: 80px auto 80px;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  padding: 0;
+}
+
+#main-logo {
+  width: 134px;
+  margin: 20px;
+  padding: 0;
+}
+
+nav {
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 20px;
+  height: 38px;
+  color: gray;
+  fill: gray;
+  justify-content: left;
+  align-items: center;
+  cursor: default;
+}
+
+.nav-item p {
+  color: inherit;
+  margin-left: 10px;
+}
+
+.nav-item:hover {
+  color: lightgray;
+  fill: lightgray;
+}
+
+.selected {
+  margin: 0;
+  padding-left: 17px;
+  border: 0;
+  border-left: 3px;
+  border-color: greenyellow;
+  border-style: solid;
+  color: lightgray;
+  fill: lightgray;
+}
+
+#side-bottom {
+  display: flex;
+  padding: 10px 20px;
+  align-items: end;
+  justify-content: left;
 }
 
 header {
@@ -48,6 +106,8 @@ header {
   border-style: solid;
   border-radius: 50px;
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 main {

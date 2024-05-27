@@ -4,16 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="assets/img/logo-small.svg"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>nav</nav>
+    <aside>
+      <div id="logo-container">
+        <img id="main-logo" src="assets/img/logo.svg" alt="Logo" />
+      </div>
+      <nav>
+        <div class="nav-item selected">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+            />
+          </svg>
+          <p>Home</p>
+        </div>
+        <div class="nav-item">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <p>Search</p>
+        </div>
+        <div class="nav-item">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+            />
+          </svg>
+          <p>Your Library</p>
+        </div>
+      </nav>
+      <div id="side-bottom">John Doe</div>
+    </aside>
     <header><button id="upgrade-button">Upgrade</button></header>
     <main>main</main>
     <footer>footer</footer>
