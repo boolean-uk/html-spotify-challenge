@@ -1,3 +1,7 @@
+* {
+  color: white;
+}
+
 body {
   display: grid;
   box-sizing: border-box;
@@ -5,9 +9,8 @@ body {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-  grid-template-columns: 180px calc(100vw - 180px);
+  grid-template-columns: 180px auto;
   grid-template-rows: 80px auto 80px;
-  color: white;
 }
 
 nav {
@@ -26,11 +29,34 @@ header {
   background-color: #080b12;
 }
 
+#upgrade-button:hover {
+  background-color: white;
+  color: #080b12;
+  border-color: #080b12;
+  cursor: pointer;
+}
+
+#upgrade-button,
+#upgrade-button:active {
+  display: inline;
+  height: 50%;
+  margin: auto 1vw auto 0;
+  background-color: #080b12;
+  width: 180px;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50px;
+  color: white;
+}
+
 main {
   display: grid;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   background-color: #141922;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: row;
 }
 
 footer {
