@@ -1,0 +1,15 @@
+/*
+Fonts scraped from Spotify's website
+*/
+
+@font-face {
+    font-family: Circular;
+    font-weight: normal;
+    src: url("CircularSp-Regular.woff2");
+}
+
+@font-face {
+    font-family: Circular;
+    font-weight: bold;
+    src: url("CircularSp-Bold.woff2");
+}
