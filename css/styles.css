@@ -19,21 +19,22 @@ body {
 .page-wrapper {
     height: 100%;
     display: grid;
-    grid-template-rows: 10px 1fr 10px 75px;
+    grid-template-rows: calc(100% - 75px - 10px) 75px;
 }
 
 .content-wrapper {
-    grid-row: 2 / span 1;
     display: grid;
     height: 100%;
-    grid-template-columns: 10px 250px 10px 1fr 10px;
+    margin: 10px 10px 0;
+    grid-template-columns: 250px 1fr;
+    column-gap: 10px;
     grid-template-rows: 1fr;
 }
 
 .sidebar {
     z-index: 0;
     position: fixed;
-    height: calc(100% - 100px + 5px);
+    height: calc(100% - 75px - 10px);
     top: 10px;
     left: 10px;
     width: 250px;
@@ -119,15 +120,16 @@ body {
 .playlist {
     list-style: none;
     display: grid;
-    padding: 10px 15px;
+    margin: 5px 10px;
+    padding: 5px 5px;
     justify-content: center;
     align-items: center;
     grid-template-columns: 45px 1fr;
     column-gap: 20px;
 
     &:hover {
-        background-color: #505050;
-        border-radius: 20px;
+        background-color: #303030;
+        border-radius: 10px;
     }
 }
 
@@ -143,6 +145,7 @@ body {
 }
 
 .playlist-name,
+.playlist-details,
 .playlist-metadata,
 .card-title {
     white-space: nowrap;
@@ -171,7 +174,7 @@ body {
     position: fixed;
     left: 270px;
     width: calc(100% - 280px);
-    height: calc(100% - 100px + 5px);
+    height: calc(100% - 75px - 10px);
     grid-column: 4 / span 1;
     background-color: var(--dark-bg);
     border-radius: 10px;
@@ -180,65 +183,88 @@ body {
 .browser {
     overflow-y: scroll;
     position: absolute;
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    margin: 15px;
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-rows: repeat(6, auto);
 }
 
 .list-wrapper {
-    margin-top: 50px;
+    margin-top: 35px;
+    height: auto;
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 50px calc(250px + 75px + 10px);
+    grid-template-columns: repeat(5, 250px);
+    justify-content: space-around;
+    grid-auto-flow: row;
+    row-gap: 30px;
 }
 
 .list-title {
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
     color: white;
 }
 
-.card-wrapper {
-    height: auto;
+.card {
     display: grid;
-    grid-template-columns: repeat(5, calc(250px + 30px));
-    column-gap: 15px;
-    grid-auto-flow: row;
+    grid-template-rows: 250px 75px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        .card-play-button {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
-.card {
-    height: calc(250px + 100px);
-    margin: 15px;
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: left;
-    align-items: center;
+.card-cover {
+    position: relative;
+    height: 250px;
+    width: 250px;
 }
 
 #mix-cover {
     width: 250px;
+    height: 250px;
     border-radius: 5px;
 }
 
 .card-play-button {
-    width: 45px;
-    height: 45px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    border-radius: 25px;
+    animation: fadeInText 300ms 0ms forwards;
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: var(--spotify-green);
 }
 
+@keyframes fadeInText {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 #card-play-icon {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    height: 15px;
-    width: 15px;
-    border-radius: 5px;
+    height: 20px;
+    width: 20px;
 }
 
 .card-details {
-    margin-top: 10px;
     display: grid;
     width: 100%;
     row-gap: 5px;
@@ -268,27 +294,65 @@ body {
     height: 75px;
 }
 
+.player-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.now-playing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5px 56px auto 16px;
+    justify-content: left;
+    align-items: center;
+    column-gap: 15px;
+}
+
+#now-playing-cover {
+    grid-column: 2 / span 1;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.now-playing-track-info {
+    grid-column: 3 / span 1;
+    width: 100%;
+    font-size: 14px;
+    display: grid;
+}
+
+.now-playing-track-name {
+    color: white;
+}
+
+#library-icon {
+    height: 16px;
+    width: 16px;
+    fill: var(--spotify-green);
+}
+
 @media (max-width: 1775px) {
-    .card-wrapper {
-        grid-template-columns: repeat(4, calc(250px + 30px));
+    .list-wrapper {
+        grid-template-columns: repeat(4, 250px);
     }
 }
 
 @media (max-width: 1475px) {
-    .card-wrapper {
-        grid-template-columns: repeat(3, calc(250px + 30px));
+    .list-wrapper {
+        grid-template-columns: repeat(3, 250px);
     }
 }
 
 @media (max-width: 1200px) {
-    .card-wrapper {
-        grid-template-columns: repeat(2, calc(250px + 30px));
+    .list-wrapper {
+        grid-template-columns: repeat(2, 250px);
     }
 }
 
 @media (max-width: 720px) {
-    .card-wrapper {
-        grid-template-columns: repeat(1, calc(250px + 30px));
+    .list-wrapper {
+        grid-template-columns: repeat(1, 250px);
     }
 }
 
