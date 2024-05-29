@@ -1,0 +1,200 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    background-color: #121212;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "sidebar main"
+        "sidebar player";
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu-item {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar .menu-item.active {
+    color: #1db954;
+}
+
+.sidebar .playlist-section {
+    margin-top: 20px;
+}
+
+.sidebar .create-playlist {
+    background-color: #1db954;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar .playlists {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.sidebar .playlist {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.sidebar .profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upgrade-button {
+    background-color: #1db954;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.recently-played h2,
+.created-for-you h2,
+.popular-artists h2 {
+    margin-bottom: 15px;
+}
+
+.albums,
+.playlists,
+.artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.album,
+.playlist,
+.artist {
+    text-align: center;
+}
+
+.album img,
+.playlist img,
+.artist img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.subtitle {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+footer {
+    grid-area: player;
+    background-color: #282828;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+}
+
+.now-playing img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-name {
+    font-size: 14px;
+}
+
+.artist-name {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+}

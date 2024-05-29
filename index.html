@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Spotify Layout</title>
 </head>
 <body>
-    
+    <body>
+        <div class="container">
+            <nav class="sidebar">
+                <div class="logo">Spotify</div>
+                <ul class="menu">
+                    <li class="menu-item active">Home</li>
+                    <li class="menu-item">Search</li>
+                    <li class="menu-item">Your Library</li>
+                </ul>
+                <div class="playlist-section">
+                    <button class="create-playlist">+ Create Playlist</button>
+                    <ul class="playlists">
+                        <li class="playlist">Playlist 1</li>
+                        <li class="playlist">Playlist 2</li>
+                        <li class="playlist">Playlist 3</li>
+                        <li class="playlist">Playlist 4</li>
+                    </ul>
+                </div>
+                <div class="profile-section">
+                    <div class="profile">
+                        <img src="assets/img/profile.svg" alt="Profile Picture">
+                        <span>Faruq</span>
+                    </div>
+                </div>
+            </nav>
+            <main class="main-content">
+                <div class="header">
+                    <button class="upgrade-button">Upgrade</button>
+                </div>
+                <section class="recently-played">
+                    <h2>Recently Played</h2>
+                    <div class="albums">
+                        <div class="album">
+                            <img src="assets/img/aquietplace.jpeg" alt="Heavy Metal">
+                            <span class="subtitle">Heavy Metal</span>
+                        </div>
+                        <div class="album">
+                            <img src="assets/img/stranger.jpeg" alt="Stranger Things">
+                            <span class="subtitle">Kyle Dixon & Michael Stein</span>
+                        </div>
+                        <div class="album">
+                            <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place">
+                            <span class="subtitle">Marco Beltrami</span>
+                        </div>
+                        <div class="album">
+                            <img src="assets/img/split.jpeg" alt="Split">
+                            <span class="subtitle">Subtitle</span>
+                        </div>
+                        <div class="album">
+                            <img src="assets/img/youg.jpeg" alt="A Cure for Wellness">
+                            <span class="subtitle">Subtitle</span>
+                        </div>
+                        <div class="album">
+                            <img src="assets/img/sinister.jpeg" alt="Sinister">
+                            <span class="subtitle">Subtitle</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="created-for-you">
+                    <h2>Created for John Doe</h2>
+                    <div class="playlists">
+                        <div class="playlist">
+                            <img src="assets/img/radar.jpeg" alt="Release Radar">
+                            <span>Release Radar</span>
+                        </div>
+                        <div class="playlist">
+                            <img src="assets/img/mixdaily.jpeg" alt="Daily Mix 1">
+                            <span>Daily Mix 1</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="popular-artists">
+                    <h2>Popular Artists</h2>
+                    <div class="artists">
+                        <div class="artist">
+                            <img src="" alt="Artist 1">
+                            <span>Artist 1</span>
+                        </div>
+                        <div class="artist">
+                            <img src="path/to/artist2.jpg" alt="Artist 2">
+                            <span>Artist 2</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="player">
+                <div class="now-playing">
+                    <img src="assets/img/sinister.jpeg" alt="Now Playing">
+                    <div class="track-info">
+                        <span class="track-name">Sinister</span>
+                        <span class="artist-name">Artist Name</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="control-button">Play</button>
+                    <button class="control-button">Next</button>
+                    <button class="control-button">Previous</button>
+                </div>
+                <div class="volume-control">
+                    <input type="range" min="0" max="100">
+                </div>
+            </footer>
+        </div>
 </body>
 </html>
