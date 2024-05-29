@@ -205,6 +205,14 @@ main nav h4 {
   padding: 0 20px;
 }
 
+#albums section {
+  display: grid;
+  grid-row: 2;
+  justify-content: left;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 178px);
+}
+
 #albums h3 {
   grid-row: 1;
   margin: 0 0 20px 0;
@@ -212,22 +220,7 @@ main nav h4 {
 }
 
 #albums img {
-  grid-row: 2 / span 1;
   width: 178px;
-}
-
-#albums section {
-  display: grid;
-  grid-auto-flow: row;
-  justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, 178px);
-  grid-template-rows: repeat(auto-fill, 178px);
-}
-
-::after {
-  border: 2px;
-  border-color: greenyellow;
-  border-style: solid;
 }
 
 article {
