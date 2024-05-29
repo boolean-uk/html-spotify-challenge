@@ -131,6 +131,20 @@ body {
   border-radius: 50%;
 }
 
+.main-page .image-container {
+  position: relative;
+}
+
+.main-page .image-container svg {
+  z-index: -1;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 60px;
+  left: 60px;
+  fill: white;
+}
+
 /* left bar styles */
 
 .left-bar {
@@ -280,4 +294,47 @@ body {
 .bottom-bar .right-side img {
   height: 8px;
   width: 120px;
+}
+
+/* behaviours */
+
+.main-page .item-container:hover,
+header .upgrade-button:hover,
+aside > *:hover,
+footer svg:hover,
+footer .left-side > *:hover,
+footer .right-side > *:hover {
+  cursor: pointer;
+}
+
+.main-page .item-container:hover svg {
+  z-index: 1;
+}
+
+@media (max-width: 740px) {
+  body {
+    grid-template-columns: 55px auto;
+  }
+
+  .left-bar {
+    grid-row: 1 / span 2;
+  }
+
+  .logo-container img {
+    display: none;
+  }
+
+  .left-bar p,
+  .playlists {
+    display: none;
+  }
+
+  .bottom-section .profile {
+    border: none;
+  }
+
+  .track-bar img {
+    width: 100px;
+    height: 10px;
+  }
 }
