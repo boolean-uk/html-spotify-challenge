@@ -179,6 +179,7 @@ main {
   grid-template-columns: 1;
   grid-auto-rows: min-content;
   overflow: auto;
+  overflow-x: hidden;
 }
 main nav {
   display: grid;
@@ -216,7 +217,7 @@ main nav h4 {
 
 #albums h2 {
   grid-row: 1;
-  margin: 0 0 20px 0;
+  margin: 0;
   height: min-content;
 }
 
@@ -246,7 +247,7 @@ main nav h4 {
   font-size: 100px;
   bottom: 144px;
   left: 33%;
-  text-shadow: 1px 1px 20px gray;
+  text-shadow: 1px 1px 20px black;
 }
 
 .album-play:active {
@@ -261,6 +262,11 @@ main nav h4 {
 
 .circle {
   border-radius: 50%;
+}
+
+.title-sub {
+  color: gray;
+  margin: 5px 0 20px 0;
 }
 
 footer {
