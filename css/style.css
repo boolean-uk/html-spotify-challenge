@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: montserrat;
 }
 main {
   height: 100vh;
@@ -13,7 +14,7 @@ main {
   grid-row: 3 / span 1;
   grid-column: 1 / span 2;
   display: grid;
-  grid-template-columns: 300px 1fr 200px;
+  grid-template-columns: auto 1fr 200px;
   background-color: rgb(53, 53, 53);
 }
 .music-selection-menu {
@@ -22,8 +23,9 @@ main {
   overflow-x: hidden;
   scrollbar-gutter: auto;
   display: grid;
-  grid-template-rows: 40px repeat(3, auto);
-  background-color: rgb(59, 58, 73);
+  grid-template-rows: auto repeat(3, auto);
+  background-color: rgb(33, 32, 41);
+  color: white;
 }
 .left-menu {
   grid-row: 1 / span 2;
@@ -36,35 +38,110 @@ main {
 .second-row,
 .third-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: auto auto;
-  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 260px));
+  align-content: center;
+  justify-items: start;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.album-image{
-  height: 200px;
-  border: 2px solid white;
+.album-image,
+.album-image3 {
+  position: relative;
+  z-index: 1;
+}
+.album-image img,
+.album-image3 img {
+  width: 100%;
+  padding: 10px;
 }
 .album-info {
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.play-icon-overlay,
+.play-icon,
+.play-icon-audio {
   border: 2px solid white;
+  fill: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.play-icon-overlay,
+.play-icon-audio {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  display: none;
+}
+.album-image:hover svg,
+.album-image3:hover svg,
+.now-playing-audio:hover svg {
+  display: block;
+}
+.album-image:hover img,
+.now-playing-audio:hover img {
+  opacity: 0.5;
+}
+.music-selection-menu h2,
+.music-selection-menu p {
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+}
+.music-selection-menu p {
+  padding-bottom: 20px;
+  color: rgb(154, 150, 150);
+}
+.first-row p,
+.second-row p,
+.third-row p {
+  font-weight: bold;
+  color: white;
+}
+.first-row span,
+.second-row span,
+.third-row span {
+  font-weight: normal;
+  font-size: 13px;
+  color: rgb(154, 150, 150);
+}
+.album-image3 img {
+  border-radius: 50%;
 }
 .navigation-section {
-  display: inline-block;
-  margin: 0 auto;
   align-content: center;
+  text-align: center;
 }
 .navigation-section a {
-  margin: 50px;
+  display: inline-block;
+  margin: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
   padding-bottom: 5px;
-  color: gray;
+  color: rgb(154, 150, 150);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  border-bottom: 3px solid rgb(33, 32, 41);
 }
 .navigation-section a:hover {
-  border-bottom: 5px solid rgb(3, 200, 3);
+  border-bottom: 3px solid rgb(3, 200, 3);
 }
 .spotify-header svg {
   height: 80%;
-  margin: 15px;
+  margin: 10px;
+}
+svg.spotify-logo {
+  display: none;
 }
 .menu-section {
   display: grid;
@@ -72,12 +149,14 @@ main {
   grid-template-columns: 1fr;
   justify-content: start;
   text-align: start;
+  margin-top: 10px;
   margin: 10px;
   cursor: pointer;
 }
-.menu-buttons, .playlist-button{
+.menu-buttons,
+.playlist-button {
   display: grid;
-  grid-template-columns: 35px auto;
+  grid-template-columns: 30px auto;
   gap: 5px;
   align-items: center;
   max-width: fit-content;
@@ -85,9 +164,8 @@ main {
 }
 .menu-section a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   color: white;
-  font-weight: bold;
 }
 .menu-buttons:hover {
   border-left: 5px solid rgb(3, 200, 3);
@@ -95,52 +173,84 @@ main {
 .menu-section h2 {
   margin: 20px 10px;
 }
-.playlist-button a{
+.playlist-button a {
   font-size: 18px;
   color: darkgray;
   margin-left: 10px;
 }
-.user-profile {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: 1fr;
-    color: white;
-    font-weight: bold;
-    align-items: center;
-    margin: 20px 25px 0px 15px;
-    border-top: 2px solid grey;
-    padding: 5px;
+.playlist-button svg {
+  fill: white;
 }
-.profile-image img{
-    grid-column: 1 / span 1;
-    border-radius: 50%;
-    width: 100%;
+.playlist-button:hover svg {
+  fill: rgb(3, 200, 3);
+}
+.user-profile {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  margin: 20px 10px 0px 10px;
+  border-top: 2px solid grey;
+  padding: 5px;
+}
+.profile-image img {
+  grid-column: 1 / span 1;
+  border-radius: 50%;
+  width: 100%;
+  cursor: pointer;
 }
 .user-profile p {
   margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
 .now-playing-section {
   display: grid;
-  grid-template-columns: 70px 1fr 80px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  grid-template-columns: 70px 140px auto;
   font-size: 15px;
   color: white;
   align-items: center;
 }
+.now-playing-audio {
+  position: relative;
+  z-index: 1;
+}
 .now-playing-audio img {
   grid-column: 1 / span 1;
-  width: 100%;
-  margin: 5px;
+  width: 70%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.play-icon-audio {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
 }
 .now-playing-section p {
+  color: rgb(179, 172, 172);
+}
+.now-playing-section span {
   grid-column: 2 / span 1;
-  margin: 15px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
 }
 .now-playing-icons svg {
   grid-column: 3 / span 1;
   display: inline-block;
   margin: 10px 5px;
-  width: 20px;
+  width: 17px;
+  cursor: pointer;
+  fill: white;
+}
+.now-playing-section p:hover span {
+  text-decoration: underline;
+}
+.now-playing-icons svg:hover {
+  fill: rgb(0, 229, 255);
 }
 .player-controls {
   display: grid;
@@ -157,58 +267,68 @@ main {
 .previous-icon,
 .forward-icon,
 .skip-forward-icon {
-  width: 20px;
+  width: 17px;
   margin: 10px 10px;
+  cursor: pointer;
 }
 .play-icon {
-  border: 2px solid white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   padding: 5px;
+  margin-bottom: 3px;
+}
+.play-icon:hover {
+  background-color: white;
+  fill: rgb(53, 53, 53);
 }
 .lower-player-controls {
   display: grid;
   grid-template-columns: auto minmax(100px, 600px) auto;
   margin-bottom: 10px;
 }
-.mins-listened, .mins-left {
+.mins-listened,
+.mins-left {
   margin: 0px 20px;
+  font-size: 13px;
 }
-.progress-bar, .side-progress-bar{
+.progress-bar,
+.side-progress-bar {
   border-radius: 10px;
   margin: 3px;
   height: 10px;
   display: grid;
   grid-template-columns: 1fr;
   background-color: rgb(80, 79, 79);
+  cursor: pointer;
 }
-.bar, .side-bar {
+.bar,
+.side-bar {
   margin: 2px;
-  background-color:  rgb(148, 147, 147);
+  background-color: rgb(148, 147, 147);
   width: calc(var(--width, 0) * 1%);
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .right-controls {
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 100px 1fr;
   align-items: center;
 }
 .right-controls svg {
-  width: 20px;
+  width: 17px;
   display: inline-block;
   margin: 5px;
+  cursor: pointer;
 }
 .side-progress-bar {
-  width: 70px;
+  width: 87px;
 }
 .upgrade-section {
-  background-color: rgb(42, 41, 52);
+  background-color: rgb(15, 15, 19);
   text-align: end;
   align-content: center;
 }
 .upgrade-button {
-  padding:10px;
+  padding: 10px;
   padding-left: 40px;
   padding-right: 40px;
   margin-right: 10px;
@@ -217,4 +337,42 @@ main {
   border: 1px solid white;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+.upgrade-button:hover {
+  background-color: white;
+  color: rgb(42, 41, 52);
+}
+@media (max-width: 855px) {
+  main {
+    grid-template-columns: 60px 1fr;
+  }
+  .menu-buttons {
+    grid-template-columns: 30px;
+  }
+  .menu-buttons a,
+  .playlist-button,
+  .menu-section h2,
+  .user-profile p,
+  svg.spotify-logo-text {
+    display: none;
+  }
+  .user-profile {
+    border: none;
+  }
+  svg.spotify-logo {
+    display: block;
+    width: 40px;
+    margin: 10 auto;
+  }
+  .menu-section {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .now-playing-section {
+    grid-template-columns: 70px 80px auto;
+  }
+  .now-playing-section svg {
+    display: block;
+  }
 }
