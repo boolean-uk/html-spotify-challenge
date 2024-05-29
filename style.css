@@ -1,0 +1,238 @@
+main {
+  grid-template-columns: repeat(1fr, 7);
+  grid-template-rows: repeat(1fr, 5);
+  display: grid;
+  height: 90vh;
+  background-color: orange;
+}
+
+header {
+  grid-column: 1 / 7;
+  grid-row: 1 / span 1;
+  background-color: rgb(21, 28, 36);
+  color: white;
+  font-size: 13px;
+  display: grid;
+  justify-content: end;
+}
+
+header b {
+  align-content: center;
+  padding: 5px 10px 5px 10px;
+  border: solid white;
+  font-weight: lighter;
+  margin: 10px 10px 10px 35px;
+  border-radius: 50px;
+}
+
+content {
+  grid-column: 2 / span 5;
+  grid-row: 2 / span 4;
+  border: thin black;
+  background-color: rgb(36, 48, 61);
+}
+
+li {
+  color: white;
+  display: inline;
+  text-align: right;
+  margin-left: 30px;
+}
+
+content p b {
+  color: white;
+  font-size: x-large;
+}
+
+sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  color: white;
+  padding: 0px;
+  border: thin black;
+  background-color: black;
+}
+
+spotifylogo {
+  margin: 1px 0px 0px 60px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+downloadlogo p {
+  border-bottom: solid white;
+  padding-top: 0px;
+  margin-top: 180px;
+}
+
+profilelogo {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+footer {
+  grid-column: 1 / 7;
+  grid-row: 5 / span 1;
+  background-color: rgb(36, 48, 61);
+  font-size: 14px;
+}
+
+footer .music-player {
+  --primary-color: #ddd;
+  --secondary-color: #999;
+  --green-color: #2d5;
+  --padding: 1px;
+  background-color: #111;
+  display: left;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  height: 7rem;
+  padding: var(--padding);
+  color: var(--primary-color);
+}
+
+i {
+  color: var(--secondary-color);
+}
+
+i:hover {
+  color: var(--primary-color);
+}
+
+.song-bar {
+  position: center;
+  left: var(--padding);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  width: 95%;
+}
+
+.song-infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-container img {
+  padding-left: 15px;
+  --size: 70px;
+  flex-shrink: 0;
+  width: var(--size);
+  height: var(--size);
+}
+
+.song-description p {
+  margin: 0px 0px 0px 2px;
+}
+
+.title,
+.artist {
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+
+.artist {
+  color: var(--secondary-color);
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+}
+
+.progress-controller {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  color: var(--secondary-color);
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.play-pause {
+  display: inline-block;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: #111;
+  border-radius: 50%;
+}
+
+.play-pause:hover {
+  transform: scale(1.2);
+  color: #111;
+}
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #ccc4;
+}
+
+.progress {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.progress-bar:hover .progress {
+  background-color: var(--green-color);
+}
+
+.progress-bar:hover .progress::after {
+  content: "";
+  position: absolute;
+  --size: 1em;
+  width: var(--size);
+  height: var(--size);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translate(50%, calc(2px - 50%));
+}
+
+.other-features {
+  position: absolute;
+  right: var(--padding);
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.volume-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.volume-bar .progress-bar {
+  width: 6em;
+}
+
+.volume-bar .progress-bar:hover .progress::after {
+  --size: 0.8em;
+}
