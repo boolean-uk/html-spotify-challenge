@@ -27,7 +27,7 @@ html {
 }
 
 .logo img {
-  width: 131px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -102,7 +102,7 @@ html {
   flex-direction: column;
   overflow-y: auto;
   background-color: #121212;
-  text-decoration: none;
+  padding: 20px;
 }
 
 .top-nav {
@@ -112,7 +112,6 @@ html {
   justify-content: space-between;
   padding: 0 20px;
   color: white;
-  text-decoration: none;
 }
 
 .top-nav ul {
@@ -124,4 +123,107 @@ html {
 
 .top-nav li {
   margin-right: 20px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.upgrade-button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.album {
+  position: relative;
+  width: calc(50% / 3 - 20px);
+  margin-bottom: 20px;
+}
+
+.album img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.album-info {
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  color: #b3b3b3;
+}
+
+.player {
+  grid-area: player;
+  background-color: #181818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+}
+
+.player-progress input[type="range"] {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "sidebar"
+      "main"
+      "player";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+  .album {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  .album {
+    width: 100%;
+  }
 }
