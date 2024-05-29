@@ -175,5 +175,98 @@ footer {
   grid-row: 3;
   background-color: #282828;
   align-items: center;
-  grid-template-columns: 230px auto 230px;
+  grid-template:
+    1fr 1fr /
+    minmax(min-content, 220px)
+    auto
+    minmax(min-content, 220px);
+  padding: 10px;
+}
+
+footer div {
+  display: flex;
+  grid-row: 1 / span 2;
+  align-items: center;
+}
+
+#playing {
+  margin-right: 10px;
+}
+
+.control-button:hover {
+  color: lightgray;
+}
+
+.control-button:active {
+  color: gray;
+}
+
+#controls {
+  grid-row: 1;
+  width: 230px;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#play-button {
+  font-size: 30px;
+}
+
+#play-bar,
+#volume-bar {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+#play-bar {
+  grid-row: 2;
+  padding-bottom: 5px;
+  min-width: 230px;
+}
+
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+#play-bar span,
+#volume-bar span {
+  border: 1.5px;
+  border-style: solid;
+}
+
+.bar-active {
+  color: #c1c1c1;
+  border-radius: 10px 0 0 10px;
+  width: 20%;
+}
+
+#play-bar .bar-active {
+  margin: 0 0 0 4%;
+  width: 4.3%;
+}
+
+.bar-passive {
+  color: #5a5a5a;
+  border-radius: 0 10px 10px 0;
+  width: 80%;
+}
+
+#play-bar .bar-passive {
+  margin: 0 4% 0 0;
+  width: 95.7%;
+}
+
+#volume {
+  justify-content: space-between;
+  min-width: 160px;
+  font-size: 12px;
+  padding-left: 10%;
+}
+
+#volume-bar {
+  margin: 0;
 }
