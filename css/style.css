@@ -219,13 +219,43 @@ main nav h4 {
   height: min-content;
 }
 
-#albums img {
-  width: 178px;
+.album-cont {
+  display: block;
+  justify-content: center;
+  max-width: 178px;
 }
 
-article {
-  height: 2000px;
+.album-cont h4,
+.album-cont h6 {
+  margin: 10px;
+  text-align: center;
 }
+
+.album-cont h6 {
+  color: gray;
+}
+
+.album-img {
+  max-height: 178px;
+}
+
+.album-play {
+  display: none;
+  position: relative;
+  font-size: 100px;
+  bottom: 80%;
+  left: 33%;
+}
+
+/* .album-play:active {
+  display: block;
+  color: lightgray;
+}
+
+.album-img:hover ~ .album-play,
+.album-play:hover {
+  display: block;
+} */
 
 footer {
   display: grid;
