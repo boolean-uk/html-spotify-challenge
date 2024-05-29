@@ -36,10 +36,16 @@ aside {
   padding: 0;
 }
 
-#main-logo {
-  width: 134px;
+#main-logo,
+#responsive-logo {
+  height: 40px;
   margin: 20px;
   padding: 0;
+}
+
+#responsive-logo {
+  display: none;
+  margin: 15px;
 }
 
 nav {
@@ -295,6 +301,7 @@ main nav h4 {
 .album-img:hover ~ .album-play,
 .album-play:hover {
   display: block;
+  cursor: pointer;
 }
 
 .circle {
@@ -474,17 +481,63 @@ h6 {
   }
 }
 
-@media (max-width: 630px) {
-  #playing-icons {
+@media (max-width: 665px) {
+  #playing-icons,
+  #responsive-logo {
     display: block;
+  }
+  #playing-icons {
+    margin: 0;
+  }
+  #playing-icon {
+    width: 35px;
   }
   #controls,
   #play-bar {
-    margin-left: 35px;
+    margin-left: 15px;
+  }
+  p,
+  #playlists,
+  #main-logo,
+  #bordered h4 {
+    display: none;
+  }
+  #albums {
+    padding: 0 15px;
+  }
+  #bordered {
+    padding-top: 8px;
+  }
+  #install-icon {
+    margin-left: -3px;
+  }
+  body {
+    grid-template-columns: 70px auto;
+  }
+  aside {
+    width: 70px;
+  }
+  header {
+    width: calc(100vw - 70px);
+  }
+  #side-bottom div {
+    display: flex;
+    justify-content: center;
+  }
+  #playing-name h5 {
+    width: 50px;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 550px) {
+  #controls,
+  #play-bar {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 493px) {
   body {
     display: none;
   }
