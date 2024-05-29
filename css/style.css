@@ -22,6 +22,11 @@ aside {
   grid-row: 1 / span 2;
   background-color: black;
   grid-template-rows: 80px auto 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: calc(100% - 90px);
 }
 
 #logo-container {
@@ -125,7 +130,7 @@ nav {
   display: flex;
   padding: 10px 20px;
   align-items: end;
-  justify-content: left;
+  justify-content: center;
 }
 
 header {
@@ -135,6 +140,12 @@ header {
   align-content: center;
   justify-content: right;
   background-color: #080b12;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 230px);
+  height: 90px;
+  min-width: min-content;
 }
 
 #upgrade-button:hover {
@@ -165,8 +176,62 @@ main {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   background-color: #141922;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1;
+  grid-auto-rows: min-content;
+  overflow: auto;
+}
+main nav {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+  padding: auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 120px);
+}
+
+main nav h4 {
+  padding: 0;
+  margin: 20px 0;
+  color: gray;
+  font-size: 14px;
+  min-width: min-content;
+  text-transform: uppercase;
+  justify-self: center;
+}
+
+#albums {
+  display: grid;
+  grid-row: 2 / span 1;
+  padding: 0 20px;
+}
+
+#albums h3 {
+  grid-row: 1;
+  margin: 0 0 20px 0;
+  height: min-content;
+}
+
+#albums img {
+  grid-row: 2 / span 1;
+  width: 178px;
+}
+
+#albums section {
+  display: grid;
   grid-auto-flow: row;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, 178px);
+  grid-template-rows: repeat(auto-fill, 178px);
+}
+
+::after {
+  border: 2px;
+  border-color: greenyellow;
+  border-style: solid;
+}
+
+article {
+  height: 2000px;
 }
 
 footer {
@@ -181,6 +246,11 @@ footer {
     auto
     minmax(min-content, 220px);
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 20px);
+  max-height: 70px;
 }
 
 footer div {
@@ -190,7 +260,48 @@ footer div {
 }
 
 #playing {
-  margin-right: 10px;
+  display: flex;
+}
+
+#playing-icon {
+  width: 42px;
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+#playing-name {
+  display: block;
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  margin-left: 10px;
+}
+
+#playing h3,
+#playing h5 {
+  margin: 0;
+}
+
+#playing h3 {
+  font-size: 14px;
+}
+
+#playing h5 {
+  font-size: 12px;
+  color: gray;
+}
+
+#playing-icons {
+  display: flex;
+  width: calc(100% - 140px);
+  justify-content: right;
+  font-size: small;
+  margin: 10px;
+  height: 100%;
+  padding: auto;
+}
+
+#playing-icons i {
+  margin-left: 10px;
 }
 
 .control-button:hover {
@@ -282,4 +393,27 @@ h6 {
 
 #volume-bar {
   margin: 0;
+}
+
+@media (max-width: 730px) {
+  #controls,
+  #play-bar {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  #playing-icons {
+    display: block;
+  }
+  #controls,
+  #play-bar {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 415px) {
+  body {
+    display: none;
+  }
 }
