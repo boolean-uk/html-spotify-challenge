@@ -2,7 +2,7 @@ main {
   grid-template-columns: repeat(1fr, 7);
   grid-template-rows: repeat(1fr, 5);
   display: grid;
-  height: 90vh;
+  height: 100vh;
   background-color: orange;
 }
 
@@ -30,6 +30,7 @@ content {
   grid-row: 2 / span 4;
   border: thin black;
   background-color: rgb(36, 48, 61);
+  overflow: scroll;
 }
 
 li {
@@ -59,6 +60,7 @@ sidebar {
   padding: 0px;
   border: thin black;
   background-color: black;
+  overflow: scroll;
 }
 
 spotifylogo {
