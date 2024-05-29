@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="assets/img/logo.svg" alt="Spotify Logo" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-search"></i> Search</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i> Your Library</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="playlist">
+          <h3>Playlist</h3>
+          <ul>
+            <li><a href="#">Create Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+            <li><a href="#">Name Playlist</a></li>
+          </ul>
+        </div>
+        <div class="install-app">
+          <a href="#">Install app</a>
+        </div>
+        <div class="profile">
+          <img src="assets/img/profile.svg" alt="Profile" />
+          <span>John Doe</span>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="top-nav">
+          <ul>
+            <li><a href="#">In Evidenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e Mood</a></li>
+            <li><a href="#">Nuove Uscite</a></li>
+            <li><a href="#">Scopri</a></li>
+          </ul>
+          <button class="upgrade-button">Effettua l'upgrade</button>
+        </header>
+        <div class="content">
+          <section class="recently-played">
+            <h2>Recently played</h2>
+            <div class="album-list">
+              <div class="album">
+                <img src="assets/img/metal_lifting.jpg" alt="Heavy Metal" />
+                <div class="album-info">
+                  <span>Heavy Metal</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/stranger.jpeg" alt="Stranger Things" />
+                <div class="album-info">
+                  <span>Stranger Things</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/aquietplace.jpeg" alt="A Quiet Place" />
+                <div class="play-icon"><i class="fa fa-play"></i></div>
+                <div class="album-info">
+                  <span>A Quiet Place</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/split.jpeg" alt="Split" />
+                <div class="album-info">
+                  <span>Split</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/cure.jpeg" alt="A Cure for Wellness" />
+                <div class="album-info">
+                  <span>A Cure for Wellness</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/sinister.jpeg" alt="Sinister" />
+                <div class="album-info">
+                  <span>Sinister</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="created-for-you">
+            <h2>Creato per John Doe</h2>
+            <div class="album-list">
+              <div class="album">
+                <img src="assets/img/radar.jpeg" alt="Release Radar" />
+                <div class="album-info">
+                  <span>Release Radar</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/mixdaily.jpeg" alt="Daily Mix 1" />
+                <div class="album-info">
+                  <span>Daily Mix 1</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="popular-artists">
+            <h2>Artisti più popolari</h2>
+            <div class="album-list">
+              <div class="album">
+                <img src="assets/img/youg.jpeg" alt="Young & Beautiful" />
+                <div class="album-info">
+                  <span>Young & Beautiful</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+              <div class="album">
+                <img src="assets/img/einaudi.jpeg" alt="Ludovico Einaudi" />
+                <div class="album-info">
+                  <span>Ludovico Einaudi</span>
+                  <span class="subtitle">Subtitle</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="player">
+        <div class="player-controls">
+          <button><i class="fa fa-step-backward"></i></button>
+          <button><i class="fa fa-play"></i></button>
+          <button><i class="fa fa-step-forward"></i></button>
+        </div>
+        <div class="track-info">
+          <span class="track-title">Sinister</span>
+          <span class="track-artist">Brano Nome</span>
+        </div>
+        <div class="player-progress">
+          <span>0:25</span>
+          <input type="range" min="0" max="100" value="25" />
+          <span>4:35</span>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
