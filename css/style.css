@@ -200,7 +200,7 @@ main nav h4 {
 }
 
 #albums {
-  display: grid;
+  display: block;
   grid-row: 2 / span 1;
   padding: 0 20px;
 }
@@ -211,9 +211,10 @@ main nav h4 {
   justify-content: left;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, 178px);
+  margin-bottom: 20px;
 }
 
-#albums h3 {
+#albums h2 {
   grid-row: 1;
   margin: 0 0 20px 0;
   height: min-content;
@@ -243,11 +244,12 @@ main nav h4 {
   display: none;
   position: relative;
   font-size: 100px;
-  bottom: 80%;
+  bottom: 144px;
   left: 33%;
+  text-shadow: 1px 1px 20px gray;
 }
 
-/* .album-play:active {
+.album-play:active {
   display: block;
   color: lightgray;
 }
@@ -255,7 +257,11 @@ main nav h4 {
 .album-img:hover ~ .album-play,
 .album-play:hover {
   display: block;
-} */
+}
+
+.circle {
+  border-radius: 50%;
+}
 
 footer {
   display: grid;
