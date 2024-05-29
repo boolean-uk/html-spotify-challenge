@@ -44,6 +44,14 @@ content p b {
   font-size: x-large;
 }
 
+.maincover::after {
+  content: "";
+  transition: 0.5s;
+}
+
+.maincover:hover::after {
+}
+
 sidebar {
   grid-column: 1 / span 1;
   grid-row: 1 / span 4;
