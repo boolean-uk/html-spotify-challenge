@@ -21,7 +21,7 @@ aside {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
   background-color: black;
-  grid-template-rows: 80px auto 80px;
+  grid-template-rows: 80px auto 85px;
   position: fixed;
   top: 0;
   left: 0;
@@ -474,6 +474,12 @@ h6 {
   margin: 0;
 }
 
+@media (max-width: 860px) {
+  #albums section {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 730px) {
   #controls,
   #play-bar {
@@ -485,6 +491,9 @@ h6 {
   #playing-icons,
   #responsive-logo {
     display: block;
+  }
+  #playing {
+    width: 100px;
   }
   #playing-icons {
     margin: 0;
@@ -516,6 +525,7 @@ h6 {
   }
   aside {
     width: 70px;
+    grid-template-rows: 80px auto 75px;
   }
   header {
     width: calc(100vw - 70px);
@@ -538,6 +548,12 @@ h6 {
 }
 
 @media (max-width: 493px) {
+  #albums {
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 471px) {
   body {
     display: none;
   }
