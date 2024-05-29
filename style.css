@@ -153,7 +153,7 @@ html {
 
 .album {
   position: relative;
-  width: calc(50% / 3 - 20px);
+  width: calc(100% / 6 - 20px); /* Adjust for 6 albums per row */
   margin-bottom: 20px;
 }
 
@@ -205,6 +205,7 @@ html {
   margin: 0 10px;
 }
 
+/* Responsive design for different screen sizes */
 @media (max-width: 768px) {
   .container {
     grid-template-areas:
@@ -215,7 +216,7 @@ html {
     grid-template-rows: auto 1fr auto;
   }
   .album {
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 2 - 20px); /* Adjust for 2 albums per row */
   }
 }
 
@@ -224,6 +225,6 @@ html {
     display: none;
   }
   .album {
-    width: 100%;
+    width: 100%; /* Adjust for 1 album per row */
   }
 }
