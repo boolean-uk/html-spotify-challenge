@@ -1,12 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="assets/img/logo-small.svg"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <div id="logo-container">
+        <img id="main-logo" src="assets/img/logo.svg" alt="Logo" />
+        <img id="responsive-logo" src="assets/img/logo-small.svg" alt="Logo" />
+      </div>
+      <nav>
+        <div class="nav-item selected">
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+            />
+          </svg>
+          <p>Home</p>
+        </div>
+        <div class="nav-item">
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <p>Search</p>
+        </div>
+        <div class="nav-item">
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            width="28px"
+          >
+            <path
+              d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+            />
+          </svg>
+          <p>Your Library</p>
+        </div>
+        <section id="playlists">
+          <h4>PLAYLIST</h4>
+          <ul>
+            <li>
+              <h5><i class="fa-solid fa-square-plus"></i>Create Playlist</h5>
+            </li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+            <li>Playlist Name</li>
+          </ul>
+        </section>
+      </nav>
+      <div id="side-bottom">
+        <div>
+          <img id="install-icon" src="assets/img/download.svg" alt="Download" />
+          <p>Install app</p>
+        </div>
+        <div id="bordered">
+          <img
+            id="propic"
+            class="circle"
+            src="assets/img/profile.svg"
+            alt="Propic"
+          />
+          <h4>John Doe</h4>
+        </div>
+      </div>
+    </aside>
+    <header><button id="upgrade-button">Upgrade</button></header>
+
+    <main>
+      <nav>
+        <h4 class="nav-item underlined">In Evidenza</h4>
+        <h4 class="nav-item">Podcast</h4>
+        <h4 class="nav-item">Classifiche</h4>
+        <h4 class="nav-item">Generi e Mood</h4>
+        <h4 class="nav-item">Nuove Uscite</h4>
+        <h4 class="nav-item">Scopri</h4>
+      </nav>
+      <div id="albums">
+        <h2 style="margin-bottom: 20px">Recently Played</h2>
+        <section>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/metal_lifting.jpg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Heavy Metal</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/stranger.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>
+              Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)
+            </h4>
+            <h6>Kyle Dixon & Michael Stein</h6>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/aquietplace.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>A quite place</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/split.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Split</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/cure.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>A cure for wellness</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/sinister.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Sinister</h4>
+            <h6>Subtitle</h6>
+          </div>
+        </section>
+        <h2 class="subbed-title">Created for John Doe</h2>
+        <h6 class="title-sub">
+          Suggestions will be more accurate as you listen.
+        </h6>
+        <section>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/radar.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Release Radar</h4>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img"
+                src="assets/img/mixdaily.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Daily Mix 1</h4>
+          </div>
+        </section>
+        <h2>Popular Artists</h2>
+        <h6 class="title-sub">
+          Suggestions will be more accurate as you listen.
+        </h6>
+        <section>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img circle"
+                src="assets/img/youg.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Lana Del Rey</h4>
+          </div>
+          <div class="album-cont">
+            <div class="album-img">
+              <img
+                class="album-img circle"
+                src="assets/img/einaudi.jpeg"
+                alt="Album Cover"
+              />
+              <i class="fa-solid fa-play album-play"></i>
+            </div>
+            <h4>Ludovico Einaudi</h4>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div id="playing">
+        <img
+          id="playing-icon"
+          src="assets/img/sinister.jpeg"
+          alt="Album Cover"
+        />
+        <div id="playing-name">
+          <h3>Sinister</h3>
+          <h5>Brano Nome</h5>
+        </div>
+        <div id="playing-icons">
+          <i class="fa-regular fa-heart control-button"></i>
+          <i class="fa-regular fa-folder control-button"></i>
+        </div>
+      </div>
+      <div id="controls">
+        <i class="fa-solid fa-shuffle control-button"></i>
+        <i class="fa-solid fa-backward-step control-button"></i>
+        <i
+          id="play-button"
+          class="fa-regular fa-circle-play control-button"
+        ></i>
+        <i class="fa-solid fa-forward-step control-button"></i>
+        <i class="fa-solid fa-rotate-right control-button"></i>
+      </div>
+      <div id="play-bar">
+        <h6 id="elapsed-time">0:25</h6>
+        <span class="bar-active"></span>
+        <span class="bar-passive"></span>
+        <h6 id="remaining-time">4:35</h6>
+      </div>
+      <div id="volume">
+        <i class="fa-solid fa-list control-button"></i>
+        <i class="fa-solid fa-desktop control-button"></i>
+        <i class="fa-solid fa-volume-high control-button"></i>
+        <i class="fa-solid fa-volume-xmark control-button"></i>
+        <div id="volume-bar">
+          <span class="bar-active"></span>
+          <span class="bar-passive"></span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
