@@ -8,12 +8,7 @@ body {
   grid-template-rows: 9fr 1fr;
   height: 100vh;
 }
-
-footer {
-  height: 60px;
-  background: rgb(53, 52, 52);
-}
-.top-div {
+.main-div {
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -48,8 +43,15 @@ span {
 .side-icon {
   width: 60px;
 }
+.center-area {
+  display: grid;
+  grid-template-rows: 1fr 1fr 8fr;
+  background: rgb(30, 27, 41);
+  border: 1px solid green;
+}
 header {
   display: grid;
+  grid-column: 1/2;
   background: rgb(22, 20, 34);
   grid-template-columns: 6fr 1fr;
   justify-content: center;
@@ -67,16 +69,23 @@ header {
   background-color: rgb(22, 20, 34);
   color: white;
 }
-/* nav {
-  background: ;
-} */
-.center-area {
+nav {
   display: grid;
-  grid-template-rows: 1fr 1fr 8fr;
-  background: rgb(30, 27, 41);
-  border: 1px solid green;
+  grid-template-columns: 1fr 4fr 1fr;
 }
-
+.nav-bar {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+li {
+  list-style: none;
+}
 article {
   background: rgb(30, 27, 41);
+}
+footer {
+  background: rgb(53, 52, 52);
 }
