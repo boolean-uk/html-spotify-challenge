@@ -1,3 +1,4 @@
+/* styles.css */
 
 * {
     margin: 0;
@@ -34,16 +35,22 @@
   }
 
   .spotify-content {
-    display: flex;
+    display:flex;
     align-items: center;
-    margin-bottom: 20px;
   }
-  
+
+
   .spotify-logo {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
-  }
+    }
+
+  .spotify-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    }
   
   .logo {
     font-size: 24px;
@@ -124,6 +131,37 @@
     margin-bottom: 20px;
   }
   
+  .sidebar-footer {
+    padding-left: 20px;
+    font-weight: bold;
+  }
+  .recently-played img {
+    width: 50%;
+    height: 50%;
+    
+  }
+  .playlists {
+    display: flex;
+    justify-content:flex-start;
+    margin: 20px 5px;
+     }
+  
+     .playlists img {
+      margin: 20px 10px;
+     }
+
+  .popular-artists {
+    display: flex;
+    justify-content:flex-start;
+    margin: 20px 5px;
+  }
+
+  .popular-artists img {
+    margin: 20px 10px;
+    border-radius: 50%; 
+  }
+
+  
   .album-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -141,15 +179,26 @@
   }
   
   .player-left,
-  .player-center,
   .player-right {
     display: flex;
-    align-items: center;
+    align-items:center;
+  }
+
+  .player-center {
+    display: table-row-group;
   }
   
-  .player-center {
-    flex-direction: column;
+  .player-controls img{
+    width: 10%;
+    height: 10%;
+
   }
+
+  .player-center {
+    flex-direction: row;
+  }
+
+  
   
   .player-center button {
     background: none;
@@ -180,5 +229,23 @@
     background: #1DB954;
   }
   
-
+  @media (max-width: 768px) {
+    .main-layout {
+      grid-template-areas: 
+        "header header"
+        "main main"
+        "player player";
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebar-layout {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-list {
+      flex-wrap: wrap;
+    }
+  }
   
